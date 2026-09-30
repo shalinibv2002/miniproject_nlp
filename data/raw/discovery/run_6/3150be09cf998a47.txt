@@ -1,0 +1,3871 @@
+Self Study Report of THIAGARAJAR COLLEGE OF ENGINEERING
+SELF STUDY REPORT
+ FOR
+1st CYCLE OF ACCREDITATION
+ 
+ 
+THIAGARAJAR COLLEGE OF ENGINEERING
+THIAGARAJAR COLLEGE OF ENGINEERING MADURAI - 625015, TAMIL
+NADU
+625015
+www.tce.edu
+Submitted To
+NATIONAL ASSESSMENT AND ACCREDITATION COUNCIL
+BANGALORE
+November  2018
+Page 1/118 18-01-2019 10:52:07
+Self Study Report of THIAGARAJAR COLLEGE OF ENGINEERING
+1. EXECUTIVE SUMMARY
+1.1 INTRODUCTION 
+Thiagarajar College of Engineering (TCE), Madurai Tamil Nadu is one of the three Govt. aided Colleges in
+Tamil Nadu. Established in 1957, by philanthropist and industrialist Thiru. Shri. Karumuttu Thiagarajan
+Chettiar, TCE has grown as one of the top 5 Engineering colleges in Tamil Nadu with 8 undergraduate and 14
+post graduate programmes by 12 departments. The College has over 4000 students and 273 faculty members.
+The College is partially financed by Government while the Trust takes care of majority of its expenses. The
+College has state of art facilities in most of the Departments and has a strong research focus with 334 part-time
+research scholars working in research laboratories and Centres under various Departments. Thiagarajar College
+of Engineering is one of the few colleges in Tamil Nadu, selected by Ministry of Human Resource
+Development Govt. of India and World Bank to provide assistance through Technical Education Quality
+Improvement Program (TEQIP) under TEQIP Phase II and TEQIP phase III.
+One of the novel initiatives in respect of Industry-Institute Interaction is the establishment of   in Mechanical
+Electrical Engineering undergraduate Programme  curriculum, which have been co-created by subject matter
+experts from TVS Motors and TCE. Thiagarajar Advanced Research Centre in the campus houses the TIFAC
+Centre of Relevance and excellence in   Wireless Technologies established with generous support from
+government, management       and industries. 
+The College has a Technology Business Incubation unit supported by the Govt. of India. The College has
+incubated a company “Thiagarajar Telekom Solutions Limited” in the area of   RF Systems and antennas.
+Department of Electrical and Electronics Engineering and      Department of Electronics and Communication
+Engineering have won the “Best Industry Linked Technical Institutions” award instituted by the All India
+Council for Technical Education (AICTE) and Confederation of Indian Industries (CII) for the year 2014 and
+2016. The College has positioned 39th Rank in the National Institutional Ranking Framework(NIRF-2018)
+instituted  by MHRD, Govt. of India.
+Vision 
+Vision Statement:
+World class quality technical education with strong ethical values
+Mission 
+Mission Statement:
+We at TCE shall strive continuously,
+• Academic excellence in Science, Engineering and Technology through dedication to duty, commitment
+to research, innovation in learning and faith in human values
+Page 2/118 18-01-2019 10:52:08
+Self Study Report of THIAGARAJAR COLLEGE OF ENGINEERING
+• Enable the students to develop into outstanding professionals with high ethical standards capable of
+creating, developing and managing global engineering enterprises
+• Fulfill expectations of the society and industry by equipping students with state of art technology
+resources for developing sustainable solutions
+• Achieve these through team efforts making Thiagarajar College of Engineering the socially diligent
+trend setter in technical education
+1.2 Strength, Weakness, Opportunity and Challenges(SWOC)
+Institutional Strength 
+61 years old institute with philanthropic management
+Qualified and experienced faculty
+Meritorious Students
+Academic Process - Outcome Based Education with Choice Based Credit System for UG/PG
+programmes
+Research oriented Special Interest Groups in Departments
+Sponsored Research – Collaborative projects with DRDO
+Active MoUs with Industries - TVS Motors, Honeywell
+Publication in refereed and high impact factor Journals with citations
+TARC and TIFAC -CORE
+Students Placements – Consistent and good placement record (90%) for over 16 years
+Technology Based Social Work
+Institutional Weakness 
+Interdisciplinary Curriculum is being evolved now
+Interdisciplinary research among few Departments only
+Promotion of innovative student projects for the past few years
+Inadequate PG student assistantships
+Lack of Faculty Internship
+Inadequate Faculty Exchange Programmes
+Laboratories have not been accredited (NABL)
+Institutional Opportunity 
+Linking Curriculum with International MOOC courses
+New Multi disciplinary courses
+Application oriented Learning - EPICS
+Collaborative research with industries and R&D organizations
+Consultancy and testing work with local industries
+Promoting Student internship
+Accreditation for Laboratories
+Page 3/118 18-01-2019 10:52:09
+Self Study Report of THIAGARAJAR COLLEGE OF ENGINEERING
+Exchange Programmes with National and International Universities
+Interface with domain companies for placement and internship
+Promoting entrepreneurship
+Institutional Challenge 
+Technology obsolescence
+Possible arrival of foreign universities
+Limitation in increasing the fee due to social constraints
+Sustaining the quality research
+Faculty migration
+1.3 CRITERIA WISE SUMMARY 
+Curricular Aspects 
+Academic process at TCE encompasses curriculum development, content delivery and assessment. From
+competency based curriculum, TCE has moved to Outcome Based Education (OBE) with Choice Based  Credit
+System (CBCS). TCE offers 8 UG programmes, 14 PG programmes and Doctoral programmes in the field of
+Engineering & Technology, Science and Architecture.
+TCE’s major objective is to plan and implement a programme of education in engineering and allied sciences.
+Additionally, TCE aims to promote research, disseminate knowledge, foster cooperation and exchange of ideas
+between academic community and industrial organizations, and to develop entrepreneurship skills among the
+students. TCE also strives to achieve academic excellence along with a harmonious development of the
+personality of students.
+Teaching-learning and Evaluation 
+The academic process of teaching and learning is ensured by the academic calendar. The academic processes
+are reflected in the continuous schemes and terminal evaluation methodologies. Each semester normally
+consists of 90 working days. In any contingent situation, the number of working days per semester will not be
+less than 65 days. Teaching and the commitment of the students to learn are taken extremely serious but there is
+often a healthy relationship exist between the teacher and students. Though the class attendance is mandatory
+for the students, they are given enough opportunities to work independently and develop an in-depth knowledge
+of their subject, critical and analytical thinking through active participation in Special Interest Group (SIG)
+activities.
+The key requirements of these processes include classroom ambience, faculty training, library, laboratory
+infrastructure, student development activities and support systems. The project works of the students are
+evaluated by a team comprising of Guide, Head of the Department and an external examiner. The external
+examiner from higher learning institution/industry is appointed by the Controller of Examinations of the
+College from the panel of the examiners suggested by the Head of the Department. The College has better
+Laboratory infrastructure to provide hands-on experience to some courses, certification courses and practical
+courses. The College has main library with adequate books/journals, online access for eResources through
+Page 4/118 18-01-2019 10:52:10
+Self Study Report of THIAGARAJAR COLLEGE OF ENGINEERING
+internet and mobile application.
+The Heads of each Department attaches about 20-25 students to a faculty who shall function as Tutor for those
+students throughout their period of study. Class committee meetings are scheduled and conducted by the chair
+person for each class; feedback from student representatives is documented and actions are taken.
+Controller of Examinations office team publishes declares the result as per scheduled time. The question papers
+and the evaluated answer scripted are audited by the external audit team
+Research, Innovations and Extension 
+Research:
+TCE is focussed on Research & Development in Engineering, Technology and Sciences. The various programs
+are nurtured through academic and sponsored research funded by National organizations and industry. The
+research culture is brought in among faculty and students through SIG and Department association activities.
+This leads to academic, sponsored and industry allied research in all departments which in turn results in
+journal publications, lab establishments, patents filing,
+Innovations:
+SIG of each department identifies the industry related to their activities. This enables the introduction of new
+one credit courses and internships during 8th semester to students. Further, alumni working in various
+industries engage students by interacting with them through mentoring program, motivational talks and
+seminars. 
+Extension Activities:
+The key communities identified by the College include the neighbouring villages and urban slums in Madurai.
+The communities are identified by exploratory visits by few concerned faculty members and students
+recognized by the College. The identified communities are formally visited by the National Service Scheme
+(NSS) co-coordinators and students. During their subsequent visits, they interact with the Panchayat leaders and
+elders of those communities to identify their needs. The needs of the community are translated into technology
+based works. So far, the NSS team has worked in villages namely Villachery, Thonukal and Sambakulam for a
+period of three years in areas like GIS, Energy auditing, Water management, Mason training, sanitation and
+computer literacy. The documentation done has been submitted to the Panchayat leaders and in few cases has
+been implemented successfully. The administration supports financially and administratively for all these
+technology based social works.Consultancy – It provides faculty and students to undertake assignments from
+the industry which includes survey reports, project development, testing and validation.
+Infrastructure and Learning Resources 
+All classrooms are equipped with ICT enabled teaching learning process. Some laboratories are set up with the
+industry support, as a result of MoUs signed between the College and the industry. The campus has set up
+surveillance camera facility to ensure safety and security to all.
+Page 5/118 18-01-2019 10:52:11
+Self Study Report of THIAGARAJAR COLLEGE OF ENGINEERING
+Library provide online journal access, eResources to students, faculty and research scholars to carry out their
+academic projects, SIG activities, research work, sponsored and consultancy projects.
+Data center was established in TCE to consolidate all the App servers, DB servers and computer clusters into a
+single facility to ease the maintenance and provisioning of servers and Apps to users throughout the campus. It
+offers internet facility throughout the campus with the help of BSNL and NKN. The Data center is equipped
+with 24x7 cooling system, smoke detectors, fire extinguishers, surveillance camera, and door access control.
+Student Support and Progression 
+Students are engaged in:
+Co-curricular Activities 
+The students are involved in organizing the technical events to share the information on a focussed theme for
+students of other Colleges. In the process, the students are practically trained in managerial skills and
+competencies. Apart from these, technical competitions and project contests are conducted through professional
+society student chapters like ACM, IEEE, ISTE, IE for the benefit of junior students by the senior students.
+Students are selected as ambassadors for Google, Microsoft and CTS and have won many prizes in technical
+contests like Ultratech Technical Quiz, IEEE Xtreme Programming Contest.
+Placement trainings like soft skill training by Corporate/Training sources, aptitude training, placement training
+by senior students and alumni and training by faculty on domain areas to students.
+Special Interest Group (SIG) activities 
+Asynchronous learning takes place among the students in the SIG. The research scholars and PG students
+usually guide the second, third and final year UG students in the respective domain to acquire the knowledge in
+that area. This facilitates the students to get involved in the sponsored research projects which are being carried
+out by the faculty members. These processes enables the students get engaged in learning beyond curriculum.
+For example, Thiaragarajar Advanced Research Center (TARC) was established with the high end
+technological laboratories. These laboratories are facilitating the academic and sponsored research being carried
+out by the faculty members and potential UG/PG students. Innovation Clubs are initiated by the students with
+an objective to participate in the national/international contests now and then. SIG activities also enable
+students to participate in paper presentation events in conferences and in journals
+Governance, Leadership and Management 
+In order to implement the vision on quality education, the College has established a Quality Management
+System in the year 2004 for its teaching and learning, research and development, industry interaction and
+student activities. The Quality policy of the College states that “The College is committed to create quality
+Professionals to meet the emerging industrial and social needs through
+Innovative Teaching
+Applied Research
+Industry Interaction
+Page 6/118 18-01-2019 10:52:12
+Self Study Report of THIAGARAJAR COLLEGE OF ENGINEERING
+Faith in human values
+Aiming at continual improvement in all activities
+All UG/PG programmes undergo NBA accreditation process as part of statutory requirement and to sustain
+quality of education. The College has obtained ISO 9001:2008 Certification for its various processes. Strategic
+planning is done on a short/long term basis which highlights the plan for infrastructure, resources, differentiator
+from competitors, new courses and business prospects. The strategic objectives, related to focus area, are
+mapped to ISO processes. Measurement system is identified for each ISO process. Metrics, targets and
+frequency are fixed for each process area. Staff/student attendance, mark entries of tests, examination process,
+feedbacks and operational maintenance are some of the metrics for regulating processes. The strategy is
+evolved for preparing overall financial plan and budget of the College with the inputs from each department.
+Budget and financial measurements and tracked by senior management team periodically.
+The ethical value system envisioned by the Founder of the College is reflected in the process of distributing
+management seats to meritorious and economically deserving candidates without collecting any capitation fee.
+The economically weak students with good academic records are provided with annual scholarship by the
+Management and Alumni. Value systems being practiced in the College and Hostels such as continuance of
+only vegetarian food in the hostel for the past 5 decades are appreciated by the parents and Alumni.
+Institutional Values and Best Practices 
+TCE – TVS Model being adopted for EEE department, learnt from Mechanical department. Now, an
+interdisciplinary lab establishment in the area of Electric vehicles has been initiated.
+SIG activities promoted to all departments, which is evolved from ECE department
+Number of students for internship programs at higher learning institutions from all departments has
+been increased due to the benefits acquired from the programs like industry supported one credit courses
+across departments
+Increase in the number of inter-disciplinary projects between science and engineering departments,
+originated from Civil and Chemistry departments in investigating the use of plastic bitumen in laying
+roads (Patented).
+Technology based social activities encouraged among students of all departments, with the success
+stories from Civil Department
+Distribution of first year syllabus in the form of CDs to all affiliated Engineering colleges
+ 
+Page 7/118 18-01-2019 10:52:12
+Self Study Report of THIAGARAJAR COLLEGE OF ENGINEERING
+2. PROFILE
+2.1 BASIC INFORMATION
+  Name and Address of the College
+Name THIAGARAJAR COLLEGE OF ENGINEERING
+Address Thiagarajar College of Engineering Madurai -
+625015, Tamil Nadu
+City Madurai
+State Tamil Nadu
+Pin 625015
+Website www.tce.edu
+  Contacts for Communication
+Designation Name Telephone with
+STD Code
+Mobile Fax   Email
+Principal V
+Abhaikumar
+0452-2482430 9894094155 0452-248342
+7
+principal@tce.edu
+IQAC
+Coordinator
+M. Palaninath
+aRaja
+0452-2482240 9486461955 0452-248224
+1
+deanpad@tce.edu
+  Status of the Institution
+Institution Status Government and Grant-in-aid
+  Type of Institution
+By Gender Co-education
+By Shift  Regular
+  Recognized Minority institution
+If it is a recognized minroity institution No
+  Establishment Details
+Date of Establishment, Prior to the Grant of
+'Autonomy'
+01-06-1957
+Page 8/118 18-01-2019 10:52:14
+Self Study Report of THIAGARAJAR COLLEGE OF ENGINEERING
+Date of grant of 'Autonomy' to the College by UGC 01-06-1987
+  University to which the college is affiliated
+State University name Document
+Tamil Nadu Anna University View Document
+  Details of UGC recognition
+Under Section Date View Document
+2f of UGC 01-06-1994 View Document
+12B of UGC 01-06-1994 View Document
+  Details of recognition/approval by stationary/regulatory bodies like
+AICTE,NCTE,MCI,DCI,PCI,RCI etc(other than UGC)
+Statutory
+Regulatory
+Authority
+Recognition/App
+roval details Inst
+itution/Departme
+nt programme
+Day,Month and 
+year(dd-mm-
+yyyy)
+Validity in
+months
+Remarks
+AICTE View Document 04-04-2018 12
+COA View Document 12-06-2018 12
+  Recognitions
+ Is the College recognized by UGC as a College
+with Potential for Excellence(CPE)?
+No
+Is the College recognized for its performance by
+any other governmental agency?
+Yes
+If yes, name of the agency Technology Information Forecasting and
+Assessment Council TIFAC Department of Science
+and Technology NewDelhi
+Date of recognition 03-10-2001
+  
+Page 9/118 18-01-2019 10:52:14
+Self Study Report of THIAGARAJAR COLLEGE OF ENGINEERING
+Location and Area of Campus
+Campus Type Address Location* Campus Area
+in Acres 
+Built up Area in
+sq.mts.
+Main campus
+area
+Thiagarajar College of
+Engineering Madurai -
+625015, Tamil Nadu
+Semi-urban 136.24 79838.88
+2.2 ACADEMIC INFORMATION
+  
+Page 10/118 18-01-2019 10:52:16
+Self Study Report of THIAGARAJAR COLLEGE OF ENGINEERING
+Details of Programmes Offered by the College (Give Data for Current Academic year)
+Programme
+Level
+Name of Pr
+ogramme/C
+ourse
+Duration in
+Months
+Entry
+Qualificatio
+n
+Medium of
+Instruction
+Sanctioned
+Strength
+ No.of
+Students
+Admitted
+UG BE,Civil
+Engineering
+48 HSC English 121 121
+UG BE,Mechani
+cal
+Engineering
+48 HSC English 120 117
+UG BE,Electrical
+And
+Electronics
+Engineering
+48 HSC English 121 121
+UG BE,Electroni
+cs And Com
+munication
+Engineering
+48 HSC English 120 116
+UG BE,Compute
+r Science
+And
+Engineering
+48 HSC English 120 117
+UG BTech,Infor
+mation
+Technology
+48 HSC English 120 120
+UG BE,Mechatro
+nics
+48 HSC English 60 59
+UG BArch,Archi
+tecture
+60 HSC English 80 80
+PG ME,Civil
+Engineering
+24 UG English 18 16
+PG ME,Civil
+Engineering
+24 UG English 18 17
+PG ME,Civil
+Engineering
+24 UG English 25 22
+PG ME,Mechani
+cal
+Engineering
+24 UG English 18 9
+PG ME,Mechani 24 UG English 25 9
+Page 11/118 18-01-2019 10:52:17
+Self Study Report of THIAGARAJAR COLLEGE OF ENGINEERING
+cal
+Engineering
+PG ME,Electrica
+l And
+Electronics
+Engineering
+24 UG English 18 10
+PG ME,Electrica
+l And
+Electronics
+Engineering
+24 UG English 25 21
+PG ME,Electron
+ics And Com
+munication
+Engineering
+24 UG English 18 11
+PG ME,Electron
+ics And Com
+munication
+Engineering
+24 UG English 25 21
+PG ME,Comput
+er Science
+And
+Engineering
+24 UG English 25 18
+PG ME,Informat
+ion
+Technology
+24 UG English 18 9
+PG ME,Mechatr
+onics
+24 UG English 18 5
+PG MArch,Arch
+itecture
+24 UG English 20 0
+PG MCA,Comp
+uter
+Applications
+36 UG English 60 53
+Doctoral
+(Ph.D)
+PhD or
+DPhil,Civil
+Engineering
+24 ME English 7 7
+Doctoral
+(Ph.D)
+PhD or DPhi
+l,Mechanical
+Engineering
+24 ME English 6 6
+Doctoral
+(Ph.D)
+PhD or DPhi
+l,Electrical
+24 ME English 7 7
+Page 12/118 18-01-2019 10:52:18
+Self Study Report of THIAGARAJAR COLLEGE OF ENGINEERING
+And
+Electronics
+Engineering
+Doctoral
+(Ph.D)
+PhD or DPhi
+l,Electronics
+And Commu
+nication
+Engineering
+24 ME English 8 8
+Doctoral
+(Ph.D)
+PhD or DPhi
+l,Computer
+Science And
+Engineering
+24 ME English 2 2
+Doctoral
+(Ph.D)
+PhD or DPhi
+l,Information
+Technology
+24 ME English 5 5
+Doctoral
+(Ph.D)
+PhD or DPhi
+l,Mechatroni
+cs
+24 ME English 2 2
+Doctoral
+(Ph.D)
+PhD or DPhi
+l,Architectur
+e
+24 MArch English 2 2
+Doctoral
+(Ph.D)
+PhD or DPhi
+l,Computer
+Applications
+24 PG English 2 2
+Doctoral
+(Ph.D)
+PhD or
+DPhil,Physic
+s
+24 M.Phil English 1 1
+Doctoral
+(Ph.D)
+PhD or DPhi
+l,Chemistry
+24 M.Phil English 1 0
+Doctoral
+(Ph.D)
+PhD or DPhi
+l,Mathematic
+s And
+English
+24 M.Phil English 3 3
+Position Details of Faculty & Staff in the College
+  
+Page 13/118 18-01-2019 10:52:18
+Self Study Report of THIAGARAJAR COLLEGE OF ENGINEERING
+Teaching Faculty
+Professor Associate Professor Assistant Professor
+Male Female Others Total Male Female Others Total Male Female Others Total
+Sanctioned by the
+UGC /University
+State
+Government 
+13 17 73
+Recruited 6 2 0 8 10 3 0 13 46 19 0 65
+Yet to Recruit 5 4 8
+Sanctioned by the
+Management/Soci
+ety or Other
+Authorized
+Bodies
+11 33 143
+Recruited 5 6 0 11 15 18 0 33 85 58 0 143
+Yet to Recruit 0 0 0
+  Non-Teaching Staff
+Male Female Others Total
+Sanctioned by the
+UGC /University State
+Government 
+66
+Recruited 13 6 0 19
+Yet to Recruit 47
+Sanctioned by the
+Management/Society
+or Other Authorized
+Bodies 
+79
+Recruited 55 24 0 79
+Yet to Recruit 0
+  
+Page 14/118 18-01-2019 10:52:20
+Self Study Report of THIAGARAJAR COLLEGE OF ENGINEERING
+Technical Staff
+Male Female Others Total
+Sanctioned by the
+UGC /University State
+Government  
+108
+Recruited 55 4 0 59
+Yet to Recruit 49
+Sanctioned by the
+Management/Society
+or Other Authorized
+Bodies 
+64
+Recruited 59 5 0 64
+Yet to Recruit 0
+Qualification Details of the Teaching Staff
+  Permanent Teachers
+Highest
+Qualificatio
+n
+Professor Associate Professor Assistant Professor
+Male Female Others Male Female Others Male Female Others Total
+D.sc/D.Litt. 0 0 0 0 0 0 0 0 0 0
+Ph.D. 14 10 0 29 22 0 56 25 0 156
+M.Phil. 0 0 0 0 0 0 0 0 0 0
+PG 0 0 0 10 4 0 58 45 0 117
+  
+Page 15/118 18-01-2019 10:52:21
+Self Study Report of THIAGARAJAR COLLEGE OF ENGINEERING
+Temporary Teachers
+Highest
+Qualificatio
+n
+Professor Associate Professor Assistant Professor
+Male Female Others Male Female Others Male Female Others Total
+D.sc/D.Litt. 0 0 0 0 0 0 0 0 0 0
+Ph.D. 0 0 0 0 0 0 0 0 0 0
+M.Phil. 0 0 0 0 0 0 0 0 0 0
+PG 0 0 0 0 0 0 0 0 0 0
+  Part Time Teachers
+Highest
+Qualificatio
+n
+Professor Associate Professor Assistant Professor
+Male Female Others Male Female Others Male Female Others Total
+D.sc/D.Litt. 0 0 0 0 0 0 0 0 0 0
+Ph.D. 0 0 0 0 0 0 0 0 0 0
+M.Phil. 0 0 0 0 0 0 0 0 0 0
+PG 0 0 0 0 0 0 0 0 0 0
+  Details of Visting/Guest Faculties
+Number of Visiting/Guest Faculty
+engaged with the college?
+Male Female Others Total
+10 0 0 10
+Provide the Following Details of Students Enrolled in the College During the Current Academic Year
+  
+Page 16/118 18-01-2019 10:52:23
+Self Study Report of THIAGARAJAR COLLEGE OF ENGINEERING
+ Programme From the State
+Where College
+is Located
+From Other
+States of India
+NRI Students Foreign
+Students
+Total
+Doctoral (Ph.D) Male 21 0 0 0 21
+Female 24 0 0 0 24
+Others 0 0 0 0 0
+UG Male 479 9 0 0 488
+Female 362 1 0 0 363
+Others 0 0 0 0 0
+PG Male 99 0 0 0 99
+Female 135 0 0 0 135
+Others 0 0 0 0 0
+  
+Page 17/118 18-01-2019 10:52:26
+Self Study Report of THIAGARAJAR COLLEGE OF ENGINEERING
+Provide the Following Details of Students admitted to the College During the last four Academic
+Years
+Programme Year 1 Year 2 Year 3 Year 4
+SC Male 98 92 89 86
+Female 80 80 70 55
+Others 0 0 0 0
+ST Male 6 11 5 3
+Female 1 0 2 2
+Others 0 0 0 0
+OBC Male 567 564 547 557
+Female 443 459 484 431
+Others 0 0 0 0
+General Male 71 68 64 66
+Female 58 51 52 51
+Others 0 0 0 0
+Others Male 0 0 0 0
+Female 0 0 0 0
+Others 0 0 0 0
+Total 1324 1325 1313 1251
+2.3 EVALUATIVE REPORT OF THE DEPARTMENTS
+  
+Page 18/118 18-01-2019 10:52:28
+Self Study Report of THIAGARAJAR COLLEGE OF ENGINEERING
+Department Name Upload Report
+Architecture View Document
+Chemistry View Document
+Civil Engineering View Document
+Computer Applications View Document
+Computer Science And Engineering View Document
+Electrical And Electronics Engineering View Document
+Electronics And Communication Engineering View Document
+Information Technology View Document
+Mathematics And English View Document
+Mechanical Engineering View Document
+Mechatronics View Document
+Physics View Document
+Page 19/118 18-01-2019 10:52:28
+Self Study Report of THIAGARAJAR COLLEGE OF ENGINEERING
+3. Extended Profile
+3.1 Program
+Number of programs offered year-wise for last five years
+ 2017-18 2016-17 2015-16 2014-15 2013-14
+21 21 21 21 18
+File Description Document
+Institutional Data in Prescribed Format View Document
+3.2 Students
+Number of students year-wise during the last five years
+ 2017-18 2016-17 2015-16 2014-15 2013-14
+4459 4329 4371 4097 4193
+File Description Document
+Institutional Data in Prescribed Format View Document
+Number of outgoing / final year students year-wise during the last five years
+ 2017-18 2016-17 2015-16 2014-15 2013-14
+1228 1194 1243 1225 1144
+File Description Document
+Institutional Data in Prescribed Format View Document
+Number of students appeared in the examination conducted by the Institution, year-wise during the last
+five years
+ 2017-18 2016-17 2015-16 2014-15 2013-14
+4569 4530 4543 4569 4442
+File Description Document
+Institutional Data in Prescribed Format View Document
+Page 20/118 18-01-2019 10:52:30
+Self Study Report of THIAGARAJAR COLLEGE OF ENGINEERING
+Number of revaluation applications year-wise during the last 5 years
+ 2017-18 2016-17 2015-16 2014-15 2013-14
+565 661 612 715 612
+3.3 Teachers
+Number of courses in all programs year-wise during the last five years
+ 2017-18 2016-17 2015-16 2014-15 2013-14
+1161 1130 1102 1022 920
+File Description Document
+Institutional Data in Prescribed Format View Document
+Number of full time teachers year-wise during the last five years
+ 2017-18 2016-17 2015-16 2014-15 2013-14
+273 276 266 273 259
+File Description Document
+Institutional Data in Prescribed Format View Document
+Number of sanctioned posts year-wise during the last five years
+ 2017-18 2016-17 2015-16 2014-15 2013-14
+290 293 293 293 275
+File Description Document
+Institutional Data in Prescribed Format View Document
+3.4 Institution
+Number of eligible applications received for admissions to all the programs year-wise during the last five
+years
+ 2017-18 2016-17 2015-16 2014-15 2013-14
+9251 7558 8462 3900 3521
+Page 21/118 18-01-2019 10:52:32
+Self Study Report of THIAGARAJAR COLLEGE OF ENGINEERING
+File Description Document
+Institutional Data in Prescribed Format View Document
+Number of seats earmarked for reserved category as per GOI/State Govt rule year-wise during the last
+five years
+ 2017-18 2016-17 2015-16 2014-15 2013-14
+1334 1334 1334 1334 1238
+File Description Document
+Institutional Data in Prescribed Format View Document
+Total number of classrooms and seminar halls
+Response: 99
+Total number of computers in the campus for academic purpose
+Response: 1677
+Total Expenditure excluding salary year-wise during the last five years ( INR in Lakhs)
+ 2017-18 2016-17 2015-16 2014-15 2013-14
+2559.76 3069.42 990.48 998.13 1295.99
+ 
+Page 22/118 18-01-2019 10:52:33
+Self Study Report of THIAGARAJAR COLLEGE OF ENGINEERING
+4. Quality Indicator Framework(QIF)
+Criterion 1 - Curricular Aspects
+   
+1.1 Curriculum Design and Development
+    1.1.1 Curricula developed /adopted have relevance to the local/ national / regional/global
+developmental needs with learning objectives including program outcomes, program specific
+outcomes and course outcomes of all the program offered by the Institution
+Response: 
+Thiagarajar College of Engineering (TCE) aims at academic excellence through innovation in curriculum,
+content delivery and assessment. The institution has received autonomy in the year 1987 from University
+Grants Commission. Each department has chosen a specific theme area such as Wireless Technologies,
+Energy and Power Systems based on the state-of- the-art technologies, regional/global developmental
+needs, available infrastructure and faculty expertise in the institution. Further, Special interest groups (SIG)
+are formed to promote research and development pertaining to local, national and global needs in the
+chosen theme area.  TCE already had much of the system in place by implementing competency based
+curriculum since 2008. This led to a smooth transition to much enhance Outcome Based Education (OBE)
+in the year 2014.
+Process of Designing curriculum at TCE:
+Credit distribution of higher learning institutions from India/Abroad, AICTE /Anna University Guidelines,
+Professional Societies such as ACM, IEEE, ASME etc.,, Institution’s Choice Based Credit System
+(CBCS) Regulations, Graduate Attributes of National Board of Accreditation, the requiremets of
+Engineering Projects in Community Services (EPICS) are considered to design overall curriculum
+framework and assign credits for the curricular components.
+The syllabus of each course is designed using the ‘concept map’ to attain the competencies. The
+components of courses are chosen Preamble, Program Outcomes, Course outomes, Assessment Pattern as
+per Bloom Taxonomy, Course Level Learning Objectives, Concept Map, Syllabus, Text and Reference
+Books and Lecture Schedule. In order to identify first level course outcomes in each SIG, inputs from
+Programme Outcomes (POs) and Programme Specific Outcomes (PSOs), Internal and External stakeholder
+feedback are taken into account. Subsequently, courses for each curricular component in each SIG are
+identified. Then, course map is prepared based on pre-requisites. This is followed by preparing scheduling
+of courses and credits for each course. The course designers prepare course outcomes with corresponding
+Bloom’s level and target level of attainment followed by course design. The Board of studies and
+Academic council are constituted every semester for approval of syllabus.
+Salient features of curriculum @TCE:
+Curriculum has been designed in collaboration with TVS Motors for Mechanical Engineering and
+Electrical and Electronics Engineering programmes.
+Industry supported courses are offered in association with industries such as Honeywell, Motorola,
+TVS Motors etc., to promote employability.
+To improve interdisciplinary learning, General Elective courses were introduced. Two general
+Page 23/118 18-01-2019 10:52:34
+Self Study Report of THIAGARAJAR COLLEGE OF ENGINEERING
+elective courses are mandatory.
+Flexible Elective and Guided Study courses have been introduced to support fast learners and to
+enable internships at industries.
+Courses on Engineering Design and Capstone have been introduced to improve the design
+capabilities. Rubrics are designed for evaluation of students’ performance. 
+Theory cum Practical course is introduced at each semester for integrated learning.
+Currently, OBE is aligned with Choice Based Credit System (CBCS). This has been fully
+implemented from the academic year 2015-16.
+The institution is now moving towards the implementation Conceive-Design-Implement-Operate (CDIO)
+based curriculum framework to solve complex engineering problems pertaining to societal needs.
+File Description Document
+Any additional information View Document
+    1.1.2 Percentage of programs where syllabus revision was carried out during the last five years
+Response: 100
+1.1.2.1 How many programs were revised out of total number of programs offered during the last five
+years
+Response: 21
+1.1.2.2 Number of all programs offered by the institution during the last five years
+Response: 21
+File Description Document
+Minutes of relevant Academic Council/BOS
+meeting
+View Document
+Details of program syllabus revision in last 5 years View Document
+    1.1.3 Average percentage of courses having focus on Employability/ Entrepreneurship/ Skill
+development during the last five years
+Response: 67.46
+1.1.3.1 Number of courses having focus on employability/ entrepreneurship/ skill development year-wise
+during the last five years
+  2017-18 2016-17 2015-16 2014-15 2013-14
+911 836 719 629 534
+Page 24/118 18-01-2019 10:52:35
+Self Study Report of THIAGARAJAR COLLEGE OF ENGINEERING
+File Description Document
+Program/ Curriculum/ Syllabus of the courses View Document
+Minutes of the Boards of Studies/ Academic
+Council meetings with approvals for these courses
+View Document
+Average percentage of courses having focus on
+employability/ entrepreneurship
+View Document
+Any additional information View Document
+   
+1.2 Academic Flexibility
+    1.2.1 Percentage of new Courses introduced out of the total number of courses across all Programs
+offered during last five years
+Response: 23.08
+1.2.1.1 How many new courses are introduced within the last five years
+Response: 886
+1.2.1.2 Number of courses offered by the institution across all programs during the last five years
+Response: 3838
+File Description Document
+Minutes of relevant Academic Council/BOS
+meetings
+View Document
+Institutional data in prescribed format View Document
+    1.2.2 Percentage of programs in which Choice Based Credit System (CBCS)/Elective course system
+has been implemented
+Response: 100
+1.2.2.1 Number of programs in which CBCS/ Elective course system implemented.
+Response: 21
+File Description Document
+Institutional data in prescribed format View Document
+   
+Page 25/118 18-01-2019 10:52:36
+Self Study Report of THIAGARAJAR COLLEGE OF ENGINEERING
+1.3 Curriculum Enrichment
+    1.3.1 Institution integrates cross cutting issues relevant to Gender, Environment and Sustainability,
+Human Values and Professional Ethics into the Curriculum
+Response: 
+The institution integrates cross cutting issues relevant to gender, environment and sustainability, human
+values and ethics by introducing specific courses in the curriculum and various activities such as
+Orientation Programmes for first year students, Women empowerment programmes and counseling
+activities. The academic courses that address these issues are listed in the following Table.
+Course Code Course Name Programme Factor addressed
+14XX250 Environmental Science All B.E./B.Tech.
+Programmes
+ 
+Environment and
+sustainability
+ 
+14CEGA0 Sustainable Development
+14CEGC0 Disaster Assessment and Mitigation
+Measures
+14EEGA0 Renewable Energy Sources
+14CEGE0 Road Safety
+14CEGF0 Basics of Climate Change and Policy
+14CS1F0 Green Data Center B.E. Computer Science
+and Engineering
+14CE240 Engineering Geology B.E Civil Engineering
+15ARPG0 Sustainable Architecture B.Arch.
+15AR320 Climate and Architecture B.Arch.
+14CE1D0 Green Construction B.E Civil Engineering
+14CE440 Waste Water Engineering B.E Civil Engineering Professional Ethics/
+Environment &
+sustainability
+14CEPA0 Municipal Solid Waste Management B.E Civil Engineering,
+M.E. Environmental
+Engineering
+Professional Ethics/
+Environment &
+sustainability
+14XX470/14X
+X670
+Professional Communication B.E./B.Tech. Programmes
+and MCA
+Professional Ethics
+ 14CERG0,
+14MERD0
+Organizational Behavior B.E./B.Tech.
+Programmes, MCA
+14EC610,
+14IT710
+Management Theory and Practice B.E./B.Tech Programmes
+14ME710,
+14EE710
+Project Management B.E./B.Tech Programmes
+In addition to these courses, the institution has Women Development Cell (WDC), counseling cell and anti-
+ragging cell to deal with the issues relevant to gender, human values and ethics.  WDC is constituted to
+facilitate women development & safety and respect to women. WDC looks into any complaint from girls &
+women staff.  WDC organizes seminars and invited lectures by domain experts to bring awareness towards
+women empowerment and legal rights.
+With an emphasis on the need of counseling the young minds, counseling cell is constituted to address the
+student’s behavioral and academic issues. It strives to provide an admissible atmosphere to the students by
+Page 26/118 18-01-2019 10:52:36
+Self Study Report of THIAGARAJAR COLLEGE OF ENGINEERING
+organizing personality development camps to overcome the gender differences, conducting training
+programmes for the students and staff on counseling.
+Anti-Ragging cell plans the activities like Anti-ragging campaign, formation of anti-ragging squad, Debate,
+Skits, Awareness talk by Government officials for curbing the ragging menace and making the students
+aware of human values. The cell addresses the complaints by the students, scrutinizes and approves the
+reports of the Anti-ragging Squad
+    1.3.2 Number of value-added courses imparting transferable and life skills offered during the last
+five years
+Response: 80
+1.3.2.1 How many new value-added courses are added within the last 5 years
+Response: 80
+File Description Document
+List of value added courses View Document
+Any additional information View Document
+    1.3.3 Average percentage of students enrolled in the courses under 1.3.2 above
+Response: 15.49
+1.3.3.1 Number of students enrolled in value-added courses imparting transferable and life skills offered
+year-wise during the last five years
+  2017-18 2016-17 2015-16 2014-15 2013-14
+958 1063 399 410 514
+    1.3.4 Percentage of students undertaking field projects / internships
+Response: 37.56
+1.3.4.1 Number of students undertaking field projects or internships
+Response: 1675
+File Description Document
+List of programs and number of students
+undertaking field projects / internships
+View Document
+Page 27/118 18-01-2019 10:52:37
+Self Study Report of THIAGARAJAR COLLEGE OF ENGINEERING
+   
+1.4 Feedback System
+    1.4.1 Structured feedback received from 1) Students, 2) Teachers, 3) Employers, 4) Alumni 5)
+Parents for design and review of syllabus Semester wise /year-wise
+A. Any 4 of above
+B. Any 3 of above
+C. Any 2 of above
+D. Any 1 of above
+Response: A. Any 4 of above
+File Description Document
+URL for stakeholder feedback report View Document
+    1.4.2 Feedback processes of the institution may be classified as follows:
+A. Feedback collected, analysed and action taken and feedback available on website
+B. Feedback collected, analysed and action has been taken
+C. Feedback collected and analysed
+D. Feedback collected
+Response: A. Feedback collected, analysed and action taken and feedback available on website
+File Description Document
+URL for feedback report View Document
+Page 28/118 18-01-2019 10:52:38
+Self Study Report of THIAGARAJAR COLLEGE OF ENGINEERING
+Criterion 2 - Teaching-learning and Evaluation
+   
+2.1 Student Enrollment and Profile
+    2.1.1 Average percentage of students from other States and Countries during the last five years
+Response: 0.29
+2.1.1.1 Number of students from other states and countries year-wise during the last five years
+  2017-18 2016-17 2015-16 2014-15 2013-14
+10 15 6 9 21
+File Description Document
+Institutional data in prescribed format View Document
+    2.1.2 Demand Ratio(Average of last five years)
+Response: 5.6
+2.1.2.1 Number of seats available year-wise during the last five years
+  2017-18 2016-17 2015-16 2014-15 2013-14
+1178 1178 1178 1178 1082
+File Description Document
+Demand Ratio (Average of Last five years) View Document
+    2.1.3 Average percentage of seats filled  against seats reserved for various categories as per
+applicable  reservation policy during the last five years
+Response: 88.96
+2.1.3.1 Number of actual students admitted from the reserved categories year-wise during the last five
+years
+  2017-18 2016-17 2015-16 2014-15 2013-14
+1134 1197 1194 1189 1132
+Page 29/118 18-01-2019 10:52:39
+Self Study Report of THIAGARAJAR COLLEGE OF ENGINEERING
+File Description Document
+Average percentage of seats filled against seats
+reserved
+View Document
+   
+2.2 Catering to Student Diversity
+    2.2.1 The institution assesses the learning levels of the students, after admission and organises special
+programs for advanced learners and slow learners
+Response: 
+ACTIVITIES FOR ADVANCED LEARNERS
+Advanced learners can register for more number of regular courses in a semester under choice based credit
+system and also industry supported courses.
+Additional Elective courses are offered during fifth, sixth and seventh semesters in lieu of three
+Programme Elective courses scheduled for eighth semester. Students who have good academic record can
+choose one additional elective in a semester. Additional electives and industry supported one and two
+credit courses facilitate the students to avail internship/projects at industries.
+Guided Study Course is offered to the students who do not have history of arrear and having greater than
+8.0 CGPA. They can study ONE course during the third year Programme of study.
+QEEE courses organized by IITs are offered to the academic excellence students during every semester.
+The students exhibiting academic excellences are motivated to attend guest lectures and online special
+courses to give exposure to acquire wide spectrum of knowledge in their domain area.
+The institution encourages advanced learners to participate in competitions, workshops, e-courses like
+NPTEL, coursera, guest-lectures, association activities, professional society activities, TEQIP funded
+projects etc.
+Students excel in academic are encouraged to actively participate in professional society, co-curricular and
+extracurricular activities like workshop, conference and competitions.
+To motivate research-based learning among students, student projects are supported with TEQIP funds.
+ACTIVITIES FOR SLOW LEARNERS
+Most of the students in our institution are from rural areas and vernacular medium.  The vernacular
+medium, lateral entry and vocational stream students find it difficult to cope up with the academic system.
+To overcome these difficulties, the following activities are carried out:
+Counseling sessions are arranged for weak students based on their performance in Continuous
+assessment test for each Course.
+Parent teacher meeting is conducted for those students, who failed in end semester examination.
+Page 30/118 18-01-2019 10:52:40
+Self Study Report of THIAGARAJAR COLLEGE OF ENGINEERING
+Bridge Course is conducted every year for Lateral Entry Students.
+Remedial Classes are arranged for Third Semester Lateral Entry Students (150 Students). These
+classes are conducted between 4.30pm to 6.30pm on all working days and 9.00am to 5.00pm on
+Saturdays
+English Fluency Class is conducted for Second and third year Tamil medium and vocational
+students (250 students) so that their soft and communication skills are improved.
+Remedial Classes are conducted between 4.30pm to 6.30pm on all working days and 9.00am to
+5.00pm on Saturdays, in bilingual mode (Tamil and English) for First Semester students (100 Tamil
+Medium and Vocational students).
+Soft Skill Development Program: Training is provided for students regarding Communication Skill
+Development, placement, and career development. A special program is arranged for 300 third and
+final year Lateral Entry Students
+Special Coaching Classes are scheduled with specific date and time for each course for the students
+who have arrears are identified from End Semester Results. This has been scheduled before
+supplementary exam schedule. These classes are conducted without affecting the regular classes.
+File Description Document
+Any additional information View Document
+    2.2.2 Student - Full time teacher  ratio
+Response: 16.33
+    2.2.3 Percentage of differently abled students (Divyangjan) on rolls
+Response: 0.11
+2.2.3.1 Number of differently abled students on rolls
+Response: 5
+File Description Document
+List of students(differently abled) View Document
+Institutional data in prescribed format View Document
+   
+2.3 Teaching- Learning Process
+    2.3.1 Student centric methods, such as experiential learning, participative learning and problem
+solving methodologies are used for enhancing learning experiences
+Response: 
+The institution offers flexibility to students to choose the courses in each semester based on their career
+plan and preference for faculty. The courses offered by industry experts provide experiential learning for
+Page 31/118 18-01-2019 10:52:41
+Self Study Report of THIAGARAJAR COLLEGE OF ENGINEERING
+the students by bridging the gap between academia and industry.
+The pedagogy group of the institute has organized training programmes/ workshop on Pedagogical tools
+and practices for faculty. Subsequently, the faculty adopted different content delivery methods based on the
+nature of the courses.  The consolidated list of content delivery methods being practiced by faculty is as
+follows: 
+Learning Management Systems like Wikispaces, MOODLE, CANVAS, Edmodo
+Customized Course Plan incorporating active learning strategies, formative and summative
+assessment methods for each course outcome.
+Active learning methods like flipped classroom, Think Pair share, Role play, Mini Projects, Peer
+Instruction and Problem Based Learning
+Collaborative learning methods like Jigsaw, Group projects, Group discussions online and offline
+Analysis of learning styles of students and adopting multimodal content delivery methods to
+address different learning needs of the students
+Sharing of Best Practices in Teaching and Learning in Faculty meetings
+Tutorial sheets/worksheets to improve problem solving ability
+Peer assessment and coaching to enhance learning experience
+Miniprojects, video presentation by students
+Study of Research papers
+ 
+The design courses in B.Arch. degree programme provide experiential learning to discern and make
+decisions with the aid of both objective information and subjective attitudes, based on reason.
+ 
+General elective courses are offered to supplement interdisciplinary learning. Foundation elective courses
+are offered by Mathematics and Science departments to all undergraduate programmes to enhance
+foundation knowledge. Guided study courses are offered to promote self learning of the students.
+ 
+The special interest group SIG activities such as learning concepts beyond curriculum, participating in
+hackathons and in reputed conferences, getting associated with sponsored projects of faculty and
+publishing technical papers in reputed journals impart enhanced learning experience  
+ 
+The institution has implemented a flexible pattern in continuous assessment for post graduate programmes
+to enhance the problem solving and design capabilities. The pattern has three in major components namely
+knowledge, presentation and professional practice. In each component, a list of assessment methods has
+been prescribed in consultation with faculty in the workshop organized by the institution. Faculty members
+can choose one of the methods in each component based on the nature of the course.
+ 
+Page 32/118 18-01-2019 10:52:41
+Self Study Report of THIAGARAJAR COLLEGE OF ENGINEERING
+    2.3.2 Percentage of teachers using ICT for effective teaching with Learning Management Systems
+(LMS), E-learning resources etc.
+Response: 76.19
+2.3.2.1 Number of teachers using ICT
+Response: 208
+File Description Document
+List of teachers (using ICT for teaching) View Document
+Provide link for webpage describing the " LMS/
+Academic management system"
+View Document
+    2.3.3 Ratio of students to mentor for academic and stress related issues
+Response: 18.58
+2.3.3.1 Number of mentors
+Response: 240
+    2.3.4 Preparation and adherence to Academic Calendar and Teaching plans by the institution
+Response: 
+The process for the preparation of academic calendar is as follows:
+Formulate Academic Calendar Committee with a committee consisting of the Registrar, the
+Controller of Examinations, Pedagogy group coordinator/Associate Dean (Teaching and Learning)
+and Faculty-in- charge.
+The faculty-in-charge collects the activities of the academic year from Associate Dean (TLP),
+Controller of Examinations, Dean (Research), Dean (Students), Dean (Industry Institute Interaction
+and Heads of the department.
+Teaching learning process activities with the schedule for start date of course registration,
+preparation of class time table, commencement of classes, uploading course plan,
+withdrawal from registered courses continuous assessment tests, assignments, class
+committee meetings, project reviews, submission of synopsis, submission of project reports,
+viva voce, B.Arch Dissertation review,  last date for mark entry in learning management
+system, Board of Studies, Academic Council, industrial visits, parent teacher meetings,
+programme performance assessment committee meetings and faculty vacation.
+Schedule for Regular and Terminal examinations, practical examinations, publication of
+results, Last date for payment of examination fee and submission of revaluation
+applications.
+Department association activities.
+Research & development activities.
+?Personality Development Camp details.
+Page 33/118 18-01-2019 10:52:42
+Self Study Report of THIAGARAJAR COLLEGE OF ENGINEERING
+Staff Mobile numbers and Intercom numbers.
+List of holidays, alumni day celebration
+Faculty-in- charge prepares draft copy of the Academic Calendar incorporating all the activities
+collected.
+Registrar conducts Academic Calendar Review meeting with Deans and HODs.
+Faculty-in-charge incorporates suggestions given in the review meeting.
+Registrar convenes the standing committee for the approval of the academic calendar
+Faculty-in-charges gets the Academic calendar printed and distributes to faculty, staff & students
+and publishes the soft copy of Academic calendar in website.
+Adherence to Academic Calendar: 
+All activities are conducted by the respective HoDs/Deans/Controller of Examinations/ Registrar as per the
+academic calendar. The industry supported courses are conducted as per the availability of the experts from
+industry. Normally, few scheduled activities are deviated due to some unavoidable circumstances like
+placement, declaration of holidays under negotiable instruments act by the Government.  
+Teaching Plans: 
+In our institution, the teaching plans (Course plans) are prepared by the faculty at the beginning of the
+semester and uploaded in the Learning Management Software (LMS). Students can view the plan and
+prepare accordingly. The teaching plan contains the module number, topic name, number of hours,
+teaching methodology and date.
+   
+2.4 Teacher Profile and Quality
+    2.4.1 Average percentage of full time teachers against sanctioned posts during the last five years
+Response: 93.3
+File Description Document
+Year wise full time teachers and sanctioned posts
+for 5 years
+View Document
+    2.4.2 Average percentage of full time teachers with Ph.D. during the last five years
+Response: 57.04
+2.4.2.1 Number of full time teachers with Ph.D. year-wise during the last five years
+  2017-18 2016-17 2015-16 2014-15 2013-14
+169 165 156 145 134
+Page 34/118 18-01-2019 10:52:43
+Self Study Report of THIAGARAJAR COLLEGE OF ENGINEERING
+File Description Document
+List of number of full time teachers with PhD and
+number of full time teachers for 5 years
+View Document
+    2.4.3 Teaching experience per full time teacher in number of years
+Response: 13.28
+2.4.3.1 Total experience of full-time teachers
+Response: 3626
+    2.4.4 Percentage of full time teachers who received awards, recognition, fellowships at State,
+National, International level from Government, recognised bodies during the last five years
+Response: 46.03
+2.4.4.1 Number of full time teachers receiving awards from state /national /international level from
+Government recognised bodies year-wise during the last five years
+  2017-18 2016-17 2015-16 2014-15 2013-14
+23 35 16 33 17
+File Description Document
+Institutional data in prescribed format View Document
+    2.4.5 Average percentage of full time teachers from other States against sanctioned posts during the
+last five years
+Response: 3.74
+2.4.5.1 Number of full time teachers from other states year-wise during the last five years
+  2017-18 2016-17 2015-16 2014-15 2013-14
+11 11 11 11 10
+File Description Document
+List of full time teachers from other state and state
+from which qualifying degree was obtained
+View Document
+Page 35/118 18-01-2019 10:52:44
+Self Study Report of THIAGARAJAR COLLEGE OF ENGINEERING
+   
+2.5 Evaluation Process and Reforms
+    2.5.1 Average number of days from the date of last semester-end/ year- end examination till the
+declaration of  results during the last five years
+Response: 21
+2.5.1.1 Number of days from the date of last semester-end/ year- end examination till the declaration
+of results year-wise during the last  five years
+  2017-18 2016-17 2015-16 2014-15 2013-14
+18 21 22 22 22
+File Description Document
+List of programs and date of last semester and date
+of declaration of result
+View Document
+    2.5.2 Average percentage of student complaints/grievances about evaluation against total number
+appeared in the examinations during the last five years
+Response: 13.97
+2.5.2.1 Number of complaints/grievances about evaluation year-wise during the last five years
+  2017-18 2016-17 2015-16 2014-15 2013-14
+565 661 612 715 612
+    2.5.3 Average percentage of applications for revaluation leading to change in marks during the last
+five years 
+Response: 22.4
+2.5.3.1 Number of applications for revaluation leading to change in marks year-wise during the last five
+years
+  2017-18 2016-17 2015-16 2014-15 2013-14
+134 163 133 136 140
+Page 36/118 18-01-2019 10:52:45
+Self Study Report of THIAGARAJAR COLLEGE OF ENGINEERING
+File Description Document
+Any additional information View Document
+    2.5.4 Positive impact of reforms on the examination procedures and processes including IT
+integration and continuous internal assessment on the examination management system
+Response: 
+The institution has automated academic and examination process.
+The institution has adopted a revised assessment pattern for postgraduate programmes from the
+academic year 2017-18 in continuous internal assessment. An interim assessment to measure
+knowledge/concept level understanding, presentation skill and professional skill is introduced in the
+revised assessment pattern.   
+The Controller of Examinations (CoE) office has adopted student centric and transparent practices
+by automating the examination processes. Starting from course registration to publication of results
+is carried out digitally, resulting in error free and faster operation.  The examination schedule is
+published in automated software and students can view it using mobile app also. All
+announcements are made using automated software so as to reach all stakeholders instantly.  
+The semester examination answer scripts are first assigned dummy numbers based on bar code. The
+examiners who evaluate the answer scripts do not know the identity of the students.
+The system of issuing hall tickets has been abolished for the students on roll in the current
+academic year as the students have valid ID card. This saves time and efforts required for printing
+and distributing the hall tickets.
+The appointment orders for setting question papers and evaluation are issued through mail. The
+examiners upload the soft copy in encrypted form.  This ensures confidentiality as well as ease of
+operation. The question paper uploaded by the examiner is directly printed so as to avoid spelling
+mistakes, errors in figures etc.
+Academic verification of the credentials of the passed out students is also performed by the office
+online. Any recruiter or the student can apply online to verify the genuineness of the degree and
+marks. Result of verification is also communicated to the applicant online.
+After the publication of the results, the students can go-through their answer scripts and scheme of
+evaluation. If the student feels that there is scope for additional marks, they can also apply for
+revaluation with specific appeal.  The appeals are examined by faculty during revaluation of the
+answer paper and verified by Head of the department. This improves fairness.
+Examination squads are constituted to ensure fair conduct of theory examinations and also to verify
+adherence to norms and rules to be followed.
+Periodically, the question papers of semester examinations are subjected to academic audit by
+Page 37/118 18-01-2019 10:52:46
+Self Study Report of THIAGARAJAR COLLEGE OF ENGINEERING
+experts from higher learning institutions in order to identify scope for improvement in the standard
+of questions. For the use of the students, all the question papers of the previous examinations are
+published in the website in the form of archive for access by the students.
+A student, who has got pending arrears after programme completion can apply online for arrear
+examinations. This facilitates ease for both students and COE office.
+Thus, the adoption of IT in the entire chain leads to significant advantages to students, supporting
+staff and faculty and ultimately to the institution
+    2.5.5 Status of automation of Examination division along with approved Examination Manual
+A. 100% automation of entire division & implementation of Examination Management System
+(EMS)
+B. Only student registration, Hall ticket issue & Result Processing
+C. Only student registration and result processing
+D. Only result processing
+Response: A. 100% automation of entire division & implementation of Examination Management System
+(EMS)
+File Description Document
+Current manual of examination automation system
+and Annual reports of examination including the
+present status of automation
+View Document
+Current Manual of examination automation system View Document
+   
+2.6 Student Performance and Learning Outcomes
+    2.6.1 Program outcomes, program specific outcomes and course outcomes for all programs offered
+by the Institution are stated and displayed on website and communicated to teachers and students
+Response: 
+The institution implemented competency based curriculum in the academic year 2008-09 and subsequently
+it was refined in alignment with the accreditation policy of National Board of Accreditation and offered as
+Outcome Based Education (OBE). In OBE, the Programme Educational Objectives (PEO), Programme
+Specific Outcomes (PSO), Programme Outcomes (PO) of each programme are prepared as follows. The
+initial draft of PEOs, PSOs and POs is prepared by the head of the department, the coordinator for
+Teaching and Learning Process, the program coordinator and senior faculty members of the department,
+based on the Vision/Mission of the department, theme area of the department, feedback from internal and
+external stakeholders and the graduate attributes. The initial draft is refined in the department faculty
+Page 38/118 18-01-2019 10:52:46
+Self Study Report of THIAGARAJAR COLLEGE OF ENGINEERING
+meetings in alignment with the Vision and Mission of the department. This process is repeated and refined
+further and the final version is placed in Board of Studies (BoS) meeting for discussion. The
+suggestions/comments given by the members of the BoS are incorporated and the refined PEOs, PSOs and
+POs are submitted to the standing committee of the Academic Council to pass it to the Academic Council
+Meeting (ACM). The suggestions/comments given by the members of the Academic Council are
+incorporated and the final version of the PEOs, PSOs and POs are published and disseminated to the
+internal and external stakeholders.
+Sample activities for communicating the Vision, Mission and PEO, PSO and PO are as follows:
+Activity Schedule Stakeholder
+First Semester Orientation Programme One Week before the
+commencement of first semester
+classes
+First Semester Students
+Association Inaugural Function As per the Academic Calendar Senior Students
+Faculty Meeting First faculty meeting in every
+semester
+Faculty
+Technical/Support Staff Meeting First meeting in every semester Support/Technical Staff
+Parent Teacher Meeting As per the academic Calendar Parents
+Alumni Meeting As per the schedule by Alumni
+Association
+Alumni
+Board of Studies Meeting As per the academic calendar Industry personnel, alumni,
+experts from higher learning
+institutions
+Industry Supported Courses Scheduled based on the
+availability of the experts who are
+offering the course
+Industry personnel
+Events organized Professional societies As per the schedule finalized by
+the staff coordinator
+Professional Society
+ 
+Sample Course Outcomes:
+Programme: B.E. (Electronics and Communication Engineering)
+Course Name: Signal Processing
+S.No Course Outcomes
+CO1 Compute DFT and IDFT coefficients of a given discrete time sequence using Fast Fourier
+Transform algorithms
+CO2 Design IIR digital filters from analog filters for a given specification
+CO3 Design Linear phase FIR digital filters using windowing and frequency sampling methods
+CO4 Draw the implementation structure of IIR and FIR discrete time systems using block diagram and
+signal flow graph representation.
+CO5 Compute statistical parameters like mean, correlation and psd  of a given random variable or
+random processes at the output of a LTI system
+CO6 Analyze the spectral characteristics of time dependent and random signals
+CO7 Design LTI systems for noise reduction & signal enhancement, linear prediction and analyzing
+Page 39/118 18-01-2019 10:52:46
+Self Study Report of THIAGARAJAR COLLEGE OF ENGINEERING
+the effects of finite precision representation of system coefficients and truncation/rounding of
+intermediate computation.
+ 
+File Description Document
+Any additional information View Document
+    2.6.2 Attainment of program outcomes, program specific outcomes and course outcomes are
+evaluated by the institution
+Response: 
+The assessment tools for measuring attainment of Course Outcomes:
+Continuous Assessment Tests
+The question papers are set based on the assessment pattern and the Bloom’s Cognitive level.
+Assignments
+The assignments are given at the higher order cognitive levels of the course.  The assignments are in the
+form of worksheets. Quiz, open book test, mini projects, case studies, seminar presentation, review of
+journal papers etc. 
+Terminal Examination
+The question papers are set based on the assessment pattern and the Bloom’s Cognitive level.
+Project Review:
+Three project reviews are conducted and the assessment is based on rubrics
+Course Exit Survey
+This survey is obtained before the start of the next semester
+ 
+In our institute, OBE has been in practice from the academic year 2014-15. All the questions in continuous
+assessment tests, terminal examination and assignments and activities are mapped with course outcomes.
+The course outcomes are measured based on the performance in continuous assessment tests, assignments,
+terminal examination and course exit survey. However, for the graduates passed out in the academic years
+2015, 2016 and 2017, student marks for each question in the test, exam and assignment have not been
+recorded.   Hence, the course outcomes for these graduates are measured based on the cumulative
+continuous assessment marks and performance in terminal examination. The target for COs in a course is
+Page 40/118 18-01-2019 10:52:47
+Self Study Report of THIAGARAJAR COLLEGE OF ENGINEERING
+set based on the performance in the course by the graduated students in the academic years 2012, 2013 and
+2014.
+ 
+The expected proficiency of each course is set based on the cumulative probability (from the highest grade)
+of the grades obtained by the batch of students 2008-2012, 2009-2013 and 2010-2014. The expected
+attained level (Number of students in percentage) is fixed as 20% more than the average number of
+students in the last three batches. 
+ 
+The direct and indirect performance assessments tools for POs and PSOs are as follows:  
+Direct Assessment Tools
+Assessment Tool Purpose Measurable COs/POs
+Three Internal Assessment
+Tests
+Measuring continuous improvement In each case, attainment of the
+COs is measured and it is used to
+measure POs which are directly
+mapped.
+ 
+These are helpful in the
+attainment of various POs and
+PSOs.
+Terminal Examination Testing of acquired knowledge
+Laboratory Continuous
+Assessment
+Pruning of Domain knowledge skills and
+usage of modern tools & techniques
+Internal & External
+Laboratory Examination
+Testing of domain knowledge skills and
+usage of modern tools & techniques
+Assignments/Projects/Seminar
+s
+Testing of domain knowledge,
+Communication Skills & writing skills,
+self learning along with ethical standard,
+teamwork, entrepreneurial skills of
+identifying the scope of new products
+Quiz Testing of domain knowledge,
+Communication Skills
+ 
+Table 2: Indirect Assessment Tools
+Assessment Tool Purpose Measurable POs and PSOs
+Course exit survey Effective Content delivery
+Professional & Ethical practices
+All POs and PSOs are measured
+using indirect assessment tools.
+Graduates exit survey Evaluate the attainment of  individual program
+outcome
+ 
+Percentage level for the attainment of POs
+Component Percentage
+Curricular Component 60%
+Page 41/118 18-01-2019 10:52:47
+Self Study Report of THIAGARAJAR COLLEGE OF ENGINEERING
+Co-Curricular Component 20%
+Graduate Exit Survey 20%
+ 
+ 
+    2.6.3 Average pass percentage of Students 
+Response: 89.5
+2.6.3.1 Total number of final year students who passed the examination conducted by Institution.
+Response: 1099
+2.6.3.2 Total number of final year students who appeared for the examination conducted by the institution
+Response: 1228
+File Description Document
+List of programs and number of students passed and
+appeared in the final year examination
+View Document
+   
+2.7 Student Satisfaction Survey
+    2.7.1 Online student satisfaction survey regarding teaching learning process
+Response: 3.17
+Page 42/118 18-01-2019 10:52:47
+Self Study Report of THIAGARAJAR COLLEGE OF ENGINEERING
+Criterion 3 - Research, Innovations and Extension
+   
+3.1 Promotion of Research and Facilities
+    3.1.1 The institution has a well defined policy for promotion of research and the same is uploaded on
+the institutional website
+Response: Yes
+File Description Document
+Minutes of the Governing Council/ Syndicate/Board
+of Management related to research promotion policy
+adoption
+View Document
+URL of Policy document on promotion of
+research uploaded on website
+View Document
+    3.1.2 The institution provides seed money to its teachers for research (average per year)
+Response: 188.3
+3.1.2.1 The amount of seed money provided by institution to its faculty year-wise during the last five
+years(INR in Lakhs)
+  2017-18 2016-17 2015-16 2014-15 2013-14
+268.89 233.75 138.44 110.15 190.25
+File Description Document
+Minutes of the relevant bodies of the Institution View Document
+List of teachers receiving grant and details of grant
+received
+View Document
+Budget and expenditure statements signed by the
+Finance Officer indicating seed money provided and
+utilized
+View Document
+    3.1.3 Number of teachers awarded international fellowship for advanced studies/ research  during
+the last five years
+Response: 3
+3.1.3.1 The number of teachers awarded international fellowship for advanced studies / research year-wise
+during the last five years
+Page 43/118 18-01-2019 10:52:48
+Self Study Report of THIAGARAJAR COLLEGE OF ENGINEERING
+  2017-18 2016-17 2015-16 2014-15 2013-14
+1 0 0 1 1
+File Description Document
+List of teachers and their international fellowship
+details
+View Document
+e-copies of the award letters of the teachers. View Document
+    3.1.4 Institution has the following facilities
+1.Central Instrumentation Centre
+2.Animal House/Green House / Museum
+3.Central Fabrication facility
+4.Media laboratory/Business Lab/Studios
+5.Research / Statistical Databases
+A. Any four facilities exist
+B. Three of the facilities exist
+C. Two of the facilities exist
+D. One of the facilities exist
+Response: A. Any four facilities exist
+File Description Document
+Institutional data in prescribed format View Document
+   
+3.2 Resource Mobilization for Research
+    3.2.1 Grants for research projects sponsored by the non-government sources such as industry,
+corporate houses, international bodies, endowments,Chairs in the institution during the last five
+years (INR in Lakhs)
+Response: 1638.11
+3.2.1.1 Total Grants for research projects sponsored by the non-government sources such as industry,
+corporate houses, international bodies, endowments, Chairs in the institution year-wise during the last five
+years(INR in Lakhs)
+Page 44/118 18-01-2019 10:52:49
+Self Study Report of THIAGARAJAR COLLEGE OF ENGINEERING
+  2017-18 2016-17 2015-16 2014-15 2013-14
+184.12 128.42 72.19 568.83 684.55
+File Description Document
+List of project and grant details View Document
+e-copies of the grant award letters for research
+projects sponsored by non-government
+View Document
+    3.2.2 Number of research centres recognised by University and National/ International Bodies
+Response: 9
+3.2.2.1 Number of research centres recognised by University and National/ International Bodies
+Response: 9
+File Description Document
+Names of research centres View Document
+Any additional information View Document
+    3.2.3 Percentage of teachers recognised as research guides
+Response: 41.48
+3.2.3.1  Number of teachers recognised as research guides
+Response: 112
+3.2.3.2 Number of full time teachers worked in the institution during the last 5 years
+Response: 270
+File Description Document
+Details of teachers recognized as research guide View Document
+Any additional information View Document
+    3.2.4 Number of research projects per teacher funded, by government and non-government agencies,
+during the last five year
+Response: 1.43
+Page 45/118 18-01-2019 10:52:50
+Self Study Report of THIAGARAJAR COLLEGE OF ENGINEERING
+3.2.4.1 Number of research projects  funded by government and non-government agencies during the last
+five years
+Response: 77
+File Description Document
+Supporting document from Funding Agency View Document
+Any additional information View Document
+link to funding agency website View Document
+   
+3.3 Innovation Ecosystem
+    3.3.1 Institution has created an eco system for innovations including Incubation centre and other
+initiatives for creation and transfer of knowledge
+Response: 
+a).Entrepreneurship Development Cell:
+            The Entrepreneurship Development Cell (EDC) of the institute comes under the ambit of Industry
+institute interaction. Under the supervision of Dean (III), the Associate dean and department level
+coordinators  EDC organizes the work plan of the Entrepreneurship promotion activities. The cell
+has Student CEO and Student Vice President  to take care of the activities of E-cell. It is affiliated to
+Young Indians Students Chapter, Confederation of Indian Industry (CII) and Native Lead Foundation, who
+are funding the startups.  TCE is empanelled under PM –YUVA  and also a special elective course on
+“Entrepreneurship Development “is being taught for the last seven years. It  has  an exclusive  1200 square
+feet area with 20 co-working space, one number of  Rapid Prototyping  machine with 3D Printer and
+system facilities. The E-Cell conducts events such as Starturpreneur, Bazaar day, Mr. Manager, Discoverer
+or innovator, Business model boot camp and Hackathons, Biz plan, E-quiz on business, etc and organizing
+guest lectures to motivate the students in entrepreneurship.
+b).Technology Business Incubator
+During 2014, a Technology Business Incubator (TBI) has been established in Thiagarajar College of
+Engineering under the aegis of DST, India, with objectives (i) to facilitate commercialization of R&D
+technologies, (ii) to promote faculty to incubate start-up companies in collaborative mode and (iii) to
+facilitate alumni and local entrepreneurs to establish start-up venture. Currently 4 start-up companies
+developing software are in place.
+c).European Technology Experience centre
+European Business and Technology Centre (EBTC) and TCE have embarked together to form an
+institutional collaboration to support and facilitate European and Indian partnerships at the business,
+research, and entrepreneurship levels. In TCE, European Technology Experience centre (ETEC) has been
+established and is an entrepreneurial environment where students, researchers, entrepreneurs can explore
+Page 46/118 18-01-2019 10:52:51
+Self Study Report of THIAGARAJAR COLLEGE OF ENGINEERING
+new technologies, learn about technology developments and research carried out by their counterparts in
+EU and India. This centre facilitates Indian Start-ups/ entrepreneurs / researchers / to collaborate and do
+joint projects and develop products in water and clean energy technologies.
+d).EDII Nodal Hub @ TCE
+Entrepreneurship Development and Innovation institute, Tamil Nadu has launched “Innovation and
+Entrepreneurship Development program (IEDP)” to promote entrepreneurship among students. TCE has
+been recognized as the Nodal centre to promote entrepreneurship activities in colleges in and around
+Madurai region. EDII hub @ TCE caters the entrepreneurship promotion activities in 32 spoke institutes
+that are Engineering, Science, Arts and Management. EDII hub @ TCE organizes E leader programme,
+Business plan contests, startup activation program, Boot camps and Idea contests. The selected ideas are
+also considered for further funding by TBI @ TCE after series of mentoring with due diligence. 
+e).Thiagarajar Entrepreneur Network (TEN) 
+Thiagarajar Entrepreneur Network (TEN) is the alumni entrepreneur network association formulated in
+2017 and launched by TCE and its Alumni Entrepreneurs.  This network has so far received registration
+from 300+ alumni entrepreneurs and has chapters in other cities like Chennai and Bangalore.  TEN act as a
+platform for the interaction between aspiring student entrepreneurs and successful alumni entrepreneurs. 
+File Description Document
+link for additional information View Document
+    3.3.2 Number of workshops/seminars conducted on Intellectual Property Rights (IPR) and Industry
+- Academia Innovative practices during the last five years
+Response: 100
+3.3.2.1 Total number of workshops/seminars conducted on Intellectual Property Rights (IPR) and Industry-
+Academia Innovative practices year-wise during the last five years
+  2017-18 2016-17 2015-16 2014-15 2013-14
+21 27 20 23 9
+File Description Document
+Report of the event View Document
+List of workshops/seminars during the last 5 years View Document
+    3.3.3 Number of awards for innovation won by institution/ teachers/ research scholars/students
+Page 47/118 18-01-2019 10:52:52
+Self Study Report of THIAGARAJAR COLLEGE OF ENGINEERING
+during the last five years
+Response: 148
+3.3.3.1 Total number of awards for innovation won by institution/teachers/research scholars/students year-
+wise during the last five years
+  2017-18 2016-17 2015-16 2014-15 2013-14
+24 59 22 27 16
+File Description Document
+List of innovation and award details View Document
+e- copies of award letters View Document
+    3.3.4 Number of start-ups incubated on campus during the last five years
+Response: 7
+3.3.4.1 Total number of start-ups incubated on campus year-wise during the last five years
+  2017-18 2016-17 2015-16 2014-15 2013-14
+2 1 3 0 1
+File Description Document
+List of startups details like name of startup, nature,
+year of commencement etc
+View Document
+e- sanction order of the Institution for the start ups
+on campus
+View Document
+Contact details of the promoters for information View Document
+   
+3.4 Research Publications and Awards
+    3.4.1 The institution has a stated Code of Ethics to check malpractices and plagiarism in Research
+Response: Yes
+File Description Document
+Institutional data in prescribed format View Document
+Page 48/118 18-01-2019 10:52:53
+Self Study Report of THIAGARAJAR COLLEGE OF ENGINEERING
+    3.4.2 The institution provides incentives to teachers who receive state, national and international
+recognition/awards
+Response: Yes
+File Description Document
+e- copies of the letters of awards View Document
+Any additional information View Document
+    3.4.3 Number of Patents published/awarded during the last five years
+Response: 12
+3.4.3.1 Total number of  Patents published/awarded year-wise during the last five years
+  2017-18 2016-17 2015-16 2014-15 2013-14
+2 3 1 3 3
+File Description Document
+List of patents and year it was awarded View Document
+Any additional information View Document
+    3.4.4 Number  of Ph.D.s awarded per teacher during the last five years
+Response: 1.75
+3.4.4.1 How many Ph.Ds are awarded within last 5 years
+Response: 196
+3.4.4.2 Total number of teachers recognised as guides during the last 5 years
+Response: 112
+File Description Document
+List of PhD scholars and their details like name of
+the guide , title of thesis, year of award etc
+View Document
+Any additional information View Document
+URL to the research page on HEI web site View Document
+Page 49/118 18-01-2019 10:52:54
+Self Study Report of THIAGARAJAR COLLEGE OF ENGINEERING
+    3.4.5 Number of research papers per teacher in the Journals notified on UGC website during the last
+five years
+Response: 3.02
+3.4.5.1 Number of research papers in the Journals notified on UGC website during the last five years
+  2017-18 2016-17 2015-16 2014-15 2013-14
+170 110 162 188 183
+File Description Document
+List of research papers by title, author, department,
+name and year of publication
+View Document
+    3.4.6 Number of books and chapters in edited volumes / books published, and papers in
+national/international conference-proceedings per teacher during the last five years
+Response: 1.98
+3.4.6.1 Total number of books and chapters in edited volumes / books published, and papers in
+national/international conference-proceedings year-wise during the last five years
+  2017-18 2016-17 2015-16 2014-15 2013-14
+55 96 99 115 168
+File Description Document
+List books and chapters in edited volumes / books
+published
+View Document
+    3.4.7 Bibliometrics of the publications during the last five years based on average citation index in
+Scopus/ Web of Science or PubMed/ Indian Citation Index
+Response: 4.05
+File Description Document
+BiblioMetrics of the publications during the last five
+years
+View Document
+Any additional information View Document
+Page 50/118 18-01-2019 10:52:56
+Self Study Report of THIAGARAJAR COLLEGE OF ENGINEERING
+    3.4.8 Bibliometrics of the publications during the last five years based on Scopus/ Web of Science - h-
+index of the Institution
+Response: 30
+File Description Document
+Bibiliometrics of publications based on Scopus/
+Web of Science - h-index of the Institution
+View Document
+Any additional information View Document
+   
+3.5 Consultancy
+    3.5.1 Institution has a policy on consultancy including revenue sharing between the institution and
+the individual
+Response: Yes
+File Description Document
+Soft copy of the Consultancy Policy View Document
+Minutes of the Governing Council/ Syndicate/Board
+of Management related to Consultancy policy
+View Document
+URL of the consultancy policy document View Document
+    3.5.2 Revenue generated from consultancy during the last five years
+Response: 152.24
+3.5.2.1 Total amount generated from consultancy year-wise during the last five years (INR in Lakhs)
+  2017-18 2016-17 2015-16 2014-15 2013-14
+80.51017 12.03388 27.60044 16.01937 16.07858
+File Description Document
+List of consultants and revenue generated by them View Document
+Audited statements of accounts indicating the
+revenue generated through consultancy
+View Document
+    3.5.3 Revenue generated from corporate training by the institution during the last five years
+Page 51/118 18-01-2019 10:52:57
+Self Study Report of THIAGARAJAR COLLEGE OF ENGINEERING
+Response: 1.97
+3.5.3.1 Total amount  generated from corporate training by the institution year-wise during the last five
+years (INR in Lakhs)
+  2017-18 2016-17 2015-16 2014-15 2013-14
+0.15 .48 .448 .448 .448
+File Description Document
+List of teacher consultants and revenue generated by
+them
+View Document
+Audited statements of account indicating the
+revenue generated through training
+View Document
+   
+3.6 Extension Activities
+    3.6.1 Extension activities in the neighbourhood community in terms of impact and  sensitising
+students to social issues and holistic development during the last five years
+Response: 
+3.6.1 Extension Activities for Neighbourhood Community
+Polymer - Bitumen Mix Road
+Padmashri. Dr.R.Vasudevan has been instrumental in laying plastic road of about 1,00,000 kilometers with
+a innovative polymer Bitumen mix technology for which the Indian Road Congress has given a code. He
+has laid road throughout India for State Government, DRDA, NRRD and MoE&F. He has been conferred
+a number of prestigious awards including Padmashri by Govt. of India.
+EPICS - 2017 onwards
+TCE is the member of Purdue University's Engineering Projects in  Community Services (EPICS)
+programme since 2017 and also in IEEE-EPICS Consortium - Chennai Chapter. It facilitates students to do
+community based projects through human-centered design approach. Twenty faculty members have been
+trained in Design Thinking by Prof. Willaim Oakes of Purdue University.
+Tree walk - Dec-2017
+This program is to identify the species of flora and fauna inside TCE campus and  was organized by
+college NSS along with Prof. Stephen, American College Madurai Green Foundation and Dhan
+Foundation, Madurai on 17th Dec 2017. This walk had audience from Madurai Medical College, CSI
+Page 52/118 18-01-2019 10:52:57
+Self Study Report of THIAGARAJAR COLLEGE OF ENGINEERING
+Nursing college and TCE. The group labeled about 100 species, their name , biological name, medicinal
+usage and their origin.
+Vaigai River Restoration Project - Dec 2015- Jan 2016
+This project was done by TCE and Graduate school of Architecture, Columbia University, USA focusing
+on reimagining issues of River Vaigai and the Urbanism in Madurai. Nearly 15 students from Columbia
+university and 78 students from Department of Architecture participated. The proposals were drawn on
+rethinking Madurai river channels for future development, creating a food hub and spoke networks and
+Riparian zones, water inequity and reconnecting the tank system.
+Vaigai River Restoration Pageant & Project:  Jan 2014 – April 2014
+This project is a social action art initiative to restore the sacred Vaigai River which is in a severe
+environmental crisis due to pollution, waste dumping, and the drying effects of climate change. The project
+raises awareness to mitigate toxic chemical pollution and contamination, poor water flow and promotes
+ecologically sustainable solutions for irrigation and safe drinking water. Performances by local artists and
+community groups include theater, dance, songs and poetry are done highlighting current issues and future
+restoration of the river.
+ICHARVEST - 2012
+A project named ICHARVEST sponsored by DST, basically provides technical training namely English
+communication skill, computer usage and Printed Circuit Board fabrication for the rural women. A village
+named Vilachery where about 25 women were trained in the above said skills. The outcomes are
+empowerment of rural women, trained women workforce and improved employment for women to attain
+economic independence along with awareness on children education, cleanliness, food and nutrition,
+savings and family health.
+ETEC Industry Survey - 2015
+European Technology Experience Centre, a unit of EBTC, Bangalore  conducted industry survey in
+southern part of Tamilnadu to identify the technology needs and to implement / develop green technology
+solutions. About 50 industries were surveyed and a report on the proposed green technologies for theses
+industries were presented to Fraunhofer,MOEZ, Germany.
+ 
+ 
+File Description Document
+link for additional information View Document
+    3.6.2 Number of awards and recognition received for extension activities from Government
+/recognised bodies during the last five years
+Page 53/118 18-01-2019 10:52:58
+Self Study Report of THIAGARAJAR COLLEGE OF ENGINEERING
+Response: 52
+3.6.2.1 Total number of awards and recognition received for extension activities from Government
+/recognised bodies year-wise during the last five years
+  2017-18 2016-17 2015-16 2014-15 2013-14
+14 6 16 9 7
+File Description Document
+Number of awards for extension activities in last 5
+years
+View Document
+e-copy of the award letters View Document
+    3.6.3 Number of extension and outreach Programs conducted in collaboration with Industry,
+Community and Non- Government Organizations through NSS/ NCC/ Red Cross/ YRC etc., during
+the last five years 
+Response: 181
+3.6.3.1 Number of extension and outreach Programs conducted in collaboration with Industry, Community
+and Non- Government Organizations through NSS/ NCC/ Red Cross/ YRC etc., year-wise during the last
+five years
+  2017-18 2016-17 2015-16 2014-15 2013-14
+44 59 47 16 15
+File Description Document
+Reports of the event organized View Document
+Number of extension and outreach programs
+conducted with industry,community etc for the last
+five years
+View Document
+    3.6.4 Average percentage of students participating in extension activities with Government
+Organisations,  Non-Government Organisations and programs such as Swachh Bharat, Aids
+Awareness, Gender Issue, etc. during the last five years
+Response: 72.01
+Page 54/118 18-01-2019 10:52:59
+Self Study Report of THIAGARAJAR COLLEGE OF ENGINEERING
+3.6.4.1 Total number of students participating in extension activities with Government Organisations, Non-
+Government Organisations and programs such as Swachh Bharat, Aids Awareness, Gender Issue, etc. year-
+wise during the last five years
+  2017-18 2016-17 2015-16 2014-15 2013-14
+3310 2751 3408 3540 2428
+File Description Document
+Report of the event View Document
+Average percentage of students participating in
+extension activities with Government or NGO etc
+View Document
+   
+3.7 Collaboration
+    3.7.1 Number of Collaborative activities for  research, faculty exchange, student exchange per year
+Response: 79
+3.7.1.1 Total number of Collaborative activities for  research, faculty exchange, student exchange year-
+wise during the last five years
+  2017-18 2016-17 2015-16 2014-15 2013-14
+134 68 109 41 43
+File Description Document
+Number of Collaborative activities for research,
+faculty etc
+View Document
+Copies of collaboration View Document
+    3.7.2 Number of linkages with institutions/industries for internship, on-the-job training, project
+work, sharing of research facilities etc. during the last five years
+Response: 435
+3.7.2.1 Number of linkages for faculty exchange, student exchange, internship, field trip, on-the-job
+training, research, etc year-wise during the last five years
+  
+Page 55/118 18-01-2019 10:53:00
+Self Study Report of THIAGARAJAR COLLEGE OF ENGINEERING
+2017-18 2016-17 2015-16 2014-15 2013-14
+139 115 64 56 61
+File Description Document
+e-copies of linkage related Document View Document
+Details of linkages with institutions/industries for
+internship
+View Document
+    3.7.3 Number of functional MoUs with institutions of National/ International importance, Other
+Institutions, Industries, Corporate houses etc., during the last five years (only functional MoUs with
+ongoing activities to be considered) 
+Response: 30
+3.7.3.1 Number of functional MoUs with institutions of national, international importance, other
+universities, industries, corporate houses etc. year-wise during the last five years (only functional MoUs
+with ongoing activities to be considered)
+  2017-18 2016-17 2015-16 2014-15 2013-14
+6 7 5 5 7
+File Description Document
+e-copies of the MoUs with institution/ industry/
+corporate house
+View Document
+Details of functional MoUs with institutions of
+national, international importance,other universities
+etc during the last five years
+View Document
+Page 56/118 18-01-2019 10:53:00
+Self Study Report of THIAGARAJAR COLLEGE OF ENGINEERING
+Criterion 4 - Infrastructure and Learning Resources
+   
+4.1 Physical Facilities
+    4.1.1 The institution has adequate facilities for teaching - learning. viz., classrooms, laboratories,
+computing equipment, etc
+Response: 
+Facilities for Teaching & Learning Process
+Classrooms
+Number of classrooms : 92 (Seating Capacity of 40 to 75)
+All classrooms are equipped with Multimedia Projector, Podium, Fan, Light, Table with chair,
+Glass board with good ambience, adequate lighting and good ventilation.
+All classroom size is equal to or more than that stipulated by statutory bodies.
+One classroom of each department is equipped with Lecture Capturing System.
+Media Laboratory has camera, editing and casting facility to record lectures.
+All classrooms are enabled with wi-fi facility to implement Active Learning through MOOCs,
+Plicker, Clickers, etc.,
+ 
+Tutorial Rooms
+Number of Tutorial rooms : 16 (Seating Capacity of 30 to 40)
+This  tutorial hall is equipped with LCD Projector, Wi-fi, White Board, and chairs attached with
+writing pad.
+Seminar Halls
+Number of Seminar Halls : 7 (Seating Capacity of 50 to 100)
+Seminar Halls are equipped with LCD Projector with Smart board facility, Wi-Fi, Audio and Video
+facilities for effective Teaching learning process.
+ 
+Drawing Hall
+Number of Drawing Hall : 3 (Seating Capacity of 30 to 70)
+Drawing halls are equipped with Drawing tables, Chairs, Fans, Light with good ventilation and
+ambience.
+Page 57/118 18-01-2019 10:53:01
+Self Study Report of THIAGARAJAR COLLEGE OF ENGINEERING
+ 
+Laboratories
+Number of Laboratories :  89(Seating Capacity of 30 to 60)
+All Laboratories are equipped with state of the art facilities with adequate safety measures and
+periodic maintenance mainly system maintenance, antivirus updations, software updations,
+calibration and servicing.
+Few of the Laboratories are funded by International Companies like National Instruments,
+AlteraVLSI, Agilent Technologies, National Instruments, Motorola, Honeywell, Bentley,
+Microsoft, IBM, Siemens , TVS Motor etc., in Civil, ECE, EEE, CSE Mechanical and IT
+departments.
+ 
+Asynchronous Learning Facilities
+QEEE - A classroom with Web casting facility (Audio, Video Recording, Microphones, Speakers,
+Camera etc.,) to facilitate the students and the teachers to engage themselves in Webinars.
+Central Library -  supports institute programme of study and research. The collection includes
+Text book                             98309 Nos
+International Journals           67 Nos
+National Journals                 75 Nos
+International Magazines        56 Nos
+National Magazines 32 Nos
+ 
+Library is also enabled with Wi-Fi and RFID Technology for self issue and return.
+All Departments are having department library for ready reference
+Computing Facility
+A Central Computing Centre (CCC) with 150 Desktop Computing Systems is functioning from
+8.00 a.m to 10.00 p.m for Monday to Saturday and 8.00 a.m to 6.00 p.m on Sundays.
+A computing centre with 30 Desktop Computing systems is functioning in the Ladies and Gents
+Hostel by 24/7 mode.
+A total of nearly 1600 computer systems are spread across all the laboratories and departments to facilitate
+the students and faculty members to conduct classes, laboratory classes and carry out research.
+File Description Document
+Link for Additional Information View Document
+Page 58/118 18-01-2019 10:53:01
+Self Study Report of THIAGARAJAR COLLEGE OF ENGINEERING
+    4.1.2 The institution has adequate facilities for sports, games (indoor, outdoor),gymnasium, yoga
+centre etc., and cultural activities
+Response: 
+Physical Education Departments Facilities 
+TCE has well equipped sports facilities to cater the sports and games requirement of the students. Every
+year around 500 students participate in all the sports and games event. TCE conducts ANNA University
+zonal tournaments, Inter zonal tournaments, Intra and Inter department tournaments and Intra moral
+tournaments, TCE Marathon, Founder Memorial Hockey and Kho-Kho tournament and Dr. Radha
+Thiagarajan Memorial Chess tournament. TCE has won ANNA University zone 16 overall champion for
+the continuous 8 years. Four Students have Guinness record in Taekwondo. three students have represented
+in National and International level Pistol Shooting competition.
+Indoor stadium
+        TCE has well equipped and furnished Indoor stadium (Ground Floor and 1st floor) of size 23,674
+square feet with seating capacity of 300 Nos.
+ 
+Indoor Stadium - Ground Floor
+Badminton Court (13.40mX6.10m)
+a.Number of Courts-4
+b.Number of Movable Post-4 (Pair)
+Basketball Court (28mX16m)
+a.Number of Court-1
+b.Number of Movable Post-1(Pair)
+Volleyball Court (18mX9m)
+a.Number of Court-2
+b.Number of Movable Post-2(Pair)
+Judo hall (12mX11m)
+a.Number of Courts-2
+ 
+Page 59/118 18-01-2019 10:53:01
+Self Study Report of THIAGARAJAR COLLEGE OF ENGINEERING
+Indoor Stadium - First Floor
+Chess Hall (5.90mX21.30 m)
+a.Number of Board-150
+b.Number of Magnetic Chess Board-01
+c.Number of Table-04
+d.Number of Sitting Table-06
+Table Tennis ( 6mX21m)
+a.Number of Board-03
+b.Number of Posts-03 (Pair)
+Gym Hall  (13mX12m)
+a.Body building equipment  
+b.Weight Lifting accessories
+Yoga Hall (12mX9m)
+a.Yoga mats-30
+ 
+Outdoor Games 
+Ball Badminton Court (24mX12m)
+a.Number of Court-2
+b.Number of Post-2 (Pair)
+Basket Ball (28mX16m)
+a.Number of Court-1
+b.Number of Post-1 (Pair)
+Football Field (90mX50m)
+a.Number of Court-1
+Page 60/118 18-01-2019 10:53:01
+Self Study Report of THIAGARAJAR COLLEGE OF ENGINEERING
+b.Number of Post-1 (Pair)
+Hockey Field (91.40mx55m)
+a.Number of Court-1
+b.Number of Post-1 (Pair)
+Kho-Kho Court (27mX16m)
+a.Number of Court-2
+b.Number of Post-2 (Pair)
+Kabaddi Court(13m X 10m)
+a.Number of Court-1
+Tennis Court (23.76mX 10.97m)
+a.Number of Court-2
+b.Number of Post-2 (Pair)
+Volleyball Court (18m X 9 m)
+a.Number of Court-2
+b.Number of Post-2 (Pair)
+ 
+Cultural Activities
+TCE cultural association has a Dean, Associated Deans, Department Level coordinators and student
+level coordinators as members. 
+The college has three auditoriums, Fully Air Conditioned Karumuttu Sundaram Auditorium with a
+seating capacity of 204 and Karumuttu Manickavasagam Chettiar Auditorium with a seating
+capacity of 800. An Open air auditorium of seating capacity 2000 to conduct college cultural
+activities.
+SHRISHTI,the cultural programme of TCE has activities on Performing Arts and Fine Arts. Clubs
+like English Literature, Tamil Literature, Fine Arts, Visual Arts, Photography and Quiz organises
+an orientation program for the first years and select the interested students and gives them training
+to horn their interest in respective fields.
+The Performing Arts team of the Association does regular shows for the students on Women
+Empowerment, Curbing Drug Menace and other social causes.
+The cultural association conduct yearly special events like SPIC MACAY, QUEST and special
+lectures from eminent arts personalities regularly. 
+Page 61/118 18-01-2019 10:53:01
+Self Study Report of THIAGARAJAR COLLEGE OF ENGINEERING
+File Description Document
+link for additional information View Document
+    4.1.3 Percentage of classrooms and seminar halls with ICT - enabled facilities such as smart class,
+LMS, etc
+Response: 100
+4.1.3.1 Number of classrooms and seminar halls with ICT facilities
+Response: 99
+File Description Document
+Number of classrooms and seminar halls with ICT
+enabled facilities
+View Document
+Link for additional information which is optional View Document
+    4.1.4 Average percentage of budget allocation, excluding salary for infrastructure augmentation
+during the last five years.
+Response: 22.39
+4.1.4.1 Budget allocation for infrastructure augmentation, excluding salary year-wise during the last five
+years (INR in Lakhs)
+  2017-18 2016-17 2015-16 2014-15 2013-14
+194.38 375.700 202.391 373.659 443.725
+File Description Document
+Audited utilization statements View Document
+   
+4.2 Library as a Learning Resource
+    4.2.1 Library is automated using Integrated Library Management System  (ILMS)
+Response: 
+1  Library is automated using integrated library management system (ILMS)
+Name of the LMS – AUTOLIB
+Page 62/118 18-01-2019 10:53:03
+Self Study Report of THIAGARAJAR COLLEGE OF ENGINEERING
+Year of Automation – from 2005 LIBSYS, From 2014 AUTOLIB
+Version – Advanced version with JAVA 
+Partial / Fully - Fully Automated with RFID enabled technology , SMS for each transactions 
+Library Carpet Area: 12840 Sq.ft.
+Seating Capacity: 250
+Library Working Hours:
+Monday to Friday: 8.00 AM. TO 7.00 PM.
+Saturday:  9.00 AM. TO 4.40 PM.  
+Morning shift - 8.00 Am to 4.00 PM & Evening shift -11.00 Am to 7.00 PM
+Library will be closed on all Sundays and public holidays
+Number of Library staff: 8
+Library staff with Degrees: 6
+Number of books added 
+ 
+(April to march) 
+Number of new titles added Number of newvolumes added 
+2014-15 984 2873
+2015-16 515 1076
+2016-17 567 1419
+2017- 2018 (march 20th ) 678 2036
+Number of Hardcopy of Journals added :
+Year   (Jan to Dec) No. of journals / Magazines subscribed
+2015 116
+2016 147
+2017 138
+2018 230
+Usage report (Last three years)
+Library usage vs. user count for last three years
+Year User count (no. of login) Usage (No. of transactions)
+2015 47222 71504
+2016 51304 68333
+2017 43527 53493
+Quality learning resources at TCELibrary (Hard / Soft)
+RESOURCES Total No. of Volumes Total No. of Titles 
+BOOKS 83404 54315
+BOOK BANK BOOKS 14126 4184
+CD’s and DVD’s 1212 1212
+Page 63/118 18-01-2019 10:53:03
+Self Study Report of THIAGARAJAR COLLEGE OF ENGINEERING
+JOURNALS  (Hard copy) 124 124
+TECHNICAL MAGAZINES
+(Hard copy)
+106 106
+ONLINE JOURNALS (IEL,
+Science Direct, ASME, ASCE,
+Springer, EBSCO )
+40885 40885
+E-BOOKS  (PERPETUAL
+ACCESS)
+603 603
+Knimbus open access (E-Books) 84707 84707
+E-Journals 
+TCE- Online journals subscription details (2018)
+ NAME OF THE PACKAGES NO. OF JOURNALS
+IEL  (Journals 497, Proceedings-29508, standards
+-3918)
+33923
+ASME 29
+ASCE 36
+SCIENCE DIRECT 275
+SPRINGER 452
+EBSCO (Art and architecture) 370
+EBSCO (All Engg) 5800
+Knimbus open access journals 25000
+Total 65885
+E-Books 
+Pearson 229
+TLC Books   40
+McGraw Hill 337
+Knimbus open access E-Books 84707
+Total 85313
+Resources available at library for self learning : 
+Multimedia content  (Access provided through Digital library)
+NPTEL videos  
+    
+      10000+
+MIT open course
+ISSER open course
+Knimbus content
+TCE Mooc courses
+ 
+Library network / Automation 
+Library software  : Autolib JAVA with SMS facility
+Technology: RFID enabled library /Barcode
+Security systems: RF Gate with CCTV
+Page 64/118 18-01-2019 10:53:03
+Self Study Report of THIAGARAJAR COLLEGE OF ENGINEERING
+Available bandwidth : 1Gbps.
+Library Digital library systems: 25 nos.
+Library consortium and membership: 
+National Digital library
+N-List access through  UGC
+INDEST
+DELNET
+ 
+File Description Document
+link for additional information View Document
+    4.2.2 Collection of rare books, manuscripts, special reports or any other knowledge resource for
+library enrichment
+Response: 
+Details Count Links to verify
+No. of a special collection available at the
+library (Total)
+754 https://tce.new.knimbus.com/user#/static/spe
+cialCollection
+ 
+ 
+No. of special collection procured during the last
+five years
+245
+No. of E-Books available as a special and rare
+collection  (on Teaching and learning methods )
+40  perpetual
+access
+https://tce.new.knimbus.com/user#/searchres
+ult?searchId=Proquest&sortFieldId=doc_titl
+e_str&_t=1537765568647
+ 
+File Description Document
+Any additional information View Document
+link for additional information View Document
+    4.2.3 Does the institution have the following
+1.e-journals
+2.e-ShodhSindhu
+3.Shodhganga Membership
+Page 65/118 18-01-2019 10:53:03
+Self Study Report of THIAGARAJAR COLLEGE OF ENGINEERING
+4.e-books
+5.Databases
+Any 4 of the above
+Any 3 of the above
+Any 2 of the above
+Any 1 of the above
+Response: Any 4 of the above
+File Description Document
+Details of subscriptions like e-journals,e-
+ShodhSindhu,Shodhganga Membership etc
+View Document
+    4.2.4 Average annual expenditure for purchase of  books and journals  during the last five years
+(INR in Lakhs)
+Response: 52.6
+4.2.4.1 Annual expenditure for purchase of  books and journals  year-wise during the last five years (INR
+in Lakhs)
+  2017-18 2016-17 2015-16 2014-15 2013-14
+62.14 54.78 40.96 62.65 42.49
+File Description Document
+Details of annual expenditure for purchase of books
+and journals during the last five years
+View Document
+Audited statements of accounts View Document
+    4.2.5 Availability of remote access to e-resources of the library
+Response: Yes
+    4.2.6 Percentage per day usage of library by teachers and students
+Response: 18.79
+4.2.6.1 Number of teachers and students using library per day over last one year
+Page 66/118 18-01-2019 10:53:04
+Self Study Report of THIAGARAJAR COLLEGE OF ENGINEERING
+Response: 889
+File Description Document
+Any additional information View Document
+   
+4.3 IT Infrastructure
+    4.3.1 Institution frequently updates its IT facilities including Wi-Fi
+Response: 
+TCE has a well established state of the art IT- infrastructure and facilities for providing research, academic
+and consultancy support. The campus has been enabled with internet bandwidth of  1Gbps from National
+Knowledge Network (NKN) and BSNL 200 Mbps Internet Leased Line (ILL).
+The IT services are provided on 24/7 support for anytime anywhere access to knowledge and learning
+resources. Around 2000+ LAN points are provided across the campus, computer labs and office spaces.
+Wi-Fi network points over 2000+ numbers were deployed across the campus, facilitating students and
+faculty members to access the academic content anywhere on campus with 24/7 internet service in
+academic blocks and hostels.
+The Data center was established in 2011 with an area of around 645 sq ft for consolidating and managing
+network operations from various servers like App servers, DB servers and computer clusters into a single
+facility. Data center hosts all the servers to ease the provisioning and maintenance of the servers and Apps
+to the entire campus and back bone network running throughout the campus. It houses about 8 racks
+mounted with servers and computer cluster nodes for hosting a variety of services like
+TCE Website (Official Website of college)
+TCENet (Intranet Portal for the college)
+TCE Attendance Monitoring System (Staff Attendance Maintenance)
+Video Lecture streaming (stream Video Lectures of college )
+TCE Cloud (Cloud service of college for Research purpose)
+TCE Moodle (Learning Management System)
+Server infrastructure includes high power computing HPC 32 nodes, 12 blade servers with 6 TB capacity.
+Enterprise firewall checkpoint has been deployed for providing a secure campus network in TCE.
+Various other IT services and application portals supported by the Data center are
+Student Admission (Automation of Student Admissions)
+Student Attendance (Student Attendance Monitory System)
+TCE Asset Management System ( Asset Tracking System)
+TCE Inventory Control (TCE Stock Maintenance System)
+TCE Exam Process Automation (Automation of Examination Process )
+Mobile Video Lecture Streaming ( Stream Lectures viewable in mobile phones)
+Page 67/118 18-01-2019 10:53:05
+Self Study Report of THIAGARAJAR COLLEGE OF ENGINEERING
+Maintenance portal (facilities and request tracking management)
+Faculty profile updation (Automation of Faculty Achievements Updation System)
+These were introduced to automate the offline processes and to cater the academic and administrative
+processes.  Biometric based Staff Attendance monitoring system has been implemented.  Help desk is
+provided to ensure the technology support to the stakeholders using the IT facilities.
+The gapps services in the hosted environment provide email service to faculty, staff and students. Over
+1700+ desktops were deployed in the computer labs and connected with the external ISP backbones. The
+Data center hosts infrastructure to over Rs.3.0 Crore.  The data center also host 24/7 cooling system with
+250 kVA Generator with auto mode support, 30kVA UPS and a camera surveillance system.
+File Description Document
+link for additional information View Document
+    4.3.2 Student - Computer ratio
+Response: 2.66
+    4.3.3 Available bandwidth of internet connection in the Institution (Lease line )
+?50 MBPS
+35 MBPS - 50 MBPS
+20 MBPS - 35 MBPS
+5 MBPS - 20 MBPS
+Response: ?50 MBPS
+File Description Document
+Any additional information View Document
+    4.3.4 Facilities for e-content development such as Media Centre, Recording facility, Lecture
+Capturing System (LCS)
+Response: Yes
+File Description Document
+Facilities for e-content development such as Media
+Centre, Recording facility,LCS
+View Document
+Link to photographs View Document
+Page 68/118 18-01-2019 10:53:06
+Self Study Report of THIAGARAJAR COLLEGE OF ENGINEERING
+   
+4.4 Maintenance of Campus Infrastructure
+    4.4.1 Average Expenditure incurred on maintenance of  physical facilities and academic support
+facilities excluding salary component, as a percentage during the last five years
+Response: 21.84
+4.4.1.1 Expenditure incurred on  maintenance of  physical facilities and academic support facilities
+excluding salary component year-wise during the last five years (INR in Lakhs)
+  2017-18 2016-17 2015-16 2014-15 2013-14
+344.555 322.109 302.751 299.749 319.318
+File Description Document
+Details about assigned budget and expenditure on
+physical facilities and academic facilities
+View Document
+    4.4.2 There are established systems and procedures for maintaining and utilizing physical, academic
+and support facilities - laboratory, library, sports complex, computers, classrooms etc.
+Response: 
+Electrical/Electronic Maintenance 
+This section takes care of Installation of new electrical appliances, electrical maintenance of about
+1000kVA, power consumption and energy monitoring, generator maintenance, energy
+conservation, liasoning with TANGEDCO and Electrical Inspectorate and  Solar power
+maintenance.
+Procurement and installation of Audio, video communication equipment and computer network
+components, Uninterrupted Power supply and Air conditioner systems
+Service/ maintenance of equipment for rectification of faults by trained technicians after obtaining
+permission from registrar/ principal/ chairman depending on quantum of expenditure required
+Receiving complaints through TCENET Maintenance portal,  through class committee reports and
+letters and tracked for its closure.
+Estate Maintenance 
+Any building related request like building construction,  modification/maintenance is passed to
+estate officer and is carried out with the budget approval from registrar/ principal/ chairman
+depending on the quantum of expenditure required.
+The classrooms, laboratory ambience, gardens, washrooms and student support facilities are
+maintained on day to day basis by third party contract and by college.
+Page 69/118 18-01-2019 10:53:07
+Self Study Report of THIAGARAJAR COLLEGE OF ENGINEERING
+Transport Maintenance
+College supports commutation of college community by plying 4 cars, 8 buses and an Ambulance.
+Driver duty itenary and transport scheduling is carried out by Transport officer.
+Transport fitness certification, maintenance and augmentation of vehicles are done on yearly basis.  
+Library Maintenance 
+Library day to day activities are governed by the Librarian and Assistants. The overall monitoring
+of the Library is governed by a committee consisting of Principal, Dean, Associate Dean and
+Department Level Coordinators and Librarian.
+Library committee scrutinizes the recommendation for the purchase of books and journals based on
+Goods of Committee norms.
+Library software will be reviewed by the committee, and upgraded
+Library follows the Government norms for weed out of worn out books, and stock verification of
+the books is done yearly.
+User awareness program on library resources are conducted  periodically.
+Periodic feedback of the users is collected through Google survey.
+Library is maintained as per 5S quality norms and is monitored by 5S coordinators. Every day
+morning the return books will be re-shelved by the library assistants.
+ Laboratory Maintenance
+The Laboratory in charge of respective laboratory is responsible for the Calibration of equipment
+and is reviewed yearly basis.
+The Laboratory day to day electrical supply and electronics equipment is maintained by TCENET
+maintenance portal or by request letter through proper channel.
+All Laboratory is maintained as per 5S quality norms and is monitored by  Department 5S
+coordinators.
+The obsolete equipment are condemned as per Government norms. The equipment stock in the
+laboratory are labeled by barcode and college assert register is maintained and audited.
+Laboratory ambience is done by third party estate maintenance contract and monitored by estate
+officer and the concerned laboratory technician.
+Computer System Maintenance 
+The servers and desktop systems are checked once in a week for release of new updates and
+upgraded accordingly.
+The firmware upgradation for network equipment like access points, switches are done on need
+basis.
+ 
+File Description Document
+link for additional information View Document
+Page 70/118 18-01-2019 10:53:07
+Self Study Report of THIAGARAJAR COLLEGE OF ENGINEERING
+Page 71/118 18-01-2019 10:53:07
+Self Study Report of THIAGARAJAR COLLEGE OF ENGINEERING
+Criterion 5 - Student Support and Progression
+   
+5.1 Student Support
+    5.1.1 Average percentage of students benefited by scholarships and freeships provided by the
+Government during the last five years
+Response: 58.23
+5.1.1.1 Number of students benefited by scholarships and freeships provided by the Government year-wise
+during the last five years
+  2017-18 2016-17 2015-16 2014-15 2013-14
+2348 2382 2485 2669 2578
+File Description Document
+Upload self attested letter with the list of students
+sanctioned scholarships
+View Document
+Average percentage of students benefited by
+scholarships and freeships provided by the
+Government during the last five years
+View Document
+    5.1.2 Average percentage of students benefited by scholarships, freeships, etc. provided by the
+institution besides government schemes during the last five years
+Response: 3.4
+5.1.2.1 Total number of students benefited by scholarships, freeships, etc provided by the institution
+besides government schemes year-wise during the last five years
+  2017-18 2016-17 2015-16 2014-15 2013-14
+159 118 136 193 121
+File Description Document
+Any additional information View Document
+    5.1.3 Number of capability enhancement and development schemes –
+1.Guidance for competitive examinations
+2.Career Counselling
+Page 72/118 18-01-2019 10:53:08
+Self Study Report of THIAGARAJAR COLLEGE OF ENGINEERING
+3.Soft skill development
+4.Remedial coaching
+5.Language lab
+6.Bridge courses
+7.Yoga and Meditation
+8.Personal Counselling
+7 or more of the above
+Any 6 of the above
+Any 5 of the above
+Any 4 of the above
+Response: 7 or more of the above
+File Description Document
+Details of capability enhancement and development
+schemes
+View Document
+Any additional information View Document
+Link to Institutional website View Document
+    5.1.4 Average percentage of students benefited by guidance for competitive examinations and career
+counselling offered by the institution during the last five years
+Response: 20.53
+5.1.4.1  Number of students benefited by guidance for competitive examinations and career counselling
+offered by the institution year-wise during the last five years
+  2017-18 2016-17 2015-16 2014-15 2013-14
+862 1434 639 796 676
+File Description Document
+Number of students benefited by guidance for
+competitive examinations and career counselling
+during the last five years
+View Document
+Any additional information View Document
+Page 73/118 18-01-2019 10:53:09
+Self Study Report of THIAGARAJAR COLLEGE OF ENGINEERING
+    5.1.5 Average percentage of students benefited by Vocational Education and Training (VET) during
+the last five years
+Response: 23.3
+5.1.5.1 Number of students attending  VET year-wise during the last five years
+  2017-18 2016-17 2015-16 2014-15 2013-14
+534 1387 453 2082 474
+File Description Document
+Details of of students benefited by Vocational
+Education and Training (VET)
+View Document
+Any additional information View Document
+    5.1.6 The institution has a transparent mechanism for timely redressal of student grievances
+including sexual harassment and ragging cases
+Response: Yes
+File Description Document
+Minutes of the meetings of student redressal
+committee, prevention of sexual harassment
+committee and Anti Ragging committee
+View Document
+Details of student grievances including sexual
+harassment and ragging cases
+View Document
+   
+5.2 Student Progression
+    5.2.1 Average percentage of placement of outgoing students during the last five years
+Response: 52.92
+5.2.1.1 Number of outgoing students placed year-wise during the last five years
+  2017-18 2016-17 2015-16 2014-15 2013-14
+589 652 728 684 545
+Page 74/118 18-01-2019 10:53:11
+Self Study Report of THIAGARAJAR COLLEGE OF ENGINEERING
+File Description Document
+Self attested list of students placed View Document
+Details of student placement during the last five
+years
+View Document
+Any additional information View Document
+    5.2.2 Percentage of student progression to higher education (previous graduating batch)
+Response: 2.2
+5.2.2.1 Number of outgoing students progressing to higher education
+Response: 27
+File Description Document
+Upload supporting data for student/alumni View Document
+Details of student progression to higher education View Document
+    5.2.3 Average percentage of students qualifying in State/ National/ International level examinations
+during the last five years (eg: NET/ SLET/ GATE/ GMAT/ CAT/ GRE/ TOEFL/ Civil Services/State
+government examinations)
+Response: 6.41
+5.2.3.1 Number of students qualifying in state/ national/ international level examinations (eg: NET/ SLET/
+GATE/ GMAT/ CAT/ GRE/ TOEFL/ Civil services/ State government examinations) year-wise during the
+last five years
+  2017-18 2016-17 2015-16 2014-15 2013-14
+4 17 7 5 0
+5.2.3.2 Number of students appearing in state/ national/ international level examinations (eg:
+NET/SLET/GATE/GMAT/CAT, GRE/TOEFL/ Civil Services/State government examinations) year-wise
+during the last five years
+  2017-18 2016-17 2015-16 2014-15 2013-14
+149 105 84 103 133
+Page 75/118 18-01-2019 10:53:12
+Self Study Report of THIAGARAJAR COLLEGE OF ENGINEERING
+File Description Document
+Upload supporting data for the same View Document
+Number of students qualifying in state/ national/
+international level examinations during the last five
+years
+View Document
+   
+5.3 Student Participation and Activities
+    5.3.1 Number of awards/medals for  outstanding performance in sports/cultural activities at 
+national/international level (award for a team event should be counted as one) during the last five
+years
+Response: 8
+5.3.1.1 Number of awards/medals for outstanding performance in sports/cultural activities at 
+national/international level (award for a team event should be counted as one) year-wise during the last five
+years
+  2017-18 2016-17 2015-16 2014-15 2013-14
+2 2 4 0 0
+File Description Document
+Number of awards/medals for outstanding
+performance in sports/cultural activities at
+national/international level during the last five years
+View Document
+e-copies of award letters and certificates View Document
+    5.3.2 Presence of an active Student Council & representation of students on academic &
+administrative bodies/committees of the institution
+Response: 
+Students Council:
+All the class representatives, Dept. Association Secretaries , Club Coordinators, Sports  & Games
+Secretaries & House Captains, Men & Women Hostels Representatives,  Cultural Association
+Coordinators, Fine Arts coordinators, NCC & NSS Coordinators, Career Guidance Cell
+coordinators are the members.
+Two meetings will be conducted in a semester.
+Student members share their ideas / suggestions for overall improvement of Curricular, Co-
+curricular and extra curricula activities of the college.
+Page 76/118 18-01-2019 10:53:13
+Self Study Report of THIAGARAJAR COLLEGE OF ENGINEERING
+Principal will high light the developments of the college and students support activities.
+All the meeting minutes  prepared and action take report presented in the next  meeting.
+Academic Council:
+Two meritorious student members are nominated in rotation across all branches / degree
+programmes once in a year.
+Two meetings will be conducted in a year.
+Student’s suggestions / opinion about the curriculum revision, Content Delivery, Assessment and
+amendments in regulations are considered.
+Class Committee:
+Every class shall have a class committee consisting of two faculty members who are teaching in
+that class, student representatives (cross section of students) and a chairperson who is a faculty
+not handling the course for the class.  The overall goal of the Class Committee is to improve the
+teaching-learning process.  The functions of the class committee include:
+Resolving difficulties experienced by students in the classroom and in the laboratories.
+Clarifying the rules and regulations of the degree programme  
+Informing the academic schedule including the dates of assessments  and the syllabus coverage for
+each assessment.
+ At least 6 student representatives of boys and girls shall be included in the class committee.
+ The class committee shall meet three times in a semester:
+The first meeting within 10 days from the date of commencement of the semester.
+The second meeting a week after the first test results.
+The third meeting before the last lecture day of the semester.
+In each meeting, the action taken report of the previous meeting is to be presented by the Chairperson of
+the class committee.
+Women Development Cell:
+Two Girl Student Nominee: One Day scholar  & one Hosteller  
+Conducts Women empowerment /health awareness /First aid training /Gender equity awareness
+programmes;
+Contest/Quiz/ Workshop for the Faculty & Students;
+Conducts skill courses like Confident building/Time management/Life balance/ Work
+Culture/Ethical practice/Knowing legal rights/Kids care;
+ Resolve the grievances of Women faculty & Girl students;
+Curbs the violence against women, sexual harassment at work ;
+Page 77/118 18-01-2019 10:53:13
+Self Study Report of THIAGARAJAR COLLEGE OF ENGINEERING
+Counseling Cell:
+ Two Day scholars - Boy & Girl and Two Hostellers  - Boy & Girl are members
+The cell will counsel the students once in a month in tutorial groups about the problems of adolescents and
+also will guide them in academic progress and career goals.
+The cell will meet immediately if there is an urgent matter relating to adolescents and redress the problem
+thro internal staff counselors or thro external expert counselors. Also conducts programmes on Art &
+Science of Learning, Human Values  and Well being to  all the students.
+File Description Document
+Any additional information View Document
+    5.3.3 Average number of sports and cultural activities / competitions organised at the institution
+level per year
+Response: 25.6
+5.3.3.1 Number of sports and cultural activities / competitions organised at the institution level year-wise
+during the last five years
+  2017-18 2016-17 2015-16 2014-15 2013-14
+22 30 32 24 20
+File Description Document
+Number of sports and cultural activities /
+competitions organised per year
+View Document
+   
+5.4 Alumni Engagement
+    5.4.1 The Alumni Association/Chapters (registered and functional) contributes significantly to the
+development of the institution through financial and non financial means during the last five years
+Response: 
+TCE Alumni Association to coordinate and support the alumni activities to promote Institution’s
+academic, soft skill of the student, industry interface, placement/internship, research, and outreach
+programs to facilitate communication with alumni and to strengthen alumni bonds of fellowship,
+professional association, and institutional affiliation.
+Page 78/118 18-01-2019 10:53:14
+Self Study Report of THIAGARAJAR COLLEGE OF ENGINEERING
+To encourage alumni to stay connected and to Leverage the resources, talents, and initiatives of
+alumni to advise, guide, advocate the Institution in achieving the respective department’s missions
+and goals.
+To inculcate the culture of philanthropy among the alumni body, to ensure that the alumni continue
+to contribute their time, talent and financial resources to the betterment of the Institution.
+TCE Alumni Association is functioning at the Institute and through its chapters spread across the country
+and abroad.
+Alumni Scholarships
+Reunions
+Personality Development Camps, Mentorship Programs
+Academic and Industrial Interaction by Alumni
+Alumni Scholarships
+TCEAA provides financial support to such needy students based on a merit cum means basis. The
+donations received from the alumni are deposited as corpus fund in TCE Alumni Charitable Trust and the
+interest earned from that is used for student scholarships. Donations are exempted under Section 80G of
+the Income Tax Act.
+Reunion
+Reunion brings in new opportunities for students as many alumni are entrepreneurs. This paves way for
+student recruitment and thus adds to college placement results. Other alumni also play their role as
+Mentors, where they provide financial and other support for students in need.
+Generally, Alumni reunion is scheduled as
+Silver Jubilee Reunions –  conducted during December /July.
+Golden Jubilee Reunions –conducted during July/ December
+Other reunions – facilitated many reunions like 10th year, 16th year,20th year, 33rd Year, 40th Year and
+45th  Year reunions
+Every reunion has a student questionnaire session at the end where the students have interaction with
+alumni regarding their association with the College and also about the trending technology.
+Personality Development camps
+Every year, three-day residential personality development camps are organized to impart soft skills, yoga
+practice, teamwork, emotional intelligence, and health awareness to the young engineering students.  Five
+personality development camp was organized in one academic year in the name of Pinnacle, Orchid,
+Blossom, Efflorescence, Zenith.
+Mentorship Programs: 
+Page 79/118 18-01-2019 10:53:14
+Self Study Report of THIAGARAJAR COLLEGE OF ENGINEERING
+Alumni Connect - Leadership in Action Club A Mentoring Programme
+          Objectives:
+Prepare the next generation leaders & entrepreneurs
+ Provide motivation and mentorship to guide in career path options
+ Create a support system which can be used beyond college days for career development, work-life
+integration, etc.
+             Benefits:
+Develop and hone leadership skills in potentials.
+Getting mentoring and exposure from Industry experts
+Establish a sustainable framework between College, Alumni & Students
+Academic and Industrial Interaction by Alumni
+Member in Board of Studies
+Member in Academic Council
+Resource person for One credit/Two credit courses
+Guest Lectures
+In-plant Training/Internships /Placements
+Lab Development/Training
+File Description Document
+Link for Additional Information View Document
+    5.4.2 Alumni contribution during the last five years(INR in Lakhs)
+? 15 Lakhs
+10Lakhs - 15 Lakhs
+5 Lakhs - 10 Lakhs
+2 Lakhs - 5 Lakhs
+Response: ? 15 Lakhs
+File Description Document
+Alumni association audited statements View Document
+    5.4.3 Number of Alumni Association / Chapters  meetings held during the last five years
+Page 80/118 18-01-2019 10:53:14
+Self Study Report of THIAGARAJAR COLLEGE OF ENGINEERING
+Response: 19
+5.4.3.1 Number of Alumni Association /Chapters meetings held year-wise during the last five years
+  2017-18 2016-17 2015-16 2014-15 2013-14
+3 10 2 2 2
+File Description Document
+Number of Alumni Association / Chapters meetings
+conducted during the last five years
+View Document
+Page 81/118 18-01-2019 10:53:15
+Self Study Report of THIAGARAJAR COLLEGE OF ENGINEERING
+Criterion 6 - Governance, Leadership and Management
+   
+6.1 Institutional Vision and Leadership
+    6.1.1 The governance of the institution is reflective of an effective leadership in tune with the vision
+and mission of the institution
+Response: 
+The Statements of Vision and Mission of TCE are over 50 years old and hence it was important to revisit
+the same during the year 2014 with the help of field experts. Prof.Rishikesh T Krishan, Professor Strategy
+at IIM Bangalore and current Director, IIM Indore wherein views of multiple stakeholders were solicited.
+Further, this is supplemented by detailed focused workshops with faculty groups to understand their
+concerns, aspirations and directions for growth and development of TCE.
+Prof. Saji Gopinath, Professor and his team from Indian Institute of Management, Kozhikode facilitated
+two workshops and were organised  for faculty members to form the Vision statement of TCE. The faculty
+were asked to rate TCE on 14 parameters identified from literature as qualities of a world class institution
+in a 5 point scale, after explaining each of the parameters. 
+Initially the facilitators explained about the meaning of Vision and Mission Statements. Then discussion
+focused on preferred modifications in the current ‘Vision and Mission statements’ of TCE.
+The current vision statement is‘Quality Education at affordable cost’ 
+The following suggestions were made to modify the Vision statement 
+1. The term ‘technical education’ can be indicated in vision statement 
+2. Quality is a relative and subjective term and hence need to modified if possible (something like ‘World
+Class Quality’) 
+3. To whom are we serving can be indicated more clearly(affordable to all capable and qualified students
+regardless of their economic status) 
+4. Research orientation can be indicated in the vision statement itself (through terms like ‘technology trend
+setter’) 
+The following suggestions were made to modify the Mission Statement 
+1. Focus on research should be included. Academic and research excellence should be highlighted 
+2. Focus on developing entrepreneurial mindset among students 
+3. “Leader of leaders’ line in the current statement needs to be removed 
+4. ‘Ethical standards’ and ‘Human Values’ can be combined 
+Page 82/118 18-01-2019 10:53:15
+Self Study Report of THIAGARAJAR COLLEGE OF ENGINEERING
+5. Overlap between ‘Outstanding professional’ and ‘responsible citizen’ need to be corrected 
+6. ‘Contribution to industry’ should be highlighted 
+7. ‘Use of state of art technology to facilitate learning’ should be highlighted 
+Based on the above, the Vision of TCE is recommended and mission statements are defined.
+File Description Document
+Any additional information View Document
+    6.1.2 The institution practices decentralization and participative management
+Response: 
+The Organizational structure includes Registrar, Controller of Examinations, Deans, Associate Deans,
+HoDs, College level and Department level coordinators under the leadership of Principal for the effective
+functioning of the Institute. The various senior level administrative positions of the Institute are:
+Dean Planning and Development
+Dean Academics
+Dean Research and Development
+Dean Industry Institute Interaction
+Dean Students
+Dean Extra-curricular activities
+Registrar
+Controller of Examinations
+Case study: Dean Students looks after the development of students in all aspects like career guidance,
+student grievances, counseling, and anti-ragging, as shown in the website https://www.tce.edu/student. 
+The Principal and Deans along with HoDs, based on their own experience in academic and research
+activities, convert them into tangible actions in respect of teaching learning process, research and
+development, and industry institute interaction. The action points are executed by Nodal Coordinators and
+their team consisting of faculty members from all the departments. Over a period, the sporadic discussions
+have given way for periodic discussions at Standing Committee level. The departmental action points in
+respect of teaching learning process, research and development, industry institute interaction are focused
+towards meeting the expectation of faculty, students, industry, society and alumni. The decentralization
+process facilitates the grooming of future organizational leaders.
+The activities pertaining to the College in respect of teaching & learning, research and development,
+industry interface and student activities are reviewed by the Governing Council which is the apex body of
+the College. The academic activities are initiated by the department faculty in consultation with the present
+and past students and industries. Subsequently, it is scrutinized by the Board of Studies and then presented
+in the standing committee for approval in Academic Council and Governing Council. Any grievance in
+Page 83/118 18-01-2019 10:53:15
+Self Study Report of THIAGARAJAR COLLEGE OF ENGINEERING
+academic activities could be represented to the Appeals and Grievances Committee. Grievances in any of
+the domains could be represented with Governing Council. The Principal discusses the outcomes of
+Governing Council meetings with the HODs and Deans to evolve a consensus on the focus areas of
+teaching learning process and research and development.
+File Description Document
+Link for Additional Information View Document
+   
+6.2 Strategy Development and Deployment
+    6.2.1 Perspective/Strategic plan and Deployment documents are available in the institution
+Response: 
+Strategic Planning Process 
+The Chairman of the Governing Council along with the Principal, Deans and Heads of Departments
+in consultation with eminent educational administrators and College Governing Council members
+including Dr.R.Natarajan (former Chairman, AICTE) , Dr.R.Subbayyan (former Vice Chancellor,
+Bharathiyar University), and Dr.D.K.Subramanian (former Professor, IISc, Bangalore), Dr.
+Surendra Pal, (Former Asso. Director ISRO, Bangalore), took a decision to evolve strategies for the
+development of student, staff, infrastructure and for the interface with alumni, industries and
+society.
+Dr.Rishikesha T.Krishnan was co-opted as a consultant and he had interfaced with students,
+teacher, staff, alumni and industries. Based on the inputs of Dr.R.Natarajan, Dr.Saji Gopinath of
+IIM Kozhikode was also requested to support us in the strategic planning. The interactions are
+being continued.
+The core competencies, strategic challenges and strategic advantages are determined primarily
+through the interaction with faculty members through Department meetings / consultant meet cross
+section of faculty and students.
+The students through informal meetings with Principal and their graduate exit survey alumni,
+industry personnel, suppliers and collaborators through technical discussions online survey.
+Strategic Considerations 
+Understanding the current status from faculty, Staff, Students, Alumni, Employers of the college
+through SWOT & feedback surveys
+Analyzing the outcome of the SWOT and Surveys with respect to vision &mission of the college
+and key attributes for growth specified by NBA, NPIU, NAAC, NIRF and other assessment
+agencies
+Identifying action items and evolving action plan
+Declaring the strategy and action plan to stakeholders – Teachers and Students
+Monitoring the activities and reviewing at every stage with provision for mid-course correction
+leading to successful implementation of strategies
+Resolved to have strategies for the core area namely Teaching and Learning Process and for the sub-
+Page 84/118 18-01-2019 10:53:16
+Self Study Report of THIAGARAJAR COLLEGE OF ENGINEERING
+areas namely Research and Development, Industry Interface, Students, Alumni, governance so as to
+move towards the shared vision of the college
+File Description Document
+Strategic Plan and deployment documents on the
+website
+View Document
+    6.2.2 Organizational structure of the institution including governing body, administrative setup, and
+functions of various bodies, service rules, procedures, recruitment, promotional policies as well as
+grievance redressal mechanism
+Response: 
+Governing Council:
+The functions of Governing Council are to approve the academic, financial and administrative policies of
+the institution, to appoint faculty members and staff, to review the annual report & the audited accounts
+and budget estimates. 
+Roles and Responsibilities of Dean
+Deans are appointed in the functional areas of Academic Process, Research and Development, Industry
+Institute Interaction, Planning and Development, Students – Co-Curricular and Extra Curricular
+Activities. Deans will evolve Benchmarks, set Goals and review the progress of each of the activities
+pertaining to the sub-areas in the departments. Deans will be assisted by a team of Associate Deans and
+College Level Coordinators in the planning, reviewing and data analytics process.
+Roles and Responsibilities of HoDs
+- Implement and monitor day-today activities of the department
+- support the Deans in evolving benchmarks and processes in the respective areas
+- prepare a road map for the department and propose a financial budget 
+- assign responsibilities to the teachers and supporting staff
+- ensure proper appraisals and evaluation of the faculty and staff.
+Faculty Recruitment
+Faculty recruitment is as per the norms of AICTE and state Government. For every selection, a staff
+selection committee is constituted with two subject experts recommended by AICTE, Nominee of State
+Government, Director of Technical Education and Anna University. Promotions of faculty and staff
+members are through the selection process.
+Page 85/118 18-01-2019 10:53:16
+Self Study Report of THIAGARAJAR COLLEGE OF ENGINEERING
+Appeals and Grievances Committee 
+The students can make representations in respect of grievances related to Academic matters through the
+concerned Tutor, HoD and Principal. When students are not satisfied with the outcome of their
+representations, they can make representations to the Appeals & Grievances Committee.
+File Description Document
+Link to Organogram of the Institution webpage View Document
+    6.2.3 Implementation of e-governance in areas of operation
+1.Planning and Development
+2.Administration
+3.Finance and Accounts
+4.Student Admission and Support
+5.Examination
+All 5 of the above
+Any 4 of the above
+Any 3 of the above
+Any 2 of the above
+Response: All 5 of the above
+File Description Document
+Screen shots of user interfaces View Document
+Details of implementation of e-governance in areas
+of operation Planning and
+Development,Administration etc
+View Document
+    6.2.4 Effectiveness of various bodies/cells/committees is evident through minutes of meetings and
+implementation of their resolutions 
+Response: 
+Academic Council  - To Scrutinize and approve the regulations, curriculum and syllabus of various
+courses, Content Delivery methodologies, assessment process.
+Standing Committee  - To monitor and recommend the academic administrative and financial matters of
+Page 86/118 18-01-2019 10:53:17
+Self Study Report of THIAGARAJAR COLLEGE OF ENGINEERING
+the college to the appropriate bodies
+Board of Studies  -  To review the curriculum and syllabus of various courses, teaching & learning
+methodologies and assessment pattern.
+Department Advisory Committee  -   To provide direction and review the dept. on Innovative Practices
+in respect of Infrastructure, TLP, III, R&D, FDP and student activities.
+Finance Committee  -  To consider and approve budget for the departments and college.
+Planning and Monitoring Board  -  To provide benchmarks, to propose roadmaps and to monitor the
+institutional development activities
+Malpractice Enquiry Committee  - To handle the disciplinary issues
+Building committee -  To scrutinize and approve the design estimates, cost of building and other capital
+works, minor works, repair and maintenance
+File Description Document
+Any additional information View Document
+Link for Additional Information View Document
+   
+6.3 Faculty Empowerment Strategies
+    6.3.1 The institution has effective welfare measures for teaching and non-teaching staff
+Response: 
+With the support of IIT Bombay, IIT Kharagpur and IIT Madras domain specific faculty
+development programmes are conducted as part of Remote Centre programmes, QEEE programmes
+and spoken tutorial programmes
+New recruited faculty are given a short course on Research Methodology by a retired IISc Professor
+Dr.D.K.Subramanian.
+Corporate training is provided by TCS on leadership and CII on Educational excellence.
+Cross functional team is developed by encouraging all faculty members to participate in faculty
+development programmes, workshops, seminars and conferences to improve their technical
+expertise.
+Rotation policy is maintained for carrying out the administrative responsibilities of the Department
+so as to train and allow faculty to practice and learn the overall admin processes.
+Faculty, who have less than 5 years experience, are given training in teaching methodologies and
+pedagogy training.
+    6.3.2 Average percentage of teachers provided with financial support to attend conferences /
+Page 87/118 18-01-2019 10:53:17
+Self Study Report of THIAGARAJAR COLLEGE OF ENGINEERING
+workshops and towards membership fee of professional bodies during the last five years
+Response: 54.16
+6.3.2.1 Number of teachers provided with financial support to attend conferences / workshops and towards
+membership fee of professional bodies year-wise during the last five years
+  2017-18 2016-17 2015-16 2014-15 2013-14
+106 165 92 128 235
+File Description Document
+Details of teachers provided with financial support
+to attend conferences,workshops etc during the last
+five years
+View Document
+    6.3.3 Average number of professional development /administrative training programs organized by
+the institution for teaching and non teaching staff during the last five years
+Response: 38.8
+6.3.3.1 Total number of professional development / administrative training programs organized by the
+Institution for teaching and non teaching staff year-wise during the last five years
+  2017-18 2016-17 2015-16 2014-15 2013-14
+17 74 39 35 29
+File Description Document
+Details of professional development / administrative
+training programs organized by the Institution for
+teaching and non teaching staff
+View Document
+    6.3.4 Average percentage of teachers attending professional development programs viz., Orientation
+Program, Refresher Course, Short Term Course, Faculty Development Program during the last five
+years
+Response: 71.69
+6.3.4.1 Total number of  teachers attending professional development programs, viz., Orientation Program,
+Refresher Course, Short Term Course, Faculty Development Programs year-wise during the last five years
+Page 88/118 18-01-2019 10:53:18
+Self Study Report of THIAGARAJAR COLLEGE OF ENGINEERING
+  2017-18 2016-17 2015-16 2014-15 2013-14
+106 209 232 180 235
+File Description Document
+Details of teachers attending professional
+development programs during the last five years
+View Document
+    6.3.5 Institution has Performance Appraisal System for teaching and non-teaching staff
+Response: 
+The Institute is committed to attract, encourage and retain qualified faculty/staff members to
+support the mission of academic excellence in education and research.
+The career advancement schemes are in place ensuring an effective career progression at various
+levels.
+ An Assistant Professor with 5 years of experience, possessing Ph.D. degree and contributing in
+teaching-learning process, sponsored research and industrial consultancy, student activities and
+administration are promoted Associate Professor as per norms. The process for elevation to
+Professorship from Associate Professor also demands similar credentials.
+ Faculty are rewarded with 3 increments in Basic Pay, on completion of Doctoral degree
+programme.
+ College level co-ordinators/Nodal Officers are assigned College level administrative works in the
+respective domains. They in turn have faculty members from various departments for assistance.
+This process of elevating faculty members as co-ordinators/nodal officers has provided the
+administration many second inline leaders facilitating succession planning.
+ The Institute has designed a Performance Appraisal System for the career development of faculty.
+Based on appraisals, Self-appraisal of the faculty is scrutinized by a team headed by Dean –
+Academic process. Based on the outcome, faculty who has performed well in the academic process,
+Research and Development, Industrial consultancy and student co-curricular and extracurricular
+activities are recognized in faculty achievement award function.
+File Description Document
+Any additional information View Document
+   
+6.4 Financial Management and Resource Mobilization
+    6.4.1 Institution conducts internal and external financial audits regularly
+Response: 
+Financial planning is carried out annually by the Principal and Registrar considering the budget proposals
+Page 89/118 18-01-2019 10:53:19
+Self Study Report of THIAGARAJAR COLLEGE OF ENGINEERING
+submitted by the respective authorities in the College and the income & expenditure during the last
+financial year. The prepared budget proposal is placed before the Governing Council for approval.
+Financial activities are carried out by accounts manager under the guidance of Registrar. This process is
+scrutinized by the management auditors and government auditors (Local Fund and Account General).
+Internal financial auditor has freedom to suggest and revise the formats of relevance based on the feedback
+from the students and faculty, in consultation with Registrar.
+Budget allocation is done for every academic year for each department under each head. Utilization is
+tracked periodically through internal and external finance audits. Further TEQIP supports the College to
+take new initiatives like infrastructure development, curriculum development, faculty development and
+industry interaction.
+    6.4.2 Funds / Grants received from non-government bodies, individuals, Philanthropists during the
+last five years (not covered in Criterion III) (INR in Lakhs)
+Response: 938.11
+6.4.2.1 Total Grants received from non-government bodies, individuals, philanthropists year-wise during
+the last five years (INR in Lakhs)
+  2017-18 2016-17 2015-16 2014-15 2013-14
+166.73 180.85 193.34 208.58 188.61
+File Description Document
+Details of Funds / Grants received from non-
+government bodies during the last five years
+View Document
+    6.4.3 Institutional strategies for mobilisation of funds and the optimal utilisation of resources
+Response: 
+Conducting  Conferences / Seminar / Workshop after attending programmes from higher learning
+institutions like IITs, NITs, and from professional societies and industries.
+TCE offers QEEE programmes of IIT Bombay for students. These courses are related to their
+Curriculum.
+TCE is an NBA nodal center and mentors neighbouring institutions for Outcome Based Education
+Consultancy and testing projects
+Research Projects
+Revenue generated from patents
+   
+Page 90/118 18-01-2019 10:53:20
+Self Study Report of THIAGARAJAR COLLEGE OF ENGINEERING
+6.5 Internal Quality Assurance System
+    6.5.1 Internal Quality Assurance Cell (IQAC) has contributed significantly for institutionalizing the
+quality assurance strategies and processes
+Response: 
+Since 2004, the Institute received ISO 9001 certification by TUV SUD South Asia. In the year
+2015, the initiative had been taken for ISO 9001:2015 certification.
+The Institute participates in NIRF ranking for the years 2016, 2017 and 2018 and registered for
+NIRF 2019.
+The Institute regularly participates in magazine ranking like Career360, DataQuest, India Today,
+Outlook, The Week 2018 Survey and receives higher grade.
+The Institute continuously performs well to meet its quality objectives and received various quality
+awards
+    6.5.2 The institution reviews its teaching learning process, structures & methodologies of operations
+and learning outcomes at periodic intervals through IQAC set up as per norms
+Response: 
+Academic support activities include tracking the student attendance, counseling the academically poor
+students, organizing workshops, seminars and guest lectures and the like. The quality objectives of each of
+these processes and its assurance are ensured internally within the Department by the HoD, Dean
+Academics and then by the Principal. Both academic and industry project works of the students are
+evaluated by a team comprising of Guide, Head of the Department and an external examiner. The external
+examiner from higher learning institution/industry is appointed by the Controller of Examinations of the
+College from the panel of the examiners suggested by the Head of the Department. The evaluation of these
+projects is done based on the rubrics, which are designed based on the Programme Outcomes suggested by
+NBA.
+Each semester, the Controller of Examinations initiate the audit of question papers and the evaluated
+answer scripted by the external audit team, with the support from the Head of the Department.
+    6.5.3 Average number of quality initiatives by IQAC for promoting quality culture per year
+Response: 0
+6.5.3.1 Number of quality initiatives by IQAC for promoting quality year-wise for the last five years  
+  2017-18 2016-17 2015-16 2014-15 2013-14
+0 0 0 0 0
+Page 91/118 18-01-2019 10:53:20
+Self Study Report of THIAGARAJAR COLLEGE OF ENGINEERING
+File Description Document
+Number of quality initiatives by IQAC per year for
+promoting quality culture
+View Document
+    6.5.4 Quality assurance initiatives of the institution include
+1.Regular meeting of  Internal Quality Assurance Cell (IQAC); timely submission of Annual
+Quality Assurance Report (AQAR) to NAAC; Feedback collected, analysed and used for
+improvements
+2.Academic Administrative Audit (AAA) and initiation of follow up action
+3.Participation in NIRF
+4.ISO Certification
+5.NBA or any other quality audit
+Any 4 of the above
+Any 3 of the above
+Any 2 of the above
+Any 1 of the above
+Response: Any 4 of the above
+File Description Document
+e-copies of the accreditations and certifications View Document
+Details of Quality assurance initiatives of the
+institution
+View Document
+    6.5.5 Incremental improvements made during the preceding five years  (in case of first cycle) Post
+accreditation quality initiatives (second and subsequent cycles)
+Response: 
+Implementation of OBE and CBCS across all UG/PG programmes since 2014.
+Padmashri Award to Prof. R.Vasudevan for his innovative way of disposing of plastic waste and
+reusing it to build roads.
+TCE Faculty publications and citations have significant improvement in the recent 5 years
+Offering of Industry support 1Credit / 2 Credit courses to Students have been substantially
+increased among all departments in the emerging trends
+Extension of TCE-TVS curriculum to UG EEE programme after the successful implementation of
+the same to UG Mechanical programme
+Page 92/118 18-01-2019 10:53:21
+Self Study Report of THIAGARAJAR COLLEGE OF ENGINEERING
+Criterion 7 - Institutional Values and Best Practices
+   
+7.1 Institutional Values and Social Responsibilities
+    7.1.1 Number of gender equity promotion programs organized by the institution during the last five
+years                                        
+Response: 55
+7.1.1.1 Number of gender equity promotion programs organized by the institution year-wise during the last
+five years
+  2017-18 2016-17 2015-16 2014-15 2013-14
+18 17 6 7 7
+File Description Document
+List of gender equity promotion programs organized
+by the institution
+View Document
+Any additional information View Document
+    7.1.2 Institution shows gender sensitivity in providing facilities such as
+a) Safety and Security
+b) Counselling
+c) Common Room
+Response: 
+Separate hostel facility is provided for girl and boy students.
+Bus facilities are provided for girl students and the women faculty.
+Security personnels have been  deployed in adequate number in the campus round the clock.
+In case of any health issues, ladies waiting rooms are available for students and faculty to take rest.
+Medical facilities are available in the campus to address the need of them.
+For every 20 students , there is a mentor who helps the students to realize their academic and
+personal goals. Mentor – students meeting happens periodically and discussions will take place
+regarding academics, finance , or  health related issues.
+Anti ragging – Campaign and Compliance is taken care by a team of  faculty members.
+Awards are given separately for boys and girls in the following categories every academic
+year.Outgoing Student Excellence, Best outgoing student, Best Outgoing NCC cadet, Best
+Outgoing NSS volunteer, Best Outgoing sports person, and Best Outgoing Fine Arts student.
+Women Development cell (WDC)
+Women Development cell (WDC) at TCE strives hard for the women safety, development and for
+the uplift of women in Engineering and Society. It works for the benefit of women serving in TCE
+Page 93/118 18-01-2019 10:53:22
+Self Study Report of THIAGARAJAR COLLEGE OF ENGINEERING
+as teaching faculty, women students and supporting staff.
+WDC at TCE is much interested in creating positive social norms in institution that value girls and
+their rights. It works for the well-being of women students and faculty that can achieve long-term
+and sustainable social changes. WDC of TCE regulates all the related activities through an
+experienced set of internal & external committee members.
+The committee members of WDC will meet once in a semester to review and monitor the
+functioning of women development cell in our college.The committee will discuss the
+contemporary issues faced by female students and employees with respect to violence, sexual
+harassment, gender inequality and any other complaints within the institution.
+Work done/in progress in WDC
+Inclusive Events/workshops/seminars/contests/camps for all staff & students.
+Series of Expert lectures.
+Conduct awareness programmes on “Gender equity and Social Responsibilities”.
+Women’s day celebration.
+Get together once in a semester.
+Attending out house programmes.
+File Description Document
+Link for Additional Information View Document
+    7.1.3 Percentage of annual power requirement of the Institution met by the renewable energy
+sources
+Response: 50.15
+7.1.3.1 Annual power requirement met by renewable energy sources (in KWH)
+Response: 652000
+7.1.3.2 Total annual power requirement (in KWH)
+Response: 1300000
+File Description Document
+Details of power requirement of the Institution met
+by renewable energy sources
+View Document
+Any additional information View Document
+    7.1.4 Percentage of annual lighting power requirements met through LED bulbs
+Response: 70
+Page 94/118 18-01-2019 10:53:23
+Self Study Report of THIAGARAJAR COLLEGE OF ENGINEERING
+7.1.4.1 Annual lighting power requirement met through LED bulbs (in KWH)
+Response: 140000
+7.1.4.2 Annual lighting power requirement (in KWH)
+Response: 200000
+File Description Document
+Details of lighting power requirements met through
+LED bulbs
+View Document
+Any additional information View Document
+    7.1.5 Waste Management steps including:
+•    Solid waste management 
+•    Liquid waste management
+•    E-waste  management
+ 
+Response: 
+Solid Waste Management:
+Solid waste management Centre at Department of Chemistry, TCE is carrying out research work on
+management to cater the needs of the society, industries and to the college.
+Waste Management Techniques:  Techniques Available in our Centre
+Solid Waste: 
+Management Techniques: 
+Biodegradable Waste
+Converted in to manure by decomposition – new method for fast decomposition
+Bio gas conversion
+Non biodegradable Waste- Plastics
+Plastic Tar Road
+PLASTONE blocks
+Roofing Sheets
+Plastics to fuel oil
+Plastic waste Management Techniques:-
+Collection of waste plastics and disposal
+Shredding of waste plastics in to required size of 2mm to 4mm
+Preparation of plastic coated aggregate
+Mixing of bitumen and the stone
+Page 95/118 18-01-2019 10:53:24
+Self Study Report of THIAGARAJAR COLLEGE OF ENGINEERING
+Laying of plastic tar road
+Consultancy: -
+Laying of plastic roads
+Waste management systems in industries
+Work on Plastic Waste Management:
+A major work on the plastic waste is being carried out in the college by Dr. R. Vasudevan and his team
+from Dept. of. Chemistry. A newer method has been developed by coating waste plastics over hot stone
+aggregate and uses the same for road construction. Here the consumption of waste plastics is high (10 % to
+15 %). This method is patented in 2002 by Dr. R. Vasudevan. This technology was also coded by the
+Indian Road Congress in 2013(IRC-SP-98-2013). Using this technology more than 50, 000 Kms of road
+has been laid in India. Plastone blocks can be used as road side paver block. In India almost 11 states had
+implemented this technology. The government is using the PMGSY scheme found for laying plastic roads
+on rural road sector.
+The Government of India had awarded the 4th highest civilian award “Padmasri” to Dr. R.
+Vasudevan on 20th March 2018. 
+Liquid Waste Management
+Liquid Waste: 
+Waste water from kitchen
+Waste water from industries
+Reject waste water from RO plants
+Distilleries waste
+Management Techniques: 
+Analysis of composition of waste water
+Removal of heavy metals and other hazardous impurities (R & D)
+Reuse of waste water in gardening and washing
+Sewage treatment plant
+Individual houses
+Portable KIT to test as well as purify the waste water
+Two Sewage Treatment plants with Effluent Treatment with the capacity of 7000 litres/day were
+established in the Campus. The total amount of Rs. 1,02,85,958 has been spent on Sewage treatment plants
+so far.
+E – Waste Management: 
+            A major work on using e waste plastics is being done in our college and a solution for disposal of
+the e-waste plastics is being found out. Powdered e-waste plastics is used prepare modified bitumen by
+Page 96/118 18-01-2019 10:53:24
+Self Study Report of THIAGARAJAR COLLEGE OF ENGINEERING
+mixing them with 60/70 bitumen at different proportion.
+E- Waste: 
+E waste plastics
+E waste metals and other components
+Recovery of the above waste from electrical and electronic products waste
+Management Techniques: 
+Use of e waste plastics in modification of bitumen used in road laying
+In PLASTONE preparation as a filler
+    7.1.6 Rain water harvesting structures and utilization in the campus
+ 
+Response: 
+To make the college self-sufficient in water resources not only for domestic application but also for
+improving the green belt particularly lawn and garden an innovative, scientific system of Rain Water
+Harvesting was  installed  in the college premises. Total areal extent of the engineering college is 139.70
+acres, which is equivalent to 565381 sq.m. The vacant area  constitute around 538770 sq. m.
+The roof area of buildings comprising various  academic departments,  Ladies and Gents hostel , guest
+house library and  canteen are covered by red coloured sandy soil. The soil is compact at a few locations
+and mixed with silty sand. The mean maximum temperature ranges from 29.2 C to 41.8 C and the mean
+minimum temperature varies between 13 C to 24 C. The average annual rainfall in and around area is 867
+mm as per the meteorological record. The rainfall pattern is uncertain and unequally distributed. The
+campus  receives 50 % of the rainfall during Northeast Monsoon.
+The campus located in a sloppy  terrain  and the  western side of the campus  near canteen three  mini rain
+water storage structures were constructed in a rocky strata. All the water near the rocky mound are
+collected and through lined drains  and directed into this structures. The land use pattern of the engineering
+college campus is of built up areas and open grounds consisting of green belts and several avenue trees.
+The blocks are well connected by neatly laid roads with a network of lined storm water drains. Major
+portion of the roof water from buildings and surface water generated from the open areas and roads follow
+the natural gradient and  subsequently flows through main canal of eastern side.
+Lined storm water drains have been developed on the northern and eastern sides of the premises and
+adjacent sides of the roads. The storm water drains carries huge quantity of runoff water during
+monsoon.The rainwater harvesting system consists of filter tank of size 2m dia and 2m depth , collection
+chamber of size 1m dia and 1m depth and recharge well of size 3m dia and 5m depthat appropriate places.
+Based on average annual rainfall of 867 mm , the annual roof water and surface water generated from the
+terraces of buildings and open areas is 18457 KL and 2,80,260 KL, respectively. The harvested rain water
+is utilized for recharging the open well and bore wells by artificial recharge structure. The runoff water
+Page 97/118 18-01-2019 10:53:24
+Self Study Report of THIAGARAJAR COLLEGE OF ENGINEERING
+generates from the campus during monsoon is diverted to aquifer system . This rain water system
+overcomes the ill effects of inadequate natural recharge and over exploitation of water due to increasing
+demand it  also targets the gradual improvement in the quality of water by implementing artificial recharge
+structure In addition to the   tangible benefits ,it also inculcate awareness to the student community who
+happen to be budding engineers and   entrepreneurs of our country.
+File Description Document
+Any additional information View Document
+    7.1.7 Green Practices
+•    Students, staff using
+a)    Bicycles
+b)    Public Transport
+c)    Pedestrian friendly roads
+•    Plastic-free campus
+•    Paperless office
+•   Green landscaping with trees and plants
+Response: 
+The College has green environment due to its strict governance on protecting trees in the campus.
+Cutting of trees is strictly prohibited. Most of the buildings are constructed without demolishing
+trees in the campus. Thus the campus holds more than 75 % of green cover. Certain department
+such as Architecture, the students celebrates their batch day by planting trees.
+All the plant species in the campus have name boards high lighting the medicinal / herbal
+significance.
+The College has higher number of peacock visits from Thiruparankundram region. Hurting snakes,
+monkeys, peacocks and other birds are strictly prohibited. Special hoardings were erected at many
+places indicating their religious values.
+The College with due technical inputs and assistance from workforce has initiated following energy
+conservation measures to ensure cost control:  Periodic energy auditing, Generation and utilization
+of bio-gas in hostels, Solar stills for hot water usage in hostel, Deployment of Plastic tar roads and
+Energy conserving lighting systems.
+As one of the green practices, 450 KW Solar power plant has been installed in the roof tops of
+various buildings.  
+Organic waste is collected from different parts of the campus and manure is prepared for the plants
+using vermi -compost techniques (preparing manure through earth worms).
+Recycling of plastics is one of the key factors in protecting the environment. The College collects
+Plastic waste from different parts of the city for laying plastic roads in the campus. Most segments
+of the roads and central parking area were laid from plastic wastes. Patent is also obtained by the
+College in plastic bitumen road technology.
+Recycling waste water (grey water) from the canteen and other cooking areas in the campus is used
+for watering plants. Drip irrigation is practiced for teak plantation in the campus.
+Rain water harvesting is practiced in the campus and a storage tank of capacity two lakh litres (50
+thousand gallons) is stored annually
+Page 98/118 18-01-2019 10:53:24
+Self Study Report of THIAGARAJAR COLLEGE OF ENGINEERING
+Educating the students about the green atmosphere, plastic waste and garbage culture is handled in
+NSS and NCC programmes. Awareness lectures on environmental perspectives in Vedas and
+Bhagavat Gita were handled daily in the College premises. The lecture usually happens under a
+banyan tree.
+TCE maintains the list of automated softwares for easy administration and governance and to
+reduce the usage of papers.
+Components Purpose
+TCE Admissions Automation Systems UG/PG student admission into the programmes
+CAMU
+ 
+Teaching Learning activities: course plan, attendance, marks, assignment,
+counselling, learning materials, feedback
+Maintenance Grievance redressal system: Intranet, internet, hostel, housekeeping
+TAMS: TCE Attendance Monitoring System Automatic management of attendance and timesheets for staff of the
+College through entries from biometric fingerprint machines
+TEAM: TCE Asset Management System Complete list of facilities in all laboratories are maintained
+TEA: TCE Examination Automation Details related to all examination and result publishing processes
+TIC: T
+....Control System
+System for control on the usage of stationeries
+Library
+ 
+AutoLib: Automated operations and maintenance of library
+Digital Library: Online free access to technical journals like IEEE,
+ASME, ASCE, McGraw Hill eBooks, Science Direct.
+ 
+ 
+File Description Document
+Any additional information View Document
+    7.1.8 Average percentage expenditure on green initiatives and waste management excluding salary
+component during the last five years
+Response: 2.33
+7.1.8.1 Total expenditure on green initiatives and waste management excluding salary component year-
+wise during the last five years(INR in Lakhs)
+  2017-18 2016-17 2015-16 2014-15 2013-14
+97.17 89.67 47.35 1.29 0.19
+Page 99/118 18-01-2019 10:53:25
+Self Study Report of THIAGARAJAR COLLEGE OF ENGINEERING
+File Description Document
+Details of expenditure on green initiatives and waste
+management during the last five years
+View Document
+Any additional information View Document
+    7.1.9 Differently abled (Divyangjan) Friendliness Resources available in the institution:
+1.Physical facilities
+2.Provision for lift
+3.Ramp / Rails
+4.Braille Software/facilities
+5.Rest Rooms
+6.Scribes for examination
+7.Special skill development for differently abled students
+8.Any other similar facility (Specify)
+A. 7 and more of the above
+B. At least 6 of the above
+C. At least 4 of the above
+D. At least 2 of the above
+Response: C. At least 4 of the above
+File Description Document
+Resources available in the institution for
+Divyangjan
+View Document
+Any additional information View Document
+    7.1.10 Number of Specific initiatives to address locational advantages and disadvantages during the
+last five years
+Response: 17
+7.1.10.1 Number of specific initiatives to address locational advantages and disadvantages year-wise
+during the last five years
+  2017-18 2016-17 2015-16 2014-15 2013-14
+5 3 3 4 2
+Page 100/118 18-01-2019 10:53:26
+Self Study Report of THIAGARAJAR COLLEGE OF ENGINEERING
+File Description Document
+Number of Specific initiatives to address locational
+advantages and disadvantages
+View Document
+Any additional information View Document
+    7.1.11 Number of initiatives taken to engage with and contribute to local community during the last
+five years (Not addressed elsewhere)
+Response: 77
+7.1.11.1 Number of initiatives taken to engage with and contribute to local community year-wise during
+the last five years
+  2017-18 2016-17 2015-16 2014-15 2013-14
+8 10 17 20 22
+File Description Document
+Report of the event View Document
+    7.1.12
+Code of conduct handbook exists for students, teachers, governing body, administration including
+Vice Chancellor / Director / Principal /Officials and support staff
+Response: Yes
+File Description Document
+Any additional information View Document
+URL to Handbook on code of conduct for
+students and teachers , manuals and brochures on
+human values and professional ethics
+View Document
+    7.1.13 Display of core values in the institution and on its website
+Response: Yes
+File Description Document
+Provide URL of website that displays core values View Document
+    7.1.14 The institution plans and organizes appropriate activities to increase consciousness about
+Page 101/118 18-01-2019 10:53:27
+Self Study Report of THIAGARAJAR COLLEGE OF ENGINEERING
+national identities and symbols; Fundamental Duties and Rights of Indian citizens and other
+constitutional obligations
+Response: Yes
+File Description Document
+Details of activities organized to increase
+consciousness about national identities and symbols
+View Document
+Any additional information View Document
+    7.1.15 The institution offers a course on Human Values and professional ethics
+Response: Yes
+File Description Document
+Any additional information View Document
+    7.1.16 The institution functioning is as per professional code of prescribed / suggested by statutory
+bodies / regulatory authorities for different professions
+Response: Yes
+File Description Document
+Any additional information View Document
+    7.1.17 Number of activities conducted for promotion of universal values (Truth, Righteous conduct,
+Love, Non-Violence and peace); national values, human values, national integration, communal
+harmony and social cohesion as well as for observance of fundamental duties during the last five
+years
+Response: 69
+7.1.17.1 Number of activities conducted for promotion of universal values (Truth, Righteous conduct,
+Love, Non-Violence and peace); national values, human values, national integration, communal harmony
+and social cohesion as well as for observance of fundamental duties year-wise during the last five years
+  2017-18 2016-17 2015-16 2014-15 2013-14
+14 13 14 14 14
+Page 102/118 18-01-2019 10:53:29
+Self Study Report of THIAGARAJAR COLLEGE OF ENGINEERING
+File Description Document
+List of activities conducted for promotion of
+universal values
+View Document
+Any additional information View Document
+    7.1.18 Institution organizes national festivals and birth / death anniversaries of the great Indian
+personalities
+Response: 
+The Institution regularly celebrates national festivals and organizes events on the birth and  death
+anniversaries of great personalities. The following are the events conducted regularly:
+* Teacher's Day celebrations
+* Gandhiji's Birthday
+* Martyrs' Day
+* Engineer's Day
+* Vivekandha's Birthday
+* Bharathiyar's Birthday
+* College Celebrates its Founder's Day on 29th July every year. On that day scholarship from Alumni
+Charitable trust is distributed to students who are academically sound and economically weak. Around 150
+students from all disciplines are being benefitted every year.
+ 
+    7.1.19 The institution maintains complete transparency in its financial, academic, administrative and
+auxiliary functions
+Response: 
+Academic, Financial Functions:
+The College operates under the statutory and regulatory requirements of AICTE, NBA, UGC, Anna
+University and Directorate of Technical Education (DoTE).The State Government?s policies like student
+admission, faculty/staff recruitment, building stability, fire safety, rain water harvesting, non-usage of
+plastics, waster water recycling have been implemented by the College. Account General Audit (AGA) and
+Local Fund (LFA) Audits are as per the grant in aid code. The College is administered by its Governing
+Council. 
+Page 103/118 18-01-2019 10:53:29
+Self Study Report of THIAGARAJAR COLLEGE OF ENGINEERING
+ The Governing Council has member composition of eminent academicians, industry experts, nominees
+from AICTE, state Government, UGC and affiliated institutions. In order to achieve a sustainable progress,
+the College activities are sub divided into Planning and Administration, Teaching and Learning, Research
+& Development, Industry Interface and student activities and each of the domains is managed by a Dean
+who in turn interacts with heads of Departments. 
+Budget allocation is done for every academic year for each department under each head. Utilization is
+tracked periodically through internal and external finance audits.
+Administrative Functions:
+The College has decentralized administrative structure with Chairman, Principal, Deans, Registrar and
+Heads of the Departments, Co-coordinators, Faculty, support staff and Students. The administrative
+mechanism of the college is functionally grouped under Planning and Administration, teaching and
+learning, Research and development, Co-curricular and Extra Curricular activities.  Institutional works
+related to each area is carried out by the respective coordinators of the departments with the guidance from
+the Head of the department. They are being coordinated at the College level by the Deans of the respective
+domains supported by coordinators nominated from the departments.  The interaction between Deans and
+Heads of the department facilitates quality and sustainability. Reviews are conducted at the department
+level (weekly), institute level (monthly) and Management level (half yearly) on the performance on
+performances of processes through periodic internal/external ISO audits and MRMs.
+                                                    
+Page 104/118 18-01-2019 10:53:29
+Self Study Report of THIAGARAJAR COLLEGE OF ENGINEERING
+                                                                                     College Management System
+ 
+   
+7.2 Best Practices
+    7.2.1 Describe at least two institutional best practices (as per NAAC Format)
+Response: 
+1) TCE- TVS Co-created Curriculum:
+TCE, Madurai and TVS Motors (TVSM) Company, Hosur are jointly desirous of developing an industry
+supported curriculum for UG Mechanical Engineering programme  and UG Electrical and Electronic
+Engineering and offer the same to the deserving students.
+Design:
+The Curriculum was developed jointly with TVSM Subject Matter Experts (SME) so as to make
+the role ready engineers. The course designers from the members of Special Interest Group (SIG)]
+of TCE and Subject matter experts of TVSM will be formulating the syllabus together. The experts
+Page 105/118 18-01-2019 10:53:30
+Self Study Report of THIAGARAJAR COLLEGE OF ENGINEERING
+from TVSM will be participating in the meeting of Board of studies for scrutinizing the syllabus to
+match with employability skills sought for. The Curriculum of every semester will be presented in
+Board of Studies and approved through Academic Council of the College. The Curriculum framed
+is extended to all the UG students of Mechanical Engineering programme.
+The Courses will have Course Objectives and are mapped with Programme Outcomes in order to
+ensure the level of competencies while they completing the course. The Project work is designed
+such a way that the selected students carry out their project in TVSM Company which will be
+reviewed thrice by Faculty of TCE and Subject Matter Experts (SMEs) in a semester.
+Course development is done through Design Documents containing Programme Outcome versus Course
+Outcome mapping, Course Objectives and Enabling Objectives, Content and Methods to deliver the
+content, Inventories used for delivery, timelines for delivery, evaluation methods and question banks.
+Course Map - Enclosed
+Delivery:
+   Normally, the courses are handled by the faculty at TCE and the customized elective courses are taught
+by SMEs of TVSM or the identified subject experts from higher learning institutes/foreign institutions.
+Content delivery by SMEs for Programme Elective courses
+Spark Ignition Engines – Fundamentals, Design and Engineering
+                      - Mr.Roger D Stone, RDS Engineering UK
+Vehicle Design Engineering –Statics and Dynamics
+                      - Dr.Roberto Lot, University of Southampton
+System Approach for Engineers
+                 - Dr.Subramaniam, STIMS Institute USA
+Metal Cutting Process Engineering
+                 - Mr.K.Vijaykumar, IMTA, Bangalore
+Sheet Metal drawing and Bending
+                - Mr.A.Mani, Karun Tooling, Bangalore
+Design for Welding 
+               - Dr.C.Ravichandran, Welding Research Institute, Trichy
+ 
+Page 106/118 18-01-2019 10:53:30
+Self Study Report of THIAGARAJAR COLLEGE OF ENGINEERING
+Internship at TVS Motors in the areas of Product development and management and Project
+management for the students
+Skill Training at GTTI, Coimbatore
+Technical Training at TVSM, Hosur
+Behavioural Training at TVSM, Hosur
+Project Training at TVSM, Hosur
+The Internship focuses on behavioral programs such on Time Management, Creativity,
+Communication, and Attitude. The Students also undergo Technical programs during vacation. The
+Expenses of Internship for the selected students will be completely borne by TVSM. Also the
+company sponsors expenses of TCE faculty accompanying students for Internship.
+Customized training for the courses like industrial metrology, vehicle design engineering, Testing
+and certification of automotive electrical and electronic systems by ARAI, Pune.
+Ten days course on “Spark Ignition engines” had been conducted by UK experts along with
+employees of industries
+Experiential learning in Laboratories:
+      - Machine Shop, Workshop and Fitting shop laboratory exercises through live automobile parts with
+the learning on process planning and sequencing of operations.
+Assessment:
+Students’ performance analysis is done for continuous assessment test for each question in each
+course, followed by their improvement plan through counseling. Result analysis is done course-
+wise, semester-wise, batch-wise and student-student.
+Assessment of student competency in technical and behavioral skills for every semester during their
+internship and through Continuous Assessment Tests.
+Students are indulged to perform system level projects on Power Train Systems and also sub-
+systems of Power Train Systems design and manufacturing during their project period.
+Project evaluation is carried out by SMEs and TCE faculty members. Students interact and
+collaborate with managers of various Departments of TVSM. This enhances the employability
+skills to students.
+ 
+2) Theme Areas and SIGs in Department
+Every department has identified a theme area and Special Interest Groups. All the academic related and
+R&D works in the departments are focused towards its theme area and SIGs. The following are the list of
+Theme areas and SIGs of the departments of TCE.
+ 
+Department Theme Area Special Interest Groups Name 
+Civil Eco Friendly structures Structures – Steel and Concrete, Water Resources, Geotechnical Engineering,
+Transportation, Construction Materials, Environmental Engineering
+Mechanical Automation Machine Design, Quality, Thermal, Manufacturing, Supply Chain, Machine
+Vision
+EEE Power Systems and Energy Power Systems, Power Electronics and Drives, Control Systems, Soft
+Page 107/118 18-01-2019 10:53:30
+Self Study Report of THIAGARAJAR COLLEGE OF ENGINEERING
+Computing, Energy Systems
+ECE Wireless Technologies RF Systems, Signal Processing, Image Processing, VLSI Systems,
+Networking, Remote Sensing and GIS, Embedded Systems
+CSE
+IT
+MCA
+Knowledge Engineering,
+Data and Business Analytics
+Free/Open Source Software, Multicore Architecture, Software Engineering,
+Data Mining, Information Security, Distributed Systems, Enterprise
+Resource Planning, Cloud Computing, Computer Networks
+Architecture Heritage Digital Architecture, Landscape, Climatology
+Mathematics Modelling and Simulation
+Physics Materials Science
+Chemistry Green Chemistry
+ 
+File Description Document
+Link for Additional Information View Document
+   
+7.3 Institutional Distinctiveness
+    7.3.1 Describe/Explain the performance of the institution in one area distinctive to its vision, priority
+and thrust
+Response: 
+Under the broad umbrella of Technology Vision 2020, Technology Information, Forecasting and
+Assessment Council (TIFAC) has launched an ambitious mission called REACH (Relevance and
+Excellence in achieving new heights in educational institutions). The foundation of the mission rests firmly
+on the triangle linkage between the academic institution, industry and government.  Thiagarajar College of
+Engineering has been selected by TIFAC to set up a Centre of Excellence in Wireless Technologies.
+Vision of TIFAC at TCE is to become world class training, research and product development centre in
+wireless technologies.
+Objectives are three fold namely:
+To generate trained manpower in emerging Wireless Technologies.
+To train Engineers from industries and government organizations in the area of wireless system
+design and testing.
+To carryout collaborative research and product development in the allied areas of wireless
+technologies.
+TIFAC CORE at Thiagarajar College of Engineering would strive to establish state of art infrastructure in
+wireless technologies.
+Mission REACH (Relevance & Excellence in Achieving new heights in educational institutions) launched
+Page 108/118 18-01-2019 10:53:30
+Self Study Report of THIAGARAJAR COLLEGE OF ENGINEERING
+by TIFAC aims to create a constellation of world class COREs- Centre of Relevance & Excellence - in
+diverse disciplines across the length and breadth of the country. The mission intends to create 80-100 such
+COREs, which together will emerge as a network across the country. Mandated to turn out top quality
+human resource in the area of targeted excellence, which shall be utmost, relevant to Indian industries &
+society.
+TIFAC-CORE, an idea that is simple yet vastly powerful, each CORE will be the outcome of the funding,
+infrastructure, expertise, knowledge and commitment brought together by the user industry, educational
+institute and government. Every one of them a center of excellence, with the best of teachers, students and
+researchers, entrepreneurs and industries, this network of COREs will become a powerful and important
+resource to realize the dream of developed India by 2020. A resource that is soon to crystallize into a
+reality, as can be seen by the number of COREs that are already successfully functioning in various parts
+of the country.
+First Phase of TIFAC CORE in Wireless Technologies has initiated the following:
+State of Art RF and Base Band Systems Laboratories
+CTIA Certified Anechoic Chamber Facility
+M.E Course in Wireless Technologies
+Man Power generation in Wireless Technologies
+Research tie up with DRDO, HTSL, Bangalore, Motorola, India, TVSICS, Madurai.
+Second Phase of TIFAC CORE in Wireless Technologies would look into the following:
+Tie up with higher learning institutes in India and Abroad
+NABL Certification for Wireless Laboratories
+Value added facilities like external antenna test ranges, wireless protocol development centre etc.
+i – Labs will be established for wireless experiments
+New wireless product development and patenting
+Work on Plastic Waste Management:
+A major work on the plastic waste is being carried out in the college by Dr. R. Vasudevan and his team
+from Dept. of. Chemistry, Thiagarajar College of Engineering. A newer method has been developed by
+coating waste plastics over hot stone aggregate and uses the same for road construction. Here the
+consumption of waste plastics is high (10 % to 15 %). This method is patented in 2002 by Dr. R.
+Vasudevan. This technology was also coded by the Indian Road Congress in 2013(IRC-SP-98-2013).
+Using this technology more than 50, 000 Kms of road has been laid in India. The durability of the road is
+not less than 10 years. The performances of the roads laid were also studied under the guidance of Central
+Pollution Control Board, New Delhi. The roads constructed using this technology was well appreciated
+both by the government and in the private sector . In India almost 11 states had implemented this
+technology. The government is using the PMGSY scheme fund for laying plastic roads on rural road
+sector.The Government of India had awarded the 4thhighest civilian award “Padmasri” to Dr. R.
+Vasudevan on 20thMarch 2018. 
+Page 109/118 18-01-2019 10:53:31
+Self Study Report of THIAGARAJAR COLLEGE OF ENGINEERING
+File Description Document
+Link for Additional Information View Document
+ 
+Page 110/118 18-01-2019 10:53:31
+Self Study Report of THIAGARAJAR COLLEGE OF ENGINEERING
+5. CONCLUSION
+Additional Information : 
+With an idea to create lively environment for interaction, intellectual discussions, continued learning,
+knowledge improvement of academics and the need for paradigm shift in attitude, Quality circle was introduced
+in TCE the month of June 2014. A group of enthusiastic faculty members were identified as facilitators.
+Brainstorming sessions to identify issues were conducted across all Departments by these facilitators which had
+decent response from the students. The problems were prioritized by the teams. Quality Circles were formed to
+address the problems related to Teaching Learning as key concerns.
+More details are found in www.tce.edu/content/quality_circle
+Concluding Remarks : 
+The College has “World Class Quality technical education with strong ethical values” as its vision, which is in
+tune with our Founder's philanthropic thought of “Work is Worship”. The ethical value system envisioned by
+the Founder of the College is reflected in all the processes of distributing management seats to meritorious and
+economically deserving candidates from the society.
+Over the years, the Institute has consciously improved the academic processes through the identified functional
+areas. This incremental improvement happened in the areas of teaching and learning, research and industry
+interface, Student activities and modernizing the administration through ERP systems. The faculty members
+have been nurtured continuously to chart out their career path with more emphasis on research and industrial
+interactions.
+TCE has predominantly moved from teaching institution to research based learning in late 2000s, which results
+in more than 60% of our faculty possessing the doctoral degrees. This led to the establishment of Centers of
+Excellence and creation of knowledge through Publications and Patents. Now, it is focusing towards product
+development based education and entrepreneurship by establishing incubations inside the campus.
+In the past two decades, the voluntary participation in accreditation process by NIRF ranking, NBA, AICTE-
+CII industrial survey and other magazine rankings annually. In addition the prestigious quality awards such as
+IMC Ramkrishna Bajaj, Rajiv Gandhi Natonal Quality Award have enabled the system to refine itself in the
+process.
+TCE continue its Education journey continuously with improved Quality in all domains and chosen fields.
+ 
+Page 111/118 18-01-2019 10:53:31
+Self Study Report of THIAGARAJAR COLLEGE OF ENGINEERING
+6.ANNEXURE
+1.Metrics Level Deviations
+Metric ID Sub Questions and Answers before and after DVV Verification
+1.3.2 Number of value-added courses imparting transferable and life skills offered during the last five years
+     1.3.2.1. How many new value-added courses are added within the last 5 years
+          Answer before DVV Verification :  93 
+          Answer after DVV Verification: 80 
+2.1.1 Average percentage of students from other States and Countries during the last five years
+     2.1.1.1. Number of students from other states and countries year-wise during the last five years
+          Answer before DVV Verification:
+          2017-18 2016-17 2015-16 2014-15 2013-14
+41 52 37 31 21
+          Answer After DVV Verification :
+          2017-18 2016-17 2015-16 2014-15 2013-14
+10 15 6 9 21
+2.3.3 Ratio of students to mentor for academic and stress related issues
+     2.3.3.1. Number of mentors
+          Answer before DVV Verification :  240 
+          Answer after DVV Verification: 240 
+2.4.2 Average percentage of full time teachers with Ph.D. during the last five years
+     2.4.2.1. Number of full time teachers with Ph.D. year-wise during the last five years
+          Answer before DVV Verification:
+          2017-18 2016-17 2015-16 2014-15 2013-14
+170 165 156 145 134
+          Answer After DVV Verification :
+          2017-18 2016-17 2015-16 2014-15 2013-14
+169 165 156 145 134
+     Remark : HEI input edited according to provided documents.
+2.4.4 Percentage of full time teachers who received awards, recognition, fellowships at State, National,
+International level from Government, recognised bodies during the last five years
+Page 112/118 18-01-2019 10:53:32
+Self Study Report of THIAGARAJAR COLLEGE OF ENGINEERING
+     2.4.4.1. Number of full time teachers receiving awards from state /national /international level
+from Government recognised bodies year-wise during the last five years
+          Answer before DVV Verification:
+          2017-18 2016-17 2015-16 2014-15 2013-14
+78 78 55 58 45
+          Answer After DVV Verification :
+          2017-18 2016-17 2015-16 2014-15 2013-14
+23 35 16 33 17
+     Remark : Awards for State/national/International level from GOVT recognized bodies will be
+considered. 
+3.1.3 Number of teachers awarded international fellowship for advanced studies/ research  during the last
+five years
+     3.1.3.1. The number of teachers awarded international fellowship for advanced studies / research
+year-wise during the last five years
+          Answer before DVV Verification:
+          2017-18 2016-17 2015-16 2014-15 2013-14
+6 3 7 4 3
+          Answer After DVV Verification :
+          2017-18 2016-17 2015-16 2014-15 2013-14
+1 0 0 1 1
+     Remark : Teachers awarded for advance study /research are only considered., Teacher's went for
+conference, collaboration purpose will not be considered here.  
+3.2.1 Grants for research projects sponsored by the non-government sources such as industry, corporate
+houses, international bodies, endowments,Chairs in the institution during the last five years (INR in
+Lakhs)
+     3.2.1.1. Total Grants for research projects sponsored by the non-government sources such as
+industry, corporate houses, international bodies, endowments, Chairs in the institution year-wise
+during the last five years(INR in Lakhs)
+          Answer before DVV Verification:
+          2017-18 2016-17 2015-16 2014-15 2013-14
+310.28 422.62 80.18 773.29 1019.08
+          Answer After DVV Verification :
+Page 113/118 18-01-2019 10:53:32
+Self Study Report of THIAGARAJAR COLLEGE OF ENGINEERING
+          2017-18 2016-17 2015-16 2014-15 2013-14
+184.12 128.42 72.19 568.83 684.55
+     Remark : The grants for projects Under TEQUIP will not be counted here. 
+3.3.2 Number of workshops/seminars conducted on Intellectual Property Rights (IPR) and Industry -
+Academia Innovative practices during the last five years
+     3.3.2.1. Total number of workshops/seminars conducted on Intellectual Property Rights (IPR) and
+Industry-Academia Innovative practices year-wise during the last five years
+          Answer before DVV Verification:
+          2017-18 2016-17 2015-16 2014-15 2013-14
+24 35 24 24 12
+          Answer After DVV Verification :
+          2017-18 2016-17 2015-16 2014-15 2013-14
+21 27 20 23 9
+     Remark : HEI input edited as per clarification response
+3.3.3 Number of awards for innovation won by institution/ teachers/ research scholars/students during the
+last five years
+     3.3.3.1. Total number of awards for innovation won by institution/teachers/research
+scholars/students year-wise during the last five years
+          Answer before DVV Verification:
+          2017-18 2016-17 2015-16 2014-15 2013-14
+26 72 29 31 17
+          Answer After DVV Verification :
+          2017-18 2016-17 2015-16 2014-15 2013-14
+24 59 22 27 16
+     Remark : Edited as per clarification response. Awards for innovations ONLY counted.
+3.4.4 Number  of Ph.D.s awarded per teacher during the last five years
+     3.4.4.1. How many Ph.Ds are awarded within last 5 years
+          Answer before DVV Verification :  183 
+          Answer after DVV Verification: 196 
+     3.4.4.2. Total number of teachers recognised as guides during the last 5 years
+Page 114/118 18-01-2019 10:53:32
+Self Study Report of THIAGARAJAR COLLEGE OF ENGINEERING
+          Answer before DVV Verification :  112 
+          Answer after DVV Verification: 112 
+     Remark : HEI Clarification response
+3.7.2 Number of linkages with institutions/industries for internship, on-the-job training, project work,
+sharing of research facilities etc. during the last five years
+     3.7.2.1. Number of linkages for faculty exchange, student exchange, internship, field trip, on-the-
+job training, research, etc year-wise during the last five years
+          Answer before DVV Verification:
+          2017-18 2016-17 2015-16 2014-15 2013-14
+265 272 190 96 189
+          Answer After DVV Verification :
+          2017-18 2016-17 2015-16 2014-15 2013-14
+139 115 64 56 61
+5.2.2 Percentage of student progression to higher education (previous graduating batch)
+     5.2.2.1. Number of outgoing students progressing to higher education
+          Answer before DVV Verification :  30 
+          Answer after DVV Verification: 27 
+5.2.3 Average percentage of students qualifying in State/ National/ International level examinations during
+the last five years (eg: NET/ SLET/ GATE/ GMAT/ CAT/ GRE/ TOEFL/ Civil Services/State
+government examinations)
+     5.2.3.1. Number of students qualifying in state/ national/ international level examinations (eg:
+NET/ SLET/ GATE/ GMAT/ CAT/ GRE/ TOEFL/ Civil services/ State government examinations)
+year-wise during the last five years
+          Answer before DVV Verification:
+          2017-18 2016-17 2015-16 2014-15 2013-14
+148 105 84 103 133
+          Answer After DVV Verification :
+          2017-18 2016-17 2015-16 2014-15 2013-14
+4 17 7 5 0
+     5.2.3.2. Number of students appearing in state/ national/ international level examinations (eg:
+NET/SLET/GATE/GMAT/CAT, GRE/TOEFL/ Civil Services/State government examinations) year-
+wise during the last five years
+          Answer before DVV Verification:
+          
+Page 115/118 18-01-2019 10:53:32
+Self Study Report of THIAGARAJAR COLLEGE OF ENGINEERING
+2017-18 2016-17 2015-16 2014-15 2013-14
+5.3.1 Number of awards/medals for  outstanding performance in sports/cultural activities at 
+national/international level (award for a team event should be counted as one) during the last five
+years
+     5.3.1.1. Number of awards/medals for outstanding performance in sports/cultural activities at 
+national/international level (award for a team event should be counted as one) year-wise during the
+last five years
+          Answer before DVV Verification:
+          2017-18 2016-17 2015-16 2014-15 2013-14
+40 76 48 26 36
+          Answer After DVV Verification :
+          2017-18 2016-17 2015-16 2014-15 2013-14
+2 2 4 0 0
+5.4.2 Alumni contribution during the last five years(INR in Lakhs)
+          Answer before DVV Verification : ? 15 Lakhs 
+          Answer After DVV Verification: ? 15 Lakhs
+6.5.3 Average number of quality initiatives by IQAC for promoting quality culture per year
+     6.5.3.1. Number of quality initiatives by IQAC for promoting quality year-wise for the last five
+years  
+          Answer before DVV Verification:
+          2017-18 2016-17 2015-16 2014-15 2013-14
+7 8 8 12 5
+          Answer After DVV Verification :
+          2017-18 2016-17 2015-16 2014-15 2013-14
+0 0 0 0 0
+     Remark : Quality Initiatives by IQAC for Academic quality improvement are expected.
+7.1.9 Differently abled (Divyangjan) Friendliness Resources available in the institution:
+1. Physical facilities
+2. Provision for lift
+3. Ramp / Rails
+4. Braille Software/facilities
+5. Rest Rooms
+Page 116/118 18-01-2019 10:53:33
+Self Study Report of THIAGARAJAR COLLEGE OF ENGINEERING
+6. Scribes for examination
+7. Special skill development for differently abled students
+8. Any other similar facility (Specify)
+          Answer before DVV Verification : B. At least 6 of the above 
+          Answer After DVV Verification: C. At least 4 of the above
+7.1.10 Number of Specific initiatives to address locational advantages and disadvantages during the last five
+years     7.1.10.1. Number of specific initiatives to address locational advantages and disadvantages
+year-wise during the last five years
+          Answer before DVV Verification:
+          2017-18 2016-17 2015-16 2014-15 2013-14
+21 18 22 21 25
+          Answer After DVV Verification :
+          2017-18 2016-17 2015-16 2014-15 2013-14
+5 3 3 4 2
+7.1.11 Number of initiatives taken to engage with and contribute to local community during the last five
+years (Not addressed elsewhere)
+     7.1.11.1. Number of initiatives taken to engage with and contribute to local community year-wise
+during the last five years
+          Answer before DVV Verification:
+          2017-18 2016-17 2015-16 2014-15 2013-14
+20 18 16 18 20
+          Answer After DVV Verification :
+          2017-18 2016-17 2015-16 2014-15 2013-14
+8 10 17 20 22
+7.1.17 Number of activities conducted for promotion of universal values (Truth, Righteous conduct, Love,
+Non-Violence and peace); national values, human values, national integration, communal harmony
+and social cohesion as well as for observance of fundamental duties during the last five years
+     7.1.17.1. Number of activities conducted for promotion of universal values (Truth, Righteous
+conduct, Love, Non-Violence and peace); national values, human values, national integration,
+communal harmony and social cohesion as well as for observance of fundamental duties year-wise
+during the last five years
+          Answer before DVV Verification:
+          2017-18 2016-17 2015-16 2014-15 2013-14
+65 62 60 65 60
+Page 117/118 18-01-2019 10:53:33
+Self Study Report of THIAGARAJAR COLLEGE OF ENGINEERING
+          Answer After DVV Verification :
+          2017-18 2016-17 2015-16 2014-15 2013-14
+14 13 14 14 14
+2.Extended Profile Deviations
+Extended Profile Deviations
+No Deviations
+Powered by TCPDF (www.tcpdf.org)
+Page 118/118 18-01-2019 10:53:33

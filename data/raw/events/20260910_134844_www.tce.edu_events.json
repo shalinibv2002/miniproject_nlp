@@ -1,0 +1,33 @@
+{
+  "source_url": "https://www.tce.edu/events",
+  "collected_at": "2026-09-10T13:48:44.696599",
+  "raw_file": "20260910_134844_www.tce.edu_events.html",
+  "records": [
+    {
+      "title": "International Conference on AI in Construction and Sustainable Built Environment",
+      "url": "https://www.tce.edu/events/icaic-2026",
+      "date_text": "17 Dec, 2026 - 18 Dec, 2026",
+      "activity_date": "2026-12-17",
+      "activity_date_end": "2026-12-18",
+      "source": "TCE Events",
+      "description": "The International Conference on AI in Construction and Sustainable Built Environment organized by the Department of Civil Engineering, aims to bring together researchers, academicians and industry experts to discuss emerging trends in artificial intelligence, smart infrastructure and sustainable construction practices. Conducted in hybrid mode, the conference provides a platform for knowledge exchange, innovation and collaboration towards developing resilient and environmentally responsible built environments. The Microsoft CMT service was used for managing the peer-reviewing process for this conference. This service was provided for free by Microsoft and they bore all expenses, including costs for Azure cloud services as well as for software development and support."
+    },
+    {
+      "title": "TEDx Thiagarajar College of Engineering",
+      "url": "https://www.tce.edu/events/tedxthiagarajarcollegeofengineering",
+      "date_text": "28 Aug, 2026 - 28 Aug, 2026",
+      "activity_date": "2026-08-28",
+      "activity_date_end": "2026-08-28",
+      "source": "TCE Events",
+      "description": "Get ready for an extraordinary day of ideas, innovation, and inspiration on 28 August 2026 at TEDx Thiagarajar College of Engineering. Register and be part of the TEDx experience!"
+    },
+    {
+      "title": "Five-Day Online FDP on “AI-Powered Pedagogy”",
+      "url": "https://www.tce.edu/events/ai-powered-pedagogy",
+      "date_text": "24 Aug, 2026 - 28 Aug, 2026",
+      "activity_date": "2026-08-24",
+      "activity_date_end": "2026-08-28",
+      "source": "TCE Events"
+    }
+  ]
+}

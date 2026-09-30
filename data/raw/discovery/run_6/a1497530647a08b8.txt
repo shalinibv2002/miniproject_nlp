@@ -1,0 +1,911 @@
+Third Revised Version approved on 08.01.2025 
+ 
+ 
+RESEARCH POLICY 
+ 
+ 
+ 
+Thiagarajar College of Engineering 
+Madurai-625015. 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+Third Revised Version approved on 08.01.2025 
+ 
+ 
+Table of Contents 
+ 
+Sl.No. Title Page 
+No.  
+1 ACADEMIC RESEARCH (AR) POLICY 1 
+1.1     Research Council  1 
+1.2     Norms for Doctor of Philosophy (Ph.D.) and Master of Science (M.S.  
+      by Research) 1 
+1.3     AR Norms for Faculty 2 
+1.3.1    Financial Assistance 2 
+1.3.2    Collaborative Research 2 
+1.4   Plagiarism Check 3 
+1.5   The Act of Plagiarism 4 
+1.6   Code of Ethics Committee 4 
+1.7   AR Norms for Students for Course on Research Practice 5 
+2 SPONSORED RESEARCH (SR) POLICY 5 
+2.1   Sponsored Research for Students 5 
+2.2   Sponsored Research for Scholars 6 
+2.2.1    Thiagarajar Research Fellowship (TRF) 6 
+2.2.1.1     Eligibility & Duration 6 
+2.2.1.2     Amount of Fellowship 6 
+2.2.1.3     Standard Operating Procedure 6 
+2.2.1.4     Expected Outcome 7 
+2.2.1.5     Withholding of Fellowship 8 
+2.2.1.6     Cancellation of Fellowship 8 
+2.2.1.7     Guidelines 8 
+2.2.2    Thiagarajar Post Doctoral Fellowship (TPDF) 9 
+2.2.2.1     TPDF – Eligibility and Duration 9 
+2.2.2.2     Eligibility for Acting as Supervisor 9 
+2.2.2.3     Amount of Fellowship 10 
+2.2.2.4     Standard Operating Procedure 10 
+2.2.2.5     Expected Outcome 10 
+2.2.2.6     Terms and Conditions 10 
+2.2.3    Guidelines for Other Schemes 11 
+2.3   Sponsored Research for Faculty 11 
+2.3.1    Guidelines for Seed Money Scheme from TCE Management 11 
+2.3.1.1     Eligibility 11 
+2.3.1.2     Selection Procedure 12 
+2.3.2    Research Supporting Resources 12 
+2.3.3    Guidelines for Project Proposal Submission 12 
+2.3.4    Standard Operating Procedure (SOP) for UC Submission in Pro jects 13 
+2.3.4.1     Objective 13 
+2.3.4.2     Scope 13 
+Contd… 
+Third Revised Version approved on 08.01.2025 
+Sl.No. Title Page 
+No.  
+2.3.4.3     Procedure 13 
+2.3.4.4     Responsibilities 14 
+2.3.4.5     Timeline 14 
+2.3.5 
+   Guidelines for Selection of JRFs and Other Research Personn el  
+        (Technical Assistants and Research Associates) for Research  
+        Projects 
+14 
+2.3.5.1     Eligibility 15 
+2.3.5.2     Selection Procedure 15 
+2.3.5.3     Fellowship and Tenure of JRF/Project Fellow 16 
+3 PROMOTION OF RESEARCH (PR) POLICY 16 
+3.1   Research Promotion Policies through Faculty Award Incentive for   
+    Research Publications 16 
+3.2   Norms for Individual Faculty Award 17 
+ 
+ 
+Third Revised Version approved on 08.01.2025                                                                             1 
+                                                                  
+Thiagarajar College of Engineering, Madurai – 625 015 
+                           RESEARCH POLICY 
+ 
+ 
+ 
+Thiagarajar College of Engineering (TCE) is committed to serv ing society by 
+conducting state-of-the-art research on par with the national and international 
+standards. TCE creates an open platform to foster academic excellenc e and to 
+pursue scholarly research activities. The researchers shall abide  by the research 
+policy of the institute in accordance with the two key pr inciples namely, Quality 
+and Ethics. They are also responsible for ensuring that the r esearch practices are 
+carried out in conformance with the Anna University research policies. 
+1. ACADEMIC RESEARCH (AR) POLICY  
+1.1 Research Council 
+Our institution’s Research Council (RC) comprises two external experts from 
+higher learning institutions/research organizations/ind ustry, along with the 
+Principal, Director, Deans, Heads of Departments, and the Dean/Associat e Dean – 
+R&D. The tenure for external members is three years. The Res earch Council 
+convenes once a year with the following objectives: 
+ 
+ To provide guidelines for strategic planning and promotion of research 
+ To facilitate interaction with external agencies (industri es, funding bodies 
+etc.) and streamline the research proposal submission process 
+ To facilitate collaborative research with industry and provide  guidance on 
+technology commercialization 
+ To provide guidelines for effective management of research funding and 
+resources 
+ To support and enhance research efforts of PhD scholars and students 
+ To provide guidance on improving quality and quantity of res earch 
+publications 
+ To outline instructions for collaboration with national and international 
+institutions 
+ To give directions for having better benchmarking research  against leading 
+national and global engineering institutions. 
+ To establish a framework for recognizing faculty achievements in research 
+1.2 Norms for Doctor of Philosophy (Ph.D.) and Master of Science 
+(M.S. by Research)  
+Candidates should apply for Ph.D./M.S ( By Research) after getting approval 
+from the head of the institution with AR-1 form. Candidates s hould enroll and 
+register at TCE on getting provisional registration letter fr om Anna University and 
+renew their registration during the 1 st week of February/August every semester. 
+The AR-2 form should be used for enrollment. Full-time resea rch scholars must 
+use AR-3 form to obtain college ID card, library access and att endance monitoring 
+
+Third Revised Version approved on 08.01.2025                                                                             2 
+                                                                  
+system registration respectively. Scholars shall get permissi on to register their 
+course work (AR-4). Full- time scholars‟ attendance is monitored using a Biometric 
+system and every day attendance is mandatory. 
+Candidate should present his/her progress of research in the rev iew 
+meeting once in six months and submit the Ph.D. /M.S. (Research) Ren ewal and 
+Half Yearly Progress Review Report (HYPRR) in the prescribed f ormat (AR-5) to the 
+department in which they have registered. The schedule for the r eview meeting 
+would be prepared and announced by the Research and Development Te am. 
+Candidates should get prior permission to conduct DC meetings, synops is 
+meetings and Viva Voce exams after fulfilling the university norms. While 
+submitting the thesis, candidates should submit the no dues form (A R-6) to the 
+respective Department Level Coordinator. The research scholar shall submit a copy 
+of Ph.D./M.S. thesis to the College Library on successful completion  of the Viva-
+Voce. 
+The candidates are instructed to publish their research work in  reputed 
+(Scopus/ SCI/SCI-E/ESCI/Indian Citation Index) indexed conferences / journals / 
+workshops only after obtaining formal permission and endorse ment from the 
+respective supervisor. Only after checking for plagiarism , the research supervisor 
+should permit the candidate to submit the paper to the journal. 
+The faculty after the award of Ph.D., shall get the superv isorship within 3 
+years. Number of scholars a supervisor can guide, shall be base d on the 
+regulations of the UGC/Anna University norms. However, th e number of full-time 
+scholars to the supervisors can be limited by the institution from time to time 
+based on the infrastructure availability.  
+1.3 AR Norms for Faculty  
+To increase research outcomes, faculty members are permitte d to take 
+advantage of support provided by the institution. They need to procee d with the 
+same with after the approval of the respective department Heads. The following are 
+the support extended by the institution.  
+1.3.1 Financial Assistance 
+ Faculty members can avail financial assistance for attending Sc opus 
+indexed conferences/ conferences and seminars organized by the  reputed 
+institutions in India as well as by leading industries. 
+ A faculty member can seek reimbursement of registration and TA/DA_______ 
+(to be specified) only if he/she is a presenter, provided no other  agency has 
+given financial assistance for the same.  
+1.3.2 Collaborative Research  
+Faculty members are encouraged to pursue collaborative research with reputed 
+institutions in India and abroad as well as with leading indus tries, following the 
+guidelines and focus areas provided.  
+ Inter›disciplinary research shall be carried out at research nodal centers of 
+our college.  
+Third Revised Version approved on 08.01.2025                                                                             3 
+                                                                  
+ Faculty shall also visit research laboratories in reputed i nstitutions in India 
+or abroad as well as leading industries for interaction and di scussion with 
+their research group leading to collaborative research such as joint research 
+papers, joint research proposals, research partnership / MoUs or simil ar 
+other research activities.  
+ Faculty shall also spend one full semester in a reputed insti tution in India 
+or abroad as well as leading R&D organizations/industries prov ided the 
+preliminary research works required for such visits are complete d to the 
+satisfaction of our college and the visiting institution/industry. A mount for 
+TA/DA and fellowship shall be decided by the management. 
+ Faculty members shall visit reputed institutions in India or a broad and 
+leading R&D organizations/industries to do collaborative resea rch to guide 
+the students during their internship in industry to solve sp ecific industrial 
+problems. 
+ The proposal shall address a topic of thrust area of their research field and 
+address a challenging issue of theoretical, experimental and/or translational 
+values. 
+ The faculty members submitting proposals for research collabo ration shall 
+be a doctorate or a pursuing PhD. 
+o The proposal shall state clear and measurable deliverables with timeline. 
+o A set of tangible earmarked deliverables of the collaborative efforts on the 
+proposed topic consisting of joint research outcomes including but not 
+limited to two or more of the following:  
+⮚ Top Journal Publications 
+⮚ Text Books  
+⮚ Research Monographs 
+⮚ Patents 
+⮚ Products 
+⮚ Scaled Pilots/demonstrations 
+⮚ Course materials 
+At the time of commencement of such a collaborative research, f aculty has to 
+submit a proposal outlining the objective and significance of th eir collaborative 
+research initiative. After the completion, faculty has to  submit a report outlining 
+the outcome of the collaborative research work and the value a ddition it has 
+provided to the faculty. 
+1.4 Plagiarism Check 
+ Research scholar should submit the copy of plagiarism check rep ort of the 
+research paper to the concerned supervisor, before submittin g it to the 
+journal/conference. The research scholar‟s synopsis/thesis should accompany the 
+plagiarism report while submitting the same to Center for Rese arch, Anna 
+University. 
+Third Revised Version approved on 08.01.2025                                                                             4 
+                                                                  
+ All the postgraduate s tudents‟ thes es should include the copy of the 
+plagiarism check report. A maximum similarity threshold of 10% is allowed for 
+Ph.D. theses, synopsis and postgraduate thesis. 
+1.5 The Act of Plagiarism 
+ The scholar/faculty shall not publish research articles wi th similar contents 
+in part or full in more than one journal, which would result in self-plagiarism. 
+ In case of scholars who have committed the act of plagiar ism in the 
+thesis/journal publication, UGC/Anna University regulations will be followed for 
+actions against him/her and his/her supervisor. 
+1.6 Code of Ethics Committee  
+ Research ethics committee assesses the sponsored and academic researc h 
+initiatives in order to determine whether or not the work is ethical. This implies 
+that the study must adhere to the established ethical norms, such as prot ecting 
+participants’ rights, safety, and well-being of participants. It is also  necessary to 
+obtain ethical permission from the research ethics committee as it ensures that the 
+research is conducted responsibly that benefits both the society and participants of 
+the study. 
+ The research ethics committee comprises an external expe rt, Principal, Dean 
+(R&D), Associate Dean (R&D), Librarian and College Level Coordinat or. The 
+external expert will serve a two-year term as a member.  The committee meets 
+once in a Semester. In case of an urgent requirement, the Code of Ethics 
+Committee meeting will be conducted by the internal members. 
+  
+ The objectives of the committee are: 
+ To assess research proposals in order to decide whether the proje ct is 
+ethical. 
+ To ensure that researchers submit a plagiarism report for a r esearch 
+article before submitting it to a publication or conference. 
+ To ensure that all researchers receive appropriate training in the use of 
+equipment, keeping confidentiality, managing data, maintaining records, 
+protecting and publishing data, responsibly using authoriz ed research 
+resources, and respecting others’ intellectual property rights. 
+ To ensure that supervisors adhere to the principles outlined in the 
+Doctoral Supervision Code of Practice, which describe the sup ervisory 
+relationship, how research progress is evaluated, and how diffi culties in 
+the relationship are managed. 
+ To advise and assist scholars and students with their ethical concer ns 
+regarding research. 
+ To act as a body that investigates and provides advice on any di sputed 
+issue concerning research ethics and conduct. 
+Third Revised Version approved on 08.01.2025                                                                             5 
+                                                                  
+ To investigate the morality maintained when employing hum an 
+participants in research 
+ To sensitize the importance of ethics in research among stu dents, 
+scholars, and faculty frequently so that their research is legiti mate and 
+error-free. 
+ To provide researchers a forum to express their concerns regardi ng the 
+research they are conducting.  
+1.7 AR Norms for Students for Course on Research Practice  
+ A student who is having a minimum of 7.0 CGPA (up to the  third semester) 
+and without having any standing arrears can register for th e course on „Research 
+Practice‟ at the beginning of their Fourth Semester. The outcom e of the course will 
+be a publication in SCI / SCI-expanded /SCOPUS indexed Journal / Conference in 
+Science and Technology.  The number of credits for this cour se is 3. A group of a 
+maximum of two (2) students can register for this course and th ey should be the 
+first two authors. The student shall work under any TCE faculty  advisor who has 
+published at least 3 papers in SCI/ SCI expanded/SCOPUS-indexed journ als. The 
+faculty advisor is a third and the corresponding author. T he student can earn the 
+credits in the subsequent semesters (Fifth to Seventh). When t he student provides 
+the evidence of the research article publication (before starti ng the Fifth/ Sixth 
+/Seventh-semester course enrolment), the grades and credits will be awarded in 
+the subsequent semester. The grades will be awarded as per the detai ls in the 
+following Table. 
+  
+S.No  Category of Journal Grade 
+1   One Research Paper in SCI/SCI-Expanded Journal O 
+2   Two Research Papers in SCOPUS-indexed Journals  O 
+3   One Research paper in SCOPUS indexed Journal  A+ 
+4   One Research Paper in SCOPUS indexed Conference  A 
+  
+ If the student is not able to publish within the sixth semest er, the registration 
+will be automatically canceled and he/she has to meet the credit requirements for 
+the elective category by registering for necessary elective course s in the seventh 
+semester, if required. Further, if a student has not register ed for this research 
+course in the fourth semester but meets all the requirements, then the student will 
+be allowed to replace his/her grade and credits which are ea rned from this 
+research course. The grade and credits for this course wi ll be transferred under 
+programme elective for expanded scope category. 
+2. SPONSORED RESEARCH (SR) POLICY 
+2.1 Sponsored Research for Students 
+ The UG/ PG students shall apply for funding support from the Gover nment 
+/ Industries such as CPRI, NITI Aayog, MHRD, AICTE (Pragathi),  ISRO to 
+work in advanced areas of domain after getting recommendation from th e 
+college. 
+Third Revised Version approved on 08.01.2025                                                                             6 
+                                                                  
+ The student should not avail any financial assistance in the fo rm of 
+scholarship/any emoluments, salary, stipend etc. from more tha n one 
+source during his/her course of study in the Institute.  
+ He/she should submit all the relevant documents to the institute f or 
+verification before submitting the application. It should incl ude an internal 
+guide from our institute.  
+ The selected student should maintain attendance as prescribed by th e 
+funding agency. 
+ If any student leaves the programme mid-way, the institute has to ensure 
+recovery of the scholarship drawn till date by the student. 
+ The students shall apply for project associate of the sponsored/ consultancy 
+project being done by our faculty.  
+ 
+2.2 Sponsored Research for Scholars  
+ 
+2.2.1 Thiagarajar Research Fellowship (TRF) 
+2.2.1.1. Eligibility & Duration 
+ The TRF will be granted to the full-time research schol ars of TCE admitted 
+under Anna University, Chennai 
+ Applicants must possess First Class in either bachelor‟s or master‟s degrees 
+ Applicants must not receive any other Research Fellowship 
+ Duration of the scheme is Maximum of 3 years 
+ 2.2.1.2. Amount of Fellowship 
+ The fellowship amount will be Rs.15,000/- per month for the first year 
+ The fellowship amount will be Rs.20,000/- per month for the second year 
+ The fellowship amount will be Rs.25,000/- per month for the third year 
+ 
+2.2.1.3. Standard Operating Procedure 
+ The research scholar shall apply for TRF during the call for  proposals from 
+the college. 
+ The supervisor and the HoD will forward the application for the interview.  
+ The applicant should attend the interview with proper evidence. 
+Third Revised Version approved on 08.01.2025                                                                             7 
+                                                                  
+ The progress of TRF scholars is periodically reviewed by the TRF Rev iew 
+committee formulated including an external expert and m embers from TCE 
+once in six months.  
+ 2.2.1.4. Expected Outcome 
+● At the end of six months, the scholar should have, 
+❖ a paper submitted to the conference (Scopus Indexed) at least o ne 
+month prior to the review meeting. 
+● At the end of one year, the scholar should have, 
+❖ at least one publication in reputed conference (Scopus Indexed) 
+❖ a paper communicated to refereed national/international Journal  
+(SCImago Journal Rank Quartiles - Q1/Q2/Q3) at least one-
+month prior to the review meeting 
+●  At the end of one year and six months, the scholar should have totally, 
+❖ at least one publication in reputed conference (Scopus Indexed). 
+❖ at least one paper accepted for publication in a peer-reviewed 
+national or international journal (SCImago Journal Rank Quartiles 
+- Q1/Q2/Q3). 
+❖ a paper submitted to the conference (Scopus Indexed) at least o ne 
+month prior to the review meeting. 
+●  At the end of two years, the scholar should have totally, 
+❖ at least two publications in reputed conferences (Scopus Indexed) 
+❖ at least one publication in refereed national/international Jou rnal 
+(SCImago Journal Rank Quartiles - Q1/Q2/Q3) 
+❖ a paper submitted to the conference (Scopus Indexed) at least o ne 
+month prior to the review meeting 
+❖ a paper communicated to refereed national/international journ al 
+(SCImago Journal Rank Quartiles - Q1/Q2/Q3) at least one month 
+prior to the review meeting 
+● At the end of two years and six months, the scholar should have totally, 
+❖ at least three publications in reputed conferences (Scopus 
+Indexed) 
+❖ at least two publications in refereed national/international jour nal 
+(SCImago Journal Rank Quartiles - Q1/Q2/Q3) 
+❖ a paper communicated to refereed national/international journ al 
+(SCImago Journal Rank Quartiles - Q1/Q2/Q3) at least one month 
+prior to the review meeting 
+● At the end of third year, the scholar should have totally, 
+❖ at least three publications in reputed conferences (Scopus 
+Indexed) 
+❖ at least three publications in refereed national/international 
+journals (SCImago Journal Rank Quartiles - Q1/Q2/Q3) 
+Third Revised Version approved on 08.01.2025                                                                             8 
+                                                                  
+ All the above publications, only four authors are allow ed (inclusive of scholar 
+and supervisor), either scholar or supervisor must be a corresponding author.  
+ 2.2.1.5. Withholding of Fellowship 
+● Scholars who do not meet the TRF scheme requirements will have  their 
+fellowships suspended till they fulfill the necessary criteria.  
+● The minimum period of withholding fellowship is one month 
+ 2.2.1.6. Cancellation of Fellowship 
+ Unsatisfactory progress in research work or failure in a course work. 
+ Any false information furnished by the scholar or any fr audulent activity by 
+the scholar shall lead to penal action against him/her 
+ The fellowship may be terminated at any time during the tenure and the 
+decision of the TCE will be final and binding 
+ Violation of TRF Guidelines 
+ 2.2.1.7 Guidelines 
+ The scholar must devote full time to research during the fello wship tenure 
+and will not be permitted to take any part-time or full-time assignments. The 
+scholar will not be permitted to accept any salary, fellowship or any type of 
+financial assistance offered during the tenure of fellowship t hrough any 
+other source.  Otherwise, the entire amount of fellowship received till date 
+will have to be refunded. However, if the candidate is interes ted in applying 
+for a fellowship to other agencies, they need to get prior pe rmission from the 
+Dean (R&D) and the head of the institution. 
+ The scholar shall give a declaration that if the results of research are such 
+that can be exploited commercially by taking a patent or otherw ise, 
+commercial exploitation and patent rights should be with the  Institute, 
+candidate and supervisor. The rules of TCE, if any, in this rega rd will be 
+applicable. 
+ If the progress of a research scholar is reported as unsatisfactory by the 
+supervisor/ Head of the Department/ Head of the Institution, the fellowship 
+of the scholar will be terminated with immediate effect. This will not be 
+revoked under any circumstances. 
+ The Ph.D. rules and regulations of the TCE and Anna University , Chennai 
+will be applicable to all the scholars. 
+ No separate medical assistance will be provided. However, the sch olar may 
+avail the medical facilities available in TCE. 
+Third Revised Version approved on 08.01.2025                                                                             9 
+                                                                  
+ Accommodation, contingencies and other expenses will not be  given 
+separately. 
+ Leave details are as per TCE norms. 
+ Teaching assistantship of not more than 8 hours/week will be given to the 
+scholars under TRF scheme and may include assistance in lab clas ses, 
+tutorial support etc. 
+ If the scholar leaves the institute/program before completion, he/she will be 
+liable to refund the entire fellowship amount received b y him/her till the 
+date of his/her leaving the scheme. 
+ Progress of the research work should be monitored by the revi ew committee. 
+Based on the expected outcomes attainment, fellowship of the next  year will 
+be granted. 
+ The review committee will evaluate the progress of the resear ch work every 
+six months. The fellowship for the subsequent six months wi ll be granted 
+based on the attainment of the expected outcomes. 
+ If the scholar submits their thesis during the fellowship perio d, they will not 
+be eligible to claim the stipend beyond the date of thesis submission. 
+ Scholars are instructed to acknowledge the scheme in the research  
+publications and Ph.D. thesis report as per the following format. “This 
+research work is financially supported by Thiagarajar Resea rch Fellowship 
+(TRF) scheme - (File.no: TCE/RD/TRF/_______ dated ______)” 
+ 
+2.2.2 Thiagarajar Post Doctoral Fellowship (TPDF) 
+2.2.2.1 TPDF - Eligibility and Duration 
+ Applicant must possess a Ph.D. degree or have completed a Viva-Voce in the 
+thrust area/frontier technologies 
+ Applicants are required to have at least three peer-reviewed publications in a 
+reputed journal with a ranking of SCImago - Q1 in the thru st area/frontier 
+technologies. 
+ Applicant‟s upper age limit is 40 years. 
+ The duration is maximum of 2 years 
+2.2.2.2 Eligibility for acting as a Supervisor 
+ Supervisor should have completed at least 5 PhD scholars unde r his/her 
+supervision. 
+ Supervisor must have at least ten publications in the Scopus index ed 
+Third Revised Version approved on 08.01.2025                                                                             10 
+                                                                  
+journals, three of which should be listed in Scimago -Q1. 
+ The age of the supervisor should not exceed 55 years. 
+ There shall be only one PDF scholar to a department at a given time. 
+2.2.2.3. Amount of Fellowship 
+● The fellowship amount will be Rs.45,000/- per month. 
+2.2.2.4. Standard Operating Procedure 
+● The research scholar shall apply for TPDF during the call for proposals from 
+the college. 
+● The Supervisor and the HoD will forward the application for the interview.  
+● The applicant should attend the interview with proper evidence. 
+● The progress of TPDF scholars is periodically reviewed by the committee 
+once in six months.  
+2.2.2.5. Expected Outcome 
+● At least two publications in thrust area/frontier technologies s hould be 
+published each year in journals ranked Scimago- Q1. 
+● A minimum of one Indian patent should be filed in the thrust  area/frontier 
+technologies every year. Patent filings should be made in the  name of TCE 
+only. 
+● At least one project proposal relevant to the thrust area/frontier technologies 
+should be submitted along with the supervisor, to any fundin g agency every 
+year. 
+● TPDF scholar should conduct a workshop (duration 1-3 days) every y ear for 
+the faculty and scholars of TCE to share their knowledge in the in thrust 
+area/frontier technologies. 
+  
+In publications, only four authors are allowed (inclusive of P DF scholar and 
+supervisor), either the scholar or the supervisor must be a corresponding 
+author. The TPDF funding must be acknowledged in the publication s as per the 
+guidelines provided. 
+2.2.2.6 Terms and Conditions 
+● As per the regulations of TCE, casual leave will be provided. 
+● During the tenure of this fellowship, the fellow is not permitted to accept any 
+salary or fellowship offered by any other source, failing  which the fellowship 
+should be refunded in full. 
+● Fellows will not be permitted to leave the institution during  their fellowship 
+period. He/she must return the entire fellowship amount if he/she wishes to 
+leave the institution during this time. 
+● Every six months, there will be a review. 
+● Teaching assistantship of not more than 8 hours/week will be given to the 
+Third Revised Version approved on 08.01.2025                                                                             11 
+                                                                  
+scholars under TPDF scheme and may include assistance in lab cl asses, 
+tutorial support etc. 
+● In the event that the results of the research are commercially exploitable, the 
+fellow shall make a declaration that the commercial exploi tation and patent 
+rights will be in accordance with TCE’s intellectual property  rights policy. 
+Research papers may be submitted to journals after a patent application has 
+been filed. 
+● There will not be any separate medical assistance provided. H owever, the 
+fellow may take advantage of the medical facilities available at TCE. T here 
+will be no separate allowance for accommodation, contingen cies, or other 
+expenses. 
+● In the event that any false information is provided by the fe llow or any 
+fraudulent activity is perpetrated by the fellow, criminal charges  will be 
+brought against him. 
+● At any time during the fellowship term, the TCE may termin ate the 
+fellowship at its discretion. The TCE’s decision is final and binding. 
+● Scholars are instructed to acknowledge the scheme in the research  
+publications as per the following format. “This research work is fina ncially 
+supported by Thiagarajar Post Doctoral Fellowship (TPDF) schem e - (File.no: 
+TCE/RD/TPDF/ ______  dated ______)” 
+ 
+2.2.3 Guidelines for other schemes 
+ As per the procedure of the scheme, the research scholar mu st report their 
+progress to the funding agencies on time without fail. 
+ The scholars who procured non-recurring items under any s cheme, should 
+communicate and get approval from the college through supervisor and HoD 
+in advance. For procurement, settlement, UC submission etc, he/she  must 
+follow the standard operating procedures of the college.  
+2.3 Sponsored Research for Faculty 
+2.3.1 Guidelines for Seed Money Scheme (SMS) from TCE Management  
+2.3.1.1 Eligibility  
+The criteria for eligibility will be as follows. 
+ The applicant should be a teaching faculty (Professor/ Associate Professor/ 
+Assistant Professor) who has been appointed against a permanent vacancy. 
+ The applicant should submit the proposal after a period of two  
+years(minimum) from the date of joining the college 
+ The applicant should be a Ph.D. degree holder/pursuing Ph.D. with a 
+minimum of 2 journal publications/conference publications. 
+ The applicant should not have any other on-going project funde d by the 
+Seed Money Grant scheme of TCE at the time of the proposal submission. 
+Third Revised Version approved on 08.01.2025                                                                             12 
+                                                                  
+2.3.1.2 Selection Procedure  
+ The application for financial assistance in the prescribed for mat (detailed 
+proposals, item wise financial estimates) should be submitted to the  Dean of 
+Research and Development of the college through the concerned Head  of the 
+Department within 30 days of notification. 
+ There shall not be any salary/honorarium component in the project 
+ The proposal shall be scrutinized and recommended for funding by the 
+committee constituted by the Head of department concerned, followed by the 
+Principal. 
+ Subject to availability of the funds, proposals for financial a ssistance will be 
+screened and approved by duly constituted committee, which will 
+subsequently be sanctioned by the Principal 
+ The progress report of the research and its utilization of  funds should be 
+submitted. 
+ The sanctioned project is to be completed before the ending of the mentioned 
+duration. 
+ The decision of the Principal shall be final in all respects 
+2.3.2 Research Supporting Resources  
+ 
+Grant from External Agencies  
+ The external funding/grant may be obtained from various gov ernment/non-
+government organizations and industries. All applications for an y external 
+research funding are to be submitted through Dean (R&D) and Principal.  
+ All research projects contracted by an external party are a dministered by 
+Dean (R&D) and Principal.  
+ 
+2.3.3 Guidelines for the Project Proposal Submission 
+ The faculty shall apply for funding support from the Govern ment/ 
+Industries, to do sponsored/collaborative research based on th e call for 
+proposals from the agencies. The formats of project proposals are genera lly 
+available on the websites of the agencies. 
+ PI/Co-PI should submit the SR Form-2 to the Principal for approval at least 
+10 days prior to the final submission deadline. 
+ The PI/Co-PIs shall then submit the application along with supp orting 
+documents based on the Principal‟s approval to the Funding Agencies 
+Website.  
+ Once selected for an interview by the funding agency, the Principal 
+Third Revised Version approved on 08.01.2025                                                                             13 
+                                                                  
+Investigator shall be asked to present the proposal before the Progress 
+Review Committee (PRC) to improve their interview performance. 
+ The PIs shall maintain a new Head of account and prepare a stock register 
+with proper entries of purchase of recurring and non-recurr ing items upon 
+sanction of the project by the funding agency. 
+ The PIs shall attend the Status Update Meeting (Once in six months) 
+conducted by the department level Progress Review Committee.  The 
+committee assesses the progress of the project for its timely completion.  
+ The principal is the Competent Authority to constitute or approv e the 
+Progress Review Committee. 
+ The PIs shall submit the Half Yearly Progress Review Repor t (SR Form-5) to 
+the Research office.  
+ The PIs shall prepare Project Completion Report (SR Form-6) on  completion 
+of the project duration according to the guidelines of the funding agency and 
+submit it to Research office. 
+ The PIs shall submit the Project Completion Report, Utilization Certificate 
+(prepared as guidelines in section 2.3.4) and Publications / patent list to the 
+Sponsoring agency through the proper channel.  
+ PIs have to submit the Sponsored Research (SR) forms such as SR Forms-1, 
+3, 4 and 7 to the Research office at the appropriate time.  
+ 
+2.3.4 Standard Operating Procedures (SOP) for UC Submission in 
+Projects 
+2.3.4.1 Objective 
+To establish a structured process for preparing, verifying, and submitting 
+utilization certificates for funded projects, ensuring compli ance with funding 
+agency guidelines and timely submissions. 
+2.3.4.2 Scope 
+This SOP applies to all funded research and development projec ts within the 
+institution that require submission of a UC as part of the reporting requirements. 
+2.3.4.3 Procedure 
+1. Initiate Documentation and Expenditure Tracking 
+● All project expenditures must be documented systematically. Each 
+expense should have corresponding receipts, invoices, or vouchers. 
+2.  Reconciliation and Review 
+● Conduct a review of expenses against the approved budget to ensu re 
+accuracy and compliance. This minimizes discrepancies at the end of 
+Third Revised Version approved on 08.01.2025                                                                             14 
+                                                                  
+the project and facilitates accurate UC preparation. 
+3. Drafting the Utilization Certificate 
+● Based on the reconciled expenditure data, draft the UC using the 
+agency-provided or institution-approved format. Include all n ecessary 
+details such as project title, funding reference number, and expen se 
+breakdown. 
+4. Verification and Approval 
+● Submit the draft UC for verification to the institution‟s financ e 
+department. The department should check all expenses, validate the 
+totals, and ensure compliance with funding Agency‟s guidelines. 
+● Obtain signatures from the Principal Investigator, Finance Off icer, 
+Registrar, and any other required officials. 
+5. Certification by Chartered Accountant  
+● If required by the funding agency, have the UC reviewed and ce rtified 
+by a Chartered Accountant for authenticity and accuracy. 
+6. Submission to Funding Agency 
+● Ensure that all the required documents, including progress reports 
+and financial statements, are attached. 
+● Submit the UC before the deadline as specified by the funding agency. 
+Retain proof of submission, such as a receipt or acknowledgment. 
+7. Record-Keeping and Follow-Up 
+● Retain copies of all submitted documents for institutional records. 
+● Monitor for feedback or requests from the funding agency to address 
+any potential issues in the UC. 
+2.3.4.4 Responsibilities 
+● Principal Investigator : Responsible for ensuring compliance with project 
+guidelines, approving the UC, and coordinating with the finance department. 
+● Finance Department: Responsible for verifying the financial details of the 
+UC and ensuring compliance with institutional policies. 
+● Chartered Accountant : Certifies the UC for agencies requiring external 
+validation. 
+2.3.4.5 Timeline 
+● The UC should ideally be prepared and submitted within the deadlin e 
+provided by the funding agency, with regular checks to avoid last-m inute 
+discrepancies. 
+2.3.5 Guidelines for selection of JRFs and other research personnel   
+ (Technical Assistants and Research Associates) for Research Projects  
+ Selection of JRF/Research Associate/Project Fellow shall normal ly be made 
+as per the guidelines provided by the sponsoring agency if the project is from 
+the funding Agency. 
+ 
+Third Revised Version approved on 08.01.2025                                                                             15 
+                                                                  
+2.3.5.1 Eligibility  
+ Educational Qualifications:  
+o If the guidelines are not provided by the sponsoring agency, a candidate 
+seeking selection as JRF/Project Fellow must possess an 
+M.E/M.Tech/M.Sc./MPhil or any other postgraduate degree in the 
+concerned discipline from a recognized University with a minim um of 
+55% marks in aggregate. 
+o Project employees may be allowed to register for the Ph.D. programm e of 
+the Anna University if they fulfill all the requirement s prescribed by the 
+Anna University 
+ Age:  
+o If the guidelines are not provided by the sponsoring agency, th e 
+candidate shall not be more than 28 years of age for the award of 
+Fellowship on the stipulated last date of receiving applications i n 
+response to advertisement. The upper age limit may be relaxed u p to 5 
+years in the case of candidates belonging to SC/ST/OBC/Women and 
+physically challenged applicants.  
+2.3.5.2 Selection Procedure  
+ Positions will be advertised in any of the national / regional newspapers and 
+through other social media / channels (such as by means of circulation of 
+notices to various Universities and display in the TCE Website  Homepage) at 
+least two weeks prior to the dates on which the candidates are to appear for 
+the personal interview if shortlisted and called for.  
+ Applicants who have already cleared the National Eligibility Tes t (NET) for 
+JRFs conducted by UGC/CSIR/ICAR/DBT/ICMR or GATE and/or have 
+experience in research appropriate for the project will be  given due 
+weightage. 
+ The screening of applications for calling candidates for interview will be done 
+by a `Screening Committee‟ consisting of the Principal Investiga tor (PI) 
+and/or the Coinvestigator of the project.  
+ The PI will suggest a selection committee to the Dean (R&D) comprising of: (i) 
+Dean (R&D) or His/Her nominee: Chairperson (ii) Head of the De partment: 
+Member (iii) Subject Expert: External Member (iv) Princi pal Investigator: 
+Member Secretary / Convenor (If the HoD is the PI, one senio r Faculty 
+Member of the concerned or related department to be nomina ted by Dean 
+(R&D)). (External Member can be also from other departments with in the 
+institution unless specified by the funding agency).  
+ The Selection Committee has to be approved by the Dean (R&D) and the 
+Principal.  
+Third Revised Version approved on 08.01.2025                                                                             16 
+                                                                  
+ Subsequently, the PI shall inform the Dean (R&D) and Selectio n Committee 
+Members about the date and time of the interview. 
+ During the interview, the committee shall test the candidates‟ knowledge of 
+the subject, aptitude for research, creative thinking and sincerity.  
+ Following the interview, a report on the selected and wait listed candidates 
+will be submitted for the consideration and approval of the Dean (R&D).  
+ After the approval of the Dean (R&D), the office of the Regi strar/Principal 
+will issue appointment letter(s) to the selected candidate(s).  
+ In general, the travel and accommodation expenses to the candidates  called 
+for interview shall not be paid and this information would be  provided in the 
+advertisement.  
+ The candidate is expected to join within 30 days from the date of issue of the 
+letter of fellowship award, failing which the award shall b e cancelled. 
+However, in exceptional circumstances, the Dean (R&D) may grant extension 
+provided the letter requesting extension is routed through the PI.  
+2.3.5.3 Fellowship and Tenure of JRF/Project Fellow 
+ The tenure and fellowship amount for the project staff per mon th shall be 
+determined as per the rules and regulations of the funding agency. 
+  If nothing is mentioned, the fellowship amount shall be deci ded by the PI 
+and approval for this shall be taken from the Selection Committee, 
+Registrar/Principal and management. 
+3. PROMOTION OF RESEARCH (PR) POLICY  
+ 
+The objectives of promotion of research policy are: 
+ To encourage the faculty members to publish in more num ber of SCI/ 
+SCOPUS/WoS journals and conferences  
+ To promote collaborative research publications along with Highe r Education 
+institutions (IITs, NITs, IISc, IIITs, Foreign Universities etc.) and industries. 
+ To improve the quality of research publications, citations and h-index 
+ To increase the funding from sponsored research projects 
+ 
+3.1 Research Promotion Policies through Faculty Award Incentive for 
+Research Publications 
+Incentive is provided to encourage our faculty, Ph.D. scholars an d UG & PG 
+students to publish their research work in high quality j ournals and renowned 
+conferences. Incentive for Research Publications (IRP)  will be applicable to the 
+authors whose publications containing TCE affiliation.  
+Third Revised Version approved on 08.01.2025                                                                             17 
+                                                                  
+This scoring framework categorizes journal publications and o ther scholarly 
+contributions based on their impact and indexing quality, which  is divided into 
+multiple levels to determine the respective points awarded. 
+1. Journal Publications: 
+o Category A : Includes publications indexed in SCI (Science Citation 
+Index), SCI-E (Science Citation Index Expanded), SSCI (Social 
+Sciences Citation Index), or Scopus, with a Clarivate Analyti cs Impact 
+Factor (IF) or Scopus’ Source Normalized Impact per Paper (SNIP)  
+score of 0.5 or higher. Publications in this category are award ed 20 
+points. 
+o Category B: Similar to Category A in indexing requirements (SCI/SCI-
+E/SSCI/Scopus), but with an IF or SNIP score below 0.5. Publications 
+in this category receive 10 points. 
+o Category C : Includes publications in journals indexed by other 
+indexing services, which are considered less prestigious than SCI, 
+SSCI, or Scopus. These publications are awarded 4 points. 
+2. Conference Publications: 
+o Publications presented at national or international conferences can  
+receive 5 points if they meet one or more of the following criteria: 
+▪  They are associated with professional bodies such as ACM 
+(Association for Computing Machinery), IEEE (Institute of 
+Electrical and Electronics Engineers), CSI (Computer Society of 
+India), or Springer. 
+▪  They are organized by institutes of national importance, su ch 
+as IITs (Indian Institutes of Technology) or NITs (National 
+Institutes of Technology). 
+▪  They are held outside India, indicating a broader internationa l 
+audience. 
+ 
+3. Books and Book Chapters: 
+o Publishing a book with a reputed publisher earns 20 points. 
+o Contributing chapters or serving as an editor for a book (published by 
+a reputed publisher with an ISBN) earns 8 points. 
+4. Editorial Roles: 
+o Serving as an editor or associate editor for reputed journa ls is valued 
+at 6 points. 
+This scoring system emphasizes the importance of publishin g in high-impact 
+journals and reputed conferences, as well as contributions to bo oks and editorial 
+roles, to enhance the credibility and impact of research work. 
+ 
+3.2  Norms for Individual Faculty Award 
+Individual Faculty Awards are based on the points earned for th e corresponding 
+achievements. Points awarded for each metric are as follows: 
+ 
+ 
+Third Revised Version approved on 08.01.2025                                                                             18 
+                                                                  
+S.No Achievement of Faculty Points 
+1 TCE Online Courses Development: 
+4 weeks Course 
+8 weeks Course 
+12 Weeks Course 
+  
+10 
+15 
+20 
+2 New Course Development and organization with the support 
+from Industry Subject Matter Expert 
+One Credit 
+Two Credits 
+  
+  
+4 
+8 
+3 Collaborative Teaching along with Professors from Higher  
+Education Institutions 
+India 
+Abroad 
+  
+  
+4 
+8 
+4 Student Feedback in Teaching Learning Process (Averaged 
+over all the courses conducted in the odd and even 
+semesters) 
+>90 % 
+80% to 90% 
+  
+  
+ 
+10 
+5 
+5 Outcomes achieved by supporting fast learners and slow 
+learners 
+8 
+6 Patents Granted (Utility Patents only) 
+International 
+National 
+  
+15 
+10 
+7 Patents Published: (Utility Patents Only) 
+International 
+National 
+  
+10 
+5 
+8 SCI / SCI-E / SSCI / Scopus Journal Publications 
+Q1 Journals Paper 
+Q2 Journals Paper 
+Q3 Journals Paper 
+Q4 Journals Paper 
+  
+15 
+10 
+5 
+3 
+9 Scopus Indexed Publications in National/International 
+Conferences 
+•    Associated with professional bodies like 
+ACM/IEEE/CSI/ Springer 
+•    Organized by institutes of national importance such 
+as IIT/NIT 
+•    Held outside India 
+5 
+10 Publication of Book (ISBN with reputed publishers) 15 
+11 Contributed Chapters/Book Editor (ISBN with reputed 
+publishers) 
+8 
+12 Editor/Associate Editor in reputed Journals 6 
+Third Revised Version approved on 08.01.2025                                                                             19 
+                                                                  
+13 Funding received for R&D Projects with Project Amount: 
+< 5 Lakhs 
+>=  5 and < 10 Lakhs 
+>= 10 and < 20 Lakhs 
+>= 20 and < 50 Lakhs 
+>= 50 Lakhs 
+  
+5 
+10 
+15 
+20 
+25 
+14 Ph.D. Awarded to Faculty 16 
+15 Ph.D. Guided by the Faculty 12 
+16 International Level Conferences/Seminars/Symposia 
+Organized 
+(To be shared among the faculty members of the Organizing 
+Team) 
+20 
+17 National Level Conferences/Seminars/Symposia Organized 
+ (To be shared among the faculty members of the Organi zing 
+Team) 
+12 
+18 FDPs/ Workshops / Training Programmes conducted 
+(To be shared among the coordinators who not receive 
+coordination charges) 
+<= 5 Days and number of outside participants is >20 
+>5 Days and number of outside participants is >20 
+  
+  
+ 
+8 
+12 
+19 Any Outstanding Achievements (Awards won by faculty) Appreciation 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 

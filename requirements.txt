@@ -1,0 +1,14 @@
+flask
+flask-cors
+pandas
+spacy
+scikit-learn
+requests
+beautifulsoup4
+lxml
+rapidfuzz
+pytest
+openpyxl
+reportlab
+gunicorn
+pypdf

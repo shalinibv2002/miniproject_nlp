@@ -1,0 +1,691 @@
+Sl. No.Reg. No. Name of the Student Degree Branch Campus Name of the Company
+1 19B020 Bharathvasan J M BE Civil EngineeringOn CampusAARBEE STRUCTURES
+2 19B068 Pavithran Karnan BE Civil EngineeringOn CampusAARBEE STRUCTURES
+3 19B084 Shanmugapriya Rajendran BE Civil EngineeringOn CampusAarbee structures
+4 19B078 Saranya Venkatachalam BE Civil EngineeringOn CampusACCENTURE
+5 19B036 Rajeshkanna G BE Civil EngineeringOn CampusAG&P PRATHAM
+6 19B055 Lavanya Sivakumar BE Civil EngineeringOn CampusAG&P PRATHAM
+7 19B113 Venish Kumar V S BE Civil EngineeringOn CampusAG&P PRATHAM
+8 19B121 Bhavan Kumar BE Civil EngineeringOff CampusAgasthya Developer Pvt Ltd.
+9 19B034 Harini Tamilselvam BE Civil EngineeringOn CampusCAPGEMINI
+10 19B039 Irfana Hasin S BE Civil EngineeringOn CampusCAPGEMINI
+11 19B005 Akshaya Murugan BE Civil EngineeringOn CampusCOGNIZANT
+12 19B022 T Dhanaseel Sridhar BE Civil EngineeringOn CampusCOGNIZANT
+13 19B026 Dhivyameena Manivannan BE Civil EngineeringOn CampusCOGNIZANT
+14 19B044 S Jovita Angela Christy BE Civil EngineeringOn CampusCOGNIZANT
+15 19B050 M Kousalya BE Civil EngineeringOn CampusCOGNIZANT
+16 19B067 V Palaniyappan BE Civil EngineeringOn CampusCOGNIZANT
+17 19B090 R Shylesh BE Civil EngineeringOn CampusCOGNIZANT
+18 19B102 N Suganesh BE Civil EngineeringOn CampusCOGNIZANT
+19 19B139 M Senthilmurugan BE Civil EngineeringOn CampusCOGNIZANT
+20 19B001 Devadharshini chellapandi BE Civil EngineeringOn CampusCOMCAST
+21 19B019 Deepak Murugesan BE Civil EngineeringOn CampusCOMCAST
+22 19B038 Idhaya Vendhan P P BE Civil EngineeringOn CampusCOMCAST
+23 19B094 Siva Prakash B BE Civil EngineeringOn CampusCOMCAST
+24 19B100 Sree Gayathri Ethiraj BE Civil EngineeringOn CampusCOMCAST
+25 19B111 Varshini Sivakumar BE Civil EngineeringOn CampusCOMCAST
+26 19B110 VARSHINI K BE Civil EngineeringOff CampusCPRIME
+27 19B012 Balaji Dhanasekaran BE Civil EngineeringOn CampusCOGNIZANT
+28 19B016 Chandru M BE Civil EngineeringOn CampusCOGNIZANT
+29 19B037 Hemanth Kanth Ramesh BE Civil EngineeringOn CampusCOGNIZANT
+30 19B072 RESHMA M BE Civil EngineeringOff CampusFEDERAL BANK
+31 19B043 Joe Maxia Antony Xavier Rajan BE Civil EngineeringOn CampusGREEN STAR
+32 19B094 Surya Prakash Pandian BE Civil EngineeringOn CampusGREENSTAR
+33 19B118 ABINESH N BE Civil EngineeringOff CampusKAGIRA
+34 19B014 Bincia Priya Gnanamaran BE Civil EngineeringOn CampusKBR
+35 19B003 Adarsh Timmakondu Suriyaprakash BE Civil EngineeringOn CampusL&T
+36 19B036 Harish Manikandan Rajkumar BE Civil EngineeringOn CampusL&T
+37 19B053 Lavanya Dhivyanathan BE Civil EngineeringOn CampusL&T
+38 19B076 Sakthivel Karmegam BE Civil EngineeringOn CampusL&T
+39 19B082 Shakthi sree Swaminathan BE Civil EngineeringOn CampusL&T
+40 19B083 Shalini Duraisamy BE Civil EngineeringOn CampusL&T
+41 19B087 Shivakavitha Krishnapuram Pitchaiah BE Civil EngineeringOn CampusL&T
+42 19B092 Sindhu Ganeshbabu BE Civil EngineeringOn CampusL&T
+43 19B099 Soundharya Thavamani BE Civil EngineeringOn CampusL&T
+44 19B116 Vishnukumaran Hariramakrishnan BE Civil EngineeringOn CampusL&T
+45 19B066 Nivetha S BE Civil EngineeringOn CampusMINDTREE(LTI)
+46 19B134 Pavithra B BE Civil EngineeringOff CampusOsiz Technologies
+47 19B133 SHYAM SAHAYARAJ BE Civil EngineeringOn CampusQUEST GLOBAL ENGINEERING SERVICE
+48 19B029 GIRIJA BE Civil EngineeringOn CampusRCI DIGITAL SOLUTION
+49 19B056 MANI KANDAN K BE Civil EngineeringOff CampusREBAR DESIGN & DETAIL(PT)LTD
+50 19B030 GOKULMATHAVAN K BE Civil EngineeringOff CampusSEAMAK HI-TECHPRODUCTS
+51 19B024 DHANUSHADITH KRISHNA MOORTHY BE Civil EngineeringOn CampusSHOBHA
+52 19B070 Poovesh R BE Civil EngineeringOff CampusSHOBHA
+53 19B001 Abdul Kadhar Mohammed Ibrahim BE Civil EngineeringOn CampusSOBHA
+54 19B032 Gopinayaghan Kailasam Saravanan BE Civil EngineeringOn CampusSOBHA
+55 19B040 Jai Kaushik Ezhai RamKumar BE Civil EngineeringOn CampusSOBHA
+56 19B045 KANDEEBARAJ G BE Civil EngineeringOff CampusT & M SERVICESCONSULTING PVT LTD
+57 19B002 Abdullah Basaludeen BE Civil EngineeringOn CampusTCS
+58 19B011 Ayisha Bhahima A BE Civil EngineeringOn CampusTCS
+59 19B017 Chinna Rengamani Subburaj BE Civil EngineeringOn CampusTCS
+60 19B047 Karthika Raju BE Civil EngineeringOn CampusTCS
+61 19B048 KARTHIKEYAN MANOKARAN BE Civil EngineeringOn CampusTCS
+62 19B049 Keerthana Soundrapandian BE Civil EngineeringOn CampusTCS
+63 19B051 Kowshikraja P BE Civil EngineeringOn CampusTCS
+64 19B052 Lakshmana Rajkumar Mariyappan BE Civil EngineeringOn CampusTCS
+65 19B058 Michaelin Alwa Muhil Jeyaraj BE Civil EngineeringOn CampusTCS
+66 19B107 Tamil Elakkiya Ravi BE Civil EngineeringOn CampusTCS
+67 19B112 Vaishnavi premkumar BE Civil EngineeringOn CampusTVS EUROGRIP
+68 19B133 MURUGAN S BE Civil EngineeringOff CampusURC TECHNOLOGYSERVICES
+69 19B129 Karthik Kumar BE Civil EngineeringOff CampusVGN Homes Pvt.Ltd.
+70 19B008 ARIVANANTHAN M BE Civil EngineeringOff CampusVTM LTD
+71 19B010 Ashok K G BE Civil EngineeringOn CampusWIPRO
+72 19B023 Dhanasekaran S BE Civil EngineeringOn CampusWIPRO
+73 19B025 Dhevakar Muthusamy BE Civil EngineeringOn CampusWIPRO
+74 19B042 Janasivaguru Chandrasekaran BE Civil EngineeringOn CampusWIPRO
+75 19B062 Naga Rajan BE Civil EngineeringOn CampusWIPRO
+76 19B063 Nandha Kumar Gopal BE Civil EngineeringOn CampusWIPRO
+77 19B065 Nikhil Gupta BE Civil EngineeringOn CampusWIPRO
+78 19B075 Roobarajan Thiyagarajan BE Civil EngineeringOn CampusWIPRO
+79 19B088 Shivanika S BE Civil EngineeringOn CampusWIPRO
+80 19B112 Vasanth Soundra Pandiyan BE Civil EngineeringOn CampusWIPRO
+81 19B041 Janakiraman S BE Civil EngineeringOn CampusZOHO
+82 19C001 Abirami Priya Jeyapal BE CSE On CampusComcast
+83 19C002 Aishwarya Kunga Sivakumar BE CSE On CampusCaterpillar
+84 19C003 Ajay S S BE CSE On CampusMicrochip Technology (India) Pvt. Ltd
+85 19C004 Amutha Pannir Selvan BE CSE On CampusCaterpillar
+86 19C005 Aneerudh M BE CSE On CampusBrillio
+87 19C006 ARUN KARTHICK S BE CSE On CampusCognizant
+88 19C007 ARUN M BE CSE On CampusCognizant
+89 19C008 Arvin Danny Christopher Sukumar BE CSE On CampusZoho
+90 19C009 ASHWATH S BE CSE On CampusCognizant
+91 19C010 Aswath Swasun Panneer Selvam BE CSE On CampusZoho
+92 19C011 Bhagyalakshmi Thirumurugan BE CSE On CampusHpe
+93 19C012 Blessy Karunya Johnson BE CSE On CampusFidelity
+94 19C013 Charu Sneha Laguduva Ravi BE CSE On CampusMr Cooper
+95 19C014 Deepak Raju Murugesan BE CSE On CampusHoneywell
+96 19C015 Dhanushree B BE CSE On CampusCaterpillar
+97 19C016 Dhanushwaran Senthilvelu BE CSE On CampusTrimble
+98 19C017 E. DHATSHAENI BE CSE On CampusCognizant
+99 19C018 Dhinesh Kumar B BE CSE On CampusZoho
+100 19C019 DHINESH M.N BE CSE On CampusCognizant
+101 19C020 Divya Sivakumar BE CSE On CampusWorkhall Pvt Ltd(Vuram)
+102 19C021 Fathima Safa Kalungu Uthuman Mydeen BE CSE On CampusCaterpillar
+103 19C022 GIRINATH S BE CSE On CampusCognizant
+104 19C023 Gokul Ananth Mohana Sundaram BE CSE On CampusSirius
+105 19C024 Gokul Peethambaram BE CSE On CampusShopup
+106 19C025 Gokulnath Srinivasan BE CSE On CampusAstrazeneca
+107 19C026 Gurusaran Muthusamy BE CSE On CampusOptum
+108 19C028 HARINI P BE CSE On CampusCognizant
+109 19C030 HARINI S BE CSE On CampusCognizant
+110 19C031 Harish A BE CSE On CampusSurveysparrow
+111 19C032 Harsha Jorigae Srinivasan BE CSE On CampusTata Elxsi
+112 19C033 Harshavarthini Varadharaj Sivakumar BE CSE On CampusLister Technologies
+113 19C034 Harshini Parthiban BE CSE On CampusCaterpillar
+114 19C035 Harshini Sivakami Venkatakrishnan BE CSE On CampusViasat
+115 19C036 Harsini Ananthu Maheswaran BE CSE On CampusBrillio
+116 19C037 Hemapriya Muthamil Selvan BE CSE On CampusTata Consultancy Services (Ninja)
+117 19C038 Jai Niresh Jeyapaul BE CSE On CampusMr Cooper
+118 19C039 Jasmitha Rajkumar BE CSE On CampusZoho
+119 19C040 KALAISELVI S BE CSE On CampusCognizant
+120 19C041 Kavitha Selvakumar BE CSE On CampusAstrazeneca
+121 19C042 Kaviya Deivendran BE CSE On CampusAstrazeneca
+122 19C043 Kaviya Kandasamy BE CSE On CampusNavis
+123 19C044 Kowsanth Kalidas Ramesh BE CSE On CampusZoho
+124 19C045 Krish Prasanna Chembu Ramesh BE CSE On CampusZoho
+125 19C046 Kushagra Kapoor BE CSE On CampusMr Cooper
+126 19C047 Lakshmi Sree S BE CSE On CampusAstrazeneca
+127 19C048 Lavanya R BE CSE On CampusSirius
+128 19C049 Linesh Raj T BE CSE On CampusAstrazeneca
+129 19C050 Madhavan Vagaikulam Pagavathiraj BE CSE On CampusCaterpillar
+130 19C051 Madhava Ramanujam Seenivasan BE CSE On CampusGanit
+131 19C052 MADHUMITHA PR BE CSE On CampusCognizant
+132 19C053 MAHESH ARAVIND V BE CSE On CampusCognizant
+133 19C054 Maryada Kumar Lodha D BE CSE On CampusShopup
+134 19C055 Merlin Prathiba Backianathan BE CSE On CampusZaggle
+135 19C056 Mohamadh Harrish Abdul Aziz BE CSE On CampusCaterpillar
+136 19C059 Naveen Karthik Krishnakumar BE CSE On CampusSirius
+137 19C060 Necika Periyannan BE CSE On CampusZaggle
+138 19C061 Nishok Anand Boopathi BE CSE On CampusOptum
+139 19C062 Nitin Vinayak Selvaganesh BE CSE On CampusTata Communication
+140 19C063 Nitish Kumar Soodamani BE CSE On CampusLister Technologies 
+141 19C064 Nivedha G BE CSE On CampusAppviewx
+142 19C065 Periyakaruppan N BE CSE On CampusZoho
+143 19C071 Prithika Selvakumar BE CSE On CampusBrillio
+144 19C073 Prithivi Raj Veerakannan BE CSE On CampusOracle
+145 19C074 Priyavarthan Nagarajan BE CSE On CampusZoho
+146 19C076 Raja Rajeshwari As BE CSE On CampusAstrazeneca
+147 19C077 Rajarajesvarri Gopi Krishna BE CSE On CampusOracle
+148 19C078 Ramprasad Ravikumar BE CSE On CampusGanit
+149 19C079 Renish Gandhi Shobana Premkumar BE CSE On CampusAstrazeneca
+150 19C080 Rishi Balaji Sridhar BE CSE On CampusZoho
+151 19C083 Ruchitaa Raj Neelamegam Rajan BE CSE On CampusCaterpillar
+152 19C084 Sabareeswaran Chandrasekar BE CSE On CampusZaggle
+153 19C086 Samyukta M BE CSE On CampusViasat
+154 19C087 Santhasa Rooban M BE CSE On CampusAmadeus
+155 19C088 Sethuram Sethuram Venkatesan BE CSE On CampusShopup
+156 19C089 Shaambhavi Sivappugaz BE CSE On CampusBrillio
+157 19C090 Shalini Palanikumar BE CSE On CampusTata Elxsi
+158 19C091 Shalini Priya Raja BE CSE On CampusZaggle
+159 19C092 Shane Rex Sasikumar BE CSE On CampusLister Technologies
+160 19C093 Shankari Sundarapandian BE CSE On CampusOptum
+161 19C094 Shekinah Olive BE CSE On CampusBrillio
+162 19C095 Shivanesh Sakthivel BE CSE On CampusTrimble
+163 19C096 Shruthee Balakrishnan BE CSE On CampusZaggle
+164 19C097 Shyam Murugaiah BE CSE On CampusLister Technologies
+165 19C098 Sinduja Palaniappan BE CSE On CampusTata Elxsi
+166 19C099 Sivaraman M M BE CSE On CampusZoho
+167 19C100 Snehapoorni Karkuvel BE CSE On CampusOptum
+168 19C101 Srijith Bharathi BE CSE On CampusNeustar (Transunion)
+169 19C102 Srinath Venkataraman BE CSE On CampusLister Technologies 
+170 19C103 Srivathsan Venkateswaran BE CSE On CampusCaterpillar
+171 19C104 Stephy Macvin BE CSE On CampusWorkhall Pvt Ltd(Vuram)
+172 19C105 Subash Annadurai BE CSE On CampusShopup
+173 19C107 Thirumoorthy R BE CSE On CampusIexceed
+174 19C108 Uma Maheswari Thiyagaraj BE CSE On CampusTata Communication
+175 19C109 Varsha Arumugam BE CSE On CampusJP Morgan Chase
+176 19C110 Varshini Sankar BE CSE On CampusSirius
+177 19C111 Varshini Sundar BE CSE On CampusBrillio
+178 19C115 Venkatesh Nallusamy BE CSE On CampusTrimble
+179 19C117 Vijay Gundra BE CSE On CampusZoho
+180 19C118 Vimala Pilavendran BE CSE On CampusComcast
+181 19C119 Yashwant Cillaari Manikandan BE CSE On CampusZoho
+182 19C120 Ashokkumar Pudhuraja BE CSE On CampusZoho
+183 19C121 Ajith Tony Arul BE CSE On CampusCaterpillar
+184 19C123 Bhuvaneshwari Karnan BE CSE On CampusComcast
+185 19C127 Gopinath Elumalai BE CSE On CampusComcast
+186 19C129 Hariharan Gujuluva Venkatesh BE CSE On CampusLTI
+187 19C130 Karpagam P BE CSE On CampusHCL
+188 19C131 Logesh Baskaran BE CSE On CampusFord
+189 19C134 Rahul Shiva Konar BE CSE On CampusBrillio
+190 19C135 Ramya Vinayagamoorthy BE CSE On CampusCaterpillar
+191 19C139 Vikash Jawahar BE CSE On CampusTata Consultancy Services (Ninja)
+192 19D001 Aadil Khan Amzad BE ECE On CampusBrillio
+193 19D002 Abhijith Valsakumar Sindhu BE ECE On CampusEmbedUR
+194 19D003 Abhinav Balamurgan BE ECE On CampusLister
+195 19D004 Abhirami Subbiah BE ECE On CampusTATA Elxsi
+196 19D005 Abhishekvarun M BE ECE On CampusTrimble
+197 19D006 Aghalya Prakash BE ECE On CampusAstraZeneca
+198 19D007 Ajai Saikumar A K BE ECE On CampusZoho
+199 19D008 Akash B BE ECE On CampusWipro
+200 19D009 Anandha Ganesh M BE ECE On CampusHoneywell
+201 19D010 Arjune Ram Kumar Manikandan BE ECE On CampusZoho
+202 19D011 Arunan Krishnan BE ECE On CampusComcast
+203 19D012 Aswin Ravikumar BE ECE On CampusWipro
+204 19D013 Baalahemnath Saravanan BE ECE On CampusAstraZeneca
+205 19D014 Behanraj Balamurugan BE ECE On CampusZoho
+206 19D015 Bhuvanshree Balamurugan BE ECE On CampusShopup
+207 19D016 Deepthi Elangovan BE ECE On CampusAstraZeneca
+208 19D017 Deva Dharshini Sathiya Moorthy BE ECE On CampusTCS
+209 19D018 Dhanya Prabha Subramanian BE ECE On CampusTATA Elxsi
+210 19D019 VENKATA SUBRAHMANYA DHARANIDHAR VEMANABE ECE On CampusWipro
+211 19D020 Dhekshaa Elumalai BE ECE On CampusWipro
+212 19D021 DIVYA MEENA ALAGUSUNDARAM BE ECE On CampusAmazon
+213 19D022 Fathima Devasahayam BE ECE On CampusGanit
+214 19D023 Gokula Krishnan Kannan BE ECE On CampusTrimble
+215 19D024 Gokulrajaram Arul Senthen BE ECE On CampusMicrochip
+216 19D026 Harini Aananthi Kutuva BE ECE On CampusCaterpillar
+217 19D027 Harippriyadharshini JayaMurugan BE ECE On CampusOptum
+218 19D028 Harni Vetriselvan BE ECE On Campusiexceed
+219 19D029 Harshavardhini Chandrasekaran BE ECE On CampusWipro
+220 19D031 Harshithaa Kutty BE ECE On CampusAstraZeneca
+221 19D032 Harsh Bhandari V BE ECE On CampusSahaj
+222 19D033 Hithayathun Nihma Jalal BE ECE On CampusCapgemini
+223 19D034 Ishwarya Saravanan BE ECE On CampusLister
+224 19D035 Kanmani Kaviyarasu BE ECE On CampusAstraZeneca
+225 19D036 Karthikeyan Balasubramanian BE ECE On CampusEmberUR
+226 19D037 KARUNYAH KARUPPIAH BE ECE On CampusZoho
+227 19D038 Kauri Sheetal Panneerselvam BE ECE On CampusAstraZeneca
+228 19D039 Kavya Jones Murugan BE ECE On CampusHP
+229 19D040 Keerthiga Rengasamy Maran BE ECE On CampusComcast
+230 19D041 KRISHNA PRASANNA BE ECE On CampusGanit
+231 19D043 Laila Bathan Ganesh Babu BE ECE On CampusWipro
+232 19D044 LINGESHWARAN KANNAN BE ECE On CampusTATA Communications
+233 19D045 Lokesh V S BE ECE On CampusCTS(Genc)
+234 19D046 Madhumitha Venkatesan BE ECE On CampusWipro
+235 19D047 Mahalakshmi Chinnathambi BE ECE On CampusZoho
+236 19D048 Merryl Mekana Pon Pranesh BE ECE On CampusTATA Communications
+237 19D050 Mohamed Faruk Kalanchiyam BE ECE On CampusWipro
+238 19D051 Mukilan T V BE ECE On CampusWipro
+239 19D052 Muthukumar Balasubramanian BE ECE On CampusLister
+240 19D053 Muthu Veni Varadharajan BE ECE On CampusWipro
+241 19D054 Nandhini Pazhamalai BE ECE On CampusTATA Elxsi
+242 19D055 Nandhini S BE ECE On CampusTAFE
+243 19D056 Nanthini K BE ECE On CampusGanit
+244 19D057 Nila Alagarsamy BE ECE On CampusCTS(Genc)
+245 19D060 Nishok Rajan Packiam BE ECE On CampusCaterpillar
+246 19D061 Pavithra Jeyaraj BE ECE On CampusWipro
+247 19D062 PRADEEPA H BE ECE On CampusWipro
+248 19D063 Pranav Chaitanya BE ECE On CampusLTI
+249 19D064 Pranavkumar Thoguluva Sudarsan BE ECE On CampusZoho
+250 19D065 Priyadharshini Manikandan BE ECE On CampusWipro
+251 19D066 PRIYADHARSHINI RAVICHANDRAN BE ECE On CampusComcast
+252 19D067 PUVI LAKSHMI VIVEKI BE ECE On CampusViasat
+253 19D068 RAGUL SHANKAR S BE ECE On CampusLTI
+254 19D069 Rahulkumar K BE ECE On CampusHCL
+255 19D070 Raji Santhoshi Thevendriya BE ECE On CampusTrimble
+256 19D071 RAM SUNDAR ALAGAPPAN BE ECE On CampusZoho
+257 19D072 Ramswetha Nagaraj BE ECE On CampusWipro
+258 19D074 Rich Dev Phagetra BE ECE On CampusLister
+259 19D075 Rohith D BE ECE On CampusEmbedUR
+260 19D076 Roja Ramani Thirumalaipandi BE ECE On CampusAccenture
+261 19D077 Sanjeev K BE ECE On CampusLister
+262 19D078 Sanjith N BE ECE On CampusWipro
+263 19D079 Santhosh S BE ECE On CampusWipro
+264 19D081 SARAVANAPRAKASH SURESH BE ECE On CampusComcast
+265 19D082 Sasikumar Muruganandham BE ECE On CampusZoho
+266 19D083 Seeman Chakkaravarthy V BE ECE On CampusWipro
+267 19D084 Senthilkumar Chinnathurai BE ECE On CampusHoneywell
+268 19D085 Sethuraman Seetharaman BE ECE On CampusLTI
+269 19D086 Shakinsha M BE ECE On CampusOptum
+270 19D087 Shankar Mahadevan G BE ECE On CampusFidelity
+271 19D088 Sharath Venkatesh R BE ECE On CampusLTI
+272 19D089 Shashi Vishnu Manmathan BE ECE On CampusEmbedUR
+273 19D090 Shenbaga Thendral Balamurugan BE ECE On CampusCaterpillar
+274 19D091 Shreya Bava Thathar BE ECE On CampusAccenture
+275 19D092 Shri Krishnaa Venkatesh Nagalakshmi BE ECE On CampusIBM
+276 19D093 Siddharthan Saravanakumar BE ECE On CampusTatacommunication
+277 19D095 Somasundari M BE ECE On CampusAstraZeneca
+278 19D096 SOORIYA Sathiya Murthi BE ECE On CampusCaterpillar
+279 19D098 Soundharya Bharani Poomalai BE ECE On CampusWipro
+280 19D099 Srividhyalakshmi Ravichandran BE ECE On CampusWipro
+281 19D100 Swetha Sivaprakasam BE ECE On CampusTCS(DIGITAL)
+282 19D101 Tanishq E BE ECE On CampusMicrochip
+283 19D102 Tharsana Senthilvel BE ECE On CampusComcast
+284 19D103 Thilak Aswin Thiruvalur BE ECE On CampusBrillio
+285 19D104 Thillai Nivetha A BE ECE On CampusHP
+286 19D105 Uma Sharaswathi Saravanan BE ECE On CampusZoho
+287 19D106 Vaishnavi Muthukumaran BE ECE On CampusBrillio
+288 19D107 Varun Kumar Viswanathan BE ECE On CampusBrillio
+289 19D109 Vignesh Ravichandran BE ECE On CampusHP
+290 19D110 Vijayalakshmi Rajesh BE ECE On CampusWipro
+291 19D111 Vijay Anand BE ECE On CampusHP
+292 19D113 Aathishwaran D BE ECE On CampusWipro
+293 19D114 Arikarashri K BE ECE On CampusWipro
+294 19D115 Chetana Saravanan BE ECE On CampusTCS
+295 19D116 Dhanushya J BE ECE On CampusBrillio
+296 19D117 Durga Devi G BE ECE On CampusCapgemini
+297 19D119 Gokila PG BE ECE On CampusWipro
+298 19D121 KAMALAKKANNAN M BE ECE On CampusLML
+299 19D122 Kasthuri Ramalakshmanan BE ECE On CampusComcast
+300 19D124 Manivel Prakash V BE ECE On CampusTATA Elxsi
+301 19D125 Meiyappan Anbu BE ECE On CampusWipro
+302 19D126 Naganathan M BE ECE On CampusWipro
+303 19D128 Niveditha Mohan kumar BE ECE On CampusComcast
+304 19D131 Saheel Aqthar S BE ECE On CampusTAFE
+305 19D132 Sangeetha Muthukumar BE ECE On CampusTransunion
+306 19D133 Shanmuham Saravanan BE ECE On CampusWipro
+307 19E003 Abinaya S BE EEE On CampusWipro
+308 19E005 ADHARSH K BE EEE On CampusTCS
+309 19E006 Amala S BE EEE On CampusLTI
+310 19E007 AMIRTHA VARSHINI. D BE EEE On CampusTCS Ninja
+311 19E008 Anushya M BE EEE On CampusCaterpillar
+312 19E009 Aravindh R BE EEE On CampusHoneywell
+313 19E011 Aruna K BE EEE On CampusTata elxsi
+314 19E012 Arun sB BE EEE On CampusNew street
+315 19E015 Bhavithra M BE EEE On CampusOptum
+316 19E016 Dhanasekeran BE EEE On CampusTitan
+317 19E017 DHANUSRI C BE EEE On CampusHoneywell
+318 19E018 DHANYA P BE EEE On CampusZoho
+319 19E020 Dhinesh pachayappan BE EEE On CampusNew street
+320 19E021 Diliban B BE EEE On CampusZoho
+321 19E022 GOPIKA G S BE EEE On CampusAccenture
+322 19E023 Gopi S BE EEE On CampusZoho
+323 19E024 Griharan S BE EEE On CampusHPE Aruba
+324 19E025 GURU VENKATESH M BE EEE On CampusZoho
+325 19E026 HAMSA LEKHA E B BE EEE On CampusTCS Ninja
+326 19E027 Harishma P BE EEE On CampusWipro
+327 19E028 HEMADHARSHINI S BE EEE On CampusTCS Ninja
+328 19E031 ilamathi D BE EEE On CampusWipro
+329 19E031 Isha neethi BE EEE On CampusBlue star
+330 19E032 ISHWARYA S BE EEE On CampusCognizant GenC
+331 19E034  Jeevith R BE EEE On CampusTCS Ninja
+332 19E037 JEYASURYA R BE EEE On CampusZoho
+333 19E038 Kalidoss M BE EEE On CampusTCS Ninja
+334 19E039 Kamalesh.J BE EEE On CampusWipro
+335 19E040 Kamalesh R BE EEE On CampusEmbedUr
+336 19E043 Kokhila B BE EEE On CampusKalycito
+337 19E044 Kokila vani BE EEE On CampusTata elxsi
+338 19E046 Kumara Guruparan A BE EEE On Campuscamcast
+339 19E047 Lashika BE EEE On Campuscamcast
+340 19E049 MAHESHVARAN G BE EEE On Campuscamcast
+341 19E050 Mani Bharathi R BE EEE On CampusWipro
+342 19E051 Manoj Kumar J BE EEE On CampusZoho
+343 19E052 MANOJKUMAR S BE EEE On CampusWipro
+344 19E053 Meena N BE EEE On CampusLTI
+345 19E054 MOHAMED ASIQ RAHMAN S BE EEE On CampusWipro
+346 19E055 MOHAMED KALANDAR SULAIMAN S BE EEE On CampusTrimble
+347 19E056 MOHAMED SHAHIN S BE EEE On CampusWipro
+348 19E059 Nikeiantonymiekle A BE EEE On CampusTCS Ninja
+349 19E060 NINITHA SHARON S BE EEE On CampusCognizant GenC
+350 19E061 NISHOK R BE EEE On CampusWipro
+351 19E062 NITHIN PETER JESURAJ J BE EEE On CampusCognizant GenC
+352 19E063 Nityasri BE EEE On CampusSaint gobain
+353 19E064 NIVAS P M BE EEE On CampusWipro
+354 19E065 NIVEDHA VAANATHI K BE EEE On CampusTCS Ninja
+355 19E066 PARASURAM .P BE EEE On CampusZoho
+356 19E067 PARKAVI V BE EEE On CampusZoho
+357 19E069 Pooja Devi M BE EEE On CampusZoho
+358 19E071 Raghavan N BE EEE On CampusAppViewX
+359 19E073 RAJABRADABAN VE KA BE EEE On CampusCognizant GenC
+360 19E074 RAJALAKSHMI C BE EEE On CampusTCS Ninja
+361 19E075 RAJASHRUTHI M BE EEE On CampusAccenture
+362 19E076  Rajkumar henry BE EEE On CampusCognizant GenC
+363 19E078 Ramya K BE EEE On CampusAccenture
+364 19E079 rathimeena BE EEE On CampusMicrochip
+365 19E080 Rithisha L BE EEE On CampusTCS
+366 19E081 roopkumar BE EEE On Campustitan
+367 19E082 Roshini Mai V R S BE EEE On CampusOptum
+368 19E083 Rubika BE EEE On CampusTitan
+369 19E084 Ruthradevi BE EEE On CampusTata elxsi
+370 19E085 Sadhana R BE EEE On CampusTCS Ninja
+371 19E092 Saran Raj M BE EEE On CampusZoho
+372 19E093 senthil vinodh BE EEE On CampusEmbedUr
+373 19E094 SHAM SHANKAR K BE EEE On CampusZoho
+374 19E095 Shanmugapriyadharshini N BE EEE On CampusWipro
+375 19E096 shanmugavalli BE EEE On CampusLTI
+376 19E098 sibikumar BE EEE On Campuszoho
+377 19E099 SINDHUJA S BE EEE On CampusHPE Aruba
+378 19E100 sivaramakrishnan BE EEE On CampusLTI mindtree
+379 19E102 SNEHA S BE EEE On CampusMicrochip
+380 19E103 Sowmya R BE EEE On CampusZoho
+381 19E104 SRIMATHI K BE EEE On CampusLTI mindtree
+382 19E106 Sri Varuni S B BE EEE On CampusZoho
+383 19E107 Sudha C BE EEE On CampusTCS Ninja
+384 19E108 Sudharsana venkatesan BE EEE On CampusTransunion
+385 19E109 Suhail ahamed BE EEE On CampusHoneywell
+386 19E110 Sujeetha Veni Raji BE EEE On CampusWipro
+387 19E113 Suriya Mu BE EEE On CampusZoho
+388 19E115 SWETHA N BE EEE On CampusWipro
+389 19E116 Takhelmayum Paikhomba BE EEE On CampusWipro
+390 19E118 Tharun K M BE EEE On CampusIBM
+391 19E119 Thava Siva BE EEE Off CampusPando
+392 19E121 Vairamuthu G BE EEE Off CampusELGI
+393 19E122 Vaishnavi BE EEE On CampusOptum
+394 19E124 VASANTHAKUMAR M BE EEE On CampusMicrochip
+395 19E126 VINOBALINI R BE EEE On CampusTala Elxsi
+396 19E127 VINODHINI R BE EEE On CampusZoho
+397 19E128 Vishal Harith K BE EEE On CampusCognizant GenC
+398 19E128 GOPI SANKAR M BE EEE On CampusWipro
+399 19E130 Visnu jeet S BE EEE On CampusTCS Ninja
+400 19E131 Viswa Sundaram K BE EEE On CampusCaterpillar
+401 19E133 Yoga Varshan A R BE EEE On CampusWipro
+402 19E134 Yuvaraja M BE EEE On CampusTata elxsi
+403 19E135 AJAY S BE EEE On CampusTCS Ninja
+404 19E136 Balaji s BE EEE On Campusford
+405 19E139 HARIHARAN J R BE EEE On CampusWipro
+406 19E140 Karthikeyan S BE EEE Off CampusPower Grid
+407 19E142 Praveen kumar BE EEE On CampusLML
+408 19E144 RAGHAV BALAJI P BE EEE On CampusLML
+409 19E145 Saravana Veeravel BE EEE Off CampusCare Lab
+410 19E148 Vijaya Karthikeyan BE EEE Off CampusGenPact
+411 19F001 Aathiith Sanjay B.K. BE Mechatronics On CampusZOHO
+412 19F002 Anbarasan R BE Mechatronics On CampusWipro
+413 19F003 Anish Devan N BE Mechatronics On CampusComcast
+414 19F004 Anjana T.S BE Mechatronics On CampusWipro
+415 19F005 Annamalai RM BE Mechatronics On CampusWipro
+416 19F006 Balaji M BE Mechatronics On CampusTCS
+417 19F008 Bhavhadharani S.D BE Mechatronics On CampusCaterpillar 
+418 19F010 Buvana Sri N BE Mechatronics On CampusWipro
+419 19F011 Buvanesvar V Ba BE Mechatronics On CampusDigital
+420 19F013 Devakumar S BE Mechatronics On CampusWipro
+421 19F014 Dhana Sekaran V BE Mechatronics On CampusWipro
+422 19F015 Dharun Raj G BE Mechatronics On CampusLTI L2
+423 19F017 Gayathri S.K BE Mechatronics On CampusZOHO
+424 19F018 Harenee B BE Mechatronics On CampusWipro
+425 19F019 Hari Hara Priyan S BE Mechatronics On CampusGanit
+426 19F020 Karthick A BE Mechatronics On CampusWipro
+427 19F021 Kiruthika R BE Mechatronics On CampusTata Elxsi
+428 19F022 Kishore L BE Mechatronics On CampusZOHO
+429 19F023 Madhu Bala D V BE Mechatronics On CampusWipro
+430 19F025 Manojkumar M BE Mechatronics On CampusWipro
+431 19F026 Mohan Ram S BE Mechatronics On CampusTata Elxsi
+432 19F027 Muralemanohar M BE Mechatronics On CampusZOHO
+433 19F028 Navin Kumar G BE Mechatronics On CampusWipro
+434 19F029 Palani Kumar S BE Mechatronics On CampusZOHO
+435 19F030 Pranave Karthik A BE Mechatronics On CampusMicrochip
+436 19F031 Prasanth J K BE Mechatronics On CampusZOHO
+437 19F034 Preetham Meenaakshi L BE Mechatronics On CampusWipro
+438 19F035 Preethi S.P BE Mechatronics On CampusTata Elxsi
+439 19F036 Radha Krishnan K BE Mechatronics On CampusWipro
+440 19F037 Rajasridhar R BE Mechatronics On CampusZOHO
+441 19F038 Rakesh Kumar V BE Mechatronics On CampusWipro
+442 19F039 Roobini Devi L.R BE Mechatronics On CampusCaterpillar
+443 19F040 Santhiya Devi M BE Mechatronics On CampusComcast
+444 19F041 Saravana Murthi M BE Mechatronics On CampusWipro
+445 19F042 Selvaraj P.R BE Mechatronics On CampusLTI L2
+446 19F043 Senthil Kumar S BE Mechatronics On CampusL&T
+447 19F044 Shajith Ahamed S BE Mechatronics On CampusCaterpillar
+448 19F045 Shamitha G BE Mechatronics On CampusCapgemini
+449 19F046 Shanmugam R BE Mechatronics On CampusWipro
+450 19F047 Shathyashri R BE Mechatronics On CampusDigital
+451 19F048 Shriram S BE Mechatronics On CampusCaterpillar
+452 19F049 Sibiganesh D BE Mechatronics On CampusComcast
+453 19F050 Siva Ranjani K. BE Mechatronics On CampusWipro
+454 19F051 Sridhar J BE Mechatronics On CampusKalycito
+455 19F052 Thamil Eniann Nagendran BE Mechatronics On CampusLucas TVS
+456 19F054 Vibbin K BE Mechatronics On CampusComcast
+457 19F055 Vigneshkumar R BE Mechatronics On CampusTata Elxsi
+458 19F056 Vishaal Karthik B BE Mechatronics On CampusVuram
+459 19F058 Vishnu Priya K.J BE Mechatronics On CampusDigital
+460 19F059 Vishnuraj R.M BE Mechatronics On CampusWipro
+461 19F060 Vishwanath R BE Mechatronics On CampusWipro
+462 19F061 Ashwin N S BE Mechatronics On CampusWipro
+463 19F062 Harivamshan MG BE Mechatronics On CampusWipro
+464 19F066 Muthu Kumar K BE Mechatronics On CampusTAFE
+465 19G017DHILEPAN U BE Mechanical On CampusAccenture
+466 19G018DINAKAR SRIRAM S BE Mechanical On CampusAccenture
+467 19G029HEMANTH M BE Mechanical On CampusAccenture
+468 19G031JEEVAN HARISH P BE Mechanical On CampusAccenture
+469 19G111VIBIN LIJO G BE Mechanical On CampusAccenture
+470 19G035KARTHIK B BE Mechanical On CampusAGP Gas
+471 19G090SHRIRAAM R.B BE Mechanical On CampusAGP Gas
+472 19G112VIGNESH A BE Mechanical On CampusAGP Gas
+473 19G030JAFER SATHIK S. BE Mechanical Off CampusAPJ 3D Design Solutions India Pvt ltd
+474 19G131SURYA J.M. BE Mechanical Off CampusAshok leyland
+475 19G003ABIKARAN A BE Mechanical Off CampusAuro Lab
+476 19G016DHARMA RAJAN.P BE Mechanical On CampusAuro Lab
+477 19G050MOHAMEDSUHAIL A BE Mechanical Off CampusBIOSEEN
+478 19G036KAVERI M BE Mechanical On CampusCapgemini 
+479 19G129SRINATH SIVA S BE Mechanical Off CampusChain Sys
+480 19G015BHARATH RAJ C BE Mechanical On CampusCognizant GenC
+481 19G034Karthika sai Lakshmi.D BE Mechanical On CampusCognizant GenC
+482 19G040LAKSANTH D BE Mechanical On CampusCognizant GenC
+483 19G046MANIKANDAN M BE Mechanical On CampusCognizant GenC
+484 19G057NANDHA KUMAR S S BE Mechanical On CampusCognizant GenC
+485 19G083SATHISH K BE Mechanical On CampusCognizant GenC
+486 19G099SUBASH PRABHU S BE Mechanical On CampusCognizant GenC
+487 19G105SUSEENTHIRAN R BE Mechanical On CampusCognizant GenC
+488 19G014BALARAM S BE Mechanical On CampusComcast 
+489 19G041LAL VISVANATH S BE Mechanical On CampusComcast 
+490 19G044LOKKESH S K BE Mechanical On CampusComcast 
+491 19G060NAWIN KUMAAR S BE Mechanical On CampusComcast 
+492 19G086Selvendran R BE Mechanical On CampusComcast 
+493 19G073RITHIKABHARATHI S BE Mechanical On CampusHoneywell 
+494 19G006AKASH K BE Mechanical On CampusHyundai
+495 19G056NAMBI R BE Mechanical On CampusHyundai
+496 19G024GURUPRASATH M BE Mechanical On CampusJasmine
+497 19G051MOHAMMEDASHIK M BE Mechanical Off CampusJasmine
+498 19G127M RANJITHKUMAR BE Mechanical On CampusJasmine
+499 19G133VASANTH.B BE Mechanical On CampusJasmine
+500 19G019DINESH KUMAR S BE Mechanical On CampusKBR
+501 19G047MANOJKUMAR M BE Mechanical On CampusLML
+502 19G013ASWIN C BE Mechanical On CampusLNT ECC
+503 19G021GOKULAKRISHNAN M BE Mechanical On CampusLNT ECC
+504 19G023GURU PRASAD G S BE Mechanical On CampusLNT ECC
+505 19G062NITHIN P BE Mechanical On CampusLNT ECC
+506 19G107TAMIZHARASAN M BE Mechanical On CampusLNT ECC
+507 19G109THIRIVIGIRAMA ABHISHEK G BE Mechanical On CampusLNT ECC
+508 19G004Abiram S BE Mechanical On CampusLTI
+509 19G026HARI KESHAVAN T BE Mechanical On CampusLTI
+510 19G045MANIKANDAN B BE Mechanical On CampusLTI
+511 19G082SASIKUMAR E M BE Mechanical On CampusLTI
+512 19G087SETHU S BE Mechanical On CampusLTI
+513 19G091SHUNMUGA ANANDH SG BE Mechanical On CampusLTI
+514 19G132THIYAGU S BE Mechanical On CampusLucas TVS
+515 19G001AADITHYA PANDIAN S P BE Mechanical On CampusMando
+516 19G011ARUN PANDIAN D BE Mechanical On CampusMando
+517 19G055T.NAGAPPAN BE Mechanical On CampusMando
+518 19G068PRAVIN S BE Mechanical On CampusMando
+519 19G076SABAREESH S BE Mechanical On CampusMando
+520 19G080SANJAY S BE Mechanical On CampusMando
+521 19G084SATHYAMOORTHY S BE Mechanical On CampusMando
+522 19G135VIKRAM M BE Mechanical On CampusMando
+523 19G049MOHAMED MUZAMMIL M BE Mechanical On CampusSaint Gobain
+524 19G067PRASATH S BE Mechanical On CampusSaint Gobain
+525 19G093SIVASUBRAMANIYAN K BE Mechanical On CampusSaint Gobain
+526 19G094SOLOMON RAJA M BE Mechanical On CampusSaint Gobain
+527 19G052MOHANKUMAR G. BE Mechanical Off CampusSartorius
+528 19G125RAJ RAGAVENDRA V BE Mechanical Off CampusSoft Suave Tech
+529 19G022GOWTHAM V BE Mechanical On CampusSPIC
+530 19G008AKSHAY KRISHNA. M BE Mechanical On CampusTAFE 
+531 19G032JEGANATHAN R BE Mechanical On CampusTAFE
+532 19G100SUJEETHANAND P V BE Mechanical On CampusTCS Digital
+533 19G002ABHILASHINI S.K. BE Mechanical On CampusTCS Ninja
+534 19G012ARUN PRAKASH P BE Mechanical On CampusTCS Ninja
+535 19G088SHANKAR N BE Mechanical On CampusTCS Ninja
+536 19G103SURRIYAPRAKASH G BE Mechanical On CampusTCS Ninja
+537 19G033KARTHIGAA S. BE Mechanical On CampusTechnip
+538 19G121JANARTHANAN V BE Mechanical On CampusTitan
+539 19G063NIVEDHITHA S BE Mechanical On CampusTVS Motors
+540 19G078SAI MANEESH P BE Mechanical On CampusTVS Motors
+541 19G089SHIVA PRASAD BE Mechanical On CampusTVS Motors
+542 19G020ESAKKIAPPAN M BE Mechanical On CampusWipro Turbo
+543 19G027HARI PRASATH R BE Mechanical On CampusWipro Turbo
+544 19G039KISHOR KRISHNAN G S BE Mechanical On CampusWipro Turbo
+545 19G042LEELAVINOTHAN C BE Mechanical On CampusWipro Turbo
+546 19G043LOGESHWARAN A BE Mechanical On CampusWipro Turbo
+547 19G053MOHANPRASATH V BE Mechanical On CampusWipro Turbo
+548 19G059NANTHA KUMAR P BE Mechanical On CampusWipro Turbo
+549 19G066PRAMOTH ALWAR R BE Mechanical On CampusWipro Turbo
+550 19G070RAM PRAKASH T BE Mechanical On CampusWipro Turbo
+551 19G071RISHICHESH V BE Mechanical On CampusWipro Turbo
+552 19G074ROBIN A BE Mechanical On CampusWipro Turbo
+553 19G079SAKTHI GANESH R.S BE Mechanical On CampusWipro Turbo
+554 19G092SINGARAM R BE Mechanical On CampusWipro Turbo
+555 19G097SRI RAKESH V BE Mechanical On CampusWipro Turbo
+556 19G098SRIVATHSAN D V BE Mechanical On CampusWipro Turbo
+557 19G102SURIYA K P BE Mechanical On CampusWipro Turbo
+558 19G114VINOTH SANKAR P BE Mechanical On CampusWipro Turbo
+559 19G115VISHNU BAHAVATH S A BE Mechanical On CampusWipro Turbo
+560 19G117Yogarajan.K BE Mechanical On CampusWipro Turbo
+561 19G118YOGESHWARAN K BE Mechanical On CampusWipro Turbo
+562 19G124MOHAMED NIYAS AHAMED J BE Mechanical On CampusWipro Turbo
+563 19G128SHYAM KUMAR R BE Mechanical On CampusWipro Turbo
+564 19G134VIGNESH KUMAR S BE Mechanical On CampusWipro Turbo
+565 19G077SABARI KARTHIK S S BE Mechanical On CampusZoho
+566 19G136VIVEKANANTHA RAJESWARAN S BE Mechanical On CampusZoho
+567 19IT001Abijeeth Vasra Thirukkonda B.TechIT On CampusLister Technologies Ltd
+568 19IT002Abirammi Subbiah B.TechIT On CampusTata Consultancy Services (Digital)
+569 19IT004Ajay Anbunathan B.TechIT On CampusCaterpillar
+570 19IT005Ajay Rajan Rajendran B.TechIT On CampusTrimble
+571 19IT007Anandhalakshmi Palanikumar B.TechIT On CampusMr Cooper
+572 19IT008Aparajithan Muthukumar B.TechIT On CampusZoho
+573 19IT009Aravind Velayutham B.TechIT On CampusHoneywell
+574 19IT010Aravinth Senthil Kumar B.TechIT On CampusOptum
+575 19IT011Arun Kalyan Mariappan B.TechIT On CampusZoho
+576 19IT012Ashokkumar Chinnaiyathevar B.TechIT On CampusAccenture
+577 19IT013Ashwin D B.TechIT On CampusCaterpillar
+578 19IT014Avinash Rajkumar B.TechIT On CampusZoho
+579 19IT015Benny Charles S B.TechIT On CampusGanit
+580 19IT016Bharat Srinivas B.TechIT On CampusZoho
+581 19IT017Cathe Michline Rose B.TechIT On CampusCaterpillar
+582 19IT018Charupriya Senthil B.TechIT On CampusOptum
+583 19IT019Daya Anand Chittu B.TechIT On CampusCaterpillar
+584 19IT020Deepthika Saravanan B.TechIT On CampusComcast
+585 19IT021Dhanuja Vaidhyalingam B.TechIT On CampusLTI
+586 19IT022Dharshini Shree B.TechIT On CampusCaterpillar
+587 19IT023Dineshkumar B.TechIT On CampusLister Technologies
+588 19IT024Dinesh Raneen B.TechIT On CampusOptum
+589 19IT025Dixon Jeya Antony B.TechIT On CampusWorkHall
+590 19IT026Donifa Babu  Babu B.TechIT On CampusJp Morgan Chase
+591 19IT027Eniyan Manimaran B.TechIT On CampusTrimble
+592 19IT029Gomathi Ganesan B.TechIT On CampusZaggle
+593 19IT030Gopinath Kanagaraj S B.TechIT On CampusShopup
+594 19IT031Gowtham Kumaresan B.TechIT On CampusTiger Analytics
+595 19IT033Harish Jeyabalan B.TechIT On CampusZoho
+596 19IT034Heevitha Rajamurugan B.TechIT On CampusCognizant (Gen C)
+597 19IT035Ishwarya Karuppaiah B.TechIT On CampusZoho
+598 19IT036Jagaganesh Durai B.TechIT On CampusNeustar (Transunion)
+599 19IT037Jayasheelan Ravichandran B.TechIT On CampusCaratlane Trading
+600 19IT038Jayasree Guruchandran B.TechIT On CampusViasat
+601 19IT039Jayshree Venkatesan B.TechIT On CampusOracle
+602 19IT040Jeswin Winn Vetharaj B.TechIT On CampusZoho
+603 19IT041Jeya Ganesh Alagarswamy B.TechIT On CampusNavis
+604 19IT042Juhi Padmaja B.TechIT On CampusCaterpillar
+605 19IT043Kabilan Durai B.TechIT On CampusOptum
+606 19IT044Kanishmithran B.TechIT On CampusWIPRO
+607 19IT045Kanishta Gengaadharan B.TechIT On CampusViasat
+608 19IT046Karthick Sundararaj B.TechIT On CampusZoho
+609 19IT047Karthikeyan Balaji B.TechIT On CampusBrillio
+610 19IT048Keerthana Ramesh B.TechIT On CampusTata Consultancy Services (Ninja)
+611 19IT049Kiruthik Saran Murugiah B.TechIT On CampusLister Technologies Ltd
+612 19IT050Logeshavan Ramakrishnaayyalu B.TechIT On CampusZoho
+613 19IT051Lokkeswaran Selvam B.TechIT On CampusWipro Turbo
+614 19IT052Madhavan R B.TechIT On CampusTiger Analytics
+615 19IT053Malathy Gurusamy B.TechIT On CampusHoneywell
+616 19IT054Manisha Mariyappan B.TechIT On CampusLTI
+617 19IT056Marieswari Mathi B.TechIT On CampusJp Morgan Chase
+618 19IT057Mithul Kannan B.TechIT On CampusWipro Turbo
+619 19IT058Mitthun Krishna Natarajan B.TechIT On CampusAmazon
+620 19IT059Mohan Kumar Rajagopal B.TechIT On CampusZoho
+621 19IT060Monisha Muthukumaran B.TechIT On CampusBrillio
+622 19IT061Nagalakshmi Subramanian B.TechIT On CampusAstrazeneca
+623 19IT062Namgail Dorjay B.TechIT On CampusHcl
+624 19IT063Narmatha Kathirvel B.TechIT On CampusCaterpillar
+625 19IT064Naveen Eswaran B.TechIT On CampusZoho
+626 19IT065Navin Kumar V B.TechIT On CampusBrillio
+627 19IT066Nishanthini V B.TechIT On CampusBrillio
+628 19IT067Palani Kumar S B.TechIT On CampusZaggle
+629 19IT068Pavithra Muthukrishnan B.TechIT On CampusComcast
+630 19IT069Prijitha Simeon B.TechIT On CampusTata Consultancy Services (Ninja)
+631 19IT070Priyanka Sivakumar B.TechIT On CampusCaterpillar
+632 19IT071Priyanka Senthil B.TechIT On CampusGanit
+633 19IT072Raaj Mathan Rajavel B.TechIT On CampusAmazon
+634 19IT073Ragul Muthiah Dhas B.TechIT On CampusZoho
+635 19IT074Rahul Hariesh Balakrishnan B.TechIT On CampusTiger Analytics
+636 19IT075Ravikumar Kuberan B.TechIT On CampusZoho
+637 19IT076Reenasree S B.TechIT On CampusAccenture
+638 19IT077Reshma Arumugam B.TechIT On CampusCaterpillar
+639 19IT078Reshmekaa R B.TechIT On CampusOptum
+640 19IT079Riddhi Sivakumar B.TechIT On CampusFidelity
+641 19IT080Roshika Balamurugan B.TechIT On CampusAccenture
+642 19IT081Sajeev Krishna B.TechIT On CampusZoho
+643 19IT082Sanjaykumar Saravanan B.TechIT On CampusZoho
+644 19IT083Sanjay Muruganantham B.TechIT On CampusHcl
+645 19IT084Sarvesh Velumoni B.TechIT On CampusComcast
+646 19IT085Shahithya Lingadoss B.TechIT On CampusBrillio
+647 19IT086Shamin Thres J B.TechIT On CampusOracle
+648 19IT087Sharon Rose B.TechIT On CampusZaggle
+649 19IT088Shruti Rajasekaran B.TechIT On CampusTata Consultancy Services (Ninja)
+650 19IT089Shruti Saravanan B.TechIT On CampusTata Consultancy Services (Ninja)
+651 19IT090Shubhavya Karthikeyan B.TechIT On CampusFidelity
+652 19IT091Shujit Hussain B.TechIT On CampusCatterpiller
+653 19IT092Shyam Kumaresan B.TechIT On CampusOptum
+654 19IT093Siddharth Sridhar B.TechIT On CampusLister Technologies Ltd
+655 19IT094Sidharth Govindarajan B.TechIT On CampusZoho
+656 19IT095Sivaprakash Shanmuganathan B.TechIT On CampusOptum
+657 19IT096Sivaranjani Saravanan B.TechIT On CampusBrillio
+658 19IT097Soumya Kannan B.TechIT On CampusJp Morgan Chase
+659 19IT098Sowmiyaa Sureshkumar B.TechIT On CampusZaggle
+660 19IT099Sowmya Venkatraman B.TechIT On CampusTata Consultancy Services (Digital)
+661 19IT100Sreeram Balasubramanian B.TechIT On CampusOptum
+662 19IT101Sreesh Nagaraji B.TechIT On CampusZaggle
+663 19IT102Sree Vignesh Kasirajan B.TechIT On CampusCaratlane Trading Private Ltd
+664 19IT103Sri Ram Prasad Selvan B.TechIT On CampusOptum
+665 19IT104Srivishali Karthikeyan B.TechIT On CampusWIPRO
+666 19IT105Subalakshmi Chandar B.TechIT On CampusComcast
+667 19IT107Suriya Balasubramanian B.TechIT On CampusTata Communication
+668 19IT108Surya Kumar Kannan B.TechIT On CampusCaterpillar
+669 19IT109Surya Srinivasan B.TechIT On CampusTata Consultancy Services (Ninja)
+670 19IT111Tamilselvan Thangavel B.TechIT On CampusZoho
+671 19IT112Tarun Kishore B.TechIT On CampusMr Cooper
+672 19IT113Ubhanisha Sri Chandrakumar B.TechIT On CampusOracle
+673 19IT114Velmurugan Muthupandi B.TechIT On CampusComcast
+674 19IT115Vendhan Periyavellaiyan B.TechIT On CampusCaratlane Trading Private Ltd
+675 19IT116Vibhisheak Lakshmi B.TechIT On CampusTata Consultancy Services (Ninja)
+676 19IT117Vignesh Kumar B.TechIT On CampusBrillio
+677 19IT118Vinoodhini Dhanushkodi B.TechIT On CampusBrillio
+678 19IT119Vishali Rajan B.TechIT On CampusCaterpillar
+679 19IT120Vishnuram Velavan B.TechIT On CampusWipro Turbo
+680 19IT121Ashok Kumar B.TechIT On CampusZoho
+681 19IT122Eshwaran Arumugam Balakrishnan B.TechIT On CampusComcast
+682 19IT123Jeya  Devi  K J B.TechIT On CampusLister Technologies Ltd
+683 19IT124Madhusudhanan Chinniah Baskaran B.TechIT On CampusHoneywell
+684 19IT125Parameshwaran T R B.TechIT On CampusZoho
+685 19IT126Prasanna S B.TechIT On CampusCognizant (Gen C)
+686 19IT127Raagavan J S B.TechIT On CampusHcl
+687 19IT129Sambath N B.TechIT On CampusWipro Turbo
+688 19IT130Sanjai P B.TechIT On CampusWipro Turbo
+689 19IT131Suresh Kumar Moorthi B.TechIT On CampusComcast
+690 19IT133Vigneshwaran S B.TechIT On CampusComcast

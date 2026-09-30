@@ -1,0 +1,32 @@
+{
+  "pipeline": {
+    "raw_archive_files": 4,
+    "raw_records_collected": 26,
+    "unique_raw_events": 10,
+    "final_unique_activities": 8,
+    "duplicates_auto_merged": 0,
+    "duplicates_pending_review": 0,
+    "collection_errors_open": 0
+  },
+  "completeness": {
+    "total_records": 8,
+    "date_present": 3,
+    "venue_present": 0,
+    "organizer_present": 0,
+    "description_present": 8,
+    "source_present": 8,
+    "confidence_present": 0,
+    "no_mapped_academic_year": 8
+  },
+  "classification": {
+    "unknown_category": 0,
+    "unknown_department": 0,
+    "low_confidence_below_0.6": 0
+  },
+  "review_verification": {
+    "review_backlog": 0,
+    "verified": 0,
+    "needs_review": 0,
+    "linkedin_by_status": {}
+  }
+}

@@ -1,0 +1,206 @@
+<<Course Code – Course Plan – Academic year>> 
+ 
+Page 1 of 5 
+ 
+  THIAGARAJAR COLLEGE OF ENGINEERING, MADURAI 625 015. 
+Department of Applied Mathematics and Computational Science 
+ 
+COURSE PLAN 
+ 
+Degree:         Department:                          Programme:  
+Semester:                Academic Year:                Course Name:   
+         Course  Code:      Staff In charge:       Staff Dept. :  
+ 
+S. No. Course outcomes TPS/Blooms Level 
+CO1   
+CO2   
+CO3   
+CO4   
+CO5   
+CO6..   
+ 
+Course Plan:  
+Module 
+No. Module Name CO 
+No. 
+Duration  
+(Hours)* 
+Content Delivery 
+Method1 
+Resources and Tools 
+Active learning 
+strategy2 Assessment method3 
+1 Introduction to the course – Syllabus and 
+prerequisites 
+ 
+- 
+ 
+1 Discussion 
+- Brain Storming  
+2 Topic 1 
+2.1 Sub topic 1 CO1 
+ 1 Lecture with 
+Demonstrations 
+ 
+ Quiz 
+2.2 Sub topic 2 CO2 2 - 
+2.3 Sub topic 3 … CO1 
+         1 TPS Worksheet  
+3 Topic 2 
+3.1 Sub topic 1 CO1 1 Flipped Classroom 
+ 
+ 
+Programming 
+Exercises         Concept test 3.2 Sub topic 2 CO1 1 
+3.3 Sub topic 3 … CO3 1 Peer Instruction  
+3.4 Type conversions CO3 1 
+Coding session 8.5 Practice problems  1 Problem Solving 
+Worksheet 
+Problem solving written 
+test 
+ Total  nn      
+
+<<Course Code – Course Plan – Academic year>> 
+ 
+Page 2 of 5 
+ 
+ 
+* Duration shall be 1 or 2 hours only 
+ 
+Reference Books and web resources:  
+1. 
+2.  
+ 
+ 
+PLAN FOR ASSIGNMENTS 
+  
+Assignment Assessment Tool Assessment Period Course Outcome Topics Max. 
+Marks 
+1 
+Assessment Tool1,  
+Assessment Tool2, …  -- to -- CO2,3,4 (50% 
+,25%,25%) Topic 1, Topic 2… 40 
+2 
+Mini Project (30 marks) 
+Poster presentation (10 
+marks) 
+August 2nd  week to 
+September 3rd week 
+2024 
+CO4,5,6 
+(40%,30%,30%) Topic 1, Topic 2…      40 
+       * Assignment marks should be based on the course syllabus assessment pattern (Second line is a sample) 
+ 
+ 
+ 
+Staff In charge             HoD/<Dept> 
+ 
+ 
+  
+<<Course Code – Course Plan – Academic year>> 
+ 
+Page 3 of 5 
+ 
+Content delivery method (Not limited to):  
+• Lecture with simulation 
+• Lecture with discussion 
+• Lecture with demonstrations 
+• Problem solving 
+• Peer teaching / group learning 
+• Case study / Seminar 
+• Blended learning with self developed e-lectures 
+• Role play 
+• Project based learning 
+• MOOC 
+• Tutorial 
+• Panel discussion 
+• Flipped Classroom 
+ 
+ 
+Active Learning strategies (Not limited to) 
+• Think-Pair- Share 
+• Brainstorming 
+• Peer Review 
+• Debates/ Group discussion 
+• Minute paper 
+• Problem-solving 
+• Interactive simulations/ virtual labs 
+• Field trips 
+• Game based learning 
+• Group Projects 
+ 
+ 
+ 
+ 
+ 
+Assessment tools with range of scores for assignment marks(Max. 80): (NOT limited to)  
+<<Course Code – Course Plan – Academic year>> 
+ 
+Page 4 of 5 
+ 
+ 
+Sl. No. Assessment Tool Nature of Assessment 
+Knowledge / Concept Level (Marks: 10 - 30) 
+i.  Review Multiple Choice Questions, Fill Ups, Cross words etc conducted during course 
+after completion of few modules. 
+ii.  Quiz Questions from Technical concepts, debugging, design challenges etc. 
+iii.  Case Study – Analysis Problem statement to be given to students along with a questionnaire. Student s  
+to interpret the details and submit their findings 
+iv.  Worksheets Problem Solving - Students to solve the given problems in a team or individually  
+v.  Poster Presentation Creation of the posters for a given task, relevant to the course 
+vi.  Model Making Prototyping of a given task, relevant to the course 
+Communication Skills (Marks: 10 – 30) 
+vii.  Seminar Oral Presentation on topics relevant to the course 
+viii.  Video Presentations Presentations of Videos or Video lectures or short film related to course 
+ix.  Field Visit Students to visit an Industry or  site relevant to  their course for collection of  data 
+and to present the details as a report. 
+x.  Discussion Forum 
+(Asynchronous) 
+Technical issues relevant to the course to be floated as a discussion in an online 
+forum like Canvas, Wiki, Moodle etc. The students to be assessed based on their 
+participation.  
+xi.  Group Discussion Technical issues to be given to a group of students in class and assessment to be 
+made  based on the involvement of students in group 
+xii.  Comprehensive Viva Conducted at the end of the semester, on one to one basis. 
+Professional Skills (Marks: 40 -50) 
+xiii.  Mini Project Hardware or a software project to be done as an individual or as a group.  
+xiv.  Online Coding Events Code generation for set of tasks, relevant to the course 
+xv.  Journal Review Technical paper review and presentation in the class by making literature study.  
+<<Course Code – Course Plan – Academic year>> 
+ 
+Page 5 of 5 
+ 
+Sl. No. Assessment Tool Nature of Assessment 
+xvi.  Collaborative Work 
+(Group Grid, Group Problem 
+Solving, STAD, TAI, etc ) 
+Group activity carried out in -class and outside class to be evaluated as an 
+individual and as a team.  
+xvii.  Concept Test @ HOTS  
+(GATE level questions) 
+Assessment of all the concepts related to the course to be conducted at the end of 
+the semester (Open Book optional) 
+xviii.  Research Proposal/  
+Research problem 
+identification 
+Preparation of a  research proposal by referring  to journals and presentation in 
+class.  
+xix.  Data Collection and 
+Interpretation 
+Data collection in real time or through questionnaire, interpretation of data and 
+follow up measures submitted as a report. 
+xx.  Report on Software/hardware 
+Implementation  
+Preparation of  a hardware/software model for the concepts learnt in the class and 
+report submission after conducting practical experiments.  
+xxi.  MOOC completion 
+NPTEL/Coursera/ EdX 
+Completion of MOOC course and submission of certificates 
+ 
+Note: 
+1. The assessment plan is to be prepared by the faculty using the prescribed template and approved by HOD.  
+2. If more than one tool in each category is used or if a single tool is used  more than once, then average marks may be considered. 
+3. Assignments shall be a combination of individual and group assessments.  
+4. Any other innovative assignments though not in the above list shall be used if approved by HOD 
+5. Same set of tools shall be used for interim assessment in the course plan 
+ 

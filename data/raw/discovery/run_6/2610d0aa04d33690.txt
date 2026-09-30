@@ -1,0 +1,618 @@
+National Institutional Ranking Framework
+Ministry of Education
+Government of India
+Welcome to Data Capturing System: Sustainable Institutions
+Submitted Institute Data for NIRF'2026'
+Institute Name: Thiagarajar College of Engineering [IR-B-C-26794]
+Sanctioned (Approved) Intake
+Academic Year 2024-25 2023-24 2022-23 2021-22 2020-21 2019-20
+UG [4 Years Program(s)] 1119 1029 885 840 - -
+UG [5 Years Program(s)] 80 80 80 80 80 -
+PG [2 Year Program(s)] 122 102 - - - -
+PG-Integrated 40 40 40 40 40 -
+Total Actual Student Strength (Program(s) Offered by Your Institution)
+(All programs
+of all years)
+No. of Male
+Students
+No. of Female
+Students
+Total Students Within State
+(Including male
+& female)
+Outside State
+(Including male
+& female)
+Outside
+Country
+(Including male
+& female)
+Economically
+Backward
+(Including male
+& female)
+Socially
+Challenged
+(SC+ST+OBC
+Including male
+& female)
+No. of students
+receiving full
+tuition fee
+reimbursement
+from the State
+and Central
+Government
+No. of students
+receiving full
+tuition fee
+reimbursement
+from Institution
+Funds
+No. of students
+receiving full
+tuition fee
+reimbursement
+from the Private
+Bodies
+No. of students
+who are not
+receiving full
+tuition fee
+reimbursement
+UG [4 Years
+Program(s)]
+2431 1748 4179 4144 35 0 788 3156 1534 227 38 2145
+UG [5 Years
+Program(s)]
+150 253 403 395 8 0 13 363 38 2 0 336
+PG [2 Year
+Program(s)]
+84 84 168 168 0 0 33 32 12 2 0 51
+PG-Integrated 88 109 197 197 0 0 0 173 0 4 0 169
+Ph.D Student Details (including Integrated Ph.D)
+Ph.D (Student pursuing doctoral program till 2024-25 Students admitted in the academic year 2025-26 should not be entered here.)
+Total Students
+Full Time 123
+Part Time 106
+No. of Ph.D students graduated (including Integrated Ph.D)
+2024-25 2023-24 2022-23
+Full Time 16 16 14
+Part Time 21 13 18
+IPR
+Calendar year 2024 2023 2022
+No. of Patents Published 17 11 6
+No. of Patents Granted 13 8 4
+Sponsored Research Details
+Financial Year 2024-25 2023-24 2022-23
+Total no. of Sponsored Projects 17 12 13
+Total no. of Funding Agencies 15 6 7
+Total Amount Received (Amount in Rupees) 17234500 9877197 10085381
+Amount Received in Words One Crore Seventy Two Lakh Thirty four thousand five
+hundred
+Ninety Eight Lakh Seventy Seven Thousand One Hundred and
+Ninety Seven Only
+One Crore Eighty Five Thousand Three Hundred Eighty One
+Only
+Consultancy Project Details
+Financial Year 2024-25 2023-24 2022-23
+Total no. of Consultancy Projects 260 132 112
+Total no. of Client Organizations 185 95 84
+Total Amount Received (Amount in Rupees) 18734134 6581572 8062569
+Amount Received in Words One Crore Eighty Seven Lakh Thirty Four Thousand One
+Hundred Thirty Four
+Sixty Five Lakh Eighty One Thousand Five Hundred and
+Seventy Two Only
+Eighty Lakh Sixty Two Thousand Five Hundred Sixty Nine Only
+PCS Facilities: Facilities of physically challenged students
+1. Do your institution buildings have Lifts/Ramps? Yes, more than 80% of the buildings
+2. Do your institution have provision for walking aids, including wheelchairs and transportation from one building to another for
+handicapped students?
+Yes
+3. Do your institution buildings have specially designed toilets for handicapped students? Yes, more than 80% of the buildings
+Energy Generated & Consumed
+Electricity Questionnaire
+1. Practices to avoid misuse of electricity: Yes
+2. LED Replacement Percentage: 80
+3. BLDC Fan Replacement Percentage: 80
+4. Defined norms for cooling/heating: Yes
+5. Renewable electricity procurement: Yes
+6. Additional energy reduction activity: Yes
+Activity Details: 1. Solar PV for the institute's electric energy consumption
+2. Sensor-based energy conservation.
+3. Use of LED bulbs, BLDC fans, and 3-star-rated air conditioners
+4. Use of Biogas plant
+Academic Year Total Electricity Consumed (kWh) Total Renewable Energy Installed (kWp) Total Renewable Energy Generated (kWh) Total Built-up Area (Sq. ft.)
+2024-25 1379660.000 626000.000 2005660.000 1028333.000
+2023-24 1203054.000 623000.000 1826054.000 986333.000
+2022-23 1208045.000 625000.000 1833045.000 978333.000
+Water Management
+Water Questionnaire
+1. Water conservation practices: Yes
+2. Rainwater harvesting system: Yes
+3. Wastewater treatment system: 80
+4. Water audit conducted: Yes
+5. Low-flow fixtures installed: Yes
+Academic Year Total Pump Power (HP) RWH Connected Area (Sq.ft.) Wastewater Treated (%) Total Taps Low-Flow Taps Total Rooftop Area (Sq.ft.)
+2024-25 187.000 1028707.000 80.000 1570 96 1028707.000
+2023-24 184.000 919647.000 80.000 1516 94 919647.000
+2022-23 184.000 883050.000 80.000 1480 80 883050.000
+Waste Management
+Waste Management Questionnaire
+1. Does your institute have a waste segregation system? Yes
+2. Does the institute practice composting? Yes
+3. Are hazardous wastes handled properly? Yes
+4. Does the institute have an e-waste management system? Yes
+5. Are there initiatives for reducing single-use plastics? Yes
+6. Any additional waste reduction activities? No
+Financial Year Total Solid Waste (Tons) Horticulture Waste (Tons) Dry Waste (Tons) Wet Waste (Tons) Dry Waste Recycled (Tons) Bio/Food Waste Processed
+(Tons)
+Electronic Waste (Kg)
+2024-25 8.40 2.50 1.50 5.40 0.20 5.40 900.00
+2023-24 8.00 2.00 1.50 6.20 0.10 6.20 2,200.00
+2022-23 7.80 1.50 1.50 6.30 0.15 6.30 200.00
+Green Coverage
+Green Coverage Questionnaire
+1. Total land area of the campus: Yes
+2. Total green area in the campus: Yes
+3. Number of trees planted in the campus: Yes
+4. Initiatives for improving green coverage (e.g., saplings planted, gardens, rooftop gardens): Yes
+Financial Year Total Land Area (Acres) Green Area (Acres) Number of Trees Number of Saplings Planted
+2024-25 100.000 73.000 2014 70
+2023-24 100.000 70.000 1900 50
+2022-23 100.000 68.000 1750 25
+Health & Well-Being
+Health & Well-being Questionnaire
+1. Availability of pedestrian-friendly areas on campus: Yes
+2. Sports facilities and areas accessible to students and staff: Yes
+3. Total campus area dedicated to health and wellness activities: Yes
+4. Number of students participating in yoga or fitness programs: Yes
+5. Additional initiatives promoting health and well-being: Yes
+Financial Year Pedestrian Area (Acres) Sports Area (Acres) Total Campus Area (Acres) Yoga (Twice per Week) Yoga (Weekly)
+2024-25 3.600 4.000 100.000 1029 200
+2023-24 3.440 4.000 100.000 945 150
+2022-23 3.400 3.000 100.000 885 150
+Sustainable Communities and Partnership
+Community Questionnaire
+1. Initiatives undertaken by the institute for community engagement: Yes
+2. Programs promoting student participation in social initiatives: Yes
+3. Measures taken to involve students in planting, cleanliness, and sustainability activities: Yes
+4. Partnerships with local communities or NGOs: Yes
+5. Events organized for community welfare: Yes
+6. Any other community support activities undertaken by the institute: Yes
+Financial Year Active Initiatives Students - Tree Plantation Students - Other Activities Students - Outside Campus Events Organized
+2024-25 20 200 3470 3470 70
+2023-24 20 200 3163 3163 56
+2022-23 20 200 3043 3043 19
+Faculty Details2
+Srno Name Designation Gender Qualification Experience (In
+Months)
+Currently working
+with institution?
+Joining Date Leaving Date Association type
+1  M TAMIL ELAKKIYA Assistant Professor Female Ph.D 67 Yes 11-08-2022 -- Regular
+2 A  Akeel Alawdeen
+Kamal
+Assistant Professor Male M.Arch. 60 Yes 10-02-2025 -- Regular
+3 A Malini Associate Professor Female Ph.D No 26-09-2007 23-08-2024 Regular
+4 ALWIN ALBERT S Assistant Professor Male B. Arch 84 No 01-07-2022 30-07-2025 Visiting
+5 B Karthikeyan Assistant Professor Male Ph.D 324 Yes 01-11-2004 -- Regular
+6 B Vellaikannan Professor Male Ph.D 359 Yes 06-12-1999 -- Regular
+7 C K Babulal Professor Male Ph.D 380 Yes 27-01-2000 -- Regular
+8 C Senthilkumar Associate Professor Male Ph.D 342 Yes 09-01-2001 -- Regular
+9 D NAGENDRA
+KUMAR
+Assistant Professor Male M.E. 96 Yes 06-07-2022 -- Regular
+10 Divya
+Raveendrakumar
+Assistant Professor Female M.Arch. 30 Yes 23-06-2025 -- Regular
+11 G BHAVANI Assistant Professor Female M.E. 122 Yes 01-08-2022 -- Regular
+12 G Manoj Assistant Professor Male B. Arch 84 Yes 01-07-2022 -- Visiting
+13 G Swarnavalli Assistant Professor Female B. Arch 86 Yes 01-07-2022 -- Visiting
+14 Govindasamy Ananthi Associate Professor Female Ph.D 288 Yes 06-07-2006 -- Regular
+15 J Felicia Lilian Assistant Professor Female Ph.D 135 Yes 31-12-2020 -- Regular
+16 K Arunganesh Assistant Professor Male Ph.D 180 Yes 01-08-2025 -- Regular
+17 K Malavan Assistant Professor Male Ph.D 45 Yes 10-07-2025 -- Regular
+18 K Sundarakantham Professor Female Ph.D 260 Yes 27-11-2003 -- Regular
+19 L Ashok Kumar Dean / Principal /
+Director / Vice
+Chancellor
+Male Ph.D 336 Yes 05-09-2024 -- Regular
+20 M BABU Assistant Professor Male M. Phil 48 Yes 25-09-2023 -- Regular
+21 M Kalpana Professor Female Ph.D 156 Yes 09-06-2025 -- Regular
+22 M MEENAKSHI DEVI Assistant Professor Female Ph.D 40 Yes 01-08-2022 -- Regular
+23 M Saravanan Professor Male Ph.D 382 Yes 02-01-1995 -- Regular
+24 M Suguna Associate Professor Female Ph.D 205 Yes 06-08-2008 -- Regular
+25 MEENA KUMARI R Associate Professor Female Ph.D 306 Yes 14-06-2017 -- Regular
+26 N Nithya Assistant Professor Female M.Sc. 14 Yes 26-06-2024 -- Regular
+27 Neerathalingam
+Balasubramanian
+Balamurugan
+Professor Male Ph.D 330 Yes 12-07-2004 -- Regular
+28 P Jeyadurga Assistant Professor Female Ph.D 38 Yes 12-04-2024 -- Regular
+29 P Priyadharshini Assistant Professor Female Ph.D 24 Yes 06-06-2025 -- Regular
+30 P VELUSAMY Assistant Professor Male Ph.D 84 Yes 05-08-2022 -- Regular
+31 Periakaruppan
+Gurusamy Sivabalan
+Velmurugan
+Associate Professor Male Ph.D 238 Yes 21-09-2007 -- Regular
+32 R Indrajith Krishnan Assistant Professor Male Ph.D 205 Yes 29-07-2013 -- Regular
+33 R Maniarasu Assistant Professor Male Ph.D 77 Yes 03-01-2024 -- Regular
+34 R Roshma Assistant Professor Female Master of Design 56 Yes 12-06-2024 -- Regular
+35 R Sivasankaran Assistant Professor Male Ph.D 212 Yes 04-04-2014 -- Regular
+36 S Anu Assistant Professor Female M.Arch. 77 Yes 24-11-2021 -- Regular
+37 S Chandran Professor Male Ph.D 314 Yes 18-11-2004 -- Regular
+38 S Julius Fusic Assistant Professor Male Ph.D 155 Yes 11-08-2014 -- Regular
+39 S M VIDHYA
+SANKARI
+Assistant Professor Female M.Arch. 253 Yes 31-05-2019 -- Regular
+40 S P Premnath Associate Professor Male Ph.D 142 Yes 02-06-2025 -- Regular
+41 S Punitha Assistant Professor Female M.E. 102 Yes 01-07-2025 -- Regular
+42 S Sridevi Professor Female Ph.D 228 Yes 06-07-2006 -- Regular
+43 S Thanga lavanya Associate Professor Female M.Arch. 196 Yes 03-09-2012 -- Regular
+44 Shridharani Professor Male Ph.D 324 Yes 02-06-2025 -- Visiting
+45 T Arul Prakash Assistant Professor Male Ph.D 238 Yes 24-06-2024 -- Regular
+46 T T Mathangi Assistant Professor Female M.E. 151 Yes 10-07-2024 -- Regular
+47 V Ganga Assistant Professor Female Ph.D 145 Yes 23-06-2025 -- Regular
+48 V Veera Ganesh Assistant Professor Male M.Tech 307 Yes 06-12-1999 -- Regular
+49 VINOTHKUMAR R Assistant Professor Male MFA(Fine Arts) 200 Yes 05-03-2018 -- Regular
+50  R SUBHASHNI Assistant Professor Female M.E. 40 Yes 01-08-2022 -- Regular
+51 A Ayswarya Assistant Professor Female M.Arch. 197 Yes 12-03-2018 -- Regular
+52 A Ramalinga
+Chandrasekar
+Assistant Professor Male Ph.D 236 Yes 06-08-2021 -- Regular
+53 Ashraf Professor Male B. Arch 206 Yes 03-02-2025 -- Visiting
+54 B Shankar Assistant Professor Male Ph.D 188 Yes 20-10-2021 -- Regular
+55 Balakrishnan
+Sathyabama
+Professor Female Ph.D 270 Yes 02-01-2003 -- Regular
+56 C Mahadevi Assistant Professor Female Ph.D 221 Yes 02-01-2024 -- Regular
+57 C Vignesh Assistant Professor Male Ph.D 126 Yes 22-01-2015 -- Regular
+58 D Priyadharshini Assistant Professor Female M.E. 57 Yes 07-07-2025 -- Regular
+59 E Rajalakshmi Assistant Professor Female M.E. 72 Yes 18-06-2025 -- Regular
+60 G G Vinothkumar Assistant Professor Male Ph.D 72 Yes 02-06-2025 -- Regular
+61 G Prabhakar Assistant Professor Male Ph.D 180 Yes 19-08-2021 -- Regular
+62 G Vennila Assistant Professor Female Ph.D 130 Yes 03-01-2024 -- Regular
+63 H Sri Vinodhini Assistant Professor Female M. Phil 157 Yes 14-06-2012 -- Regular
+64 J Vijayalakshmi Assistant Professor Female M.E. 98 Yes 07-07-2025 -- Regular
+65 K Indira Assistant Professor Female Ph.D 157 Yes 14-06-2012 -- Regular
+66 K Priya Assistant Professor Female Ph.D 78 Yes 05-02-2025 -- Regular
+67 K V Uma Associate Professor Female Ph.D 181 Yes 07-06-2010 -- Regular
+68 L RAMANAN Other Male Ph.D 372 Yes 25-07-2022 -- Adhoc / Contractual
+69 M C Sundarraja Professor Male Ph.D 319 Yes 06-12-1999 -- Regular
+70 M Karuppiah Rajkumar Assistant Professor Male M.E. 132 Yes 02-07-2025 -- Regular
+71 M P Ramkumar Associate Professor Male Ph.D 253 Yes 18-06-2007 -- Regular
+72 M Senthilarasi Assistant Professor Female Ph.D 207 Yes 02-08-2021 -- Regular
+73 M VELAYUDHAM Assistant Professor Male Ph.D 195 Yes 21-07-2017 -- Regular
+74 Moola Seetharamaiyer
+Kasiviswanathan
+Manikandan
+Professor Male Ph.D 320 Yes 16-11-2001 -- Regular
+75 N Shanmuga Vadivoo Professor Female Ph.D 357 Yes 10-12-1999 -- Regular
+76 O Sethupathi Assistant Professor Male B. Arch 64 Yes 01-07-2022 -- Visiting
+77 P KRISHNAPRIYA Assistant Professor Female Ph.D 83 Yes 05-08-2022 -- Regular
+78 P S Manoharan Professor Male Ph.D 343 Yes 21-06-2006 -- Regular
+79 P Victor Assistant Professor Male Ph.D 145 Yes 06-12-2021 -- Regular
+80 PL K Palaniappan Professor Male Ph.D 389 Yes 02-06-1997 -- Regular
+81 R Kirubahari Assistant Professor Female Ph.D 15 Yes 23-06-2025 -- Regular
+82 R Raj Kumar Assistant Professor Male Ph.D 83 Yes 24-06-2024 -- Regular
+83 R Saraswathi Meena Assistant Professor Female M.E. 82 Yes 03-06-2019 -- Regular
+84 Raja Lavanya Assistant Professor Female Ph.D 172 Yes 24-03-2014 -- Regular
+85 S Arunkumar Assistant Professor Male Ph.D 174 Yes 27-07-2023 -- Regular
+86 S Esakkimuthu Assistant Professor Male Ph.D 12 Yes 02-06-2025 -- Regular
+87 S Karthikeyan Professor Male Ph.D 302 Yes 29-11-2002 -- Regular
+88 S Muthuramalingam Professor Male Ph.D 305 Yes 27-11-2003 -- Regular
+89 S Pethuraj Assistant Professor Male Ph.D 31 Yes 01-07-2024 -- Regular
+90 S Saradha Assistant Professor Female M.E. 96 Yes 01-07-2024 -- Regular
+91 S Sujitha Assistant Professor Female M.E. 144 Yes 24-12-2012 -- Regular
+92 S Vinoth Assistant Professor Male Ph.D 15 Yes 02-07-2025 -- Regular
+93 Subalakshmi R Assistant Professor Female M.Arch. 48 No 01-08-2022 30-06-2025 Regular
+94 T Saranya Assistant Professor Female M.E. 13 No 02-01-2024 31-01-2025 Regular
+95 V Aravindan Assistant Professor Male Ph.D 18 Yes 09-03-2024 -- Regular
+96 V Ravisankar Associate Professor Male Ph.D 187 Yes 29-12-2009 -- Regular
+97 Veppadapu raman
+Venkatasubramani
+Associate Professor Male Ph.D 346 Yes 03-06-2008 -- Regular
+98 Vivekanandan Vinoth
+Thyagarajan
+Associate Professor Male Ph.D 240 Yes 13-07-2005 -- Regular
+99  R Velkennedy Professor Male Ph.D 430 Yes 27-09-1993 -- Regular
+100 A Indirani Assistant Professor Female M.E. 99 Yes 13-07-2023 -- Regular
+101 A Tamilselvi Professor Female Ph.D 431 Yes 16-08-1989 -- Regular
+102 Ashwin Sudhakaran Assistant Professor Male Ph.D 57 Yes 16-06-2025 -- Regular
+103 B Subbulakshmi Assistant Professor Female Ph.D 264 Yes 07-07-2003 -- Regular
+104 Balasubramanian
+Yogameena
+Professor Female Ph.D No 04-12-2002 19-09-2024 Regular
+105 C Paramasivam Professor Male Ph.D 332 Yes 06-12-1999 -- Regular
+106 Chandrakumar T Professor Male Ph.D 168 Yes 01-08-2011 -- Regular
+107 D Rajkumar Assistant Professor Male Ph.D 157 Yes 14-06-2012 -- Regular
+108 Elanchezian S A V Associate Professor Male Ph.D 468 No 24-12-2012 30-06-2025 Regular
+109 G Kanagaraj Professor Male Ph.D 356 Yes 14-12-2000 -- Regular
+110 G Ravichandran Other Male Ph.D 412 Yes 25-07-2022 -- Adhoc / Contractual
+111 Gayathri Suresh Assistant Professor Female M.Plan 15 Yes 15-07-2024 -- Regular
+112 I Chandramathy Professor Female Ph.D 226 Yes 08-09-2008 -- Regular
+113 Jeya Jeevakani Assistant Professor Female Ph.D 273 Yes 04-09-2018 -- Regular
+114 K Iyshwarya Ratthi Assistant Professor Female Ph.D 17 Yes 24-06-2024 -- Regular
+115 K R Premlatha Assistant Professor Female Ph.D 113 Yes 02-01-2024 -- Regular
+116 Kaleeswaran
+Rajeswari
+Associate Professor Female Ph.D 382 Yes 05-12-2003 -- Regular
+117 M A Ganesh Assistant Professor Male M.Tech 121 Yes 22-06-2015 -- Regular
+118 M Geethanjali Professor Female Ph.D 422 Yes 06-12-1999 -- Regular
+119 M Kokila Assistant Professor Female M.Tech 58 Yes 01-07-2025 -- Regular
+120 M Palaninatha Raja Dean / Principal /
+Director / Vice
+Chancellor
+Male Ph.D 371 No 01-08-1997 31-03-2025 Regular
+121 M Sermaraj Assistant Professor Male Ph.D 215 Yes 27-04-2018 -- Regular
+122 M Venkatesh Assistant Professor Male M.Tech 142 Yes 10-07-2023 -- Regular
+123 N Abhilash Assistant Professor Male Ph.D 49 Yes 06-06-2025 -- Regular
+124 N Sheerin Sitara Assistant Professor Female M.E. 72 Yes 03-03-2025 -- Regular
+125 P Babu Dhivakaran Assistant Professor Male Ph.D 38 Yes 03-06-2025 -- Regular
+126 P M Devie Assistant Professor Female Ph.D 82 Yes 10-07-2023 -- Regular
+127 P Sampath Narayanan Other Male Ph.D 288 Yes 03-08-2021 -- Adhoc / Contractual
+128 P VIJAYA PRABA Assistant Professor Female M.Tech 134 Yes 11-08-2022 -- Regular
+129 Priya Thiagarajan Assistant Professor Female M.E. 125 Yes 07-07-2023 -- Regular
+130 R K C Jeyakumar Assistant Professor Male Ph.D 349 Yes 20-06-2012 -- Regular
+131 R Parkavi Assistant Professor Female Ph.D 157 Yes 19-12-2012 -- Regular
+132 R Sanjay Kumar Associate Professor Male Ph.D 300 Yes 28-01-2002 -- Regular
+133 R Vaishnavi Assistant Professor Female M.E. 36 Yes 09-06-2025 -- Regular
+134 S Arockia Edwin
+Xavier
+Professor Male Ph.D 312 Yes 18-07-2005 -- Regular
+135 S Daison Stallon Assistant Professor Male Ph.D 132 Yes 02-06-2025 -- Regular
+136 S Karthickprabhu Assistant Professor Male Ph.D 128 Yes 07-08-2023 -- Regular
+137 S Mercy Shalinie Professor Female Ph.D 389 Yes 10-02-1999 -- Regular
+138 S Padmavathi Professor Female Ph.D 295 Yes 13-12-2002 -- Regular
+139 S RAJKUMAR Assistant Professor Male M.E. 136 Yes 05-07-2017 -- Regular
+140 S Subash Assistant Professor Male Ph.D 95 Yes 02-01-2024 -- Regular
+141 S Umar Sherif Assistant Professor Male Ph.D 114 Yes 10-07-2023 -- Regular
+142 Sivailanago Sivaraj Assistant Professor Male Ph.D 173 Yes 05-04-2012 -- Regular
+143 T Mutharas Assistant Professor Female MCA 68 Yes 01-08-2022 -- Regular
+144 U Abishek Assistant Professor Male M.A 14 Yes 17-07-2025 -- Regular
+145 V Punitha Assistant Professor Female Ph.D 36 Yes 10-07-2023 -- Regular
+146 Vasudevan
+Rajagopalan
+Professor Male Ph.D 648 Yes 01-12-1975 -- Regular
+147 VISHAL M Assistant Professor Male M.Arch. 73 Yes 01-07-2021 -- Regular
+148  L Muthusubramanian Assistant Professor Male Ph.D 300 Yes 24-11-2021 -- Regular
+149  S Saravana Kumar Assistant Professor Male Ph.D 144 Yes 11-08-2021 -- Regular
+150 A M Abirami Professor Female Ph.D 274 Yes 07-06-2010 -- Regular
+151 Abhilash Chazhu
+Velayudhan
+Associate Professor Male M.Arch. 102 Yes 02-06-2025 -- Visiting
+152 B Johnson Assistant Professor Male MCA 180 Yes 16-06-2025 -- Regular
+153 B Varunkumar Assistant Professor Male Ph.D 144 Yes 05-06-2025 -- Regular
+154 C Jeyamala Associate Professor Female Ph.D 239 Yes 05-08-2005 -- Regular
+155 C Selvakumar Assistant Professor Male Ph.D 159 Yes 19-06-2015 -- Regular
+156 D Kavitha Associate Professor Female Ph.D 238 Yes 05-07-2007 -- Regular
+157 D Yuvasini Assistant Professor Female M.E. 53 Yes 08-01-2024 -- Regular
+158 G Balaji Professor Male Ph.D 300 Yes 05-06-2002 -- Regular
+159 G Madhupriya Associate Professor Female Ph.D 229 Yes 18-06-2007 -- Regular
+160 G Sooraj Associate Professor Male Ph.D 142 Yes 02-02-2026 -- Regular
+161 Gokul D Assistant Professor Male B. Arch 76 Yes 18-08-2022 -- Regular
+162 J EUNICE Assistant Professor Female M.E. 110 Yes 01-08-2022 -- Regular
+163 K Aathiappan Assistant Professor Male Ph.D 216 Yes 18-08-2021 -- Regular
+164 K Madhulika Associate Professor Female B. Arch 57 No 01-07-2022 30-07-2025 Visiting
+165 K Srithar Professor Male Ph.D 417 Yes 19-01-2000 -- Regular
+166 Kottaisamy Muniasamy Professor Male Ph.D 409 Yes 30-07-2010 -- Regular
+167 M Aruna Assistant Professor Female M.E. 61 Yes 08-01-2021 -- Regular
+168 M K Kavitha Devi Professor Female Ph.D 357 Yes 01-10-2001 -- Regular
+169 M Mahendran Professor Male Ph.D 370 Yes 12-09-1997 -- Regular
+170 M S Sasirekha Assistant Professor Female Ph.D 153 No 03-07-2024 09-05-2025 Regular
+171 M
+SIVASUBRAMANIAN
+Assistant Professor Male M.Arch. 64 Yes 01-07-2022 -- Visiting
+172 Mathan Nanjan Suresh Associate Professor Male Ph.D 349 Yes 04-06-2003 -- Regular
+173 N Kamaraj Professor Male Ph.D 408 Yes 05-08-2024 -- Regular
+174 NANDALAL
+VISWANATH C
+Professor Male B. Arch 262 No 01-07-2022 30-07-2025 Visiting
+175 P Chitra Professor Female Ph.D 350 Yes 24-12-1999 -- Regular
+176 P PAVALAVELSH Assistant Professor Male M.Arch. 144 Yes 06-05-2019 -- Regular
+177 P SUGANTHI Assistant Professor Female Ph.D 216 Yes 25-07-2022 -- Regular
+178 Parthasarathy S Professor Male Ph.D 264 Yes 03-07-2003 -- Regular
+179 R Arun Prasath Other Male Ph.D 192 Yes 25-07-2022 -- Adhoc / Contractual
+180 R Kodipandyan Assistant Professor Male Ph.D 151 Yes 17-12-2012 -- Regular
+181 R Rajan Prakash Associate Professor Male Ph.D 300 Yes 01-12-2005 -- Regular
+182 R Saravana Raja Professor Male M.Arch. 260 Yes 08-07-2024 -- Visiting
+183 Ramasamy Alagumalai
+Alaguraja
+Professor Male Ph.D 259 Yes 05-12-2003 -- Regular
+184 S Asha Assistant Professor Female Ph.D 61 Yes 11-06-2025 -- Regular
+185 S Jeniba Assistant Professor Female M.E. 144 Yes 10-07-2024 -- Regular
+186 S KARTHIKEYARAJA Associate Professor Male M.Arch. 384 Yes 04-12-2008 -- Regular
+187 S Nandhini Assistant Professor Female B. Arch 90 No 22-11-2021 29-08-2025 Regular
+188 S Prasanna Associate Professor Male Ph.D 265 Yes 12-07-2004 -- Regular
+189 S Sindhu Assistant Professor Female M.Plan 30 Yes 23-06-2025 -- Regular
+190 S Sumathi Assistant Professor Female Ph.D 13 Yes 24-06-2024 -- Regular
+191 Sadhasivam
+Parthasarathi
+Assistant Professor Male M.E. 175 Yes 23-12-2014 -- Regular
+192 Sundarajan Jayaraman
+Thiruvengadam
+Professor Male Ph.D 379 Yes 10-06-1996 -- Regular
+193 T Siva Assistant Professor Male M.E. 138 Yes 10-07-2023 -- Regular
+194 V Balasubramani Associate Professor Male Ph.D 327 Yes 07-11-2001 -- Regular
+195 V Saravanan Professor Male Ph.D 386 Yes 11-06-1997 -- Regular
+196 Vijayalakshmi S Professor Female Ph.D 264 Yes 25-11-2002 -- Regular
+197  K Sudalaimani Associate Professor Male Ph.D 480 No 07-04-1993 28-02-2025 Regular
+198  S Nagan Professor Male Ph.D 397 Yes 02-06-1997 -- Regular
+199 A Karuppasamy Assistant Professor Male Ph.D 243 Yes 27-04-2018 -- Regular
+200 AARTHI MAILA DEVI
+S
+Assistant Professor Female B. Arch 132 Yes 28-06-2017 -- Regular
+201 B Dineshkumar Assistant Professor Male M.E. 108 Yes 28-12-2020 -- Regular
+202 B Surya Devi Assistant Professor Female Ph.D 195 Yes 04-06-2019 -- Regular
+203 C Deisy Professor Female Ph.D 294 Yes 05-01-2001 -- Regular
+204 C Santhiya Assistant Professor Female Ph.D 182 Yes 24-12-2012 -- Regular
+205 D Brindha Professor Female Ph.D 310 Yes 13-03-2002 -- Regular
+206 D Tamilselvi Professor Female Ph.D 348 Yes 07-07-2003 -- Regular
+207 G Angelin Lincy Assistant Professor Female Ph.D 33 Yes 18-07-2024 -- Regular
+208 G Kumaraguruparan Professor Male Ph.D 400 Yes 15-11-2000 -- Regular
+209 G Sivasankar Associate Professor Male Ph.D 249 Yes 02-09-2008 -- Regular
+210 Godwin Emmanuel Professor Male Ph.D 212 Yes 02-06-2025 -- Visiting
+211 J Dharani Assistant Professor Female Ph.D 52 Yes 07-07-2023 -- Regular
+212 Jinu Louishidha
+Kitchley
+Professor Female Ph.D 324 Yes 20-07-2009 -- Regular
+213 K Keerthy Assistant Professor Female M.E. No 05-07-2017 03-10-2024 Regular
+214 K Selvi Professor Female Ph.D 430 Yes 02-07-1990 -- Regular
+215 Karuppiah Vasudevan Associate Professor Male Ph.D 241 Yes 18-06-2007 -- Regular
+216 M Arjunan Assistant Professor Male Ph.D 136 Yes 12-07-2023 -- Regular
+217 M Jeevaraj Assistant Professor Male Ph.D 79 Yes 02-01-2024 -- Regular
+218 M M Devarajan Assistant Professor Male Ph.D 144 Yes 09-09-2015 -- Regular
+219 M S Govardhanan Assistant Professor Male Ph.D 308 Yes 05-03-2012 -- Regular
+220 M Sivakumar Associate Professor Male Ph.D 382 Yes 21-09-2001 -- Regular
+221 Mariappan
+Senthilnathan
+Assistant Professor Male M.E. 202 Yes 24-06-2013 -- Regular
+222 N Ayyanar Assistant Professor Male Ph.D 104 Yes 18-08-2021 -- Regular
+223 Nancy Assistant Professor Female B. Arch 82 No 08-07-2024 30-07-2025 Visiting
+224 P Balamurugan Other Male Ph.D 216 Yes 25-07-2022 -- Adhoc / Contractual
+225 P Maran Professor Male Ph.D 371 Yes 13-03-2002 -- Regular
+226 P Sivakumar Assistant Professor Male Ph.D 42 Yes 24-07-2024 -- Regular
+227 Padmapriya S T Assistant Professor Female Ph.D 144 Yes 25-07-2022 -- Regular
+228 R Abinaya Rajakumari Assistant Professor Female M.E. 70 Yes 15-07-2024 -- Regular
+229 R Kamalakannan Assistant Professor Male Ph.D 216 Yes 04-07-2024 -- Regular
+230 R Ponnudurai Associate Professor Male Ph.D 443 Yes 17-03-2003 -- Regular
+231 R Sankaranarayanan Assistant Professor Male Ph.D 139 Yes 20-12-2013 -- Regular
+232 Ragul S Assistant Professor Male M.Arch. 60 Yes 18-08-2022 -- Regular
+233 S Arul Mary Professor Female Ph.D 382 Yes 15-12-1997 -- Regular
+234 S ELANGOVAN Assistant Professor Male M.Arch. 103 Yes 02-12-2019 -- Regular
+235 S Karthiga Associate Professor Female Ph.D 168 Yes 14-06-2012 -- Regular
+236 S Muralidharan Professor Male Ph.D No 15-07-1987 31-10-2024 Regular
+237 S Parasuram Other Male Ph.D 240 Yes 24-12-2020 -- Adhoc / Contractual
+238 S SANTHANA HARI Assistant Professor Male M.E. 56 Yes 01-08-2022 -- Regular
+239 S Sugantha Assistant Professor Female M.E. 62 Yes 27-06-2025 -- Regular
+240 S V Lakshmi Priya Assistant Professor Female M.Arch. 193 Yes 06-10-2025 -- Regular
+241 Sivasubramanian
+Rajaram
+Professor Male Ph.D 323 Yes 01-08-1998 -- Regular
+242 T Prakash Assistant Professor Male M.E. 149 Yes 28-07-2014 -- Regular
+243 V Anushya Devi Assistant Professor Female Ph.D 107 Yes 24-07-2024 -- Regular
+244 V Ramesh Kumar Professor Male M.Arch. 264 Yes 01-07-2022 -- Visiting
+245 Velkannan
+Veerapandian
+Assistant Professor Male Ph.D 168 Yes 08-03-2012 -- Regular
+246 Vishnupriya J Assistant Professor Female M.Arch. 102 Yes 08-07-2024 -- Visiting
+247  R SIVAKUMAR Assistant Professor Male Ph.D 96 Yes 12-08-2022 -- Regular
+248 A Anitha Assistant Professor Female Ph.D 244 Yes 07-08-2008 -- Regular
+249 A Muneesh Kumar Assistant Professor Male Ph.D 24 Yes 20-06-2025 -- Regular
+250 Anitha D Assistant Professor Female Ph.D 180 Yes 14-06-2012 -- Regular
+251 B Karuppasamy Assistant Professor Male Ph.D 21 Yes 13-06-2025 -- Regular
+252 Balakrishnan
+Manimegalai
+Professor Female Ph.D 359 Yes 27-08-1999 -- Regular
+253 C Karthika Assistant Professor Female M.E. 48 Yes 04-07-2025 -- Regular
+254 C V Nisha Angeline Assistant Professor Female M.E. 166 Yes 24-03-2014 -- Regular
+255 D Nelson Jayakumar Assistant Professor Male Ph.D 181 Yes 24-06-2013 -- Regular
+256 Duraisamy Gracia
+Nirmala Rani
+Professor Female Ph.D 213 Yes 05-10-2007 -- Regular
+257 G Chitra Professor Female Ph.D 361 Yes 09-01-1998 -- Regular
+258 G Ophylia Vinodhini Professor Female Ph.D 192 Yes 02-06-2025 -- Visiting
+259 G VAISHALI Assistant Professor Female M.Arch. 73 Yes 18-08-2020 -- Regular
+260 H Ramesh Assistant Professor Male Ph.D 340 Yes 30-03-2015 -- Regular
+261 J SHANTHI Assistant Professor Female Ph.D 40 Yes 10-08-2022 -- Regular
+262 K B Pasupathy Assistant Professor Male M.Plan 31 No 12-06-2024 31-05-2025 Regular
+263 K Narashima
+Mallikarjunan
+Assistant Professor Male Ph.D 227 Yes 06-08-2008 -- Regular
+264 K V Sridhar Professor Male M.Arch. 284 Yes 01-07-2022 -- Visiting
+265 L Jessi Sahaya
+Shanthi
+Associate Professor Female Ph.D 276 Yes 20-10-2004 -- Regular
+266 M Balamurali Associate Professor Male Ph.D 240 Yes 06-07-2006 -- Regular
+267 M KARTHIC Assistant Professor Male Ph.D 124 Yes 02-01-2017 -- Regular
+268 M Nirmala Devi Assistant Professor Female Ph.D 204 Yes 18-01-2012 -- Regular
+269 M Sarparaje Assistant Professor Female Ph.D 170 Yes 04-03-2022 -- Regular
+270 M Sundar Assistant Professor Male Ph.D 141 Yes 16-08-2021 -- Regular
+271 ML Mahadevan Associate Professor Male Ph.D 329 Yes 10-09-2004 -- Regular
+272 N Sankara
+Subramanian
+Professor Male Ph.D 422 Yes 22-07-1998 -- Regular
+273 Nithyakala G Assistant Professor Female Ph.D 184 Yes 25-07-2022 -- Regular
+274 P Karthikeyan Professor Male Ph.D 250 Yes 13-09-2007 -- Regular
+275 P Ramkumar Assistant Professor Male Ph.D 58 Yes 03-01-2024 -- Regular
+276 P Venkatesh Professor Male Ph.D 391 Yes 01-12-1994 -- Regular
+277 PIRAIARASI C Associate Professor Female M.S 231 Yes 01-07-2019 -- Regular
+278 R Harine Rajashree Assistant Professor Female Ph.D 28 Yes 01-03-2024 -- Regular
+279 R Leenasri Associate Professor Female Ph.D 252 Yes 03-01-2012 -- Regular
+280 R Rammohan Professor Male Ph.D 404 Yes 03-06-1996 -- Regular
+281 R Sivanesan Assistant Professor Male Ph.D 82 Yes 10-07-2023 -- Regular
+282 S A R Sheik Masthan Assistant Professor Male M.E. 226 Yes 06-06-2016 -- Regular
+283 S Baskar Professor Male Ph.D 386 Yes 01-12-1994 -- Regular
+284 S Jeya Bharathi Professor Female Ph.D 406 Yes 03-09-1998 -- Regular
+285 S Latha Professor Female Ph.D 345 Yes 01-10-1997 -- Regular
+286 S Naveena Assistant Professor Female M.E. 72 Yes 11-08-2025 -- Regular
+287 S Pudumalar Assistant Professor Female Ph.D 228 Yes 24-03-2014 -- Regular
+288 S Sivakumar Associate Professor Male M.E. 421 Yes 13-06-1990 -- Regular
+289 S SURIYAKALA Assistant Professor Female Ph.D 89 Yes 25-07-2022 -- Regular
+290 SHALINI PRASAD
+RENUGUNTA
+Assistant Professor Female B. Arch 154 Yes 01-07-2022 -- Visiting
+291 Sundarajan
+Kanthamani
+Professor Female Ph.D 367 Yes 12-10-2000 -- Regular
+292 T Suba Natchiyar Assistant Professor Female M.E. 72 Yes 01-07-2024 -- Regular
+293 V Chandra Assistant Professor Female M.E. 18 Yes 17-06-2025 -- Regular
+294 V Suresh Kumar Professor Male Ph.D 353 Yes 02-06-1997 -- Regular
+295 VIJAYANAND U Professor Male M.Arch. 366 Yes 01-03-2018 -- Regular
+296    M Ramasamy Assistant Professor Male Ph.D 324 Yes 13-07-1998 -- Regular
+297  S Ilankumaran Assistant Professor Male Ph.D 246 Yes 12-08-2021 -- Regular
+298 A J Sunija Assistant Professor Female Ph.D 177 Yes 14-07-2023 -- Regular
+299 A Valan Arasu Professor Male Ph.D 373 Yes 30-11-1998 -- Regular
+300 B Ashok kumar Associate Professor Male Ph.D 263 Yes 25-08-2008 -- Regular
+301 B Sundarakannan Assistant Professor Male Ph.D 72 Yes 16-06-2025 -- Regular
+302 C BALASUNDAR Assistant Professor Male Ph.D 40 Yes 10-08-2022 -- Regular
+303 C S Senthilkumar Assistant Professor Male Ph.D 326 Yes 16-08-2010 -- Regular
+304 Chockalingam K Professor Male Ph.D 427 Yes 01-12-1994 -- Regular
+305 D Sakthipriya Assistant Professor Female Ph.D 72 Yes 16-06-2025 -- Regular
+306 Elangovan Murugavalli Assistant Professor Female Ph.D 297 Yes 04-10-2006 -- Regular
+307 G Krishnaveni Assistant Professor Female Ph.D 216 Yes 04-07-2024 -- Regular
+308 G S R Emil Selvan Associate Professor Male Ph.D 272 Yes 27-11-2003 -- Regular
+309 Geo A Assistant Professor Male M.Arch. 31 Yes 24-07-2023 -- Regular
+310 I Pradeepa Assistant Professor Female Ph.D 216 Yes 24-06-2024 -- Regular
+311 JEYABALAJI R Assistant Professor Male M.Arch. 152 Yes 20-03-2017 -- Regular
+312 K Jeeva Dharshini Assistant Professor Female MCA 16 Yes 16-06-2025 -- Regular
+313 K Saravankumar Assistant Professor Male Ph.D 115 Yes 02-01-2024 -- Regular
+314 Kaluvan Hariharan Professor Female Ph.D 306 Yes 15-01-2001 -- Regular
+315 M AKILA RANI Assistant Professor Female Ph.D 204 Yes 25-07-2022 -- Regular
+316 M Gowtham
+Sethupathi
+Assistant Professor Male M.E. 92 Yes 19-07-2023 -- Regular
+317 M Lekshmi Shunnma Assistant Professor Female M.Arch. 81 Yes 01-03-2021 -- Regular
+318 M Rajalakshmi Assistant Professor Female Ph.D 136 Yes 12-07-2023 -- Regular
+319 M Sindhuja Assistant Professor Female M.Arch. 159 Yes 04-06-2014 -- Regular
+320 M Vijayalakshmi Professor Female Ph.D 241 Yes 08-07-2004 -- Regular
+321 N Anita Assistant Professor Female Ph.D 157 Yes 01-02-2024 -- Regular
+322 N Shivakumar Associate Professor Male Ph.D 264 Yes 18-07-2005 -- Regular
+323 P Balamanikandan Assistant Professor Male Ph.D 102 Yes 01-03-2024 -- Regular
+324 P Manikandan Assistant Professor Male Ph.D 84 Yes 11-06-2025 -- Regular
+325 P Sharmila Assistant Professor Female Ph.D 60 Yes 01-08-2019 -- Regular
+326 P Vivek Associate Professor Male M.Arch. 241 Yes 07-06-2010 -- Regular
+327 R  Prathiksha Assistant Professor Female M.Arch. 35 No 02-07-2025 14-01-2026 Regular
+328 R Jenice Aroma Assistant Professor Female Ph.D 43 Yes 11-06-2025 -- Regular
+329 R N Gnanammal Assistant Professor Female Ph.D 47 No 12-07-2023 03-07-2024 Regular
+330 R S Swarnalakshmi Assistant Professor Female Ph.D 246 Yes 04-01-2021 -- Regular
+331 R Suresh Kannan Assistant Professor Male M. Phil 160 Yes 10-07-2023 -- Regular
+332 S Aravind Roshan Assistant Professor Male M.Plan 35 Yes 18-06-2025 -- Regular
+333 S Charles Raja Professor Male Ph.D 217 Yes 07-09-2007 -- Regular
+334 S Kannan Assistant Professor Male M.E. 437 Yes 14-06-2012 -- Regular
+335 S Meenakshi Assistant Professor Female M. Phil 196 Yes 01-07-2025 -- Regular
+336 S P Suriya Prabha Assistant Professor Female Ph.D 147 Yes 01-08-2014 -- Regular
+337 S R Mathu Sudhanan Assistant Professor Male M.E. 109 Yes 12-06-2025 -- Regular
+338 S Srimathi Assistant Professor Female MSc(IT) 30 Yes 02-01-2024 -- Regular
+339 S Thiruchadai
+Pandeeswari
+Assistant Professor Female M.E. 161 Yes 02-02-2014 -- Regular
+340 Sindha Mohamed
+Mansoor Roomi
+Professor Male Ph.D 323 Yes 06-08-2002 -- Regular
+341 T Baskaran Professor Male Ph.D 353 Yes 19-08-1998 -- Regular
+342 T Velrajan Professor Male Ph.D 456 Yes 02-12-1994 -- Regular
+343 V Janakiraman Assistant Professor Male M.E. 131 Yes 09-08-2021 -- Regular
+344 V Vijayanarayanan Assistant Professor Male Ph.D 21 Yes 13-06-2025 -- Regular
+345 Virendra Singh Other Male Ph.D 300 Yes 24-12-2020 -- Adhoc / Contractual

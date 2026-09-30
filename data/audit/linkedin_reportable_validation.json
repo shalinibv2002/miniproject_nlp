@@ -1,0 +1,263 @@
+{
+  "ay_2026_27_categories": {
+    "ACHIEVEMENT": 9,
+    "ALUMNI": 16,
+    "CAMPUS": 5,
+    "CLUB": 12,
+    "CONFERENCE": 11,
+    "CULTURAL": 2,
+    "FDP": 4,
+    "GUEST_LECTURE": 11,
+    "HACKATHON": 2,
+    "INDUSTRY": 6,
+    "INTERNSHIP": 16,
+    "NSS": 1,
+    "ORIENTATION": 9,
+    "OUTREACH": 12,
+    "PLACEMENT": 1,
+    "RESEARCH": 31,
+    "SEMINAR": 31,
+    "SPORTS": 2,
+    "STTP": 1,
+    "WEBINAR": 6,
+    "WORKSHOP": 9
+  },
+  "ay_2026_27_dated_all_status": 147,
+  "ay_2026_27_departments": {
+    "Applied Mathematics and Computational Science": 2,
+    "Artificial Intelligence": 2,
+    "Chemistry": 3,
+    "Civil Engineering": 7,
+    "Computer Applications": 3,
+    "Computer Science and Business Systems": 2,
+    "Computer Science and Engineering": 13,
+    "Electrical and Electronics Engineering": 12,
+    "Electronics and Communication Engineering": 15,
+    "General": 4,
+    "Information Technology": 1,
+    "Mechanical Engineering": 7,
+    "Mechatronics": 3,
+    "T'SEDA (Architecture, Design, Planning)": 11
+  },
+  "ay_2026_27_new_source_jun_sep_total": 114,
+  "ay_2026_27_new_source_months": {
+    "2026-06": 13,
+    "2026-07": 21,
+    "2026-08": 56,
+    "2026-09": 24
+  },
+  "ay_2026_27_non_activity": 9,
+  "ay_2026_27_reconciles": true,
+  "ay_2026_27_reportable": 118,
+  "ay_2026_27_review_required": 20,
+  "ay_2026_27_stakeholders": {
+    "Alumni": 14,
+    "Community and Society": 25,
+    "Faculty": 53,
+    "Government and Agencies": 5,
+    "Industry": 23,
+    "Non-Teaching Staff": 1,
+    "Parents": 2,
+    "Students": 86
+  },
+  "checks": [
+    {
+      "check": "count_reportable() == status=REPORTABLE rows",
+      "detail": "total=1398",
+      "pass": true
+    },
+    {
+      "check": "unique REPORTABLE total == API count",
+      "detail": "1398 == 1398",
+      "pass": true
+    },
+    {
+      "check": "year filter 2024-25 total matches grouped count",
+      "detail": "261",
+      "pass": true
+    },
+    {
+      "check": "year filter 2025-26 total matches grouped count",
+      "detail": "328",
+      "pass": true
+    },
+    {
+      "check": "year filter 2026-27 total matches grouped count",
+      "detail": "118",
+      "pass": true
+    },
+    {
+      "check": "year filter 2023-24 total matches grouped count",
+      "detail": "10",
+      "pass": true
+    },
+    {
+      "check": "normalized tables == stored JSON lists",
+      "detail": "0 mismatched rows",
+      "pass": true
+    },
+    {
+      "check": "normalized tables contain REPORTABLE only",
+      "detail": "0 leaks",
+      "pass": true
+    },
+    {
+      "check": "General + Departmental == unique total",
+      "detail": "644 + 754 = 1398 vs 1398",
+      "pass": true
+    },
+    {
+      "check": "overview.general_departmental matches",
+      "detail": "{'general': 644, 'departmental': 754}",
+      "pass": true
+    },
+    {
+      "check": "overview total == count_reportable",
+      "detail": "1398",
+      "pass": true
+    },
+    {
+      "check": "overview yearly total == unique total",
+      "detail": "dated+undated",
+      "pass": true
+    },
+    {
+      "check": "yearly distribution matches",
+      "detail": "",
+      "pass": true
+    },
+    {
+      "check": "category distribution matches",
+      "detail": "",
+      "pass": true
+    },
+    {
+      "check": "department distribution matches",
+      "detail": "",
+      "pass": true
+    },
+    {
+      "check": "stakeholder distribution matches",
+      "detail": "",
+      "pass": true
+    },
+    {
+      "check": "24 categories only (no new codes)",
+      "detail": "24 codes in use",
+      "pass": true
+    },
+    {
+      "check": "24-category vocabulary intact",
+      "detail": "24 codes",
+      "pass": true
+    },
+    {
+      "check": "no invalid departments",
+      "detail": "",
+      "pass": true
+    },
+    {
+      "check": "no invalid stakeholders",
+      "detail": "",
+      "pass": true
+    },
+    {
+      "check": "duplicate canonical posts (activity_id) = 0",
+      "detail": "",
+      "pass": true
+    },
+    {
+      "check": "duplicate canonical posts (staging_post_id) = 0",
+      "detail": "",
+      "pass": true
+    },
+    {
+      "check": "duplicate post_url = 0",
+      "detail": "",
+      "pass": true
+    },
+    {
+      "check": "duplicate reportable titles+dates = 0 (new source)",
+      "detail": "",
+      "pass": true
+    },
+    {
+      "check": "every new reportable row traceable to new source",
+      "detail": "",
+      "pass": true
+    },
+    {
+      "check": "every staging post has a reportable row",
+      "detail": "1747 staging posts vs 1747 reportable rows",
+      "pass": true
+    },
+    {
+      "check": "no reportable row without a staging candidate",
+      "detail": "",
+      "pass": true
+    },
+    {
+      "check": "NON_ACTIVITY excluded from public analytics",
+      "detail": "",
+      "pass": true
+    },
+    {
+      "check": "REVIEW_REQUIRED retained in admin layer",
+      "detail": "",
+      "pass": true
+    },
+    {
+      "check": "REVIEW_REQUIRED excluded from public analytics",
+      "detail": "",
+      "pass": true
+    },
+    {
+      "check": "manual overrides intact",
+      "detail": "",
+      "pass": true
+    },
+    {
+      "check": "approved records intact",
+      "detail": "",
+      "pass": true
+    },
+    {
+      "check": "historical sheets unchanged",
+      "detail": "",
+      "pass": true
+    },
+    {
+      "check": "no invented dates (activity_date implies dated)",
+      "detail": "",
+      "pass": true
+    },
+    {
+      "check": "academic_year on non-dated rows only via manual override",
+      "detail": "0 undocumented rows (8 documented overrides expected)",
+      "pass": true
+    },
+    {
+      "check": "no NEW row has an undocumented academic_year",
+      "detail": "",
+      "pass": true
+    },
+    {
+      "check": "AY 2026-27 present in availability/years filter",
+      "detail": "['2023-24', '2024-25', '2025-26', '2026-27', '2027-28']",
+      "pass": true
+    },
+    {
+      "check": "General present as department display value",
+      "detail": "",
+      "pass": true
+    }
+  ],
+  "checks_failed": [],
+  "dated_total": 845,
+  "new_source_ay_2026_27_reportable": 115,
+  "new_source_non_activity": 9,
+  "new_source_reportable": 171,
+  "new_source_review_required": 23,
+  "new_source_undated": 57,
+  "total_rows": 1747
+}

@@ -1,0 +1,399 @@
+ 
+Third Revised Version approved on 08.01.2025 
+ 
+ 
+INTELLECTUAL 
+PROPERTY POLICY 
+ 
+ 
+Thiagarajar College of Engineering 
+Madurai-625015. 
+ 
+ 
+ 
+
+ 
+Third Revised Version approved on 08.01.2025 
+  
+                                                                              INDEX   
+SL. 
+NO 
+CONTENT PAGE  
+NO 
+ PREAMBLE - IP POLICY 1 
+1.  PURPOSE 1 
+2. ADOPTION AND EFFECTIVE DATE 1 
+3. GOVERNING LAWS AND REGULATIONS 
+3.1     3.1 IPP Amendments  
+3.1.1 Patents 
+3.1.1.1 The Patents Act, 1970 
+3.1.1.2 The Patents Rules, 2003 
+3.1.2 Copyrights 
+3.1.2.1 The Copyright Act, 1957 
+3.1.2.2 The Copyright Rules, 1958 
+3.1.3 Trademarks 
+3.1.3.1 The Trademarks Act, 1999 
+3.1.3.2 The Trademarks Rules, 2002 
+3.1.4 Designs 
+3.1.4.1 The Designs Act, 2000 
+3.1.4.2 The Designs Rules, 2001 
+3.1.5 Semiconductor Integrated Circuits 
+3.1.5.1 Semiconductor Integrated Circuits Layout Design Act 2000 
+3.1.5.2 Semiconductor Integrated Circuits Layout Design Rules 2001 
+3.1.6 Additional Rules and Regulations 
+1 
+4. IMPLEMENTING BODY 2 
+5. POLICY STATEMENT 2 
+6. APPLICABILITY AND ADHERENCE 2 
+7. TCE IP ADMINISTARTION HIERARCHY 3 
+8. IP POLICY COMMITTEE [IPPC] 
+       8.1. IPPC Formation 
+8.2. IPPC Members 
+8.3. Number of Members 
+8.4. Term of IPPC Members 
+8.5. Meetings of IPPC 
+3 
+ 
+Third Revised Version approved on 08.01.2025 
+8.6. Powers of the IPPC 
+8.7. IPPC Role and Responsibilities 
+8.8. Functions of IPPC 
+    8.8.1 Managing Function 
+    8.8.2 Specialist Function 
+9. IPR CELL [IPC] 
+         9.1. IPC Formation 
+9.2. Members of IPC 
+9.3. 9Number of Members for Each Meeting 
+9.4. Term of IPC 
+9.5. Functions of IPC 
+9.6. IPC Resources 
+9.7. Reports to IPPC 
+5 
+10. IP DISCOVERY 6 
+11. GENERAL PROVISIONS 
+       11.1. IP Awareness 
+11.2. Confidentiality  
+11.3. Third-Party IP 
+11.4. Ownership 
+11.5. IP Created by Consultant(s) 
+11.6. IP Filing, Prosecution, and Maintenance Expenses 
+11.7. Maintenance of Records 
+11.8. Outside Counsel/Consultants Interaction 
+11.9. IP Audits 
+11.10. Royalty Sharing and Rewards Scheme 
+11.11. Dispute Resolution 
+ 11.11.1. Internal Disputes  
+ 11.11.2. External Disputes 
+ 11.11.3. Appeal Process  
+ 11.11.4. IPP Breach 
+ 11.11.5. Death / Resignation / Retirement of Creator or Employee 
+11.11.6. Waiver of IPP 
+ 11.11.7. Power to modify IPP 
+ 11.11.8. Governing Law, Jurisdiction and Arbitration  
+7 
+  
+Third Revised Version approved on 08.01.2025                                                         Page 1 of 10 
+ 
+Intellectual Property Policy 
+ 
+ 
+Preamble- IP Policy 
+ 
+Thiagarajar College of Engineering (TCE) is an autonomous institution, affiliated to Anna 
+University, Che nnai and one among the several educational and philanthropic i nstitutions 
+founded by the l ate. Shri Karumuttu  Thiagarajan Chettiar. Established in 1957 , TCE aims at 
+creating quality professional s to meet the emerging industrial and societal needs through 
+innovative teaching, applied research and industrial interaction.  
+Intellectual property provide s a new way for an institution to disseminate its knowledge and 
+creative solutions to societal and industrial needs. One of the missions of the TCE is to develop 
+the intellectual capability to its fullest potential. TCE has a separate IPR Cell under Research and 
+Development division. The objective of the IPR Cell is to facilitate, encourage, promote and 
+safeguard Intellectual Property for TCE faculty, students, research scholar s and staff. IPR Cell 
+has formulated its intellectual property policy to provide guidance to its faculty, staff, students, 
+research scholars and outside agencies on the practices and rules of the Institute regarding 
+intellectual property rights (IPR). The policy aims to promote a conducive environment for both 
+curiosity and market-driven research and support the creation of original works of authorship and 
+development activities at the Institute. 
+ 
+1. Purpose: To promote, support, facilitate and protect the Intellectual Property (IP) of 
+Thiagarajar College of Engineering (TCE) and minimize the possibility of inadvertent 
+infringement of third parties’ IP. 
+2. Adoption and Effective Date: This Intellectual Property Policy (IPP) has been adopted  and 
+shall be effective from 20th October 2021. 
+3. Governing laws and Regulations 
+3.1. The IPP shall be governed by the following laws and regulations, subject to amendments 
+from time to time: 
+3.1.1. Patents: 
+3.1.1.1. The Patents Act, 1970. 
+3.1.1.2. The Patents Rules, 2003. 
+ 
+Third Revised Version approved on 08.01.2025                                                         Page 2 of 10 
+ 
+3.1.2. Copyrights: 
+3.1.2.1. The Copyright Act, 1957. 
+3.1.2.2. The Copyright Rules, 1958. 
+3.1.3. Trademarks: 
+3.1.3.1. The Trademarks Act, 1999. 
+3.1.3.2. The Trademarks Rules, 2002. 
+3.1.4. Designs 
+3.1.4.1. The Designs Act, 2000. 
+3.1.4.2. The Designs Rules, 2001. 
+3.1.5. Semiconductor Integrated Circuits  
+3.1.5.1. Semiconductor Integrated Circuits Layout Design Act 2000. 
+3.1.5.2. Semiconductor Integrated Circuits Layout Design Rules 2001. 
+ 
+3.1.6. Any additional rules and regulations related to intellectual property, as notified by 
+the Government of India, shall also govern this policy. 
+4. Implementing Body: This IPP shall be implemented by the IP Policy Committee (IPPC) 
+appointed by the Chairman of TCE. 
+5. Policy Statement 
+5.1. TCE shall create IP awareness amongst faculty, students, and researchers. 
+5.2. TCE shall protect and manage all IP created by its faculty, students, and researchers. 
+5.3. TCE shall implement the necessary system to administer and manage IP. 
+5.4. TCE shall endeavor to commercialize TCE IP and share the revenue generated therein 
+with faculty, students, or researchers, as per the Institute’s norms 
+5.5. TCE shall not infringe any third-Party IP and maintain the confidentiality of information 
+provided to TCE. 
+6. Applicability and Adherence 
+6.1. This IPP shall apply to all faculty, students, researchers, institutional p artners, sponsors, 
+alumni, and any other stakeholders utilizing TCE resources. 
+6.2 The IPC shall ensure that all faculty, students, and researchers s ign and consent to 
+adherence to the IPP. 
+ 
+ 
+Third Revised Version approved on 08.01.2025                                                         Page 3 of 10 
+ 
+7. TCE IP Administration Hierarchy 
+The administrative hierarchy for implementing the IP policy is as follows: the TCE Chairman 
+oversees the IP Policy Committee (IPPC), which works in coordination with the IPR Cell and 
+individual departments 
+ 
+8. IP Policy Committee [IPPC] 
+8.1. The Chairman of TCE shall constitute an IPPC.  
+8.2. IPPC Members 
+a) Principal of TCE. 
+b) Dean/Associate Dean, Research and Development. 
+c) Research Council Member 1 
+d) Research Council Member 2 
+8.3. Number of Members: The IPPC shall have a minimum of 4 members and maximum of 
+7 members at any time. 
+8.4. Term of IPPC Members: Members of IPPC shall have a term of three (3) years from 
+the date of their appointment. The members shall be eligible for reappointment at the end 
+of their term.  
+TCE Chairman 
+IP Policy 
+Committee [IPPC]  
+IPR CELL [IPC] 
+Departments 
+Third Revised Version approved on 08.01.2025                                                         Page 4 of 10 
+ 
+8.5. Meetings of the IPPC 
+8.5.1. The IPPC shall meet  at least  once in every academic year and may convene 
+additional meetings as needed. 
+8.5.2. The quorum for the meeting shall be 3 members. Notice of every meeting shall 
+be given at least seven (7) days in advance b y the Chairman or any other person, 
+on the Chairman’s directions, to the members of IPPC. 
+8.6. Powers of the IPPC 
+8.6.1. IPPC will have the power to: 
+8.6.1.1. Appoint/remove members of Intellectual Property Rights Cell [IPC], 
+including external members. 
+8.6.1.2. Call for the meetings with IPC. 
+8.6.1.3. Seek guidance from experts in all fields relating to IP. 
+8.6.1.4. Carry out modifications to the IPP as may be required. 
+8.7. IPPC Role and Responsibilities 
+8.7.1. The IPPC shall be responsible for the formulation and monitoring of the effective 
+implementation of the IPP.  
+8.7.2. The IPPC shall provide guidance and directions to the IPC on all IP matters.  
+8.7.3. The IPPC shall provide information on IP to the management of TCE. 
+8.8. Functions of IPPC: The IPPC shall have the following functions: 
+8.8.1. Managing Function: The IPPC shall: 
+8.8.1.1. Provide technical and legal advice based on its expertise on IP. 
+8.8.1.2. Provide direction to IPC effectively and appropriately to support IP related 
+activities. 
+8.8.1.3. Monitor the implementation and compliance of the IPP. 
+8.8.1.4. Monitor measures taken to create awareness amongst TCE faculty, students 
+and researchers. 
+8.8.1.5. Monitor measures taken to manage IP. 
+8.8.1.6. Review of Research and Development activities. 
+8.8.2. Specialist Function: The IPPC shall: 
+8.8.2.1. Provide an insight into the legal aspects, rules, and regulations governing IP. 
+8.8.2.2. Advise on the course of actions to be taken towards mitigating IP disputes, 
+Third Revised Version approved on 08.01.2025                                                         Page 5 of 10 
+ 
+8.8.2.3. Provide guidance for negotiation for licensing activities, critical analysis of 
+major agreements or contracts to be entered with third parties. 
+8.8.2.4. Provide broad guidelines on identifying new IP. 
+8.8.2.5. Approve all filings for IP Protection. 
+8.8.2.6. Any other function as may be delegated by the Chairman of TCE. 
+ 
+9. IPR Cell [IPC] 
+9.1. The Chairman of TCE shall constitute an IPC.  
+9.2. Members of IPC 
+9.2.1. The IPC shall consist of the following members: 
+9.2.1.1. Dean/ Associate Dean Research and Development (R&D). 
+9.2.1.2. College-level Coordinator, IPR Cell,appointed by the IPPC. 
+9.2.1.3. College-level Coordinator of Technology Business Incubator(TBI). 
+9.2.1.4. Members (Internal/external) nominated for specific meeting  
+The IPPC shall nominate one of the IPC members as the Head of IPC every year. 
+9.3. Number of Members  for Each Meeting : The IPC shall have a minimum of Five  
+members  to conduct the meeting.  
+9.4. Term of IP C: The IPC shall have a term of two (2) years from the date of their 
+appointment. The members shall be eligible for reappointment at the end of their term. 
+9.5. Functions of IPC 
+9.5.1. The IPC shall take all necessary steps for implementing the IPP. 
+9.5.2. The IPC shall take all steps to promote, develop, protect and manage the IP of TCE. 
+9.5.3. The IPC shall review the research and development activities for identifying 
+potentialTCE IP. 
+9.5.4. The IPC shall evaluate and decide whether to protect any IP and recommend the 
+same to IPPC. 
+9.5.5. The IPC shall play a leading role in IP -related activities, including prior art search, 
+proposal, identification, and decision on new inventions and use of rights and 
+countermeasures against the third parties. 
+Third Revised Version approved on 08.01.2025                                                         Page 6 of 10 
+ 
+9.5.6. The IPC shall also perform the managing functi on of filing and prosecuting  IP 
+applications, producing documents before the government office(s), maintaining 
+rights, and giving compensation and commendations to faculty, students and 
+researchers. 
+9.5.7. The IPC shall develop an effective system for compliance with IP related laws. 
+9.6. IPC Resources 
+9.6.1. The IPC shall create and maintain a Standard Operating Procedure Manual [SOP] 
+setting out the best practices relating to IP.  
+9.6.2. The SOP shall contain all necessary and prescribed formats of invention/intellectual 
+property disclosure forms, invention assignment forms, confidentiality agreements, 
+memorandum of understandings, and other documents required for the 
+administration of IP at TCE.  
+9.7. Reports to IPPC 
+9.7.1. The IPC shall submit every quarter the following reports to the IPPC. 
+9.7.1.1. Status of implementation of IPP. 
+9.7.1.2. List of  SOPs in place and their updates, if any. 
+9.7.1.3. List of any applications made for registration of IP and their status. 
+9.7.1.4. Action taken on any notice, order, or communication recei ved from any 
+statutory authority. 
+9.7.1.5. Summary of audit observations, if any. 
+9.7.1.6. Details of pending disputes/litigations against expand ( TCEIP) and its 
+status. 
+10. IP Discovery 
+10.1. All faculty, students, and researchers are responsible for reporting any potential IP to 
+the IPC. 
+10.2. The IPC shall conduct regular camps and workshops t o increase awareness and 
+identify IP created by faculty, students and researchers. 
+10.3. Faculty, students, and researchers shall submit their research outcome in the 
+prescribed form (given in the SOP) to the IPC, if they identify any IPR in the projects 
+Third Revised Version approved on 08.01.2025                                                         Page 7 of 10 
+ 
+done. At the IPC’s request, students and researchers shall provide all the necessary 
+information and assistance for evaluation and identifying any potential IP.  
+10.4. Faculty, students, and researchers are obligated to execute, sign and deliver necessary 
+documents, invention assignment agreements, or forms as outlined by the IPC, TCE. 
+10.5. The IPR Cell will examine the IP application and will then make specific 
+recommendations regarding patentability, commercial viability, and r egistration of the 
+proposal. The committee may seek the assistance of experts (Intellectual Property 
+Evaluation Committee)for this purpose. In all these endeavors confidentiality of the IP 
+shall be strictly ensured. 
+11. General Provisions 
+11.1. IP Awareness: IPC shall initiate steps to educate and help faculty, students and 
+researchers understand and recognize IP. 
+11.2. Confidentiality 
+11.2.1. All faculty, students, researchers, and individuals under any contract or agreement 
+with TCE shall at all times maintain confidentiality and refrain from disclosing 
+confidential information received during their association with TCE.  
+11.2.2. Except with the prior written consent of IPPC, the recipient shall not use the 
+confidential information for his benefit or any other  person’s/organization’s benefit 
+in any manner whatsoever.  
+11.3. Third-Party IP: TCE shall take necessary steps to avoid inadvertent infringement of 
+third-party IP.  
+11.4. Ownership 
+11.4.1. Ownership of all IP developed by TCE faculty, students, a nd researchers using 
+institutional resources or funding shall vest with TCE . The respective faculty, 
+students, and researchers shall be named as inventors and assign all IP rights to 
+TCE. Any IP assigned by faculty, students and researchers shall not be re assigned 
+or vested with the individual on ceasing to be associated with TCE.  (Legal 
+validity of this condition is to be checked) 
+Third Revised Version approved on 08.01.2025                                                         Page 8 of 10 
+ 
+11.4.2. TCE may consider joint ownership of IP with industry 
+partner(s)/sponsor(s)/alumni further to collaboration agreements and based on the 
+contribution from an industry partner/sponsor/alumni, with the prior written 
+approval of the IPPC.  
+11.4.3. Any IP created by faculty, students and researchers should be filed in the  name of 
+institution only. 
+11.4.3.1: TCE is the sole applicant and holds complete ownership of the IPR. Other 
+contributors can only be co -inventors. If a significant portion of the work is 
+performed by an external organization, a revenue -sharing agreement must be 
+established before work begins.  
+11.4.3.2 (Pre-filing): If all inventors leave TCE before the filing process, one co -inventor 
+from TCE must be designated to manage the IPR filing and commercialization 
+process.  
+11.4.3.3 (Post -filing): If all inventors leave TCE after the IPR  has been filed, the 
+Department Level Committee (DLC) of the relevant department and the IPR 
+cell will oversee the process until the grant of the patent. In such case, the 
+corresponding inventor must reimburse TCE for the costs incurred for filing, 
+and they are only entitled to claim co-inventorship rights. 
+ 11.4.3.4: TCE faculty may act as co -inventors with another organization listed as the 
+applicant. However, this is generally discouraged, except in partnerships with 
+institutions such as IITs, NITs, IISc , or certain central research organizations 
+(like DRDO and DRDL), and only with special approval from the IPPC 
+(Intellectual Property Policy Committee). 
+11.5. IP Created by Consultant(s): Any IP created by Consultant(s) engaged by TCE shall 
+be treated as “work m ade for hire” and belong to TCE. The IPC shall ensure that 
+documents to give effect to the same shall be signed before the Consultant(s) is engaged 
+to perform any works. 
+11.6. IP Filing, Prosecution, and Maintenance Expenses 
+11.6.1. Before applying for IP protection, th e IPC shall evaluate its commercial potential 
+and obtain cost estimates.  
+Third Revised Version approved on 08.01.2025                                                         Page 9 of 10 
+ 
+11.6.2. TCE shall bear all costs and expenses for IP that is owned by TCE.  
+11.6.3. In case of jointly owned IP with an industry partner/sponsor/alumni, the cost of 
+filing, prosecuting, and maintain ing the IP shall be that of the industry 
+partner/sponsor/alumni.  
+11.7. Maintenance of Records:  
+11.7.1. The IPC shall be responsible for maintaining proper books and records pertaining to 
+TCE IP.  
+11.7.2. The IPC shall properly maintain copies of all applications, corresponden ce, 
+communications with faculty, students and researchers, designs, databases and any 
+documents related to IP. 
+11.8. Outside Counsel/Consultant Interaction: The IPC may engage an outside consultant 
+or counsel, if deemed necessary, with the approval of the IPPC, for creating or 
+sustaining awareness, complying with procedural formalities with government or other 
+agencies, or representing TCE in legal cases. 
+11.9. IP Audits: At its discretion, the IPPC shall decide to either nominate one of its members 
+or appoint an external agency to conduct an audit of the records maintained by the IPC.  
+11.10. Royalty sharing and Rewards Scheme : The IPPC  shall put in place and notify a 
+policy in relation to royalty/revenue sharing to reward and recognize faculty, students, 
+and researchers who have contributed substantially to the creation/development of any 
+IP 
+11.11. Dispute Resolution 
+11.11.1. Internal Disputes: Any dispute arising from the creation and utilization of IP or a 
+breach of the IPP shall be referred to and resolved by the IPPC. 
+11.11.2. External Disputes: Any dispute involving third parties in the creation and 
+utilization of IP shall be referred to the IPPC for guidance , in consultation with 
+experts in the field. 
+11.11.3. Appeal Process: Faculty, students, and researchers may appeal to the IPPC 
+against any decision made by the IPC. 
+Third Revised Version approved on 08.01.2025                                                         Page 10 of 10 
+ 
+11.11.4. IPP Breach: Any breach of the IPP by faculty, students, or researchers shall be 
+subject to disciplinary action. 
+11.11.5. Death / Resignation / Retirem ent of Creator or Employee: Any IP assigned to 
+TCE by faculty, students, or researchers shall not be reassigned to or vested in the 
+employee, creator, or their legal heirs upon ceasing their association with TCE 
+due to resignation, retirement, death, injury, or other acts of God. 
+11.11.6. Waiver of IPP: The IPPC, based on recommendations from the IPC, may waive 
+the applicability of the whole or part of the IPP, as deemed fit. 
+11.11.7. Power to modify IPP: The IPPC may consider and approve modifications to the 
+IPP prospectively based on suggestions from  the IPC or amendments to rules and 
+laws governing IP. 
+11.11.8. Governing Law, Jurisdiction and Arbitration  
+11.11.8.1. The agreement between inventors and TCE  shall be governed by, 
+construed, and enforced under the laws of India , with  the c ourts in 
+Madurai having exclusive jurisdiction. 
+11.11.8.2. Any dispute arising between the p arties shal l be resolved amicably 
+through a rbitration. All arbitration proceedings shall be conducted in 
+accordance with the Indian Arbitration and Conciliation Act of 1 996 by a 
+sole arbitrator appointed by TCE.  
+11.11.8.3. The venue for  Arbitration proceedings shall be Madurai , and the 
+proceedings shall be conducted in English. 
+ 
+ 

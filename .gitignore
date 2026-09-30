@@ -1,0 +1,58 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.venv/
+venv/
+env/
+*.egg-info/
+dist/
+build/
+
+# Node / Frontend
+node_modules/
+frontend/dist/
+frontend/dist-ssr/
+*.local
+
+# Database backups (keep the main .db)
+data/backup/
+data/backups/
+data/backup_*.db
+data/tce_activity_intelligence_backup_*.db
+*.db-journal
+
+# Staging DB (can be regenerated)
+data/linkedin_staging.db
+
+# Logs
+*.log
+logs/
+
+# IDE / Editor
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+.DS_Store
+
+# Test / Cache
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Large generated JSON files (can be re-created via pipeline)
+extracted_pages.json
+recon_candidates.json
+recon_records.json
+recon_records2.json
+recon_resolved.json
+recon_summary.json
+
+# OS
+Thumbs.db
+Desktop.ini

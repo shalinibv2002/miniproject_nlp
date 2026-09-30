@@ -1,0 +1,40 @@
+{
+  "best_model": "Rule-Based Keyword Baseline",
+  "n_samples": 110,
+  "n_train": 77,
+  "n_test": 33,
+  "results": {
+    "Rule-Based Keyword Baseline": {
+      "precision_macro": 0.7361,
+      "recall_macro": 0.7847,
+      "f1_macro": 0.7347,
+      "precision_micro": 0.7619,
+      "recall_micro": 0.9143,
+      "f1_micro": 0.8312
+    },
+    "TF-IDF + LogisticRegression (OvR)": {
+      "precision_macro": 0.3333,
+      "recall_macro": 0.2708,
+      "f1_macro": 0.2917,
+      "precision_micro": 1.0,
+      "recall_micro": 0.2571,
+      "f1_micro": 0.4091
+    },
+    "TF-IDF + LinearSVC (OvR)": {
+      "precision_macro": 0.2917,
+      "recall_macro": 0.2292,
+      "f1_macro": 0.25,
+      "precision_micro": 1.0,
+      "recall_micro": 0.2286,
+      "f1_micro": 0.3721
+    },
+    "TF-IDF + MultinomialNB (OvR)": {
+      "precision_macro": 0.0,
+      "recall_macro": 0.0,
+      "f1_macro": 0.0,
+      "precision_micro": 0.0,
+      "recall_micro": 0.0,
+      "f1_micro": 0.0
+    }
+  }
+}

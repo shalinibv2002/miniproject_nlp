@@ -1,0 +1,200 @@
+{
+  "generated_at": "2026-09-28T22:07:44",
+  "source_workbook": {
+    "path": "backend\\database\\Posts From June 2026 - September 2026.xlsx",
+    "name": "Posts From June 2026 - September 2026.xlsx",
+    "sheet": "All posts",
+    "sha256": "f20868b7d1ee3c452e324074265ec1954efd18835d0ec0a2fc96ada39851d563",
+    "bytes": 68515,
+    "layout": "row 1 blank, row 2 export title banner, rows 3-227 = 225 posts",
+    "post_link_column": false,
+    "embedded_shortened_urls": 11,
+    "activity_ids_present": false
+  },
+  "baseline_before_import": {
+    "staging": {
+      "canonical_posts": 1544,
+      "occurrences": 2094,
+      "candidates": 1544,
+      "reportable_rows": 1544,
+      "status": {
+        "REPORTABLE": 1227,
+        "NON_ACTIVITY": 112,
+        "REVIEW_REQUIRED": 205
+      },
+      "manually_validated": 16,
+      "approved": 13,
+      "reportable_by_year": {
+        "2023-24": 10,
+        "2024-25": 261,
+        "2025-26": 325,
+        "2026-27": 3,
+        "2027-28": 0
+      }
+    },
+    "website_db_sha256_prefix": "FD3C77F876B1",
+    "website_db_untouched": true,
+    "notes": [
+      "12 duplicate normalized-text groups pre-date this import; they are distinct activity IDs, and none involve the new sheet.",
+      "8 undated historical records carry academic years via pre-existing manual overrides; these are intentional and were left untouched."
+    ]
+  },
+  "import_summary": {
+    "incoming_post_rows": 225,
+    "title_banners_skipped": 1,
+    "existing_duplicates": 21,
+    "within_file_duplicates": 1,
+    "possible_duplicate_review": 0,
+    "new_canonical_posts": 203,
+    "dedup_rule": "exact normalized-text match against committed staging; within-file near-duplicates collapsed at WRatio>=95 and length ratio>=0.80; near-matches to history are reported for review and never auto-merged"
+  },
+  "staging_after": {
+    "canonical_posts": 1747,
+    "occurrences": 2319,
+    "candidates": 1747,
+    "new_source_posts": 203,
+    "new_source_occurrences": 225,
+    "by_workbook_posts": [
+      {
+        "wb": "merged-workbook.xlsx",
+        "n": 1544
+      },
+      {
+        "wb": "Posts From June 2026 - September 2026.xlsx",
+        "n": 203
+      }
+    ],
+    "by_workbook_occurrences": [
+      {
+        "wb": "merged-workbook.xlsx",
+        "n": 2094
+      },
+      {
+        "wb": "Posts From June 2026 - September 2026.xlsx",
+        "n": 225
+      }
+    ]
+  },
+  "reportable_after": {
+    "total_rows": 1747,
+    "by_status": {
+      "NON_ACTIVITY": 121,
+      "REPORTABLE": 1398,
+      "REVIEW_REQUIRED": 228
+    },
+    "by_date_status": {
+      "ambiguous_multi_year": 16,
+      "dated": 845,
+      "undated": 886
+    },
+    "by_year_reportable": {
+      "null": 680,
+      "2023-24": 10,
+      "2024-25": 261,
+      "2025-26": 328,
+      "2026-27": 118,
+      "2027-28": 1
+    },
+    "manually_validated": 16,
+    "approved": 13,
+    "general_departmental": {
+      "general": 644,
+      "departmental": 754
+    },
+    "new_source_by_status": {
+      "NON_ACTIVITY": 9,
+      "REPORTABLE": 171,
+      "REVIEW_REQUIRED": 23
+    }
+  },
+  "academic_year_2026_27": {
+    "reportable_total": 118,
+    "non_activity": 9,
+    "review_required": 20,
+    "dated_all_status": 147,
+    "reconciles": true,
+    "from_new_workbook": 115,
+    "june_sep_2026_reportable_total": 114,
+    "months_covered": {
+      "2026-06": 13,
+      "2026-07": 21,
+      "2026-08": 56,
+      "2026-09": 24
+    },
+    "categories": {
+      "ACHIEVEMENT": 9,
+      "ALUMNI": 16,
+      "CAMPUS": 5,
+      "CLUB": 12,
+      "CONFERENCE": 11,
+      "CULTURAL": 2,
+      "FDP": 4,
+      "GUEST_LECTURE": 11,
+      "HACKATHON": 2,
+      "INDUSTRY": 6,
+      "INTERNSHIP": 16,
+      "NSS": 1,
+      "ORIENTATION": 9,
+      "OUTREACH": 12,
+      "PLACEMENT": 1,
+      "RESEARCH": 31,
+      "SEMINAR": 31,
+      "SPORTS": 2,
+      "STTP": 1,
+      "WEBINAR": 6,
+      "WORKSHOP": 9
+    },
+    "departments": {
+      "Applied Mathematics and Computational Science": 2,
+      "Artificial Intelligence": 2,
+      "Chemistry": 3,
+      "Civil Engineering": 7,
+      "Computer Applications": 3,
+      "Computer Science and Business Systems": 2,
+      "Computer Science and Engineering": 13,
+      "Electrical and Electronics Engineering": 12,
+      "Electronics and Communication Engineering": 15,
+      "General": 4,
+      "Information Technology": 1,
+      "Mechanical Engineering": 7,
+      "Mechatronics": 3,
+      "T'SEDA (Architecture, Design, Planning)": 11
+    },
+    "stakeholders": {
+      "Alumni": 14,
+      "Community and Society": 25,
+      "Faculty": 53,
+      "Government and Agencies": 5,
+      "Industry": 23,
+      "Non-Teaching Staff": 1,
+      "Parents": 2,
+      "Students": 86
+    }
+  },
+  "new_workbook_classification": {
+    "reportable": 171,
+    "non_activity": 9,
+    "review_required": 23,
+    "undated": 57
+  },
+  "preservation": {
+    "manual_override_fingerprints_identical": true,
+    "historical_sheet_counts_unchanged": true,
+    "post_ids_never_renumbered": true,
+    "website_db_sha256_prefix": "FD3C77F876B11D18",
+    "website_db_unchanged": true,
+    "website_db_note": "The production website database was never opened for writing; its hash still matches the pre-import baseline.",
+    "unrelated_stray_db_sha256_prefix": "e3b0c44298fc1c14",
+    "stray_db_untouched": true
+  },
+  "verification": {
+    "consistency_checks_total": 38,
+    "consistency_checks_failed": 0,
+    "backend_tests": "375 passed",
+    "frontend_tests": "119 passed (24 files)",
+    "frontend_lint": "0 errors, 31 pre-existing warnings",
+    "frontend_build": "success",
+    "real_data_api_smoke": "64 checks, 64 passed, 0 failed",
+    "smoke_note": "The smoke run snapshots both live DBs and restores them on exit, so verification leaves the data byte-identical."
+  }
+}

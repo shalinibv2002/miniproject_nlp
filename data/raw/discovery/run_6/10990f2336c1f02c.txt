@@ -1,0 +1,151 @@
+ECEEEECSEITMECHMECTCIVILARCHCOMNCSEPSENVIE&MSEMCAARCH
+1 4A Design & Engg. 1 1
+2 A Sketch Architecture 1 1
+3 Accenture 7 16 8 5 6 5 2 1 1 7 58
+4 Accolite Digital 2 1 7 10
+5 ALEF architechture 1 1
+6 alfa TKG 1 1
+7 Amadeus 1 1
+8 Amazon 1 2 1 4
+9 ANUNTA 1 1
+10 Appviewx 1 2 1 4
+11 Aptean 1 1 2
+12 Architecture Dialogue 1 1
+13 Architecture RED 1 1
+14 Aruba HPE 1 1 4 6
+15 Askans Associate 1 1
+16 Aspire Systems 1 1
+17 Astrazeneca 2 1 3
+18 B Design Studios 2 2
+19 Bayhauz Design studio 1 1
+20 BGR 1 1
+21 Blue Yonder 2 1 3 3 9
+22 Brillio 1 4 7 12
+23 Buddi Ai 1 2 3
+24 Capgemini 1 3 2 1 2 2 11
+25 Caratlane 4 4
+26 Carbon Craft 1 1
+27 CARE School of Arch. 1 1
+28 Caterpillar 3 1 5 1 1 11
+THIAGARAJAR COLLEGE OF ENGINEERING, MADURAI - 625 015
+PLACEMENT 2021 - 2022
+Highest Salary : 32 Lakhs / Annum
+Average Salary : 6.25 Lakhs / Annum
+Sl. No Company UG PG TOTAL
+29 CGI Information 1 1
+30 Chandra Manufactures 1 1
+31 Chella Software 1 1 2
+32 Cognizant Technology 19 8 15 5 19 16 24 2 1 8 117
+33 Comcast 5 3 4 5 17
+34 Deloitte 15 6 7 8 6 1 1 2 46
+35 Delphi TVS 3 3
+36 Delta Electronics 7 8 3 18
+37 Design Integratus 1 1
+38 Dyan Architects 1 1
+39 Ebix Cssh 1 1
+40 EmbedUR 4 1 5
+41 Emirates Fire rescue 1 1
+42 Enviro care 1 1
+43 EPIC 1 1
+44 Epikindify 1 1
+45 Ericsson Global 13 7 20
+46 Excel College of Arch. 3 3
+47 Fichtner 1 1
+48 Fidelity Investments 2 2 4
+49 FRDC 2 2
+50 Gain Credit 2 4 1 1 8
+51 Garrett 2 1 1 4
+52 Genesys 2 2
+53 HCL Technologies 1 3 1 1 6
+54 Honeywell 1 2 1 2 6
+55 HPE Arubha 3 3 6
+56 Hustle minds solution 1 1
+57 Hyundai 1 1
+58 IBM 2 1 1 2 6
+59 Infosys 1 1 1 1 4
+60 JSW STEEL 2 2
+61 Kaar Technologies 2 1 3 1 7
+62 Kalicito 2 2
+63 LAD 360 1 1
+64 LIC 1 1
+65 LNTECC 5 3 5 13
+66 Lucas TVS 1 1 2
+67 MACDONALD 1 1
+68 Madras Terrace 1 1
+69 MadrasTerrace Architects 1 1
+70 Mahindra & Mahindra 5 5
+71 Mancini architects 3 3
+72 Mando Brakes 4 4
+73 Microchip 1 1 2
+74 MKS Vision 1 1
+75 Mphasis 4 5 2 1 2 14
+76 Mr Cooper 2 1 1 4
+77 Multicoreware 1 3 4
+78 National Instruments 1 1
+79 Navis 3 1 4
+80 Nielson IQ 1 1 1 3
+81 Nokia 1 1
+82 P & C Projects 1 1
+83 Pinnacle Infotech 2 2
+84 Pragrup Urbanism 1 1
+85 Publics sapient 1 1
+86 QuEST-Global 2 1 3
+87 Randstad 1 1
+88 Rathinam school of arch. 1 1
+89 Rhein Brücke 2 1 3
+90 RM AM Architecture 2 2
+91 Saint gobain 1 1 1 3
+92 Sanmar 1 1
+93 School of Planning  Arch. 1 1
+94 Shopup 1 1 2 4
+95 SKILLUP 1 1
+96 Sobha Limited 2 1 3
+97 Sai Power Equipments 1 1
+98 TAFE 3 3
+99 Tata Consultancy Services 2 13 2 8 8 3 5 1 17 59
+100 Tata Electronics (5.0) 1 1 2
+101 TataElxsi 3 2 5 3 4 1 6 24
+102 Temenos 1 2 1 2 6
+103 The Madras  Architects 1 1
+104 Tiger Analytics 2 1 3
+105 Trimble 2 2 1 8 2 15
+106 TVS Motors 2 7 2 11
+107 TVS sensing solutions 1 1
+108 Unitary Design Studio 1 1
+109 Urban Workshop 1 1
+110 Value labs 1 1
+111 Vernekar Associates 1 1
+112 Verticurl 1 1
+113 Viasat 1 1
+114 Visteon 1 1
+115 VMware 2 2
+116 Voonik 1 1
+117 Vuram 3 2 1 6
+118 Walmart 2 1 1 4
+119 Warp Architects 1 1
+120 Werner Falasi Architects 1 1
+121 WIPRO 1019 1114 9 6 4 73
+122 WITH-IN Architects 1 1
+123 Wood PLC 1 1
+124 Zaggle 1 1 2
+125 Zensar 1 1
+126 Zoho 8 5 6 4 1 1 1 1 27
+127 Oracle 1 1
+128 PWC 1 1
+129 Xome 2 2
+130 Ganit 1 1
+131 BAL (Off) 1 1
+132 Force Motors (Off) 1 1
+133 Motherson Automotive (Off) 1 1
+134 Sri Sai Power (Off) 1 1
+135 Soft Cryslic (Off) 1 1
+136 Wabag (off) 1 1
+137 Work In Solutions (off) 1 1
+138 Central bank (Off) 1 1
+139 jawahar Associates  (off) 1 1
+140 LIC (off) 1 1
+141 ES Coinsutlancy (off) 1 1
+142 Anunta (off) 1 1
+143 Jasmine (off) 1 1
+Total 124109131120108 57 56 30 9 9 9 3 3 3 43 6 806
+Unique 114108131115 99 56 56 30 9 9 9 3 3 3 35 6 786

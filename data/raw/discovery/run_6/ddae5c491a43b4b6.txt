@@ -1,0 +1,361 @@
+ 
+Research and Development 
+Rev. no. 01 
+SR - 7 Date  
+Page No.  
+                                                      
+                                                           Permission Request for Seed Money                             Date: 
+Year: 2025-26 
+Applicant Details 
+Name of the Faculty  
+Designation  
+Department  
+Mobile & Email ID  
+Area of Specilization  
+Project Title  
+ 
+ 
+Teaching Experience (in years)  
+ 
+ 
+ 
+ 
+Research & Industrial Experience (in Years)  
+ 
+ 
+ 
+No. of Publications in last 3 years 
+(Scpopus/WoS/SCI Journals) 
+ 
+ 
+ 
+ 
+ 
+ 
+*Project Proposal Description Enclosed  
+ 
+ 
+  
+Signature of the Faculty                Signature of the HoD of the Applicant  
+ 
+ 
+ 
+ 
+PROJECT PROPOSAL DESCRIPTION (Max. 5 Pages)  
+1. Abstract (1 page) 
+2. Objectives or the specific questions/problem/hypothesis that will be addressed. (Max. 1/2 
+page) 
+3. Description of the methods of investigation and techniques (Max. 1 page) 
+4. Time frame with List the activities (Max. 1/2 page) 
+5. If this is a new line of inquiry for you, briefly explain why you decided to pursue it. (1/2 
+page) 
+6. Outcome anticipated from this project (1/2 page) 
+7. Additional information 
+8. Proposed Budget 
+9. Budget Justification 
+ 
+ 
+Title of Proposal  
+ 
+TCE SEED MONEY SCHEME 2024-2025 
+ 
+TCE Seed Money Approval No 
+ 
+ 
+ 
+Executive Summary & Technical Report  
+ 
+ 
+PRINCIPAL INVESTIGATOR  
+ 
+Dr. XXX 
+Professor 
+Department of ____________ 
+ 
+ 
+ 
+THIAGARAJAR COLLEGE OF ENGINEERING 
+MADURAI – 625 015 
+07 March 2020 
+
+1 
+ 
+  
+TECHNICAL REPORT 
+1. Project Title: 
+ 
+ 
+2. Academic year: 2024-25 
+3. TCE SMS Approval No:  
+4. Principal Invigilators:  
+(Name &Address) 
+Dr. XXXXX  
+Assistant Professor, 
+Department of Electrical and Electronics Engineering,  
+Thiagarajar College of Engineering, 
+Madurai – 625015. 
+Mobile Number:  
+Email:  
+5. Principal Invigilators:  if 
+any (Name &Address)  
+6. Sanctioned Amount:  
+7. Duration:  
+8. Date of Start:  
+9. Date of completion: Expenditure as on 24-Feb-20XX:   Capital-Rs. _______/- 
+ 
+10. Area of Research:  
+10.1 Department 
+10.2 SIG:  
+10.3 Description 
+11. Objectives of the Proposal: 
+• A 
+• B 
+ 
+12. Methodology: 
+The aim of this project is, 
+• With the smart m  
+13. Salient Research Achievements:  
+13.1 Summary of Projects  
+(i) Creation:  
+           d server (Fig.1) is used to store various power system parameters in time synchronized 
+manner through concentrta is in kW. 
+Fig. 1 Smart Meter – Server System at TCE 
+(ii) Development of:  
+           An Artificia 
+Fig.2 Automated Load Management Model 
+(iii) Classification and Prediction of demand using Machine Learning Algorithm:  
+          The machine learning  
+13.2 New Observations:  
+• The. 
+13.3 Innovations: 
+2 
+ 
+• Clustered   
+13.4 Application Potential:  
+13.4.1 Long Term  
+• The institution will become a prosumer (active consumer as well as generator), and not just a 
+consumer. 
+ 
+13.4.2 Immediate  
+• Becoming familiar with the load consumption pattern of each laboratory, auditorium, and library. 
+13.5 Any other: 
+14.1 PhDs Produced no:  14.2 Technical Personnel trained: 
+( 1 – UG Students, 
+   2 – PG Students& 
+   2 – Ph.D. Scholars- pursing) 
+14.3 Research Publications arising  
+out of the present project:  
+Numbers with classification, 
+Conference Paper,  Journal Paper,  
+Patent, prototype  
+15. List of Publications from this Project(including title, author(s),journals & year(s)  
+ 
+(A) Papers published only in cited Journals(SCI) :  
+✓ G R, Hemh,    
+(B) Papers published in Conference Proceedings, Popular Journals etc.  
+✓ G R, Hema, 
+16. Patents filed/to be filed:  
+ 
+✓ Application Number:201;   Date of Registration : 05/08/2019 
+Title: A Novel Intelligence Based Load Monitoring and Automation System Using IoT  
+17. Prototype: 
+Description with add necessary images  
+18. Mention how the project led to or is expected to lead to an external funding proposal 
+19. Any other Outcome: Events/Hackathon/etc if any 
+20. Conclusion and Impact summarize: 
+• How the project met its objectives. 
+• Contribution to TCE’s research infrastructure. 
+• Future plans for scaling or external funding. 
+21 Enclosure: 
+• Publication front page and acknowledgement section 
+• Patent Proof 
+• Closure Form 
+• Utilization Certificate 
+• If any 
+22. Declaration by Principal Investigator 
+I hereby declare that: 
+1. All equipment, prototypes, and assets procured or developed under the TCE Seed Money Scheme 
+(Sanction No: ECR/2017/000827) are fully functional, properly maintained, and ready for inspection, 
+demonstration, or audit by the TCE administration or any authorized committee at any time. 
+2. All research publications, patents, conference presentations, and other scholarly outputs arising from 
+this project explicitly acknowledge the financial and institutional support received from 
+the Thiagarajar College of Engineering Seed Money Scheme (TCE SMS). 
+3. I am willing and available to present the project outcomes, methodology, and future proposals before 
+college committees, review boards, or external stakeholders as and when required by the institution. 
+4. All original bills, invoices, and expenditure proofs related to this project have been duly scanned and 
+submitted via email to research@tce.edu on __________ [Date of Submission]. 
+ 
+Signature of Principal Investigator 
+3 
+ 
+Name: Dr. XXXXX 
+Department: Electrical and Electronics Engineering 
+Date: [Date of Submission] 
+Signature of Head of the PI Department 
+ 
+Signature of Principal 
+ 
+ 
+ 
+ 
+Thiagarajar College of Engineering, Madurai –15 
+Research and Development 
+  
+TCE Seed Money Scheme - Closure form 
+ 
+Academic Year______ to ______ 
+Page 1 of 3 
+ 
+ 
+1. Basic Project Information 
+a) Title of the Project :      
+b) 
+Principal Investigator (PI) 
+and Co-Investigator(s) :      
+c) Department :      
+d) Date of Project Start :  e) Date of Project Completion :  
+f) Sanctioned Amount :  g) Total Amount Utilized :  
+2. Project Summary 
+a) Brief overview of the project (objectives, scope, and background) 
+b) Summary of work completed 
+3. Achievement of Objectives 
+a) List of approved project objectives 
+b) Status (Achieved / Partially Achieved / Not Achieved) for each 
+c) Explanation of any deviations or additional outcomes 
+4. Methodology Adopted 
+a) Overview of the research or implementation methodology used  
+b) Tools, techniques, or technologies adopted 
+5. Results and Outcomes 
+a) Key findings, innovations, or deliverables 
+b) Relevance or impact of the outcomes (academic, industrial, social, etc.) 
+   
+c) Scope for further work or extension of the project 
+Thiagarajar College of Engineering, Madurai –15 
+Research and Development 
+  
+TCE Seed Money Scheme - Closure form 
+ 
+Academic Year______ to ______ 
+Page 2 of 3 
+ 
+6. Publications and Dissemination 
+a) List of publications (journals, conferences, etc.) 
+b) Patents filed (if any) 
+c) Student involvement (e.g., project work, thesis, internships) 
+d) Presentations or workshops conducted 
+7. Utilization of Funds 
+a) Total amount sanctioned and utilized 
+b) Detailed expenditure statement (equipment, consumables, services, manpower, etc.) 
+c) Balance amount (if any) with justification 
+8. Challenges Faced 
+a) Major issues or challenges encountered 
+b) Steps taken to overcome them 
+9. Conclusion and Suggestions 
+a) Overall remarks on the success of the project 
+b) Suggestions for improving the Seed Money Scheme in future 
+c) Recommendation on possible scale-up, collaboration, or commercialization 
+Thiagarajar College of Engineering, Madurai –15 
+Research and Development 
+  
+TCE Seed Money Scheme - Closure form 
+ 
+Academic Year______ to ______ 
+Page 3 of 3 
+ 
+10. Supporting Documents (Annexures) 
+• Copies of invoices, bills, and expenditure proofs 
+• Photographs of setup, experiments, or field work 
+• Copies of publications/presentations 
+• Statement of Fund Utilization (signed by PI and HoD) 
+• Any other relevant documents 
+ 
+ 
+ 
+ 
+ 
+Signature of the PIs and Co-PIs 
+ 
+ 
+ 
+ 
+Signature of R&D (DLC) of PIs and Co-PIs             Signature of HOD of PIS PIs and Co-PIs 
+ 
+ 
+ 
+ 
+Page 1 of 2 
+ 
+Statement of Fund Utilization 
+Project Title :  
+Principal Investigator 
+(Name and Designation) 
+:  
+Co-Principal Investigator  
+(If any) 
+:  
+Department :  
+TCE SMS Approval Number :  
+Project Duration :  
+Sanctioned Amount : ₹ 
+Total Amount Utilized : ₹ 
+ 
+Summary of Expenditure 
+S No Date of 
+Purchase Bill No. Company Name and 
+Address 
+Particular of items 
+purchased 
+Amount 
+Spent (₹) 
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+Total amount Utilized (₹)  
+(Rupees in words)  
+Unspent Balance amount (₹) (if any)  
+ 
+ 
+Page 2 of 2 
+ 
+ 
+Total Utilization 
+• Total Amount Utilized: ₹  
+• Unspent Balance (if any): ₹ 0.0 
+ 
+Remarks: 
+• All expenditures strictly comply with TCE Seed Money Scheme guidelines. 
+• Unspent amount (if any) will be returned to the R&D section or adjusted as per norms. 
+ 
+Certification 
+I hereby certify that the funds have been utilized for the project work as per the approved budget, and the 
+details provided above are true and correct. 
+ 
+ 
+ 
+Signature of Principal Investigator     Signature of Head of the Department 
+Dr.            (Name with Seal) 
+Assistant Professor 
+Department of ______ 
+Thiagarajar College of Engineering, Madurai 
+ 
+ 
+ 
+          Finance Controller 
+ 
+ 
+ 
+ 
+PRINCIPAL 
+(Name with Seal) 
+ 
+ 
+ 

@@ -1,0 +1,1316 @@
+{
+  "timestamp": "2026-09-22T01:10:16",
+  "reviewer": "phase4-safe-fix",
+  "steps": [
+    {
+      "action": "merge_duplicates",
+      "detail": [
+        {
+          "canonical": 11,
+          "duplicate": 398,
+          "period": "2024-25",
+          "codes": [
+            "INDUSTRY",
+            "RESEARCH"
+          ],
+          "source_urls": [
+            "https://www.tce.edu/",
+            "https://www.tce.edu/index.php"
+          ],
+          "source_rows_moved": 1,
+          "source_rows_duplicate_urls_removed": 0,
+          "candidate_links_moved": true,
+          "period_recovery_audit_repointed": true,
+          "evidence_merged_from": 398,
+          "metadata": "merged-into-canonical",
+          "deleted": 398
+        },
+        {
+          "canonical": 12,
+          "duplicate": 399,
+          "period": "2024-25",
+          "codes": [
+            "HACKATHON"
+          ],
+          "source_urls": [
+            "https://www.tce.edu/",
+            "https://www.tce.edu/index.php"
+          ],
+          "source_rows_moved": 1,
+          "source_rows_duplicate_urls_removed": 0,
+          "candidate_links_moved": true,
+          "period_recovery_audit_repointed": true,
+          "evidence_merged_from": 399,
+          "metadata": "merged-into-canonical",
+          "deleted": 399
+        },
+        {
+          "canonical": 13,
+          "duplicate": 400,
+          "period": "2024-25",
+          "codes": [
+            "INDUSTRY",
+            "INTERNSHIP"
+          ],
+          "source_urls": [
+            "https://www.tce.edu/",
+            "https://www.tce.edu/index.php"
+          ],
+          "source_rows_moved": 1,
+          "source_rows_duplicate_urls_removed": 0,
+          "candidate_links_moved": true,
+          "period_recovery_audit_repointed": true,
+          "evidence_merged_from": 400,
+          "metadata": "merged-into-canonical",
+          "deleted": 400
+        },
+        {
+          "canonical": 14,
+          "duplicate": 401,
+          "period": "2024-25",
+          "codes": [
+            "INDUSTRY"
+          ],
+          "source_urls": [
+            "https://www.tce.edu/",
+            "https://www.tce.edu/index.php"
+          ],
+          "source_rows_moved": 1,
+          "source_rows_duplicate_urls_removed": 0,
+          "candidate_links_moved": true,
+          "period_recovery_audit_repointed": true,
+          "evidence_merged_from": 401,
+          "metadata": "merged-into-canonical",
+          "deleted": 401
+        },
+        {
+          "canonical": 15,
+          "duplicate": 403,
+          "period": "2024-25",
+          "codes": [
+            "RESEARCH"
+          ],
+          "source_urls": [
+            "https://www.tce.edu/",
+            "https://www.tce.edu/index.php"
+          ],
+          "source_rows_moved": 1,
+          "source_rows_duplicate_urls_removed": 0,
+          "candidate_links_moved": true,
+          "period_recovery_audit_repointed": true,
+          "evidence_merged_from": 403,
+          "metadata": "merged-into-canonical",
+          "deleted": 403
+        },
+        {
+          "canonical": 16,
+          "duplicate": 404,
+          "period": "2024-25",
+          "codes": [
+            "INDUSTRY",
+            "INTERNSHIP"
+          ],
+          "source_urls": [
+            "https://www.tce.edu/",
+            "https://www.tce.edu/index.php"
+          ],
+          "source_rows_moved": 1,
+          "source_rows_duplicate_urls_removed": 0,
+          "candidate_links_moved": true,
+          "period_recovery_audit_repointed": true,
+          "evidence_merged_from": 404,
+          "metadata": "merged-into-canonical",
+          "deleted": 404
+        },
+        {
+          "canonical": 17,
+          "duplicate": 405,
+          "period": "2024-25",
+          "codes": [
+            "PLACEMENT"
+          ],
+          "source_urls": [
+            "https://www.tce.edu/",
+            "https://www.tce.edu/index.php"
+          ],
+          "source_rows_moved": 1,
+          "source_rows_duplicate_urls_removed": 0,
+          "candidate_links_moved": true,
+          "period_recovery_audit_repointed": true,
+          "evidence_merged_from": 405,
+          "metadata": "merged-into-canonical",
+          "deleted": 405
+        },
+        {
+          "canonical": 18,
+          "duplicate": 406,
+          "period": "2024-25",
+          "codes": [
+            "ACHIEVEMENT",
+            "CULTURAL"
+          ],
+          "source_urls": [
+            "https://www.tce.edu/",
+            "https://www.tce.edu/index.php"
+          ],
+          "source_rows_moved": 1,
+          "source_rows_duplicate_urls_removed": 0,
+          "candidate_links_moved": true,
+          "period_recovery_audit_repointed": true,
+          "evidence_merged_from": 406,
+          "metadata": "merged-into-canonical",
+          "deleted": 406
+        },
+        {
+          "canonical": 19,
+          "duplicate": 407,
+          "period": "2024-25",
+          "codes": [
+            "PLACEMENT"
+          ],
+          "source_urls": [
+            "https://www.tce.edu/",
+            "https://www.tce.edu/index.php"
+          ],
+          "source_rows_moved": 1,
+          "source_rows_duplicate_urls_removed": 0,
+          "candidate_links_moved": true,
+          "period_recovery_audit_repointed": true,
+          "evidence_merged_from": 407,
+          "metadata": "merged-into-canonical",
+          "deleted": 407
+        },
+        {
+          "canonical": 20,
+          "duplicate": 408,
+          "period": "2024-25",
+          "codes": [
+            "CULTURAL",
+            "PLACEMENT",
+            "WORKSHOP"
+          ],
+          "source_urls": [
+            "https://www.tce.edu/",
+            "https://www.tce.edu/index.php"
+          ],
+          "source_rows_moved": 1,
+          "source_rows_duplicate_urls_removed": 0,
+          "candidate_links_moved": true,
+          "period_recovery_audit_repointed": true,
+          "evidence_merged_from": 408,
+          "metadata": "merged-into-canonical",
+          "deleted": 408
+        },
+        {
+          "canonical": 21,
+          "duplicate": 409,
+          "period": "2024-25",
+          "codes": [
+            "ACHIEVEMENT",
+            "CULTURAL"
+          ],
+          "source_urls": [
+            "https://www.tce.edu/",
+            "https://www.tce.edu/index.php"
+          ],
+          "source_rows_moved": 1,
+          "source_rows_duplicate_urls_removed": 0,
+          "candidate_links_moved": true,
+          "period_recovery_audit_repointed": true,
+          "evidence_merged_from": 409,
+          "metadata": "merged-into-canonical",
+          "deleted": 409
+        },
+        {
+          "canonical": 22,
+          "duplicate": 410,
+          "period": "2024-25",
+          "codes": [
+            "PLACEMENT"
+          ],
+          "source_urls": [
+            "https://www.tce.edu/",
+            "https://www.tce.edu/index.php"
+          ],
+          "source_rows_moved": 1,
+          "source_rows_duplicate_urls_removed": 0,
+          "candidate_links_moved": true,
+          "period_recovery_audit_repointed": true,
+          "evidence_merged_from": 410,
+          "metadata": "merged-into-canonical",
+          "deleted": 410
+        },
+        {
+          "canonical": 23,
+          "duplicate": 411,
+          "period": "2024-25",
+          "codes": [
+            "CULTURAL",
+            "PLACEMENT"
+          ],
+          "source_urls": [
+            "https://www.tce.edu/",
+            "https://www.tce.edu/index.php"
+          ],
+          "source_rows_moved": 1,
+          "source_rows_duplicate_urls_removed": 0,
+          "candidate_links_moved": true,
+          "period_recovery_audit_repointed": true,
+          "evidence_merged_from": 411,
+          "metadata": "merged-into-canonical",
+          "deleted": 411
+        },
+        {
+          "canonical": 24,
+          "duplicate": 412,
+          "period": "2024-25",
+          "codes": [
+            "NSS"
+          ],
+          "source_urls": [
+            "https://www.tce.edu/",
+            "https://www.tce.edu/index.php"
+          ],
+          "source_rows_moved": 1,
+          "source_rows_duplicate_urls_removed": 0,
+          "candidate_links_moved": true,
+          "period_recovery_audit_repointed": true,
+          "evidence_merged_from": 412,
+          "metadata": "merged-into-canonical",
+          "deleted": 412
+        },
+        {
+          "canonical": 25,
+          "duplicate": 413,
+          "period": "2024-25",
+          "codes": [
+            "PLACEMENT"
+          ],
+          "source_urls": [
+            "https://www.tce.edu/",
+            "https://www.tce.edu/index.php"
+          ],
+          "source_rows_moved": 1,
+          "source_rows_duplicate_urls_removed": 0,
+          "candidate_links_moved": true,
+          "period_recovery_audit_repointed": true,
+          "evidence_merged_from": 413,
+          "metadata": "merged-into-canonical",
+          "deleted": 413
+        },
+        {
+          "canonical": 26,
+          "duplicate": 414,
+          "period": "2024-25",
+          "codes": [
+            "CULTURAL",
+            "PLACEMENT"
+          ],
+          "source_urls": [
+            "https://www.tce.edu/",
+            "https://www.tce.edu/index.php"
+          ],
+          "source_rows_moved": 1,
+          "source_rows_duplicate_urls_removed": 0,
+          "candidate_links_moved": true,
+          "period_recovery_audit_repointed": true,
+          "evidence_merged_from": 414,
+          "metadata": "merged-into-canonical",
+          "deleted": 414
+        },
+        {
+          "canonical": 27,
+          "duplicate": 415,
+          "period": "2024-25",
+          "codes": [
+            "INDUSTRY",
+            "WORKSHOP"
+          ],
+          "source_urls": [
+            "https://www.tce.edu/",
+            "https://www.tce.edu/index.php"
+          ],
+          "source_rows_moved": 1,
+          "source_rows_duplicate_urls_removed": 0,
+          "candidate_links_moved": true,
+          "period_recovery_audit_repointed": true,
+          "evidence_merged_from": 415,
+          "metadata": "merged-into-canonical",
+          "deleted": 415
+        },
+        {
+          "canonical": 28,
+          "duplicate": 416,
+          "period": "2024-25",
+          "codes": [
+            "PLACEMENT",
+            "RESEARCH"
+          ],
+          "source_urls": [
+            "https://www.tce.edu/",
+            "https://www.tce.edu/index.php"
+          ],
+          "source_rows_moved": 1,
+          "source_rows_duplicate_urls_removed": 0,
+          "candidate_links_moved": true,
+          "period_recovery_audit_repointed": true,
+          "evidence_merged_from": 416,
+          "metadata": "merged-into-canonical",
+          "deleted": 416
+        },
+        {
+          "canonical": 29,
+          "duplicate": 417,
+          "period": "2024-25",
+          "codes": [
+            "PLACEMENT",
+            "WORKSHOP"
+          ],
+          "source_urls": [
+            "https://www.tce.edu/",
+            "https://www.tce.edu/index.php"
+          ],
+          "source_rows_moved": 1,
+          "source_rows_duplicate_urls_removed": 0,
+          "candidate_links_moved": true,
+          "period_recovery_audit_repointed": true,
+          "evidence_merged_from": 417,
+          "metadata": "merged-into-canonical",
+          "deleted": 417
+        },
+        {
+          "canonical": 30,
+          "duplicate": 418,
+          "period": "2024-25",
+          "codes": [
+            "CULTURAL",
+            "PLACEMENT"
+          ],
+          "source_urls": [
+            "https://www.tce.edu/",
+            "https://www.tce.edu/index.php"
+          ],
+          "source_rows_moved": 1,
+          "source_rows_duplicate_urls_removed": 0,
+          "candidate_links_moved": true,
+          "period_recovery_audit_repointed": true,
+          "evidence_merged_from": 418,
+          "metadata": "merged-into-canonical",
+          "deleted": 418
+        },
+        {
+          "canonical": 31,
+          "duplicate": 419,
+          "period": "2024-25",
+          "codes": [
+            "INDUSTRY"
+          ],
+          "source_urls": [
+            "https://www.tce.edu/",
+            "https://www.tce.edu/index.php"
+          ],
+          "source_rows_moved": 1,
+          "source_rows_duplicate_urls_removed": 0,
+          "candidate_links_moved": true,
+          "period_recovery_audit_repointed": true,
+          "evidence_merged_from": 419,
+          "metadata": "merged-into-canonical",
+          "deleted": 419
+        },
+        {
+          "canonical": 32,
+          "duplicate": 420,
+          "period": "2024-25",
+          "codes": [
+            "PLACEMENT"
+          ],
+          "source_urls": [
+            "https://www.tce.edu/",
+            "https://www.tce.edu/index.php"
+          ],
+          "source_rows_moved": 1,
+          "source_rows_duplicate_urls_removed": 0,
+          "candidate_links_moved": true,
+          "period_recovery_audit_repointed": true,
+          "evidence_merged_from": 420,
+          "metadata": "merged-into-canonical",
+          "deleted": 420
+        },
+        {
+          "canonical": 71,
+          "duplicate": 296,
+          "period": "Before 2021",
+          "codes": [
+            "NCC",
+            "RESEARCH"
+          ],
+          "source_urls": [
+            "https://www.tce.edu/campuslife/ncc",
+            "https://www.tce.edu/student/ncc"
+          ],
+          "source_rows_moved": 1,
+          "source_rows_duplicate_urls_removed": 0,
+          "candidate_links_moved": true,
+          "period_recovery_audit_rows_removed_after_canonical_owns_recovery": 1,
+          "evidence_merged_from": 296,
+          "metadata": "merged-into-canonical",
+          "deleted": 296
+        },
+        {
+          "canonical": 72,
+          "duplicate": 297,
+          "period": "Before 2021",
+          "codes": [
+            "NCC"
+          ],
+          "source_urls": [
+            "https://www.tce.edu/campuslife/ncc",
+            "https://www.tce.edu/student/ncc"
+          ],
+          "source_rows_moved": 1,
+          "source_rows_duplicate_urls_removed": 0,
+          "candidate_links_moved": true,
+          "period_recovery_audit_rows_removed_after_canonical_owns_recovery": 1,
+          "evidence_merged_from": 297,
+          "metadata": "merged-into-canonical",
+          "deleted": 297
+        },
+        {
+          "canonical": 73,
+          "duplicate": 298,
+          "period": "Before 2021",
+          "codes": [
+            "NCC"
+          ],
+          "source_urls": [
+            "https://www.tce.edu/campuslife/ncc",
+            "https://www.tce.edu/student/ncc"
+          ],
+          "source_rows_moved": 1,
+          "source_rows_duplicate_urls_removed": 0,
+          "candidate_links_moved": true,
+          "period_recovery_audit_rows_removed_after_canonical_owns_recovery": 1,
+          "evidence_merged_from": 298,
+          "metadata": "merged-into-canonical",
+          "deleted": 298
+        },
+        {
+          "canonical": 74,
+          "duplicate": 299,
+          "period": "Before 2021",
+          "codes": [
+            "NCC"
+          ],
+          "source_urls": [
+            "https://www.tce.edu/campuslife/ncc",
+            "https://www.tce.edu/student/ncc"
+          ],
+          "source_rows_moved": 1,
+          "source_rows_duplicate_urls_removed": 0,
+          "candidate_links_moved": true,
+          "period_recovery_audit_rows_removed_after_canonical_owns_recovery": 1,
+          "evidence_merged_from": 299,
+          "metadata": "merged-into-canonical",
+          "deleted": 299
+        },
+        {
+          "canonical": 75,
+          "duplicate": 300,
+          "period": "Before 2021",
+          "codes": [
+            "SPORTS"
+          ],
+          "source_urls": [
+            "https://www.tce.edu/campuslife/ncc",
+            "https://www.tce.edu/student/ncc"
+          ],
+          "source_rows_moved": 1,
+          "source_rows_duplicate_urls_removed": 0,
+          "candidate_links_moved": true,
+          "period_recovery_audit_rows_removed_after_canonical_owns_recovery": 1,
+          "evidence_merged_from": 300,
+          "metadata": "merged-into-canonical",
+          "deleted": 300
+        },
+        {
+          "canonical": 76,
+          "duplicate": 301,
+          "period": "Before 2021",
+          "codes": [
+            "NCC"
+          ],
+          "source_urls": [
+            "https://www.tce.edu/campuslife/ncc",
+            "https://www.tce.edu/student/ncc"
+          ],
+          "source_rows_moved": 1,
+          "source_rows_duplicate_urls_removed": 0,
+          "candidate_links_moved": true,
+          "period_recovery_audit_rows_removed_after_canonical_owns_recovery": 1,
+          "evidence_merged_from": 301,
+          "metadata": "merged-into-canonical",
+          "deleted": 301
+        },
+        {
+          "canonical": 78,
+          "duplicate": 309,
+          "period": "Before 2021",
+          "codes": [
+            "NCC"
+          ],
+          "source_urls": [
+            "https://www.tce.edu/campuslife/ncc",
+            "https://www.tce.edu/student/ncc"
+          ],
+          "source_rows_moved": 1,
+          "source_rows_duplicate_urls_removed": 0,
+          "candidate_links_moved": true,
+          "period_recovery_audit_rows_removed_after_canonical_owns_recovery": 1,
+          "evidence_merged_from": 309,
+          "metadata": "merged-into-canonical",
+          "deleted": 309
+        },
+        {
+          "canonical": 79,
+          "duplicate": 310,
+          "period": "Before 2021",
+          "codes": [
+            "NCC"
+          ],
+          "source_urls": [
+            "https://www.tce.edu/campuslife/ncc",
+            "https://www.tce.edu/student/ncc"
+          ],
+          "source_rows_moved": 1,
+          "source_rows_duplicate_urls_removed": 0,
+          "candidate_links_moved": true,
+          "period_recovery_audit_rows_removed_after_canonical_owns_recovery": 1,
+          "evidence_merged_from": 310,
+          "metadata": "merged-into-canonical",
+          "deleted": 310
+        },
+        {
+          "canonical": 81,
+          "duplicate": 312,
+          "period": "Before 2021",
+          "codes": [
+            "CULTURAL"
+          ],
+          "source_urls": [
+            "https://www.tce.edu/campuslife/ncc",
+            "https://www.tce.edu/student/ncc"
+          ],
+          "source_rows_moved": 1,
+          "source_rows_duplicate_urls_removed": 0,
+          "candidate_links_moved": true,
+          "period_recovery_audit_rows_removed_after_canonical_owns_recovery": 1,
+          "evidence_merged_from": 312,
+          "metadata": "merged-into-canonical",
+          "deleted": 312
+        },
+        {
+          "canonical": 80,
+          "duplicate": 311,
+          "period": "Before 2021",
+          "codes": [
+            "NCC"
+          ],
+          "source_urls": [
+            "https://www.tce.edu/campuslife/ncc",
+            "https://www.tce.edu/student/ncc"
+          ],
+          "source_rows_moved": 1,
+          "source_rows_duplicate_urls_removed": 0,
+          "candidate_links_moved": true,
+          "period_recovery_audit_rows_removed_after_canonical_owns_recovery": 1,
+          "evidence_merged_from": 311,
+          "metadata": "merged-into-canonical",
+          "deleted": 311
+        },
+        {
+          "canonical": 82,
+          "duplicate": 313,
+          "period": "Before 2021",
+          "codes": [
+            "ORIENTATION"
+          ],
+          "source_urls": [
+            "https://www.tce.edu/campuslife/ncc",
+            "https://www.tce.edu/student/ncc"
+          ],
+          "source_rows_moved": 1,
+          "source_rows_duplicate_urls_removed": 0,
+          "candidate_links_moved": true,
+          "period_recovery_audit_rows_removed_after_canonical_owns_recovery": 1,
+          "evidence_merged_from": 313,
+          "metadata": "merged-into-canonical",
+          "deleted": 313
+        },
+        {
+          "canonical": 116,
+          "duplicate": 502,
+          "period": "Before 2021",
+          "codes": [
+            "INDUSTRY",
+            "INTERNSHIP",
+            "PLACEMENT",
+            "WORKSHOP"
+          ],
+          "source_urls": [
+            "https://www.tce.edu/about/about-the-college",
+            "https://www.tce.edu/sites/default/files/naac/SSR-Cycle-II-Approved.pdf"
+          ],
+          "source_rows_moved": 1,
+          "source_rows_duplicate_urls_removed": 0,
+          "candidate_links_moved": true,
+          "period_recovery_audit_rows_removed_after_canonical_owns_recovery": 1,
+          "evidence_merged_from": 502,
+          "metadata": "merged-into-canonical",
+          "deleted": 502
+        },
+        {
+          "canonical": 117,
+          "duplicate": 503,
+          "period": "Before 2021",
+          "codes": [
+            "ACHIEVEMENT",
+            "INDUSTRY"
+          ],
+          "source_urls": [
+            "https://www.tce.edu/about/about-the-college",
+            "https://www.tce.edu/sites/default/files/naac/SSR-Cycle-II-Approved.pdf"
+          ],
+          "source_rows_moved": 1,
+          "source_rows_duplicate_urls_removed": 0,
+          "candidate_links_moved": true,
+          "period_recovery_audit_rows_removed_after_canonical_owns_recovery": 1,
+          "evidence_merged_from": 503,
+          "metadata": "merged-into-canonical",
+          "deleted": 503
+        },
+        {
+          "canonical": 118,
+          "duplicate": 505,
+          "period": "Before 2021",
+          "codes": [
+            "HACKATHON"
+          ],
+          "source_urls": [
+            "https://www.tce.edu/about/about-the-college",
+            "https://www.tce.edu/sites/default/files/naac/SSR-Cycle-II-Approved.pdf"
+          ],
+          "source_rows_moved": 1,
+          "source_rows_duplicate_urls_removed": 0,
+          "candidate_links_moved": true,
+          "period_recovery_audit_rows_removed_after_canonical_owns_recovery": 1,
+          "evidence_merged_from": 505,
+          "metadata": "merged-into-canonical",
+          "deleted": 505
+        },
+        {
+          "canonical": 332,
+          "duplicate": 615,
+          "period": "Before 2021",
+          "codes": [
+            "CLUB"
+          ],
+          "source_urls": [
+            "https://www.tce.edu/industry/ten",
+            "https://www.tce.edu/sites/default/files/naac/Final-SSR-Report.pdf"
+          ],
+          "source_rows_moved": 1,
+          "source_rows_duplicate_urls_removed": 0,
+          "candidate_links_moved": true,
+          "period_recovery_audit_rows_removed_after_canonical_owns_recovery": 1,
+          "evidence_merged_from": 615,
+          "metadata": "merged-into-canonical",
+          "deleted": 615
+        },
+        {
+          "canonical": 485,
+          "duplicate": 488,
+          "period": "Before 2021",
+          "codes": [
+            "CAMPUS",
+            "OUTREACH",
+            "SPORTS"
+          ],
+          "source_urls": [
+            "https://www.tce.edu/sites/default/files/PDF/NIRF-2026-SDG-Institutions.pdf"
+          ],
+          "source_rows_moved": 0,
+          "source_rows_duplicate_urls_removed": 1,
+          "candidate_links_moved": true,
+          "period_recovery_audit_rows_removed_after_canonical_owns_recovery": 1,
+          "evidence_merged_from": 488,
+          "metadata": "merged-into-canonical",
+          "deleted": 488
+        },
+        {
+          "canonical": 597,
+          "duplicate": 514,
+          "period": "Before 2021",
+          "codes": [
+            "INDUSTRY"
+          ],
+          "source_urls": [
+            "https://www.tce.edu/sites/default/files/naac/SSR-Cycle-II-Approved.pdf"
+          ],
+          "source_rows_moved": 0,
+          "source_rows_duplicate_urls_removed": 1,
+          "candidate_links_moved": true,
+          "period_recovery_audit_rows_removed_after_canonical_owns_recovery": 1,
+          "evidence_merged_from": 514,
+          "metadata": "merged-into-canonical",
+          "deleted": 514
+        },
+        {
+          "canonical": 611,
+          "duplicate": 537,
+          "period": "Before 2021",
+          "codes": [
+            "INDUSTRY"
+          ],
+          "source_urls": [
+            "https://www.tce.edu/sites/default/files/naac/Final-SSR-Report.pdf",
+            "https://www.tce.edu/sites/default/files/naac/SSR-Cycle-II-Approved.pdf"
+          ],
+          "source_rows_moved": 1,
+          "source_rows_duplicate_urls_removed": 0,
+          "candidate_links_moved": true,
+          "period_recovery_audit_rows_removed_after_canonical_owns_recovery": 1,
+          "evidence_merged_from": 537,
+          "metadata": "merged-into-canonical",
+          "deleted": 537
+        },
+        {
+          "canonical": 656,
+          "duplicate": 651,
+          "period": "Before 2021",
+          "codes": [
+            "ACHIEVEMENT",
+            "INTERNSHIP"
+          ],
+          "source_urls": [
+            "https://www.tce.edu/sites/default/files/PDF/Amendment-ResearchPaper-Internship.pdf"
+          ],
+          "source_rows_moved": 0,
+          "source_rows_duplicate_urls_removed": 1,
+          "candidate_links_moved": true,
+          "period_recovery_audit_rows_removed_after_canonical_owns_recovery": 1,
+          "evidence_merged_from": 651,
+          "metadata": "merged-into-canonical",
+          "deleted": 651
+        },
+        {
+          "canonical": 652,
+          "duplicate": 658,
+          "period": "Before 2021",
+          "codes": [
+            "ACHIEVEMENT"
+          ],
+          "source_urls": [
+            "https://www.tce.edu/sites/default/files/PDF/Amendment-ResearchPaper-Internship.pdf"
+          ],
+          "source_rows_moved": 0,
+          "source_rows_duplicate_urls_removed": 1,
+          "candidate_links_moved": true,
+          "period_recovery_audit_rows_removed_after_canonical_owns_recovery": 1,
+          "evidence_merged_from": 658,
+          "metadata": "merged-into-canonical",
+          "deleted": 658
+        },
+        {
+          "canonical": 659,
+          "duplicate": 657,
+          "period": "Before 2021",
+          "codes": [
+            "ACHIEVEMENT",
+            "INTERNSHIP"
+          ],
+          "source_urls": [
+            "https://www.tce.edu/sites/default/files/PDF/Amendment-ResearchPaper-Internship.pdf"
+          ],
+          "source_rows_moved": 0,
+          "source_rows_duplicate_urls_removed": 1,
+          "candidate_links_moved": true,
+          "period_recovery_audit_rows_removed_after_canonical_owns_recovery": 1,
+          "evidence_merged_from": 657,
+          "metadata": "merged-into-canonical",
+          "deleted": 657
+        },
+        {
+          "canonical": 702,
+          "duplicate": 711,
+          "period": "2022-23",
+          "codes": [
+            "INDUSTRY"
+          ],
+          "source_urls": [
+            "https://www.tce.edu/sites/default/files/PDF/Student-Satisfaction-Survey-2021-22.pdf"
+          ],
+          "source_rows_moved": 0,
+          "source_rows_duplicate_urls_removed": 1,
+          "candidate_links_moved": true,
+          "period_recovery_audit_repointed": true,
+          "evidence_merged_from": 711,
+          "metadata": "merged-into-canonical",
+          "deleted": 711
+        },
+        {
+          "canonical": 714,
+          "duplicate": 718,
+          "period": "2021-22",
+          "codes": [
+            "INDUSTRY"
+          ],
+          "source_urls": [
+            "https://www.tce.edu/sites/default/files/PDF/Student-Satisfaction-Survey-2020-21.pdf"
+          ],
+          "source_rows_moved": 0,
+          "source_rows_duplicate_urls_removed": 1,
+          "candidate_links_moved": true,
+          "period_recovery_audit_repointed": true,
+          "evidence_merged_from": 718,
+          "metadata": "merged-into-canonical",
+          "deleted": 718
+        },
+        {
+          "canonical": 723,
+          "duplicate": 719,
+          "period": "Before 2021",
+          "codes": [
+            "INDUSTRY"
+          ],
+          "source_urls": [
+            "https://www.tce.edu/sites/default/files/PDF/Student-Satisfaction-Survey-2019-20.pdf"
+          ],
+          "source_rows_moved": 0,
+          "source_rows_duplicate_urls_removed": 1,
+          "candidate_links_moved": true,
+          "period_recovery_audit_rows_removed_after_canonical_owns_recovery": 1,
+          "evidence_merged_from": 719,
+          "metadata": "merged-into-canonical",
+          "deleted": 719
+        },
+        {
+          "canonical": 723,
+          "duplicate": 725,
+          "period": "Before 2021",
+          "codes": [
+            "INDUSTRY"
+          ],
+          "source_urls": [
+            "https://www.tce.edu/sites/default/files/PDF/Student-Satisfaction-Survey-2018-19.pdf",
+            "https://www.tce.edu/sites/default/files/PDF/Student-Satisfaction-Survey-2019-20.pdf"
+          ],
+          "source_rows_moved": 1,
+          "source_rows_duplicate_urls_removed": 0,
+          "candidate_links_moved": true,
+          "period_recovery_audit_rows_removed_after_canonical_owns_recovery": 1,
+          "evidence_merged_from": 725,
+          "metadata": "merged-into-canonical",
+          "deleted": 725
+        },
+        {
+          "canonical": 723,
+          "duplicate": 727,
+          "period": "Before 2021",
+          "codes": [
+            "INDUSTRY"
+          ],
+          "source_urls": [
+            "https://www.tce.edu/sites/default/files/PDF/Student-Satisfaction-Survey-2018-19.pdf",
+            "https://www.tce.edu/sites/default/files/PDF/Student-Satisfaction-Survey-2019-20.pdf"
+          ],
+          "source_rows_moved": 0,
+          "source_rows_duplicate_urls_removed": 1,
+          "candidate_links_moved": true,
+          "period_recovery_audit_rows_removed_after_canonical_owns_recovery": 1,
+          "evidence_merged_from": 727,
+          "metadata": "merged-into-canonical",
+          "deleted": 727
+        },
+        {
+          "canonical": 738,
+          "duplicate": 741,
+          "period": "2021-22",
+          "codes": [
+            "WEBINAR"
+          ],
+          "source_urls": [
+            "https://www.tce.edu/sites/default/files/ipr-cell/activity/2021-2022/ACTIVITY-2.pdf",
+            "https://www.tce.edu/sites/default/files/ipr-cell/activity/2021-2022/ACTIVITY-4.pdf"
+          ],
+          "source_rows_moved": 1,
+          "source_rows_duplicate_urls_removed": 0,
+          "candidate_links_moved": true,
+          "period_recovery_audit_rows_removed_after_canonical_owns_recovery": 1,
+          "evidence_merged_from": 741,
+          "metadata": "merged-into-canonical",
+          "deleted": 741
+        },
+        {
+          "canonical": 750,
+          "duplicate": 753,
+          "period": "Before 2021",
+          "codes": [
+            "RESEARCH",
+            "WORKSHOP"
+          ],
+          "source_urls": [
+            "https://www.tce.edu/sites/default/files/ipr-cell/activity/2018-2019/ACTIVITY-1.pdf",
+            "https://www.tce.edu/sites/default/files/ipr-cell/activity/2019-2020/ACTIVITY-3.pdf"
+          ],
+          "source_rows_moved": 1,
+          "source_rows_duplicate_urls_removed": 0,
+          "candidate_links_moved": true,
+          "period_recovery_audit_rows_removed_after_canonical_owns_recovery": 1,
+          "evidence_merged_from": 753,
+          "metadata": "merged-into-canonical",
+          "deleted": 753
+        },
+        {
+          "canonical": 761,
+          "duplicate": 759,
+          "period": "Before 2021",
+          "codes": [
+            "INDUSTRY"
+          ],
+          "source_urls": [
+            "https://www.tce.edu/sites/default/files/PDF/TCE-IP-Policy.pdf"
+          ],
+          "source_rows_moved": 0,
+          "source_rows_duplicate_urls_removed": 1,
+          "candidate_links_moved": true,
+          "period_recovery_audit_rows_removed_after_canonical_owns_recovery": 1,
+          "evidence_merged_from": 759,
+          "metadata": "merged-into-canonical",
+          "deleted": 759
+        },
+        {
+          "canonical": 768,
+          "duplicate": 773,
+          "period": "2024-25",
+          "codes": [
+            "INDUSTRY",
+            "RESEARCH"
+          ],
+          "source_urls": [
+            "https://www.tce.edu/sites/default/files/PDF/TCE-SMS-Formats.pdf"
+          ],
+          "source_rows_moved": 0,
+          "source_rows_duplicate_urls_removed": 1,
+          "candidate_links_moved": true,
+          "period_recovery_audit_repointed": true,
+          "evidence_merged_from": 773,
+          "metadata": "merged-into-canonical",
+          "deleted": 773
+        },
+        {
+          "canonical": 860,
+          "duplicate": 863,
+          "period": "Before 2021",
+          "codes": [
+            "ACHIEVEMENT"
+          ],
+          "source_urls": [
+            "https://www.tce.edu/campuslife/bos/college-day-awards-2019",
+            "https://www.tce.edu/student/bos/college-day-awards-2018"
+          ],
+          "source_rows_moved": 1,
+          "source_rows_duplicate_urls_removed": 0,
+          "candidate_links_moved": true,
+          "period_recovery_audit_rows_removed_after_canonical_owns_recovery": 1,
+          "evidence_merged_from": 863,
+          "metadata": "merged-into-canonical",
+          "deleted": 863
+        },
+        {
+          "canonical": 860,
+          "duplicate": 878,
+          "period": "Before 2021",
+          "codes": [
+            "ACHIEVEMENT"
+          ],
+          "source_urls": [
+            "https://www.tce.edu/campuslife/bos/college-day-awards-2019",
+            "https://www.tce.edu/student/bos/college-day-awards-2017",
+            "https://www.tce.edu/student/bos/college-day-awards-2018"
+          ],
+          "source_rows_moved": 1,
+          "source_rows_duplicate_urls_removed": 0,
+          "candidate_links_moved": true,
+          "period_recovery_audit_rows_removed_after_canonical_owns_recovery": 1,
+          "evidence_merged_from": 878,
+          "metadata": "merged-into-canonical",
+          "deleted": 878
+        },
+        {
+          "canonical": 2381,
+          "duplicate": 3606,
+          "period": "2025-26",
+          "codes": [
+            "ACHIEVEMENT"
+          ],
+          "source_urls": [
+            "https://www.tce.edu/academics/departments/artificial-intelligence/achievements"
+          ],
+          "source_rows_moved": 0,
+          "source_rows_duplicate_urls_removed": 1,
+          "candidate_links_moved": true,
+          "period_recovery_audit_rows_removed_after_canonical_owns_recovery": 0,
+          "evidence_merged_from": 3606,
+          "metadata": "merged-into-canonical",
+          "deleted": 3606
+        },
+        {
+          "canonical": 2754,
+          "duplicate": 3656,
+          "period": "2025-26",
+          "codes": [
+            "ACHIEVEMENT"
+          ],
+          "source_urls": [
+            "https://www.tce.edu/academics/departments/computer-science-engineering/achievements"
+          ],
+          "source_rows_moved": 0,
+          "source_rows_duplicate_urls_removed": 1,
+          "candidate_links_moved": true,
+          "period_recovery_audit_rows_removed_after_canonical_owns_recovery": 0,
+          "evidence_merged_from": 3656,
+          "metadata": "merged-into-canonical",
+          "deleted": 3656
+        },
+        {
+          "canonical": 2757,
+          "duplicate": 3657,
+          "period": "2025-26",
+          "codes": [
+            "ACHIEVEMENT"
+          ],
+          "source_urls": [
+            "https://www.tce.edu/academics/departments/computer-science-engineering/achievements"
+          ],
+          "source_rows_moved": 0,
+          "source_rows_duplicate_urls_removed": 1,
+          "candidate_links_moved": true,
+          "period_recovery_audit_rows_removed_after_canonical_owns_recovery": 0,
+          "evidence_merged_from": 3657,
+          "metadata": "merged-into-canonical",
+          "deleted": 3657
+        },
+        {
+          "canonical": 3655,
+          "duplicate": 2758,
+          "period": "2025-26",
+          "codes": [
+            "ACHIEVEMENT"
+          ],
+          "source_urls": [
+            "https://www.tce.edu/academics/departments/computer-science-engineering/achievements"
+          ],
+          "source_rows_moved": 0,
+          "source_rows_duplicate_urls_removed": 1,
+          "candidate_links_moved": true,
+          "period_recovery_audit_repointed": true,
+          "evidence_merged_from": 2758,
+          "metadata": "merged-into-canonical",
+          "deleted": 2758
+        },
+        {
+          "canonical": 2775,
+          "duplicate": 3651,
+          "period": "2025-26",
+          "codes": [
+            "ACHIEVEMENT"
+          ],
+          "source_urls": [
+            "https://www.tce.edu/academics/departments/computer-science-engineering/achievements"
+          ],
+          "source_rows_moved": 0,
+          "source_rows_duplicate_urls_removed": 1,
+          "candidate_links_moved": true,
+          "period_recovery_audit_rows_removed_after_canonical_owns_recovery": 0,
+          "evidence_merged_from": 3651,
+          "metadata": "merged-into-canonical",
+          "deleted": 3651
+        },
+        {
+          "canonical": 2776,
+          "duplicate": 3653,
+          "period": "2025-26",
+          "codes": [
+            "ACHIEVEMENT"
+          ],
+          "source_urls": [
+            "https://www.tce.edu/academics/departments/computer-science-engineering/achievements"
+          ],
+          "source_rows_moved": 0,
+          "source_rows_duplicate_urls_removed": 1,
+          "candidate_links_moved": true,
+          "period_recovery_audit_rows_removed_after_canonical_owns_recovery": 0,
+          "evidence_merged_from": 3653,
+          "metadata": "merged-into-canonical",
+          "deleted": 3653
+        },
+        {
+          "canonical": 2778,
+          "duplicate": 3652,
+          "period": "2025-26",
+          "codes": [
+            "ACHIEVEMENT"
+          ],
+          "source_urls": [
+            "https://www.tce.edu/academics/departments/computer-science-engineering/achievements"
+          ],
+          "source_rows_moved": 0,
+          "source_rows_duplicate_urls_removed": 1,
+          "candidate_links_moved": true,
+          "period_recovery_audit_rows_removed_after_canonical_owns_recovery": 0,
+          "evidence_merged_from": 3652,
+          "metadata": "merged-into-canonical",
+          "deleted": 3652
+        },
+        {
+          "canonical": 3154,
+          "duplicate": 3155,
+          "period": "2024-25",
+          "codes": [
+            "OUTREACH"
+          ],
+          "source_urls": [
+            "https://www.tce.edu/academics/departments/english/outreach-activities"
+          ],
+          "source_rows_moved": 0,
+          "source_rows_duplicate_urls_removed": 1,
+          "candidate_links_moved": true,
+          "period_recovery_audit_repointed": true,
+          "evidence_merged_from": 3155,
+          "metadata": "merged-into-canonical",
+          "deleted": 3155
+        }
+      ]
+    },
+    {
+      "action": "park_review_flags",
+      "count": 16,
+      "detail": [
+        {
+          "activity_id": 33,
+          "reason": [
+            "boilerplate/navigation-style title"
+          ]
+        },
+        {
+          "activity_id": 70,
+          "reason": [
+            "boilerplate/navigation-style title"
+          ]
+        },
+        {
+          "activity_id": 87,
+          "reason": [
+            "boilerplate/navigation-style title"
+          ]
+        },
+        {
+          "activity_id": 138,
+          "reason": [
+            "boilerplate/navigation-style title"
+          ]
+        },
+        {
+          "activity_id": 293,
+          "reason": [
+            "boilerplate/navigation-style title"
+          ]
+        },
+        {
+          "activity_id": 295,
+          "reason": [
+            "boilerplate/navigation-style title"
+          ]
+        },
+        {
+          "activity_id": 327,
+          "reason": [
+            "boilerplate/navigation-style title"
+          ]
+        },
+        {
+          "activity_id": 331,
+          "reason": [
+            "boilerplate/navigation-style title"
+          ]
+        },
+        {
+          "activity_id": 346,
+          "reason": [
+            "boilerplate/navigation-style title"
+          ]
+        },
+        {
+          "activity_id": 395,
+          "reason": [
+            "boilerplate/navigation-style title"
+          ]
+        },
+        {
+          "activity_id": 436,
+          "reason": [
+            "boilerplate/navigation-style title"
+          ]
+        },
+        {
+          "activity_id": 774,
+          "reason": [
+            "boilerplate/navigation-style title"
+          ]
+        },
+        {
+          "activity_id": 786,
+          "reason": [
+            "boilerplate/navigation-style title"
+          ]
+        },
+        {
+          "activity_id": 839,
+          "reason": [
+            "boilerplate/navigation-style title"
+          ]
+        },
+        {
+          "activity_id": 840,
+          "reason": [
+            "boilerplate/navigation-style title"
+          ]
+        },
+        {
+          "activity_id": 847,
+          "reason": [
+            "boilerplate/navigation-style title"
+          ]
+        }
+      ]
+    }
+  ],
+  "merge_clusters": 59,
+  "duplicates_merged": 62,
+  "total_before": 2320,
+  "total_after": 2258,
+  "pair_table_total": 111,
+  "pair_table_merged": 66,
+  "pair_table_pending": 45,
+  "review_flags_parked": 16,
+  "review_flags_total_open": 26,
+  "ok": true,
+  "expected_reference": {
+    "total_before": 2320,
+    "work_invariant": 97,
+    "general_invariant": 813,
+    "ws2025_invariant": 10,
+    "it2025_invariant": 29,
+    "tseda2024_invariant": 47
+  }
+}

@@ -1,0 +1,793 @@
+M.E. Regulation _CBCS_2018-19 
+ 
+1                                                                                                   56
+th
+ Academic Council Meeting on  21.07.2018 
+ 
+THIAGARAJAR COLLEGE OF ENGINEERING, MADURAI – 625 015 
+(A Govt. Aided Autonomous Institution affiliated to Anna University)  
+                                                                                                                             
+RULES  AND  REGULATIONS 
+ 
+ CHOICE BASED CREDIT SYSTEM 
+ 
+M.E. Degree Programmes 
+ 
+These rules and regulations are applicable to the candidates admitted from the 
+academic year 2018-19 onwards 
+  
+1. 0 PRELIMINARY DEFINITIONS AND NOMENCLATURE 
+ 
+ In these regulations, unless the context otherwise requires: 
+ 
+a. “Programme” m eans Master of Engineering (M.E.) Post Graduate Degree 
+Programme. 
+ 
+b. “Specialization” means discipline of M.E.  Degree Programme, like 
+Communication Systems, Power Systems Engineering, Production Engineering, 
+Computer Science and Engineering, etc. 
+ 
+c. “Course” means a theory or practical subject that is normally studied in a 
+semester, like Precision Manufacturing, Power Electronics, Communication 
+Engineering, etc. 
+ 
+d. ‘University’ means Anna University, Chennai 
+ 
+2.0 QUALIFICATIONS FOR ADMISSION: 
+ The   candidates   seeking   admission to the programme shall require satisfying the 
+eligibility norms prescribed by the Anna University and Director of Technical 
+Education, Chennai, from time to time. 
+ 
+3.0 BRANCHES OF STUDY: 
+   
+  M.E. Degree 
+ Structural Engineering 
+ Infrastructure Engineering and Management 
+ Environmental Engineering 
+ Industrial Engineering 
+ Manufacturing Engineering 
+ Power System Engineering 
+ Communication Systems 
+ Wireless Technologies 
+ Computer Science and Engineering 
+ Control and Instrumentation 
+ Computer Science and Information Security 
+ Mechatronics 
+  
+M.E. Regulation _CBCS_2018-19 
+ 
+2                                                                                                   56
+th
+ Academic Council Meeting on  21.07.2018 
+ 
+4.0 STRUCTURE OF PROGRAMMES 
+ 4.1  Categorization of Courses  
+Each programme shall have a curriculum comprising of Theory, Theory-cum-Practical 
+and Practical courses with well defined Program Outcomes and Programme 
+Educational Objectives (PEO) as per Outcome Based Education (OBE). The content 
+of each course is designed based on the Course Outcomes  (CO).  The courses shall 
+cover:  
+A. Foundation Courses 
+B. Programme Core Courses relevant to the chosen programme of study. 
+C. Elective Courses  
+a. Programme Electives  
+b. Open Electives 
+D. Common Core Course 
+E. Mini Project and Dissertation 
+F. Value Added Courses  
+ 
+The recommended distribution of credits for each category is given Table 1. 
+Table1: Credit Distribution 
+S.No Category Credits 
+A. Foundation Courses 3 - 6 
+   B. Programme Core Courses 19 – 25 
+C. Elective Courses 17 – 23 
+ a.  Programme Elective 15 – 21 
+ b.  Open Elective 2 – 6 
+D. Common Core Course  2 
+E. Mini Project and Dissertation 27 
+F Value Added Courses (Not to be included in CGPA) – Mandatory 4 
+ Minimum Credits to be earned for the award of the degree               68  
+(from A to E) and 
+4 (from F) 
+ 
+4.2 In assigning the credits for the courses, 1 hour lecture/week, 1 hour tutorial/week,             
+2 hours practical/week, 2 hours Dissertation work or seminar/week is equivalent to             
+1 credit. 
+ 
+4.3 The curriculum of each semester shall normally be a blend of Theory courses,    
+Theory-Cum-Practical and practical courses. 
+  
+M.E. Regulation _CBCS_2018-19 
+ 
+3                                                                                                   56
+th
+ Academic Council Meeting on  21.07.2018 
+ 
+4.4       Dissertation 
+The dissertation is a year long activity, to be carried out and evaluated in two phases 
+namely Phase – I and Phase II. The dissertation topic should be selected / chosen to 
+ensure the satisfaction of the urgent need to establish a direct link between 
+education, national development and productivity and thus reduce the gap between 
+the world of work and the world of study. The dissertation should have relevance to 
+social needs of society, value addition to existing facilities in the institute, to industry 
+need, Problems of national importance, research and development in various 
+domains.  
+ 
+4.5      Industry supported Courses:  
+4.5.1 Students can opt for one -credit courses and two credit courses, offered by experts 
+from industry/ research organizations and approved by academic council.   Students 
+can register such courses as and when these courses are conducted by different 
+departments. A student is also permitted to register for these courses of o ther 
+departments, provided the student has fulfilled the necessary pre -requisites of the 
+course being offered and subject to the approval of both the heads of departments. 
+There is no limit to the number of one -credit or two credit courses a student can 
+register during the programme of study. However, a student can register for only one 
+course in a semester. These courses are evaluated by the respective course 
+coordinator of the programme. The category for industry supported course is 
+Programme Elective. The maximum number of credits that can be earned from 
+industry supported courses is limited to 3.  
+4.5.2   If a student who registers for industry supported one-credit or two credit courses 
+does not successfully complete the course, the registration of that course will be 
+considered as cancelled . Further, i t will not be treated as arrear and no 
+supplementary examination will be conducted; alternatively, if he/she wishes, he/she 
+can re -register for the same course in the ensuing semesters and successfully 
+complete it as and when it is offered subsequently.  
+ 
+4.6 Guided Study Course 
+ A student who has CGPA greater than 8.0 may be permitted to credit utmost ONE 
+guided study course from second semester under Programme elective courses. One 
+faculty member approved by the Head of the Department shall be responsible for the 
+periodic monitoring and evaluation of the course. The student does not need to 
+attend the classes. However, the student has to appear for continuous assessment 
+M.E. Regulation _CBCS_2018-19 
+ 
+4                                                                                                   56
+th
+ Academic Council Meeting on  21.07.2018 
+ 
+tests and submit assignments to the respective faculty -in-charge assigned by the 
+Head of the Department. 
+ 
+4.7    Value Added Courses 
+Students should earn 4 credits in Value Added Courses. T he credits earned through 
+the Value Added Courses shall be over and above the  minimum credit requirement 
+prescribed in the curriculum for the award of the degree  and grades will be not 
+considered for CGPA calculation.  
+ 
+4.8    Online Courses 
+ Students may be permitted to register for online courses (which are provided with 
+certificate after evaluation of the performance), during first to third semester of his/her 
+study. On successful completion of the course, he/she has to submit the copy of th e 
+certificate to the Head of the Department for exemption from registering for an 
+elective course.  Based on the recommendation by the team of faculty members 
+nominated by the Head of the Department, the student will be awarded grade and 
+credits, maximum 3 , in Programme Elective category. The recommendation will be 
+sent to The Controller of Examinations after the approval by the Head of the 
+Department. The maximum number of credits that can be earned from industry 
+supported courses is limited to 3. 
+ 
+4.9 Students shall register for the Dissertation work after 2 semesters of his/her studies 
+only.  
+ 
+4.10 The medium of instruction, examinations and Dissertation report shall be in English. 
+ 
+ 5.0  DURATION OF THE PROGRAMMES   
+ 
+  5.1 The minimum and maximum period for completion of the Programmes are 4 and 8 
+semesters respectively. 
+ 
+   5.2 Each semester normally consists of 90 working days  (including examination days) , 
+including Test and Examination Days . In any contingent situation, the number of 
+working days per semester shall not be less than 65 days.  The Principal is given the 
+discretionary powers to decide the number of working days. In such contingencies, 
+the Principal shall ensure that every faculty member teaches the full cont ent of the 
+specified syllabus for the course being taught. 
+M.E. Regulation _CBCS_2018-19 
+ 
+5                                                                                                   56
+th
+ Academic Council Meeting on  21.07.2018 
+ 
+     5.3 The total duration for completion of the programme reckoned from the 
+commencement of the first semester to which the student was admitted shall not 
+exceed the maximum duration specified in  Clause 5.1 irrespective of the period of 
+Break of Study or prevention in order that the student may be eligible for the award of 
+the degree.  
+ 
+ 5.4 For the purpose of regulations, the academic year will be divided into two Semesters, 
+the odd semester normally spanning from June to November and the even semester 
+from December to May. 
+ 
+6.0 COURSE REGISTRATION  
+ 
+6.1   Each student, on admission shall be assigned to a Faculty Mentor (vide clause 8) 
+who shall advice and counsel the student about the details of the academic 
+programme and the  choice of courses considering the student’s academic 
+background and career objectives 
+6.2     A student has to earn minimum of 68 Credits in the specified curriculum of the 
+chosen programme of study in order to be eligible to obtain the degree. However, a 
+student can earn more than the number of credits, if he/she wishes. In such case, the 
+highest grades in the relevant category would be considered for CGPA calculation.   
+6.3    A student has the option of registering for additional courses or dropping existing 
+courses in the ‘Scheduling of Courses’ of the programme. Total number of credits of 
+such courses cannot exceed 6. However, the maximum number of credits the student 
+can regis ter in a particular semester cannot exceed 26, excluding the courses for 
+which the student has done reappearance registration.  The credits for industry 
+supported courses , online courses and Value added courses are also included in 
+calculating the number of credits per semester. 
+ 
+6.4    The registration for the courses from II semester will commence three days after the 
+declaration of the examination results of preceding semester.  The student shall 
+register for the courses with the guidance of the student’s Faculty Mentor. If the 
+student wishes, the student may drop courses (vide clause 6. 3) within five working 
+days after the commencement of the concerned semester and complete the 
+registration process.  
+ 
+M.E. Regulation _CBCS_2018-19 
+ 
+6                                                                                                   56
+th
+ Academic Council Meeting on  21.07.2018 
+ 
+6.5  No course shall be offered by a Department unless a minimum of 5 students register 
+for that course. 
+ 
+6.6    After registering for a course, a student shall attend the classes, satisfy the 
+attendance Requirements (vide clause 7) , earn Continuous Assessme nt marks and 
+appear for the End Semester Examinations, except for the arrear courses.   
+ 
+6.7.  Reappearance Registration  
+ 
+6.7.1 If a student fails in a theory or a Theory-cum-Practical course, the student shall do 
+reappearance registration for that course in the subsequent semester by retaining the 
+Continuous Assessment Marks already earned. 
+  
+6.7.2 If the theory  or Theory-cum-Practical course, in which the student has failed, is a n 
+elective, the student may register for the same or any other elective in the 
+subsequent semesters. 
+ 
+6.7.3  The student who does not obtain bonafide certificate in any practical course/ 
+Dissertation shall register for the same in the subsequent semester, when offered 
+next, and repeat the course. In this case, the student shall attend the classes, satisfy 
+the attendance requirements (vide clause 7), earn Continuous Assessment marks 
+and appear for the End Semester Examinations. However, if a student does not 
+appear for terminal examination after completing all the requirements of the practical 
+course and obtaining the bonafide certificate, the student shall do reappearance 
+registration for that course i n the subsequent semester and attend end semester 
+examination without repeating the course. 
+ 
+6.7.4    If a student is not eligible to appear for end semester examination of a course due to 
+lack of  attendance, the student has to register for that course again, when offered 
+next, attend the classes and fulfill the attendance requirements as per clause 7. If the 
+course, in which the  student has lack of attendance, is a n elective, the student may 
+register for the same or any other elective in the subsequent semesters. 
+ 
+6.7.5  A student who has already appeared for a course in a semester and passed the 
+examination is not entitled to reappear the same course for improvement of 
+Grade/Marks 
+ 
+M.E. Regulation _CBCS_2018-19 
+ 
+7                                                                                                   56
+th
+ Academic Council Meeting on  21.07.2018 
+ 
+7. 0 REQUIREMENTS FOR APPEARING FOR THE END SEMESTER EXAMINATION  
+7.1   A student who has fulfilled the following conditions shall be deemed to be eligible to 
+appear for the end semester examination  
+ Ideally, every student is expected to attend all the classes and earn 100% 
+attendance. Students who have earned not less than 75% attendance in each 
+course taking into account the number of periods required for that course as 
+specified in the curriculum.  
+ Students who have earned attendance less than 75% in a course will not be 
+permitted to appear for End Semester Examination for that course. The student 
+has to register and repeat that particular course in a subsequent semester when 
+it is offered next. However, exemption may be given for the students who earned 
+attendance between 65% and less than 75% in a particular course from the 
+prescribed attendance requirement based on medical leave (hospitalization / 
+accident / specific illness) and On Duty leave for participation in the College / 
+University / State / National / International level Sports events (Vide clause 7.1.3) 
+with prior approval from the Principal / competent authority. Such student shall be 
+permitted to apply for condonation to the Principal through the respective Head of 
+the Department. After the approval from the principal, the student shall be 
+permitted to appear for the end semester examination for that course by paying 
+the prescribed fee to the Controller of Examinations of the college. Howe ver, the 
+students who have represented the college in at University/ State /National / 
+International level are exempted from the condonation fee. 
+ The student’s conduct has been satisfactory  
+ The student has paid the prescribed examination fees and register ed for the 
+examinations for all the enrolled courses of that semester within the due date 
+specified by the Office of the Controller of Examinations. If any student fails to 
+register and pay the examination fees within the due date, he /she shall not be 
+permitted to attend the end semester examinations. However, he/she will be 
+permitted to continue their studies in the next higher semester, provided that the 
+student should satisfy the requirements as stipulated in this clause of this 
+regulations and to write  the current semester courses and arrear courses if any, 
+in the next supplementary examination as arrear courses on registration and 
+payment of fees.  It will be counted as an attempt for the student. 
+M.E. Regulation _CBCS_2018-19 
+ 
+8                                                                                                   56
+th
+ Academic Council Meeting on  21.07.2018 
+ 
+7.2     The students who are consistently good in academics ONLY be considered for the 
+grant of ODL under co -curricular / extra -curricular activities by the competent 
+authorities. The following activities shall be considered for the award of ODL: 
+ Sports and Games:  TIES, Inter collegiate, Inter Zonal, Inter University, State 
+level, National level, international level and Open Tournaments. 
+ Cultural Programs at State, National and International level  
+ Seminar / Symposia: Paper presentation / Quiz 
+ Leadership course org anized by other organizations & Alumni Association 
+activities, Association Activities, Placement Activities 
+ Training Programs/internship at Industries and Higher Learning Institutions 
+ Personal damages incurred during the extra-curricular activities. 
+ The ODL requisition letter shall be forwarded to the Principal through the Head of 
+the Department of the student by the staff -in-charge of the respective activities 
+before completion of every activity.  
+ The ODL sanctioned letters shall be submitted to the Depart ment office.  The 
+faculty-in-charge of the department office will check the eligibility for the award of 
+attendance at the end of semester and the same may be submitted to the Head 
+of the Department for approval. 
+7.3  Student who is permitted by the respec tive Head of the Department to carry out f inal 
+semester Dissertation at industries/ organizations/higher learning institutions should 
+submit the attendance certificate from the competent authority at every Dissertation 
+review meetings and at the time of Dissertation report submission.  
+ 
+8. 0 FACULTY MENTOR  
+To help the students in planning their courses of study and for general advice on the 
+academic programme, the Head of the Department will attach the students to a 
+faculty member of the Department. He /she shall function as Faculty Mentor for these 
+students throughout their period of study.  The faculty mentor shall  
+ Advise the students in registering and reappearance registering of courses 
+ Monitor their attendance, academic progress and discipline of the students 
+ Counsel periodically or during the Faculty Mentor meeting scheduled in the class 
+time table. 
+ Inform the students about the various facilities and activities available to enhance 
+the student’s curricular and co-curricular activities. 
+M.E. Regulation _CBCS_2018-19 
+ 
+9                                                                                                   56
+th
+ Academic Council Meeting on  21.07.2018 
+ 
+ If necessary, the faculty mentor may also discuss with or inform the parents about 
+the progress of the students through Head of the Department or in Parent –
+Teacher meeting. 
+ 
+9. 0 ACADEMIC COMMITTEES 
+ 
+9.1   CLASS COMMITTEE  
+The objective of the Class Committee is to improve the teaching -learning process. 
+The functions of the class committee include: 
+ Resolving difficulties experienced by students in the classroom and in the 
+laboratories.                                                                                      
+ Clarifying the regulations of the degree programme and the details of rules therein. 
+ Discussing the progress of academic schedule and deviations if any. 
+ Evaluating the performance of the students of the class after each test and finding 
+the ways and means of improvement. 
+ Class committee comprises of all the faculty members who are handling courses in 
+that particular semester and two student representatives from each course. A 
+chairperson w ho is a faculty not handling course for that particular semester, 
+nominated by the Head of the Department shall coordinate the activities of this 
+committee. 
+ The class committee shall be constituted by the Head of the Department/Chief Tutor 
+on the first week of commencement of the semester. 
+ The class committee shall  meet three times in a semester as specified in the 
+academic calendar. 
+ The Principal may participate in any class committee of the institution.  
+ During these meetings, the representative of the class shall meaningfully interact and 
+express the opinions and suggestions of the other students of the class to improve 
+the effectiveness of the teaching-learning process. 
+ The Chairperson is required to prepare the minutes of the meeting, signed by the 
+members and submit the same to Head of the Department within five working days of 
+the meeting. Head of the Department will in turn consolidate and forward the same to 
+the Principal, within 10 working days of the meeting. 
+ In each meeting, the action taken rep ort of the previous meeting is to be presented 
+by the Chairperson of the class committee. 
+  
+M.E. Regulation _CBCS_2018-19 
+ 
+10                                                                                                   56
+th
+ Academic Council Meeting on  21.07.2018 
+ 
+9.2  PERFORMANCE ASSESSMENT COMMITTEE 
+ 
+ The Performance Assessment Committee comprises of the Course Coordinators / 
+Course faculty members and Programme Coordinator, nominated by the Head of 
+Department. This committee shall meet to assess the attainment of Course 
+Outcomes and Program Outcomes, progress and status of the students of the 
+semester concerned at the beginning and end of the semesters . The committee 
+can invite Faculty mentors and students as invitees. 
+ 
+10.0      SYSTEM OF EXAMINATION  
+10.1   Performance in each course of study shall be evaluated for a maximum of 100 marks 
+based on one of the following:  
+ Continuous assessment throughout the semester and a terminal examination at 
+the end of the semester. The continuous assessment will carry 50 marks while the 
+terminal examination will carry 50 marks.  
+ Continuous Assessment only. 
+ 
+10.2   The terminal examination (Theory, Theory-cum-Practical & Practical) of 3 hours 
+duration shall be conducted by the Controller of Examinations between October and 
+December during the Odd Semesters and between March and May during the Even 
+semesters. For Theory-cum-Practical courses, terminal examination will be 
+conducted as either theory or practical examination as specified in the curriculum.  All 
+Practical examinations shall be conducted and evaluated at the Department itself on 
+behalf of the Controller of Examinations. 
+ 
+10.3  For all the practical courses, stud ents shall obtain bonafide certificate for the Record 
+completed from the Faculty in-charges / Head of the Department on or before the day 
+of the practical examination. Students who have not obtained the bonafide certificate 
+are not permitted to appear for the terminal examination.    
+   
+10.4  For the Dissertation, students shall obtain bonafide certificate for the Dissertation 
+work completed from the Dissertation Guide and Head of the Department, at the end 
+of the semester. Students who have not obtained the bonafide certificate are not 
+permitted to appear for the terminal examination. Students who are not able to 
+complete the Dissertation work at the end of the semester can apply for extension to 
+the Head of the Department, with the recommendation from the Dissertation guide for 
+the period of maximum 2 months.  If the Dissertation report is not submitted even 
+M.E. Regulation _CBCS_2018-19 
+ 
+11                                                                                                   56
+th
+ Academic Council Meeting on  21.07.2018 
+ 
+beyond the extended time, then the student(s) is not eligible to  appear for 
+Dissertation Viva Voce examination. Further, if a student fails to secure a pass in 
+Dissertation work or not eligible to appear for Viva Voce Examination, the student 
+shall register and repeat the Dissertation work again in the subsequent semester.  
+ 
+10.5  The terminal examination for Dissertation work shall comprise of evaluation of the         
+final report by an external examiner. The Dissertation report shall carry 20 marks 
+while the viva-voce examination shall carry 80 marks. Further, the performance of the 
+student would be evaluated in a viva -voce examination conducted by a committee 
+consisting of an external examiner appointed by the Head of the Department/the 
+Controller of Examination, Head of the Department or facu lty nominated by Head of 
+the Department as Internal Examiner and Guide. 
+ 
+10.6  Students are prohibited from entering into the Examination Hall / Laboratories       
+with any book or portion of book, manuscript, or paper of any description or       
+Communicating with or copying from each other or communicating with anyone   
+outside the Examination Hall / Laboratories.  Programmable calculator, mobile phone 
+shall not be permitted inside the Examination hall / Laboratories. However, any 
+required codebooks and data sheets / books  as specified in the question paper  will 
+be supplied inside the Examination hall / laboratories by the office of the Controller of 
+Examinations. The students are warned that any form of Malpractice will be dealt with 
+severely. The punishment may be canceling all the examinations registered by the 
+student in that semester and debarring permanently from all the examinations and 
+disciplinary action will be taken by the college authorities after conducting enquiry.  
+ 
+10.7  Identity ca rd /Hall ticket of the college must be produced at the time of terminal 
+examination. Any student fails to produce Identity card /Hall ticket shall be levied a 
+spot fine by the Chief superintendent/ Examiners. 
+ 
+10.8 A student can apply for reassessment of his/her semester examination answer paper 
+in theory and Theory-cum-Practical courses (treated as theory examination in the end 
+semester examination), within three working days from the declaration of results, on 
+payment of a prescribed fee, as specified by the Controller of Examinations from time 
+to time.  The Controller of Examination will arrange for going through the answer 
+scripts by the students and to make appeals. T he reassessment results will be 
+published before the commencement of supplementary examinations. Reassessment 
+is not permitted for practical courses, project work and industry supported courses. 
+M.E. Regulation _CBCS_2018-19 
+ 
+12                                                                                                   56
+th
+ Academic Council Meeting on  21.07.2018 
+ 
+11.0 PROCEDURE FOR AWARDING MARKS FOR CONTINUOUS ASSESSMENT 
+11.1  Theory courses 
+a. The award of marks for continuous assessment shall be norma lly based on three 
+tests and three interim assessment tasks . The apportioning of marks shall be as 
+follows: 
+i) 30 marks for tests 
+ii) 20 marks for Interim Assessment 
+However, the assessment pattern for awarding the continuous assessment marks 
+may be designed by the course designers based on the nature of the course and 
+is to be approved by the Academic Council.  
+b. The first and second Continuous Assessment Tests will be normally conducted at 
+the mid and end of the semester respectively. Subsequently, the third Continuous 
+Assessment Test will be conducted as improvement/re -test covering full syllabus. 
+Each test carries maximum of 50 marks. Among the three tests, the bes t two test 
+marks will be considered for the award of maximum of 30 marks in test component 
+of theory courses.  
+c. Both test and interim assessment marks put together is 50 marks maximum and 
+rounded to nearest integer if necessary. 
+e. If a student fails in a theory course, the Continuous Assessment Marks already 
+earned will be retained for subsequent reappearances. 
+ 
+11.2 Practical courses 
+The continuous assessment mark will be awarded as follows: 
+Description Marks 
+Observation-cum-Record in regular class works 30 
+Test  (before last lecture day) 20 
+Total Marks 50 
+ 
+However, the assessment pattern for awarding the continuous assessment marks 
+may be designed by the course designers based on the nature of the course and is to 
+be approved by the Academic Council. If a student has not obtained bonafide 
+certificate in a Practical course, the continuous assessment marks the student has 
+earned is no longer valid . He/she shall register for the same in the subsequent 
+semester, when offered next, and repeat the laboratory course again. 
+  
+M.E. Regulation _CBCS_2018-19 
+ 
+13                                                                                                   56
+th
+ Academic Council Meeting on  21.07.2018 
+ 
+11.3    Theory-cum-Practical Courses:  
+The first and second Continuous Assessment Tests will be normally conducted at the 
+mid and end of the semester respectively. Subsequently, the third Continuous 
+Assessment Test will be conducted as improvement/re -test covering full syllabus. 
+Each test carri es maximum of 50 marks. Among the three tests, the best two test 
+marks will be considered for the award of maximum of 20 marks in theory component 
+of Theory-cum-Practical course. A test will be conducted for 20 marks in practical 
+component. Average mark awarded for viva – voce, conduct of experiments, 
+observation & results, record work in regular class works shall be reduced to 10 
+marks. The sum of these 50 Marks would be rounded to the nearest integer.  
+However, the assessment pattern for aw arding the continuous assessment marks 
+may be designed by the course designers based on the nature of the course and is to 
+be approved by the Academic Council. 
+ 
+If a student fails in a theory and practical course, the Continuous Assessment Marks 
+already earned will be retained for subsequent reappearances. 
+ 
+11.4 Dissertation  
+The Head of the Department shall constitute a review committee comprises of Head 
+of the Department or Faculty member nominated by Head of the Department and two 
+faculty members. There shall be th ree assessments (each 50 Marks), based on the 
+rubrics, during the semester by the review committee. The student shall make 
+presentation on the progress made by him / her before the committee. The total 
+marks obtained in the three reviews shall be averaged and rounded off to the nearest 
+integer to 50 marks. 
+11.4.1  A student may, however, in certain cases, be permitted to work on the Dissertation in 
+an Industrial/Research Organization, on the recommendation of the Head of the 
+Department, with the approval of the Principal. In such cases, the Dissertation work 
+shall be jointly supervised by a faculty member (Guide) of the department and an 
+Engineer / Scientist from the Organization and the student shall be instructed to 
+report the progress in period ically and to attend the Dissertation review committee 
+meetings for evaluating the progress. These students will produce a certificate of 
+attendance from the Industry/ Research Organization where the Dissertation is done.  
+11.4.2   If the Dissertation report is not submitted on or before the specified deadline, an 
+extension of time up to a maximum limit of 30 days may be given for the submission 
+of Dissertation work with due approval obtained from the Head of the Department.  
+M.E. Regulation _CBCS_2018-19 
+ 
+14                                                                                                   56
+th
+ Academic Council Meeting on  21.07.2018 
+ 
+11.5 Every faculty member is required to maintain an Attendance and Continuous 
+Assessment Record which consists of attendance marked for each lecture or 
+practical or Dissertation work classes, the tests & assignment marks and record of 
+class works (topics covered) separately for each course.   
+ 
+11.6   If any student appears as a Private Candidate for Supplementary Examinations, the 
+continuous Assessment Marks earned by the student will be nullified and only the 
+marks earned in the supplementary examination will be considered for passing the 
+course as prescribed in the Scheme of Examinations (Minimum Marks for Pass) 
+ 
+12 0  ELIGIBILITY FOR PASS IN EACH COURSE 
+12.1  A student who secures not less than 50% of total marks (both continuous            
+assessment and terminal examination marks put together) p rescribed for the            
+courses with a minimum of 50% marks prescribed for the end semester            
+Terminal examination in theory courses, Theory-cum-Practical courses, practical 
+courses (except for the Practical Courses which are evaluated based on Continuous 
+Assessment only) and Dissertation work shall be declared to have passed the 
+examination.  
+ 
+12.2   If a student fails to secure a pass in a particular course, it is mandatory that he/she 
+shall register for that course in the subseque nt semester and attend the end 
+semester examination.  He/she should continue to register and appear for the 
+examination till he /she secures a pass. If the theory or Theory-cum-Practical course, 
+in which the student has failed, is an elective, the student may  register for the same 
+or any other elective in the subsequent semesters 
+ 
+12.3   A student who secures not less than 50% of total marks in the courses which are 
+evaluated using continuous assessment only, shall be declared to have passed the 
+examination. If a student fails to secure a pass, it is mandatory that he/she shall 
+register and repeat the course when it is offered next. H e/she should continue to 
+register and repeat the course till he/she secures a pass.   
+  
+M.E. Regulation _CBCS_2018-19 
+ 
+15                                                                                                   56
+th
+ Academic Council Meeting on  21.07.2018 
+ 
+12.4 Award of Grades  
+Range of Total Marks (TM) 
+(Continuous assessment +Terminal Examination) 
+Letter Grade Grade Point 
+(GP) 
+10090  TM  S 10 
+9080  TM  A 9 
+8070  TM  B 8 
+7060  TM  C 7 
+6050  TM  D 6 
+500  TM  U 0 
+Non-completion of a semester(Repeat course) I 0 
+Withdrawal from terminal examination W 0 
+Absent AA 0 
+
+
+
+ N
+i
+i
+N
+i
+ii
+C
+GPC
+GPA
+1
+1  
+N is the number of courses registered in a particular semester (except value added 
+courses),  iGP  is the grade point obtained in thi course and iC is the number of 
+credits assigned to thi course. Cumulative GPA (CGPA) will be calculated when the 
+student is declared to be eligible for the award of the degree. CGPA calculation is 
+based on all the courses considered (vide clause 6.2) for the award of the degree.   
+ 
+13.0 ISSUE OF GRADE CARD 
+ 
+13.1   The consolidated grade card will be issued, through the head of the department, when 
+the student is declared to be eligible for the degree. The consolidated grade card will 
+contain the following information: 
+i. The courses for which credits are earned  
+ii. Grade obtained in each course 
+iii. Cumulative grade point average earned during the course 
+iv. Month and year of successful appearance 
+v. Course code and title 
+13.2 Grade Card will be issued at the en d of each semester examinations. The Grade 
+Card will contain the following information: 
+i. The credits registered and earned in the particular semester  
+ii. Grade obtained in each course 
+iii. Grade point average earned in the particular semester 
+iv. Cumulative grade point average earned until the semester. 
+v. Course code and title 
+M.E. Regulation _CBCS_2018-19 
+ 
+16                                                                                                   56
+th
+ Academic Council Meeting on  21.07.2018 
+ 
+14.0  ELIGIBILITY FOR THE AWARD OF DEGREE 
+ 
+A student shall be declared to be eligible for the award of the degree if he/she has 
+satisfied the following  
+a. A student seeking M.E degree shall be required to undergo the  prescribed 
+courses of study and evaluation in the college for the specified duration and to 
+pass all the examinations prescribed therefore. 
+b. He/ she should register for all the courses prescribed in the curriculum of the 
+respective degree programme, fulfill the requirement of credits in each category of 
+credit distribution, pass in all mandatory courses in the curriculum  and earn the 
+minimum number of 68 credits  
+c. The maximum time limit for the completion of the M.E Degree programmes will be 
+4 (Four) years from the date of admission to the first semester of the programme  
+d. The student completes the NCC / NSS /Sports requirements. 
+e. No disciplinary action pending against the student. 
+ 
+15.0  CLASSIFICATION OF THE DEGREE AWARDED 
+15.1. First class with Distinction 
+A student who qualifies for the award of degree (vide cla use 14.0) having passed the 
+examination in all registered courses in his / her first appearance  (including industry 
+supported courses), within THREE years including the authorized Break of Study of 
+One Year , and securing a CGPA of not less than 8. 50 shall be declared to have 
+passed in First class with distinction and should not have been prevented from writing 
+end semester examination due to lack of attendance in any of the courses.  
+The a uthorized break of study (vide clause 16.0) and withdrawal from the 
+examination (vide clause 17.0) will not be counted as an attempt. 
+15.2. First Class 
+A student who qualifies for the award of degree (vide clause 14.0) having passed the 
+examination in all the courses within THREE years including the authorized Break of 
+Study of One Year and securing a CGPA of not less than 7.00 shall be declared to 
+have passed in First class. The authorized break of study (vide clause 16.0) and 
+withdrawal from the examination (vide clause 17.0) will not be counted as an attempt. 
+15.3. Second Class 
+All other students (not covered in 15.1 and 15.2) who qualify for the award of degree 
+having passed the examination in all the courses and fulfilling the requirements given 
+in clause 14.0 above shall be declared to have passed in Second Class. 
+M.E. Regulation _CBCS_2018-19 
+ 
+17                                                                                                   56
+th
+ Academic Council Meeting on  21.07.2018 
+ 
+15.4 A student who is absent for end semester examination in a course /  Dissertation  
+work after having registered for the same shall be considered to have appeared in 
+that (except approved withdrawal from end semester examination) for the purpose of 
+classification. 
+ 
+16.0 TEMPORARY BREAK OF STUDY FROM A PROGRAMME 
+16.1. A student is not normally permitted to break the study temporarily. However, if a 
+student intends to temporarily discontinue the programme in the middle for valid 
+reasons (such as accident or hospitalization due to prolonged ill health) and to rejoin 
+the programme, he/she shall apply in advance to The Principal, through the Head of 
+the Department stating the reasons, in any case, not later than the last lecture day, 
+provided he/she fulfills the requirement in Clause 7.0.    
+ 
+16.2   The student permitted to rejoin the programme after the break shall be governed by 
+the rules and regulations in force at the time of rejoining. 
+ 
+16.3    The duration specified for passing all the courses for the purpose of classification vide 
+Clause 15.1 and 15.2 shall be increased by the period of such break of study 
+permitted. 
+ 
+16.4    The total period for completion of the programme reckoned from the commencement 
+of the  first semester to which the student was admitted shall not exceed the 
+maximum period specified in clause 14.0 irrespective of the  period of break of study 
+in order that he/she may be eligible for the award of the degree. 
+ 
+16.5   If any student is detained for want of requisite attendance, progress and good 
+conduct, the period spent in that semester shall not be considered as permitted 
+‘Break of Study’. 
+ 
+17. 0 PROVISION FOR WITHDRAWAL FROM THE EXAMINATIONS 
+ 
+17.1  A student will be permitted to withdraw in any one of the semesters except first 
+semester during the entire duration of the degree programme for valid and genuine 
+reasons by making an application in the office of  the Controller of Examinations 
+through the respective Head of the Department , at least one day in advance of the 
+last theory examination in that semester. When he /she appear subsequently, he / 
+M.E. Regulation _CBCS_2018-19 
+ 
+18                                                                                                   56
+th
+ Academic Council Meeting on  21.07.2018 
+ 
+she have to appear for all the enrolled courses of that semester on registration and 
+payment of fees. Subsequent appearance will not be counted as separate attempt. 
+ 
+17.2 Those students who withdraw are eligible for the award of First Class and First Class 
+with Distinction as per the requirement in this regard.   However he / she will not be 
+considered for ranking. 
+ 
+17.3 Withdrawal is permitted ONLY ONCE  during the entire duration of the degree 
+programme. 
+ 
+17.4.  Withdrawal is not permitted to the student who has not satisfied the               
+conditions prescri bed in clause 7.0 as requirements for appearing in the end 
+semester examination.  
+ 
+17.5.  Withdrawal is permitted for the end semester examinations in the final semester, only 
+if the period of study the student concerned does not exceed 3 years as per clause 
+15.1. 
+ 
+18.0 DISCIPLINE 
+ 
+18.1    Every student is required to observe discipline and decorous behavior both inside and 
+outside the college and not to indulge in any activity, which will tend to bring down the 
+prestige of the college.  The Principal shall constitute a disciplinary committee to 
+enquire into acts of indiscipline and notify the institution about the disciplinary action 
+recommended for approval. In case of any serious disciplinary action which leads to 
+suspension or dismiss al, then a special committee shall be constituted by the 
+Principal for taking the final decision.  
+ 
+18.2    If a student indulges in malpractice in any if the Examinations, the student shall be 
+liable for punitive action as prescribed by the College from time to time.  
+ 
+19.0 REVISION OF REGULATIONS AND CURRICULUM 
+The standing committee/Academic Council of the College reserves the right to revise 
+or change or amend the regulations, the scheme of examinations, the curriculum and 
+the syllabi from time to time if found necessary. 
+  
+M.E. Regulation _CBCS_2018-19 
+ 
+19                                                                                                   56
+th
+ Academic Council Meeting on  21.07.2018 
+ 
+20.0 SPECIAL CASES 
+In the event of any clarification in the interpretation of the above rules and 
+regulations, they shall be referred to the Standing Committee.  The Standing 
+Committee will offer suitable interpretations/ clarificatio ns /amendments required for 
+special case on such references and get them ratified in the next meeting of the 
+Academic Council. The decision of the Academic Council is final. 
+ 
+***** 

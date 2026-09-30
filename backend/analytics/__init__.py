@@ -1,0 +1,1 @@
+"""Analytics subsystem: aggregates computed live from the database."""

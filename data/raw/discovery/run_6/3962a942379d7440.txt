@@ -1,0 +1,630 @@
+Sl NoRegistration Number Name Degree Branch Campus Placed Company
+1 21B002 ABINAYA  ALAGUMANI BE Civil On CampusPinnacle Infotech
+2 21B004 AGALYA  MALAICHAMY BE Civil On CampusLNT ECC
+3 21B006 AKILESH SRINIVASAN BE Civil On CampusEversendai Construction Private Limited
+4 21B007 AKSHAYAA PANCHAVARNAM BE Civil On CampusVA Tech Wabag 
+5 21B008 ALAGAPPAN SAIRAM BE Civil On CampusConserve
+6 21B009 ALAN JOHN PETER BE Civil On CampusRCI Digital Solutions
+7 21B013 ARUNADEVI  ANGUCHAMY BE Civil On CampusLNT ECC
+8 21B014 Ashvanth Jagatheesan BE Civil On CampusEversendai Construction Private Limited
+9 21B015 AVINA BATHAN GANESH BABU BE Civil On CampusSobha Constructions LLC, Accenture (ASE)
+1021B016 AVINASH KUDUVA RENGACHARY JEYASRI MAI BE Civil On CampusAarbee Structures
+1121B017 BHAGAVATHI  KOLAPPAN BE Civil On CampusSobha Constructions LLC
+1221B019 BHARGAVEE SARAVANAKUMAR MANCHULA BE Civil On CampusLNT ECC
+1321B020 BHUVANESWAR GANDHI BE Civil On CampusVA Tech Wabag 
+1421B030 FARZANA FATHIMA SAKKARAI MEER BE Civil On CampusPinnacle Infotech
+1521B034 HARI HARA NANDHAN THIRUKONDA MAHESH BABU BE Civil On CampusLNT ECC
+1621B037 HARINIBALA YUVARAJA BE Civil On CampusVA Tech Wabag 
+1721B046 Jeyasurya  Katturaja BE Civil On CampusPinnacle Infotech
+1821B047 Jhanani Ramachandran Rampanndian BE Civil On CampusConserve
+1921B050 KRISHNA SHREE VENKATASAMY BE Civil On CampusRCI Digital Solutions
+2021B051 LOYOLO KEVIN RAJA  AROCKIA JEYA RAJA BE Civil On CampusAarbee Structures
+2121B053 MENAKA KANTHI BALASUBRAMANIAN BE Civil On CampusConserve
+2221B056 Mohana Malaichamy BE Civil On CampusAarbee Structures
+2321B058 MUTHU VIGNESH DHANDAYUTHAPANI BE Civil On CampusLNT ECC
+2421B063 NITHARSHAN M BE Civil On CampusLNT ECC
+2521B068 PAVITHRA REGUPATHY KANNAN BE Civil On CampusVA Tech Wabag 
+2621B070 PRATHIKSHA THOGULUVA SIVAKUMAR BE Civil On CampusEversendai Construction Private Limited
+2721B071 PRAVEEN KUMAR MURALIDHARAN BE Civil On CampusVA Tech Wabag 
+2821B072 PRIYA NAVOTHITHA  NAGARAJAN BE Civil On CampusConserve
+2921B073 PRIYADHARSHINI GUNASEELAGURU BE Civil On CampusAarbee Structures
+3021B082 RENLIN RESHMI RAJAKUMAR SUBHA BE Civil On CampusVA Tech Wabag 
+3121B085 ROSHAN FATHIMA ABDUL SARDHAR BE Civil On CampusTechnip
+3221B087 Sanjai K BE Civil On CampusAarbee Structures
+3321B089 SETHURAMAN DHARMARAJ BE Civil On CampusEversendai Construction Private Limited
+3421B092 Somasundaram  Muthukumar BE Civil On CampusVA Tech Wabag 
+3521B093 SOWMIYA SRI JEMBU SADEESH KUMARAN BE Civil On CampusEversendai Construction Private Limited
+3621B095 Srihari Parthiban BE Civil On CampusSobha Constructions LLC
+3721B096 Sriranjani Venkateshwaran BE Civil On CampusAarbee Structures
+3821B097 SRUTHIKA RAJASANKAR MANGALAKARTHIYAYINI BE Civil On CampusTata Consultancy Services (Ninja)
+3921B100 SUDHARSAN  CHINNAN BE Civil On CampusSobha Constructions LLC
+4021B101 SURENDHAR KASI VISWANATHAN BE Civil On CampusLNT ECC
+4121B102 SURUTHIKA VINAYAGAR BE Civil On CampusLNT ECC
+4221B105 SWASTHIKKUMAR MAHARAJA BE Civil On CampusAarbee Structures
+4321B112 VIMALATHITHAN SUNDARAKANNAN BE Civil On CampusEversendai Construction Private Limited
+4421B115 VISHNUPRABHA KADUSANGU JANARTHANAN BE Civil On CampusJGC
+4521B117 Aathithya Hemanathan BE Civil On CampusSobha Constructions LLC
+4621B119 BALAJI RAVICHANDRAN BE Civil On CampusEversendai Construction Private Limited
+4721B120 BHARATH KANAKARAJ BE Civil On CampusPinnacle Infotech
+4821B129 Kumaresan Elumalai BE Civil On CampusPinnacle Infotech
+4921B132 RAJATH KIRUBA PRABHAKARAN BE Civil On CampusSobha Constructions LLC
+5021B136 Sujitha Thoguluva Selvarajan BE Civil On CampusEversendai Construction Private Limited
+5121C002 Abhinav V BE CSE On CampusComcast, Tata Consultancy Services (Ninja)
+5221C004 Abishek Madhavan BE CSE On CampusAccenture (ASE), Cognizant (Gen C)
+5321C005 Abisini Some Rajesh BE CSE On CampusMr Cooper
+5421C006 AISHWARYA SHREE H BE CSE On CampusJMAN, Tata Consultancy Services (Digital)
+5521C009 Alsafa Kamaruz Zaman BE CSE On CampusTata Consultancy Services (Ninja)
+5621C010 Amirtha Siva Balan Mohanan Lekshmi Thangam BE CSE On CampusFidelity
+5721C011 Amirthavarshini Sakthivel BE CSE On CampusTrimble
+5821C012 ANANTHA SHREE VENKATESH RAJA BE CSE On CampusCaterpillar
+5921C013 Anuvidhya Karthikeyan BE CSE On CampusTata Consultancy Services (Ninja)
+6021C015 Arthi Perumal BE CSE On CampusComcast, Tata Consultancy Services (Ninja)
+6121C016 Bhuvaneshwari Marikkannu BE CSE On CampusComcast
+6221C017 Vivegan Chelliah Jeyaseelapandian BE CSE On CampusCognizant (Gen C)
+6321C018 Chandru Ravi BE CSE On CampusAccenture (ASE), Tata Consultancy Services (Ninja)
+6421C019 Charumathy Mahalingam BE CSE On CampusLTI Mindtree
+6521C020 Darshini Sarva Babu BE CSE On CampusEducational Initiatives Private Limited
+6621C021 Dhakshesh Thasma Lakshminarayanan Anitha BE CSE On CampusHPE, Accenture (ASE), Tata Consultancy Services (Ninja)
+6721C022 Dhanalakshmi Udhayakumar BE CSE On CampusHoneywell
+6821C023 Dharshini Gopi BE CSE On CampusHPE, Accenture (ASE), Tata Consultancy Services (Ninja)
+6921C024 Difrina Shajin BE CSE On CampusInfosys, Cognizant (Gen C)
+7021C025 Dinesh Kumaar Muthukumar Sathyabama BE CSE On CampusTrimble
+7121C026 Dinesh Prabhu Saravanan BE CSE On CampusEmbedUR
+7221C027 Dineshkumar Selvan BE CSE On CampusCognizant (Gen C), Tata Consultancy Services (Ninja)
+7321C028 Fayeeka  Ayub Khan BE CSE On CampusAthenaHealth
+7421C029 GAYATHRI SENTHILKUMAR BE CSE On CampusAccenture (ASE), Cognizant (Gen C), Tata Consultancy Services (Digital)
+7521C031 Gokul Badrappan BE CSE On CampusCognizant (Gen C), Tata Consultancy Services (Ninja)
+7621C032 Gowri Priya Kalidass BE CSE On CampusKaleris [Navis] , Tata Consultancy Services (Ninja)
+7721C034 Haris Balaji Sivakumar BE CSE On CampusHPE, Accenture (ASE), Tata Consultancy Services (Digital)
+7821C035 Harish Saravanan BE CSE On CampusEducational Initiatives Private Limited
+7921C036 Harshini Natarajan BE CSE On CampusInfosys
+8021C037 Ishvarya Suresh BE CSE On CampusFidelity
+8121C038 Jaffar  Nisha  Nizamutheen BE CSE On CampusCaterpillar
+8221C039 Jaivishnu Kalirajan BE CSE On CampusComcast
+8321C041 Joshua   Russel John Sebastin BE CSE On CampusTrimble
+8421C042 KAARTHIK RAAMANATHAN  ALAGUSUNDARAM BE CSE On CampusRootquotient
+8521C045 Karthik Ramesh BE CSE On CampusTata Consultancy Services (Ninja), Anora
+8621C046 Keerthana Baskaran BE CSE On CampusCaterpillar
+8721C047 Kousalya  Thappali Ganeshbabu BE CSE On CampusSaasAnt
+8821C048 Lokitha Ravi BE CSE On CampusTata Consultancy Services (Ninja)
+8921C049 Madhav Sriganesh BE CSE On CampusZoho
+9021C050 Manorohith Bavesu BE CSE On CampusAccenture (ASE)
+9121C052 Mewanshwa Nongkynrih BE CSE On CampusRheinBrücke
+9221C054 MOHANDOSS VELMURUGAN BE CSE On CampusTata Consultancy Services (Digital)
+9321C055 Monika Muniyappan BE CSE On CampusLTI Mindtree, Accenture (ASE), Cognizant (Gen C), Tata Consultancy Services (Digital)
+9421C057 Nandhika  Thirukonda MuraliDharan BE CSE On CampusZoho
+9521C058 Naveen Babu Nattanmai Ram Prabhu BE CSE On CampusTrimble
+9621C059 Nikil Natarajan BE CSE On CampusHoneywell
+9721C060 Nishanth MalarMughilan BE CSE On CampusTata Consultancy Services (Digital)
+9821C061 Nithishkumar Nagaraj BE CSE On CampusTata Consultancy Services (Ninja)
+9921C062 Nithuna Ajith Kumar Srikumari Nair BE CSE On CampusCaterpillar
+10021C064 Padmavathi Ramanathan BE CSE On CampusAccenture (ASE), Cognizant (Gen C), Tata Consultancy Services (Digital)
+10121C065 Pandikumar Kennady BE CSE On CampusContentstack
+10221C066 Parthasarathi Chinnathambi BE CSE On CampusHoneywell, Tata Consultancy Services (Ninja)
+10321C067 PRABHA MURUGESAN BE CSE On CampusCognizant (Gen C), Tata Consultancy Services (Ninja)
+10421C068 Prakash R BE CSE On CampusHPE
+10521C069 Pranesh Sivakumar BE CSE On CampusCognizant (Gen C), Tata Consultancy Services (Digital)
+10621C071 Prathima Devi Pariharan BE CSE On CampusFidelity
+10721C072 Praveen Kumar Thennarasu BE CSE On CampusCapgemini
+10821C074 Ragul Senthilkumar BE CSE On CampusTata Consultancy Services (Ninja)
+10921C075 Ramagomathy Namasivayam BE CSE On CampusContentstack
+11021C076 Rithick Joshua BE CSE On CampusAccenture (ASE), Cognizant (Gen C), Tata Consultancy Services (Ninja)
+11121c077 Sai Arunaa Varshini Nagarajan BE CSE On CampusAccenture (ASE), Cognizant (Gen C), Oracle
+11221C078 Sajeevan Amar BE CSE On CampusZoho
+11321C079 Sakthi  Murugan BE CSE On CampusFacilio
+11421C080 Sakthi Pavithra Marimuthu BE CSE On CampusHPE
+11521C081 Sakthisa Selvaraj BE CSE On CampusKLA Tencor
+11621C082 Sanjay Kumar BE CSE On CampusCognizant (Gen C), Tata Consultancy Services (Digital)
+11721C083 Sanjay Nithish Keeranur Muthu Swami BE CSE On CampusTata1mg Technologies, Tata Consultancy Services (Digital)
+11821C084 SELVA MEENA MUTHUKUMARAN BE CSE On CampusTata Consultancy Services (Ninja)
+11921C085 Shabari Prakash Sivarajan Viswanathan BE CSE On CampusMulticoreware
+12021C086 SHALINI  PALANISAMY BE CSE On CampusAccenture (ASE)
+12121C087 ShankarNarayanan Mathirajan BE CSE On CampusLTI Mindtree, Tata Consultancy Services (Ninja)
+12221C088 SHAYE SREE NIVASHINI  SOCKALINGAM RAJAGOPALAN BE CSE On CampusComcast
+12321C089 SHENBAGA PRIYA CHELLAPANDIAN BE CSE On CampusZoho
+12421C090 Shiba Gori Banu Hussain BE CSE On CampusAccenture (ASE)
+12521C091 Shree Harini Kanchanamalai Mohanakrishnan BE CSE On CampusAccenture (ASE), Navis
+12621C092 Shree Nithi Kiri Gopi BE CSE On CampusCognizant (Gen C), Tata Consultancy Services (Ninja)
+12721C093 Sibhiraj Hariharan BE CSE On CampusTata Consultancy Services (Digital)
+12821C095 Sivasubramanian Avudaikumar BE CSE On CampusFidelity
+12921C096 Sivasurya Palanivelrajan BE CSE On CampusLTI Mindtree, Accenture (ASE), Cognizant (Gen C), Tata Consultancy Services (Digital)
+13021C097 Soubarnika Musuvathi Srinivasan BE CSE On CampusZoho
+13121C099 SRI SABARISH THIRUNAVUKKARASU BE CSE On CampusLTI Mindtree, Cognizant (Gen C), Tata Consultancy Services (Ninja)
+13221C100 Srivarsan  Sekar BE CSE On CampusAccenture (ASE), Tata Consultancy Services (Ninja)
+13321C102 Suba Harini Sathiya Narayanan BE CSE On CampusTransunion
+13421C103 SUBA SOWANDARIYA SATHISH KUMAR BE CSE On CampusCognizant (Gen C), Tata Consultancy Services (Digital)
+13521C104 Sudalaiyandi Sabarish Kumar Arunachala Manikandan BE CSE On CampusRootquotient
+13621C106 Swaminathan Sundararaman BE CSE On CampusLTI Mindtree, Tata Consultancy Services (Ninja)
+13721C107 Swarnamalya  Thyada BE CSE On CampusCaterpillar
+13821C109 Theeraj Jegan N BE CSE On CampusEducational Initiatives Private Limited
+13921C110 Thiyagarajan Shanmugam BE CSE On CampusEducational Initiatives Private Limited
+14021C111 Vaishnavi Thangamuthu BE CSE On CampusAthenaHealth
+14121C113 Vasikaran Kalidasan BE CSE On CampusZoho
+14221C114 VENKADESH SREE KUMAR BE CSE On CampusContentstack
+14321C116 VUTUKURU  VINEESHA BE CSE On CampusOracle
+14421C117 Vishvak Musuvathi Kumaran Chandra BE CSE On CampusAccenture (ASE), Tata Consultancy Services (Digital)
+14521C123 Hari Gokul Prasad Kanthallu Prakash BE CSE On CampusTata Consultancy Services (Ninja)
+14621C124 Hari Haran Kannan BE CSE On CampusTata Consultancy Services (Ninja)
+14721C125 Harish kumar Laguduva Mothilal BE CSE On CampusTiger Analytics
+14821C126 Harish kumar  Prabaharan BE CSE On CampusAccenture (ASE)
+14921C127 Jayapradha Balasubramanian BE CSE On CampusTata Consultancy Services (Ninja)
+15021C128 KAUSHALYA JANAKI MANIKANDAN BE CSE On CampusLTI Mindtree
+15121C133 Nimal Vishal Naatamai Krishnan Vijayakumar BE CSE On CampusComcast
+15221C135 Premlal Bhava Dhamodharan BE CSE On CampusComcast, Tata Consultancy Services (Ninja)
+15321C136 Sakthi Kiruthika Laguduva Palani BE CSE On CampusLTI Mindtree, Accenture (ASE), Tata Consultancy Services (Digital)
+15421C138 Selvakeerthana Kumaramurugan BE CSE On CampusHPE
+15521C139 SHANTHINI VELMURUGAN BE CSE On CampusAccenture (ASE)
+15621C141 Sri Sivanesan Baskar BE CSE On CampusAccenture (ASE)
+15721C142 SUBANU KASILIYA JAMUNA YOGANATHAN BE CSE On CampusCapgemini
+15821C144 Vignesh Muthiyalu BE CSE On CampusCognizant (Gen C)
+15921D001 AATHIRA MUTHUKUMAR BE ECE On CampusHoneywell, Tata Consultancy Services (Ninja)
+16021D003 AJITHA  RATHA KRISHNAN BE ECE On CampusAccenture (ASE)
+16121D004 AKSHAYA SAKKARAVARTHY MANJU BE ECE On CampusCognizant (Gen C), Tata Consultancy Services (Digital)
+16221D005 ANANDBABU MURUGAN BE ECE On CampusAccenture (ASE)
+16321D006 ANCY RIGA SATHIADAS ARULRAJASUBHA BE ECE On CampusHoneywell, Accenture (ASE)
+16421D007 ANUSHA MEENAKSHISUNDER BE ECE On CampusIBM
+16521D008 ASHOK VARTHAN MURUGESAN BE ECE On CampusTata Consultancy Services (Ninja)
+16621D009 ASHWIN  VETTIVEL JEYASREE BE ECE On CampusHoneywell
+16721D011 BADRINARAYANAN  MANIVANNAN BE ECE On CampusHoneywell, Accenture (ASE)
+16821D012 Bairavi Nagarajapadmanapan BE ECE On CampusAccenture (ASE)
+16921D013 DEVADHARSHINI SUBRAMANIAN BE ECE On CampusEducational Initiatives Private Limited, Accenture (ASE)
+17021D014 DEVIKA ARUMUGAM BE ECE On CampusCapgemini
+17121D015 FAAZELAH MOHAMED FAROOK BE ECE On CampusLTI Mindtree, Cognizant (Gen C)
+17221D016 GAYATHRI BASKARAN BE ECE On CampusTrimble
+17321D017 GLADSON KALANJIADURAI BE ECE On CampusMulticoreware
+17421D018 GNANAMBAL MANIVANNAN BE ECE On CampusComcast
+17521D019 GOKILAVANI PALANIVELRAJA BE ECE On CampusTata Consultancy Services (Digital)
+17621D020 GOMATHI SANKAR BALASUBRAMANIAN BE ECE On CampusTata Consultancy Services (Ninja)
+17721D021 GOPIKA RANI KRISHNASAMY BE ECE On CampusCaterpillar
+17821D022 HAJMEER KAJA ABUTHAKIR BE ECE On CampusAccenture (ASE), Tata Consultancy Services (Ninja)
+17921D023 HARI PRASATH MANIKANDAN BE ECE On CampusTAFE
+18021D024 HARINI AKILANDAN BE ECE On CampusComcast
+18121D025 Harini Senthilkumar BE ECE On CampusHoneywell, LTI Mindtree, Accenture (ASE), Cognizant (Gen C)
+18221D026 HARINI MANISELVAN BE ECE On CampusJK Fenner
+18321D027 HARINI VEERAPANDIAN BE ECE On CampusLTI Mindtree, Cognizant (Gen C)
+18421D030 Harshinii Sangaiah BE ECE On CampusAccenture (ASE), Cognizant (Gen C), Tata Consultancy Services (Ninja)
+18521D031 HEMACHANDRAN MURUGAN BE ECE On CampusCognizant (Gen C)
+18621D032 HEMANTH PANDIAN DEVI KAMAKSHI RAMESH PANDIAN BE ECE On CampusTata Consultancy Services (Ninja)
+18721D033 JANAKI RAMAN SARAVANAN BE ECE On CampusMBit Wireless, Tata Consultancy Services (Ninja)
+18821D035 JOTHI SHRI KUMARAVEL BE ECE On CampusHCL
+18921D036 KABILESH DHANABAL BE ECE On CampusHCL
+19021D037 KARTHIKA DEVARAJAN BE ECE On CampusTrimble
+19121D038 KARTHIKA SELVAKUMAR BE ECE On CampusAccenture (ASE), Tata Consultancy Services (Ninja)
+19221D039 KATHIRVEL MOHAN KUMAR BE ECE On CampusCaterpillar
+19321D040 KEERTHIKA KARUPPIAH BE ECE On CampusSusan Technology
+19421D041 KEERTHIVASAN BALASUBRAMANIAN BE ECE On CampusAccenture (ASE), Tata Consultancy Services (Ninja)
+19521D042 KESAV CHAND AMBILI BE ECE On CampusTata Consultancy Services (Ninja)
+19621D043 KOKILA SUBRAMANIAM BE ECE On CampusMBit Wireless, Accenture (Adv ASE), Cognizant (Gen C), Tata Consultancy Services (Ninja)
+19721D044 KURINJI KANNAN BE ECE On CampusTata Consultancy Services (Ninja)
+19821D045 LAKSHITA MALVANNAN BE ECE On CampusIBM, Tata Consultancy Services (Ninja)
+19921D047 LOKESH KUMAR BE ECE On CampusMBit Wireless, Tata Consultancy Services (Digital)
+20021D048 MADHAVAN VENKATACHALAM BE ECE On CampusEmbedUR
+20121D049 Madhumita G BE ECE On CampusLTI Mindtree, Tata Consultancy Services (Ninja)
+20221D050 MADHUMITA S BE ECE On CampusTata Consultancy Services (Ninja)
+20321D051 MAKHBOOL FATHIMA BEGUM NAZER SHERIFF BE ECE On CampusTata Consultancy Services (Ninja)
+20421D054 MEENAKSHI GOWTHAMAN BE ECE On CampusComcast
+20521D055 MEENALOSHINI RAMASAMY BE ECE On CampusAccenture (ASE), Tata Consultancy Services (Ninja)
+20621D057 METHIRA RAJADURAI BE ECE On CampusLTI Mindtree
+20721D058 MITHUNRAJA BALAMURUGAN BE ECE On CampusAnora
+20821D059 MUKESH THANGAVEL BE ECE On CampusZoho
+20921D060 MUNIA BHARATHI DHANABAL BE ECE On CampusCognizant (Gen C), Tata Consultancy Services (Ninja)
+21021D062 NALINI SIVANANTHAM BE ECE On CampusCognizant (Gen C)
+21121D064 NAVAGITHANJALI GANESHKUMAR BE ECE On CampusComcast
+21221D065 NEKITA SHRI ALAGUMALAI SELVAKUMAR BE ECE On CampusEmbedUR
+21321D066 NITHISH GOWTHAM  ATHISUBRAMANIAN RAMESH BE ECE On CampusHarman India
+21421D067 NITHIVARSHAN KANNAN BE ECE On CampusComcast
+21521D068 NIVETHETHA ANANDAPPAN     MALLIKA DEVI BE ECE On CampusMMRFIC
+21621D069 OMPRAKASH B BE ECE On CampusCapgemini
+21721D070 POO ANNAMALAI VEERASEKAR BE ECE On CampusEmbedUR
+21821D073 PRIYANKA BALAJI BE ECE On CampusHoneywell, Tata Consultancy Services (Ninja)
+21921D074 PUSHBA KALA  MURUGESAN BE ECE On CampusTrimble
+22021D076 RAKSHAN JAGAN SRIDHAR BE ECE On CampusMulticoreware
+22121D077 RAVI PRAKASH MEENASHI SUNDARAM BE ECE On Campuse-con
+22221D078 RIASHREE PITCHANDI BE ECE On CampusLTI Mindtree, Accenture (ASE), Tata Consultancy Services (Ninja)
+22321D079 RISHAPA  PANDITHURAI BE ECE On CampusTata Consultancy Services (Ninja)
+22421D080 ROSHINI  BALAMURUGAN BE ECE On CampusMMRFIC
+22521D082 SAKTHEESWARAN ANANDAN BE ECE On Campuse-con
+22621D083 SAKTHIVEL THANGAPANDIAN PANDIARAJAN KASTHURI BE ECE On CampusTexas Instruments, LTI Mindtree, Cognizant (Gen C)
+22721D084 SANJAY SIVASUBRAMANI BE ECE On CampusTata Consultancy Services (Digital)
+22821D086 SAUMIYA MUTHUPPANDI BE ECE On CampusComcast, Tata Consultancy Services (Ninja)
+22921D087 SENTHILRAJAN SUBRAMANIYAN BE ECE On CampusTata Consultancy Services (Ninja)
+23021D088 SHALINI LAKSHMI KARTHIK BE ECE On CampusMMRFIC
+23121D089 SHANMUGA PRIYA PRATHABAN BE ECE On CampusTata Consultancy Services (Ninja)
+23221D091 SHILMA JEBA RATHI SUDHAKAR SARGUNA RAJ BE ECE On CampusTata Consultancy Services (Ninja)
+23321D092 SHREYA RANGACHARI BE ECE On CampusComcast
+23421D093 SIVANI RAMESHKUMAR BE ECE On CampusHoneywell, Accenture (ASE)
+23521D094 SRIRAM D BE ECE On CampusKAYNES TECHNOLOGY
+23621D095 SRIRAM VIGNESH VENKATESHWARAN BE ECE On CampusEmbedUR
+23721D097 Suba Malini Suthanthira Mani BE ECE On CampusCognizant (Gen C)
+23821D098 SUBHAA SHREE MUTHUKUMAR BE ECE On CampusLTI Mindtree, Accenture (ASE), Tata Consultancy Services (Prime)
+23921D100 SURIYA RAMKUMAR  SOUNDARAPANDIAN BE ECE On CampusInfosys, Accenture (ASE)
+24021D101 SURUTHI RAVINDRAVEL BE ECE On CampusEinfochips (an Arrow company)
+24121D103 SUSMITHA JEGATHESAN BE ECE On CampusTata Consultancy Services (Ninja)
+24221D104 SUVETHA SREE AYYAPPAN BE ECE On Campuse-con
+24321D105 SWATHI MANOHARAN BE ECE On CampusLTI Mindtree, Tata Consultancy Services (Ninja)
+24421D106 SYED ABRAR  GHOUSE BE ECE On CampusTata Consultancy Services (Ninja), ACL Digital
+24521D107 SYED ALI FATHIMA ABUBAKKAR SITHIK BE ECE On CampusTexas Instruments, Cognizant (Gen C), Tata Consultancy Services (Ninja)
+24621D109 THANUS KARTHIK GOVINDAN BALAMURALI BE ECE On CampusCognizant (Gen C), Tata Consultancy Services (Ninja)
+24721D110 THARANYA MANICKAM BE ECE On CampusComcast
+24821D111 UBASINI MANIVANNAN BE ECE On CampusCaterpillar, Accenture (ASE)
+24921D112 VAIRAVAN VEERAPPAN BE ECE On CampusTata Consultancy Services (Ninja)
+25021D113 VARSHA MUTHUPANDIAN BE ECE On CampusLTI Mindtree, Accenture (ASE), Caterpillar
+25121D114 VARUN SIVAKUMAR BE ECE On CampusZoho
+25221D115 VISALAKSHI MUTHUKUMAR BE ECE On CampusTransunion
+25321D116 VISHNU MURUGAN GEETHA BE ECE On CampusTata Consultancy Services (Ninja)
+25421D117 VISHNUPRIYA SUNDARESAN BE ECE On CampusCapgemini
+25521D118 VISHWADHIKA RAJAVENKATACHALAM BE ECE On CampusAccenture (ASE), Tata Consultancy Services (Ninja)
+25621D120 ABISHEK KUMAR MANI AYYARSAMY BE ECE On CampusHCL
+25721D122 ARUNBALAJI RAJA BE ECE On CampusTata Consultancy Services (Ninja)
+25821D123 DHARSHINI KRISHNAMOORTHY BE ECE On CampusComcast
+25921D124 JANANI SENTHILVEL BE ECE On CampusLTI Mindtree
+26021D128 MUTHU VAIRAVAN BE ECE On CampusDHIYA MANPOWER
+26121D131 PRIYADHARSHINI S BE ECE On CampusKAYNES TECHNOLOGY
+26221D132 RAKCHA AMBALAM BASKAR BE ECE On CampusHCL
+26321D135 SUBBIAH KENGAMUTHU BE ECE On CampusTata Consultancy Services (Ninja)
+26421E 061 Moirangthem  Dharamaraj Singh BE EEE On CampusVA Tech Wabag , Tata Consultancy Services (Ninja)
+26521E002 ABINAYA SENTHILKUMAR BE EEE On CampusAccenture (ASE), Tata Consultancy Services (Ninja)
+26621E004 ADHUL CHANDRAN JEYA CHANDRAN SUJITHRA BE EEE On CampusEmbedUR
+26721E005 AJAY KARTICK  MANIVANNAN BE EEE On CampusTata Consultancy Services (Ninja)
+26821E006 ALAGIYAMEENAL A BE EEE On CampusRenault Nissan Automotive India Private Limited (RNAIPL)
+26921E008 ANEESH KUMAR KUPPA SATHISH BAPU BE EEE On CampusTata Consultancy Services (Ninja)
+27021E009 Ann Emly Joseph Amarnath BE EEE On CampusTata Consultancy Services (Ninja)
+27121E010 ARUNPANDIYAN  PALPANDI BE EEE On CampusVA Tech Wabag 
+27221E011 ASMITHA  P BE EEE On CampusTata Consultancy Services (Ninja)
+27321E012 Balaji  Venkatesan BE EEE On CampusRenault Nissan Automotive India Private Limited (RNAIPL)
+27421E016 DEEPAK JOEL JOSEPH PAUL BE EEE On CampusTata Consultancy Services (Ninja), Anora
+27521E017 Deepika  Pandithurai BE EEE On CampusSusan Technology
+27621E018 DHARANI HARIHARAN BE EEE On CampusTata Consultancy Services (Ninja)
+27721E019 DINESHKUMAR R BE EEE On CampusURC
+27821E021 DURGA  GOWRAN BE EEE On CampusCapgemini
+27921E022 EMORA MERCY  GNANA SEKAR BE EEE On CampusMando
+28021E028 Guru Harish  Ganesh BE EEE On CampusTata Consultancy Services (Ninja)
+28121E030 Haribalakrishnan C BE EEE On CampusTexas Instruments, Tata Consultancy Services (Ninja)
+28221E032 HARITHA SRI  KANDAALU GOBINATH BE EEE On CampusLTI Mindtree
+28321E033 Harshini Miras Jegan Miras BE EEE On CampusAccenture (ASE)
+28421E035 HEMAMALINI AYYAPPAN BE EEE On CampusLTI Mindtree, Accenture (ASE)
+28521E038 ISWARYA SRI RAJA BE EEE On CampusCapgemini
+28621E040 JASMINE JUVERIYA ABDULLAH RAJA BE EEE On CampusLNT ECC
+28721E041 JEYA SURIYA  SUBATHRA KANNAN BE EEE On CampusHoneywell, Accenture (ASE)
+28821E043 KALAIYARASI KALAIGNAR BE EEE On CampusVA Tech Wabag 
+28921E044 Kalki Jeyaraman BE EEE On CampusCapgemini
+29021E047 Kanishkha Pandian BE EEE On CampusLTI Mindtree
+29121E050 Karthick Selvakumar BE EEE On CampusTata Consultancy Services (Ninja)
+29221E051 KARTHIK PONNUSAMY BE EEE On CampusStrategic Research Insights
+29321E053 KAVIYA Murugesan Sutha BE EEE On CampusAccenture (ASE)
+29421E054 KAVIYAA SHREE  MAHADEVAN BE EEE On CampusCapgemini
+29521E055 LAKSUN PAVENDRA SIVAKUMAR BE EEE On CampusMando
+29621E056 LALITH KUMAR UMAPATHY BE EEE On CampusCaterpillar, Tata Consultancy Services (Ninja)
+29721E059 MARIESWARI  SURESH BE EEE On CampusMando
+29821E062 MURUGESWARI  IYAPPAN BE EEE On CampusHoneywell, Tata Consultancy Services (Ninja)
+29921E063 Muthu Sangari  Thirumavalavan BE EEE On CampusSchneider Electric, LTI Mindtree
+30021E065 NANDHINI GANDHI BE EEE On CampusHoneywell, Accenture (ASE)
+30121E066 NANTHINI  ARUMUGAM BE EEE On CampusTata Consultancy Services (Ninja)
+30221E067 NAVEEN  ALAGUMALAI  HARIKRISHNAN BE EEE On CampusLTI Mindtree
+30321E068 Neelakandan Mahesh BE EEE On CampusTata Consultancy Services (Ninja), Sherpa Engineering
+30421E070 Pavithran Venkatasalam Santhi BE EEE On CampusTexas Instruments, LTI Mindtree
+30521E071 Perarasan Ramachandran BE EEE On CampusAccenture (ASE), Tata Consultancy Services (Ninja)
+30621E072 Praicy  A BE EEE On CampusLNT ECC
+30721E073 PRAVEEN Krishnakumar BE EEE On CampusSobha Constructions LLC
+30821E074 PREETIKA PONNUSAMYPANDIAN VENKATESAN BE EEE On CampusLTI Mindtree
+30921E076 PUJAA RAMASAMY DHANAPANDIAN BE EEE On CampusComcast
+31021E077 RAGAVI SUDALAIKANNU BE EEE On CampusLNT ECC
+31121E079 Raja Annamalai Muthiah BE EEE On CampusTata Consultancy Services (Digital)
+31221E080 RAMASUBRAMANIAN RAMESH BE EEE On CampusRenault Nissan Automotive India Private Limited (RNAIPL)
+31321E082 Roshan Joshua Jonathan BE EEE On CampusLTI Mindtree, Accenture (ASE), Schneider Electric, Cognizant (Gen C)
+31421E083 Sabarish Senthilkumar BE EEE On CampusTata Consultancy Services (Ninja), Sherpa Engineering
+31521E085 Sameena Dakshin Saleem BE EEE On CampusCognizant (Gen C)
+31621E086 SANJAY KUMAR SUBRAMANI BE EEE On CampusSobha Constructions LLC
+31721E087 Santha Priya  Chandrasekar BE EEE On CampusEinfochips (an Arrow company), Accenture (ASE)
+31821E088 Santhosh Kannan BE EEE On CampusTata Consultancy Services (Ninja)
+31921E090 Santosh N P BE EEE On CampusCaterpillar
+32021E091 Sathish Kumar  Maduraisamy Prathipa BE EEE On CampusCognizant (Gen C), Tata Consultancy Services (Ninja)
+32121E092 SATHIYAPRIYAN MURUGAPANDIAN BE EEE On CampusTrimble
+32221E093 SATHYAJITH SUKUMAR BE EEE On CampusCognizant (Gen C), Oracle
+32321E095 Shanmuga Prathi Aandi Raja BE EEE On CampusVA Tech Wabag , Tata Consultancy Services (Ninja)
+32421E096 SHARMILADEVI RAJAPERUMAL BE EEE On CampusLNT ECC
+32521E097 SHIVA SOMASUNDARAM GANDHIMATHY BE EEE On CampusLTI Mindtree
+32621E098 SHRI SUBHIKSHA BALAKUMAR BE EEE On CampusCapgemini
+32721E101 Siddhaarth Ramkumar BE EEE On Campuse-con
+32821E102 SIVAHARINI SENTHIL KUMAR BE EEE On CampusEinfochips (an Arrow company)
+32921E104 Srikrishnika Sankarpandi BE EEE On CampusLNT ECC
+33021E105 Srilekha Radhakrishnan BE EEE On CampusSchneider Electric
+33121E107 SUJITHRA ARIVAZHAGAN BE EEE On CampusTiger Analytics
+33221E108 Sundhar Vengadesan BE EEE On CampusComcast
+33321E109 Sushmitaa Pushparaja Alamelu mangai BE EEE On CampusTechnip
+33421E110 Swathi Sri  Gnanamoney Prabhuram BE EEE On CampusJGC
+33521E111 TEJESH KUMAR GNANI NAGARAJAN BE EEE On CampusTata Consultancy Services (Digital)
+33621E112 Thanga Meena R BE EEE On CampusTVS Motors
+33721E115 Valliammai Arunachalam BE EEE On CampusAccenture (ASE)
+33821E116 Vanmathi Goudhaman BE EEE On CampusLTI Mindtree, Accenture (ASE), Tata Consultancy Services (Ninja)
+33921E117 VARSHA  JEEVAN BE EEE On CampusLTI Mindtree, Cognizant (Gen C), LNT ECC
+34021E118 Varshetha Rajkumar BE EEE On CampusSchneider Electric
+34121E120 VIDHYASAGAR TAMILARASAN BE EEE On CampusTata Consultancy Services (Ninja), Renault Nissan Automotive India Private Limited (RNAIPL)
+34221E121 VIGNESHWARAN JAWAHAR BABU BE EEE On CampusTrimble
+34321E122 VIJAYAGANESH NANDHAKUMAR BE EEE On CampusAccenture (ASE)
+34421E125 Deena  Dhayalan BE EEE On CampusRenault Nissan Automotive India Private Limited (RNAIPL)
+34521E128 Jeevan Ram  Vala Gopinath BE EEE On CampusACL Digital
+34621E130 Meena lakshmi Kumaravel BE EEE On CampusComcast
+34721E131 Praveen Thangaraju BE EEE On CampusThe Gaur
+34821E132 Rokesh Ganesan BE EEE On CampusConserve
+34921E133 Sarath Sundaram BE EEE On CampusSherpa Engineering
+35021E134 SARAVANAN  SUNDARAMOORTHY BE EEE On CampusThe Gaur, URC
+35121F002 Abdulfarith  RajaMaideen Abdulrahman BE MechatronicsOn CampusalfaTKG
+35221F003 Aishwarya Murugan BE MechatronicsOn CampusRenault Nissan Technology
+35321F004 Alagu pariksit A BE MechatronicsOn CampusConserve
+35421F005 Anguraj Shanmugasundaram BE MechatronicsOn CampusEmbedUR
+35521F006 BALAJI RAJAMANICKAM BE MechatronicsOn CampusJK Fenner
+35621F007 Balaji Prabhu Saravanakumar BE MechatronicsOn CampusFacilio
+35721F008 Boobalan karthick Arumugam BE MechatronicsOn CampusTAFE
+35821F010 Devika Chokkalingu Ganesan BE MechatronicsOn CampusTVS Motors
+35921F011 Dhanush Kumar Saravanan BE MechatronicsOn CampusTata Consultancy Services (Ninja)
+36021F012 Dharaneswaran  Sakthivel Umasankari BE MechatronicsOn CampusTata Consultancy Services (Ninja), Sherpa Engineering
+36121F014 Gayathri Srinidhi Kathirvel BE MechatronicsOn CampusComcast
+36221F016 Hari Palani BE MechatronicsOn CampusLTI Mindtree, Tata Consultancy Services (Ninja)
+36321F017 Harini Karthika Anandakumar BE MechatronicsOn CampusTata Consultancy Services (Ninja)
+36421F018 Hariprasad Muthusamy BE MechatronicsOn CampusTata Consultancy Services (Ninja)
+36521F019 Harshavardhan I BE MechatronicsOn CampusZoho
+36621F020 Hemanth Kumar Ravi BE MechatronicsOn CampusRenault Nissan Automotive India Private Limited (RNAIPL)
+36721F021 Hemraj Napa Hemabhushanam BE MechatronicsOn CampusMando
+36821F022 Jaswanth Reddy Tiyyagura BE MechatronicsOn CampusTAFE
+36921F027 Logeshwaran Ravindren BE MechatronicsOn CampusTata Consultancy Services (Ninja)
+37021F028 Marutha Shri Maruthan Govindan BE MechatronicsOn CampusConserve
+37121F030 Mukesh Sankar BE MechatronicsOn CampusTAFE
+37221F031 Neelgats Veerapandian BE MechatronicsOn CampusComcast, Tata Consultancy Services (Ninja)
+37321F032 Pragatheswaran Murugapandiyan BE MechatronicsOn CampusTata Consultancy Services (Ninja)
+37421F033 Prathiksha Balaji BE MechatronicsOn CampusTata Consultancy Services (Ninja), Sherpa Engineering
+37521F035 Rajeshwari Mugunthu Ravi BE MechatronicsOn CampusTata Consultancy Services (Ninja)
+37621F036 Rakesh Venkateswaran Mathanagopal BE MechatronicsOn CampusTVS Motors
+37721F037 Ramasubramanian Mariappan BE MechatronicsOn CampusTata Consultancy Services (Ninja), Sherpa Engineering
+37821F038 Reshma Evangelin Arunkumar BE MechatronicsOn CampusAccenture (ASE), Tata Consultancy Services (Ninja)
+37921F039 Rishenath Elumalai BE MechatronicsOn CampusalfaTKG
+38021F040 Rishivel Rajavel BE MechatronicsOn CampusThe Gaur
+38121F043 Sanjay Baskaran BE MechatronicsOn CampusConserve
+38221F044 Sarveshwaran Sivakumar BE MechatronicsOn CampusTata Consultancy Services (Ninja)
+38321F046 Seshdevanandh K J R BE MechatronicsOn Campuse-con
+38421F048 Sreenidhi Kamalam Mohannirmalkumar BE MechatronicsOn CampusTata Consultancy Services (Ninja)
+38521F050 SRI ROOPHIKA  NARAYANASAMY SRINIVASAN BE MechatronicsOn CampusAccenture (ASE), Tata Consultancy Services (Ninja)
+38621F051 Suriya Pavithra Janaki Saravanan BE MechatronicsOn CampusAccenture (ASE)
+38721F052 Suriyaprakash Thiruvettai Maheswari BE MechatronicsOn CampusTata Consultancy Services (Ninja)
+38821F054 Swarnika Velayutham BE MechatronicsOn CampusTata Consultancy Services (Ninja)
+38921F055 Swetha Sakthivel BE MechatronicsOn CampusJK Fenner
+39021F058 Vetriselvan Gurusamy Kandasamy BE MechatronicsOn CampusTata Consultancy Services (Ninja)
+39121F059 Vetri Vinayagan S BE MechatronicsOn CampusTata Consultancy Services (Ninja)
+39221F061 Abishek Thiruppathi BE MechatronicsOn CampusTata Consultancy Services (Ninja)
+39321F064 Muniappan  Velayutham BE MechatronicsOn CampusRenault Nissan Automotive India Private Limited (RNAIPL)
+39421G001 Abhinesh Viswanathan BE Mech On CampusTata Consultancy Services (Ninja)
+39521G002 Abu Bakkar Siddiq  Sikkandhar Masthan BE Mech On CampusCaterpillar
+39621G003 Akash Kanna Chithiravel Karunakaran BE Mech On CampusEversendai Construction Private Limited
+39721G005 Amirthesh Sivakumar Saritha BE Mech On CampusConserve
+39821G006 ANBARASAN RAJAPANDIAN BE Mech On CampusRenault Nissan Automotive India Private Limited (RNAIPL)
+39921G008 Anto Majella Antony Selvan BE Mech On CampusTata Consultancy Services (Ninja)
+40021G009 Apoorva Alagarasan BE Mech On CampusAccenture (ASE)
+40121G012 Ashwin Krishnaraju BE Mech On CampusTAFE
+40221G013 Ashwin Prasanna BE Mech On CampusAIDA
+40321G014 Baranidaran Ramaraj BE Mech On CampusTata Consultancy Services (Digital)
+40421G015 Deepak Rajarajan BE Mech On CampusTAFE
+40521G017 Esakki Babu Kandasamy BE Mech On CampusTata Consultancy Services (Ninja)
+40621G018 Gautam Vaikundamuthu BE Mech On CampusAccenture (ASE), Titan
+40721G020 George Micheal Jenish  Vincent BE Mech On CampusRenault Nissan Automotive India Private Limited (RNAIPL)
+40821G021 Girija sri Murugan BE Mech On CampusRenault Nissan Technology
+40921G022 Gokul Rajagopal Tamilrajan BE Mech On CampusRenault Nissan Automotive India Private Limited (RNAIPL)
+41021G023 Gowtham  Ayyanar Kokila BE Mech On CampusAIDA
+41121G024 Gunal Ariraman BE Mech On CampusConserve
+41221G025 Guru Prasanna  Saravanan BE Mech On CampusConserve
+41321G028 Hariharan Ramasamy BE Mech On CampusTAFE
+41421G029 Harish Ragavendran BE Mech On CampusTata Consultancy Services (Ninja)
+41521G031 Harish Raj Kumar Muthu Hemalatha BE Mech On CampusAIDA
+41621G032 Harsha Raghu Raman BE Mech On CampusCaterpillar
+41721G033 Hishore Janakiraman BE Mech On CampusConserve
+41821G034 Jagadeesh Thirupathi BE Mech On CampusVA Tech Wabag 
+41921G035 Jai Kousikan Ramiah BE Mech On CampusZoho
+42021G036 Janani Selvan BE Mech On CampusLNT ECC
+42121G037 Jashwanth Rajadurai Jaya BE Mech On CampusTitan
+42221G039 Jayaram Madavadhas BE Mech On CampusJGC
+42321G041 Jishnu Prajit Vijayan Rajkohila BE Mech On CampusTata Consultancy Services (Ninja)
+42421G042 Jovan Vennila Maran BE Mech On CampusCapgemini
+42521G043 Jyothi Krishnan Muniyandi Shenbagamoorthy BE Mech On CampusLTI Mindtree, Accenture (ASE)
+42621G044 KABILAN SATHIAMOORTHY BE Mech On CampusVA Tech Wabag 
+42721G045 Kartik Jayaraman Ramachandran BE Mech On CampusAIDA
+42821G048 Latha Supriya Mariappan BE Mech On CampusJGC
+42921G049 Logeshkumaran  Thangaraju BE Mech On CampusSobha Constructions LLC
+43021G050 Logeswaran Rajamohan Chitra Devi BE Mech On CampusTata Consultancy Services (Ninja)
+43121G051 Mahavishnu Muthusamy BE Mech On CampusTata Consultancy Services (Ninja)
+43221G053 Manoj Kumaar Sittampala Nathan BE Mech On CampusConserve
+43321G054 Manojkumar Sakthivel BE Mech On CampusTVS Motors
+43421G055 MEENAKSHI SUNDARAM SIVAKUMAR BE Mech On CampusTata Consultancy Services (Ninja)
+43521G056 Milan Jose Vincent BE Mech On CampusTVS Motors
+43621G057 Murugan  Kumar BE Mech On CampusMando
+43721G058 Muthukrishnan Kannan BE Mech On CampusAIDA
+43821G061 Naveen Arivazhagan BE Mech On CampusTata Consultancy Services (Ninja)
+43921G062 Naveen Kumar Gopi BE Mech On CampusTata Consultancy Services (Ninja)
+44021G064 Naveen kumar Murugan BE Mech On CampusTata Consultancy Services (Ninja)
+44121G066 PASUMPON KARTHIGA MUTHU KUMAR BE Mech On CampusJK Fenner
+44221G067 Paul Alan  Selvin Misterek BE Mech On CampusAccenture (ASE)
+44321G070 Pragadeeswaran Arumugaraju BE Mech On CampusTVS Motors
+44421G073 Praveen Varatharajan BE Mech On CampusLNT ECC
+44521G074 Praveen Seethalakshmi Rengarajan BE Mech On CampusLNT ECC
+44621G075 Praveen Kanth Ramesh BE Mech On CampusSobha Constructions LLC, Accenture (ASE)
+44721G076 Praveen Kumar  Seenivasan BE Mech On CampusMando
+44821G077 Rajeshkumar Balasubramani BE Mech On CampusTata Consultancy Services (Ninja)
+44921G080 Rohith Sankar Lakshmi Narasimman BE Mech On CampusMando
+45021G081 SADHANA SAKKTHI CHANDRASEKAR JEYAGOWRI BE Mech On CampusCaterpillar
+45121G082 Sai Priyadharshini Kathiravan BE Mech On CampusTVS Motors
+45221G085 Sanjay prakash Sanjeeviraj BE Mech On CampusLNT ECC
+45321G088 SASI SIVAKUMAR BE Mech On CampusSobha Constructions LLC
+45421G089 Sethu Surya Radha Krishnan BE Mech On CampusTata Consultancy Services (Ninja)
+45521G091 Shivsurya Nagalingam BE Mech On CampusTata Consultancy Services (Ninja), Titan
+45621G092 SIRANJEEVI NEHRU BE Mech On CampusAIDA
+45721G093 SIVA PRIYA VENKATESAN BE Mech On CampusSobha Constructions LLC
+45821G094 Sivaraman Sivakumar BE Mech On CampusMando
+45921G095 Solaiappan Veerappan Perichiappan BE Mech On CampusTata Consultancy Services (Ninja)
+46021G096 Srethan Venkatasamy Pothiraj BE Mech On CampusTAFE
+46121G097 Sri Mareeswaran Jeya Kumar BE Mech On CampusMando
+46221G098 Sriram  Paranthaman BE Mech On CampusTata Consultancy Services (Ninja), Titan
+46321G099 Srivarsan Ramasamy BE Mech On CampusAnora
+46421G100 Sudhan Kumar Jeevachandran BE Mech On CampusTVS Motors
+46521G102 Surya Prakash Prabhakaran BE Mech On CampusCaterpillar
+46621G103 Swetha Senthil BE Mech On CampusTechnip
+46721G104 Thanveer Ahamed Syed Mohamed Arif Kasim BE Mech On CampusTata Consultancy Services (Ninja), General Motors
+46821G106 UDHAYA BHARATHI LAKSHMANA BOOPATHY BE Mech On CampusLTI Mindtree, Tata Consultancy Services (Ninja)
+46921G107 Vasanth Babu Suresh Babu BE Mech On CampusAccenture (ASE), LNT ECC
+47021G108 Vasantha Narayanan Kannan BE Mech On CampusSobha Constructions LLC
+47121G110 Vejey Maheas Raajhaa Muthuraj BE Mech On CampusTrimble
+47221G111 Vignesh Pounraj Velraja BE Mech On CampusSobha Constructions LLC
+47321G114 Vijay Kasi Senthil Kumar BE Mech On CampusTata Consultancy Services (Ninja)
+47421G115 Vijaya Raj Paranthaman BE Mech On CampusTata Consultancy Services (Ninja)
+47521G116 Vijayakumar Packiyaraj BE Mech On CampusEversendai Construction Private Limited
+47621G126 Gokul Anthuvan Ramachandran BE Mech On CampusLNT ECC
+47721G127 HARIHARA SUBRAMANIAN  MURUGAN BE Mech On CampusAIDA
+47821G128 Harish kannan Muthu koori BE Mech On CampusMando
+47921G129 HARIVINOTH VIJAYANARAYANAN BE Mech On CampusTata Consultancy Services (Ninja)
+48021G131 Ragul Devaanand BE Mech On CampusSobha Constructions LLC
+48121G133 Shankar Narayanan  Mohan Kumar BE Mech On CampusSobha Constructions LLC
+48221G134 Sheyam Thangamani BE Mech On CampusSobha Constructions LLC
+48321G137 Sri Sathyabalaji Muthukamatchi BE Mech On CampusRenault Nissan Automotive India Private Limited (RNAIPL)
+48421G140 UTHAYARAJA  PACKIARAJ BE Mech On CampusAIDA
+48521H001 Aadhithya Maheshkumar B TechCSBS On CampusCaterpillar
+48621H002 Antrew Vikas Antony B TechCSBS On CampusOracle
+48721H004 Bhagampriyal Muthukrishnan B TechCSBS On CampusAthenaHealth
+48821H005 Bharath  Seshadri B TechCSBS On CampusAccenture (ASE)
+48921H006 Chiranjath Sshakthi Manickavel Arul B TechCSBS On CampusAccenture (ASE)
+49021H008 Dharini Arumuga Vijeyakumar B TechCSBS On CampusAccenture (ASE), Cognizant (Gen C)
+49121H009 Divya Praba B TechCSBS On CampusAccenture (ASE)
+49221H011 Gayathireen  M B TechCSBS On CampusInfosys
+49321H013 Gowtham RajKumar B TechCSBS On CampusCapgemini
+49421H014 HARINI SREE SARAVANAN B TechCSBS On CampusAccenture (ASE)
+49521H015 Hrushikesh S B TechCSBS On CampusTrimble
+49621H018 Jeril Johnson B TechCSBS On CampusInfosys
+49721H019 JEYASAKTHI RAMACHANDRAN B TechCSBS On CampusLTI Mindtree
+49821H021 KAVYAA S M B TechCSBS On CampusTata Consultancy Services (Ninja)
+49921H022 Kesavan  D B TechCSBS On CampusCognizant (Gen C)
+50021H023 Kiruthika Baskaran B TechCSBS On CampusTata Consultancy Services (Ninja)
+50121H024 Kishore Kumar  Meenakshi Sundaram B TechCSBS On CampusTata Consultancy Services (Ninja)
+50221H025 Kumaravel Rajkumar B TechCSBS On CampusTata Consultancy Services (Ninja)
+50321H026 Lokheshram Sivabalasundari Venkatarajan B TechCSBS On CampusCaterpillar
+50421H027 Mahalakshmi  Murugan B TechCSBS On CampusEducational Initiatives Private Limited, Accenture (ASE)
+50521H028 Mahalakshmi Perumal B TechCSBS On CampusTata Consultancy Services (Digital)
+50621H029 Mahalakshmi Sekar B TechCSBS On CampusCognizant (Gen C), Tata Consultancy Services (Ninja), Oracle
+50721H030 MIVETHA K B TechCSBS On CampusCapgemini
+50821H031 MRITULA SHRI T K S B TechCSBS On CampusLTI Mindtree, Accenture (ASE), Cognizant (Gen C), Tata Consultancy Services (Digital)
+50921H032 Nagaesvara Eswari Balaraman Rajeswari B TechCSBS On CampusLTI Mindtree, Accenture (ASE), Cognizant (Gen C), Tata Consultancy Services (Digital)
+51021H033 Nandhini Kesavasundaram B TechCSBS On CampusAccenture (ASE)
+51121H034 RM Naveena B TechCSBS On CampusCognizant (Gen C), Accenture (ASE)
+51221H036 Pooja Vijayakumar B TechCSBS On CampusAccenture (ASE), Cognizant (Gen C)
+51321H038 Rajkumar Ravichandran B TechCSBS On CampusInfosys
+51421H039 Rethanya Anand Prem Anand B TechCSBS On CampusLTI Mindtree
+51521H040 Rithish Kanna Senthil B TechCSBS On CampusAccenture (ASE)
+51621H041 Sachin Kamaraj B TechCSBS On CampusAccenture (ASE), Oracle
+51721H042 Sai Swetha Palaniappan B TechCSBS On CampusLTI Mindtree, Accenture (ASE)
+51821H043 Sakthi Ganesh Dharani Raja B TechCSBS On CampusMr Cooper
+51921H044 Santhosh Kuppusamy Muthu Ramalingam B TechCSBS On CampusCognizant (Gen C Next), Accenture (ASE), Accolite
+52021H045 Shailesh Kumar Thiyada  Saravanan B TechCSBS On CampusLTI Mindtree, Accenture (ASE)
+52121H047 Sharangapriyan Sivakumar B TechCSBS On CampusComcast, Tata Consultancy Services (Ninja)
+52221H048 Shrinivas Sudhakar B TechCSBS On CampusComcast
+52321H050 Sindhiya Sri  G B TechCSBS On CampusAccenture (ASE), Tata Consultancy Services (Ninja)
+52421H051 SRI SAKTHI LAKSHMI NARAYANAN B TechCSBS On CampusTrimble, Accenture (ASE)
+52521H053 Srinivas Karthik Dhivakar B TechCSBS On CampusHPE, Cognizant (Gen C Next)
+52621H055 Subbulakshmi  Palanivel B TechCSBS On CampusAccenture (ASE)
+52721H056 Sugindar Anna Duvarakan Babu B TechCSBS On CampusCognizant (Gen C), Accenture (ASE)
+52821H057 Umayal Chellappa B TechCSBS On CampusTata Consultancy Services (Ninja)
+52921H058 Vandhana G B TechCSBS On CampusLTI Mindtree, Accenture (ASE)
+53021H059 Varun Gnanapandithan Karunakaran B TechCSBS On CampusCognizant (Gen C), Accenture (ASE), Tata Consultancy Services (Ninja)
+53121H060 Vaseekaran Manickavasagan B TechCSBS On CampusAccenture (ASE)
+53221IT001 AARTHY RAJA B TechIT On CampusAccenture (ASE), Cognizant (Gen C)
+53321IT004 ABHINAV KRISHNA BALAJI B TechIT On CampusTrimble
+53421IT005 ABIRAMI SANKAR B TechIT On CampusLTI Mindtree, Accenture (ASE), Cognizant (Gen C)
+53521IT006 ABISHEK PALANISAMY B TechIT On CampusCapgemini
+53621IT007 Aditya Janakiraman B TechIT On CampusTrimble
+53721IT008 Aishwarya Natarajan B TechIT On CampusTrimble
+53821IT009 Akash Ramachandran B TechIT On CampusCaterpillar
+53921IT010 Ananthika Srinivasan B TechIT On CampusAccenture (ASE), Cognizant (Gen C)
+54021IT011 Annaamalai Umabalan B TechIT On CampusLTI Mindtree, Accenture (ASE), Tata Consultancy Services (Digital)
+54121IT012 Annamalai Palaniappan B TechIT On CampusLTI Mindtree
+54221IT013 Aravindh Kannan  Bhoganathan B TechIT On CampusHoneywell
+54321IT014 ARJUN PRITHVI VENGADESAN B TechIT On CampusLTI Mindtree
+54421IT015 Arun Kamaraj Senthil Rajan B TechIT On CampusLTI Mindtree, Accenture (ASE), Cognizant (Gen C)
+54521IT016 ASKAR ALI SHEIK ALI NAZEERA BEEVI B TechIT On CampusLTI Mindtree
+54621IT017 Aswin Mayakkannu B TechIT On CampusInfosys
+54721IT018 BALAJI KAMARAJ B TechIT On CampusLTI Mindtree
+54821IT019 Barathan Selvam B TechIT On CampusAccenture (ASE), Tata Consultancy Services (Digital)
+54921IT020 Berlin Kirubha Manuvel John B TechIT On CampusHPE
+55021IT021 BERLIN SHANE AISHWARYA LOORTHU RAJENDRAN B TechIT On CampusAccenture (ASE), Accolite
+55121IT022 Bharath Vikash Manicka Madhan B TechIT On CampusCognizant (Gen C)
+55221IT023 BHUVANESHWARI  SANKAR B TechIT On CampusFidelity
+55321IT024 Booja Baskaran B TechIT On CampusAccenture (ASE), Cognizant (Gen C)
+55421IT025 Charvi Jayaraman Dhanasekar B TechIT On CampusAccenture (ASE)
+55521IT026 Dayalaxmi Somasundara Velmurugan B TechIT On CampusHPE
+55621IT028 DHAHIRA SHREEN  ISMAIL MYDEEN B TechIT On CampusCognizant (Gen C), Tata Consultancy Services (Ninja)
+55721IT029 DHAKSHAYINI  RAMESH BABU B TechIT On CampusComcast, Tata Consultancy Services (Ninja)
+55821IT031 Dhiyaneshwar Avudaiappan B TechIT On CampusMr Cooper
+55921IT032 Dinaker Thamodharan B TechIT On CampusTrimble
+56021IT034 GAUTHAM MUTHUKUMAR B TechIT On CampusCognizant (Gen C)
+56121IT035 Gowsigan Murugan B TechIT On CampusAthenaHealth
+56221IT036 GURU CHARAN KUMBA SURESHBABU B TechIT On CampusMr Cooper
+56321IT037 HARIHARAN  VENKATESAN JANAKIRAMAN B TechIT On CampusZoho
+56421IT038 HARINI SANDILYAN B TechIT On CampusCognizant (Gen C), Tata Consultancy Services (Ninja)
+56521IT039 HARISHANKAR MOHANRAJ B TechIT On CampusTata Consultancy Services (Ninja)
+56621IT040 Harshini Lara Anna Kubendran B TechIT On CampusZoho
+56721IT041 IRAIANBU  ASHOK KUMAR B TechIT On CampusEducational Initiatives Private Limited
+56821IT044 JANANI RAVICHANDRAN B TechIT On CampusLTI Mindtree, Tata Consultancy Services (Digital)
+56921IT045 Jayaa Sri Kumaran B TechIT On CampusAccenture (ASE)
+57021IT047 Jeya Iswarya Mariappan  Ramasubramaniam B TechIT On CampusTata Consultancy Services (Ninja)
+57121IT048 JOHN THOMAS ARUMAIRAJ B TechIT On CampusCaterpillar
+57221IT049 KALEESWARI MURUGESAN B TechIT On CampusInfosys
+57321IT051 KARTHIKEYAN  SEVUGAMURTHY B TechIT On CampusEducational Initiatives Private Limited
+57421IT052 Kaushik Alaguvadivel B TechIT On CampusTata Consultancy Services (Ninja)
+57521IT054 KIRANYA RAJAPANDI B TechIT On CampusAccenture (ASE), Cognizant (Gen C), Tata Consultancy Services (Digital)
+57621IT055 Kirithika Ganesan B TechIT On CampusLTI Mindtree
+57721IT056 Lakshmi Aiswarya Chockalingam B TechIT On CampusHPE, Accenture (ASE)
+57821IT057 Lakshmi Priyanka Srinivasan B TechIT On CampusMulticoreware
+57921IT058 LAVANYA  MUTHUMARIAPPAN B TechIT On CampusCapgemini
+58021IT059 LITHU VARSHNI VELMANIKANDAN B TechIT On CampusLTI Mindtree, Accenture (ASE)
+58121IT060 Madhumitha Jagadeeswaran B TechIT On CampusKLA Tencor
+58221IT062 Mahalakshmi Nambi B TechIT On CampusCognizant (Gen C)
+58321IT063 MAYA SREE RAVICHANDRAN B TechIT On CampusIBM
+58421IT064 METHESH RAAM MURUGAKONAR RATHINAVELU RAJENDRANB TechIT On CampusCognizant (Gen C)
+58521IT065 Mohamed Abdullah Alavudheen B TechIT On CampusLTI Mindtree, Accenture (ASE), Cognizant (Gen C)
+58621IT066 MOHAMED ASLAM MOHAMED HAFFLE B TechIT On CampusCognizant (Gen C)
+58721IT067 MUKESH RAJ  SELVARAJ B TechIT On CampusComcast, Tata Consultancy Services (Ninja)
+58821IT068 Naga Dharshini Naga Balaji B TechIT On CampusCognizant (Gen C)
+58921IT069 Naga harshini Kondan Kannan B TechIT On CampusCaterpillar
+59021IT070 NAVEEN VENKATASAMY B TechIT On CampusComcast
+59121IT071 Nigithaa Gopalakrishnan B TechIT On CampusCaterpillar
+59221IT072 Nithish Sathish B TechIT On CampusLTI Mindtree, Accenture (ASE), Cognizant (Gen C)
+59321IT074 Pooja Dharshini Boopathy B TechIT On CampusJMAN
+59421IT075 PRASHEEBA BALAN NESAKUMAR B TechIT On CampusTata Consultancy Services (Ninja)
+59521IT076 PRAVEENA JAYARAMAN B TechIT On CampusComcast, Tata Consultancy Services (Ninja)
+59621IT077 Raghul Ramar B TechIT On CampusZoho
+59721IT078 Rakesh Anand B TechIT On CampusTata Consultancy Services (Ninja)
+59821IT080 Ranjith Kumar B TechIT On CampusInfosys
+59921IT081 RAYHON SAMO ARUL DOSS B TechIT On CampusAccenture (ASE)
+60021IT082 Rithish Rajkumar B TechIT On CampusTata Consultancy Services (Ninja)
+60121IT083 Sachin Balamurugan B TechIT On CampusCaterpillar
+60221IT084 Sakthi Prakash Kumar Subramanian B TechIT On CampusContentstack
+60321IT085 Sanjay Raj Saravanan B TechIT On CampusHPE
+60421IT086 SANJEEV GANESAN MARAGATHA SELVI B TechIT On CampusTata Consultancy Services (Ninja)
+60521IT087 SANTHOSH PRABHU VENKATESH B TechIT On CampusAthenaHealth
+60621IT088 Sarvika Palanisamy B TechIT On CampusTrimble
+60721IT090 SATHEESH PERIYASAMY B TechIT On CampusJMAN
+60821IT092 Shalini Christina Arul John Bosco B TechIT On CampusZoho
+60921IT093 Shamni Teresa Beski Porchelian B TechIT On CampusLTI Mindtree, Accenture (ASE), Cognizant (Gen C)
+61021IT095 SHIVANI MURUGAN B TechIT On CampusAthenaHealth
+61121IT096 Shriram  Raman Subramanian B TechIT On CampusCognizant (Gen C), Tata Consultancy Services (Ninja)
+61221IT099 SRI YUVA RAANI  SEENIVASAN B TechIT On CampusHPE
+61321IT102 Srisa Thevendriya Gopinath B TechIT On CampusMr Cooper
+61421IT103 Subash Saravanan B TechIT On CampusCognizant (Gen C), Tata Consultancy Services (Ninja)
+61521IT105 Suresh Kumar  Ramakrishnan B TechIT On CampusAccenture (ASE)
+61621IT107 Suruthika Rani Varadhan B TechIT On CampusAccenture (ASE), Cognizant (Gen C)
+61721IT108 Surya Kumar B TechIT On CampusZoho
+61821IT109 Tarunika Venkataramanaswamy B TechIT On CampusLTI Mindtree
+61921IT110 Tezhaswine Saravanan Raj B TechIT On CampusTata Consultancy Services (Digital)
+62021IT111 Usha Nandhini Sugumar B TechIT On CampusLTI Mindtree, Cognizant (Gen C)
+62121IT112 Varsha Ochappan B TechIT On CampusComcast
+62221IT114 Venkatalakshmi Balamurugan B TechIT On CampusAccenture (ASE), Cognizant (Gen C)
+62321IT117 Vidhyadharan Sujithra Subramani B TechIT On CampusZoho
+62421IT119 Vikram Sembu Damodaran B TechIT On CampusComcast, Tata Consultancy Services (Ninja)
+62521IT120 Vishnukiran Chokkalingam B TechIT On CampusTransunion
+62621IT122 Vivek Arul B TechIT On CampusTrimble
+62721IT131 Sakthi  Sundaramoorthy B TechIT On CampusOracle, Capgemini
+62864584 NIVETHA GURUSAMY BE Civil On CampusEversendai Construction Private Limited
+62964694 Rishith Gnanasekar BE Mech On CampusGeneral Motors

@@ -1,0 +1,333 @@
+National Institutional Ranking Framework
+Ministry of Education
+Government of India
+Welcome to Data Capturing System: ARCHITECTURE
+Submitted Institute Data for NIRF'2021'
+Institute Name: Thiagarajar College of Engineering [IR-A-C-26794]
+Sanctioned (Approved) Intake
+Academic Year 2019-20 2018-19 2017-18 2016-17 2015-16 2014-15
+UG [5 Years Program(s)] 80 80 80 80 80 -
+PG [2 Year Program(s)] 20 20 - - - -
+Total Actual Student Strength (Program(s) Offered by Your Institution)
+(All programs
+of all years)
+No. of Male
+Students
+No. of Female
+Students
+Total Students Within State
+(Including male
+& female)
+Outside State
+(Including male
+& female)
+Outside
+Country
+(Including male
+& female)
+Economically
+Backward
+(Including male
+& female)
+Socially
+Challenged
+(SC+ST+OBC
+Including male
+& female)
+No. of students
+receiving full
+tuition fee
+reimbursement
+from the State
+and Central
+Government
+No. of students
+receiving full
+tuition fee
+reimbursement
+from Institution
+Funds
+No. of students
+receiving full
+tuition fee
+reimbursement
+from the Private
+Bodies
+No. of students
+who are not
+receiving full
+tuition fee
+reimbursement
+UG [5 Years
+Program(s)]
+160 228 388 383 5 0 23 336 0 0 1 358
+PG [2 Year
+Program(s)]
+12 19 31 30 1 0 0 26 0 0 0 26
+Placement & Higher Studies
+UG [5 Years Program(s)]: Placement & higher studies for previous 3 years
+Academic Year No. of first year
+students intake in the
+year
+No. of first year
+students admitted in
+the year
+Academic Year No. of students
+admitted through
+Lateral entry
+Academic Year No. of students
+graduating in
+minimum stipulated
+time
+No. of students
+placed
+Median salary of
+placed
+graduates(Amount in
+Rs.)
+No. of students
+selected for Higher
+Studies
+2013-14 80 80 2014-15 0 2017-18 79 61 150000(One lakh fifty
+thousand)
+13
+2014-15 80 80 2015-16 0 2018-19 77 60 160000(One lakh sixty
+thousand)
+5
+2015-16 80 80 2016-17 0 2019-20 75 44 180000(one lakh
+eighty thousand only)
+9
+PG [2 Years Program(s)]: Placement & higher studies for previous 3 years
+Academic Year No. of first year
+students intake in the
+year
+No. of first year
+students admitted in
+the year
+Academic Year No. of students graduating in minimum
+stipulated time
+No. of students
+placed
+Median salary of
+placed
+graduates(Amount in
+Rs.)
+No. of students
+selected for Higher
+Studies
+2016-17 0 0 2017-18 0 0 0(Zero) 0
+2017-18 0 0 2018-19 0 0 0(Zero) 0
+2018-19 20 11 2019-20 11 11 250000(two Lakhs fifty
+thousand only)
+0
+Financial Resources: Utilised Amount for the Capital expenditure for previous 3 years
+Academic Year 2019-20 2018-19 2017-18
+Utilised Amount Utilised Amount Utilised Amount
+Annual Capital Expenditure on Academic Activities and Resources (excluding expenditure on buildings)
+Library 617527 (Six lakhs seventeen thousand five hundred and
+twenty seven only)
+643977 (Six lakhs forty three thousands nine hundred and
+seventy seven only)
+976128 (Nine lakhs seventy six thousands one hundred and
+twenty eight only)
+New Equipment for Laboratories 536140 (Five lakh thirty six thousand one hundred and
+fortyonly)
+863990 (Eight lakh  sixty three thousands nine hundred and
+ninety only)
+593911 (Five lakh ninety three thousands nine hundred and
+eleven only)
+Studios 2402306 (Twenty four lakh two thousand three hundred and six
+only)
+1623103 (Sixteen lakh twenty three thousand one hundred and
+three only)
+1403597 (Fourteen  lakh three thousands five hundred and
+ninety seven only)
+Other expenditure on creation of Capital Assets (excluding
+expenditure on Land and Building)
+343356 (Three lakhs forty three thousand three hundred and
+fifty six)
+324910 (Three lakhs twenty four thousand nine hundred and
+ten only)
+83350 (Eighty three thousand three hundred and fifty )
+Financial Resources: Utilised Amount for the Operational expenditure for previous 3 years
+Academic Year 2019-20 2018-19 2017-18
+Utilised Amount Utilised Amount Utilised Amount
+Annual Operational Expenditure
+Salaries (Teaching and Non Teaching staff) 12813228 (one crore twenty eight lakhs thirteen thousand two
+hundred and twenty eight)
+15387293 (one crore fifty three lakhs eighty seven thousand
+two hundred and ninety three)
+14064550 (one crore forty lakhs sixty four thousand five
+hundred and fifty )
+Maintenance of Academic Infrastructure or consumables and
+other running expenditures(excluding maintenance of hostels
+and allied services,rent of the building, depreciation cost, etc)
+4106510 (Forty one lakhs six thousand five hundred and ten) 7264173 (Seventy two lakhs  sixty four thousand and one
+hundred and seventy three)
+5835076 (Fifty eight lakhs thirty five thousand and seventy six)
+Seminars/Conferences/Workshops 201020 (Two lakh one thousand and twenty only) 216698 (Two lakh sixteen thousand six hundred and ninety
+eight only)
+201651 (Two lakh one thousand and fifty one only)
+Sponsored Research Details
+Financial Year 2019-20 2018-19 2017-18
+Total no. of Sponsored Projects 1 1 1
+Total no. of Funding Agencies 1 1 1
+Total Amount Received (Amount in Rupees) 1200000 224581 375513
+Amount Received in Words Twelve Lakh only Two lakh twenty four thousand five hundred and eighty one
+only
+Three lakh seventy five thousand five hundred and thirteen
+only
+Consultancy Project Details
+Financial Year 2019-20 2018-19 2017-18
+Total no. of Consultancy Projects 9 4 5
+Total no. of Client Organizations 4 1 2
+Total Amount Received (Amount in Rupees) 1288362 1040000 200500
+Amount Received in Words Twelve Lakhs Eighty eight thousand Three hundred and sixty
+two
+Ten Lakhs Forty thousand Two lakhs five hundred
+PCS Facilities: Facilities of physically challenged students
+1. Do your institution buildings have Lifts/Ramps? Yes, more than 80% of the buildings
+2. Do your institution have provision for walking aids, includingwheelchairs and transportation from one building to another for
+handicapped students?
+Yes
+3. Do your institution buildings have specially designed toilets for handicapped students? Yes, more than 60% of the buildings
+Faculty Details
+Srno Name Age Designation Gender Qualification Experience (In
+Months)
+Is Associated
+Last Year
+Currently
+working with
+institution?
+Joining Date Leaving Date Association type
+1 PIRAIARASI C 40 Assistant
+Professor
+Female M.S 159 No Yes 01-07-2019 -- Regular
+2 S M VIDHYA
+SANKARI
+37 Assistant
+Professor
+Female M.Arch. 181 Yes Yes 31-05-2019 -- Regular
+3 C ABIRAMI DEVI 34 Assistant
+Professor
+Female B. Arch 155 No Yes 15-07-2019 -- Regular
+4 A SIVA BARATHI 33 Assistant
+Professor
+Female B. Arch 113 Yes Yes 04-02-2019 -- Regular
+5 P PAVALAVELSH 30 Assistant
+Professor
+Male M.Arch. 72 Yes Yes 06-05-2019 -- Regular
+6 J Jinu Louishidha
+Kitchley
+45 Professor Female Ph.D 252 Yes Yes 20-07-2009 -- Regular
+7 M SHANMATHI 26 Assistant
+Professor
+Female B. Arch 62 Yes Yes 01-06-2016 -- Regular
+8 Elanchezian S A V 55 Associate
+Professor
+Male Ph.D 396 Yes Yes 24-12-2012 -- Regular
+9 M Sindhuja 33 Assistant
+Professor
+Female M.Arch. 87 Yes Yes 04-06-2014 -- Regular
+10 S Subhashini 40 Associate
+Professor
+Female Ph.D 216 Yes Yes 21-06-2006 -- Regular
+11 I Chandramathy 39 Associate
+Professor
+Female Ph.D 154 Yes Yes 08-09-2008 -- Regular
+12 S Santhana
+Iyyappa
+Sundararaj
+36 Assistant
+Professor
+Male M.Arch. 157 Yes Yes 29-01-2010 -- Regular
+13 P Vivek 39 Associate
+Professor
+Male M.Arch. 169 Yes Yes 07-06-2010 -- Regular
+14 S
+KARTHIKEYARAJ
+A
+47 Assistant
+Professor
+Male M.Arch. 312 Yes Yes 04-12-2008 -- Regular
+15 G Balaji 42 Professor Male Ph.D 228 Yes Yes 05-06-2002 -- Regular
+16 S Thanga lavanya 37 Associate
+Professor
+Female M.Arch. 124 Yes Yes 03-09-2012 -- Regular
+17 G SWARNAVALLI 27 Assistant
+Professor
+Female B. Arch 66 Yes Yes 03-04-2017 -- Regular
+18 MEENA KUMARI
+R
+44 Associate
+Professor
+Female M.Arch. 234 Yes Yes 14-06-2017 -- Regular
+19 JEYABALAJI R 29 Assistant
+Professor
+Male B. Arch 80 Yes Yes 20-03-2017 -- Regular
+20 AARTHI MAILA
+DEVI S
+26 Assistant
+Professor
+Female B. Arch 60 Yes Yes 28-06-2017 -- Regular
+21 A Ayswarya 33 Assistant
+Professor
+Female B. Arch 125 Yes Yes 12-03-2018 -- Regular
+22 VINOTHKUMAR R 32 Assistant
+Professor
+Male MFA(Fine Arts) 140 Yes Yes 05-03-2018 -- Regular
+23 VIJAYANAND U 48 Associate
+Professor
+Male M.Arch. 294 Yes Yes 01-03-2018 -- Regular
+24 K PERIYANNAN 51 Professor Male M.Arch. 312 Yes Yes 12-02-2018 -- Visiting
+25 SENTHIL
+PANDIAN
+46 Professor Male B. Arch 240 Yes Yes 01-01-2018 -- Visiting
+26 V RAMESH
+KUMAR
+45 Professor Male M.Arch. 240 Yes No 05-02-2018 01-05-2019 Visiting
+27 S SATHEESH
+KUMAR
+42 Associate
+Professor
+Male M.Arch. 204 Yes Yes 05-02-2018 -- Visiting
+28 PRS SIVAKUMAR 64 Professor Male B. Arch 384 Yes Yes 01-02-2017 -- Visiting
+29 MEENA DANIEL 56 Professor Female B. Arch 242 No Yes 19-08-2019 -- Visiting
+30 S ELANGOVAN 27 Assistant
+Professor
+Male M.Arch. 31 Yes Yes 02-12-2019 -- Regular
+31 J R
+PREETHESREE
+25 Assistant
+Professor
+Female M.Arch. 16 Yes Yes 03-02-2020 -- Regular
+32 G VAISHALI 26 Assistant
+Professor
+Female M.Arch. 1 Yes Yes 18-08-2020 -- Regular
+33 K V SRIDHAR 47 Professor Male M.Arch. 274 Yes Yes 29-08-2018 -- Visiting
+34 M GURU
+PRANESH
+33 Assistant
+Professor
+Male B. Arch 112 Yes Yes 05-02-2018 -- Visiting
+35 D Saravanan 47 Professor Male B. Arch 244 Yes Yes 05-02-2018 -- Other
+36 G INDERJITH 28 Assistant
+Professor
+Male M.Arch. 61 Yes Yes 01-07-2019 -- Visiting
+37 SHALINI
+PRASATH
+RENUGUNDA
+34 Assistant
+Professor
+Female B. Arch 136 Yes Yes 06-02-2019 -- Visiting
+38 O SETHUPATHY 25 Assistant
+Professor
+Male B. Arch 25 Yes Yes 02-01-2020 -- Visiting
+39 TS DEEPAK 36 Associate
+Professor
+Male M.Arch. 176 Yes Yes 14-12-2019 -- Visiting
+40 M
+Sivasubramanian
+26 Assistant
+Professor
+Male M.Arch. 51 Yes Yes 01-07-2019 -- Regular

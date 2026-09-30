@@ -1,0 +1,4292 @@
+{
+  "meta": {
+    "title": "LinkedIn Rule Implementation Validation (RULE-01..12)",
+    "generated_at": "2026-09-23T20:46:45",
+    "scope": "non-production validation on the 200 reviewed sample posts only; no candidate rows, production DB or workbook were written",
+    "rules_implemented": [
+      "RULE-01",
+      "RULE-02",
+      "RULE-03",
+      "RULE-04",
+      "RULE-05",
+      "RULE-06",
+      "RULE-07",
+      "RULE-08",
+      "RULE-09",
+      "RULE-12"
+    ],
+    "rules_unchanged": [
+      "RULE-02b (embedded-event guard kept in review layer)",
+      "RULE-10 (stakeholder no-change)",
+      "RULE-11 (date preservation locks)"
+    ],
+    "disclaimer": "Validation aid. Gate flags are flag-first; no category or department is auto-dropped. Evaluate precision against the 200 human labels before any automatic/display switch."
+  },
+  "safety_invariants": {
+    "institutional_activities": 2258,
+    "linkedin_posts": 1544,
+    "linkedin_post_occurrences": 2094,
+    "linkedin_activity_candidates": 1544,
+    "review_sample_pending": 200,
+    "proposals": 136,
+    "merged_workbook_sha256": "ca6a57ee907ec3fba45a7d5e02086d4253ecd3c371103b50d33f0f308a358cbc",
+    "merged_workbook_hash_ok": true,
+    "expected": {
+      "institutional_activities": 2258,
+      "linkedin_posts": 1544,
+      "linkedin_post_occurrences": 2094,
+      "linkedin_activity_candidates": 1544,
+      "review_sample_pending": 200,
+      "proposals": 136
+    },
+    "all_ok": true
+  },
+  "baseline_matches_stored_rows": true,
+  "section_a_proposal_addressment": {
+    "total_proposals": 136,
+    "by_rule_total": {
+      "comm_separation_confirmed": 27,
+      "dept_generic_term": 26,
+      "cat_over_tag:ACHIEVEMENT": 21,
+      "comm_mention_context": 20,
+      "multi_year_keep": 15,
+      "cat_over_tag:RESEARCH": 11,
+      "cat_over_tag:INDUSTRY": 4,
+      "pre_2024_keep": 4,
+      "cat_over_tag:ALUMNI": 3,
+      "multi_label_overlap": 3,
+      "cat_over_tag:INTERNSHIP": 2
+    },
+    "by_rule_addressed": {
+      "comm_separation_confirmed": {
+        "total": 27,
+        "addressed": 27
+      },
+      "dept_generic_term": {
+        "total": 26,
+        "addressed": 26
+      },
+      "cat_over_tag:ACHIEVEMENT": {
+        "total": 21,
+        "addressed": 21
+      },
+      "comm_mention_context": {
+        "total": 20,
+        "addressed": 20
+      },
+      "multi_year_keep": {
+        "total": 15,
+        "addressed": 15
+      },
+      "cat_over_tag:RESEARCH": {
+        "total": 11,
+        "addressed": 11
+      },
+      "cat_over_tag:INDUSTRY": {
+        "total": 4,
+        "addressed": 4
+      },
+      "pre_2024_keep": {
+        "total": 4,
+        "addressed": 4
+      },
+      "cat_over_tag:ALUMNI": {
+        "total": 3,
+        "addressed": 3
+      },
+      "multi_label_overlap": {
+        "total": 3,
+        "addressed": 3
+      },
+      "cat_over_tag:INTERNSHIP": {
+        "total": 2,
+        "addressed": 2
+      }
+    },
+    "details": [
+      {
+        "post_id": 4,
+        "rule": "comm_separation_confirmed",
+        "field": "status",
+        "is_correction": false,
+        "confidence": "high",
+        "addresssed": true,
+        "mechanism": "NON_ACTIVITY locked",
+        "current": "NON_ACTIVITY (admission_promo)",
+        "proposed": "keep NON_ACTIVITY after reading the text"
+      },
+      {
+        "post_id": 4,
+        "rule": "comm_mention_context",
+        "field": "category",
+        "is_correction": false,
+        "confidence": "high",
+        "addresssed": true,
+        "mechanism": "categories retained as context-only",
+        "current": "RESEARCH, INTERNSHIP, ALUMNI, INDUSTRY, PLACEMENT, WORKSHOP",
+        "proposed": "context only: do NOT count as the post's activity type"
+      },
+      {
+        "post_id": 5,
+        "rule": "comm_separation_confirmed",
+        "field": "status",
+        "is_correction": false,
+        "confidence": "high",
+        "addresssed": true,
+        "mechanism": "NON_ACTIVITY locked",
+        "current": "NON_ACTIVITY (admission_promo)",
+        "proposed": "keep NON_ACTIVITY after reading the text"
+      },
+      {
+        "post_id": 5,
+        "rule": "comm_mention_context",
+        "field": "category",
+        "is_correction": false,
+        "confidence": "high",
+        "addresssed": true,
+        "mechanism": "categories retained as context-only",
+        "current": "ALUMNI",
+        "proposed": "context only: do NOT count as the post's activity type"
+      },
+      {
+        "post_id": 7,
+        "rule": "comm_separation_confirmed",
+        "field": "status",
+        "is_correction": false,
+        "confidence": "high",
+        "addresssed": true,
+        "mechanism": "NON_ACTIVITY locked",
+        "current": "NON_ACTIVITY (admission_promo)",
+        "proposed": "keep NON_ACTIVITY after reading the text"
+      },
+      {
+        "post_id": 7,
+        "rule": "comm_mention_context",
+        "field": "category",
+        "is_correction": false,
+        "confidence": "high",
+        "addresssed": true,
+        "mechanism": "categories retained as context-only",
+        "current": "INTERNSHIP, RESEARCH, ALUMNI",
+        "proposed": "context only: do NOT count as the post's activity type"
+      },
+      {
+        "post_id": 11,
+        "rule": "cat_over_tag:RESEARCH",
+        "field": "category",
+        "is_correction": true,
+        "confidence": "low",
+        "addresssed": true,
+        "mechanism": "category_gate flag fired (kept for review, not dropped)",
+        "current": "RESEARCH",
+        "proposed": "verify over-tag: remove Research and Consultancy unless the text is clearly about it"
+      },
+      {
+        "post_id": 12,
+        "rule": "cat_over_tag:RESEARCH",
+        "field": "category",
+        "is_correction": true,
+        "confidence": "low",
+        "addresssed": true,
+        "mechanism": "category_gate flag fired (kept for review, not dropped)",
+        "current": "RESEARCH",
+        "proposed": "verify over-tag: remove Research and Consultancy unless the text is clearly about it"
+      },
+      {
+        "post_id": 13,
+        "rule": "cat_over_tag:RESEARCH",
+        "field": "category",
+        "is_correction": true,
+        "confidence": "low",
+        "addresssed": true,
+        "mechanism": "category_gate flag fired (kept for review, not dropped)",
+        "current": "RESEARCH",
+        "proposed": "verify over-tag: remove Research and Consultancy unless the text is clearly about it"
+      },
+      {
+        "post_id": 13,
+        "rule": "dept_generic_term",
+        "field": "department",
+        "is_correction": true,
+        "confidence": "low",
+        "addresssed": true,
+        "mechanism": "department removed from display (General or explicit depts)",
+        "current": "Applied Mathematics and Computational Science",
+        "proposed": "verify department: drop 'Applied Mathematics and Computational Science' (route to General or the explicitly named department) unless the post names this department"
+      },
+      {
+        "post_id": 15,
+        "rule": "cat_over_tag:RESEARCH",
+        "field": "category",
+        "is_correction": true,
+        "confidence": "low",
+        "addresssed": true,
+        "mechanism": "category_gate flag fired (kept for review, not dropped)",
+        "current": "RESEARCH",
+        "proposed": "verify over-tag: remove Research and Consultancy unless the text is clearly about it"
+      },
+      {
+        "post_id": 17,
+        "rule": "cat_over_tag:INDUSTRY",
+        "field": "category",
+        "is_correction": true,
+        "confidence": "low",
+        "addresssed": true,
+        "mechanism": "category_gate flag fired (kept for review, not dropped)",
+        "current": "INDUSTRY",
+        "proposed": "verify over-tag: remove Industry Collaboration unless the text is clearly about it"
+      },
+      {
+        "post_id": 17,
+        "rule": "dept_generic_term",
+        "field": "department",
+        "is_correction": true,
+        "confidence": "low",
+        "addresssed": true,
+        "mechanism": "department removed from display (General or explicit depts)",
+        "current": "Electrical and Electronics Engineering",
+        "proposed": "verify department: drop 'Electrical and Electronics Engineering' (route to General or the explicitly named department) unless the post names this department"
+      },
+      {
+        "post_id": 18,
+        "rule": "cat_over_tag:INTERNSHIP",
+        "field": "category",
+        "is_correction": true,
+        "confidence": "low",
+        "addresssed": true,
+        "mechanism": "category_gate flag fired (kept for review, not dropped)",
+        "current": "INTERNSHIP",
+        "proposed": "verify over-tag: remove Internship unless the text is clearly about it"
+      },
+      {
+        "post_id": 18,
+        "rule": "cat_over_tag:INDUSTRY",
+        "field": "category",
+        "is_correction": true,
+        "confidence": "low",
+        "addresssed": true,
+        "mechanism": "category_gate flag fired (kept for review, not dropped)",
+        "current": "INDUSTRY",
+        "proposed": "verify over-tag: remove Industry Collaboration unless the text is clearly about it"
+      },
+      {
+        "post_id": 20,
+        "rule": "comm_separation_confirmed",
+        "field": "status",
+        "is_correction": false,
+        "confidence": "high",
+        "addresssed": true,
+        "mechanism": "NON_ACTIVITY locked",
+        "current": "NON_ACTIVITY (job_ad)",
+        "proposed": "keep NON_ACTIVITY after reading the text"
+      },
+      {
+        "post_id": 20,
+        "rule": "comm_mention_context",
+        "field": "category",
+        "is_correction": false,
+        "confidence": "high",
+        "addresssed": true,
+        "mechanism": "categories retained as context-only",
+        "current": "RESEARCH",
+        "proposed": "context only: do NOT count as the post's activity type"
+      },
+      {
+        "post_id": 21,
+        "rule": "comm_separation_confirmed",
+        "field": "status",
+        "is_correction": false,
+        "confidence": "high",
+        "addresssed": true,
+        "mechanism": "NON_ACTIVITY locked",
+        "current": "NON_ACTIVITY (job_ad)",
+        "proposed": "keep NON_ACTIVITY after reading the text"
+      },
+      {
+        "post_id": 21,
+        "rule": "comm_mention_context",
+        "field": "category",
+        "is_correction": false,
+        "confidence": "high",
+        "addresssed": true,
+        "mechanism": "categories retained as context-only",
+        "current": "ACHIEVEMENT",
+        "proposed": "context only: do NOT count as the post's activity type"
+      },
+      {
+        "post_id": 25,
+        "rule": "cat_over_tag:RESEARCH",
+        "field": "category",
+        "is_correction": true,
+        "confidence": "low",
+        "addresssed": true,
+        "mechanism": "category_gate flag fired (kept for review, not dropped)",
+        "current": "RESEARCH",
+        "proposed": "verify over-tag: remove Research and Consultancy unless the text is clearly about it"
+      },
+      {
+        "post_id": 26,
+        "rule": "comm_separation_confirmed",
+        "field": "status",
+        "is_correction": false,
+        "confidence": "high",
+        "addresssed": true,
+        "mechanism": "NON_ACTIVITY locked",
+        "current": "NON_ACTIVITY (greeting)",
+        "proposed": "keep NON_ACTIVITY after reading the text"
+      },
+      {
+        "post_id": 27,
+        "rule": "comm_separation_confirmed",
+        "field": "status",
+        "is_correction": false,
+        "confidence": "high",
+        "addresssed": true,
+        "mechanism": "NON_ACTIVITY locked",
+        "current": "NON_ACTIVITY (admission_promo)",
+        "proposed": "keep NON_ACTIVITY after reading the text"
+      },
+      {
+        "post_id": 27,
+        "rule": "comm_mention_context",
+        "field": "category",
+        "is_correction": false,
+        "confidence": "high",
+        "addresssed": true,
+        "mechanism": "categories retained as context-only",
+        "current": "INTERNSHIP, RESEARCH, ALUMNI",
+        "proposed": "context only: do NOT count as the post's activity type"
+      },
+      {
+        "post_id": 29,
+        "rule": "cat_over_tag:ACHIEVEMENT",
+        "field": "category",
+        "is_correction": true,
+        "confidence": "low",
+        "addresssed": true,
+        "mechanism": "category_gate flag fired (kept for review, not dropped)",
+        "current": "ACHIEVEMENT",
+        "proposed": "verify over-tag: remove Achievement and Awards unless the text is clearly about it"
+      },
+      {
+        "post_id": 29,
+        "rule": "pre_2024_keep",
+        "field": "date",
+        "is_correction": false,
+        "confidence": "high",
+        "addresssed": true,
+        "mechanism": "pre-2024 flag preserved",
+        "current": "pre-2024 evidence (2023-05-23)",
+        "proposed": "keep flagged; confirm the post belongs to the dataset before any publication"
+      },
+      {
+        "post_id": 31,
+        "rule": "cat_over_tag:RESEARCH",
+        "field": "category",
+        "is_correction": true,
+        "confidence": "low",
+        "addresssed": true,
+        "mechanism": "category_gate flag fired (kept for review, not dropped)",
+        "current": "RESEARCH",
+        "proposed": "verify over-tag: remove Research and Consultancy unless the text is clearly about it"
+      },
+      {
+        "post_id": 32,
+        "rule": "cat_over_tag:ACHIEVEMENT",
+        "field": "category",
+        "is_correction": true,
+        "confidence": "low",
+        "addresssed": true,
+        "mechanism": "category_gate flag fired (kept for review, not dropped)",
+        "current": "ACHIEVEMENT",
+        "proposed": "verify over-tag: remove Achievement and Awards unless the text is clearly about it"
+      },
+      {
+        "post_id": 34,
+        "rule": "cat_over_tag:ACHIEVEMENT",
+        "field": "category",
+        "is_correction": true,
+        "confidence": "low",
+        "addresssed": true,
+        "mechanism": "category_gate flag fired (kept for review, not dropped)",
+        "current": "ACHIEVEMENT",
+        "proposed": "verify over-tag: remove Achievement and Awards unless the text is clearly about it"
+      },
+      {
+        "post_id": 35,
+        "rule": "comm_separation_confirmed",
+        "field": "status",
+        "is_correction": false,
+        "confidence": "high",
+        "addresssed": true,
+        "mechanism": "NON_ACTIVITY locked",
+        "current": "NON_ACTIVITY (admission_promo)",
+        "proposed": "keep NON_ACTIVITY after reading the text"
+      },
+      {
+        "post_id": 35,
+        "rule": "comm_mention_context",
+        "field": "category",
+        "is_correction": false,
+        "confidence": "high",
+        "addresssed": true,
+        "mechanism": "categories retained as context-only",
+        "current": "ACHIEVEMENT",
+        "proposed": "context only: do NOT count as the post's activity type"
+      },
+      {
+        "post_id": 36,
+        "rule": "comm_separation_confirmed",
+        "field": "status",
+        "is_correction": false,
+        "confidence": "high",
+        "addresssed": true,
+        "mechanism": "NON_ACTIVITY locked",
+        "current": "NON_ACTIVITY (admission_promo)",
+        "proposed": "keep NON_ACTIVITY after reading the text"
+      },
+      {
+        "post_id": 36,
+        "rule": "comm_mention_context",
+        "field": "category",
+        "is_correction": false,
+        "confidence": "high",
+        "addresssed": true,
+        "mechanism": "categories retained as context-only",
+        "current": "ACHIEVEMENT",
+        "proposed": "context only: do NOT count as the post's activity type"
+      },
+      {
+        "post_id": 37,
+        "rule": "comm_separation_confirmed",
+        "field": "status",
+        "is_correction": false,
+        "confidence": "high",
+        "addresssed": true,
+        "mechanism": "NON_ACTIVITY locked",
+        "current": "NON_ACTIVITY (admission_promo)",
+        "proposed": "keep NON_ACTIVITY after reading the text"
+      },
+      {
+        "post_id": 40,
+        "rule": "cat_over_tag:RESEARCH",
+        "field": "category",
+        "is_correction": true,
+        "confidence": "low",
+        "addresssed": true,
+        "mechanism": "category_gate flag fired (kept for review, not dropped)",
+        "current": "RESEARCH",
+        "proposed": "verify over-tag: remove Research and Consultancy unless the text is clearly about it"
+      },
+      {
+        "post_id": 42,
+        "rule": "comm_separation_confirmed",
+        "field": "status",
+        "is_correction": false,
+        "confidence": "high",
+        "addresssed": true,
+        "mechanism": "NON_ACTIVITY locked",
+        "current": "NON_ACTIVITY (admission_promo)",
+        "proposed": "keep NON_ACTIVITY after reading the text"
+      },
+      {
+        "post_id": 42,
+        "rule": "comm_mention_context",
+        "field": "category",
+        "is_correction": false,
+        "confidence": "high",
+        "addresssed": true,
+        "mechanism": "categories retained as context-only",
+        "current": "INTERNSHIP, INDUSTRY, PLACEMENT, RESEARCH",
+        "proposed": "context only: do NOT count as the post's activity type"
+      },
+      {
+        "post_id": 45,
+        "rule": "cat_over_tag:ACHIEVEMENT",
+        "field": "category",
+        "is_correction": true,
+        "confidence": "low",
+        "addresssed": true,
+        "mechanism": "category_gate flag fired (kept for review, not dropped)",
+        "current": "ACHIEVEMENT",
+        "proposed": "verify over-tag: remove Achievement and Awards unless the text is clearly about it"
+      },
+      {
+        "post_id": 46,
+        "rule": "cat_over_tag:INTERNSHIP",
+        "field": "category",
+        "is_correction": true,
+        "confidence": "low",
+        "addresssed": true,
+        "mechanism": "category_gate flag fired (kept for review, not dropped)",
+        "current": "INTERNSHIP",
+        "proposed": "verify over-tag: remove Internship unless the text is clearly about it"
+      },
+      {
+        "post_id": 47,
+        "rule": "cat_over_tag:ACHIEVEMENT",
+        "field": "category",
+        "is_correction": true,
+        "confidence": "low",
+        "addresssed": true,
+        "mechanism": "category_gate flag fired (kept for review, not dropped)",
+        "current": "ACHIEVEMENT",
+        "proposed": "verify over-tag: remove Achievement and Awards unless the text is clearly about it"
+      },
+      {
+        "post_id": 50,
+        "rule": "cat_over_tag:ACHIEVEMENT",
+        "field": "category",
+        "is_correction": true,
+        "confidence": "low",
+        "addresssed": true,
+        "mechanism": "category_gate flag fired (kept for review, not dropped)",
+        "current": "ACHIEVEMENT",
+        "proposed": "verify over-tag: remove Achievement and Awards unless the text is clearly about it"
+      },
+      {
+        "post_id": 50,
+        "rule": "dept_generic_term",
+        "field": "department",
+        "is_correction": true,
+        "confidence": "low",
+        "addresssed": true,
+        "mechanism": "department removed from display (General or explicit depts)",
+        "current": "Chemistry",
+        "proposed": "verify department: drop 'Chemistry' (route to General or the explicitly named department) unless the post names this department"
+      },
+      {
+        "post_id": 51,
+        "rule": "comm_separation_confirmed",
+        "field": "status",
+        "is_correction": false,
+        "confidence": "high",
+        "addresssed": true,
+        "mechanism": "NON_ACTIVITY locked",
+        "current": "NON_ACTIVITY (job_ad)",
+        "proposed": "keep NON_ACTIVITY after reading the text"
+      },
+      {
+        "post_id": 51,
+        "rule": "comm_mention_context",
+        "field": "category",
+        "is_correction": false,
+        "confidence": "high",
+        "addresssed": true,
+        "mechanism": "categories retained as context-only",
+        "current": "RESEARCH",
+        "proposed": "context only: do NOT count as the post's activity type"
+      },
+      {
+        "post_id": 52,
+        "rule": "comm_separation_confirmed",
+        "field": "status",
+        "is_correction": false,
+        "confidence": "high",
+        "addresssed": true,
+        "mechanism": "NON_ACTIVITY locked",
+        "current": "NON_ACTIVITY (admission_promo)",
+        "proposed": "keep NON_ACTIVITY after reading the text"
+      },
+      {
+        "post_id": 52,
+        "rule": "comm_mention_context",
+        "field": "category",
+        "is_correction": false,
+        "confidence": "high",
+        "addresssed": true,
+        "mechanism": "categories retained as context-only",
+        "current": "RESEARCH, ACHIEVEMENT",
+        "proposed": "context only: do NOT count as the post's activity type"
+      },
+      {
+        "post_id": 57,
+        "rule": "cat_over_tag:ACHIEVEMENT",
+        "field": "category",
+        "is_correction": true,
+        "confidence": "low",
+        "addresssed": true,
+        "mechanism": "category_gate flag fired (kept for review, not dropped)",
+        "current": "ACHIEVEMENT",
+        "proposed": "verify over-tag: remove Achievement and Awards unless the text is clearly about it"
+      },
+      {
+        "post_id": 60,
+        "rule": "comm_separation_confirmed",
+        "field": "status",
+        "is_correction": false,
+        "confidence": "high",
+        "addresssed": true,
+        "mechanism": "NON_ACTIVITY locked",
+        "current": "NON_ACTIVITY (greeting)",
+        "proposed": "keep NON_ACTIVITY after reading the text"
+      },
+      {
+        "post_id": 61,
+        "rule": "cat_over_tag:ALUMNI",
+        "field": "category",
+        "is_correction": true,
+        "confidence": "low",
+        "addresssed": true,
+        "mechanism": "category_gate flag fired (kept for review, not dropped)",
+        "current": "ALUMNI",
+        "proposed": "verify over-tag: remove Alumni unless the text is clearly about it"
+      },
+      {
+        "post_id": 61,
+        "rule": "cat_over_tag:ACHIEVEMENT",
+        "field": "category",
+        "is_correction": true,
+        "confidence": "low",
+        "addresssed": true,
+        "mechanism": "category_gate flag fired (kept for review, not dropped)",
+        "current": "ACHIEVEMENT",
+        "proposed": "verify over-tag: remove Achievement and Awards unless the text is clearly about it"
+      },
+      {
+        "post_id": 62,
+        "rule": "comm_separation_confirmed",
+        "field": "status",
+        "is_correction": false,
+        "confidence": "high",
+        "addresssed": true,
+        "mechanism": "NON_ACTIVITY locked",
+        "current": "NON_ACTIVITY (thanks)",
+        "proposed": "keep NON_ACTIVITY after reading the text"
+      },
+      {
+        "post_id": 63,
+        "rule": "comm_separation_confirmed",
+        "field": "status",
+        "is_correction": false,
+        "confidence": "high",
+        "addresssed": true,
+        "mechanism": "NON_ACTIVITY locked",
+        "current": "NON_ACTIVITY (admission_promo)",
+        "proposed": "keep NON_ACTIVITY after reading the text"
+      },
+      {
+        "post_id": 63,
+        "rule": "comm_mention_context",
+        "field": "category",
+        "is_correction": false,
+        "confidence": "high",
+        "addresssed": true,
+        "mechanism": "categories retained as context-only",
+        "current": "INTERNSHIP, ACHIEVEMENT, CAMPUS, PLACEMENT, SPORTS, CLUB, RESEARCH",
+        "proposed": "context only: do NOT count as the post's activity type"
+      },
+      {
+        "post_id": 65,
+        "rule": "comm_separation_confirmed",
+        "field": "status",
+        "is_correction": false,
+        "confidence": "high",
+        "addresssed": true,
+        "mechanism": "NON_ACTIVITY locked",
+        "current": "NON_ACTIVITY (admission_promo)",
+        "proposed": "keep NON_ACTIVITY after reading the text"
+      },
+      {
+        "post_id": 65,
+        "rule": "comm_mention_context",
+        "field": "category",
+        "is_correction": false,
+        "confidence": "high",
+        "addresssed": true,
+        "mechanism": "categories retained as context-only",
+        "current": "CAMPUS, ALUMNI, PLACEMENT, ACHIEVEMENT",
+        "proposed": "context only: do NOT count as the post's activity type"
+      },
+      {
+        "post_id": 66,
+        "rule": "comm_separation_confirmed",
+        "field": "status",
+        "is_correction": false,
+        "confidence": "high",
+        "addresssed": true,
+        "mechanism": "NON_ACTIVITY locked",
+        "current": "NON_ACTIVITY (admission_promo)",
+        "proposed": "keep NON_ACTIVITY after reading the text"
+      },
+      {
+        "post_id": 66,
+        "rule": "comm_mention_context",
+        "field": "category",
+        "is_correction": false,
+        "confidence": "high",
+        "addresssed": true,
+        "mechanism": "categories retained as context-only",
+        "current": "INTERNSHIP, INDUSTRY, PLACEMENT, RESEARCH",
+        "proposed": "context only: do NOT count as the post's activity type"
+      },
+      {
+        "post_id": 69,
+        "rule": "cat_over_tag:RESEARCH",
+        "field": "category",
+        "is_correction": true,
+        "confidence": "low",
+        "addresssed": true,
+        "mechanism": "category_gate flag fired (kept for review, not dropped)",
+        "current": "RESEARCH",
+        "proposed": "verify over-tag: remove Research and Consultancy unless the text is clearly about it"
+      },
+      {
+        "post_id": 73,
+        "rule": "cat_over_tag:RESEARCH",
+        "field": "category",
+        "is_correction": true,
+        "confidence": "low",
+        "addresssed": true,
+        "mechanism": "category_gate flag fired (kept for review, not dropped)",
+        "current": "RESEARCH",
+        "proposed": "verify over-tag: remove Research and Consultancy unless the text is clearly about it"
+      },
+      {
+        "post_id": 75,
+        "rule": "cat_over_tag:INDUSTRY",
+        "field": "category",
+        "is_correction": true,
+        "confidence": "low",
+        "addresssed": true,
+        "mechanism": "category_gate flag fired (kept for review, not dropped)",
+        "current": "INDUSTRY",
+        "proposed": "verify over-tag: remove Industry Collaboration unless the text is clearly about it"
+      },
+      {
+        "post_id": 87,
+        "rule": "comm_separation_confirmed",
+        "field": "status",
+        "is_correction": false,
+        "confidence": "high",
+        "addresssed": true,
+        "mechanism": "NON_ACTIVITY locked",
+        "current": "NON_ACTIVITY (job_ad)",
+        "proposed": "keep NON_ACTIVITY after reading the text"
+      },
+      {
+        "post_id": 87,
+        "rule": "comm_mention_context",
+        "field": "category",
+        "is_correction": false,
+        "confidence": "high",
+        "addresssed": true,
+        "mechanism": "categories retained as context-only",
+        "current": "RESEARCH, ACHIEVEMENT",
+        "proposed": "context only: do NOT count as the post's activity type"
+      },
+      {
+        "post_id": 89,
+        "rule": "cat_over_tag:RESEARCH",
+        "field": "category",
+        "is_correction": true,
+        "confidence": "low",
+        "addresssed": true,
+        "mechanism": "category_gate flag fired (kept for review, not dropped)",
+        "current": "RESEARCH",
+        "proposed": "verify over-tag: remove Research and Consultancy unless the text is clearly about it"
+      },
+      {
+        "post_id": 90,
+        "rule": "cat_over_tag:ACHIEVEMENT",
+        "field": "category",
+        "is_correction": true,
+        "confidence": "low",
+        "addresssed": true,
+        "mechanism": "category_gate flag fired (kept for review, not dropped)",
+        "current": "ACHIEVEMENT",
+        "proposed": "verify over-tag: remove Achievement and Awards unless the text is clearly about it"
+      },
+      {
+        "post_id": 92,
+        "rule": "cat_over_tag:RESEARCH",
+        "field": "category",
+        "is_correction": true,
+        "confidence": "low",
+        "addresssed": true,
+        "mechanism": "category_gate flag fired (kept for review, not dropped)",
+        "current": "RESEARCH",
+        "proposed": "verify over-tag: remove Research and Consultancy unless the text is clearly about it"
+      },
+      {
+        "post_id": 95,
+        "rule": "comm_separation_confirmed",
+        "field": "status",
+        "is_correction": false,
+        "confidence": "high",
+        "addresssed": true,
+        "mechanism": "NON_ACTIVITY locked",
+        "current": "NON_ACTIVITY (admission_promo)",
+        "proposed": "keep NON_ACTIVITY after reading the text"
+      },
+      {
+        "post_id": 95,
+        "rule": "comm_mention_context",
+        "field": "category",
+        "is_correction": false,
+        "confidence": "high",
+        "addresssed": true,
+        "mechanism": "categories retained as context-only",
+        "current": "RESEARCH, ACHIEVEMENT",
+        "proposed": "context only: do NOT count as the post's activity type"
+      },
+      {
+        "post_id": 105,
+        "rule": "dept_generic_term",
+        "field": "department",
+        "is_correction": true,
+        "confidence": "medium",
+        "addresssed": true,
+        "mechanism": "department removed from display (General or explicit depts)",
+        "current": "Artificial Intelligence",
+        "proposed": "verify department: drop 'Artificial Intelligence' (route to General or the explicitly named department) unless the post names this department"
+      },
+      {
+        "post_id": 127,
+        "rule": "comm_separation_confirmed",
+        "field": "status",
+        "is_correction": false,
+        "confidence": "high",
+        "addresssed": true,
+        "mechanism": "NON_ACTIVITY locked",
+        "current": "NON_ACTIVITY (job_ad)",
+        "proposed": "keep NON_ACTIVITY after reading the text"
+      },
+      {
+        "post_id": 127,
+        "rule": "comm_mention_context",
+        "field": "category",
+        "is_correction": false,
+        "confidence": "high",
+        "addresssed": true,
+        "mechanism": "categories retained as context-only",
+        "current": "RESEARCH, ACHIEVEMENT",
+        "proposed": "context only: do NOT count as the post's activity type"
+      },
+      {
+        "post_id": 140,
+        "rule": "cat_over_tag:ALUMNI",
+        "field": "category",
+        "is_correction": true,
+        "confidence": "low",
+        "addresssed": true,
+        "mechanism": "category_gate flag fired (kept for review, not dropped)",
+        "current": "ALUMNI",
+        "proposed": "verify over-tag: remove Alumni unless the text is clearly about it"
+      },
+      {
+        "post_id": 140,
+        "rule": "cat_over_tag:ACHIEVEMENT",
+        "field": "category",
+        "is_correction": true,
+        "confidence": "low",
+        "addresssed": true,
+        "mechanism": "category_gate flag fired (kept for review, not dropped)",
+        "current": "ACHIEVEMENT",
+        "proposed": "verify over-tag: remove Achievement and Awards unless the text is clearly about it"
+      },
+      {
+        "post_id": 149,
+        "rule": "cat_over_tag:ALUMNI",
+        "field": "category",
+        "is_correction": true,
+        "confidence": "low",
+        "addresssed": true,
+        "mechanism": "category_gate flag fired (kept for review, not dropped)",
+        "current": "ALUMNI",
+        "proposed": "verify over-tag: remove Alumni unless the text is clearly about it"
+      },
+      {
+        "post_id": 164,
+        "rule": "cat_over_tag:ACHIEVEMENT",
+        "field": "category",
+        "is_correction": true,
+        "confidence": "low",
+        "addresssed": true,
+        "mechanism": "category_gate flag fired (kept for review, not dropped)",
+        "current": "ACHIEVEMENT",
+        "proposed": "verify over-tag: remove Achievement and Awards unless the text is clearly about it"
+      },
+      {
+        "post_id": 166,
+        "rule": "cat_over_tag:ACHIEVEMENT",
+        "field": "category",
+        "is_correction": true,
+        "confidence": "low",
+        "addresssed": true,
+        "mechanism": "category_gate flag fired (kept for review, not dropped)",
+        "current": "ACHIEVEMENT",
+        "proposed": "verify over-tag: remove Achievement and Awards unless the text is clearly about it"
+      },
+      {
+        "post_id": 169,
+        "rule": "comm_separation_confirmed",
+        "field": "status",
+        "is_correction": false,
+        "confidence": "high",
+        "addresssed": true,
+        "mechanism": "NON_ACTIVITY locked",
+        "current": "NON_ACTIVITY (greeting)",
+        "proposed": "keep NON_ACTIVITY after reading the text"
+      },
+      {
+        "post_id": 170,
+        "rule": "cat_over_tag:ACHIEVEMENT",
+        "field": "category",
+        "is_correction": true,
+        "confidence": "low",
+        "addresssed": true,
+        "mechanism": "category_gate flag fired (kept for review, not dropped)",
+        "current": "ACHIEVEMENT",
+        "proposed": "verify over-tag: remove Achievement and Awards unless the text is clearly about it"
+      },
+      {
+        "post_id": 171,
+        "rule": "cat_over_tag:ACHIEVEMENT",
+        "field": "category",
+        "is_correction": true,
+        "confidence": "low",
+        "addresssed": true,
+        "mechanism": "category_gate flag fired (kept for review, not dropped)",
+        "current": "ACHIEVEMENT",
+        "proposed": "verify over-tag: remove Achievement and Awards unless the text is clearly about it"
+      },
+      {
+        "post_id": 187,
+        "rule": "cat_over_tag:ACHIEVEMENT",
+        "field": "category",
+        "is_correction": true,
+        "confidence": "low",
+        "addresssed": true,
+        "mechanism": "category_gate flag fired (kept for review, not dropped)",
+        "current": "ACHIEVEMENT",
+        "proposed": "verify over-tag: remove Achievement and Awards unless the text is clearly about it"
+      },
+      {
+        "post_id": 195,
+        "rule": "comm_separation_confirmed",
+        "field": "status",
+        "is_correction": false,
+        "confidence": "high",
+        "addresssed": true,
+        "mechanism": "NON_ACTIVITY locked",
+        "current": "NON_ACTIVITY (job_ad)",
+        "proposed": "keep NON_ACTIVITY after reading the text"
+      },
+      {
+        "post_id": 198,
+        "rule": "comm_separation_confirmed",
+        "field": "status",
+        "is_correction": false,
+        "confidence": "high",
+        "addresssed": true,
+        "mechanism": "NON_ACTIVITY locked",
+        "current": "NON_ACTIVITY (greeting)",
+        "proposed": "keep NON_ACTIVITY after reading the text"
+      },
+      {
+        "post_id": 242,
+        "rule": "dept_generic_term",
+        "field": "department",
+        "is_correction": true,
+        "confidence": "low",
+        "addresssed": true,
+        "mechanism": "department removed from display (General or explicit depts)",
+        "current": "T'SEDA (Architecture, Design, Planning)",
+        "proposed": "verify department: drop 'T'SEDA (Architecture, Design, Planning)' (route to General or the explicitly named department) unless the post names this department"
+      },
+      {
+        "post_id": 247,
+        "rule": "comm_separation_confirmed",
+        "field": "status",
+        "is_correction": false,
+        "confidence": "high",
+        "addresssed": true,
+        "mechanism": "NON_ACTIVITY locked",
+        "current": "NON_ACTIVITY (admission_promo)",
+        "proposed": "keep NON_ACTIVITY after reading the text"
+      },
+      {
+        "post_id": 247,
+        "rule": "comm_mention_context",
+        "field": "category",
+        "is_correction": false,
+        "confidence": "high",
+        "addresssed": true,
+        "mechanism": "categories retained as context-only",
+        "current": "RESEARCH",
+        "proposed": "context only: do NOT count as the post's activity type"
+      },
+      {
+        "post_id": 253,
+        "rule": "cat_over_tag:ACHIEVEMENT",
+        "field": "category",
+        "is_correction": true,
+        "confidence": "low",
+        "addresssed": true,
+        "mechanism": "category_gate flag fired (kept for review, not dropped)",
+        "current": "ACHIEVEMENT",
+        "proposed": "verify over-tag: remove Achievement and Awards unless the text is clearly about it"
+      },
+      {
+        "post_id": 258,
+        "rule": "comm_separation_confirmed",
+        "field": "status",
+        "is_correction": false,
+        "confidence": "high",
+        "addresssed": true,
+        "mechanism": "NON_ACTIVITY locked",
+        "current": "NON_ACTIVITY (job_ad)",
+        "proposed": "keep NON_ACTIVITY after reading the text"
+      },
+      {
+        "post_id": 258,
+        "rule": "comm_mention_context",
+        "field": "category",
+        "is_correction": false,
+        "confidence": "high",
+        "addresssed": true,
+        "mechanism": "categories retained as context-only",
+        "current": "ALUMNI",
+        "proposed": "context only: do NOT count as the post's activity type"
+      },
+      {
+        "post_id": 260,
+        "rule": "multi_label_overlap",
+        "field": "category",
+        "is_correction": true,
+        "confidence": "low",
+        "addresssed": true,
+        "mechanism": "curated same-event pair collapsed",
+        "current": "CONFERENCE + WEBINAR",
+        "proposed": "verify multi-label: if both describe the SAME event, keep only the dominant category (CONFERENCE)"
+      },
+      {
+        "post_id": 261,
+        "rule": "dept_generic_term",
+        "field": "department",
+        "is_correction": true,
+        "confidence": "medium",
+        "addresssed": true,
+        "mechanism": "department removed from display (General or explicit depts)",
+        "current": "Chemistry",
+        "proposed": "verify department: drop 'Chemistry' (route to General or the explicitly named department) unless the post names this department"
+      },
+      {
+        "post_id": 265,
+        "rule": "comm_separation_confirmed",
+        "field": "status",
+        "is_correction": false,
+        "confidence": "high",
+        "addresssed": true,
+        "mechanism": "NON_ACTIVITY locked",
+        "current": "NON_ACTIVITY (job_ad)",
+        "proposed": "keep NON_ACTIVITY after reading the text"
+      },
+      {
+        "post_id": 265,
+        "rule": "comm_mention_context",
+        "field": "category",
+        "is_correction": false,
+        "confidence": "high",
+        "addresssed": true,
+        "mechanism": "categories retained as context-only",
+        "current": "RESEARCH",
+        "proposed": "context only: do NOT count as the post's activity type"
+      },
+      {
+        "post_id": 298,
+        "rule": "cat_over_tag:ACHIEVEMENT",
+        "field": "category",
+        "is_correction": true,
+        "confidence": "low",
+        "addresssed": true,
+        "mechanism": "category_gate flag fired (kept for review, not dropped)",
+        "current": "ACHIEVEMENT",
+        "proposed": "verify over-tag: remove Achievement and Awards unless the text is clearly about it"
+      },
+      {
+        "post_id": 298,
+        "rule": "multi_label_overlap",
+        "field": "category",
+        "is_correction": true,
+        "confidence": "low",
+        "addresssed": true,
+        "mechanism": "curated same-event pair collapsed",
+        "current": "SYMPOSIUM + TECH_FEST",
+        "proposed": "verify multi-label: if both describe the SAME event, keep only the dominant category (SYMPOSIUM)"
+      },
+      {
+        "post_id": 333,
+        "rule": "multi_year_keep",
+        "field": "date",
+        "is_correction": false,
+        "confidence": "high",
+        "addresssed": true,
+        "mechanism": "multi-year ambiguity preserved",
+        "current": "ambiguous_multi_year (2025-12-29, 2026-01-01)",
+        "proposed": "keep ambiguous_multi_year; do NOT collapse to one AY"
+      },
+      {
+        "post_id": 392,
+        "rule": "multi_year_keep",
+        "field": "date",
+        "is_correction": false,
+        "confidence": "high",
+        "addresssed": true,
+        "mechanism": "multi-year ambiguity preserved",
+        "current": "ambiguous_multi_year (2025-12-27, 2026-01-21)",
+        "proposed": "keep ambiguous_multi_year; do NOT collapse to one AY"
+      },
+      {
+        "post_id": 393,
+        "rule": "multi_year_keep",
+        "field": "date",
+        "is_correction": false,
+        "confidence": "high",
+        "addresssed": true,
+        "mechanism": "multi-year ambiguity preserved",
+        "current": "ambiguous_multi_year (2025-11-30, 2026-01-05, 2026-01-09)",
+        "proposed": "keep ambiguous_multi_year; do NOT collapse to one AY"
+      },
+      {
+        "post_id": 394,
+        "rule": "cat_over_tag:INDUSTRY",
+        "field": "category",
+        "is_correction": true,
+        "confidence": "low",
+        "addresssed": true,
+        "mechanism": "category_gate flag fired (kept for review, not dropped)",
+        "current": "INDUSTRY",
+        "proposed": "verify over-tag: remove Industry Collaboration unless the text is clearly about it"
+      },
+      {
+        "post_id": 394,
+        "rule": "cat_over_tag:ACHIEVEMENT",
+        "field": "category",
+        "is_correction": true,
+        "confidence": "low",
+        "addresssed": true,
+        "mechanism": "category_gate flag fired (kept for review, not dropped)",
+        "current": "ACHIEVEMENT",
+        "proposed": "verify over-tag: remove Achievement and Awards unless the text is clearly about it"
+      },
+      {
+        "post_id": 394,
+        "rule": "multi_year_keep",
+        "field": "date",
+        "is_correction": false,
+        "confidence": "high",
+        "addresssed": true,
+        "mechanism": "multi-year ambiguity preserved",
+        "current": "ambiguous_multi_year (2025-12-27, 2026-01-21)",
+        "proposed": "keep ambiguous_multi_year; do NOT collapse to one AY"
+      },
+      {
+        "post_id": 395,
+        "rule": "multi_year_keep",
+        "field": "date",
+        "is_correction": false,
+        "confidence": "high",
+        "addresssed": true,
+        "mechanism": "multi-year ambiguity preserved",
+        "current": "ambiguous_multi_year (2025-12-27, 2026-01-21)",
+        "proposed": "keep ambiguous_multi_year; do NOT collapse to one AY"
+      },
+      {
+        "post_id": 400,
+        "rule": "dept_generic_term",
+        "field": "department",
+        "is_correction": true,
+        "confidence": "low",
+        "addresssed": true,
+        "mechanism": "department removed from display (General or explicit depts)",
+        "current": "Electrical and Electronics Engineering",
+        "proposed": "verify department: drop 'Electrical and Electronics Engineering' (route to General or the explicitly named department) unless the post names this department"
+      },
+      {
+        "post_id": 400,
+        "rule": "pre_2024_keep",
+        "field": "date",
+        "is_correction": false,
+        "confidence": "high",
+        "addresssed": true,
+        "mechanism": "pre-2024 flag preserved",
+        "current": "pre-2024 evidence (2023-08-16)",
+        "proposed": "keep flagged; confirm the post belongs to the dataset before any publication"
+      },
+      {
+        "post_id": 414,
+        "rule": "multi_year_keep",
+        "field": "date",
+        "is_correction": false,
+        "confidence": "high",
+        "addresssed": true,
+        "mechanism": "multi-year ambiguity preserved",
+        "current": "ambiguous_multi_year (2025-12-20, 2026-01-31, 2026-02-28)",
+        "proposed": "keep ambiguous_multi_year; do NOT collapse to one AY"
+      },
+      {
+        "post_id": 415,
+        "rule": "multi_year_keep",
+        "field": "date",
+        "is_correction": false,
+        "confidence": "high",
+        "addresssed": true,
+        "mechanism": "multi-year ambiguity preserved",
+        "current": "ambiguous_multi_year (2025-11-19, 2026-01-22, 2026-02-11, 2026-03-04, 2026-03-11)",
+        "proposed": "keep ambiguous_multi_year; do NOT collapse to one AY"
+      },
+      {
+        "post_id": 419,
+        "rule": "multi_year_keep",
+        "field": "date",
+        "is_correction": false,
+        "confidence": "high",
+        "addresssed": true,
+        "mechanism": "multi-year ambiguity preserved",
+        "current": "ambiguous_multi_year (2025-11-19, 2026-01-22, 2026-02-11, 2026-03-04, 2026-03-11)",
+        "proposed": "keep ambiguous_multi_year; do NOT collapse to one AY"
+      },
+      {
+        "post_id": 426,
+        "rule": "dept_generic_term",
+        "field": "department",
+        "is_correction": true,
+        "confidence": "medium",
+        "addresssed": true,
+        "mechanism": "department removed from display (General or explicit depts)",
+        "current": "Applied Mathematics and Computational Science",
+        "proposed": "verify department: drop 'Applied Mathematics and Computational Science' (route to General or the explicitly named department) unless the post names this department"
+      },
+      {
+        "post_id": 426,
+        "rule": "dept_generic_term",
+        "field": "department",
+        "is_correction": true,
+        "confidence": "medium",
+        "addresssed": true,
+        "mechanism": "department removed from display (General or explicit depts)",
+        "current": "Artificial Intelligence",
+        "proposed": "verify department: drop 'Artificial Intelligence' (route to General or the explicitly named department) unless the post names this department"
+      },
+      {
+        "post_id": 486,
+        "rule": "dept_generic_term",
+        "field": "department",
+        "is_correction": true,
+        "confidence": "medium",
+        "addresssed": true,
+        "mechanism": "department removed from display (General or explicit depts)",
+        "current": "Applied Mathematics and Computational Science",
+        "proposed": "verify department: drop 'Applied Mathematics and Computational Science' (route to General or the explicitly named department) unless the post names this department"
+      },
+      {
+        "post_id": 486,
+        "rule": "dept_generic_term",
+        "field": "department",
+        "is_correction": true,
+        "confidence": "medium",
+        "addresssed": true,
+        "mechanism": "department removed from display (General or explicit depts)",
+        "current": "Artificial Intelligence",
+        "proposed": "verify department: drop 'Artificial Intelligence' (route to General or the explicitly named department) unless the post names this department"
+      },
+      {
+        "post_id": 486,
+        "rule": "dept_generic_term",
+        "field": "department",
+        "is_correction": true,
+        "confidence": "medium",
+        "addresssed": true,
+        "mechanism": "department removed from display (General or explicit depts)",
+        "current": "Chemistry",
+        "proposed": "verify department: drop 'Chemistry' (route to General or the explicitly named department) unless the post names this department"
+      },
+      {
+        "post_id": 486,
+        "rule": "dept_generic_term",
+        "field": "department",
+        "is_correction": true,
+        "confidence": "medium",
+        "addresssed": true,
+        "mechanism": "department removed from display (General or explicit depts)",
+        "current": "Electrical and Electronics Engineering",
+        "proposed": "verify department: drop 'Electrical and Electronics Engineering' (route to General or the explicitly named department) unless the post names this department"
+      },
+      {
+        "post_id": 486,
+        "rule": "multi_year_keep",
+        "field": "date",
+        "is_correction": false,
+        "confidence": "high",
+        "addresssed": true,
+        "mechanism": "multi-year ambiguity preserved",
+        "current": "ambiguous_multi_year (2025-10-20, 2025-10-31, 2025-11-30, 2025-12-20, 2026-01-20)",
+        "proposed": "keep ambiguous_multi_year; do NOT collapse to one AY"
+      },
+      {
+        "post_id": 533,
+        "rule": "multi_year_keep",
+        "field": "date",
+        "is_correction": false,
+        "confidence": "high",
+        "addresssed": true,
+        "mechanism": "multi-year ambiguity preserved",
+        "current": "ambiguous_multi_year (2025-10-14, 2025-11-30, 2026-01-09)",
+        "proposed": "keep ambiguous_multi_year; do NOT collapse to one AY"
+      },
+      {
+        "post_id": 567,
+        "rule": "dept_generic_term",
+        "field": "department",
+        "is_correction": true,
+        "confidence": "medium",
+        "addresssed": true,
+        "mechanism": "department removed from display (General or explicit depts)",
+        "current": "Applied Mathematics and Computational Science",
+        "proposed": "verify department: drop 'Applied Mathematics and Computational Science' (route to General or the explicitly named department) unless the post names this department"
+      },
+      {
+        "post_id": 567,
+        "rule": "dept_generic_term",
+        "field": "department",
+        "is_correction": true,
+        "confidence": "medium",
+        "addresssed": true,
+        "mechanism": "department removed from display (General or explicit depts)",
+        "current": "Artificial Intelligence",
+        "proposed": "verify department: drop 'Artificial Intelligence' (route to General or the explicitly named department) unless the post names this department"
+      },
+      {
+        "post_id": 567,
+        "rule": "dept_generic_term",
+        "field": "department",
+        "is_correction": true,
+        "confidence": "medium",
+        "addresssed": true,
+        "mechanism": "department removed from display (General or explicit depts)",
+        "current": "Chemistry",
+        "proposed": "verify department: drop 'Chemistry' (route to General or the explicitly named department) unless the post names this department"
+      },
+      {
+        "post_id": 567,
+        "rule": "dept_generic_term",
+        "field": "department",
+        "is_correction": true,
+        "confidence": "medium",
+        "addresssed": true,
+        "mechanism": "department removed from display (General or explicit depts)",
+        "current": "Electrical and Electronics Engineering",
+        "proposed": "verify department: drop 'Electrical and Electronics Engineering' (route to General or the explicitly named department) unless the post names this department"
+      },
+      {
+        "post_id": 567,
+        "rule": "multi_year_keep",
+        "field": "date",
+        "is_correction": false,
+        "confidence": "high",
+        "addresssed": true,
+        "mechanism": "multi-year ambiguity preserved",
+        "current": "ambiguous_multi_year (2025-09-30, 2025-10-31, 2025-11-30, 2025-12-20, 2026-01-20)",
+        "proposed": "keep ambiguous_multi_year; do NOT collapse to one AY"
+      },
+      {
+        "post_id": 586,
+        "rule": "dept_generic_term",
+        "field": "department",
+        "is_correction": true,
+        "confidence": "low",
+        "addresssed": true,
+        "mechanism": "explicitly named in post; kept per review guideline 'unless the post names this department'",
+        "current": "Chemistry",
+        "proposed": "verify department: drop 'Chemistry' (route to General or the explicitly named department) unless the post names this department"
+      },
+      {
+        "post_id": 586,
+        "rule": "multi_label_overlap",
+        "field": "category",
+        "is_correction": true,
+        "confidence": "low",
+        "addresssed": true,
+        "mechanism": "curated same-event pair collapsed",
+        "current": "CONFERENCE + GUEST_LECTURE",
+        "proposed": "verify multi-label: if both describe the SAME event, keep only the dominant category (GUEST_LECTURE)"
+      },
+      {
+        "post_id": 586,
+        "rule": "multi_year_keep",
+        "field": "date",
+        "is_correction": false,
+        "confidence": "high",
+        "addresssed": true,
+        "mechanism": "multi-year ambiguity preserved",
+        "current": "ambiguous_multi_year (2025-12-15, 2026-01-15, 2026-01-31)",
+        "proposed": "keep ambiguous_multi_year; do NOT collapse to one AY"
+      },
+      {
+        "post_id": 601,
+        "rule": "dept_generic_term",
+        "field": "department",
+        "is_correction": true,
+        "confidence": "medium",
+        "addresssed": true,
+        "mechanism": "department removed from display (General or explicit depts)",
+        "current": "Applied Mathematics and Computational Science",
+        "proposed": "verify department: drop 'Applied Mathematics and Computational Science' (route to General or the explicitly named department) unless the post names this department"
+      },
+      {
+        "post_id": 601,
+        "rule": "dept_generic_term",
+        "field": "department",
+        "is_correction": true,
+        "confidence": "medium",
+        "addresssed": true,
+        "mechanism": "department removed from display (General or explicit depts)",
+        "current": "Artificial Intelligence",
+        "proposed": "verify department: drop 'Artificial Intelligence' (route to General or the explicitly named department) unless the post names this department"
+      },
+      {
+        "post_id": 601,
+        "rule": "dept_generic_term",
+        "field": "department",
+        "is_correction": true,
+        "confidence": "medium",
+        "addresssed": true,
+        "mechanism": "department removed from display (General or explicit depts)",
+        "current": "Chemistry",
+        "proposed": "verify department: drop 'Chemistry' (route to General or the explicitly named department) unless the post names this department"
+      },
+      {
+        "post_id": 601,
+        "rule": "dept_generic_term",
+        "field": "department",
+        "is_correction": true,
+        "confidence": "medium",
+        "addresssed": true,
+        "mechanism": "department removed from display (General or explicit depts)",
+        "current": "Electrical and Electronics Engineering",
+        "proposed": "verify department: drop 'Electrical and Electronics Engineering' (route to General or the explicitly named department) unless the post names this department"
+      },
+      {
+        "post_id": 601,
+        "rule": "multi_year_keep",
+        "field": "date",
+        "is_correction": false,
+        "confidence": "high",
+        "addresssed": true,
+        "mechanism": "multi-year ambiguity preserved",
+        "current": "ambiguous_multi_year (2025-09-30, 2025-10-31, 2025-11-30, 2025-12-20, 2026-01-20)",
+        "proposed": "keep ambiguous_multi_year; do NOT collapse to one AY"
+      },
+      {
+        "post_id": 660,
+        "rule": "dept_generic_term",
+        "field": "department",
+        "is_correction": true,
+        "confidence": "medium",
+        "addresssed": true,
+        "mechanism": "department removed from display (General or explicit depts)",
+        "current": "Applied Mathematics and Computational Science",
+        "proposed": "verify department: drop 'Applied Mathematics and Computational Science' (route to General or the explicitly named department) unless the post names this department"
+      },
+      {
+        "post_id": 660,
+        "rule": "dept_generic_term",
+        "field": "department",
+        "is_correction": true,
+        "confidence": "medium",
+        "addresssed": true,
+        "mechanism": "department removed from display (General or explicit depts)",
+        "current": "Artificial Intelligence",
+        "proposed": "verify department: drop 'Artificial Intelligence' (route to General or the explicitly named department) unless the post names this department"
+      },
+      {
+        "post_id": 660,
+        "rule": "dept_generic_term",
+        "field": "department",
+        "is_correction": true,
+        "confidence": "medium",
+        "addresssed": true,
+        "mechanism": "department removed from display (General or explicit depts)",
+        "current": "Chemistry",
+        "proposed": "verify department: drop 'Chemistry' (route to General or the explicitly named department) unless the post names this department"
+      },
+      {
+        "post_id": 660,
+        "rule": "dept_generic_term",
+        "field": "department",
+        "is_correction": true,
+        "confidence": "medium",
+        "addresssed": true,
+        "mechanism": "department removed from display (General or explicit depts)",
+        "current": "Electrical and Electronics Engineering",
+        "proposed": "verify department: drop 'Electrical and Electronics Engineering' (route to General or the explicitly named department) unless the post names this department"
+      },
+      {
+        "post_id": 660,
+        "rule": "multi_year_keep",
+        "field": "date",
+        "is_correction": false,
+        "confidence": "high",
+        "addresssed": true,
+        "mechanism": "multi-year ambiguity preserved",
+        "current": "ambiguous_multi_year (2025-09-30, 2025-10-31, 2025-11-30, 2025-12-20, 2026-01-20)",
+        "proposed": "keep ambiguous_multi_year; do NOT collapse to one AY"
+      },
+      {
+        "post_id": 747,
+        "rule": "cat_over_tag:ACHIEVEMENT",
+        "field": "category",
+        "is_correction": true,
+        "confidence": "low",
+        "addresssed": true,
+        "mechanism": "category_gate flag fired (kept for review, not dropped)",
+        "current": "ACHIEVEMENT",
+        "proposed": "verify over-tag: remove Achievement and Awards unless the text is clearly about it"
+      },
+      {
+        "post_id": 747,
+        "rule": "pre_2024_keep",
+        "field": "date",
+        "is_correction": false,
+        "confidence": "high",
+        "addresssed": true,
+        "mechanism": "pre-2024 flag preserved",
+        "current": "pre-2024 evidence (2023-05-23)",
+        "proposed": "keep flagged; confirm the post belongs to the dataset before any publication"
+      },
+      {
+        "post_id": 1125,
+        "rule": "cat_over_tag:ACHIEVEMENT",
+        "field": "category",
+        "is_correction": true,
+        "confidence": "low",
+        "addresssed": true,
+        "mechanism": "category_gate flag fired (kept for review, not dropped)",
+        "current": "ACHIEVEMENT",
+        "proposed": "verify over-tag: remove Achievement and Awards unless the text is clearly about it"
+      },
+      {
+        "post_id": 1125,
+        "rule": "multi_year_keep",
+        "field": "date",
+        "is_correction": false,
+        "confidence": "high",
+        "addresssed": true,
+        "mechanism": "multi-year ambiguity preserved",
+        "current": "ambiguous_multi_year (2024-09-06, 2026-09-05)",
+        "proposed": "keep ambiguous_multi_year; do NOT collapse to one AY"
+      },
+      {
+        "post_id": 1519,
+        "rule": "cat_over_tag:ACHIEVEMENT",
+        "field": "category",
+        "is_correction": true,
+        "confidence": "low",
+        "addresssed": true,
+        "mechanism": "category_gate flag fired (kept for review, not dropped)",
+        "current": "ACHIEVEMENT",
+        "proposed": "verify over-tag: remove Achievement and Awards unless the text is clearly about it"
+      },
+      {
+        "post_id": 1519,
+        "rule": "pre_2024_keep",
+        "field": "date",
+        "is_correction": false,
+        "confidence": "high",
+        "addresssed": true,
+        "mechanism": "pre-2024 flag preserved",
+        "current": "pre-2024 evidence (2023-05-23)",
+        "proposed": "keep flagged; confirm the post belongs to the dataset before any publication"
+      }
+    ]
+  },
+  "section_b_before_after": {
+    "before": {
+      "candidate_status": {
+        "ACTIVITY_CANDIDATE": 116,
+        "NON_ACTIVITY": 27,
+        "REVIEW_REQUIRED": 57
+      },
+      "kind": {
+        "A": 14,
+        "B": 34,
+        "C": 29,
+        "D": 44,
+        "E": 1,
+        "F": 8,
+        "G": 14,
+        "H": 4,
+        "I": 47,
+        "J": 5
+      },
+      "category_candidates": {
+        "ACHIEVEMENT": 53,
+        "RESEARCH": 43,
+        "INTERNSHIP": 16,
+        "CLUB": 15,
+        "WORKSHOP": 15,
+        "ALUMNI": 14,
+        "CONFERENCE": 11,
+        "HACKATHON": 11,
+        "SEMINAR": 11,
+        "CAMPUS": 10,
+        "CULTURAL": 10,
+        "GUEST_LECTURE": 9,
+        "INDUSTRY": 8,
+        "ORIENTATION": 7,
+        "OUTREACH": 7,
+        "PLACEMENT": 7,
+        "SPORTS": 7,
+        "SYMPOSIUM": 7,
+        "NCC": 6,
+        "NSS": 6,
+        "TECH_FEST": 6,
+        "WEBINAR": 6,
+        "FDP": 5,
+        "STTP": 2
+      },
+      "department_candidates": {
+        "Electronics and Communication Engineering": 24,
+        "Computer Science and Engineering": 22,
+        "Electrical and Electronics Engineering": 22,
+        "Civil Engineering": 16,
+        "T'SEDA (Architecture, Design, Planning)": 15,
+        "Applied Mathematics and Computational Science": 13,
+        "Mechanical Engineering": 13,
+        "Chemistry": 12,
+        "Information Technology": 11,
+        "Mechatronics": 8,
+        "Artificial Intelligence": 7,
+        "Computer Science and Business Systems": 7,
+        "Computer Applications": 2,
+        "English": 1
+      },
+      "multi_label": 82,
+      "date_status": {
+        "ambiguous_multi_year": 15,
+        "dated": 89,
+        "undated": 96
+      },
+      "flags": {
+        "communication_only": 27,
+        "weak_text": 19,
+        "multi_year": 15,
+        "link_less": 7,
+        "text_is_url": 6,
+        "url_only": 5,
+        "pre_2024_ambiguous": 4
+      }
+    },
+    "after": {
+      "candidate_status": {
+        "ACTIVITY_CANDIDATE": 116,
+        "NON_ACTIVITY": 27,
+        "REVIEW_REQUIRED": 57
+      },
+      "kind": {
+        "A": 14,
+        "B": 34,
+        "C": 29,
+        "D": 44,
+        "E": 1,
+        "F": 8,
+        "G": 14,
+        "H": 4,
+        "I": 47,
+        "J": 5
+      },
+      "category_candidates": {
+        "ACHIEVEMENT": 53,
+        "RESEARCH": 43,
+        "INTERNSHIP": 16,
+        "CLUB": 15,
+        "WORKSHOP": 15,
+        "ALUMNI": 14,
+        "HACKATHON": 11,
+        "SEMINAR": 11,
+        "CAMPUS": 10,
+        "CONFERENCE": 10,
+        "CULTURAL": 10,
+        "GUEST_LECTURE": 9,
+        "INDUSTRY": 8,
+        "ORIENTATION": 7,
+        "OUTREACH": 7,
+        "PLACEMENT": 7,
+        "SPORTS": 7,
+        "SYMPOSIUM": 7,
+        "NCC": 6,
+        "NSS": 6,
+        "FDP": 5,
+        "TECH_FEST": 5,
+        "WEBINAR": 5,
+        "STTP": 2
+      },
+      "department_candidates": {
+        "Electronics and Communication Engineering": 24,
+        "Computer Science and Engineering": 22,
+        "Electrical and Electronics Engineering": 22,
+        "Civil Engineering": 16,
+        "T'SEDA (Architecture, Design, Planning)": 15,
+        "Applied Mathematics and Computational Science": 13,
+        "Mechanical Engineering": 13,
+        "Chemistry": 12,
+        "Information Technology": 11,
+        "Mechatronics": 8,
+        "Artificial Intelligence": 7,
+        "Computer Science and Business Systems": 7,
+        "Computer Applications": 2,
+        "English": 1
+      },
+      "department_display": {
+        "(none)": 109,
+        "Electronics and Communication Engineering": 12,
+        "Electrical and Electronics Engineering": 10,
+        "T'SEDA (Architecture, Design, Planning)": 10,
+        "General": 8,
+        "Information Technology": 7,
+        "Computer Science and Engineering": 6,
+        "Applied Mathematics and Computational Science": 5,
+        "Mechanical Engineering": 5,
+        "Civil Engineering": 4,
+        "Civil Engineering, Mechanical Engineering, Computer Science and Engineering, Electronics and Communication Engineering": 4,
+        "Mechatronics": 4,
+        "Computer Science and Business Systems": 2,
+        "Electrical and Electronics Engineering, Civil Engineering, Electronics and Communication Engineering, Information Technology, Mechanical Engineering, Mechatronics": 2,
+        "Applied Mathematics and Computational Science, Computer Science and Business Systems, Computer Science and Engineering": 1,
+        "Applied Mathematics and Computational Science, Computer Science and Engineering, Civil Engineering, Computer Applications, Computer Science and Business Systems, Electronics and Communication Engineering, Information Technology, Mechanical Engineering, Mechatronics, T'SEDA (Architecture, Design, Planning)": 1,
+        "Chemistry": 1,
+        "Civil Engineering, Mechanical Engineering, Computer Science and Engineering, Electrical and Electronics Engineering, Electronics and Communication Engineering": 1,
+        "Civil Engineering, Mechatronics, Computer Science and Business Systems, Computer Science and Engineering, Electrical and Electronics Engineering, Electronics and Communication Engineering": 1,
+        "Computer Science and Business Systems, Computer Science and Engineering": 1,
+        "Computer Science and Business Systems, Computer Science and Engineering, Electronics and Communication Engineering": 1,
+        "Computer Science and Engineering, Information Technology": 1,
+        "Electrical and Electronics Engineering, Civil Engineering, Electronics and Communication Engineering": 1,
+        "English": 1,
+        "T'SEDA (Architecture, Design, Planning), Civil Engineering": 1,
+        "T'SEDA (Architecture, Design, Planning), Computer Science and Engineering, Civil Engineering, Electronics and Communication Engineering": 1
+      },
+      "multi_label": 82,
+      "date_status": {
+        "ambiguous_multi_year": 15,
+        "dated": 89,
+        "undated": 96
+      },
+      "flags": {
+        "unclear:low_evidence_event_like": 38,
+        "communication_only": 27,
+        "category_gate:ACHIEVEMENT": 21,
+        "category_context_only": 20,
+        "weak_text": 19,
+        "multi_year": 15,
+        "category_gate:RESEARCH": 11,
+        "dept_to_general": 8,
+        "link_less": 7,
+        "text_is_url": 6,
+        "unclear:text_is_url": 6,
+        "unclear:url_only": 5,
+        "url_only": 5,
+        "category_gate:INDUSTRY": 4,
+        "pre_2024_ambiguous": 4,
+        "category_gate:ALUMNI": 3,
+        "unclear:non_latin_unmatched": 3,
+        "unclear:title_only": 3,
+        "category_gate:INTERNSHIP": 2,
+        "multi_label_collapsed:conference": 1,
+        "multi_label_collapsed:tech_fest": 1,
+        "multi_label_collapsed:webinar": 1,
+        "unclear:link_less_weak": 1,
+        "unclear:multi_year": 1
+      },
+      "unclear_reason": {
+        "(none)": 143,
+        "link_less_weak": 1,
+        "low_evidence_event_like": 38,
+        "multi_year": 1,
+        "non_latin_unmatched": 3,
+        "text_is_url": 6,
+        "title_only": 3,
+        "url_only": 5
+      }
+    }
+  },
+  "section_c_corrections": {
+    "summary": {
+      "total_corrections": 70,
+      "addressed": 70,
+      "by_field": {
+        "category": 44,
+        "department": 26
+      },
+      "by_rule": {
+        "dept_generic_term": 26,
+        "cat_over_tag:ACHIEVEMENT": 21,
+        "cat_over_tag:RESEARCH": 11,
+        "cat_over_tag:INDUSTRY": 4,
+        "cat_over_tag:ALUMNI": 3,
+        "multi_label_overlap": 3,
+        "cat_over_tag:INTERNSHIP": 2
+      }
+    },
+    "table": [
+      {
+        "post_id": 11,
+        "review_group": "B",
+        "field": "category",
+        "rule": "cat_over_tag:RESEARCH",
+        "confidence": "low",
+        "current": "RESEARCH",
+        "proposed": "verify over-tag: remove Research and Consultancy unless the text is clearly about it",
+        "old_status": "ACTIVITY_CANDIDATE",
+        "new_status": "ACTIVITY_CANDIDATE",
+        "old_categories": [
+          "ACHIEVEMENT",
+          "ALUMNI",
+          "RESEARCH"
+        ],
+        "new_categories": [
+          "ACHIEVEMENT",
+          "ALUMNI",
+          "RESEARCH"
+        ],
+        "old_departments": [
+          "Electronics and Communication Engineering"
+        ],
+        "new_departments": [
+          "Electronics and Communication Engineering"
+        ],
+        "new_department_display": [
+          "Electronics and Communication Engineering"
+        ],
+        "addressed": true,
+        "mechanism": "category_gate flag fired (kept for review, not dropped)"
+      },
+      {
+        "post_id": 12,
+        "review_group": "B",
+        "field": "category",
+        "rule": "cat_over_tag:RESEARCH",
+        "confidence": "low",
+        "current": "RESEARCH",
+        "proposed": "verify over-tag: remove Research and Consultancy unless the text is clearly about it",
+        "old_status": "ACTIVITY_CANDIDATE",
+        "new_status": "ACTIVITY_CANDIDATE",
+        "old_categories": [
+          "ACHIEVEMENT",
+          "RESEARCH"
+        ],
+        "new_categories": [
+          "ACHIEVEMENT",
+          "RESEARCH"
+        ],
+        "old_departments": [],
+        "new_departments": [],
+        "new_department_display": [],
+        "addressed": true,
+        "mechanism": "category_gate flag fired (kept for review, not dropped)"
+      },
+      {
+        "post_id": 13,
+        "review_group": "B",
+        "field": "category",
+        "rule": "cat_over_tag:RESEARCH",
+        "confidence": "low",
+        "current": "RESEARCH",
+        "proposed": "verify over-tag: remove Research and Consultancy unless the text is clearly about it",
+        "old_status": "ACTIVITY_CANDIDATE",
+        "new_status": "ACTIVITY_CANDIDATE",
+        "old_categories": [
+          "INTERNSHIP",
+          "ACHIEVEMENT",
+          "RESEARCH"
+        ],
+        "new_categories": [
+          "INTERNSHIP",
+          "ACHIEVEMENT",
+          "RESEARCH"
+        ],
+        "old_departments": [
+          "Applied Mathematics and Computational Science"
+        ],
+        "new_departments": [
+          "Applied Mathematics and Computational Science"
+        ],
+        "new_department_display": [
+          "General"
+        ],
+        "addressed": true,
+        "mechanism": "category_gate flag fired (kept for review, not dropped)"
+      },
+      {
+        "post_id": 13,
+        "review_group": "B",
+        "field": "department",
+        "rule": "dept_generic_term",
+        "confidence": "low",
+        "current": "Applied Mathematics and Computational Science",
+        "proposed": "verify department: drop 'Applied Mathematics and Computational Science' (route to General or the explicitly named department) unless the post names this department",
+        "old_status": "ACTIVITY_CANDIDATE",
+        "new_status": "ACTIVITY_CANDIDATE",
+        "old_categories": [
+          "INTERNSHIP",
+          "ACHIEVEMENT",
+          "RESEARCH"
+        ],
+        "new_categories": [
+          "INTERNSHIP",
+          "ACHIEVEMENT",
+          "RESEARCH"
+        ],
+        "old_departments": [
+          "Applied Mathematics and Computational Science"
+        ],
+        "new_departments": [
+          "Applied Mathematics and Computational Science"
+        ],
+        "new_department_display": [
+          "General"
+        ],
+        "addressed": true,
+        "mechanism": "department removed from display (General or explicit depts)"
+      },
+      {
+        "post_id": 15,
+        "review_group": "B",
+        "field": "category",
+        "rule": "cat_over_tag:RESEARCH",
+        "confidence": "low",
+        "current": "RESEARCH",
+        "proposed": "verify over-tag: remove Research and Consultancy unless the text is clearly about it",
+        "old_status": "ACTIVITY_CANDIDATE",
+        "new_status": "ACTIVITY_CANDIDATE",
+        "old_categories": [
+          "ACHIEVEMENT",
+          "RESEARCH"
+        ],
+        "new_categories": [
+          "ACHIEVEMENT",
+          "RESEARCH"
+        ],
+        "old_departments": [],
+        "new_departments": [],
+        "new_department_display": [],
+        "addressed": true,
+        "mechanism": "category_gate flag fired (kept for review, not dropped)"
+      },
+      {
+        "post_id": 17,
+        "review_group": "B",
+        "field": "category",
+        "rule": "cat_over_tag:INDUSTRY",
+        "confidence": "low",
+        "current": "INDUSTRY",
+        "proposed": "verify over-tag: remove Industry Collaboration unless the text is clearly about it",
+        "old_status": "ACTIVITY_CANDIDATE",
+        "new_status": "ACTIVITY_CANDIDATE",
+        "old_categories": [
+          "INDUSTRY",
+          "RESEARCH"
+        ],
+        "new_categories": [
+          "INDUSTRY",
+          "RESEARCH"
+        ],
+        "old_departments": [
+          "Electrical and Electronics Engineering"
+        ],
+        "new_departments": [
+          "Electrical and Electronics Engineering"
+        ],
+        "new_department_display": [
+          "General"
+        ],
+        "addressed": true,
+        "mechanism": "category_gate flag fired (kept for review, not dropped)"
+      },
+      {
+        "post_id": 17,
+        "review_group": "B",
+        "field": "department",
+        "rule": "dept_generic_term",
+        "confidence": "low",
+        "current": "Electrical and Electronics Engineering",
+        "proposed": "verify department: drop 'Electrical and Electronics Engineering' (route to General or the explicitly named department) unless the post names this department",
+        "old_status": "ACTIVITY_CANDIDATE",
+        "new_status": "ACTIVITY_CANDIDATE",
+        "old_categories": [
+          "INDUSTRY",
+          "RESEARCH"
+        ],
+        "new_categories": [
+          "INDUSTRY",
+          "RESEARCH"
+        ],
+        "old_departments": [
+          "Electrical and Electronics Engineering"
+        ],
+        "new_departments": [
+          "Electrical and Electronics Engineering"
+        ],
+        "new_department_display": [
+          "General"
+        ],
+        "addressed": true,
+        "mechanism": "department removed from display (General or explicit depts)"
+      },
+      {
+        "post_id": 18,
+        "review_group": "B",
+        "field": "category",
+        "rule": "cat_over_tag:INTERNSHIP",
+        "confidence": "low",
+        "current": "INTERNSHIP",
+        "proposed": "verify over-tag: remove Internship unless the text is clearly about it",
+        "old_status": "ACTIVITY_CANDIDATE",
+        "new_status": "ACTIVITY_CANDIDATE",
+        "old_categories": [
+          "INTERNSHIP",
+          "RESEARCH",
+          "INDUSTRY",
+          "CONFERENCE",
+          "WORKSHOP"
+        ],
+        "new_categories": [
+          "INTERNSHIP",
+          "RESEARCH",
+          "INDUSTRY",
+          "CONFERENCE",
+          "WORKSHOP"
+        ],
+        "old_departments": [],
+        "new_departments": [],
+        "new_department_display": [],
+        "addressed": true,
+        "mechanism": "category_gate flag fired (kept for review, not dropped)"
+      },
+      {
+        "post_id": 18,
+        "review_group": "B",
+        "field": "category",
+        "rule": "cat_over_tag:INDUSTRY",
+        "confidence": "low",
+        "current": "INDUSTRY",
+        "proposed": "verify over-tag: remove Industry Collaboration unless the text is clearly about it",
+        "old_status": "ACTIVITY_CANDIDATE",
+        "new_status": "ACTIVITY_CANDIDATE",
+        "old_categories": [
+          "INTERNSHIP",
+          "RESEARCH",
+          "INDUSTRY",
+          "CONFERENCE",
+          "WORKSHOP"
+        ],
+        "new_categories": [
+          "INTERNSHIP",
+          "RESEARCH",
+          "INDUSTRY",
+          "CONFERENCE",
+          "WORKSHOP"
+        ],
+        "old_departments": [],
+        "new_departments": [],
+        "new_department_display": [],
+        "addressed": true,
+        "mechanism": "category_gate flag fired (kept for review, not dropped)"
+      },
+      {
+        "post_id": 25,
+        "review_group": "B",
+        "field": "category",
+        "rule": "cat_over_tag:RESEARCH",
+        "confidence": "low",
+        "current": "RESEARCH",
+        "proposed": "verify over-tag: remove Research and Consultancy unless the text is clearly about it",
+        "old_status": "ACTIVITY_CANDIDATE",
+        "new_status": "ACTIVITY_CANDIDATE",
+        "old_categories": [
+          "ACHIEVEMENT",
+          "RESEARCH"
+        ],
+        "new_categories": [
+          "ACHIEVEMENT",
+          "RESEARCH"
+        ],
+        "old_departments": [
+          "Computer Science and Business Systems",
+          "Computer Science and Engineering"
+        ],
+        "new_departments": [
+          "Computer Science and Business Systems",
+          "Computer Science and Engineering"
+        ],
+        "new_department_display": [
+          "Computer Science and Business Systems",
+          "Computer Science and Engineering"
+        ],
+        "addressed": true,
+        "mechanism": "category_gate flag fired (kept for review, not dropped)"
+      },
+      {
+        "post_id": 29,
+        "review_group": "B",
+        "field": "category",
+        "rule": "cat_over_tag:ACHIEVEMENT",
+        "confidence": "low",
+        "current": "ACHIEVEMENT",
+        "proposed": "verify over-tag: remove Achievement and Awards unless the text is clearly about it",
+        "old_status": "ACTIVITY_CANDIDATE",
+        "new_status": "ACTIVITY_CANDIDATE",
+        "old_categories": [
+          "ACHIEVEMENT"
+        ],
+        "new_categories": [
+          "ACHIEVEMENT"
+        ],
+        "old_departments": [],
+        "new_departments": [],
+        "new_department_display": [],
+        "addressed": true,
+        "mechanism": "category_gate flag fired (kept for review, not dropped)"
+      },
+      {
+        "post_id": 31,
+        "review_group": "B",
+        "field": "category",
+        "rule": "cat_over_tag:RESEARCH",
+        "confidence": "low",
+        "current": "RESEARCH",
+        "proposed": "verify over-tag: remove Research and Consultancy unless the text is clearly about it",
+        "old_status": "ACTIVITY_CANDIDATE",
+        "new_status": "ACTIVITY_CANDIDATE",
+        "old_categories": [
+          "ACHIEVEMENT",
+          "ALUMNI",
+          "HACKATHON",
+          "RESEARCH"
+        ],
+        "new_categories": [
+          "ACHIEVEMENT",
+          "ALUMNI",
+          "HACKATHON",
+          "RESEARCH"
+        ],
+        "old_departments": [],
+        "new_departments": [],
+        "new_department_display": [],
+        "addressed": true,
+        "mechanism": "category_gate flag fired (kept for review, not dropped)"
+      },
+      {
+        "post_id": 32,
+        "review_group": "B",
+        "field": "category",
+        "rule": "cat_over_tag:ACHIEVEMENT",
+        "confidence": "low",
+        "current": "ACHIEVEMENT",
+        "proposed": "verify over-tag: remove Achievement and Awards unless the text is clearly about it",
+        "old_status": "ACTIVITY_CANDIDATE",
+        "new_status": "ACTIVITY_CANDIDATE",
+        "old_categories": [
+          "CAMPUS",
+          "INTERNSHIP",
+          "ACHIEVEMENT"
+        ],
+        "new_categories": [
+          "CAMPUS",
+          "INTERNSHIP",
+          "ACHIEVEMENT"
+        ],
+        "old_departments": [],
+        "new_departments": [],
+        "new_department_display": [],
+        "addressed": true,
+        "mechanism": "category_gate flag fired (kept for review, not dropped)"
+      },
+      {
+        "post_id": 34,
+        "review_group": "B",
+        "field": "category",
+        "rule": "cat_over_tag:ACHIEVEMENT",
+        "confidence": "low",
+        "current": "ACHIEVEMENT",
+        "proposed": "verify over-tag: remove Achievement and Awards unless the text is clearly about it",
+        "old_status": "ACTIVITY_CANDIDATE",
+        "new_status": "ACTIVITY_CANDIDATE",
+        "old_categories": [
+          "CULTURAL",
+          "ACHIEVEMENT"
+        ],
+        "new_categories": [
+          "CULTURAL",
+          "ACHIEVEMENT"
+        ],
+        "old_departments": [
+          "English"
+        ],
+        "new_departments": [
+          "English"
+        ],
+        "new_department_display": [
+          "English"
+        ],
+        "addressed": true,
+        "mechanism": "category_gate flag fired (kept for review, not dropped)"
+      },
+      {
+        "post_id": 40,
+        "review_group": "B",
+        "field": "category",
+        "rule": "cat_over_tag:RESEARCH",
+        "confidence": "low",
+        "current": "RESEARCH",
+        "proposed": "verify over-tag: remove Research and Consultancy unless the text is clearly about it",
+        "old_status": "ACTIVITY_CANDIDATE",
+        "new_status": "ACTIVITY_CANDIDATE",
+        "old_categories": [
+          "WEBINAR",
+          "CAMPUS",
+          "INTERNSHIP",
+          "RESEARCH"
+        ],
+        "new_categories": [
+          "WEBINAR",
+          "CAMPUS",
+          "INTERNSHIP",
+          "RESEARCH"
+        ],
+        "old_departments": [],
+        "new_departments": [],
+        "new_department_display": [],
+        "addressed": true,
+        "mechanism": "category_gate flag fired (kept for review, not dropped)"
+      },
+      {
+        "post_id": 45,
+        "review_group": "B",
+        "field": "category",
+        "rule": "cat_over_tag:ACHIEVEMENT",
+        "confidence": "low",
+        "current": "ACHIEVEMENT",
+        "proposed": "verify over-tag: remove Achievement and Awards unless the text is clearly about it",
+        "old_status": "ACTIVITY_CANDIDATE",
+        "new_status": "ACTIVITY_CANDIDATE",
+        "old_categories": [
+          "FDP",
+          "RESEARCH",
+          "ACHIEVEMENT",
+          "WORKSHOP"
+        ],
+        "new_categories": [
+          "FDP",
+          "RESEARCH",
+          "ACHIEVEMENT",
+          "WORKSHOP"
+        ],
+        "old_departments": [
+          "Information Technology"
+        ],
+        "new_departments": [
+          "Information Technology"
+        ],
+        "new_department_display": [
+          "Information Technology"
+        ],
+        "addressed": true,
+        "mechanism": "category_gate flag fired (kept for review, not dropped)"
+      },
+      {
+        "post_id": 46,
+        "review_group": "B",
+        "field": "category",
+        "rule": "cat_over_tag:INTERNSHIP",
+        "confidence": "low",
+        "current": "INTERNSHIP",
+        "proposed": "verify over-tag: remove Internship unless the text is clearly about it",
+        "old_status": "ACTIVITY_CANDIDATE",
+        "new_status": "ACTIVITY_CANDIDATE",
+        "old_categories": [
+          "RESEARCH",
+          "CONFERENCE",
+          "INTERNSHIP"
+        ],
+        "new_categories": [
+          "RESEARCH",
+          "CONFERENCE",
+          "INTERNSHIP"
+        ],
+        "old_departments": [],
+        "new_departments": [],
+        "new_department_display": [],
+        "addressed": true,
+        "mechanism": "category_gate flag fired (kept for review, not dropped)"
+      },
+      {
+        "post_id": 47,
+        "review_group": "B",
+        "field": "category",
+        "rule": "cat_over_tag:ACHIEVEMENT",
+        "confidence": "low",
+        "current": "ACHIEVEMENT",
+        "proposed": "verify over-tag: remove Achievement and Awards unless the text is clearly about it",
+        "old_status": "ACTIVITY_CANDIDATE",
+        "new_status": "ACTIVITY_CANDIDATE",
+        "old_categories": [
+          "INDUSTRY",
+          "WORKSHOP",
+          "ACHIEVEMENT"
+        ],
+        "new_categories": [
+          "INDUSTRY",
+          "WORKSHOP",
+          "ACHIEVEMENT"
+        ],
+        "old_departments": [
+          "Electrical and Electronics Engineering"
+        ],
+        "new_departments": [
+          "Electrical and Electronics Engineering"
+        ],
+        "new_department_display": [
+          "Electrical and Electronics Engineering"
+        ],
+        "addressed": true,
+        "mechanism": "category_gate flag fired (kept for review, not dropped)"
+      },
+      {
+        "post_id": 50,
+        "review_group": "B",
+        "field": "category",
+        "rule": "cat_over_tag:ACHIEVEMENT",
+        "confidence": "low",
+        "current": "ACHIEVEMENT",
+        "proposed": "verify over-tag: remove Achievement and Awards unless the text is clearly about it",
+        "old_status": "ACTIVITY_CANDIDATE",
+        "new_status": "ACTIVITY_CANDIDATE",
+        "old_categories": [
+          "WORKSHOP",
+          "ACHIEVEMENT"
+        ],
+        "new_categories": [
+          "WORKSHOP",
+          "ACHIEVEMENT"
+        ],
+        "old_departments": [
+          "Chemistry"
+        ],
+        "new_departments": [
+          "Chemistry"
+        ],
+        "new_department_display": [
+          "General"
+        ],
+        "addressed": true,
+        "mechanism": "category_gate flag fired (kept for review, not dropped)"
+      },
+      {
+        "post_id": 50,
+        "review_group": "B",
+        "field": "department",
+        "rule": "dept_generic_term",
+        "confidence": "low",
+        "current": "Chemistry",
+        "proposed": "verify department: drop 'Chemistry' (route to General or the explicitly named department) unless the post names this department",
+        "old_status": "ACTIVITY_CANDIDATE",
+        "new_status": "ACTIVITY_CANDIDATE",
+        "old_categories": [
+          "WORKSHOP",
+          "ACHIEVEMENT"
+        ],
+        "new_categories": [
+          "WORKSHOP",
+          "ACHIEVEMENT"
+        ],
+        "old_departments": [
+          "Chemistry"
+        ],
+        "new_departments": [
+          "Chemistry"
+        ],
+        "new_department_display": [
+          "General"
+        ],
+        "addressed": true,
+        "mechanism": "department removed from display (General or explicit depts)"
+      },
+      {
+        "post_id": 57,
+        "review_group": "B",
+        "field": "category",
+        "rule": "cat_over_tag:ACHIEVEMENT",
+        "confidence": "low",
+        "current": "ACHIEVEMENT",
+        "proposed": "verify over-tag: remove Achievement and Awards unless the text is clearly about it",
+        "old_status": "ACTIVITY_CANDIDATE",
+        "new_status": "ACTIVITY_CANDIDATE",
+        "old_categories": [
+          "INTERNSHIP",
+          "CLUB",
+          "ACHIEVEMENT"
+        ],
+        "new_categories": [
+          "INTERNSHIP",
+          "CLUB",
+          "ACHIEVEMENT"
+        ],
+        "old_departments": [
+          "Mechatronics"
+        ],
+        "new_departments": [
+          "Mechatronics"
+        ],
+        "new_department_display": [
+          "Mechatronics"
+        ],
+        "addressed": true,
+        "mechanism": "category_gate flag fired (kept for review, not dropped)"
+      },
+      {
+        "post_id": 61,
+        "review_group": "B",
+        "field": "category",
+        "rule": "cat_over_tag:ALUMNI",
+        "confidence": "low",
+        "current": "ALUMNI",
+        "proposed": "verify over-tag: remove Alumni unless the text is clearly about it",
+        "old_status": "ACTIVITY_CANDIDATE",
+        "new_status": "ACTIVITY_CANDIDATE",
+        "old_categories": [
+          "ALUMNI",
+          "FDP",
+          "ACHIEVEMENT"
+        ],
+        "new_categories": [
+          "ALUMNI",
+          "FDP",
+          "ACHIEVEMENT"
+        ],
+        "old_departments": [
+          "Civil Engineering"
+        ],
+        "new_departments": [
+          "Civil Engineering"
+        ],
+        "new_department_display": [
+          "Civil Engineering"
+        ],
+        "addressed": true,
+        "mechanism": "category_gate flag fired (kept for review, not dropped)"
+      },
+      {
+        "post_id": 61,
+        "review_group": "B",
+        "field": "category",
+        "rule": "cat_over_tag:ACHIEVEMENT",
+        "confidence": "low",
+        "current": "ACHIEVEMENT",
+        "proposed": "verify over-tag: remove Achievement and Awards unless the text is clearly about it",
+        "old_status": "ACTIVITY_CANDIDATE",
+        "new_status": "ACTIVITY_CANDIDATE",
+        "old_categories": [
+          "ALUMNI",
+          "FDP",
+          "ACHIEVEMENT"
+        ],
+        "new_categories": [
+          "ALUMNI",
+          "FDP",
+          "ACHIEVEMENT"
+        ],
+        "old_departments": [
+          "Civil Engineering"
+        ],
+        "new_departments": [
+          "Civil Engineering"
+        ],
+        "new_department_display": [
+          "Civil Engineering"
+        ],
+        "addressed": true,
+        "mechanism": "category_gate flag fired (kept for review, not dropped)"
+      },
+      {
+        "post_id": 69,
+        "review_group": "B",
+        "field": "category",
+        "rule": "cat_over_tag:RESEARCH",
+        "confidence": "low",
+        "current": "RESEARCH",
+        "proposed": "verify over-tag: remove Research and Consultancy unless the text is clearly about it",
+        "old_status": "ACTIVITY_CANDIDATE",
+        "new_status": "ACTIVITY_CANDIDATE",
+        "old_categories": [
+          "SEMINAR",
+          "RESEARCH"
+        ],
+        "new_categories": [
+          "SEMINAR",
+          "RESEARCH"
+        ],
+        "old_departments": [
+          "Electronics and Communication Engineering"
+        ],
+        "new_departments": [
+          "Electronics and Communication Engineering"
+        ],
+        "new_department_display": [
+          "Electronics and Communication Engineering"
+        ],
+        "addressed": true,
+        "mechanism": "category_gate flag fired (kept for review, not dropped)"
+      },
+      {
+        "post_id": 73,
+        "review_group": "B",
+        "field": "category",
+        "rule": "cat_over_tag:RESEARCH",
+        "confidence": "low",
+        "current": "RESEARCH",
+        "proposed": "verify over-tag: remove Research and Consultancy unless the text is clearly about it",
+        "old_status": "ACTIVITY_CANDIDATE",
+        "new_status": "ACTIVITY_CANDIDATE",
+        "old_categories": [
+          "INTERNSHIP",
+          "RESEARCH"
+        ],
+        "new_categories": [
+          "INTERNSHIP",
+          "RESEARCH"
+        ],
+        "old_departments": [],
+        "new_departments": [],
+        "new_department_display": [],
+        "addressed": true,
+        "mechanism": "category_gate flag fired (kept for review, not dropped)"
+      },
+      {
+        "post_id": 75,
+        "review_group": "B",
+        "field": "category",
+        "rule": "cat_over_tag:INDUSTRY",
+        "confidence": "low",
+        "current": "INDUSTRY",
+        "proposed": "verify over-tag: remove Industry Collaboration unless the text is clearly about it",
+        "old_status": "ACTIVITY_CANDIDATE",
+        "new_status": "ACTIVITY_CANDIDATE",
+        "old_categories": [
+          "HACKATHON",
+          "INDUSTRY",
+          "CLUB"
+        ],
+        "new_categories": [
+          "HACKATHON",
+          "INDUSTRY",
+          "CLUB"
+        ],
+        "old_departments": [],
+        "new_departments": [],
+        "new_department_display": [],
+        "addressed": true,
+        "mechanism": "category_gate flag fired (kept for review, not dropped)"
+      },
+      {
+        "post_id": 89,
+        "review_group": "B",
+        "field": "category",
+        "rule": "cat_over_tag:RESEARCH",
+        "confidence": "low",
+        "current": "RESEARCH",
+        "proposed": "verify over-tag: remove Research and Consultancy unless the text is clearly about it",
+        "old_status": "ACTIVITY_CANDIDATE",
+        "new_status": "ACTIVITY_CANDIDATE",
+        "old_categories": [
+          "GUEST_LECTURE",
+          "OUTREACH",
+          "CLUB",
+          "RESEARCH"
+        ],
+        "new_categories": [
+          "GUEST_LECTURE",
+          "OUTREACH",
+          "CLUB",
+          "RESEARCH"
+        ],
+        "old_departments": [],
+        "new_departments": [],
+        "new_department_display": [],
+        "addressed": true,
+        "mechanism": "category_gate flag fired (kept for review, not dropped)"
+      },
+      {
+        "post_id": 90,
+        "review_group": "B",
+        "field": "category",
+        "rule": "cat_over_tag:ACHIEVEMENT",
+        "confidence": "low",
+        "current": "ACHIEVEMENT",
+        "proposed": "verify over-tag: remove Achievement and Awards unless the text is clearly about it",
+        "old_status": "ACTIVITY_CANDIDATE",
+        "new_status": "ACTIVITY_CANDIDATE",
+        "old_categories": [
+          "ACHIEVEMENT",
+          "SPORTS"
+        ],
+        "new_categories": [
+          "ACHIEVEMENT",
+          "SPORTS"
+        ],
+        "old_departments": [],
+        "new_departments": [],
+        "new_department_display": [],
+        "addressed": true,
+        "mechanism": "category_gate flag fired (kept for review, not dropped)"
+      },
+      {
+        "post_id": 92,
+        "review_group": "B",
+        "field": "category",
+        "rule": "cat_over_tag:RESEARCH",
+        "confidence": "low",
+        "current": "RESEARCH",
+        "proposed": "verify over-tag: remove Research and Consultancy unless the text is clearly about it",
+        "old_status": "ACTIVITY_CANDIDATE",
+        "new_status": "ACTIVITY_CANDIDATE",
+        "old_categories": [
+          "ACHIEVEMENT",
+          "SEMINAR",
+          "CAMPUS",
+          "RESEARCH"
+        ],
+        "new_categories": [
+          "ACHIEVEMENT",
+          "SEMINAR",
+          "CAMPUS",
+          "RESEARCH"
+        ],
+        "old_departments": [
+          "Electronics and Communication Engineering"
+        ],
+        "new_departments": [
+          "Electronics and Communication Engineering"
+        ],
+        "new_department_display": [
+          "Electronics and Communication Engineering"
+        ],
+        "addressed": true,
+        "mechanism": "category_gate flag fired (kept for review, not dropped)"
+      },
+      {
+        "post_id": 105,
+        "review_group": "C",
+        "field": "department",
+        "rule": "dept_generic_term",
+        "confidence": "medium",
+        "current": "Artificial Intelligence",
+        "proposed": "verify department: drop 'Artificial Intelligence' (route to General or the explicitly named department) unless the post names this department",
+        "old_status": "ACTIVITY_CANDIDATE",
+        "new_status": "ACTIVITY_CANDIDATE",
+        "old_categories": [
+          "ACHIEVEMENT",
+          "HACKATHON"
+        ],
+        "new_categories": [
+          "ACHIEVEMENT",
+          "HACKATHON"
+        ],
+        "old_departments": [
+          "Mechatronics",
+          "Artificial Intelligence"
+        ],
+        "new_departments": [
+          "Mechatronics",
+          "Artificial Intelligence"
+        ],
+        "new_department_display": [
+          "Mechatronics"
+        ],
+        "addressed": true,
+        "mechanism": "department removed from display (General or explicit depts)"
+      },
+      {
+        "post_id": 140,
+        "review_group": "B",
+        "field": "category",
+        "rule": "cat_over_tag:ALUMNI",
+        "confidence": "low",
+        "current": "ALUMNI",
+        "proposed": "verify over-tag: remove Alumni unless the text is clearly about it",
+        "old_status": "ACTIVITY_CANDIDATE",
+        "new_status": "ACTIVITY_CANDIDATE",
+        "old_categories": [
+          "ALUMNI",
+          "ORIENTATION",
+          "ACHIEVEMENT"
+        ],
+        "new_categories": [
+          "ALUMNI",
+          "ORIENTATION",
+          "ACHIEVEMENT"
+        ],
+        "old_departments": [],
+        "new_departments": [],
+        "new_department_display": [],
+        "addressed": true,
+        "mechanism": "category_gate flag fired (kept for review, not dropped)"
+      },
+      {
+        "post_id": 140,
+        "review_group": "B",
+        "field": "category",
+        "rule": "cat_over_tag:ACHIEVEMENT",
+        "confidence": "low",
+        "current": "ACHIEVEMENT",
+        "proposed": "verify over-tag: remove Achievement and Awards unless the text is clearly about it",
+        "old_status": "ACTIVITY_CANDIDATE",
+        "new_status": "ACTIVITY_CANDIDATE",
+        "old_categories": [
+          "ALUMNI",
+          "ORIENTATION",
+          "ACHIEVEMENT"
+        ],
+        "new_categories": [
+          "ALUMNI",
+          "ORIENTATION",
+          "ACHIEVEMENT"
+        ],
+        "old_departments": [],
+        "new_departments": [],
+        "new_department_display": [],
+        "addressed": true,
+        "mechanism": "category_gate flag fired (kept for review, not dropped)"
+      },
+      {
+        "post_id": 149,
+        "review_group": "B",
+        "field": "category",
+        "rule": "cat_over_tag:ALUMNI",
+        "confidence": "low",
+        "current": "ALUMNI",
+        "proposed": "verify over-tag: remove Alumni unless the text is clearly about it",
+        "old_status": "ACTIVITY_CANDIDATE",
+        "new_status": "ACTIVITY_CANDIDATE",
+        "old_categories": [
+          "ALUMNI",
+          "ORIENTATION",
+          "ACHIEVEMENT"
+        ],
+        "new_categories": [
+          "ALUMNI",
+          "ORIENTATION",
+          "ACHIEVEMENT"
+        ],
+        "old_departments": [
+          "Mechanical Engineering"
+        ],
+        "new_departments": [
+          "Mechanical Engineering"
+        ],
+        "new_department_display": [
+          "Mechanical Engineering"
+        ],
+        "addressed": true,
+        "mechanism": "category_gate flag fired (kept for review, not dropped)"
+      },
+      {
+        "post_id": 164,
+        "review_group": "B",
+        "field": "category",
+        "rule": "cat_over_tag:ACHIEVEMENT",
+        "confidence": "low",
+        "current": "ACHIEVEMENT",
+        "proposed": "verify over-tag: remove Achievement and Awards unless the text is clearly about it",
+        "old_status": "ACTIVITY_CANDIDATE",
+        "new_status": "ACTIVITY_CANDIDATE",
+        "old_categories": [
+          "HACKATHON",
+          "ACHIEVEMENT"
+        ],
+        "new_categories": [
+          "HACKATHON",
+          "ACHIEVEMENT"
+        ],
+        "old_departments": [
+          "Applied Mathematics and Computational Science"
+        ],
+        "new_departments": [
+          "Applied Mathematics and Computational Science"
+        ],
+        "new_department_display": [
+          "Applied Mathematics and Computational Science"
+        ],
+        "addressed": true,
+        "mechanism": "category_gate flag fired (kept for review, not dropped)"
+      },
+      {
+        "post_id": 166,
+        "review_group": "B",
+        "field": "category",
+        "rule": "cat_over_tag:ACHIEVEMENT",
+        "confidence": "low",
+        "current": "ACHIEVEMENT",
+        "proposed": "verify over-tag: remove Achievement and Awards unless the text is clearly about it",
+        "old_status": "ACTIVITY_CANDIDATE",
+        "new_status": "ACTIVITY_CANDIDATE",
+        "old_categories": [
+          "SYMPOSIUM",
+          "TECH_FEST",
+          "WORKSHOP",
+          "ACHIEVEMENT",
+          "CONFERENCE"
+        ],
+        "new_categories": [
+          "SYMPOSIUM",
+          "TECH_FEST",
+          "WORKSHOP",
+          "ACHIEVEMENT",
+          "CONFERENCE"
+        ],
+        "old_departments": [
+          "Mechatronics"
+        ],
+        "new_departments": [
+          "Mechatronics"
+        ],
+        "new_department_display": [
+          "Mechatronics"
+        ],
+        "addressed": true,
+        "mechanism": "category_gate flag fired (kept for review, not dropped)"
+      },
+      {
+        "post_id": 170,
+        "review_group": "B",
+        "field": "category",
+        "rule": "cat_over_tag:ACHIEVEMENT",
+        "confidence": "low",
+        "current": "ACHIEVEMENT",
+        "proposed": "verify over-tag: remove Achievement and Awards unless the text is clearly about it",
+        "old_status": "ACTIVITY_CANDIDATE",
+        "new_status": "ACTIVITY_CANDIDATE",
+        "old_categories": [
+          "ACHIEVEMENT"
+        ],
+        "new_categories": [
+          "ACHIEVEMENT"
+        ],
+        "old_departments": [
+          "Mechanical Engineering"
+        ],
+        "new_departments": [
+          "Mechanical Engineering"
+        ],
+        "new_department_display": [
+          "Mechanical Engineering"
+        ],
+        "addressed": true,
+        "mechanism": "category_gate flag fired (kept for review, not dropped)"
+      },
+      {
+        "post_id": 171,
+        "review_group": "B",
+        "field": "category",
+        "rule": "cat_over_tag:ACHIEVEMENT",
+        "confidence": "low",
+        "current": "ACHIEVEMENT",
+        "proposed": "verify over-tag: remove Achievement and Awards unless the text is clearly about it",
+        "old_status": "ACTIVITY_CANDIDATE",
+        "new_status": "ACTIVITY_CANDIDATE",
+        "old_categories": [
+          "ACHIEVEMENT"
+        ],
+        "new_categories": [
+          "ACHIEVEMENT"
+        ],
+        "old_departments": [
+          "Electrical and Electronics Engineering",
+          "Civil Engineering",
+          "Electronics and Communication Engineering"
+        ],
+        "new_departments": [
+          "Electrical and Electronics Engineering",
+          "Civil Engineering",
+          "Electronics and Communication Engineering"
+        ],
+        "new_department_display": [
+          "Electrical and Electronics Engineering",
+          "Civil Engineering",
+          "Electronics and Communication Engineering"
+        ],
+        "addressed": true,
+        "mechanism": "category_gate flag fired (kept for review, not dropped)"
+      },
+      {
+        "post_id": 187,
+        "review_group": "B",
+        "field": "category",
+        "rule": "cat_over_tag:ACHIEVEMENT",
+        "confidence": "low",
+        "current": "ACHIEVEMENT",
+        "proposed": "verify over-tag: remove Achievement and Awards unless the text is clearly about it",
+        "old_status": "ACTIVITY_CANDIDATE",
+        "new_status": "ACTIVITY_CANDIDATE",
+        "old_categories": [
+          "HACKATHON",
+          "SYMPOSIUM",
+          "WORKSHOP",
+          "ACHIEVEMENT"
+        ],
+        "new_categories": [
+          "HACKATHON",
+          "SYMPOSIUM",
+          "WORKSHOP",
+          "ACHIEVEMENT"
+        ],
+        "old_departments": [
+          "Mechanical Engineering"
+        ],
+        "new_departments": [
+          "Mechanical Engineering"
+        ],
+        "new_department_display": [
+          "Mechanical Engineering"
+        ],
+        "addressed": true,
+        "mechanism": "category_gate flag fired (kept for review, not dropped)"
+      },
+      {
+        "post_id": 242,
+        "review_group": "C",
+        "field": "department",
+        "rule": "dept_generic_term",
+        "confidence": "low",
+        "current": "T'SEDA (Architecture, Design, Planning)",
+        "proposed": "verify department: drop 'T'SEDA (Architecture, Design, Planning)' (route to General or the explicitly named department) unless the post names this department",
+        "old_status": "ACTIVITY_CANDIDATE",
+        "new_status": "ACTIVITY_CANDIDATE",
+        "old_categories": [
+          "HACKATHON",
+          "TECH_FEST"
+        ],
+        "new_categories": [
+          "HACKATHON",
+          "TECH_FEST"
+        ],
+        "old_departments": [
+          "T'SEDA (Architecture, Design, Planning)"
+        ],
+        "new_departments": [
+          "T'SEDA (Architecture, Design, Planning)"
+        ],
+        "new_department_display": [
+          "General"
+        ],
+        "addressed": true,
+        "mechanism": "department removed from display (General or explicit depts)"
+      },
+      {
+        "post_id": 253,
+        "review_group": "B",
+        "field": "category",
+        "rule": "cat_over_tag:ACHIEVEMENT",
+        "confidence": "low",
+        "current": "ACHIEVEMENT",
+        "proposed": "verify over-tag: remove Achievement and Awards unless the text is clearly about it",
+        "old_status": "ACTIVITY_CANDIDATE",
+        "new_status": "ACTIVITY_CANDIDATE",
+        "old_categories": [
+          "HACKATHON",
+          "SYMPOSIUM",
+          "CLUB",
+          "CONFERENCE",
+          "ACHIEVEMENT"
+        ],
+        "new_categories": [
+          "HACKATHON",
+          "SYMPOSIUM",
+          "CLUB",
+          "CONFERENCE",
+          "ACHIEVEMENT"
+        ],
+        "old_departments": [
+          "Electronics and Communication Engineering"
+        ],
+        "new_departments": [
+          "Electronics and Communication Engineering"
+        ],
+        "new_department_display": [
+          "Electronics and Communication Engineering"
+        ],
+        "addressed": true,
+        "mechanism": "category_gate flag fired (kept for review, not dropped)"
+      },
+      {
+        "post_id": 260,
+        "review_group": "B",
+        "field": "category",
+        "rule": "multi_label_overlap",
+        "confidence": "low",
+        "current": "CONFERENCE + WEBINAR",
+        "proposed": "verify multi-label: if both describe the SAME event, keep only the dominant category (CONFERENCE)",
+        "old_status": "ACTIVITY_CANDIDATE",
+        "new_status": "ACTIVITY_CANDIDATE",
+        "old_categories": [
+          "CONFERENCE",
+          "INTERNSHIP",
+          "WEBINAR"
+        ],
+        "new_categories": [
+          "CONFERENCE",
+          "INTERNSHIP"
+        ],
+        "old_departments": [],
+        "new_departments": [],
+        "new_department_display": [],
+        "addressed": true,
+        "mechanism": "curated same-event pair collapsed"
+      },
+      {
+        "post_id": 261,
+        "review_group": "C",
+        "field": "department",
+        "rule": "dept_generic_term",
+        "confidence": "medium",
+        "current": "Chemistry",
+        "proposed": "verify department: drop 'Chemistry' (route to General or the explicitly named department) unless the post names this department",
+        "old_status": "ACTIVITY_CANDIDATE",
+        "new_status": "ACTIVITY_CANDIDATE",
+        "old_categories": [
+          "ACHIEVEMENT",
+          "RESEARCH",
+          "ORIENTATION"
+        ],
+        "new_categories": [
+          "ACHIEVEMENT",
+          "RESEARCH",
+          "ORIENTATION"
+        ],
+        "old_departments": [
+          "Chemistry",
+          "Electrical and Electronics Engineering"
+        ],
+        "new_departments": [
+          "Chemistry",
+          "Electrical and Electronics Engineering"
+        ],
+        "new_department_display": [
+          "Electrical and Electronics Engineering"
+        ],
+        "addressed": true,
+        "mechanism": "department removed from display (General or explicit depts)"
+      },
+      {
+        "post_id": 298,
+        "review_group": "B",
+        "field": "category",
+        "rule": "cat_over_tag:ACHIEVEMENT",
+        "confidence": "low",
+        "current": "ACHIEVEMENT",
+        "proposed": "verify over-tag: remove Achievement and Awards unless the text is clearly about it",
+        "old_status": "ACTIVITY_CANDIDATE",
+        "new_status": "ACTIVITY_CANDIDATE",
+        "old_categories": [
+          "SYMPOSIUM",
+          "TECH_FEST",
+          "WORKSHOP",
+          "ACHIEVEMENT"
+        ],
+        "new_categories": [
+          "SYMPOSIUM",
+          "WORKSHOP",
+          "ACHIEVEMENT"
+        ],
+        "old_departments": [
+          "Electronics and Communication Engineering"
+        ],
+        "new_departments": [
+          "Electronics and Communication Engineering"
+        ],
+        "new_department_display": [
+          "Electronics and Communication Engineering"
+        ],
+        "addressed": true,
+        "mechanism": "category_gate flag fired (kept for review, not dropped)"
+      },
+      {
+        "post_id": 298,
+        "review_group": "B",
+        "field": "category",
+        "rule": "multi_label_overlap",
+        "confidence": "low",
+        "current": "SYMPOSIUM + TECH_FEST",
+        "proposed": "verify multi-label: if both describe the SAME event, keep only the dominant category (SYMPOSIUM)",
+        "old_status": "ACTIVITY_CANDIDATE",
+        "new_status": "ACTIVITY_CANDIDATE",
+        "old_categories": [
+          "SYMPOSIUM",
+          "TECH_FEST",
+          "WORKSHOP",
+          "ACHIEVEMENT"
+        ],
+        "new_categories": [
+          "SYMPOSIUM",
+          "WORKSHOP",
+          "ACHIEVEMENT"
+        ],
+        "old_departments": [
+          "Electronics and Communication Engineering"
+        ],
+        "new_departments": [
+          "Electronics and Communication Engineering"
+        ],
+        "new_department_display": [
+          "Electronics and Communication Engineering"
+        ],
+        "addressed": true,
+        "mechanism": "curated same-event pair collapsed"
+      },
+      {
+        "post_id": 394,
+        "review_group": "B",
+        "field": "category",
+        "rule": "cat_over_tag:INDUSTRY",
+        "confidence": "low",
+        "current": "INDUSTRY",
+        "proposed": "verify over-tag: remove Industry Collaboration unless the text is clearly about it",
+        "old_status": "ACTIVITY_CANDIDATE",
+        "new_status": "ACTIVITY_CANDIDATE",
+        "old_categories": [
+          "HACKATHON",
+          "INDUSTRY",
+          "ACHIEVEMENT"
+        ],
+        "new_categories": [
+          "HACKATHON",
+          "INDUSTRY",
+          "ACHIEVEMENT"
+        ],
+        "old_departments": [],
+        "new_departments": [],
+        "new_department_display": [],
+        "addressed": true,
+        "mechanism": "category_gate flag fired (kept for review, not dropped)"
+      },
+      {
+        "post_id": 394,
+        "review_group": "B",
+        "field": "category",
+        "rule": "cat_over_tag:ACHIEVEMENT",
+        "confidence": "low",
+        "current": "ACHIEVEMENT",
+        "proposed": "verify over-tag: remove Achievement and Awards unless the text is clearly about it",
+        "old_status": "ACTIVITY_CANDIDATE",
+        "new_status": "ACTIVITY_CANDIDATE",
+        "old_categories": [
+          "HACKATHON",
+          "INDUSTRY",
+          "ACHIEVEMENT"
+        ],
+        "new_categories": [
+          "HACKATHON",
+          "INDUSTRY",
+          "ACHIEVEMENT"
+        ],
+        "old_departments": [],
+        "new_departments": [],
+        "new_department_display": [],
+        "addressed": true,
+        "mechanism": "category_gate flag fired (kept for review, not dropped)"
+      },
+      {
+        "post_id": 400,
+        "review_group": "C",
+        "field": "department",
+        "rule": "dept_generic_term",
+        "confidence": "low",
+        "current": "Electrical and Electronics Engineering",
+        "proposed": "verify department: drop 'Electrical and Electronics Engineering' (route to General or the explicitly named department) unless the post names this department",
+        "old_status": "ACTIVITY_CANDIDATE",
+        "new_status": "ACTIVITY_CANDIDATE",
+        "old_categories": [
+          "RESEARCH"
+        ],
+        "new_categories": [
+          "RESEARCH"
+        ],
+        "old_departments": [
+          "Electrical and Electronics Engineering"
+        ],
+        "new_departments": [
+          "Electrical and Electronics Engineering"
+        ],
+        "new_department_display": [
+          "General"
+        ],
+        "addressed": true,
+        "mechanism": "department removed from display (General or explicit depts)"
+      },
+      {
+        "post_id": 426,
+        "review_group": "C",
+        "field": "department",
+        "rule": "dept_generic_term",
+        "confidence": "medium",
+        "current": "Applied Mathematics and Computational Science",
+        "proposed": "verify department: drop 'Applied Mathematics and Computational Science' (route to General or the explicitly named department) unless the post names this department",
+        "old_status": "ACTIVITY_CANDIDATE",
+        "new_status": "ACTIVITY_CANDIDATE",
+        "old_categories": [
+          "STTP",
+          "RESEARCH"
+        ],
+        "new_categories": [
+          "STTP",
+          "RESEARCH"
+        ],
+        "old_departments": [
+          "Computer Science and Business Systems",
+          "Applied Mathematics and Computational Science",
+          "Artificial Intelligence"
+        ],
+        "new_departments": [
+          "Computer Science and Business Systems",
+          "Applied Mathematics and Computational Science",
+          "Artificial Intelligence"
+        ],
+        "new_department_display": [
+          "Computer Science and Business Systems"
+        ],
+        "addressed": true,
+        "mechanism": "department removed from display (General or explicit depts)"
+      },
+      {
+        "post_id": 426,
+        "review_group": "C",
+        "field": "department",
+        "rule": "dept_generic_term",
+        "confidence": "medium",
+        "current": "Artificial Intelligence",
+        "proposed": "verify department: drop 'Artificial Intelligence' (route to General or the explicitly named department) unless the post names this department",
+        "old_status": "ACTIVITY_CANDIDATE",
+        "new_status": "ACTIVITY_CANDIDATE",
+        "old_categories": [
+          "STTP",
+          "RESEARCH"
+        ],
+        "new_categories": [
+          "STTP",
+          "RESEARCH"
+        ],
+        "old_departments": [
+          "Computer Science and Business Systems",
+          "Applied Mathematics and Computational Science",
+          "Artificial Intelligence"
+        ],
+        "new_departments": [
+          "Computer Science and Business Systems",
+          "Applied Mathematics and Computational Science",
+          "Artificial Intelligence"
+        ],
+        "new_department_display": [
+          "Computer Science and Business Systems"
+        ],
+        "addressed": true,
+        "mechanism": "department removed from display (General or explicit depts)"
+      },
+      {
+        "post_id": 486,
+        "review_group": "C",
+        "field": "department",
+        "rule": "dept_generic_term",
+        "confidence": "medium",
+        "current": "Applied Mathematics and Computational Science",
+        "proposed": "verify department: drop 'Applied Mathematics and Computational Science' (route to General or the explicitly named department) unless the post names this department",
+        "old_status": "ACTIVITY_CANDIDATE",
+        "new_status": "ACTIVITY_CANDIDATE",
+        "old_categories": [
+          "RESEARCH"
+        ],
+        "new_categories": [
+          "RESEARCH"
+        ],
+        "old_departments": [
+          "Civil Engineering",
+          "Mechanical Engineering",
+          "Applied Mathematics and Computational Science",
+          "Artificial Intelligence",
+          "Chemistry",
+          "Computer Science and Engineering",
+          "Electrical and Electronics Engineering",
+          "Electronics and Communication Engineering"
+        ],
+        "new_departments": [
+          "Civil Engineering",
+          "Mechanical Engineering",
+          "Applied Mathematics and Computational Science",
+          "Artificial Intelligence",
+          "Chemistry",
+          "Computer Science and Engineering",
+          "Electrical and Electronics Engineering",
+          "Electronics and Communication Engineering"
+        ],
+        "new_department_display": [
+          "Civil Engineering",
+          "Mechanical Engineering",
+          "Computer Science and Engineering",
+          "Electronics and Communication Engineering"
+        ],
+        "addressed": true,
+        "mechanism": "department removed from display (General or explicit depts)"
+      },
+      {
+        "post_id": 486,
+        "review_group": "C",
+        "field": "department",
+        "rule": "dept_generic_term",
+        "confidence": "medium",
+        "current": "Artificial Intelligence",
+        "proposed": "verify department: drop 'Artificial Intelligence' (route to General or the explicitly named department) unless the post names this department",
+        "old_status": "ACTIVITY_CANDIDATE",
+        "new_status": "ACTIVITY_CANDIDATE",
+        "old_categories": [
+          "RESEARCH"
+        ],
+        "new_categories": [
+          "RESEARCH"
+        ],
+        "old_departments": [
+          "Civil Engineering",
+          "Mechanical Engineering",
+          "Applied Mathematics and Computational Science",
+          "Artificial Intelligence",
+          "Chemistry",
+          "Computer Science and Engineering",
+          "Electrical and Electronics Engineering",
+          "Electronics and Communication Engineering"
+        ],
+        "new_departments": [
+          "Civil Engineering",
+          "Mechanical Engineering",
+          "Applied Mathematics and Computational Science",
+          "Artificial Intelligence",
+          "Chemistry",
+          "Computer Science and Engineering",
+          "Electrical and Electronics Engineering",
+          "Electronics and Communication Engineering"
+        ],
+        "new_department_display": [
+          "Civil Engineering",
+          "Mechanical Engineering",
+          "Computer Science and Engineering",
+          "Electronics and Communication Engineering"
+        ],
+        "addressed": true,
+        "mechanism": "department removed from display (General or explicit depts)"
+      },
+      {
+        "post_id": 486,
+        "review_group": "C",
+        "field": "department",
+        "rule": "dept_generic_term",
+        "confidence": "medium",
+        "current": "Chemistry",
+        "proposed": "verify department: drop 'Chemistry' (route to General or the explicitly named department) unless the post names this department",
+        "old_status": "ACTIVITY_CANDIDATE",
+        "new_status": "ACTIVITY_CANDIDATE",
+        "old_categories": [
+          "RESEARCH"
+        ],
+        "new_categories": [
+          "RESEARCH"
+        ],
+        "old_departments": [
+          "Civil Engineering",
+          "Mechanical Engineering",
+          "Applied Mathematics and Computational Science",
+          "Artificial Intelligence",
+          "Chemistry",
+          "Computer Science and Engineering",
+          "Electrical and Electronics Engineering",
+          "Electronics and Communication Engineering"
+        ],
+        "new_departments": [
+          "Civil Engineering",
+          "Mechanical Engineering",
+          "Applied Mathematics and Computational Science",
+          "Artificial Intelligence",
+          "Chemistry",
+          "Computer Science and Engineering",
+          "Electrical and Electronics Engineering",
+          "Electronics and Communication Engineering"
+        ],
+        "new_department_display": [
+          "Civil Engineering",
+          "Mechanical Engineering",
+          "Computer Science and Engineering",
+          "Electronics and Communication Engineering"
+        ],
+        "addressed": true,
+        "mechanism": "department removed from display (General or explicit depts)"
+      },
+      {
+        "post_id": 486,
+        "review_group": "C",
+        "field": "department",
+        "rule": "dept_generic_term",
+        "confidence": "medium",
+        "current": "Electrical and Electronics Engineering",
+        "proposed": "verify department: drop 'Electrical and Electronics Engineering' (route to General or the explicitly named department) unless the post names this department",
+        "old_status": "ACTIVITY_CANDIDATE",
+        "new_status": "ACTIVITY_CANDIDATE",
+        "old_categories": [
+          "RESEARCH"
+        ],
+        "new_categories": [
+          "RESEARCH"
+        ],
+        "old_departments": [
+          "Civil Engineering",
+          "Mechanical Engineering",
+          "Applied Mathematics and Computational Science",
+          "Artificial Intelligence",
+          "Chemistry",
+          "Computer Science and Engineering",
+          "Electrical and Electronics Engineering",
+          "Electronics and Communication Engineering"
+        ],
+        "new_departments": [
+          "Civil Engineering",
+          "Mechanical Engineering",
+          "Applied Mathematics and Computational Science",
+          "Artificial Intelligence",
+          "Chemistry",
+          "Computer Science and Engineering",
+          "Electrical and Electronics Engineering",
+          "Electronics and Communication Engineering"
+        ],
+        "new_department_display": [
+          "Civil Engineering",
+          "Mechanical Engineering",
+          "Computer Science and Engineering",
+          "Electronics and Communication Engineering"
+        ],
+        "addressed": true,
+        "mechanism": "department removed from display (General or explicit depts)"
+      },
+      {
+        "post_id": 567,
+        "review_group": "C",
+        "field": "department",
+        "rule": "dept_generic_term",
+        "confidence": "medium",
+        "current": "Applied Mathematics and Computational Science",
+        "proposed": "verify department: drop 'Applied Mathematics and Computational Science' (route to General or the explicitly named department) unless the post names this department",
+        "old_status": "ACTIVITY_CANDIDATE",
+        "new_status": "ACTIVITY_CANDIDATE",
+        "old_categories": [
+          "RESEARCH"
+        ],
+        "new_categories": [
+          "RESEARCH"
+        ],
+        "old_departments": [
+          "Civil Engineering",
+          "Mechanical Engineering",
+          "Applied Mathematics and Computational Science",
+          "Artificial Intelligence",
+          "Chemistry",
+          "Computer Science and Engineering",
+          "Electrical and Electronics Engineering",
+          "Electronics and Communication Engineering"
+        ],
+        "new_departments": [
+          "Civil Engineering",
+          "Mechanical Engineering",
+          "Applied Mathematics and Computational Science",
+          "Artificial Intelligence",
+          "Chemistry",
+          "Computer Science and Engineering",
+          "Electrical and Electronics Engineering",
+          "Electronics and Communication Engineering"
+        ],
+        "new_department_display": [
+          "Civil Engineering",
+          "Mechanical Engineering",
+          "Computer Science and Engineering",
+          "Electronics and Communication Engineering"
+        ],
+        "addressed": true,
+        "mechanism": "department removed from display (General or explicit depts)"
+      },
+      {
+        "post_id": 567,
+        "review_group": "C",
+        "field": "department",
+        "rule": "dept_generic_term",
+        "confidence": "medium",
+        "current": "Artificial Intelligence",
+        "proposed": "verify department: drop 'Artificial Intelligence' (route to General or the explicitly named department) unless the post names this department",
+        "old_status": "ACTIVITY_CANDIDATE",
+        "new_status": "ACTIVITY_CANDIDATE",
+        "old_categories": [
+          "RESEARCH"
+        ],
+        "new_categories": [
+          "RESEARCH"
+        ],
+        "old_departments": [
+          "Civil Engineering",
+          "Mechanical Engineering",
+          "Applied Mathematics and Computational Science",
+          "Artificial Intelligence",
+          "Chemistry",
+          "Computer Science and Engineering",
+          "Electrical and Electronics Engineering",
+          "Electronics and Communication Engineering"
+        ],
+        "new_departments": [
+          "Civil Engineering",
+          "Mechanical Engineering",
+          "Applied Mathematics and Computational Science",
+          "Artificial Intelligence",
+          "Chemistry",
+          "Computer Science and Engineering",
+          "Electrical and Electronics Engineering",
+          "Electronics and Communication Engineering"
+        ],
+        "new_department_display": [
+          "Civil Engineering",
+          "Mechanical Engineering",
+          "Computer Science and Engineering",
+          "Electronics and Communication Engineering"
+        ],
+        "addressed": true,
+        "mechanism": "department removed from display (General or explicit depts)"
+      },
+      {
+        "post_id": 567,
+        "review_group": "C",
+        "field": "department",
+        "rule": "dept_generic_term",
+        "confidence": "medium",
+        "current": "Chemistry",
+        "proposed": "verify department: drop 'Chemistry' (route to General or the explicitly named department) unless the post names this department",
+        "old_status": "ACTIVITY_CANDIDATE",
+        "new_status": "ACTIVITY_CANDIDATE",
+        "old_categories": [
+          "RESEARCH"
+        ],
+        "new_categories": [
+          "RESEARCH"
+        ],
+        "old_departments": [
+          "Civil Engineering",
+          "Mechanical Engineering",
+          "Applied Mathematics and Computational Science",
+          "Artificial Intelligence",
+          "Chemistry",
+          "Computer Science and Engineering",
+          "Electrical and Electronics Engineering",
+          "Electronics and Communication Engineering"
+        ],
+        "new_departments": [
+          "Civil Engineering",
+          "Mechanical Engineering",
+          "Applied Mathematics and Computational Science",
+          "Artificial Intelligence",
+          "Chemistry",
+          "Computer Science and Engineering",
+          "Electrical and Electronics Engineering",
+          "Electronics and Communication Engineering"
+        ],
+        "new_department_display": [
+          "Civil Engineering",
+          "Mechanical Engineering",
+          "Computer Science and Engineering",
+          "Electronics and Communication Engineering"
+        ],
+        "addressed": true,
+        "mechanism": "department removed from display (General or explicit depts)"
+      },
+      {
+        "post_id": 567,
+        "review_group": "C",
+        "field": "department",
+        "rule": "dept_generic_term",
+        "confidence": "medium",
+        "current": "Electrical and Electronics Engineering",
+        "proposed": "verify department: drop 'Electrical and Electronics Engineering' (route to General or the explicitly named department) unless the post names this department",
+        "old_status": "ACTIVITY_CANDIDATE",
+        "new_status": "ACTIVITY_CANDIDATE",
+        "old_categories": [
+          "RESEARCH"
+        ],
+        "new_categories": [
+          "RESEARCH"
+        ],
+        "old_departments": [
+          "Civil Engineering",
+          "Mechanical Engineering",
+          "Applied Mathematics and Computational Science",
+          "Artificial Intelligence",
+          "Chemistry",
+          "Computer Science and Engineering",
+          "Electrical and Electronics Engineering",
+          "Electronics and Communication Engineering"
+        ],
+        "new_departments": [
+          "Civil Engineering",
+          "Mechanical Engineering",
+          "Applied Mathematics and Computational Science",
+          "Artificial Intelligence",
+          "Chemistry",
+          "Computer Science and Engineering",
+          "Electrical and Electronics Engineering",
+          "Electronics and Communication Engineering"
+        ],
+        "new_department_display": [
+          "Civil Engineering",
+          "Mechanical Engineering",
+          "Computer Science and Engineering",
+          "Electronics and Communication Engineering"
+        ],
+        "addressed": true,
+        "mechanism": "department removed from display (General or explicit depts)"
+      },
+      {
+        "post_id": 586,
+        "review_group": "B",
+        "field": "department",
+        "rule": "dept_generic_term",
+        "confidence": "low",
+        "current": "Chemistry",
+        "proposed": "verify department: drop 'Chemistry' (route to General or the explicitly named department) unless the post names this department",
+        "old_status": "ACTIVITY_CANDIDATE",
+        "new_status": "ACTIVITY_CANDIDATE",
+        "old_categories": [
+          "RESEARCH",
+          "CONFERENCE",
+          "GUEST_LECTURE",
+          "INTERNSHIP"
+        ],
+        "new_categories": [
+          "RESEARCH",
+          "GUEST_LECTURE",
+          "INTERNSHIP"
+        ],
+        "old_departments": [
+          "Chemistry"
+        ],
+        "new_departments": [
+          "Chemistry"
+        ],
+        "new_department_display": [
+          "Chemistry"
+        ],
+        "addressed": true,
+        "mechanism": "explicitly named in post; kept per review guideline 'unless the post names this department'"
+      },
+      {
+        "post_id": 586,
+        "review_group": "B",
+        "field": "category",
+        "rule": "multi_label_overlap",
+        "confidence": "low",
+        "current": "CONFERENCE + GUEST_LECTURE",
+        "proposed": "verify multi-label: if both describe the SAME event, keep only the dominant category (GUEST_LECTURE)",
+        "old_status": "ACTIVITY_CANDIDATE",
+        "new_status": "ACTIVITY_CANDIDATE",
+        "old_categories": [
+          "RESEARCH",
+          "CONFERENCE",
+          "GUEST_LECTURE",
+          "INTERNSHIP"
+        ],
+        "new_categories": [
+          "RESEARCH",
+          "GUEST_LECTURE",
+          "INTERNSHIP"
+        ],
+        "old_departments": [
+          "Chemistry"
+        ],
+        "new_departments": [
+          "Chemistry"
+        ],
+        "new_department_display": [
+          "Chemistry"
+        ],
+        "addressed": true,
+        "mechanism": "curated same-event pair collapsed"
+      },
+      {
+        "post_id": 601,
+        "review_group": "C",
+        "field": "department",
+        "rule": "dept_generic_term",
+        "confidence": "medium",
+        "current": "Applied Mathematics and Computational Science",
+        "proposed": "verify department: drop 'Applied Mathematics and Computational Science' (route to General or the explicitly named department) unless the post names this department",
+        "old_status": "ACTIVITY_CANDIDATE",
+        "new_status": "ACTIVITY_CANDIDATE",
+        "old_categories": [
+          "RESEARCH"
+        ],
+        "new_categories": [
+          "RESEARCH"
+        ],
+        "old_departments": [
+          "Civil Engineering",
+          "Mechanical Engineering",
+          "Applied Mathematics and Computational Science",
+          "Artificial Intelligence",
+          "Chemistry",
+          "Computer Science and Engineering",
+          "Electrical and Electronics Engineering",
+          "Electronics and Communication Engineering"
+        ],
+        "new_departments": [
+          "Civil Engineering",
+          "Mechanical Engineering",
+          "Applied Mathematics and Computational Science",
+          "Artificial Intelligence",
+          "Chemistry",
+          "Computer Science and Engineering",
+          "Electrical and Electronics Engineering",
+          "Electronics and Communication Engineering"
+        ],
+        "new_department_display": [
+          "Civil Engineering",
+          "Mechanical Engineering",
+          "Computer Science and Engineering",
+          "Electronics and Communication Engineering"
+        ],
+        "addressed": true,
+        "mechanism": "department removed from display (General or explicit depts)"
+      },
+      {
+        "post_id": 601,
+        "review_group": "C",
+        "field": "department",
+        "rule": "dept_generic_term",
+        "confidence": "medium",
+        "current": "Artificial Intelligence",
+        "proposed": "verify department: drop 'Artificial Intelligence' (route to General or the explicitly named department) unless the post names this department",
+        "old_status": "ACTIVITY_CANDIDATE",
+        "new_status": "ACTIVITY_CANDIDATE",
+        "old_categories": [
+          "RESEARCH"
+        ],
+        "new_categories": [
+          "RESEARCH"
+        ],
+        "old_departments": [
+          "Civil Engineering",
+          "Mechanical Engineering",
+          "Applied Mathematics and Computational Science",
+          "Artificial Intelligence",
+          "Chemistry",
+          "Computer Science and Engineering",
+          "Electrical and Electronics Engineering",
+          "Electronics and Communication Engineering"
+        ],
+        "new_departments": [
+          "Civil Engineering",
+          "Mechanical Engineering",
+          "Applied Mathematics and Computational Science",
+          "Artificial Intelligence",
+          "Chemistry",
+          "Computer Science and Engineering",
+          "Electrical and Electronics Engineering",
+          "Electronics and Communication Engineering"
+        ],
+        "new_department_display": [
+          "Civil Engineering",
+          "Mechanical Engineering",
+          "Computer Science and Engineering",
+          "Electronics and Communication Engineering"
+        ],
+        "addressed": true,
+        "mechanism": "department removed from display (General or explicit depts)"
+      },
+      {
+        "post_id": 601,
+        "review_group": "C",
+        "field": "department",
+        "rule": "dept_generic_term",
+        "confidence": "medium",
+        "current": "Chemistry",
+        "proposed": "verify department: drop 'Chemistry' (route to General or the explicitly named department) unless the post names this department",
+        "old_status": "ACTIVITY_CANDIDATE",
+        "new_status": "ACTIVITY_CANDIDATE",
+        "old_categories": [
+          "RESEARCH"
+        ],
+        "new_categories": [
+          "RESEARCH"
+        ],
+        "old_departments": [
+          "Civil Engineering",
+          "Mechanical Engineering",
+          "Applied Mathematics and Computational Science",
+          "Artificial Intelligence",
+          "Chemistry",
+          "Computer Science and Engineering",
+          "Electrical and Electronics Engineering",
+          "Electronics and Communication Engineering"
+        ],
+        "new_departments": [
+          "Civil Engineering",
+          "Mechanical Engineering",
+          "Applied Mathematics and Computational Science",
+          "Artificial Intelligence",
+          "Chemistry",
+          "Computer Science and Engineering",
+          "Electrical and Electronics Engineering",
+          "Electronics and Communication Engineering"
+        ],
+        "new_department_display": [
+          "Civil Engineering",
+          "Mechanical Engineering",
+          "Computer Science and Engineering",
+          "Electronics and Communication Engineering"
+        ],
+        "addressed": true,
+        "mechanism": "department removed from display (General or explicit depts)"
+      },
+      {
+        "post_id": 601,
+        "review_group": "C",
+        "field": "department",
+        "rule": "dept_generic_term",
+        "confidence": "medium",
+        "current": "Electrical and Electronics Engineering",
+        "proposed": "verify department: drop 'Electrical and Electronics Engineering' (route to General or the explicitly named department) unless the post names this department",
+        "old_status": "ACTIVITY_CANDIDATE",
+        "new_status": "ACTIVITY_CANDIDATE",
+        "old_categories": [
+          "RESEARCH"
+        ],
+        "new_categories": [
+          "RESEARCH"
+        ],
+        "old_departments": [
+          "Civil Engineering",
+          "Mechanical Engineering",
+          "Applied Mathematics and Computational Science",
+          "Artificial Intelligence",
+          "Chemistry",
+          "Computer Science and Engineering",
+          "Electrical and Electronics Engineering",
+          "Electronics and Communication Engineering"
+        ],
+        "new_departments": [
+          "Civil Engineering",
+          "Mechanical Engineering",
+          "Applied Mathematics and Computational Science",
+          "Artificial Intelligence",
+          "Chemistry",
+          "Computer Science and Engineering",
+          "Electrical and Electronics Engineering",
+          "Electronics and Communication Engineering"
+        ],
+        "new_department_display": [
+          "Civil Engineering",
+          "Mechanical Engineering",
+          "Computer Science and Engineering",
+          "Electronics and Communication Engineering"
+        ],
+        "addressed": true,
+        "mechanism": "department removed from display (General or explicit depts)"
+      },
+      {
+        "post_id": 660,
+        "review_group": "C",
+        "field": "department",
+        "rule": "dept_generic_term",
+        "confidence": "medium",
+        "current": "Applied Mathematics and Computational Science",
+        "proposed": "verify department: drop 'Applied Mathematics and Computational Science' (route to General or the explicitly named department) unless the post names this department",
+        "old_status": "ACTIVITY_CANDIDATE",
+        "new_status": "ACTIVITY_CANDIDATE",
+        "old_categories": [
+          "RESEARCH"
+        ],
+        "new_categories": [
+          "RESEARCH"
+        ],
+        "old_departments": [
+          "Civil Engineering",
+          "Mechanical Engineering",
+          "Applied Mathematics and Computational Science",
+          "Artificial Intelligence",
+          "Chemistry",
+          "Computer Science and Engineering",
+          "Electrical and Electronics Engineering",
+          "Electronics and Communication Engineering"
+        ],
+        "new_departments": [
+          "Civil Engineering",
+          "Mechanical Engineering",
+          "Applied Mathematics and Computational Science",
+          "Artificial Intelligence",
+          "Chemistry",
+          "Computer Science and Engineering",
+          "Electrical and Electronics Engineering",
+          "Electronics and Communication Engineering"
+        ],
+        "new_department_display": [
+          "Civil Engineering",
+          "Mechanical Engineering",
+          "Computer Science and Engineering",
+          "Electronics and Communication Engineering"
+        ],
+        "addressed": true,
+        "mechanism": "department removed from display (General or explicit depts)"
+      },
+      {
+        "post_id": 660,
+        "review_group": "C",
+        "field": "department",
+        "rule": "dept_generic_term",
+        "confidence": "medium",
+        "current": "Artificial Intelligence",
+        "proposed": "verify department: drop 'Artificial Intelligence' (route to General or the explicitly named department) unless the post names this department",
+        "old_status": "ACTIVITY_CANDIDATE",
+        "new_status": "ACTIVITY_CANDIDATE",
+        "old_categories": [
+          "RESEARCH"
+        ],
+        "new_categories": [
+          "RESEARCH"
+        ],
+        "old_departments": [
+          "Civil Engineering",
+          "Mechanical Engineering",
+          "Applied Mathematics and Computational Science",
+          "Artificial Intelligence",
+          "Chemistry",
+          "Computer Science and Engineering",
+          "Electrical and Electronics Engineering",
+          "Electronics and Communication Engineering"
+        ],
+        "new_departments": [
+          "Civil Engineering",
+          "Mechanical Engineering",
+          "Applied Mathematics and Computational Science",
+          "Artificial Intelligence",
+          "Chemistry",
+          "Computer Science and Engineering",
+          "Electrical and Electronics Engineering",
+          "Electronics and Communication Engineering"
+        ],
+        "new_department_display": [
+          "Civil Engineering",
+          "Mechanical Engineering",
+          "Computer Science and Engineering",
+          "Electronics and Communication Engineering"
+        ],
+        "addressed": true,
+        "mechanism": "department removed from display (General or explicit depts)"
+      },
+      {
+        "post_id": 660,
+        "review_group": "C",
+        "field": "department",
+        "rule": "dept_generic_term",
+        "confidence": "medium",
+        "current": "Chemistry",
+        "proposed": "verify department: drop 'Chemistry' (route to General or the explicitly named department) unless the post names this department",
+        "old_status": "ACTIVITY_CANDIDATE",
+        "new_status": "ACTIVITY_CANDIDATE",
+        "old_categories": [
+          "RESEARCH"
+        ],
+        "new_categories": [
+          "RESEARCH"
+        ],
+        "old_departments": [
+          "Civil Engineering",
+          "Mechanical Engineering",
+          "Applied Mathematics and Computational Science",
+          "Artificial Intelligence",
+          "Chemistry",
+          "Computer Science and Engineering",
+          "Electrical and Electronics Engineering",
+          "Electronics and Communication Engineering"
+        ],
+        "new_departments": [
+          "Civil Engineering",
+          "Mechanical Engineering",
+          "Applied Mathematics and Computational Science",
+          "Artificial Intelligence",
+          "Chemistry",
+          "Computer Science and Engineering",
+          "Electrical and Electronics Engineering",
+          "Electronics and Communication Engineering"
+        ],
+        "new_department_display": [
+          "Civil Engineering",
+          "Mechanical Engineering",
+          "Computer Science and Engineering",
+          "Electronics and Communication Engineering"
+        ],
+        "addressed": true,
+        "mechanism": "department removed from display (General or explicit depts)"
+      },
+      {
+        "post_id": 660,
+        "review_group": "C",
+        "field": "department",
+        "rule": "dept_generic_term",
+        "confidence": "medium",
+        "current": "Electrical and Electronics Engineering",
+        "proposed": "verify department: drop 'Electrical and Electronics Engineering' (route to General or the explicitly named department) unless the post names this department",
+        "old_status": "ACTIVITY_CANDIDATE",
+        "new_status": "ACTIVITY_CANDIDATE",
+        "old_categories": [
+          "RESEARCH"
+        ],
+        "new_categories": [
+          "RESEARCH"
+        ],
+        "old_departments": [
+          "Civil Engineering",
+          "Mechanical Engineering",
+          "Applied Mathematics and Computational Science",
+          "Artificial Intelligence",
+          "Chemistry",
+          "Computer Science and Engineering",
+          "Electrical and Electronics Engineering",
+          "Electronics and Communication Engineering"
+        ],
+        "new_departments": [
+          "Civil Engineering",
+          "Mechanical Engineering",
+          "Applied Mathematics and Computational Science",
+          "Artificial Intelligence",
+          "Chemistry",
+          "Computer Science and Engineering",
+          "Electrical and Electronics Engineering",
+          "Electronics and Communication Engineering"
+        ],
+        "new_department_display": [
+          "Civil Engineering",
+          "Mechanical Engineering",
+          "Computer Science and Engineering",
+          "Electronics and Communication Engineering"
+        ],
+        "addressed": true,
+        "mechanism": "department removed from display (General or explicit depts)"
+      },
+      {
+        "post_id": 747,
+        "review_group": "B",
+        "field": "category",
+        "rule": "cat_over_tag:ACHIEVEMENT",
+        "confidence": "low",
+        "current": "ACHIEVEMENT",
+        "proposed": "verify over-tag: remove Achievement and Awards unless the text is clearly about it",
+        "old_status": "ACTIVITY_CANDIDATE",
+        "new_status": "ACTIVITY_CANDIDATE",
+        "old_categories": [
+          "ACHIEVEMENT"
+        ],
+        "new_categories": [
+          "ACHIEVEMENT"
+        ],
+        "old_departments": [],
+        "new_departments": [],
+        "new_department_display": [],
+        "addressed": true,
+        "mechanism": "category_gate flag fired (kept for review, not dropped)"
+      },
+      {
+        "post_id": 1125,
+        "review_group": "B",
+        "field": "category",
+        "rule": "cat_over_tag:ACHIEVEMENT",
+        "confidence": "low",
+        "current": "ACHIEVEMENT",
+        "proposed": "verify over-tag: remove Achievement and Awards unless the text is clearly about it",
+        "old_status": "ACTIVITY_CANDIDATE",
+        "new_status": "ACTIVITY_CANDIDATE",
+        "old_categories": [
+          "ACHIEVEMENT"
+        ],
+        "new_categories": [
+          "ACHIEVEMENT"
+        ],
+        "old_departments": [],
+        "new_departments": [],
+        "new_department_display": [],
+        "addressed": true,
+        "mechanism": "category_gate flag fired (kept for review, not dropped)"
+      },
+      {
+        "post_id": 1519,
+        "review_group": "B",
+        "field": "category",
+        "rule": "cat_over_tag:ACHIEVEMENT",
+        "confidence": "low",
+        "current": "ACHIEVEMENT",
+        "proposed": "verify over-tag: remove Achievement and Awards unless the text is clearly about it",
+        "old_status": "ACTIVITY_CANDIDATE",
+        "new_status": "ACTIVITY_CANDIDATE",
+        "old_categories": [
+          "ACHIEVEMENT"
+        ],
+        "new_categories": [
+          "ACHIEVEMENT"
+        ],
+        "old_departments": [],
+        "new_departments": [],
+        "new_department_display": [],
+        "addressed": true,
+        "mechanism": "category_gate flag fired (kept for review, not dropped)"
+      }
+    ],
+    "unaddressed": []
+  },
+  "section_d_regressions": {
+    "communication_status_flips": [],
+    "false_comm_suppression": [],
+    "false_comm_suppression_count": 0,
+    "dept_to_general_flips": [
+      {
+        "post_id": 13,
+        "review_group": "B",
+        "departments_raw": [
+          "Applied Mathematics and Computational Science"
+        ],
+        "display": [
+          "General"
+        ],
+        "review_dept_proposals": [
+          "cat_over_tag:RESEARCH",
+          "dept_generic_term"
+        ]
+      },
+      {
+        "post_id": 17,
+        "review_group": "B",
+        "departments_raw": [
+          "Electrical and Electronics Engineering"
+        ],
+        "display": [
+          "General"
+        ],
+        "review_dept_proposals": [
+          "cat_over_tag:INDUSTRY",
+          "dept_generic_term"
+        ]
+      },
+      {
+        "post_id": 50,
+        "review_group": "B",
+        "departments_raw": [
+          "Chemistry"
+        ],
+        "display": [
+          "General"
+        ],
+        "review_dept_proposals": [
+          "cat_over_tag:ACHIEVEMENT",
+          "dept_generic_term"
+        ]
+      },
+      {
+        "post_id": 63,
+        "review_group": "E",
+        "departments_raw": [
+          "T'SEDA (Architecture, Design, Planning)"
+        ],
+        "display": [
+          "General"
+        ],
+        "review_dept_proposals": [
+          "comm_mention_context",
+          "comm_separation_confirmed"
+        ]
+      },
+      {
+        "post_id": 87,
+        "review_group": "E",
+        "departments_raw": [
+          "Chemistry"
+        ],
+        "display": [
+          "General"
+        ],
+        "review_dept_proposals": [
+          "comm_mention_context",
+          "comm_separation_confirmed"
+        ]
+      },
+      {
+        "post_id": 242,
+        "review_group": "C",
+        "departments_raw": [
+          "T'SEDA (Architecture, Design, Planning)"
+        ],
+        "display": [
+          "General"
+        ],
+        "review_dept_proposals": [
+          "dept_generic_term"
+        ]
+      },
+      {
+        "post_id": 370,
+        "review_group": "G",
+        "departments_raw": [
+          "Chemistry"
+        ],
+        "display": [
+          "General"
+        ],
+        "review_dept_proposals": []
+      },
+      {
+        "post_id": 400,
+        "review_group": "C",
+        "departments_raw": [
+          "Electrical and Electronics Engineering"
+        ],
+        "display": [
+          "General"
+        ],
+        "review_dept_proposals": [
+          "dept_generic_term",
+          "pre_2024_keep"
+        ]
+      }
+    ],
+    "dept_to_general_without_review_proposal": [
+      {
+        "post_id": 370,
+        "review_group": "G",
+        "departments_raw": [
+          "Chemistry"
+        ],
+        "display": [
+          "General"
+        ],
+        "review_dept_proposals": []
+      }
+    ],
+    "dept_to_general_without_review_proposal_excl_group_g": [],
+    "department_note": "review layer only proposes dept corrections on ACTIVITY_CANDIDATE rows; group-G (unclear) flips to a display value are informational only",
+    "category_gate_fires_without_human_over_tag": [],
+    "multi_label_changes": [],
+    "unwanted_multi_label_changes": [],
+    "stakeholder_invariant_violations": [],
+    "date_invariant_violations": []
+  },
+  "section_e_rollback": {
+    "recommendation": "No rollback required. All rules are additive (flags/display only); the 200 reviewed candidate rows are unchanged in the staging DB. Before enabling automatic display/statistics suppression, score the gates against the 200 human labels and re-run this validation.",
+    "identifiers_used": "rules keyed by rule id; posts keyed by linkedin_post_id"
+  },
+  "section_f_test_suite": {
+    "result": "SEE MD REPORT - pytest tests -> 315 passed in ~48s"
+  }
+}

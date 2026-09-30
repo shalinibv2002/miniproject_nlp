@@ -1,0 +1,203 @@
+{
+  "meta": {
+    "title": "Final LinkedIn Reportable Dataset",
+    "generated_at": "2026-09-28T15:01:21",
+    "database": "backend/database/linkedin_reportable.db",
+    "scope": "canonical LinkedIn posts only; never merged with the 2,258 website activities"
+  },
+  "source": {
+    "workbook": "D:\\miniproject_nlp\\backend\\database\\merged-workbook.xlsx",
+    "workbook_sha256": "ca6a57ee907ec3fba45a7d5e02086d4253ecd3c371103b50d33f0f308a358cbc",
+    "sheets": [
+      "April 2024 - June 2025",
+      "June 2025-June 2026",
+      "Jan - Sep 2025",
+      "May - June 2026",
+      "Sep to Dec 2025"
+    ],
+    "raw_rows": 2319
+  },
+  "staging": {
+    "canonical_posts": 1747,
+    "duplicate_occurrences": 572,
+    "candidates": 1747,
+    "pending_review_sample": 200,
+    "expected": {
+      "posts": 1544,
+      "occurrences": 2094,
+      "candidates": 1544
+    }
+  },
+  "classification": {
+    "by_status": {
+      "REPORTABLE": 1398,
+      "NON_ACTIVITY": 121,
+      "REVIEW_REQUIRED": 228
+    },
+    "reportable": 1398,
+    "non_activity": 121,
+    "review_required": 228,
+    "category_occurrences": {
+      "RESEARCH": 404,
+      "ACHIEVEMENT": 338,
+      "SEMINAR": 235,
+      "ALUMNI": 216,
+      "INTERNSHIP": 191,
+      "WORKSHOP": 190,
+      "CLUB": 176,
+      "GUEST_LECTURE": 85,
+      "INDUSTRY": 81,
+      "OUTREACH": 74,
+      "CONFERENCE": 68,
+      "FDP": 66,
+      "CAMPUS": 64,
+      "CULTURAL": 62,
+      "SPORTS": 61,
+      "HACKATHON": 54,
+      "WEBINAR": 49,
+      "ORIENTATION": 44,
+      "PLACEMENT": 31,
+      "NSS": 17,
+      "SYMPOSIUM": 12,
+      "NCC": 9,
+      "TECH_FEST": 9,
+      "STTP": 3
+    },
+    "department_occurrences": {
+      "Electronics and Communication Engineering": 160,
+      "Electrical and Electronics Engineering": 125,
+      "Computer Science and Engineering": 118,
+      "Mechanical Engineering": 108,
+      "Civil Engineering": 91,
+      "Mechatronics": 61,
+      "T'SEDA (Architecture, Design, Planning)": 60,
+      "General": 55,
+      "Computer Science and Business Systems": 53,
+      "Applied Mathematics and Computational Science": 52,
+      "Information Technology": 47,
+      "Artificial Intelligence": 27,
+      "Chemistry": 25,
+      "English": 16,
+      "Computer Applications": 13
+    },
+    "stakeholder_occurrences": {
+      "Students": 1022,
+      "Faculty": 554,
+      "Industry": 283,
+      "Community and Society": 264,
+      "Alumni": 209,
+      "Government and Agencies": 151,
+      "Parents": 5,
+      "Non-Teaching Staff": 3
+    }
+  },
+  "dates": {
+    "dated": 845,
+    "undated": 886,
+    "ambiguous_multi_year": 16,
+    "convention": "academic_year assigned ONLY for single explicit dates; June 1 - May 31; no invented dates/years.",
+    "academic_year_distribution": {
+      "2023-24": 10,
+      "2024-25": 261,
+      "2025-26": 328,
+      "2026-27": 118,
+      "2027-28": 1
+    },
+    "by_month_reportable": {
+      "2023-08": 1,
+      "2024-04": 6,
+      "2024-05": 3,
+      "2024-06": 4,
+      "2024-07": 14,
+      "2024-08": 8,
+      "2024-09": 13,
+      "2024-10": 21,
+      "2024-11": 20,
+      "2024-12": 13,
+      "2025-01": 19,
+      "2025-02": 25,
+      "2025-03": 44,
+      "2025-04": 43,
+      "2025-05": 37,
+      "2025-06": 12,
+      "2025-07": 15,
+      "2025-08": 29,
+      "2025-09": 23,
+      "2025-10": 20,
+      "2025-11": 28,
+      "2025-12": 35,
+      "2026-01": 26,
+      "2026-02": 28,
+      "2026-03": 32,
+      "2026-04": 45,
+      "2026-05": 27,
+      "2026-06": 15,
+      "2026-07": 21,
+      "2026-08": 57,
+      "2026-09": 24,
+      "2026-10": 1,
+      "2027-12": 1
+    }
+  },
+  "provenance": {
+    "url_verified": 1012,
+    "link_less": 735,
+    "url_coverage_pct": 57.93,
+    "source_sheet_distribution": {
+      "All posts": 203,
+      "April 2024 - June 2025": 532,
+      "Jan - Sep 2025": 293,
+      "June 2025-June 2026": 718,
+      "Sep to Dec 2025": 1
+    },
+    "occurrence_counts": {
+      "single_occurrence_posts": 1261,
+      "multi_occurrence_posts": 486
+    }
+  },
+  "integrity": {
+    "no_duplicate_final_ids": true,
+    "no_invalid_categories": true,
+    "no_invalid_departments": true,
+    "no_invalid_stakeholders": true,
+    "no_invalid_academic_years": true,
+    "all_traceable": true,
+    "invalid_category_values": [],
+    "invalid_department_values": [],
+    "invalid_stakeholder_values": [],
+    "invalid_academic_years": [],
+    "duplicate_id_count": 0
+  },
+  "build": {
+    "mode": "upsert by staging_post_id (idempotent)",
+    "admin_overrides_preserved": null,
+    "flags": {
+      "link_less": 735,
+      "category_gate:ACHIEVEMENT": 222,
+      "unclear:low_evidence_event_like": 198,
+      "category_gate:RESEARCH": 163,
+      "communication_only": 121,
+      "category_gate:ALUMNI": 102,
+      "category_gate:INDUSTRY": 70,
+      "dept_to_general": 70,
+      "category_context_only": 53,
+      "category_gate:INTERNSHIP": 24,
+      "weak_text": 20,
+      "multi_year": 16,
+      "unclear:non_latin_unmatched": 12,
+      "category_gate:CAMPUS": 9,
+      "text_is_url": 6,
+      "unclear:text_is_url": 6,
+      "unclear:url_only": 6,
+      "url_only": 6,
+      "pre_2024_ambiguous": 4,
+      "unclear:title_only": 4,
+      "category_gate:PLACEMENT": 3,
+      "unclear:multi_year": 2,
+      "multi_label_collapsed:conference": 1,
+      "multi_label_collapsed:tech_fest": 1,
+      "multi_label_collapsed:webinar": 1,
+      "unclear:link_less_weak": 1
+    }
+  }
+}

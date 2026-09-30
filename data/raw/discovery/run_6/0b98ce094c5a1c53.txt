@@ -1,0 +1,144 @@
+ECEEEECSEITMECHMECTCIVILARCHCOMNCSEPSENVIE&MSEMCAARCH
+1 Aarbee structures 3 3
+2 AARHA Architects 1 1
+3 Accenture 2 3 3 5 1 3 17
+4 AG&P PRATHAM 2 3 5
+5 Alankaram architects 1 1
+6 Amadeus 1 1
+7 Amazon 1 2 3
+8 Appviewx 1 1 2
+9 Arun &Associates 1 1
+10 Astrazeneca 7 7 1 15
+11 AUKH Studio of Design 1 1
+12 Auro Lab 2 2
+13 Blue star 1 1
+14 BlueCube 1 1
+15 Brillio 5 7 8 20
+16 Capgemini 2 1 1 2 1 5 12
+17 Caratlane 3 3
+18 Casa Interior Pvt Ltd 1 1
+19 Caterpillar 4 2 11 12 4 33
+20 Cognizant 2 6 11 2 9 12 2 1 1 46
+21 Comcast 7 3 4 8 5 4 6 37
+22 Design Inifinity 1 1
+23 Dream Square Construction 1 1
+24 EmbedUR 4 2 6
+25 Enviarch Studio 1 1
+26 Enviro care 1 1
+27 Eversendai construction 7 7
+28 Fidelity 1 1 2 4
+29 Ford 1 1 2
+30 Ganit 3 2 2 1 8
+31 GREEN STAR 2 2
+32 Gs architects 1 1
+THIAGARAJAR COLLEGE OF ENGINEERING, MADURAI - 625 015
+PLACEMENT 2022 - 2023
+Highest Salary : 32 Lakhs / Annum
+Average Salary : 7.00 Lakhs / Annum
+Sl.
+No.
+Company UG PG TOTAL
+33 HABITECT Architecture 1 1
+34 HCL 1 1 3 5
+35 Honeywell 2 3 1 3 1 10
+36 HPE Aruba 4 2 1 7
+37 Hyundai 2 2
+38 IBM 1 1 2
+39 Iexceed 1 1 2
+40 Jasmine 4 4
+41 Jays civil Tec Design 3 3
+42 Jefknr 1 1
+43 JP Morgan Chase 1 3 4
+44 Kalycito 1 1 2
+45 KBR 1 1 2
+46 LAD360 1 1
+47 Lister Technologies 5 5 5 1 16
+48 LML 1 2 1 4
+49 LNTECC 6 1 10 2 1 20
+50 LTI - Mind tree 4 5 1 2 6 2 1 4 25
+51 Lucas TVS 1 1 2
+52 Mando 8 1 9
+53 Microchip 2 3 1 1 7
+54 Milestone Design Studio 1 1
+55 Mindspace architects 2 2
+56 Mr Cooper 3 2 5
+57 Navis 1 1 2
+58 Neustar (Transunion) 1 1 2
+59 New street 2 2
+60 Optum 2 3 4 9 1 19
+61 Oracle 2 3 5
+62 Pinnacle Infotech 1 1
+63 Pragathi Associates 1 1
+64 QuEST-Global 1 1
+65 RCI DIGITAL SOLUTION 1 1
+66 RGB Architecture studio 1 1
+67 Rooted Narratives 1 1
+68 Sahaj 1 1
+69 Saint gobain 1 4 5
+70 Salt studio 2 2
+71 Sam Associates 1 1
+72 Sama gulf Company 1 1
+73 Sankar and associates 1 1
+74 SAVENTURE  INFRA  TECH 1 1
+75 Sethu Institute of Tech. 1 1
+76 Shiyam Associates 1 1
+77 Shopup 1 4 1 6
+78 Sirius 4 4
+79 Skyline   Construction 1 1
+80 Sobha Limited 5 2 7
+81 SPACE DESIGNERS 1 1
+82 SPIC 1 1
+83 Studio 05 Architects 1 1
+84 Surveysparrow 1 1
+85 TAFE 2 2 1 5
+86 TATA Communications 3 2 1 6
+87 TCS (Digital) 1 1 2 1 3 2 10
+88 TCS (Ninja) 2 14 2 6 4 1 10 1 2 2 4 48
+89 TATA Elxsi 4 5 3 4 1 17
+90 Team Lease 1 1
+91 Technip 1 1
+92 TCE 1 1
+93 THINK DESIGN 1 1
+94 Thirunamam Construction 1 1
+95 Tiger Analytics 3 3
+96 Titan 3 1 4
+97 Transunion 1 1 2
+98 Trimble 3 1 3 2 9
+99 Tringapps 1 1
+100 TVS EUROGRIP 1 1
+101 TVS Motors 3 3
+102 Varsha & Pradeep Architect 2 2
+103 Vesta 1 1
+104 Viasat 1 2 2 5
+105 VK ARCHITECTS 1 1
+106 Voyants Solutions 1 1
+107 Vuram 2 1 1 4
+108 WIPRO 26 17 7 23 21 10 104
+109 Wrench Solutions 1 1
+110 Zaggle 5 5 10
+111 Elgi (Off) 1 1
+112 Power Grid (Off) 1 1
+113 Care Lab (Off) 1 1
+114 CEET (off) 1 1
+115 Pando (off) 0
+116 GenPact (Off) 1 1
+117 Agasthya Developer (Off) 1 1
+118 Cprime (off) 1 1
+119 Federal Bank (Off) 1 1
+120 Kagira (Off) 1 1
+121 Osiz Tech (Off) 1 1
+122 Rebar Deisgn (Off) 1 1
+123 Seamak (Off) 1 1
+124 T&M Services (Off) 1 1
+125 URC  (Off) 1 1
+126 VTM (Off) 2 2
+127 VGN (Off)\ 3 3
+128 APJ 3D Design Solutions India Pvt ltd (Off) 1 1
+129 Ashok leyland (off) 1 1
+130 ChainSys (off) 1 1
+131 Sartorius (off) 1 1
+132 Soft Suave Tech (off) 1 1
+133 BIOSEEN (off) 1 1
+134 Zoho 9 16 13 19 2 7 1 2 69
+Total 115104111124 102 54 84 27 5 4 5 6 4 13 20 8 786
+UNIQUE 115104111114 102 50 81 25 5 4 5 6 4 13 19 8 766

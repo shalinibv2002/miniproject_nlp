@@ -1,0 +1,33 @@
+{
+  "timestamp": "2026-09-22T01:08:37",
+  "reviewer": "phase4-safe-fix",
+  "steps": [
+    {
+      "action": "merge_duplicates",
+      "detail": []
+    },
+    {
+      "action": "park_review_flags",
+      "count": 0,
+      "detail": []
+    }
+  ],
+  "merge_clusters": 0,
+  "duplicates_merged": 0,
+  "total_before": 2258,
+  "total_after": 2258,
+  "pair_table_total": 40,
+  "pair_table_merged": 0,
+  "pair_table_pending": 40,
+  "review_flags_parked": 0,
+  "review_flags_total_open": 26,
+  "ok": true,
+  "expected_reference": {
+    "total_before": 2320,
+    "work_invariant": 97,
+    "general_invariant": 813,
+    "ws2025_invariant": 10,
+    "it2025_invariant": 29,
+    "tseda2024_invariant": 47
+  }
+}

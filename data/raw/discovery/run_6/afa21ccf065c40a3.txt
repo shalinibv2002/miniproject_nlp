@@ -1,0 +1,88 @@
+ECEEEECSEITMECHMECTCIVILCSBSARCHCOMMPSSEMCAM.SC (DS)CEMCSE
+Aarbee Structures 6 6
+Accenture (ASE) 15 4 8 5 2 4 2 7 7 1 55
+Accolite 1 1
+Ajirasoft 1 1 2
+ANORA 1 1
+AppViewX 1 1
+APTEAN 4 1 5
+AstraZeneca 2 1 2 1 1 7
+Athenahealth 1 1 2 4
+Blue Yonder 2 2 4
+Bluescope 5 5
+Caratlane Trading Private Ltd 2 2 4
+Caterpillar 8 3 8 3 2 4 2 30
+Cholamandalam Investment & Finance Company Limited 2 5 8 15
+Cognizant (Gen C) 3 2 1 1 7
+Comcast 6 2 7 13 3 4 2 37
+Conserve 3 10 2 2 17
+e-con 1 1
+Embedur 2 2 1 5
+Fidelity 1 9 4 5 19
+Ford 3 4 5 1 13
+HONEYWELL 6 3 4 2 3 18
+HPE 4 2 3 2 1 12
+Hyundai 3 3 5 11
+IBM 1 4 3 2 10
+Jasmine Concrete Exports Pvt Ltd 4 4
+Jman 1 1
+Johnson Electric 1 1
+KAAR TECHNOLOGIES 1 2 3
+Kaleris [Navis] 1 1
+KBR 4 4
+KLA Tencor 1 1
+THIAGARAJAR  COLLEGE OF ENGINEERING, MADURAI - 625 015
+PLACEMENT 2023 - 2024
+Highest Salary : 28 Lakhs / Annum
+Average Salary : 7.25 Lakhs / Annum
+Company UG PG Total
+L&T TECHNOLOGY SERVICES LIMITED, 4 2 1 3 1 11
+Lister Technologies Ltd is officially part of Bounteous 4 1 5
+LNT ECC 12 2 8 1 1 2 4 30
+Mad Street Den 3 3 6
+Madura Coats 3 3
+Mando 3 12 1 16
+Microchip 2 1 1 1 5
+MMRFIC 6 6
+Mr Cooper 2 1 3
+Mu Sigma 2 2
+MulticoreWare 1 1 2
+New Street 1 3 4
+Renault Nissan Automotive India Private Limited (RNAIPL) 8 18 7 33
+RNTBCI 1 1
+ROOTQUOTIENT 1 2 1 4
+sahaj 1 3 4
+Schlumberger Limited (SLB) 1 1
+ShopUp 1 1 1 3
+Sobha Constructions LLC 1 4 5
+SPIC 2 1 1 4
+SurveySparrow 1 1
+TAFE 1 3 1 5
+Tata Consultancy Services (Digital) 3 2 2 1 2 2 1 13
+Tata Consultancy Services (Ninja) 9 7 8 6 7 13 5 9 1 4 3 2 74
+Tata Consultancy Services (Prime) 1 1 2 4
+Tata Elxsi 3 4 4 5 3 4 1 11 35
+Technip 1 1
+Texas Instruments 1 1
+Tiger Analytics 4 1 2 2 1 10
+TITAN 5 2 1 8
+Transunion 2 3 5 2 12
+Trimble 8 6 3 17
+TVS Credit 1 3 1 5
+Tvs Motors 1 3 1 5
+TVS Srichakra 1 1
+Visteon 2 1 1 2 3 9
+Ridh Off) 1 R
+Tecton 1
+WoodPlc 3 1 1 5
+Ayphen (Off) 1
+FHHTIDPL (off) 1
+GET&D (off) 1
+HCL 4
+NEXHS (Off) 1
+VCODEZ (Off) 1
+TTSL 1
+ARS (Off) 1
+ZOHO 2 3 5 10
+Total 106 7810996 79 52 43 61 1 1 1 3 28 29 4 2 669
+UNIQUE 98 7310196 85 45 43 53 1 1 1 3 15 28 4 2 649

@@ -1,0 +1,311 @@
+{
+  "meta": {
+    "report": "linkedin_manual_review_rule_analysis",
+    "generated": "2026-09-23",
+    "stage": "ANALYSIS_ONLY",
+    "implemented": false,
+    "inputs": {
+      "proposals_table": "linkedin_manual_review_proposals (backend/database/linkedin_staging.db)",
+      "proposal_count": 136,
+      "review_file": "data/audit/linkedin_manual_review_20260923.json",
+      "review_sample_size": 200
+    },
+    "outputs": [
+      "data/audit/linkedin_manual_review_rule_analysis_20260923.md",
+      "data/audit/linkedin_manual_review_rule_analysis_20260923.json"
+    ],
+    "constraints": {
+      "corrections_applied": false,
+      "production_modified": false,
+      "candidate_rows_modified": false,
+      "excel_modified": false,
+      "frontend_integration": false
+    },
+    "disclaimer": "Analysis only. Counts are from the 200-post human-reviewed sample unless marked full_table (n=1544). No accuracy claim."
+  },
+
+  "A_proposal_summary": {
+    "total": 136,
+    "corrections": 70,
+    "notes": 66,
+    "by_field": {"category": 64, "status": 27, "department": 26, "date": 19},
+    "by_confidence": {"high": 66, "medium": 20, "low": 50},
+    "by_rule": [
+      {"rule": "comm_separation_confirmed", "field": "status", "total": 27, "corrections": 0, "notes": 27},
+      {"rule": "dept_generic_term", "field": "department", "total": 26, "corrections": 26, "notes": 0},
+      {"rule": "cat_over_tag:ACHIEVEMENT", "field": "category", "total": 21, "corrections": 21, "notes": 0},
+      {"rule": "comm_mention_context", "field": "category", "total": 20, "corrections": 0, "notes": 20},
+      {"rule": "multi_year_keep", "field": "date", "total": 15, "corrections": 0, "notes": 15},
+      {"rule": "cat_over_tag:RESEARCH", "field": "category", "total": 11, "corrections": 11, "notes": 0},
+      {"rule": "cat_over_tag:INDUSTRY", "field": "category", "total": 4, "corrections": 4, "notes": 0},
+      {"rule": "pre_2024_keep", "field": "date", "total": 4, "corrections": 0, "notes": 4},
+      {"rule": "cat_over_tag:ALUMNI", "field": "category", "total": 3, "corrections": 3, "notes": 0},
+      {"rule": "multi_label_overlap", "field": "category", "total": 3, "corrections": 3, "notes": 0},
+      {"rule": "cat_over_tag:INTERNSHIP", "field": "category", "total": 2, "corrections": 2, "notes": 0}
+    ],
+    "corrections_by_field": {"category": 44, "department": 26, "stakeholder": 0, "date": 0, "status": 0},
+    "interpretation": "66/136 (49%) are confirmations to lock in as hard rules; 70/136 (51%) are corrections concentrated in category over-tagging (41) and department over-inference (26); stakeholder had zero proposals."
+  },
+
+  "B_proposed_rules": [
+    {
+      "rule_name": "RULE-01 comm_separation_lock",
+      "problem": "Admission promos, job ads, greetings, thanks must never be activities even when they contain activity-like words.",
+      "evidence": "27/27 sample NON_ACTIVITY confirmed, group F=0; full_table NON_ACTIVITY=102 (admission_promo 41, job_ad 31, greeting 21, thanks 9).",
+      "example_post_ids": [4, 5, 7, 20, 21, 26, 27, 35, 36, 37],
+      "current_behavior": "communication_type + communication_only flag; status NON_ACTIVITY; category strings may remain attached.",
+      "proposed_behavior": "Hard rule: communication_type in {admission_promo, job_ad, greeting, thanks, announcement} => NON_ACTIVITY, except guarded embedded-event promotion (RULE-02b).",
+      "safe_to_generalize": true,
+      "fp_risk": "approx 0 (0/27 false positives observed)",
+      "fn_risk": "embedded event inside a promo (0 observed; keep promotion guard)"
+    },
+    {
+      "rule_name": "RULE-02 comm_context_category_suppression",
+      "problem": "Communication posts carry category keywords as program features, polluting category statistics.",
+      "evidence": "20 comm_mention_context notes; full_table 52/102 NON_ACTIVITY posts carry >=1 category (RESEARCH 43, ACHIEVEMENT 25, INTERNSHIP 10, PLACEMENT 10, ALUMNI 8, INDUSTRY 7, CAMPUS 2).",
+      "example_post_ids": [4, 5, 7, 20, 21, 27, 35, 36, 42, 51],
+      "current_behavior": "communication_override noted but category strings remain stored/visible on candidate rows.",
+      "proposed_behavior": "For NON_ACTIVITY rows suppress categories from display/export (retain raw values in internal column as category_context); never count toward activity stats.",
+      "safe_to_generalize": true,
+      "fp_risk": "low",
+      "fn_risk": "if post later promoted to activity, re-evaluate categories from text rather than restoring blindly"
+    },
+    {
+      "rule_name": "RULE-02b embedded_event_promotion_guard",
+      "problem": "A genuine event embedded in a communication post must remain promotable to activity.",
+      "evidence": "Group F = 0/27 in sample; unfired but not disproven.",
+      "example_post_ids": [],
+      "current_behavior": "promotion logic exists (group F).",
+      "proposed_behavior": "Keep as guard; require strong event term + explicit date before promotion; do not tune thresholds from this sample.",
+      "safe_to_generalize": "guard_only",
+      "fp_risk": "auto-enable would FP on promos",
+      "fn_risk": "removing it would FN future embedded events"
+    },
+    {
+      "rule_name": "RULE-03 achievement_evidence_gate",
+      "problem": "ACHIEVEMENT over-tagged on promos, ceremonies, remembrance and institutional-status posts.",
+      "evidence": "21/21 flagged = corrections (21/39 group-B posts, 18% of 116 activity sample); full_table ACHIEVEMENT on 491/1280 activity candidates.",
+      "example_post_ids": [29, 32, 34, 45, 47, 50, 57, 61, 90, 140, 164, 166, 170, 171, 187, 253, 298, 394, 747, 1125, 1519],
+      "current_behavior": "keyword-driven (proud/celebrate/congratulations/excellence) => ACHIEVEMENT added, often multi-label.",
+      "proposed_behavior": "Require an achievement instance: award won, result declared, person/team recognised, certification counts published. Event announcements, promos, remembrance and institutional-status news do not qualify.",
+      "safe_to_generalize": "flag_first_not_auto_drop",
+      "fp_risk": "auto-drop would remove true achievements (NPTEL results, placements) - keep as verify/flag until scored against human labels",
+      "fn_risk": "low when used only as flag"
+    },
+    {
+      "rule_name": "RULE-04 research_evidence_gate",
+      "problem": "RESEARCH over-tagged on alumni-spotlight, award, fellowship and greeting posts where research only appears in profile/institutional lines.",
+      "evidence": "11/11 flagged = corrections; full_table RESEARCH on 351/1280 activity candidates.",
+      "example_post_ids": [11, 12, 13, 15, 25, 31, 40, 69, 73, 89, 92],
+      "current_behavior": "keywords research/R&D/fellowship/scholar => RESEARCH.",
+      "proposed_behavior": "Require a research activity instance: seminar/conclave/paper/journal/funding event or published result; organizer evidence (R&D Cell, Research Council) or event evidence required; profile mentions and institutional titles do not qualify.",
+      "safe_to_generalize": "flag_first",
+      "fp_risk": "auto-drop may remove legitimate 'congratulations for research grant' posts",
+      "fn_risk": "low with organizer/event evidence retained (69, 89, 92 keep RESEARCH)"
+    },
+    {
+      "rule_name": "RULE-05 industry_partnership_gate",
+      "problem": "INDUSTRY added from academic MoUs and title adjectives ('Industry Innovation').",
+      "evidence": "4/4 flagged = corrections; full_table INDUSTRY on 69 activity candidates.",
+      "example_post_ids": [17, 18, 75, 394],
+      "current_behavior": "keywords industry/MoU/collaboration => INDUSTRY.",
+      "proposed_behavior": "Require an industry actor: company/corporate partner name, 'in association with <industry body>', sponsorship by industry. Academic MoUs and title adjectives do not qualify.",
+      "safe_to_generalize": true,
+      "fp_risk": "near zero with actor-name requirement",
+      "fn_risk": "informal industry-partner naming may be missed"
+    },
+    {
+      "rule_name": "RULE-06 alumni_audience_gate",
+      "problem": "ALUMNI added to graduation/training posts where alumni are not the audience or subject.",
+      "evidence": "3/3 flagged = corrections; full_table ALUMNI on 179 activity candidates (high base rate).",
+      "example_post_ids": [61, 140, 149],
+      "current_behavior": "keywords batch/alumni/graduation => ALUMNI.",
+      "proposed_behavior": "ALUMNI only for alumni meet/chapter events, alumni spotlight features, alumni-authored or alumni-audience activities; graduation/farewell => ORIENTATION, not ALUMNI.",
+      "safe_to_generalize": true,
+      "fp_risk": "moderate if keyword-only again; require audience semantics",
+      "fn_risk": "legitimate uses must survive: 115 (TCE USA Alumni Meet), 118 (alumni congratulation), 23 (alumni spotlight)"
+    },
+    {
+      "rule_name": "RULE-07 internship_event_gate",
+      "problem": "INTERNSHIP attached because the word appears as a program feature or profile line.",
+      "evidence": "2/2 flagged = corrections; full_table INTERNSHIP on 167 activity candidates (high base rate, small sample evidence).",
+      "example_post_ids": [18, 46],
+      "current_behavior": "keyword intern/internship => INTERNSHIP.",
+      "proposed_behavior": "INTERNSHIP only when the post is about an internship (posting, completion, drive, internship event) - not a feature bullet inside another activity; keep when the achievement subject IS the internship (13-style).",
+      "safe_to_generalize": "narrow_only",
+      "fp_risk": "low",
+      "fn_risk": "over-pruning internship-achievement posts if applied broadly"
+    },
+    {
+      "rule_name": "RULE-08 multi_label_same_event_collapse",
+      "problem": "One event gets two categories that are format/venue synonyms.",
+      "evidence": "3/3 flagged = corrections; full_table 767/1280 activity candidates are multi-label (498 with exactly 2) but only 3 judged overlapping.",
+      "example_post_ids": [260, 298, 586],
+      "current_behavior": "independent keyword labels accumulate.",
+      "proposed_behavior": "Collapse only within a curated synonym-pair list (CONFERENCE+WEBINAR -> CONFERENCE; SYMPOSIUM+TECH_FEST -> SYMPOSIUM; CONFERENCE+GUEST_LECTURE -> dominant) when they describe the SAME event; distinct event types stay multi-label.",
+      "safe_to_generalize": "curated_pairs_only",
+      "fp_risk": "generic collapsing would flatten legitimate multi-distinct activities (e.g. FDP+SEMINAR)",
+      "fn_risk": "low for curated pairs"
+    },
+    {
+      "rule_name": "RULE-09 department_explicit_evidence_gate",
+      "problem": "Department inferred from topic/technology/course names instead of organizer/host/participation evidence.",
+      "evidence": "26 department corrections across 14 sample posts, all unanimous; triggers Chemistry 7, AMCS 6, EEE 6, AI 6, T'SEDA 1; full_table AC/RR carrying these depts: AMCS 88, AI 69, Chemistry 38, EEE 131; journal CFP fan-out posts (486/567/601/660) contribute 16 of 26.",
+      "example_post_ids": [13, 17, 50, 105, 242, 261, 400, 426, 486, 567, 586, 601, 660],
+      "current_behavior": "topic/technology/course keywords mapped to departments; no organizer requirement.",
+      "proposed_behavior": "Require explicit participation evidence ('Department of X', 'organized/hosted by X', department association/club, named coordinator); otherwise display value = General, raw inference kept in internal column. Scope statements and journal CFP topic lists => General.",
+      "safe_to_generalize": true,
+      "fp_risk": "approx 0 (rule only removes unsupported claims)",
+      "fn_risk": "unusual organizer phrasing (initials 'Dept. of ECE', 'team from ECE') - mitigate with alias/initials matcher; counter-example 50 shows explicit 'Department of Physics' must be kept"
+    },
+    {
+      "rule_name": "RULE-10 stakeholder_no_change",
+      "problem": "None observed.",
+      "evidence": "Group D = 0; 0/136 proposals concern stakeholders.",
+      "example_post_ids": [],
+      "current_behavior": "stakeholders inferred from audience/participant phrases.",
+      "proposed_behavior": "No change; re-evaluate only after classifier scored against human labels.",
+      "safe_to_generalize": "verification_only",
+      "fp_risk": "any change now would be unevidenced",
+      "fn_risk": "n/a"
+    },
+    {
+      "rule_name": "RULE-11 date_explicit_only_lock",
+      "problem": "Pressure to resolve ambiguous multi-year dates, invent dates for undated posts, or infer AY from workbook sheet names.",
+      "evidence": "19 date notes (15 multi_year_keep, 4 pre_2024_keep), all 'keep as-is'; full_table date_status: undated 829, dated 699, ambiguous_multi_year 16; multi_year flag 16, pre_2024_ambiguous 4.",
+      "example_post_ids": [29, 333, 392, 393, 394, 395, 400, 414, 415, 419, 486, 533, 567, 586, 601, 660, 747, 1125, 1519],
+      "current_behavior": "explicit dates only (June 1 - May 31 AY); ambiguous_multi_year flagged; undated stays undated; pre-2024 flagged.",
+      "proposed_behavior": "Lock as invariants: (1) no date without explicit text evidence; (2) never collapse multi-year to one AY; (3) undated stays undated; (4) never infer AY from sheet names/sheet period; (5) pre-2024 stays flagged for scope confirmation, not deleted.",
+      "safe_to_generalize": "preservation_constraints",
+      "fp_risk": "relaxation => fabricated dates (high severity)",
+      "fn_risk": "collapsing multi-year loses real ambiguity (415/419 five-date spans)"
+    },
+    {
+      "rule_name": "RULE-12 weak_evidence_unclear_routing",
+      "problem": "57 posts in REVIEW_REQUIRED with heterogeneous causes; downstream cannot tell why they are unclear.",
+      "evidence": "Group G = 57: weak_text 19, text_is_url 6, url_only 5, link_less 4, multi_year 1, unflagged-low-score 37; evidence_score bands: 0 x19, 1-3 x30, 4-7 x8; 53/57 have URL, 4 do not.",
+      "example_post_ids": [744, 773, 802, 818, 862, 346, 482, 483, 1028, 1090, 1091, 789, 821, 822, 830, 860, 884, 931, 1424],
+      "current_behavior": "single REVIEW_REQUIRED status; flags coarse; 37 posts have no flag.",
+      "proposed_behavior": "Attach machine-readable unclear_reason in {url_only, text_is_url, title_only, link_less_weak, low_evidence_event_like, non_latin_unmatched, multi_year}; route url_only/text_is_url to URL-resolve queue, title_only/low_evidence to human queue.",
+      "safe_to_generalize": true,
+      "fp_risk": "low (routing metadata only, no classification change)",
+      "fn_risk": "mis-binned reason codes affect queue prioritisation only"
+    }
+  ],
+
+  "C_category_findings": {
+    "dominant_problem": "ACHIEVEMENT (21 corrections) with four failure families: memorial/remembrance (29,747,1519), program promos (34,164), event announcements without results (45,47,50,57,61,90), institutional status news (170,171,1125).",
+    "research": "11 corrections driven by profile/recognition/greeting mentions (11,12,13,15,25,31,73); legitimate event uses remain (69,89,92).",
+    "industry": "4 corrections: academic MoU mistaken for industry collaboration (17,18); title adjectives (75,394).",
+    "alumni": "3 corrections: audience confusion with graduation/training (61,140,149); high base rate 179.",
+    "internship": "2 corrections: feature-bullet leakage (18,46).",
+    "placement_campus": "0 over-tag flags in sample; keep on watch list only.",
+    "multi_label_overlap": "3/767 multi-label rows judged overlapping; collapse only curated pairs; multi-label itself accepted (group A contains 23,38,93,99...).",
+    "ordering": "Communication suppression (RULE-02) must run before category gates (52/102 NA posts carry categories).",
+    "over_tag_counts_in_sample": {"ACHIEVEMENT": 21, "RESEARCH": 11, "INDUSTRY": 4, "ALUMNI": 3, "INTERNSHIP": 2, "PLACEMENT": 0, "CAMPUS": 0}
+  },
+
+  "D_department_findings": {
+    "total_corrections": 26,
+    "affected_posts": 14,
+    "dissent": 0,
+    "trigger_patterns": {
+      "subject_topic_to_department": ["13 Data Science -> AMCS", "50/261/586 chemistry/materials words -> Chemistry", "105 AI/HVAC words -> AI", "17/400 electrical/patent/MoU topic -> EEE"],
+      "course_program_name": ["426 STTP 'Next Gen Tools' -> AMCS+AI although organizer is CSBS"],
+      "journal_cfp_fanout": ["486", "567", "601", "660 (16 of 26 corrections from 4 posts x 4 inferred departments)"],
+      "festival_scope": ["242 '7+ Departments' tech fest -> T'SEDA"]
+    },
+    "trigger_counts_by_department": {"Chemistry": 7, "Applied Mathematics and Computational Science": 6, "Electrical and Electronics Engineering": 6, "Artificial Intelligence": 6, "T'SEDA": 1},
+    "counter_example": "post 50 explicitly names Department of Physics - keep named dept, drop inferred Chemistry",
+    "policy": "department requires explicit organize/host/participate evidence; otherwise display value = General with raw inference retained internally",
+    "full_table_leverage": {"AMCS": 88, "AI": 69, "Chemistry": 38, "EEE": 131}
+  },
+
+  "E_communication_findings": {
+    "separation_working": "27/27 confirmations, 0 corrections, group F = 0",
+    "sample_na_composition": {"admission_promo": 14, "job_ad": 8, "greeting": 4, "thanks": 1},
+    "full_table_na": {"total": 102, "admission_promo": 41, "job_ad": 31, "greeting": 21, "thanks": 9},
+    "category_leakage": "52/102 NA posts carry >=1 category (RESEARCH 43, ACHIEVEMENT 25, INTERNSHIP 10, PLACEMENT 10, ALUMNI 8, INDUSTRY 7, CAMPUS 2)",
+    "worst_offenders": ["post 4 admissions with 6 categories", "posts 20/21 job ads tagged RESEARCH/ACHIEVEMENT"],
+    "context_split": "congratulation/thanks wording is NA at post level but keeps ACHIEVEMENT inside activity posts (118) - gate on post-level communication_type, not sentence keywords",
+    "promotion_guard": "keep RULE-02b; unfired (0) means untuned, not unnecessary",
+    "lexicon_gap": "Tamil festival greetings (74,126,269) fell into unclear kind I instead of greeting"
+  },
+
+  "F_date_findings": {
+    "date_corrections": 0,
+    "date_notes": 19,
+    "multi_year_keep": {"count": 15, "post_ids": [333, 392, 393, 394, 395, 414, 415, 419, 486, 533, 567, 586, 601, 660, 1125], "action": "keep ambiguous_multi_year; never collapse to one AY"},
+    "pre_2024_keep": {"count": 4, "post_ids": [29, 400, 747, 1519], "action": "keep flagged for scope confirmation; do not delete or reassign"},
+    "undated": "829/1544 full table remain undated; no proposals asked to date them",
+    "sheet_name_inference": "none observed in any proposal; ban preserved",
+    "invariants": ["explicit_text_dates_only", "multi_year_flagged_not_collapsed", "undated_preserved", "pre_2024_flagged", "sheet_period_never_used_as_date_evidence"]
+  },
+
+  "G_rules_not_to_generalize": [
+    "Do NOT auto-drop over-tagged categories before scoring against the 200 human labels (50/136 proposals are low-confidence 'verify' phrasing).",
+    "Do NOT build a generic multi-label overlap merger - only 3 instances, curated pairs only (RULE-08).",
+    "Do NOT touch stakeholder logic - 0/136 proposals, no evidence.",
+    "Do NOT auto-promote or auto-demote communication posts - group F = 0 gives no calibration data.",
+    "Do NOT fix ambiguous multi-year or pre-2024 dates - preservation only (RULE-11).",
+    "Do NOT infer department from scope statements or journal CFP topic lists; equally do NOT blanket-remove departments with explicit organizer evidence (post 50).",
+    "Do NOT confuse review groups A-H with screening kinds A-J - different taxonomies.",
+    "Do NOT delete or rewrite the 1544 candidate rows based on this analysis - application requires explicit next-stage approval."
+  ],
+
+  "H_recommended_changes": {
+    "pipeline_order": ["communication detection", "category gates", "department gate", "date rules", "unclear routing"],
+    "category_layer": [
+      "Add evidence gates RULE-03..07 (flag/score-penalty first; auto-drop only after evaluation)",
+      "Suppress categories on NON_ACTIVITY rows at display (RULE-02)",
+      "Curated synonym-pair collapse list (RULE-08)",
+      "Keep PLACEMENT/CAMPUS on watch list (0 sample flags; base rates 27/58)"
+    ],
+    "department_layer": [
+      "Organizer-evidence requirement with alias/initials matcher (ECE/EEE/CSE/MECH/CIVIL, 'Dept. of', 'organized by', coordinator lines)",
+      "Fallback display value = General; raw inference in internal column",
+      "Journal CFP and institution-wide events => General"
+    ],
+    "stakeholder_layer": ["No change (RULE-10)"],
+    "date_layer": ["Encode RULE-11 as invariant assertions + regression tests"],
+    "unclear_layer": [
+      "Adopt unclear_reason taxonomy (RULE-12)",
+      "Split 57 into queues: URL-resolve 14, human-title ~8, low-evidence event-like 37",
+      "Tamil greeting lexicon fix (74,126,269)",
+      "Investigate kind-I event-like cluster (44,49,53,54,55 boot camp recaps; 108,429 inaugurations; 230 contest; 141,396 series) - candidate lexicon additions: inaugurat*, boot camp, contest, lecture series"
+    ],
+    "evaluation_precondition": "Score the classifier against the 200 human labels (groups A-H + 70 accepted corrections) to measure precision/recall per rule before any rule is enabled automatically.",
+    "non_goals_this_stage": ["no DB writes", "no candidate edits", "no Excel edits", "no frontend/integration"]
+  },
+
+  "unclear_records_analysis": {
+    "group_G_count": 57,
+    "by_kind": {"I": 47, "J": 5, "A": 3, "B": 1, "D": 1},
+    "by_flag": {"none": 37, "weak_text": 19, "text_is_url": 6, "url_only": 5, "link_less": 4, "multi_year": 1},
+    "flag_combos": {"no_flags": 37, "weak_text_only": 7, "url_only+weak_text": 5, "text_is_url+weak_text": 3, "link_less+text_is_url+weak_text": 3, "link_less+weak_text": 1, "multi_year_only": 1},
+    "url_presence": {"has_url": 53, "no_url": 4},
+    "evidence_score_bands": {"0": 19, "1-3": 30, "4-7": 8, "8+": 0},
+    "recurring_patterns": [
+      {"pattern": "url_only (empty text + URL)", "count": 5, "post_ids": [744, 773, 802, 818, 862], "routing": "URL-resolve queue"},
+      {"pattern": "text_is_url (post text is just a link)", "count": 6, "post_ids": [346, 482, 483, 1028, 1090, 1091], "routing": "URL-resolve queue (3 are also link_less)"},
+      {"pattern": "link_less + weak text", "count": 4, "post_ids": [1028, 1090, 1091, 1424], "routing": "URL-resolve / human queue"},
+      {"pattern": "title/image-only (weak_text, score 0-5)", "count": 8, "post_ids": [789, 821, 822, 830, 860, 884, 931, 1424], "routing": "human title queue"},
+      {"pattern": "unflagged but low evidence (score 0-4, kind I)", "count": 37, "post_ids": [14, 44, 49, 53, 54, 55, 58, 74, 76, 78, 88, 98, 108, 117, 126, 141, 204, 212, 213, 230, 234, 254, 255, 267, 269, 282, 310, 333, 369, 370, 371, 396, 397, 409, 416, 427, 429, 431], "note": "sub-patterns: Tamil festival greetings 74/126/269 should route to greeting/NON_ACTIVITY; project-sanction congratulations 369/370/371 look like ACHIEVEMENT; event-like posts with dates (108,141,204,213,230,234,269,396,409,416,429,431) likely activities missed by event-term lexicon; boot-camp recaps 44/49/53/54/55", "routing": "human low-evidence queue + lexicon gap review"},
+      {"pattern": "multi_year in unclear", "count": 1, "post_ids": [333], "routing": "keep flagged (RULE-11)"}
+    ],
+    "conclusion": "The 57 are not one population: ~14 are mechanically unresolvable (URL-only), ~8 are title-only, ~1 is date-ambiguity, and ~34 are genuine classification misses (lexicon gaps: inaugurations, boot camps, contests, series, Tamil greetings, congratulation-for-grant posts)."
+  },
+
+  "verification": {
+    "institutional_activities": 2258,
+    "canonical_linkedin_posts": 1544,
+    "raw_occurrences": 2094,
+    "candidate_rows": 1544,
+    "review_sample": 200,
+    "all_match_expected": true,
+    "production_modified": false,
+    "candidates_modified": false,
+    "excel_modified": false,
+    "stage_complete": "STOP - analysis reports generated; no rules implemented."
+  }
+}
