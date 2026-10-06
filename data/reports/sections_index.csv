@@ -1,7 +1,7 @@
 section,summary
 1. Executive Summary,"Presents the purpose, method, principal results, and data-quality verdict of the Activity Intelligence System in five lines."
 2. Introduction and Objectives,"Problems addressed (scattered institutional activity records), the objectives of collection-extraction-classification-analytics across a free toolchain."
-3. Case Study Context: Thiagarajar College of Engineering,"Institutional context: 14 departments, multi-stakeholder outreach, public events pages as the primary lawful source."
+3. Case Study Context: Thiagarajar College of Engineering,"Institutional context: 17 departments, multi-stakeholder outreach, public events pages as the primary lawful source."
 4. Related Work and Literature Review,"Positioning relative to institutional analytics dashboards, keyword baselines vs. TF-IDF multi-label classification, rule-based NLQ."
 5. Methodology Overview,"14-phase build: schema, collection, cleaning, extraction, classification, review, cross-reference, analytics, API, UI, NLQ, evaluation, reporting."
 6. System Architecture,"SQLite relational core, Python/Flask backend, React/Vite frontend, rule-based NLP with spaCy + scikit-learn."

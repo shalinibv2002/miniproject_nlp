@@ -55,12 +55,12 @@ describe("LinkedinPublicStakeholders", () => {
     global.fetch = vi.fn().mockImplementation(routeFetch([
       { match: /\/api\/linkedin\/stakeholders/, respond: () => jsonResponse([
         { stakeholder: "Students", activity_count: 1100 },
-        { stakeholder: "Industry", activity_count: 250 },
+        { stakeholder: "Institution", activity_count: 250 },
       ]) },
     ]));
     renderPage(LinkedinPublicStakeholders);
     await waitFor(() => expect(screen.getByText("Students")).toBeInTheDocument());
-    expect(screen.getByText("Industry")).toBeInTheDocument();
+    expect(screen.getByText("Institution")).toBeInTheDocument();
     expect(screen.getByText("1100")).toBeInTheDocument();
 
     const students = screen.getByRole("link", { name: /Students/ });

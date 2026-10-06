@@ -6,7 +6,7 @@
 
 Free toolchain &middot; Flask + SQLite + scikit-learn + React
 
-Generated 2026-09-28
+Generated 2026-10-06
 
 ---
 
@@ -23,7 +23,7 @@ Generated 2026-09-28
 
 - Verified public TCE pages, robots.txt-respecting crawler.
 - Raw archive: **4 JSON snapshots**, **26 records**.
-- Unique real events loaded into the database: **8**.
+- Unique real events loaded into the database: **7**.
 - Pipeline is reproducible: re-runs do not duplicate activities.
 
 ---
@@ -76,7 +76,7 @@ _Baseline chosen: transparent, deterministic, no training data needed._
 
 - Low-confidence queue + validation flags (19 currently open).
 - Edit / merge / approve / reject with full `review_history` trait.
-- **0** activity verified so far, **0** tasks still open.
+- **3** activity verified so far, **0** tasks still open.
 
 ---
 
@@ -91,9 +91,9 @@ _Baseline chosen: transparent, deterministic, no training data needed._
 
 # Analytics & KPIs (live at /api/analytics/*)
 
-- **8** activities loaded.
-- Departments involved: **0**; categories: **1**; stakeholders: **0**.
-- Feed window: 2018-04-10 &rarr; 2024-06-15.
+- **7** activities loaded.
+- Departments involved: **0**; categories: **3**; stakeholders: **1**.
+- Feed window: 2024-08-08 &rarr; 2025-06-01.
 - Year buckets honest: events outside mapped academic years are shown as unmapped (all real 2026 events).
 
 ---
@@ -115,14 +115,14 @@ _Baseline chosen: transparent, deterministic, no training data needed._
 | Department accuracy | 0.8 |
 | Stakeholder accuracy | 0.8 |
 | Entity F1 | 0.8 |
-| Unique events / activities reconciled | 10 / 8 |
+| Unique events / activities reconciled | 10 / 7 |
 | Full test suite | **113 passed** |
 
 ---
 
 # Data Quality Verdict
 
-- 26 raw records &rarr; 10 unique events &rarr; 8 stored activities.
+- 26 raw records &rarr; 10 unique events &rarr; 7 stored activities.
 - 0 duplicate pairs auto-merged; 0 pending (conservative).
 - Field completeness tracked per field; low-confidence and unclassified records remain visible (not silently dropped).
 
@@ -137,6 +137,6 @@ _Baseline chosen: transparent, deterministic, no training data needed._
 
 # Conclusion
 
-- A free, transparent, reproducible pipeline delivers 8 real activities with macro-F1 0.7347.
+- A free, transparent, reproducible pipeline delivers 7 real activities with macro-F1 0.7347.
 - Every claim is traceable: the artifacts ship the data (`data/`), the report (`data/reports/final_report.md`) and
   exports (`data/exports/`).

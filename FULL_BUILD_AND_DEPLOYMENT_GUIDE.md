@@ -49,8 +49,11 @@ work already completed).
    foreign keys, and `CHECK` constraints (e.g. confidence between 0–1).
 3. Write `backend/database/init_db.py` to build the `.db` file from the schema.
 4. Write `backend/database/seed_reference_data.py` to insert ONLY fixed lookup
-   data (5 academic years, 14 departments, 24 categories, 8 stakeholders,
-   classification methods, starter source registry). **No activity records.**
+   data (5 academic years, 16 legacy lookup departments, 24 categories,
+   8 stakeholders, classification methods, starter source registry).
+   **No activity records.** The public dashboard master is separate: see
+   `backend/database/department_catalog.py` (`PUBLIC_DEPARTMENTS`, 17
+   departments).
 5. Write `tests/test_database.py` covering: all tables exist, seed counts are
    correct, foreign keys are enforced, check constraints work, zero activities
    exist yet.

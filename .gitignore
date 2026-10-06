@@ -16,11 +16,16 @@ frontend/dist/
 frontend/dist-ssr/
 *.local
 
+# Environment / secrets
+.env
+.env.*
+
 # Database backups (keep the main .db)
 data/backup/
 data/backups/
 data/backup_*.db
 data/tce_activity_intelligence_backup_*.db
+backend/database/backups/
 *.db-journal
 
 # Staging DB (can be regenerated)

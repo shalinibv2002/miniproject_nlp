@@ -2,7 +2,7 @@
 
 ## Final Case-Study Report (Thiagarajar College of Engineering, Madurai)
 
-_Generated 2026-09-28 22:12 from the live database — every number below is computed, not hardcoded._
+_Generated 2026-10-06 16:43 from the live database — every number below is computed, not hardcoded._
 
 
 ## 1. Executive Summary
@@ -13,8 +13,8 @@ Presents the purpose, method, principal results, and data-quality verdict of the
 
 | Metric | Value |
 |---|---|
-| Total activities loaded | 8 |
-| Verified activities | 0 |
+| Total activities loaded | 7 |
+| Verified activities | 3 |
 | Open review tasks | 0 |
 | Classification macro-F1 (rule-based, held-out) | 0.7347 |
 | Department detection accuracy | 0.8 |
@@ -27,9 +27,9 @@ Problems addressed (scattered institutional activity records), the objectives of
 
 ## 3. Case Study Context: Thiagarajar College of Engineering
 
-Institutional context: 14 departments, multi-stakeholder outreach, public events pages as the primary lawful source.
+Institutional context: 17 departments, multi-stakeholder outreach, public events pages as the primary lawful source.
 
-**Reference data:** 14 departments; 24 categories; 8 stakeholder groups; 5 academic years (2020-2021 … 2024-2025).
+**Reference data:** 17 departments; 24 categories; 8 stakeholder groups; 5 academic years (2020-2021 … 2024-2025).
 
 ## 4. Related Work and Literature Review
 
@@ -174,8 +174,8 @@ Involvement and primary counts per department, with multi-department reconciliat
 | Electronics and Communication Engineering | 0 / 0 |
 | Electrical and Electronics Engineering | 0 / 0 |
 | English and Humanities | 0 / 0 |
+| Fashion Technology | 0 / 0 |
 | Information Technology | 0 / 0 |
-| Applied Mathematics and Computational Sciences | 0 / 0 |
 
 ## 23. Category-wise Analysis
 
@@ -184,8 +184,9 @@ Classification counts, primary counts, mean confidence per category.
 **Categories by classification count (top rows):**
 | Category | Count | Primary | Avg conf |
 |---|---|---|---|
-| Workshop | 8 / 0 / None |
-| Achievement and Award | 0 / 0 / None |
+| Workshop | 5 / 0 / None |
+| Achievement and Award | 1 / 0 / None |
+| Research and Consultancy | 1 / 0 / None |
 | Alumni Event | 0 / 0 / None |
 | Campus Life | 0 / 0 / None |
 | Clubs and Chapters | 0 / 0 / None |
@@ -193,7 +194,6 @@ Classification counts, primary counts, mean confidence per category.
 | Cultural Event | 0 / 0 / None |
 | Faculty Development Programme | 0 / 0 / None |
 | Guest Lecture | 0 / 0 / None |
-| Hackathon | 0 / 0 / None |
 
 ## 24. Stakeholder-wise Analysis
 
@@ -202,6 +202,7 @@ Involvement counts, primary counts, mean confidence per stakeholder group.
 **Stakeholders:**
 | Stakeholder | Involvement | Primary | Avg conf |
 |---|---|---|---|
+| Students | 3 / 0 / None |
 | Alumni | 0 / 0 / None |
 | Community and Society | 0 / 0 / None |
 | Faculty | 0 / 0 / None |
@@ -209,7 +210,6 @@ Involvement counts, primary counts, mean confidence per stakeholder group.
 | Industry | 0 / 0 / None |
 | Parents | 0 / 0 / None |
 | Non-Teaching Staff | 0 / 0 / None |
-| Students | 0 / 0 / None |
 
 ## 25. LinkedIn Visibility Analysis
 
@@ -227,20 +227,20 @@ Field completeness, unknown category/department counts, low-confidence records, 
 **Completeness (fraction of fields filled):**
 | Field | Filled / total |
 |---|---|
-| date_present | 3 / 8 |
-| venue_present | 0 / 8 |
-| organizer_present | 0 / 8 |
-| description_present | 8 / 8 |
-| source_present | 8 / 8 |
-| confidence_present | 0 / 8 |
-| no_mapped_academic_year | 8 / 8 |
+| date_present | 6 / 7 |
+| venue_present | 0 / 7 |
+| organizer_present | 0 / 7 |
+| description_present | 5 / 7 |
+| source_present | 5 / 7 |
+| confidence_present | 3 / 7 |
+| no_mapped_academic_year | 7 / 7 |
 **Flags:**
 | Item | Value |
 |---|---|
 | Collection errors open | 0 |
 | Review backlog | 0 |
 | LinkedIn unmatched/unchecked | 0 |
-| Records with no mapped academic year | 8 |
+| Records with no mapped academic year | 7 |
 
 ## 27. Evaluation and Validation
 
@@ -275,4 +275,4 @@ Collecting more years, growing real labeled data, LLM-only parsing step for NLQ,
 
 The system meets the case-study objective with a free, transparent, reproducible toolchain.
 
-**Verdict:** a free, transparent, reproducible pipeline that loads 8 real activities, classifies them with macro-F1 0.7347, and stands fully auditable via its review_history audit trail.
+**Verdict:** a free, transparent, reproducible pipeline that loads 7 real activities, classifies them with macro-F1 0.7347, and stands fully auditable via its review_history audit trail.

@@ -14,6 +14,7 @@ from backend.database.init_db import get_connection
 from backend.database import init_db
 from backend.database.seed_reference_data import seed
 from backend.nlp.query_engine import answer_question
+from backend.database.department_catalog import PUBLIC_DEPARTMENTS
 
 CSC = "Computer Science and Engineering"
 ECE = "Electronics and Communication Engineering"
@@ -203,8 +204,8 @@ def test_ranking_departments(conn):
     r = answer_question("Rank departments by number of achievements.", conn=conn)
     assert r["status"] == "answer"
     assert r["rows"][0] == {"label": "Information Technology", "value": 5}
-    assert len(r["rows"]) == 14
-    assert len(r["comparison"]) == 14
+    assert len(r["rows"]) == len(PUBLIC_DEPARTMENTS)
+    assert len(r["comparison"]) == len(PUBLIC_DEPARTMENTS)
     assert r["comparison"][0]["department"] == "Information Technology"
     assert r["chart"]["data"][0] == {"label": "Information Technology", "value": 5}
 
@@ -217,7 +218,7 @@ def test_top_n(conn):
         {"label": "Mechanical Engineering", "value": 2},
         {"label": "Electronics and Communication Engineering", "value": 1},
     ]
-    assert len(r["comparison"]) == 14
+    assert len(r["comparison"]) == len(PUBLIC_DEPARTMENTS)
 
 
 def test_trend(conn):

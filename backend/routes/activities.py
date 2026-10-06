@@ -290,10 +290,10 @@ def list_years():
 def list_departments():
     conn = get_connection()
     try:
-        # Exactly the 14 public departments.  Institution-wide ("General")
+        # Exactly the 17 public departments.  Institution-wide ("General")
         # activities belong to the General view and are never listed here;
-        # out-of-master stored values (e.g. historical "Physics" rows) are
-        # preserved in the data but never presented as a department option.
+        # out-of-master stored values are preserved in the data but never
+        # presented as a department option.
         # Multi-department rows count against every canonical department they
         # name (catalog aliases apply per part).  An optional ``period``
         # restricts the counts to one resolved academic period so the

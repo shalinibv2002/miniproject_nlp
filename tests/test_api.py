@@ -235,9 +235,10 @@ def test_departmental_category_master(client):
 EXPECTED_PUBLIC_DEPARTMENTS = (
     "Civil Engineering", "Chemistry", "Computer Science and Engineering",
     "Computer Science and Business Systems", "Computer Applications",
-    "Applied Mathematics and Computational Science", "Artificial Intelligence",
+    "Applied Mathematics and Computational Science", "Mathematics", "Physics",
+    "Artificial Intelligence",
     "Electronics and Communication Engineering",
-    "Electrical and Electronics Engineering", "English",
+    "Electrical and Electronics Engineering", "English", "Fashion Technology",
     "Information Technology", "Mechanical Engineering", "Mechatronics",
     "T'SEDA (Architecture, Design, Planning)",
 )
@@ -249,12 +250,12 @@ EXPECTED_PUBLIC_CATEGORY_CODES = {
 }
 
 
-def test_departments_master_exactly_14_never_general(client):
+def test_departments_master_exactly_17_never_general(client):
     rows = client.get("/api/departments").get_json()
     names = [row["department"] for row in rows]
     assert [name for name in names] == list(EXPECTED_PUBLIC_DEPARTMENTS)
-    assert len(rows) == 14
-    for forbidden in ("General", "Fashion Technology", "Mathematics", "Physics", "Unknown", "Other"):
+    assert len(rows) == 17
+    for forbidden in ("General", "Unknown", "Other"):
         assert forbidden not in names
     by_name = {row["department"]: row["activity_count"] for row in rows}
     assert by_name["Information Technology"] == 5
@@ -325,7 +326,16 @@ def test_department_analytics_filters_to_one_department(client):
 
 def test_general_is_not_a_valid_department_analytics_option(client):
     assert client.get("/api/analytics/department?department=General").status_code == 400
-    assert client.get("/api/analytics/department?department=Physics").status_code == 400
+    # Legacy seed departments that are NOT in the 17-department public master.
+    assert client.get("/api/analytics/department?department=Automobile%20Engineering").status_code == 400
+    assert client.get("/api/analytics/department?department=Management%20Studies").status_code == 400
+
+
+def test_mathematics_and_applied_mathematics_are_separate_departments(client):
+    assert client.get("/api/analytics/department?department=Mathematics").status_code == 200
+    assert client.get(
+        "/api/analytics/department?department=Applied%20Mathematics%20and%20Computational%20Science"
+    ).status_code == 200
 
 
 def test_department_filter_never_mixes_general(client):

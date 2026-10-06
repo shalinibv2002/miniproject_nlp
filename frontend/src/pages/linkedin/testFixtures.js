@@ -46,6 +46,15 @@ export const recordBody = {
   categories: ["WORKSHOP"],
   departments: ["Computer Science and Engineering"],
   stakeholders: ["Students"],
+  // formal report display fields (identical derivation to the public report)
+  stakeholder_display: "students",
+  name: "Machine Learning",
+  report_department: "Computer Science and Engineering",
+  award_category: "Workshop",
+  achievement_description:
+    'The Department of Computer Science and Engineering has conducted a workshop on the topic "Machine Learning" on 15 January 2026 for students.',
+  report_date: "15 January 2026",
+  academic_year_display: "2025\u201326",
   date_status: "dated",
   classification_status: "AUTO_CLASSIFIED",
   review_status: "UNREVIEWED",
@@ -83,10 +92,32 @@ export const recordBody = {
   },
 };
 
+// An institution-wide row: no department in the report columns, so the
+// Validator falls back to "General".
+export const generalRecordBody = {
+  ...recordBody,
+  activity_id: "LI-00002",
+  staging_post_id: 2,
+  title: "Five-Day FDP on Cloud Computing",
+  description: "A five day Faculty Development Programme on Cloud Computing.",
+  post_url: null,
+  categories: ["FDP"],
+  departments: [],
+  stakeholders: ["Faculty"],
+  stakeholder_display: "faculty",
+  name: "",
+  report_department: "",
+  award_category: "FDP",
+  achievement_description:
+    "Thiagarajar College of Engineering has conducted a Faculty Development Programme for faculty.",
+  report_date: "",
+  academic_year_display: "",
+};
+
 export const recordsBody = {
   data: [recordBody],
   total: 1544,
-  pagination: { page: 1, page_size: 25, total_pages: 62, total: 1544 },
+  pagination: { page: 1, page_size: 25, total: 1544, pages: 62 },
 };
 
 export const queueBody = {

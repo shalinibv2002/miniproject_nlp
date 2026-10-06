@@ -1,51 +1,159 @@
-import { useEffect, useState } from "react";
+import { useEffect, useMemo, useState } from "react";
 import { Link, useParams } from "react-router-dom";
 import { adminApi } from "../../services/api";
 import { Card } from "../../components/ui";
-import { Field, JsonValue, Tags } from "../../components/detail";
-import { categoryName, confidenceInfo, statusTone } from "../../lib/linkedin";
+import {
+  DEPARTMENTAL, columnLabels, reportColumns,
+} from "../../lib/reportSchema";
+import { isoDate, joinDateRange, splitDateRange } from "../../lib/dates";
 
-function Pill({ value }) {
-  return <span className={`pill ${statusTone(value)}`}>{value || "—"}</span>;
-}
+// Validator editor.  The fields on screen are GENERATED from the record's own
+// category report schema (`reportColumns`), so the Admin sees exactly the
+// columns the user-facing report shows for that category -- Chief Guest for a
+// Conference, Speaker and Description for a Seminar, Signed MOU With and
+// Purpose for an Industry activity, and so on.  Nothing here is hard-coded per
+// category, so a schema change needs no Admin change.
+//
+// Every control maps to the one canonical PATCH endpoint against the single
+// reportable database, so an edit is visible immediately on every user surface
+// and never creates a second record.
 
-function yesNo(value) {
-  return value ? "Yes" : value === 0 ? "No" : "—";
-}
+// Which columns the Admin may type into, and the control each one gets.
+// A column not listed here is derived from the row and shown read-only.
+const EDITABLE_COLUMNS = {
+  title: { control: "text", span: 2 },
+  chief_guest: { control: "text" },
+  speaker: { control: "text" },
+  alumni_name: { control: "text" },
+  alumni_department: { control: "text" },
+  topic_theme: { control: "text" },
+  stakeholder_name: { control: "text" },
+  mou_with: { control: "text", span: 2 },
+  location: { control: "text", span: 2 },
+  duration: { control: "text" },
+  event_description: { control: "textarea", span: 2 },
+  purpose: { control: "textarea", span: 2 },
+  // An Internship's "Date (From-To)" needs two real date inputs, not one
+  // free-text box, so the From / To parts are edited separately.
+  date_range: { control: "date-range", span: 2 },
+  // The report's single Date column is the canonical activity date.
+  report_date: { control: "date" },
+  academic_year_display: { control: "academic-year" },
+  // Curated vocabularies already on the record: kept as the existing + Add /
+  // − Remove multi-value controls.
+  department_display: { control: "departments" },
+  stakeholder_display: { control: "stakeholders" },
+  name: { control: "report-name", span: 2 },
+  achievement_description: { control: "report-description", span: 2 },
+  // Award Category follows the one primary category; the category picker below
+  // is its editor.
+  award_category: { control: "category" },
+  // The LinkedIn URL is provenance: shown, never editable.
+  post_url: { control: "readonly-url" },
+};
 
-function HistoryTable({ history }) {
-  if (!history || history.length === 0) {
-    return <p className="muted">No manual corrections recorded yet.</p>;
-  }
+//: Report columns whose value is a stored column of the record rather than a
+//: derived one.  ``draft`` is where the input is bound, ``record`` is the key
+//: the current value is read from, and ``payload`` is the key the canonical
+//: PATCH accepts for it.
+const DRAFT_KEYS = {
+  title: { draft: "title", record: "title", payload: "title" },
+  report_date: { draft: "activity_date", record: "activity_date", payload: "activity_date" },
+  academic_year_display: { draft: "academic_year", record: "academic_year", payload: "academic_year" },
+  name: { draft: "report_name", record: "name", payload: "report_name" },
+  achievement_description: {
+    draft: "report_description", record: "achievement_description", payload: "report_description",
+  },
+};
+
+// ---------------------------------------------------------------------------
+// MultiDropdown — one or more dropdown rows with + Add / − Remove controls.
+// `values`     : string[] of currently selected codes (may be empty).
+// `rawOptions` : Array<{code, name}> | string[] — the vocabulary to pick from.
+// `onChange`   : (newValues: string[]) => void
+// `fieldLabel` : accessible label for the first row (aria-label on <select>).
+// ---------------------------------------------------------------------------
+function MultiDropdown({ values, rawOptions, onChange, fieldLabel, emptyLabel = "None", filterOptions }) {
+  // Normalise: accept both {code,name}[] and string[] from the options endpoint.
+  const opts = rawOptions.map((o) =>
+    typeof o === "string" ? { code: o, name: o } : o,
+  );
+
+  const selectedSet = new Set(values.filter(Boolean));
+
+  // Keep a value that is already stored selectable even when it is not in the
+  // current vocabulary, so opening the form never silently drops one.
+  const visible = filterOptions ? opts.filter(filterOptions) : opts;
+
+  const addRow = () => onChange([...values, ""]);
+
+  const removeRow = (idx) => onChange(values.filter((_, i) => i !== idx));
+
+  const changeRow = (idx, val) => {
+    const next = [...values];
+    next[idx] = val;
+    onChange(next);
+  };
+
   return (
-    <div className="table-wrap">
-      <table className="data-table">
-        <thead>
-          <tr>
-            <th>Field</th><th>Before</th><th>After</th><th>By</th><th>When</th><th>Note</th>
-          </tr>
-        </thead>
-        <tbody>
-          {history.map((entry, i) => (
-            <tr key={i}>
-              <td><code>{entry.field}</code></td>
-              <td className="history-old">{String(entry.old ?? "—")}</td>
-              <td className="history-new">{String(entry.new ?? "—")}</td>
-              <td>{entry.by}</td>
-              <td>{entry.at}</td>
-              <td>{entry.note || "—"}</td>
-            </tr>
-          ))}
-        </tbody>
-      </table>
+    <div className="multi-field">
+      {values.map((val, i) => (
+        // key on index is safe here: we never reorder rows, only append/remove.
+        <div key={i} className="multi-row">
+          <select
+            value={val}
+            onChange={(e) => changeRow(i, e.target.value)}
+            aria-label={i === 0 ? fieldLabel : `${fieldLabel} ${i + 1}`}>
+            <option value="">{emptyLabel}</option>
+            {visible.map((o) => (
+              <option
+                key={o.code}
+                value={o.code}
+                // Disable options already chosen in another row to prevent duplicates.
+                disabled={selectedSet.has(o.code) && o.code !== val}>
+                {o.name}
+              </option>
+            ))}
+          </select>
+          <button
+            type="button"
+            className="ghost danger multi-remove"
+            onClick={() => removeRow(i)}
+            aria-label={`Remove ${fieldLabel} ${i + 1}`}>
+            −
+          </button>
+        </div>
+      ))}
+      <button
+        type="button"
+        className="ghost multi-add"
+        onClick={addRow}
+        aria-label={`Add ${fieldLabel}`}>
+        + Add
+      </button>
     </div>
   );
 }
 
+// ---------------------------------------------------------------------------
+// Helpers for comparing array fields without caring about order.
+// ---------------------------------------------------------------------------
+function arraysEqual(a, b) {
+  const sa = [...a].filter(Boolean).sort();
+  const sb = [...b].filter(Boolean).sort();
+  return JSON.stringify(sa) === JSON.stringify(sb);
+}
+
+// ---------------------------------------------------------------------------
+// Page
+// ---------------------------------------------------------------------------
 export default function LinkedinAdminDetail() {
   const { id } = useParams();
   const [record, setRecord] = useState(null);
-  const [options, setOptions] = useState({ categories: [], departments: [], stakeholders: [], academic_years: [], statuses: [], review_statuses: [] });
+  const [options, setOptions] = useState({
+    categories: [], departments: [], stakeholders: [], academic_years: [],
+    statuses: [], review_statuses: [],
+  });
   const [draft, setDraft] = useState(null);
   const [state, setState] = useState("loading");
   const [busy, setBusy] = useState(false);
@@ -79,99 +187,373 @@ export default function LinkedinAdminDetail() {
   }, []);
 
   function buildDraft(rec) {
+    // Normalize: any non-APPROVED status is treated as NOT_APPROVED in the UI
+    // so the editor only ever shows these two options.
+    const rawStatus = rec.review_status || rec.approval || "UNREVIEWED";
     return {
+      // Keep full arrays so the multi-value UI can show all existing values.
+      categories:  (rec.categories  || []).filter(Boolean),
+      departments: (rec.departments || []).filter(Boolean),
+      stakeholders: (rec.stakeholders || []).filter(Boolean),
       title: rec.title || "",
-      description: rec.description || "",
       activity_date: rec.activity_date || "",
       academic_year: rec.academic_year || "",
-      categories: (rec.categories || [])[0] || "",
-      departments: (rec.departments || [])[0] || "",
-      stakeholders: (rec.stakeholders || [])[0] || "",
-      reportable_status: rec.reportable_status || "",
-      review_status: rec.review_status || "",
-      note: "",
+      report_name: rec.name || rec.report_name || "",
+      report_description:
+        rec.achievement_description || rec.report_description || "",
+      // Derived report columns carry no draft state until the admin types: an
+      // untouched input shows, and does not overwrite, the reported value.
+      fields: {},
+      // Store as APPROVED or NEEDS_REVIEW (NOT_APPROVED maps to NEEDS_REVIEW)
+      review_status: rawStatus === "APPROVED" ? "APPROVED" : "NEEDS_REVIEW",
     };
+  }
+
+  // One activity has exactly one primary category, so the category-specific
+  // report fields follow the first selected category.
+  const categoryCode = (draft?.categories || []).filter(Boolean)[0] || "";
+  
+  function isRealDepartment(option) {
+    return Boolean(option && option.code) && option.code !== "General";
+  }
+
+  function isDepartmental(departments) {
+    return (departments || []).some((d) => d && d !== "General");
+  }
+
+  // The scope shown is the one the draft would report under right now, while the
+  // scope the record is currently stored under is what validation protects: a
+  // record already reported department-wise may not lose its last department.
+  const scope = draft && isDepartmental(draft.departments) ? DEPARTMENTAL : "general";
+  
+  const reportColumnsForRecord = reportColumns(categoryCode, scope);
+  const reportColumnLabels = columnLabels(reportColumnsForRecord);
+  // The columns this category actually reports, minus the curated vocabularies
+  // and the category itself, which the validation group above already edits.
+  const editableColumns = useMemo(
+    () => reportColumnsForRecord.filter(
+      (column) => column.field
+        && column.field !== "department_display"
+        && column.field !== "stakeholder_display"
+        && column.field !== "award_category",
+    ),
+    [reportColumnsForRecord],
+  );
+
+  function currentFieldValue(field) {
+    // A From-To range is held as two slots instead of one string. A lone string
+    // cannot say which end is set, so filling or clearing one box would quietly
+    // move the other end's value into it. The joined string is derived only
+    // where the value is really consumed: validation and the PATCH payload.
+    if (field === "date_range" && draft.date_range) {
+      return joinDateRange(draft.date_range.from, draft.date_range.to);
+    }
+    // Show the value the report shows today, so an edit corrects what the admin
+    // can actually see rather than a hidden raw value.
+    if (draft.fields && draft.fields[field] !== undefined) {
+      return draft.fields[field];
+    }
+    return (record && record[field]) || "";
   }
 
   function onField(name, value) {
     setDraft((current) => ({ ...current, [name]: value }));
   }
 
-  function validateDraft() {
-    if (draft.reportable_status === "REPORTABLE" && !draft.title.trim()) {
-      return "A reportable activity needs a title.";
+  function onFieldList(name, values) {
+    setDraft((current) => ({ ...current, [name]: values }));
+  }
+
+  // One end of the From-To range moved. The other end is read from the LATEST
+  // draft inside the updater rather than from this render's closure, so picking
+  // From can never overwrite To (or the reverse) even when React batches two
+  // edits together.
+  function onDateRange(end, value, shown) {
+    setDraft((current) => {
+      const previous = current.date_range || shown;
+      return {
+        ...current,
+        date_range: end === "from"
+          ? { from: value, to: previous.to }
+          : { from: previous.from, to: value },
+      };
+    });
+  }
+
+  // A derived report column has no slot on the record, so an edit to one is held
+  // apart until save; an untouched column keeps showing the reported value.
+  function onDerivedField(field, value) {
+    setDraft((current) => ({
+      ...current,
+      fields: { ...current.fields, [field]: value },
+    }));
+  }
+
+  // Render one report column with the control its kind calls for.  The whole
+  // form is built from this, so a new category column appears automatically.
+  function renderColumn(column) {
+    const field = column.field;
+    const spec = EDITABLE_COLUMNS[field] || { control: "readonly" };
+    const span = spec.span === 2 ? " span-2" : "";
+    const label = (
+      <span className="field-label">{column.label}</span>
+    );
+
+    if (spec.control === "departments") {
+      return (
+        <label key={field} className={`field${span}`}>
+          {label}
+          <MultiDropdown
+            values={draft.departments}
+            rawOptions={options.departments || []}
+            onChange={(vals) => onFieldList("departments", vals)}
+            fieldLabel={column.label}
+            filterOptions={isRealDepartment}
+          />
+        </label>
+      );
     }
+    if (spec.control === "stakeholders") {
+      return (
+        <label key={field} className={`field${span}`}>
+          {label}
+          <MultiDropdown
+            values={draft.stakeholders}
+            rawOptions={options.stakeholders || []}
+            onChange={(vals) => onFieldList("stakeholders", vals)}
+            fieldLabel={column.label}
+          />
+        </label>
+      );
+    }
+    if (spec.control === "category") {
+      return (
+        <div key={field} className={`field${span}`}>
+          {label}
+          <p className="value-static">{record.award_category || "—"}</p>
+        </div>
+      );
+    }
+    if (spec.control === "date") {
+      return (
+        <label key={field} className={`field${span}`}>
+          {label}
+          {/* Shown parsed, because a date input only ever renders a full ISO
+              date and would blank a reported "15 January 2026". The draft keeps
+              the raw stored value until the admin actually picks, so an untouched
+              date is never rewritten by an unrelated save. */}
+          <input
+            type="date"
+            value={isoDate(draft.activity_date)}
+            onChange={(e) => onField("activity_date", e.target.value)}
+            aria-label={column.label} />
+        </label>
+      );
+    }
+    if (spec.control === "academic-year") {
+      return (
+        <label key={field} className={`field${span}`}>
+          {label}
+          <select
+            value={draft.academic_year || ""}
+            onChange={(e) => onField("academic_year", e.target.value)}
+            aria-label={column.label}>
+            <option value="">Not assigned</option>
+            {(options.academic_years || []).map((y) => (
+              <option key={y} value={y}>{y}</option>
+            ))}
+          </select>
+        </label>
+      );
+    }
+    if (spec.control === "date-range") {
+      // Untouched until the admin picks an end: show what the report shows.
+      const [shownFrom, shownTo] = splitDateRange(currentFieldValue(field));
+      const shown = { from: shownFrom, to: shownTo };
+      const { from, to } = draft.date_range || shown;
+      return (
+        <div key={field} className={`field${span}`}>
+          {label}
+          <div className="date-range">
+            <input
+              type="date"
+              value={from}
+              onChange={(e) => onDateRange("from", e.target.value, shown)}
+              aria-label={`${column.label} from`} />
+            <span className="date-range-sep">to</span>
+            <input
+              type="date"
+              value={to}
+              onChange={(e) => onDateRange("to", e.target.value, shown)}
+              aria-label={`${column.label} to`} />
+          </div>
+        </div>
+      );
+    }
+    if (spec.control === "textarea") {
+      const stored = DRAFT_KEYS[field];
+      const set = stored
+        ? (value) => onField(stored.draft, value)
+        : (value) => onDerivedField(field, value);
+      return (
+        <label key={field} className={`field${span}`}>
+          {label}
+          <textarea
+            rows={4}
+            value={stored ? (draft[stored.draft] || "") : currentFieldValue(field)}
+            onChange={(e) => set(e.target.value)}
+            aria-label={column.label} />
+        </label>
+      );
+    }
+    if (spec.control === "report-name" || spec.control === "report-description") {
+      const draftKey = DRAFT_KEYS[field].draft;
+      const long = spec.control === "report-description";
+      return (
+        <label key={field} className={`field${span}`}>
+          {label}
+          {long ? (
+            <textarea
+              rows={4}
+              value={draft[draftKey] || ""}
+              onChange={(e) => onField(draftKey, e.target.value)}
+              aria-label={column.label} />
+          ) : (
+            <input
+              type="text"
+              value={draft[draftKey] || ""}
+              onChange={(e) => onField(draftKey, e.target.value)}
+              aria-label={column.label} />
+          )}
+        </label>
+      );
+    }
+    if (spec.control === "readonly-url") {
+      return (
+        <div key={field} className={`field${span}`}>
+          {label}
+          {record.post_url ? (
+            <a className="link" href={record.post_url} target="_blank" rel="noreferrer">
+              {record.post_url}
+            </a>
+          ) : (
+            <p className="value-static">Not linked</p>
+          )}
+        </div>
+      );
+    }
+    if (spec.control === "text") {
+      // A single-line report value: a stored column where one exists, otherwise
+      // a derived column the admin is pinning.
+      const stored = DRAFT_KEYS[field];
+      const set = stored
+        ? (value) => onField(stored.draft, value)
+        : (value) => onDerivedField(field, value);
+      return (
+        <label key={field} className={`field${span}`}>
+          {label}
+          <input
+            type="text"
+            value={stored ? (draft[stored.draft] || "") : currentFieldValue(field)}
+            onChange={(e) => set(e.target.value)}
+            aria-label={column.label} />
+        </label>
+      );
+    }
+    // A derived column with no editor yet: shown, never silently editable.
+    return (
+      <div key={field} className={`field${span}`}>
+        {label}
+        <p className="value-static">{record[field] || "—"}</p>
+      </div>
+    );
+  }
+
+  function validateDraft() {
     if (draft.academic_year && !/^\d{4}-\d{2}$/.test(draft.academic_year)) {
       return "Academic year must look like 2025-26.";
     }
-    if (draft.reportable_status === "REPORTABLE" && record && record.reportable_status !== "REPORTABLE") {
-      return "Use 'Save & Publish' to make this record publicly REPORTABLE.";
+    // "General" is the general layout's placeholder for "no department", never a
+    // department an admin may assign: it would put an invalid value in a
+    // departmental report.  Leaving the list empty is fine and simply reports
+    // the activity under the general layout.
+    const [fromPart, toPart] = splitDateRange(currentFieldValue("date_range"));
+    if (fromPart && toPart && fromPart > toPart) {
+      return "The Date (From) value cannot be after Date (To).";
     }
     return "";
   }
 
   async function save() {
-    if (busy || !draft) return;
+    if (busy || !draft || !record) return;
     const problem = validateDraft();
     if (problem) { setFormError(problem); return; }
     setBusy(true);
     setFormError("");
     setFeedback(null);
-    const payload = {
-      title: draft.title,
-      description: draft.description,
-      activity_date: draft.activity_date || null,
-      academic_year: draft.academic_year || null,
-      categories: draft.categories ? [draft.categories] : [],
-      departments: draft.departments ? [draft.departments] : [],
-      stakeholders: draft.stakeholders ? [draft.stakeholders] : [],
-      reportable_status: draft.reportable_status,
-      review_status: draft.review_status,
-      _note: draft.note.trim() || "admin manual correction",
-    };
+    const payload = {};
+
+    // --- array fields: compare sorted, send clean array ---
+    const draftCats = draft.categories.filter(Boolean);
+    if (!arraysEqual(draftCats, record.categories || [])) {
+      payload.categories = draftCats;
+    }
+    const draftDepts = draft.departments.filter(Boolean);
+    if (!arraysEqual(draftDepts, record.departments || [])) {
+      payload.departments = draftDepts;
+    }
+    const draftStakeholders = draft.stakeholders.filter(Boolean);
+    if (!arraysEqual(draftStakeholders, record.stakeholders || [])) {
+      payload.stakeholders = draftStakeholders;
+    }
+
+    // --- one entry per column the category's report actually shows ---
+    editableColumns.forEach((column) => {
+      const field = column.field;
+      // The LinkedIn URL is immutable provenance: shown, never sent.
+      if (field === "post_url") return;
+
+      const stored = DRAFT_KEYS[field];
+      if (stored) {
+        const edited = draft[stored.draft] || "";
+        const shown = record[stored.record] || "";
+        if (edited !== shown) {
+          payload[stored.payload] = edited;
+        }
+        return;
+      }
+
+      // A derived column: pinned only when the admin changed what the report
+      // currently shows, and cleared by saving an empty value.
+      const shown = record[field] || "";
+      const edited = currentFieldValue(field);
+      if (edited !== shown) {
+        payload[field] = edited || "";
+      }
+    });
+
+    // Compare normalized statuses: draft is always APPROVED or NEEDS_REVIEW
+    const currentApproval = record.review_status === "APPROVED" ? "APPROVED" : "NEEDS_REVIEW";
+    if (draft.review_status !== currentApproval) {
+      payload.review_status = draft.review_status;
+    }
+
+    if (Object.keys(payload).length === 0) {
+      setFeedback({ kind: "ok", text: "No changes to save." });
+      setBusy(false);
+      return;
+    }
+    payload._note = "admin manual correction";
     try {
       const updated = await adminApi.patch(`/api/admin/linkedin/activities/${id}`, payload);
       const last = (updated.validation_history || []).slice(-1)[0];
       setRecord(updated);
       setDraft(buildDraft(updated));
       setFeedback(last
-        ? { kind: "ok", text: `Saved — ${last.field}: “${String(last.old ?? "—")}” → “${String(last.new ?? "—")}”` }
+        ? { kind: "ok", text: `Saved — ${last.field}: "${String(last.old ?? "—")}" → "${String(last.new ?? "—")}"` }
         : { kind: "ok", text: "Saved. No field values changed." });
     } catch (err) {
       setFormError(err.message || "Unable to save changes.");
-    } finally {
-      setBusy(false);
-    }
-  }
-
-  async function publish() {
-    if (busy || !draft) return;
-    const problem = validateDraft();
-    if (problem) { setFormError(problem); return; }
-    setBusy(true);
-    setFormError("");
-    setFeedback(null);
-    const payload = {
-      title: draft.title,
-      description: draft.description,
-      activity_date: draft.activity_date || null,
-      academic_year: draft.academic_year || null,
-      categories: draft.categories ? [draft.categories] : [],
-      departments: draft.departments ? [draft.departments] : [],
-      stakeholders: draft.stakeholders ? [draft.stakeholders] : [],
-      _note: draft.note.trim() || "admin save & publish",
-    };
-    try {
-      const updated = await adminApi.post(`/api/admin/linkedin/activities/${id}/publish`, payload);
-      const last = [...(updated.validation_history || [])].reverse()
-        .find((entry) => entry.field === "reportable_status");
-      setRecord(updated);
-      setDraft(buildDraft(updated));
-      setFeedback(last
-        ? { kind: "ok", text: `Published — ${updated.activity_id} is now PUBLIC REPORTABLE (“${String(last.old ?? "—")}” → “${String(last.new ?? "—")}”).` }
-        : { kind: "ok", text: `Saved — ${updated.activity_id} is already published and publicly visible.` });
-    } catch (err) {
-      setFormError(err.message || "Unable to publish this record.");
     } finally {
       setBusy(false);
     }
@@ -191,173 +573,92 @@ export default function LinkedinAdminDetail() {
     </div>
   );
 
-  const confidence = confidenceInfo(record.evidence_score);
-
   return (
     <div className="page">
       <p className="back-row"><Link to="/admin/linkedin/records">← Back to records</Link></p>
       <div className="title-row">
-        <h2 className="record-title">{record.title}</h2>
-        <div className="row-actions">
-          <Pill value={record.reportable_status} />
-          <Pill value={record.review_status || "UNREVIEWED"} />
-          {Boolean(record.is_manually_validated) && <span className="pill good">Manually validated</span>}
-        </div>
+        <h2 className="record-title">{record.title || record.name || record.achievement_description}</h2>
       </div>
-      <p className="muted">{record.activity_id} &middot; {record.category_evidence ? "evidence attached" : "no evidence"}</p>
-
       {formError && <p className="error state" role="alert">{formError}</p>}
       {feedback && feedback.kind === "ok" && <p className="ok state" role="status">{feedback.text}</p>}
 
-      <div className="detail-grid">
-        <Card title="Source & Provenance">
-          <Field label="Source" value={record.post_url ? <a href={record.post_url} target="_blank" rel="noreferrer">Open LinkedIn post</a> : "No source link"} />
-          <Field label="Source Type" value={record.provenance.source} />
-          <Field label="Workbook" value={record.provenance.source_workbook} />
-          <Field label="Sheet" value={record.provenance.source_sheet} />
-          <Field label="Row" value={record.provenance.source_row} />
-          <Field label="Occurrences" value={record.provenance.occurrence_count} />
-          <Field label="Occurrence IDs" value={record.provenance.source_occurrence_ids && JSON.stringify(record.provenance.source_occurrence_ids)} />
-          <Field label="Collected At" value={record.provenance.collected_at} />
-          <Field label="Resolved Via" value={record.provenance.resolved_via} />
-          <Field label="LinkedIn URN" value={record.provenance.activity_urn_id} />
-          <Field label="Staging Post ID" value={record.staging_post_id} />
-          <Field label="Staging Candidate ID" value={record.staging_candidate_id} />
-        </Card>
-
-        <Card title="Classification Decisions">
-          <Field label="Reportable Status" value={<Pill value={record.reportable_status} />} />
-          <Field label="Classification Status" value={<Pill value={record.classification_status} />} />
-          <Field label="Review Status" value={<Pill value={record.review_status || "UNREVIEWED"} />} />
-          <Field label="Decision Reason" value={record.reason} />
-          <Field label="Unclear Reason" value={record.unclear_reason} />
-          <Field label="Kind" value={record.kind} />
-          <Field label="Multi-label" value={yesNo(record.multi_label)} />
-          <Field label="Flags" value={<Tags items={record.flags} />} />
-          <Field label="Manually Validated" value={yesNo(record.is_manually_validated)} />
-        </Card>
-      </div>
-
-      <div className="chart-grid">
-        <Card title="Category">
-          <Field label="Assigned Categories" value={<Tags items={record.categories.map((c) => categoryName(c, options.categories))} />} />
-          <Field label="Candidate Categories" value={<Tags items={record.category_candidates} />} />
-          <h3>Category Evidence</h3>
-          <JsonValue value={record.category_evidence} />
-        </Card>
-        <Card title="Department">
-          <Field label="Assigned Departments" value={<Tags items={record.departments} />} />
-          <Field label="Public Display" value={<Tags items={record.department_display} />} />
-          <Field label="Candidate Departments" value={<Tags items={record.department_candidates} />} />
-          <h3>Department Evidence</h3>
-          <JsonValue value={record.department_evidence} />
-        </Card>
-        <Card title="Stakeholder">
-          <Field label="Assigned Stakeholders" value={<Tags items={record.stakeholders} />} />
-          <Field label="Candidate Stakeholders" value={<Tags items={record.stakeholder_candidates} />} />
-          <h3>Stakeholder Evidence</h3>
-          <JsonValue value={record.stakeholder_evidence} />
-        </Card>
-      </div>
-
-      <div className="detail-grid">
-        <Card title="Date & Academic Year">
-          <Field label="Activity Date" value={record.activity_date} />
-          <Field label="Date Status" value={<Pill value={record.date_status} />} />
-          <Field label="Academic Year" value={record.academic_year} />
-          <h3>Date Evidence</h3>
-          <JsonValue value={record.date_evidence} />
-        </Card>
-        <Card title="Confidence & Communication">
-          <Field label="Evidence Score" value={confidence ? `${confidence.label} (${record.evidence_score}/10)` : "—"} />
-          <Field label="Communication Type" value={record.communication_type} />
-          <h3>Communication Evidence</h3>
-          <JsonValue value={record.communication_evidence} />
-        </Card>
-        <Card title="Description">
-          <p className="body-text">{record.description || "No description available."}</p>
-        </Card>
-      </div>
-
       <Card title="Edit Record">
         {draft && (
-          <form className="admin-form" onSubmit={(e) => { e.preventDefault(); save(); }}>
+          <form className="admin-form" onSubmit={(e) => { e.preventDefault(); save(); }} noValidate>
+            <p className="muted note">
+              This record is reported as{" "}
+              <strong>{categoryCode || "an uncategorised activity"}</strong> ({scope === DEPARTMENTAL ? "department-wise" : "general"}).
+              The report shows these columns: {reportColumnLabels.join(" | ")}
+            </p>
+
+            {/* Classification and the curated vocabularies.  These decide which
+                report columns below apply and are shared by every category, so
+                they are edited once here rather than per category. */}
+            <p className="field-label section-label">Category and validation</p>
             <div className="form-grid">
-              <label className="field span-2">
-                <span className="field-label">Title</span>
-                <input type="text" value={draft.title} onChange={(e) => onField("title", e.target.value)} aria-label="Title" />
-              </label>
-              <label className="field span-2">
-                <span className="field-label">Description</span>
-                <textarea value={draft.description} rows={4}
-                  onChange={(e) => onField("description", e.target.value)} aria-label="Description" />
-              </label>
               <label className="field">
-                <span className="field-label">Reportable Status</span>
-                <select value={draft.reportable_status} onChange={(e) => onField("reportable_status", e.target.value)} aria-label="Reportable status">
-                  {(options.statuses || []).map((s) => <option key={s} value={s}>{s}</option>)}
-                </select>
+                <span className="field-label">Award Category</span>
+                <MultiDropdown
+                  values={draft.categories}
+                  rawOptions={options.categories || []}
+                  onChange={(vals) => onFieldList("categories", vals)}
+                  fieldLabel="Award Category"
+                />
               </label>
-              <label className="field">
-                <span className="field-label">Review Status</span>
-                <select value={draft.review_status} onChange={(e) => onField("review_status", e.target.value)} aria-label="Review status">
-                  {(options.review_statuses || []).map((s) => <option key={s} value={s}>{s}</option>)}
-                </select>
-              </label>
-              <label className="field">
-                <span className="field-label">Category</span>
-                <select value={draft.categories} onChange={(e) => onField("categories", e.target.value)} aria-label="Category">
-                  <option value="">None</option>
-                  {(options.categories || []).map((c) => <option key={c.code} value={c.code}>{c.name}</option>)}
-                </select>
-              </label>
+
               <label className="field">
                 <span className="field-label">Department</span>
-                <select value={draft.departments} onChange={(e) => onField("departments", e.target.value)} aria-label="Department">
-                  <option value="">None</option>
-                  {(options.departments || []).map((d) => <option key={d} value={d}>{d}</option>)}
-                </select>
+                <MultiDropdown
+                  values={draft.departments}
+                  rawOptions={options.departments || []}
+                  onChange={(vals) => onFieldList("departments", vals)}
+                  fieldLabel="Department"
+                  filterOptions={isRealDepartment}
+                />
               </label>
+
               <label className="field">
                 <span className="field-label">Stakeholder</span>
-                <select value={draft.stakeholders} onChange={(e) => onField("stakeholders", e.target.value)} aria-label="Stakeholder">
-                  <option value="">None</option>
-                  {(options.stakeholders || []).map((s) => <option key={s} value={s}>{s}</option>)}
-                </select>
+                <MultiDropdown
+                  values={draft.stakeholders}
+                  rawOptions={options.stakeholders || []}
+                  onChange={(vals) => onFieldList("stakeholders", vals)}
+                  fieldLabel="Stakeholder"
+                />
               </label>
+
               <label className="field">
-                <span className="field-label">Activity Date</span>
-                <input type="date" value={draft.activity_date || ""} onChange={(e) => onField("activity_date", e.target.value)} aria-label="Activity date" />
-              </label>
-              <label className="field">
-                <span className="field-label">Academic Year</span>
-                <select value={draft.academic_year} onChange={(e) => onField("academic_year", e.target.value)} aria-label="Academic year">
-                  <option value="">Not assigned</option>
-                  {(options.academic_years || []).map((y) => <option key={y} value={y}>{y}</option>)}
+                <span className="field-label">Status</span>
+                {/* UI shows only Approved / Not Approved; internally NOT_APPROVED maps to NEEDS_REVIEW */}
+                <select
+                  value={draft.review_status === "APPROVED" ? "APPROVED" : "NOT_APPROVED"}
+                  onChange={(e) => onField("review_status", e.target.value === "APPROVED" ? "APPROVED" : "NEEDS_REVIEW")}
+                  aria-label="Status">
+                  <option value="APPROVED">Approved</option>
+                  <option value="NOT_APPROVED">Not Approved</option>
                 </select>
-              </label>
-              <label className="field span-2">
-                <span className="field-label">Reviewer Note</span>
-                <input type="text" value={draft.note} placeholder="Optional note recorded in validation history"
-                  onChange={(e) => onField("note", e.target.value)} aria-label="Reviewer note" />
               </label>
             </div>
+
+            {/* The category's own report columns, generated from its schema. */}
+            <p className="field-label section-label">
+              Report fields — {categoryCode || "uncategorised"}
+            </p>
+            <div className="form-grid">
+              {editableColumns.map(renderColumn)}
+            </div>
+
             <div className="form-actions">
               <button type="button" className="ghost" disabled={busy}
-                onClick={() => setDraft(buildDraft(record))}>Discard changes</button>
-              <button type="submit" className="ghost" disabled={busy}>
-                {busy ? "Saving..." : "Save changes"}
+                onClick={() => setDraft(buildDraft(record))}>
+                Discard changes
               </button>
-              <button type="button" className="primary" disabled={busy} onClick={publish}>
-                {busy ? "Publishing..." : "Save & Publish"}
+              <button type="submit" className="primary" disabled={busy}>
+                {busy ? "Saving..." : "Save"}
               </button>
             </div>
           </form>
         )}
-      </Card>
-
-      <Card title="Validation History">
-        <HistoryTable history={(record.validation_history || []).slice().reverse()} />
       </Card>
     </div>
   );

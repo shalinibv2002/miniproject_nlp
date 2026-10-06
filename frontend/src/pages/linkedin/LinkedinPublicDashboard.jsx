@@ -4,12 +4,14 @@ import { api } from "../../services/api";
 import { KpiCard, Card } from "../../components/ui";
 import { BarList, LoadingState, ErrorState } from "../../components/linkedinPublic";
 import { dateStatusSummary } from "../../lib/linkedin";
+import { useSyncNotification, SyncNotificationBanner } from "../../lib/useSyncNotification.jsx";
 
 const PUBLIC_HINT = "reportable activities from available posts";
 
 export default function LinkedinPublicDashboard() {
   const [overview, setOverview] = useState(null);
   const [error, setError] = useState(false);
+  const { notification, dismiss } = useSyncNotification();
 
   useEffect(() => {
     let active = true;
@@ -38,7 +40,6 @@ export default function LinkedinPublicDashboard() {
   const departmentalCats = (overview.departmental_categories || [])
     .sort((a, b) => b.activity_count - a.activity_count);
   const date = dateStatusSummary(overview.date_status || {});
-  const coverage = overview.source_coverage || {};
 
   const departmentRows = depts
     .map((d) => ({ key: d.department, name: d.department, value: d.activity_count }));
@@ -53,6 +54,9 @@ export default function LinkedinPublicDashboard() {
 
   return (
     <div className="page">
+      {/* Non-blocking sync notification — shown only when a new sync has run */}
+      <SyncNotificationBanner notification={notification} onDismiss={dismiss} />
+
       <section className="page-intro">
         <h2>Institutional Activity Dashboard</h2>
         <p className="muted">
@@ -115,22 +119,6 @@ export default function LinkedinPublicDashboard() {
         </Card>
         <Card title="Stakeholders">
           <BarList items={stakeholderRows} />
-        </Card>
-      </div>
-
-      <div className="chart-grid">
-        <Card title="Source & Date Coverage">
-          <BarList items={[
-            { key: "dated", name: "Dated", value: date.dated },
-            { key: "undated", name: "Undated", value: date.undated },
-            { key: "ambiguous_multi_year", name: "Spans multiple years", value: date.ambiguous },
-            { key: "with_url", name: "With source link", value: coverage.with_url || 0 },
-            { key: "without_url", name: "Without source link", value: coverage.without_url || 0 },
-          ]} />
-          <p className="muted note">
-            {coverage.source} &middot; {coverage.url_coverage_pct}% of activities link to the original post.
-            Undated records are counted in totals but excluded from date-based charts.
-          </p>
         </Card>
       </div>
     </div>

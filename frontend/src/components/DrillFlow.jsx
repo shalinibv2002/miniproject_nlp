@@ -3,7 +3,7 @@ import { Link, useSearchParams } from "react-router-dom";
 import { api } from "../services/api";
 import { Card } from "./ui";
 import { LoadingState, ErrorState, EmptyState } from "./linkedinPublic";
-import { ActivityCardList } from "./ActivityList";
+import { ReportTable } from "./ReportTable";
 import { publicCategoryLabel } from "../lib/linkedin";
 
 const ORDER = ["period", "category", "stakeholder"];
@@ -199,7 +199,13 @@ export default function DrillFlow({ scope, department, title, intro, backTo, bac
               {data.length === 0 && <EmptyState label="No activities match the selected filters." />}
               {data.length > 0 && (
                 <>
-                  <ActivityCardList records={data} showDepartment={Boolean(department)} />
+                  <ReportTable
+                    records={data}
+                    category={category || null}
+                    showDepartment={Boolean(department)}
+                    page={page}
+                    pageSize={pagination.page_size || PAGE_SIZE}
+                  />
                   <div className="pager">
                     <span>
                       Showing {(pagination.page || 1) - 1 < 0 ? 1 : (pagination.page - 1) * pagination.page_size + 1}–

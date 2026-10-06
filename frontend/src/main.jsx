@@ -23,6 +23,8 @@ import LinkedinAdminOverview from "./pages/linkedin/LinkedinAdminOverview";
 import LinkedinAdminRecords from "./pages/linkedin/LinkedinAdminRecords";
 import LinkedinAdminQueue from "./pages/linkedin/LinkedinAdminQueue";
 import LinkedinAdminDetail from "./pages/linkedin/LinkedinAdminDetail";
+import LinkedinAdminDepartmental from "./pages/linkedin/LinkedinAdminDepartmental";
+import LinkedinAdminDepartmentalDetail from "./pages/linkedin/LinkedinAdminDepartmentalDetail";
 
 createRoot(document.getElementById("root")).render(
   <StrictMode>
@@ -54,6 +56,8 @@ createRoot(document.getElementById("root")).render(
               <Route path="linkedin/records" element={<LinkedinAdminRecords />} />
               <Route path="linkedin/records/:id" element={<LinkedinAdminDetail />} />
               <Route path="linkedin/review" element={<LinkedinAdminQueue />} />
+              <Route path="linkedin/departmental" element={<LinkedinAdminDepartmental />} />
+              <Route path="linkedin/departmental/:id" element={<LinkedinAdminDepartmentalDetail />} />
             </Route>
           </Routes>
         </BrowserRouter>

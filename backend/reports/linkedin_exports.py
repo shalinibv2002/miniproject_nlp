@@ -41,17 +41,19 @@ from backend.database.linkedin_reportable import (
     get_reportable_connection,
 )
 from backend.database.category_catalog import public_category_name
+from backend.database.category_report_schema import (
+    ALL_REPORT_FIELDS,
+    column_widths,
+    normalize_scope,
+    report_columns,
+    report_columns_for_records,
+)
 
-EXPORT_COLUMNS = [
-    ("Title", "title"),
-    ("Date", "activity_date"),
-    ("Academic Year", "academic_year"),
-    ("Category", "category"),
-    ("Department", "department"),
-    ("Stakeholder", "stakeholder"),
-    ("Summary", "summary"),
-    ("Source / LinkedIn URL", "post_url"),
-]
+# The column set of every report is category-specific and comes from ONE
+# definition (``backend.database.category_report_schema``): the on-screen table,
+# the preview, Excel, PDF and the Ask-the-Data exports all render the very same
+# projection, so a downloaded report can never disagree with the screen.
+# ``export_columns()`` is the single entry point used by all of them.
 
 # Human-buildable report presets for the Report Generator.  Each maps a
 # report_type slug to a public category; None means "all categories".
@@ -78,11 +80,36 @@ REPORT_TYPES = {
     "campus": ("CAMPUS", "Campus"),
 }
 
+# ``ALL_REPORT_FIELDS`` comes from the category schemas themselves, so a column
+# added to a schema is exported the moment it exists (and nothing else is).
 PUBLIC_RECORD_FIELDS = (
     "activity_id", "title", "summary", "post_url", "activity_date",
     "academic_year", "category", "categories", "department", "departments",
     "stakeholder", "stakeholders", "source",
-)
+) + ALL_REPORT_FIELDS
+
+
+def export_columns(args=None, records=None):
+    """Report columns for a request, chosen by scope and category.
+
+    ``records`` (the rows actually being reported) is used when the request is
+    not pinned to a single category, so a result set that happens to be
+    category-specific still gets that category's columns.
+    """
+    args = args or {}
+    scope = normalize_scope(args.get("scope"), args.get("department"))
+    category = args.get("category")
+    if category:
+        return report_columns(category, scope)
+    if records is not None:
+        return report_columns_for_records(records, scope)
+    return report_columns(None, scope)
+
+
+def export_column_payload(args=None, records=None):
+    """Column descriptors for the JSON preview (label + projection key)."""
+    return [{"label": label, "field": field}
+            for label, field in export_columns(args, records)]
 
 
 def public_record(rec):
@@ -140,6 +167,12 @@ def _report_sheet_bytes(args, conn=None):
                     "from_year", "to_year"):
             if args.get(key):
                 filter_args[key] = args[key]
+        # An explicitly selected category is more specific than the report-type
+        # preset, so it wins; the preset stays the default category.
+        explicit_category = (args or {}).get("category")
+        if explicit_category:
+            cat_code = str(explicit_category).strip().upper()
+            cat_label = public_category_name(cat_code)
         if cat_code:
             filter_args["category"] = cat_code
         records = _fetch_records(conn, filter_args)
@@ -162,30 +195,31 @@ def _clean(value):
 
 def build_excel(args, conn=None):
     """Build an in-memory .xlsx workbook and return raw bytes."""
-    records, count, context, _args = _report_sheet_bytes(args, conn)
+    records, count, context, filter_args = _report_sheet_bytes(args, conn)
+    columns = export_columns(filter_args, records)
     wb = Workbook()
     ws = wb.active
-    ws.title = "LinkedIn Activities"
+    ws.title = "Activity Report"
 
     head_font = Font(bold=True, color="FFFFFF")
     head_fill = PatternFill("solid", fgColor="A03252")
 
     ws.append(["TCE Institutional Activity Intelligence"])
     ws.append(["Report: %s" % context])
-    ws.append(["Total activities: %d (based on available TCE LinkedIn posts)" % count])
+    ws.append(["Total activities: %d" % count])
     ws.append([])
 
-    headers = [label for label, _field in EXPORT_COLUMNS]
+    headers = [label for label, _field in columns]
     ws.append(headers)
     for cell in ws[ws.max_row]:
         cell.font = head_font
         cell.fill = head_fill
 
-    for rec in records:
-        ws.append([_clean(rec[field]) for _label, field in EXPORT_COLUMNS])
+    for index, rec in enumerate(records, start=1):
+        ws.append([index if field is None else _clean(rec.get(field))
+                   for _label, field in columns])
 
-    widths = (46, 12, 12, 20, 26, 18, 60, 44)
-    for i, width in enumerate(widths, start=1):
+    for i, width in enumerate(column_widths(columns), start=1):
         ws.column_dimensions[get_column_letter(i)].width = width
 
     buf = io.BytesIO()
@@ -196,7 +230,8 @@ def build_excel(args, conn=None):
 
 def build_pdf(args, conn=None):
     """Build an in-memory .pdf report and return raw bytes."""
-    records, count, context, _args = _report_sheet_bytes(args, conn)
+    records, count, context, filter_args = _report_sheet_bytes(args, conn)
+    columns = export_columns(filter_args, records)
     buf = io.BytesIO()
     doc = SimpleDocTemplate(
         buf, pagesize=landscape(A4),
@@ -224,14 +259,15 @@ def build_pdf(args, conn=None):
 
     p("TCE Institutional Activity Intelligence", title_style)
     p("Report: %s" % context, context_style)
-    p("Total activities: %d (based on available TCE LinkedIn posts)" % count, context_style)
+    p("Total activities: %d" % count, context_style)
 
-    headers = [label for label, _field in EXPORT_COLUMNS]
+    headers = [label for label, _field in columns]
     header_cells = [Paragraph(h, tbl_header) for h in headers]
     data = [header_cells]
-    for rec in records:
-        data.append([Paragraph(_clean(rec.get(field, "")), tbl_cell)
-                     for _label, field in EXPORT_COLUMNS])
+    for index, rec in enumerate(records, start=1):
+        data.append([Paragraph(str(index) if field is None
+                               else _clean(rec.get(field, "")), tbl_cell)
+                     for _label, field in columns])
 
     table = Table(data, repeatRows=1, hAlign="LEFT")
     table.setStyle(TableStyle([
@@ -252,6 +288,20 @@ def build_pdf(args, conn=None):
     return buf.read(), count, context
 
 
+def _query_columns(result, records):
+    """Ask-the-Data reports use the same schema as the report generator.
+
+    The grounded scope/category of the question decides the columns, so an
+    achievement question reports achievements and a workshop question reports
+    workshops.
+    """
+    return export_columns({
+        "scope": result.get("scope"),
+        "department": result.get("department"),
+        "category": result.get("category_code"),
+    }, records)
+
+
 def build_query_excel(result):
     """Build an .xlsx from an NLQ result (activities + rows + count)."""
     records = result.get("activities") or []
@@ -261,20 +311,22 @@ def build_query_excel(result):
         count = len(records)
     wb = Workbook()
     ws = wb.active
-    ws.title = "LinkedIn Activities"
+    ws.title = "Activity Report"
     head_font = Font(bold=True, color="FFFFFF")
     head_fill = PatternFill("solid", fgColor="A03252")
     ws.append(["TCE Institutional Activity Intelligence"])
     ws.append(["Question: %s" % (result.get("question") or "")])
     ws.append(["Answer: %s" % (result.get("answer") or "")])
-    ws.append(["Total activities: %d (based on available TCE LinkedIn posts)" % count])
+    ws.append(["Total activities: %d" % count])
     ws.append([])
-    ws.append([label for label, _field in EXPORT_COLUMNS])
+    columns = _query_columns(result, records)
+    ws.append([label for label, _field in columns])
     for cell in ws[ws.max_row]:
         cell.font = head_font
         cell.fill = head_fill
-    for rec in records:
-        ws.append([_clean(rec.get(field, "")) for _label, field in EXPORT_COLUMNS])
+    for index, rec in enumerate(records, start=1):
+        ws.append([index if field is None else _clean(rec.get(field, ""))
+                   for _label, field in columns])
     if rows:
         ws.append([])
         ws.append(["Breakdown"])
@@ -284,8 +336,7 @@ def build_query_excel(result):
             rc.fill = head_fill
         for row in rows:
             ws.append([_clean(row.get("label")), _clean(row.get("value"))])
-    widths = (46, 12, 12, 20, 26, 18, 60, 44)
-    for i, width in enumerate(widths, start=1):
+    for i, width in enumerate(column_widths(columns), start=1):
         ws.column_dimensions[get_column_letter(i)].width = width
     buf = io.BytesIO()
     wb.save(buf)
@@ -328,13 +379,15 @@ def build_query_pdf(result):
     para("TCE Institutional Activity Intelligence", title_style)
     para("Question: %s" % (result.get("question") or ""), context_style)
     para("Answer: %s" % (result.get("answer") or ""), context_style)
-    para("Total activities: %d (based on available TCE LinkedIn posts)" % count, context_style)
+    para("Total activities: %d" % count, context_style)
 
-    headers = [label for label, _field in EXPORT_COLUMNS]
+    columns = _query_columns(result, records)
+    headers = [label for label, _field in columns]
     data = [[Paragraph(h, tbl_header) for h in headers]]
-    for rec in records:
-        data.append([Paragraph(_clean(rec.get(field, "")), tbl_cell)
-                     for _label, field in EXPORT_COLUMNS])
+    for index, rec in enumerate(records, start=1):
+        data.append([Paragraph(str(index) if field is None
+                               else _clean(rec.get(field, "")), tbl_cell)
+                     for _label, field in columns])
     if rows:
         data.append([Paragraph("", tbl_cell)] * len(headers))
         data.append([Paragraph("Breakdown", tbl_header)] + [Paragraph("", tbl_cell)] * (len(headers) - 1))

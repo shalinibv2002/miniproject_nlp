@@ -50,7 +50,7 @@ describe("LinkedinPublicDashboard", () => {
     expect(screen.getByRole("link", { name: /drill into departments/i })).toBeInTheDocument();
   });
 
-  it("labels the date limitation honestly", async () => {
+  it("labels the date limitation honestly without a Source / Date Coverage panel", async () => {
     global.fetch = vi.fn().mockImplementation(routeFetch([
       { match: /overview/, respond: () => jsonResponse(overviewBody) },
     ]));
@@ -59,6 +59,11 @@ describe("LinkedinPublicDashboard", () => {
 
     await waitFor(() => expect(screen.getByText("Total Activities")).toBeInTheDocument());
     expect(screen.getByText(/include only reliably dated records/)).toBeInTheDocument();
-    expect(screen.getByText(/Undated records are counted in totals but excluded from date-based charts/)).toBeInTheDocument();
+    // Requirement 11: the Source / Date Coverage panel is not user-facing.
+    expect(screen.queryByText(/Source & Date Coverage/)).not.toBeInTheDocument();
+    expect(screen.queryByText(/Source and Date Coverage/)).not.toBeInTheDocument();
+    expect(screen.queryByText(/Date Coverage/)).not.toBeInTheDocument();
+    expect(screen.queryByText(/With source link/)).not.toBeInTheDocument();
+    expect(screen.queryByText(/Without source link/)).not.toBeInTheDocument();
   });
 });

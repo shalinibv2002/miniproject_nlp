@@ -37,7 +37,8 @@ CATEGORY_PUBLIC_NAMES = {
     "ORIENTATION": "Orientation",
     "CAMPUS": "Campus",
     "WEBINAR": "Webinar",
-    "ALUMNI": "Alumni",
+    # Display name only; the stored code stays ``ALUMNI``.
+    "ALUMNI": "Alumni Meet",
 }
 
 # Public presentation explicitly excludes the three legacy institutional

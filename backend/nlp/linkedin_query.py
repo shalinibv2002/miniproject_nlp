@@ -134,7 +134,7 @@ STAKEHOLDER_KEYWORDS = {
     "Faculty": ["faculty"],
     "Non-Teaching Staff": ["non-teaching", "non teaching", "support staff"],
     "Alumni": ["alumni", "alumnus"],
-    "Industry": ["industry", "companies", "employers"],
+    "Institution": ["industry", "companies", "employers"],
     "Parents": ["parent", "parents"],
     "Government and Agencies": ["government", "agencies", "agencies"],
     "Community and Society": ["community", "society", "public"],
@@ -628,6 +628,12 @@ def answer_question(question, conn=None):
             used["group_by"] = "year"
 
         base = {"question": question, "criteria": _criteria(used)}
+        # The grounded selection travels with the answer so the Ask-the-Data
+        # report exports use the same category-specific columns as the Report
+        # Generator.
+        base["category_code"] = used.get("category")
+        base["scope"] = used.get("scope")
+        base["department"] = used.get("department")
 
         compare = _answer_compare(question, conn, used, note, available)
         if compare:

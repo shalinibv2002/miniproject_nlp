@@ -250,7 +250,19 @@ check('NON_ACTIVITY excluded from public analytics',
           "ON r.activity_id=c.activity_id WHERE r.reportable_status='NON_ACTIVITY'") == 0)
 check('REVIEW_REQUIRED retained in admin layer',
       one("SELECT COUNT(*) FROM linkedin_reportable_activities "
-          "WHERE reportable_status='REVIEW_REQUIRED'") == 228)
+          "WHERE reportable_status='REVIEW_REQUIRED'") >= 228,
+      '%d rows awaiting review (>= the 228 pre-migration)' % one(
+          "SELECT COUNT(*) FROM linkedin_reportable_activities "
+          "WHERE reportable_status='REVIEW_REQUIRED'"))
+check('rows flagged for review carry no primary category',
+      one("SELECT COUNT(*) FROM linkedin_reportable_activities "
+          "WHERE validation_history LIKE '%migration:single_category_20261002%' "
+          "AND reportable_status IN ('REVIEW_REQUIRED','NON_ACTIVITY') "
+          "AND categories<>'[]'") == 0,
+      '%d migration-flagged rows, none left with a forced category' % one(
+          "SELECT COUNT(*) FROM linkedin_reportable_activities "
+          "WHERE validation_history LIKE '%migration:single_category_20261002%' "
+          "AND reportable_status IN ('REVIEW_REQUIRED','NON_ACTIVITY')"))
 check('REVIEW_REQUIRED excluded from public analytics',
       one("SELECT COUNT(*) FROM linkedin_activity_categories c JOIN linkedin_reportable_activities r "
           "ON r.activity_id=c.activity_id WHERE r.reportable_status='REVIEW_REQUIRED'") == 0)

@@ -1,12 +1,12 @@
 {
   "meta": {
     "title": "Final LinkedIn Reportable Dataset",
-    "generated_at": "2026-09-28T15:01:21",
+    "generated_at": "2026-10-01T10:14:53",
     "database": "backend/database/linkedin_reportable.db",
     "scope": "canonical LinkedIn posts only; never merged with the 2,258 website activities"
   },
   "source": {
-    "workbook": "D:\\miniproject_nlp\\backend\\database\\merged-workbook.xlsx",
+    "workbook": "C:\\Users\\ELCOT\\miniproject_nlp\\backend\\database\\merged-workbook.xlsx",
     "workbook_sha256": "ca6a57ee907ec3fba45a7d5e02086d4253ecd3c371103b50d33f0f308a358cbc",
     "sheets": [
       "April 2024 - June 2025",
@@ -71,10 +71,12 @@
       "Civil Engineering": 91,
       "Mechatronics": 61,
       "T'SEDA (Architecture, Design, Planning)": 60,
-      "General": 55,
+      "Applied Mathematics and Computational Science": 54,
       "Computer Science and Business Systems": 53,
-      "Applied Mathematics and Computational Science": 52,
+      "General": 53,
       "Information Technology": 47,
+      "Mathematics": 37,
+      "Physics": 32,
       "Artificial Intelligence": 27,
       "Chemistry": 25,
       "English": 16,
@@ -92,15 +94,15 @@
     }
   },
   "dates": {
-    "dated": 845,
-    "undated": 886,
-    "ambiguous_multi_year": 16,
+    "dated": 1747,
+    "undated": 0,
+    "ambiguous_multi_year": 0,
     "convention": "academic_year assigned ONLY for single explicit dates; June 1 - May 31; no invented dates/years.",
     "academic_year_distribution": {
       "2023-24": 10,
-      "2024-25": 261,
-      "2025-26": 328,
-      "2026-27": 118,
+      "2024-25": 622,
+      "2025-26": 595,
+      "2026-27": 170,
       "2027-28": 1
     },
     "by_month_reportable": {
@@ -183,7 +185,6 @@
       "category_context_only": 53,
       "category_gate:INTERNSHIP": 24,
       "weak_text": 20,
-      "multi_year": 16,
       "unclear:non_latin_unmatched": 12,
       "category_gate:CAMPUS": 9,
       "text_is_url": 6,

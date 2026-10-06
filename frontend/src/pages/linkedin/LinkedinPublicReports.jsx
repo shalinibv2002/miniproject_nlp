@@ -2,7 +2,7 @@ import { useEffect, useMemo, useState } from "react";
 import { api } from "../../services/api";
 import { KpiCard, Card } from "../../components/ui";
 import { BarList, LoadingState, ErrorState, EmptyState } from "../../components/linkedinPublic";
-import { ActivityCardList } from "../../components/ActivityList";
+import { ReportTable } from "../../components/ReportTable";
 import { publicCategoryLabel, publicDepartmentLabel } from "../../lib/linkedin";
 
 const REPORT_TYPES = [
@@ -44,21 +44,26 @@ export default function LinkedinPublicReports() {
   const [options, setOptions] = useState(null);
   const [scope, setScope] = useState("general");
   const [reportType, setReportType] = useState("all");
+  const [category, setCategory] = useState("");
   const [academicYear, setAcademicYear] = useState("");
   const [department, setDepartment] = useState("");
   const [stakeholder, setStakeholder] = useState("");
   const [preview, setPreview] = useState(null);
   const [error, setError] = useState(false);
 
+  // An explicit category selection is more specific than the report-type
+  // preset, so it is sent on its own: the backend then reports that category
+  // with that category's columns.
   const filters = useMemo(
     () => ({
       report_type: reportType,
       scope,
+      category,
       academic_year: academicYear,
       department: scope === "departmental" ? department : "",
       stakeholder,
     }),
-    [reportType, scope, academicYear, department, stakeholder],
+    [reportType, scope, category, academicYear, department, stakeholder],
   );
 
   useEffect(() => {
@@ -152,10 +157,23 @@ export default function LinkedinPublicReports() {
             <select
               aria-label="Report type"
               value={reportType}
-              onChange={(event) => setReportType(event.target.value)}
+              onChange={(event) => { setReportType(event.target.value); setCategory(""); }}
             >
               {REPORT_TYPES.map(([code, label]) => (
                 <option key={code} value={code}>{label}</option>
+              ))}
+            </select>
+          </label>
+          <label className="filter-field">
+            <span className="filter-label">Category</span>
+            <select
+              aria-label="Category"
+              value={category}
+              onChange={(event) => setCategory(event.target.value)}
+            >
+              <option value="">All categories</option>
+              {categoryOptions(options).map((c) => (
+                <option key={c.code} value={c.code}>{c.name || publicCategoryLabel(c.code)}</option>
               ))}
             </select>
           </label>
@@ -218,7 +236,14 @@ export default function LinkedinPublicReports() {
             <p className="muted note">{preview.context}</p>
             {records.length === 0
               ? <EmptyState label="No activities match these filters." />
-              : <ActivityCardList records={records.slice(0, 12)} showDepartment={scope === "departmental"} />}
+              : (
+                <ReportTable
+                  records={records.slice(0, 12)}
+                  scope={scope}
+                  category={(preview.filters || {}).category || ""}
+                  columns={preview.columns}
+                />
+              )}
           </Card>
         </>
       )}
@@ -228,4 +253,8 @@ export default function LinkedinPublicReports() {
 
 function departmentOptions(options) {
   return (options.departments || []).filter((d) => d !== "General");
+}
+
+function categoryOptions(options) {
+  return (options.categories || []).filter((c) => c && c.code);
 }

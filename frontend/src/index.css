@@ -1167,6 +1167,12 @@ input:focus-visible {
   background: #ffffff;
 }
 
+/* Keep the native calendar icon clickable: the segments plus the icon need more
+   room than `min-width: 0` would allow the input to shrink to. */
+.field input[type="date"] {
+  min-width: 140px;
+}
+
 .field select,
 .field input {
   cursor: pointer;
@@ -1182,6 +1188,137 @@ input:focus-visible {
   gap: 10px;
   justify-content: flex-end;
   padding-top: 14px;
+}
+
+/* Multi-value field rows (Stakeholder / Department / Award Category editors) */
+.multi-field {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  flex: 1;
+  min-width: 0;
+}
+
+.multi-row {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.multi-row select {
+  flex: 1;
+  min-width: 0;
+  padding: 8px 10px;
+  border: 1px solid var(--border-strong);
+  border-radius: var(--radius-sm);
+  font-size: 13px;
+  font-family: inherit;
+  color: var(--ink);
+  background: #ffffff;
+  cursor: pointer;
+}
+
+.multi-remove {
+  flex-shrink: 0;
+  padding: 6px 10px;
+  font-size: 15px;
+  line-height: 1;
+  min-width: 0;
+}
+
+.multi-add {
+  align-self: flex-start;
+  padding: 5px 10px;
+  font-size: 12px;
+}
+
+/* A report column the Admin can read but not change: shown as plain text so an
+   uneditable value is never mistaken for an input. */
+.value-static {
+  flex: 1;
+  min-width: 0;
+  margin: 0;
+  padding: 8px 10px;
+  font-size: 13px;
+  color: var(--ink);
+  line-height: 1.5;
+  overflow-wrap: anywhere;
+}
+
+/* A "Date (From-To)" column needs two real date inputs. */
+.date-range {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex: 1;
+  min-width: 0;
+}
+
+.date-range input[type="date"] {
+  flex: 1;
+  /* A native date input has an intrinsic width (segments + the calendar icon).
+     Letting it shrink to 0 clips the icon, so the picker cannot be opened by
+     clicking it; this keeps the icon reachable at every form width. */
+  min-width: 140px;
+  padding: 8px 10px;
+  border: 1px solid var(--border-strong);
+  border-radius: var(--radius-sm);
+  font-size: 13px;
+  font-family: inherit;
+  color: var(--ink);
+  background: #ffffff;
+  cursor: pointer;
+}
+
+.date-range-sep {
+  flex-shrink: 0;
+  color: var(--muted);
+  font-size: 12px;
+}
+
+/* Groups the generated report columns under one heading. */
+.section-label {
+  margin: 6px 0 2px;
+  padding-top: 10px;
+  border-top: 1px solid var(--border);
+  color: var(--ink);
+  font-size: 12px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+@media (max-width: 640px) {
+  .form-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .field {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 6px;
+  }
+
+  .field-label {
+    flex: none;
+  }
+
+  .date-range {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 4px;
+  }
+
+  .date-range-sep {
+    align-self: flex-start;
+  }
+
+  .form-actions {
+    flex-direction: column-reverse;
+  }
+
+  .form-actions button {
+    width: 100%;
+  }
 }
 
 .table-actions {
@@ -1525,22 +1662,62 @@ td code {
   cursor: pointer;
 }
 
+/* LinkedIn admin form: readonly URL link styled to match input height */
+.link {
+  display: block;
+  word-break: break-all;
+  color: var(--brand);
+  text-decoration: none;
+  font-size: 13px;
+  flex: 1;
+  min-width: 0;
+  padding: 8px 10px;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  background: #fdfaf7;
+  line-height: 1.5;
+}
+
+.link:hover {
+  color: var(--brand-dark);
+  text-decoration: underline;
+}
+
 .query-form {
   display: flex;
   gap: 10px;
   align-items: center;
 }
 
+/* The LinkedIn query uses a <label class="query-input"> wrapping <input>.
+   Remove the label's own border/background so only the inner input renders.
+   The plain-text Ask Data page uses .query-bar + .query-input directly and
+   is unaffected because .query-input there is the input itself, not a label. */
 .query-form .query-input {
   flex: 1;
+  border: none;
+  padding: 0;
+  height: auto;
+  background: transparent;
+  min-width: 0;
 }
 
 .query-form input {
   width: 100%;
-  padding: 10px 12px;
+  padding: 10px 14px;
   border: 1px solid var(--border-strong);
   border-radius: var(--radius-sm);
   font: inherit;
+  font-size: 14px;
+  height: 46px;
+  color: var(--ink);
+  background: #ffffff;
+}
+
+.query-form input:focus {
+  border-color: var(--brand);
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(123, 20, 59, 0.15);
 }
 
 .example-queries {
@@ -1630,3 +1807,144 @@ td code {
     grid-column: 1 / -1;
   }
 }
+
+/* ---------------------------------------------------------------- Apify Sync Status panel */
+
+.sync-status-panel {
+  background: var(--panel);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow-sm);
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.sync-status-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin-bottom: 16px;
+}
+
+.sync-status-title {
+  margin: 0;
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--ink);
+}
+
+.sync-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 12px;
+  font-weight: 600;
+  border-radius: 999px;
+  padding: 4px 12px;
+}
+
+.sync-badge.running { background: rgba(0,120,60,0.1); color: var(--good); }
+.sync-badge.idle    { background: rgba(0,0,0,0.05);   color: var(--muted); }
+.sync-badge.error   { background: rgba(181,61,61,0.1); color: var(--bad); }
+
+.sync-running-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--good);
+  animation: pulse-dot 1.2s ease-in-out infinite;
+}
+
+@keyframes pulse-dot {
+  0%, 100% { opacity: 1;    transform: scale(1);    }
+  50%       { opacity: 0.45; transform: scale(0.85); }
+}
+
+.sync-stats-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: 10px;
+  margin-bottom: 16px;
+}
+
+.sync-stat {
+  background: #faf7f3;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  padding: 10px 14px;
+  text-align: center;
+}
+
+.sync-stat-value {
+  font-size: 24px;
+  font-weight: 700;
+  color: var(--ink);
+  letter-spacing: -0.02em;
+  line-height: 1.1;
+}
+
+.sync-stat-label {
+  font-size: 11px;
+  color: var(--muted);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  font-weight: 600;
+  margin-top: 4px;
+}
+
+.sync-meta {
+  font-size: 12px;
+  color: var(--muted);
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+  margin-bottom: 14px;
+}
+
+.sync-actions {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+/* ---- Dashboard live sync notification banner ---- */
+
+.sync-notification {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  background: linear-gradient(135deg, #e8f7ef, #d4f0e0);
+  border: 1px solid #a8dbb8;
+  border-radius: var(--radius);
+  padding: 14px 18px;
+  margin-bottom: 18px;
+  animation: slide-in-top 0.3s ease;
+}
+
+@keyframes slide-in-top {
+  from { opacity: 0; transform: translateY(-8px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+.sync-notification-icon  { font-size: 22px; flex-shrink: 0; }
+.sync-notification-body  { flex: 1; min-width: 0; }
+.sync-notification-body strong {
+  display: block; font-size: 14px;
+  color: var(--good); margin-bottom: 2px;
+}
+.sync-notification-body p {
+  margin: 0; font-size: 13px; color: #2d6e46;
+}
+.sync-notification-close {
+  flex-shrink: 0;
+  background: transparent;
+  border: none;
+  color: #4a8c65;
+  font-size: 18px;
+  padding: 2px 6px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+.sync-notification-close:hover { background: rgba(0,0,0,0.08); }

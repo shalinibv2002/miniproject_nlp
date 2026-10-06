@@ -1,0 +1,1864 @@
+{
+  "audit_date": "2026-10-03",
+  "data_source": "backend/database/linkedin_reportable.db (read-only)",
+  "overall": {
+    "total": 1747,
+    "general": 958,
+    "departmental": 789,
+    "with_date": 845,
+    "without_date": 902,
+    "with_url": 1012,
+    "without_url": 735
+  },
+  "year_distribution": {
+    "2022-23": 3,
+    "2023-24": 11,
+    "2024-25": 803,
+    "2025-26": 725,
+    "2026-27": 204,
+    "2027-28": 1
+  },
+  "review_status_overall": {
+    "UNREVIEWED": 1495,
+    "NEEDS_REVIEW": 237,
+    "APPROVED": 15
+  },
+  "top_departments": {
+    "Electronics and Communication Engineering": 155,
+    "Electrical and Electronics Engineering": 121,
+    "Computer Science and Engineering": 113,
+    "Mechanical Engineering": 107,
+    "Civil Engineering": 88,
+    "Mechatronics": 61,
+    "T'SEDA (Architecture, Design, Planning)": 58,
+    "Applied Mathematics and Computational Science": 52,
+    "Computer Science and Business Systems": 52,
+    "Information Technology": 46,
+    "Mathematics": 37,
+    "Physics": 31,
+    "Artificial Intelligence": 26,
+    "Chemistry": 25,
+    "English": 15,
+    "Computer Applications": 12
+  },
+  "categories": {
+    "WORKSHOP": {
+      "counts": {
+        "total": 178,
+        "general": 49,
+        "departmental": 129
+      },
+      "coverage": {
+        "date_pct": 56.2,
+        "title_pct": 100.0,
+        "description_pct": 100.0,
+        "stakeholder_pct": 94.9,
+        "url_pct": 61.8,
+        "avg_description_length_chars": 881.2
+      },
+      "approval": {
+        "approved": 2,
+        "needs_review": 10,
+        "unreviewed": 166
+      },
+      "stakeholders_present": [
+        "Alumni",
+        "Community and Society",
+        "Faculty",
+        "Government and Agencies",
+        "Industry",
+        "Parents",
+        "Students"
+      ],
+      "departments_present": [
+        "Applied Mathematics and Computational Science",
+        "Artificial Intelligence",
+        "Chemistry",
+        "Civil Engineering",
+        "Computer Applications",
+        "Computer Science and Business Systems",
+        "Computer Science and Engineering",
+        "Electrical and Electronics Engineering",
+        "Electronics and Communication Engineering",
+        "English",
+        "Information Technology",
+        "Mathematics",
+        "Mechanical Engineering",
+        "Mechatronics",
+        "Physics",
+        "T'SEDA (Architecture, Design, Planning)"
+      ],
+      "sample_titles": [
+        "🎓 I-RISE OTP | Operator Training Program Thiagarajar College of Engineering, Madurai, hosts the I-RISE Operator Training Program in associat…",
+        "🚀 HCL Tech Bee Training Program Begins!",
+        "📡✨ Joy of Learning: Signal Processing!",
+        "🤖✨ Generative AI for Developers!",
+        "🚀💡 DATABRICKS CAMPUS WORKSHOP!",
+        "🎓✨ PROJECT PRESENTATION & REVERSE TEACHING The Department of Mechanical Engineering organizes an engaging workshop on 19 August 2026, 9:00 A…"
+      ],
+      "verdict": "KEEP",
+      "priority": "HIGH",
+      "merge_into": null,
+      "verdict_reason": null,
+      "verdict_note": null,
+      "recommended_columns": {
+        "general": [
+          "S.No",
+          "Title",
+          "Stakeholder",
+          "Date",
+          "Academic Year",
+          "Post URL"
+        ],
+        "departmental": [
+          "S.No",
+          "Title",
+          "Department",
+          "Stakeholder",
+          "Date",
+          "Academic Year",
+          "Post URL"
+        ]
+      },
+      "data_quality_flags": []
+    },
+    "SEMINAR": {
+      "counts": {
+        "total": 89,
+        "general": 10,
+        "departmental": 79
+      },
+      "coverage": {
+        "date_pct": 64.0,
+        "title_pct": 100.0,
+        "description_pct": 100.0,
+        "stakeholder_pct": 95.5,
+        "url_pct": 56.2,
+        "avg_description_length_chars": 638.8
+      },
+      "approval": {
+        "approved": 0,
+        "needs_review": 3,
+        "unreviewed": 86
+      },
+      "stakeholders_present": [
+        "Alumni",
+        "Community and Society",
+        "Faculty",
+        "Government and Agencies",
+        "Industry",
+        "Students"
+      ],
+      "departments_present": [
+        "Applied Mathematics and Computational Science",
+        "Artificial Intelligence",
+        "Chemistry",
+        "Civil Engineering",
+        "Computer Applications",
+        "Computer Science and Business Systems",
+        "Computer Science and Engineering",
+        "Electrical and Electronics Engineering",
+        "Electronics and Communication Engineering",
+        "Information Technology",
+        "Mathematics",
+        "Mechanical Engineering",
+        "Mechatronics",
+        "Physics",
+        "T'SEDA (Architecture, Design, Planning)"
+      ],
+      "sample_titles": [
+        "🎓✨ Student-Centered Learning: Empowering Better Education!",
+        "⚡🔬 Advancing Research in Power Quality!",
+        "🎓🚀 Career Roadmap for Future Success!",
+        "🚀🤖 FUTURE READY: BUILDING A SUCCESSFUL CAREER IN TECH The Department of Computer Applications, TCE, presents an insightful seminar on AI, em…",
+        "🔬🌍 Explore the Future of Sustainable Energy Storage!",
+        "🌍🎓 Research Seminar Series #36 | Advancing Research for a Sustainable Future ♻️📚 The Centre for Research and Development, Thiagarajar Colleg…"
+      ],
+      "verdict": "KEEP",
+      "priority": "HIGH",
+      "merge_into": null,
+      "verdict_reason": null,
+      "verdict_note": null,
+      "recommended_columns": {
+        "general": [
+          "S.No",
+          "Title",
+          "Date",
+          "Academic Year",
+          "Post URL"
+        ],
+        "departmental": [
+          "S.No",
+          "Title",
+          "Department",
+          "Stakeholder",
+          "Date",
+          "Academic Year",
+          "Post URL"
+        ]
+      },
+      "data_quality_flags": []
+    },
+    "CONFERENCE": {
+      "counts": {
+        "total": 61,
+        "general": 31,
+        "departmental": 30
+      },
+      "coverage": {
+        "date_pct": 63.9,
+        "title_pct": 100.0,
+        "description_pct": 100.0,
+        "stakeholder_pct": 78.7,
+        "url_pct": 75.4,
+        "avg_description_length_chars": 922.7
+      },
+      "approval": {
+        "approved": 1,
+        "needs_review": 6,
+        "unreviewed": 54
+      },
+      "stakeholders_present": [
+        "Faculty",
+        "Government and Agencies",
+        "Industry",
+        "Students"
+      ],
+      "departments_present": [
+        "Applied Mathematics and Computational Science",
+        "Artificial Intelligence",
+        "Chemistry",
+        "Civil Engineering",
+        "Computer Applications",
+        "Computer Science and Business Systems",
+        "Computer Science and Engineering",
+        "Electrical and Electronics Engineering",
+        "Electronics and Communication Engineering",
+        "English",
+        "Information Technology",
+        "Mathematics",
+        "Mechanical Engineering",
+        "Mechatronics",
+        "Physics"
+      ],
+      "sample_titles": [
+        "🏗️🌍 **International Conference on AI in Construction & Sustainable Built Environment – ICAIC 2026** The **Department of Civil Engineering, T…",
+        "🚀✨ Something extraordinary is coming to TCE!",
+        "🎤✨ TEDx TCE Registrations Open!",
+        "🎤✨ TEDx at TCE!",
+        "🎤✨ TEDx Thiagarajar College of Engineering 2026 | Meet the Inspiring Speakers!",
+        "🎤✨ TEDx Thiagarajar College of Engineering 2026 | Speaker Reveal 🌟 We're excited to welcome Dr."
+      ],
+      "verdict": "KEEP",
+      "priority": "HIGH",
+      "merge_into": null,
+      "verdict_reason": null,
+      "verdict_note": null,
+      "recommended_columns": {
+        "general": [
+          "S.No",
+          "Title",
+          "Stakeholder",
+          "Date",
+          "Academic Year",
+          "Post URL"
+        ],
+        "departmental": [
+          "S.No",
+          "Title",
+          "Department",
+          "Stakeholder",
+          "Date",
+          "Academic Year",
+          "Post URL"
+        ]
+      },
+      "data_quality_flags": []
+    },
+    "SYMPOSIUM": {
+      "counts": {
+        "total": 10,
+        "general": 1,
+        "departmental": 9
+      },
+      "coverage": {
+        "date_pct": 40.0,
+        "title_pct": 100.0,
+        "description_pct": 100.0,
+        "stakeholder_pct": 70.0,
+        "url_pct": 70.0,
+        "avg_description_length_chars": 962.4
+      },
+      "approval": {
+        "approved": 0,
+        "needs_review": 6,
+        "unreviewed": 4
+      },
+      "stakeholders_present": [
+        "Community and Society",
+        "Faculty",
+        "Industry",
+        "Students"
+      ],
+      "departments_present": [
+        "Computer Science and Business Systems",
+        "Electronics and Communication Engineering",
+        "Mechanical Engineering",
+        "Mechatronics"
+      ],
+      "sample_titles": [
+        "🚀 SYNERGICZ 3.0 – National Level Technical Symposium Department of Mechatronics Engineering 📅 April 2, 2026 💰 Prize Pool: ₹20,000 ✨ Explore…",
+        "🚀 *MOBIUS 2K26 – TECHUTSAV* The *Mechanical Engineering Association* of *Thiagarajar College of Engineering* proudly presents **MOBIUS 2K26*…",
+        "🚀 ZENYTH 2026 – Where Ideas Rise to the Peak!",
+        "🚀 TECHVISTA ’26 | National Level Technical Symposium Organised by the Department of Electronics & Communication Engineering, TCE in associat…",
+        "🌟 One-Day Non-Technical Symposium – RE-INVENT 🌟 “Igniting Innovation & Impact in the Age of Ideas” 📅 12.09.2025 (Friday) 🏛️ Organized by IEE…",
+        "🚀 SYNERGICZ 2.0 – TECHUTSAV’ 25🔥 Visit our page: The Mechatronics Engineering Department of Thiagarajar College of Engineering is back with…"
+      ],
+      "verdict": "MERGE",
+      "priority": "MEDIUM",
+      "merge_into": "CONFERENCE",
+      "verdict_reason": "Only 10 records; semantically identical to departmental technical conferences; already excluded from public taxonomy.",
+      "verdict_note": null,
+      "recommended_columns": {
+        "general": [
+          "S.No",
+          "Title",
+          "Stakeholder",
+          "Date",
+          "Academic Year",
+          "Post URL"
+        ],
+        "departmental": [
+          "S.No",
+          "Title",
+          "Department",
+          "Stakeholder",
+          "Date",
+          "Academic Year",
+          "Post URL"
+        ],
+        "note": "Merge into CONFERENCE for public reporting."
+      },
+      "data_quality_flags": [
+        "40% date coverage",
+        "Only 10 records"
+      ]
+    },
+    "GUEST_LECTURE": {
+      "counts": {
+        "total": 86,
+        "general": 17,
+        "departmental": 69
+      },
+      "coverage": {
+        "date_pct": 68.6,
+        "title_pct": 100.0,
+        "description_pct": 100.0,
+        "stakeholder_pct": 97.7,
+        "url_pct": 55.8,
+        "avg_description_length_chars": 638.9
+      },
+      "approval": {
+        "approved": 0,
+        "needs_review": 6,
+        "unreviewed": 80
+      },
+      "stakeholders_present": [
+        "Alumni",
+        "Community and Society",
+        "Faculty",
+        "Government and Agencies",
+        "Industry",
+        "Students"
+      ],
+      "departments_present": [
+        "Applied Mathematics and Computational Science",
+        "Artificial Intelligence",
+        "Civil Engineering",
+        "Computer Applications",
+        "Computer Science and Business Systems",
+        "Computer Science and Engineering",
+        "Electrical and Electronics Engineering",
+        "Electronics and Communication Engineering",
+        "Information Technology",
+        "Mathematics",
+        "Mechanical Engineering",
+        "Mechatronics",
+        "Physics",
+        "T'SEDA (Architecture, Design, Planning)"
+      ],
+      "sample_titles": [
+        "🏠✨ Exploring Residential Building Services!",
+        "🇮🇳✨ Shaping India into a Product Nation!",
+        "🌿🏛️ Guest Lecture: Site Planning Process T’SEDA, Thiagarajar School of Environmental Design and Architecture, invites you to an insightful s…",
+        "🎓✨ T'SEDA | TCE Organizes a Guest Lecture!",
+        "🤖🔬 Special Lecture on Physics of Robotics 🎓 The Department of Physics, Thiagarajar College of Engineering, invites you to a special lecture…",
+        "🌍⚡ Powering the Future with Digital Twin Technology!"
+      ],
+      "verdict": "KEEP",
+      "priority": "HIGH",
+      "merge_into": null,
+      "verdict_reason": null,
+      "verdict_note": null,
+      "recommended_columns": {
+        "general": [
+          "S.No",
+          "Title",
+          "Date",
+          "Academic Year",
+          "Post URL"
+        ],
+        "departmental": [
+          "S.No",
+          "Title",
+          "Department",
+          "Stakeholder",
+          "Date",
+          "Academic Year",
+          "Post URL"
+        ]
+      },
+      "data_quality_flags": []
+    },
+    "FDP": {
+      "counts": {
+        "total": 63,
+        "general": 11,
+        "departmental": 52
+      },
+      "coverage": {
+        "date_pct": 61.9,
+        "title_pct": 100.0,
+        "description_pct": 100.0,
+        "stakeholder_pct": 100.0,
+        "url_pct": 52.4,
+        "avg_description_length_chars": 925.8
+      },
+      "approval": {
+        "approved": 2,
+        "needs_review": 3,
+        "unreviewed": 58
+      },
+      "stakeholders_present": [
+        "Alumni",
+        "Community and Society",
+        "Faculty",
+        "Government and Agencies",
+        "Industry",
+        "Parents",
+        "Students"
+      ],
+      "departments_present": [
+        "Applied Mathematics and Computational Science",
+        "Chemistry",
+        "Civil Engineering",
+        "Computer Science and Business Systems",
+        "Computer Science and Engineering",
+        "Electrical and Electronics Engineering",
+        "Electronics and Communication Engineering",
+        "English",
+        "Information Technology",
+        "Mathematics",
+        "Mechanical Engineering",
+        "Mechatronics",
+        "Physics",
+        "T'SEDA (Architecture, Design, Planning)"
+      ],
+      "sample_titles": [
+        "🌱⚡ Advancing Sustainable Energy & Environmental Stewardship!",
+        "🤖📚 AI-Powered Pedagogy | Faculty Development Programme 2026 🎓✨ Thiagarajar College of Engineering, under the Centre for Continuing Education…",
+        "🤖⚙️ Empower Engineering with AI & Digital Twins!",
+        "📡🎓 Enhance Your 5G/6G RF Expertise!",
+        "🚀 Join the Six-Day Online Faculty Development Program (FDP) on “Integrating AI into Classroom Pedagogy: Tools and Practices” 🤖📚 Organized by…",
+        "🎓✨ Thiagarajar College of Engineering, Madurai Successfully conducted the 5-Day AICTE Approved Faculty Development Programme on Universal Hu…"
+      ],
+      "verdict": "KEEP",
+      "priority": "HIGH",
+      "merge_into": null,
+      "verdict_reason": null,
+      "verdict_note": null,
+      "recommended_columns": {
+        "general": [
+          "S.No",
+          "Title",
+          "Date",
+          "Academic Year",
+          "Post URL"
+        ],
+        "departmental": [
+          "S.No",
+          "Title",
+          "Department",
+          "Stakeholder",
+          "Date",
+          "Academic Year",
+          "Post URL"
+        ]
+      },
+      "data_quality_flags": []
+    },
+    "STTP": {
+      "counts": {
+        "total": 3,
+        "general": 1,
+        "departmental": 2
+      },
+      "coverage": {
+        "date_pct": 100.0,
+        "title_pct": 100.0,
+        "description_pct": 100.0,
+        "stakeholder_pct": 100.0,
+        "url_pct": 66.7,
+        "avg_description_length_chars": 1149.3
+      },
+      "approval": {
+        "approved": 0,
+        "needs_review": 2,
+        "unreviewed": 1
+      },
+      "stakeholders_present": [
+        "Alumni",
+        "Community and Society",
+        "Faculty",
+        "Industry",
+        "Students"
+      ],
+      "departments_present": [
+        "Computer Science and Business Systems",
+        "Information Technology"
+      ],
+      "sample_titles": [
+        "🚀📚 Master Computational Linguistics for the LLM Era!",
+        "🚀 One Week Online STTP on “Art of Coding Using AI Tools” (Inclusive of 3 hours contests ) The Department of Information Technology, Thiagara…",
+        "🎯 5-Day Online Short Term Training Program (STTP) on “ Next Generation Tools and Techniques ” 📅 24 – 28 November 2025 🕒 Mode: Online Organiz…"
+      ],
+      "verdict": "MERGE",
+      "priority": "MEDIUM",
+      "merge_into": "FDP",
+      "verdict_reason": "Only 3 records; functionally a subtype of FDP; already excluded from public taxonomy.",
+      "verdict_note": null,
+      "recommended_columns": {
+        "general": [
+          "S.No",
+          "Title",
+          "Date",
+          "Academic Year",
+          "Post URL"
+        ],
+        "departmental": [
+          "S.No",
+          "Title",
+          "Department",
+          "Stakeholder",
+          "Date",
+          "Academic Year",
+          "Post URL"
+        ],
+        "note": "Merge into FDP for public reporting."
+      },
+      "data_quality_flags": [
+        "Only 3 records — near-empty category"
+      ]
+    },
+    "HACKATHON": {
+      "counts": {
+        "total": 32,
+        "general": 15,
+        "departmental": 17
+      },
+      "coverage": {
+        "date_pct": 34.4,
+        "title_pct": 100.0,
+        "description_pct": 100.0,
+        "stakeholder_pct": 93.8,
+        "url_pct": 59.4,
+        "avg_description_length_chars": 810.0
+      },
+      "approval": {
+        "approved": 0,
+        "needs_review": 5,
+        "unreviewed": 27
+      },
+      "stakeholders_present": [
+        "Alumni",
+        "Community and Society",
+        "Faculty",
+        "Government and Agencies",
+        "Industry",
+        "Students"
+      ],
+      "departments_present": [
+        "Applied Mathematics and Computational Science",
+        "Civil Engineering",
+        "Computer Science and Business Systems",
+        "Computer Science and Engineering",
+        "Electrical and Electronics Engineering",
+        "Electronics and Communication Engineering",
+        "Information Technology",
+        "Mechanical Engineering",
+        "Mechatronics"
+      ],
+      "sample_titles": [
+        "🚀💡 SIH 2026: Innovate.",
+        "🚀 Industry Innovation Hackathon 2026 Thiagarajar College of Engineering, in association with the Institution's Innovation Council, presents…",
+        "🚀 *HACKRAX’26 – Industry Innovation Challenge* The Department of Computer Science and Engineering, Thiagarajar College of Engineering, Madur…",
+        "🤖 AI HACKATHON 2026 | FINALS Organized by AI Consortium of TCE ✨ Show Your Skills & Win Exciting Cash Prizes!",
+        "🚀 Hackathon 2025 @ TCE 🔍 Solve real-world problems in AI, Satellite Imaging, Design, and more!",
+        "🚀 International Hackathon 2025 🌍💡 In collaboration with Sathyam Group of Companies, TCE presents a 24-hour hackathon focused on Smart Agro-A…"
+      ],
+      "verdict": "KEEP",
+      "priority": "MEDIUM",
+      "merge_into": null,
+      "verdict_reason": null,
+      "verdict_note": null,
+      "recommended_columns": {
+        "general": [
+          "S.No",
+          "Title",
+          "Stakeholder",
+          "Date",
+          "Academic Year",
+          "Post URL"
+        ],
+        "departmental": [
+          "S.No",
+          "Title",
+          "Department",
+          "Stakeholder",
+          "Date",
+          "Academic Year",
+          "Post URL"
+        ]
+      },
+      "data_quality_flags": [
+        "34% date coverage"
+      ]
+    },
+    "TECH_FEST": {
+      "counts": {
+        "total": 2,
+        "general": 1,
+        "departmental": 1
+      },
+      "coverage": {
+        "date_pct": 0.0,
+        "title_pct": 100.0,
+        "description_pct": 100.0,
+        "stakeholder_pct": 100.0,
+        "url_pct": 50.0,
+        "avg_description_length_chars": 997.5
+      },
+      "approval": {
+        "approved": 0,
+        "needs_review": 1,
+        "unreviewed": 1
+      },
+      "stakeholders_present": [
+        "Alumni",
+        "Community and Society",
+        "Faculty",
+        "Government and Agencies",
+        "Students"
+      ],
+      "departments_present": [
+        "Computer Science and Engineering"
+      ],
+      "sample_titles": [
+        "AICTE is organizing its first-ever Tech Fest – AICTE IDEA Lab Tech Fest 2025!",
+        "🎉 FS'tival '24 – Annual Free Software Festival 🎉 Hosted by the Department of Computer Science and Engineering, TCE Where Innovation Meets Fr…"
+      ],
+      "verdict": "REMOVE",
+      "priority": "MEDIUM",
+      "merge_into": null,
+      "verdict_reason": "Only 2 records; 0% date coverage; already excluded from public taxonomy.",
+      "verdict_note": null,
+      "recommended_columns": {
+        "general": [],
+        "departmental": [],
+        "note": "Remove from public reporting. 2 records, 0% date coverage."
+      },
+      "data_quality_flags": [
+        "0% date coverage",
+        "Only 2 records — effectively empty"
+      ]
+    },
+    "CULTURAL": {
+      "counts": {
+        "total": 30,
+        "general": 20,
+        "departmental": 10
+      },
+      "coverage": {
+        "date_pct": 50.0,
+        "title_pct": 100.0,
+        "description_pct": 100.0,
+        "stakeholder_pct": 83.3,
+        "url_pct": 63.3,
+        "avg_description_length_chars": 562.7
+      },
+      "approval": {
+        "approved": 0,
+        "needs_review": 4,
+        "unreviewed": 26
+      },
+      "stakeholders_present": [
+        "Alumni",
+        "Community and Society",
+        "Faculty",
+        "Industry",
+        "Non-Teaching Staff",
+        "Students"
+      ],
+      "departments_present": [
+        "Civil Engineering",
+        "Computer Science and Engineering",
+        "Electrical and Electronics Engineering",
+        "English",
+        "Mechanical Engineering",
+        "T'SEDA (Architecture, Design, Planning)"
+      ],
+      "sample_titles": [
+        "🎉✨ TEACHERS’ DAY CELEBRATION 2026 ✨🎉 Celebrating the guiding lights of knowledge!",
+        "🎉 CULTURA NOVA ’26 – Connections Organised by TCE–Shrishti Cultural Association Inviting Faculty, Non-Teaching Staff & Research Scholars to…",
+        "🎬 Cinema Quiz @ TCE – Cultura Nova 2026 Organised by the TCE–Shrishti Cultural Association, this exciting Cinema Quiz invites Faculty, Non-T…",
+        "🎉 QUEST 2026 – Interschool Cultural Competition 🎨🎤💃 Organized by SHRISHTI Association, in association with EIACP PC-RP (Waste Management) an…",
+        "🎭 TCE Shrishti Cultural Association – Dance Club presents 💃 SYNCRO’25 – AFD ANYTHING DANCE 📅 27 November 2025 🕒 2:30 PM – 5:00 PM 📍 Open Aud…",
+        "Congratulations to our Chairman and Correspondent Thiagarajar College of Engineering extends its sincere congratulations to Mr."
+      ],
+      "verdict": "KEEP",
+      "priority": "LOW",
+      "merge_into": null,
+      "verdict_reason": null,
+      "verdict_note": "Some non-reportable content (congratulatory posts) mixed in.",
+      "recommended_columns": {
+        "general": [
+          "S.No",
+          "Title",
+          "Stakeholder",
+          "Date",
+          "Academic Year",
+          "Post URL"
+        ],
+        "departmental": [
+          "S.No",
+          "Title",
+          "Department",
+          "Date",
+          "Academic Year",
+          "Post URL"
+        ]
+      },
+      "data_quality_flags": [
+        "Non-reportable congratulatory posts mixed in"
+      ]
+    },
+    "SPORTS": {
+      "counts": {
+        "total": 56,
+        "general": 49,
+        "departmental": 7
+      },
+      "coverage": {
+        "date_pct": 44.6,
+        "title_pct": 100.0,
+        "description_pct": 100.0,
+        "stakeholder_pct": 76.8,
+        "url_pct": 53.6,
+        "avg_description_length_chars": 712.6
+      },
+      "approval": {
+        "approved": 0,
+        "needs_review": 4,
+        "unreviewed": 52
+      },
+      "stakeholders_present": [
+        "Alumni",
+        "Community and Society",
+        "Faculty",
+        "Government and Agencies",
+        "Industry",
+        "Non-Teaching Staff",
+        "Students"
+      ],
+      "departments_present": [
+        "Civil Engineering",
+        "Computer Science and Engineering",
+        "Electronics and Communication Engineering",
+        "Information Technology",
+        "Mathematics"
+      ],
+      "sample_titles": [
+        "🏆⚽ SPORTS INAUGURATION 2026!",
+        "🏆🥇 Champions!",
+        "🏸🏆 CONGRATULATIONS TO OUR FACULTY CHAMPIONS!🏆🏸 A proud sporting achievement for Thiagarajar College of Engineering!",
+        "🏸 3rd Thiru Karumuttu T.",
+        "🏸 3rd Thiru Karumuttu T.",
+        "♟️ 9th Radha Thiagarajan Memorial State Level Open & Children Chess Tournament – 2026 Thiagarajar College of Engineering | FIT INDIA Cordial…"
+      ],
+      "verdict": "KEEP",
+      "priority": "MEDIUM",
+      "merge_into": null,
+      "verdict_reason": null,
+      "verdict_note": null,
+      "recommended_columns": {
+        "general": [
+          "S.No",
+          "Title",
+          "Stakeholder",
+          "Date",
+          "Academic Year",
+          "Post URL"
+        ],
+        "departmental": [
+          "S.No",
+          "Title",
+          "Department",
+          "Date",
+          "Academic Year",
+          "Post URL"
+        ]
+      },
+      "data_quality_flags": [
+        "45% date coverage",
+        "Near-duplicate titles detected in sample"
+      ]
+    },
+    "NCC": {
+      "counts": {
+        "total": 7,
+        "general": 7,
+        "departmental": 0
+      },
+      "coverage": {
+        "date_pct": 42.9,
+        "title_pct": 100.0,
+        "description_pct": 100.0,
+        "stakeholder_pct": 42.9,
+        "url_pct": 42.9,
+        "avg_description_length_chars": 644.1
+      },
+      "approval": {
+        "approved": 0,
+        "needs_review": 4,
+        "unreviewed": 3
+      },
+      "stakeholders_present": [
+        "Students"
+      ],
+      "departments_present": [],
+      "sample_titles": [
+        "4 (TN) ENGR COY NCC Thiagarajar College of Engineering Cordially invites you to celebrate The 77ᵗʰ Republic Day of India 🇮🇳 Dr.",
+        "79th Independence Day Celebration @ TCE Thiagarajar College of Engineering, Madurai, cordially invites you to join us in commemorating the 7…",
+        "TCE | Thiagarajar College of Engineering | Madurai The 4 TN Engr COY NCC, TCE is organizing a Tree Plantation Drive at the college campus on…",
+        "🇮🇳 77th Republic Day Celebrations | TCE 📍 Main Ground | 🗓️ 26.01.2026 | ⏰ Morning A proud morning of patriotism and discipline 🇮🇳 ✨ Chief Gu…",
+        "🌱 பசுமை தமிழ்நாடு தினம் 2024 🌱 24.09.2024 அன்று மதுரை, தியாகராஜர் பொறியியல் கல்லூரி முதல்வர் பேராசிரியர் எல்.",
+        "🎖️ NCC Combined Annual Training Camp - 2024 Highlights 🎖️ From 2nd to 11th October 2024, TCE cadets shone at the Combined Annual Training Ca…"
+      ],
+      "verdict": "KEEP",
+      "priority": "LOW",
+      "merge_into": null,
+      "verdict_reason": null,
+      "verdict_note": "Only 7 records; weak coverage metrics; NAAC-required.",
+      "recommended_columns": {
+        "general": [
+          "S.No",
+          "Title",
+          "Date",
+          "Academic Year",
+          "Post URL"
+        ],
+        "departmental": []
+      },
+      "data_quality_flags": [
+        "43% stakeholder coverage — lowest of all categories",
+        "Only 7 records"
+      ]
+    },
+    "NSS": {
+      "counts": {
+        "total": 8,
+        "general": 7,
+        "departmental": 1
+      },
+      "coverage": {
+        "date_pct": 62.5,
+        "title_pct": 100.0,
+        "description_pct": 100.0,
+        "stakeholder_pct": 100.0,
+        "url_pct": 37.5,
+        "avg_description_length_chars": 673.4
+      },
+      "approval": {
+        "approved": 0,
+        "needs_review": 2,
+        "unreviewed": 6
+      },
+      "stakeholders_present": [
+        "Community and Society",
+        "Faculty",
+        "Government and Agencies",
+        "Students"
+      ],
+      "departments_present": [
+        "Electrical and Electronics Engineering"
+      ],
+      "sample_titles": [
+        "🩸❤️ GIVE BLOOD.",
+        "📘 TCE NSS Newsletter – Volume 1 (2026) Released!",
+        "🎉 Congratulations to TCE NSS & YRC Units!",
+        "🩸 TCE NSS & YRC, jointly with Govt.",
+        "🩸 Heartfelt Appreciation for TCE NSS & YRC!🩸 We are proud to recognize the NSS and YRC teams of Thiagarajar College of Engineering for organ…",
+        "🌿 Thiagarajar College of Engineering NSS – Adopted Villages Initiative From Vilachery, Thanakkankulam, Sambakulam, Surakulam to Thangalacher…"
+      ],
+      "verdict": "KEEP",
+      "priority": "LOW",
+      "merge_into": null,
+      "verdict_reason": null,
+      "verdict_note": "Only 8 records; NAAC-required.",
+      "recommended_columns": {
+        "general": [
+          "S.No",
+          "Title",
+          "Stakeholder",
+          "Date",
+          "Academic Year",
+          "Post URL"
+        ],
+        "departmental": [
+          "S.No",
+          "Title",
+          "Department",
+          "Date",
+          "Academic Year",
+          "Post URL"
+        ]
+      },
+      "data_quality_flags": [
+        "38% URL coverage",
+        "Only 8 records"
+      ]
+    },
+    "CLUB": {
+      "counts": {
+        "total": 87,
+        "general": 46,
+        "departmental": 41
+      },
+      "coverage": {
+        "date_pct": 54.0,
+        "title_pct": 100.0,
+        "description_pct": 100.0,
+        "stakeholder_pct": 89.7,
+        "url_pct": 59.8,
+        "avg_description_length_chars": 651.3
+      },
+      "approval": {
+        "approved": 1,
+        "needs_review": 5,
+        "unreviewed": 81
+      },
+      "stakeholders_present": [
+        "Alumni",
+        "Community and Society",
+        "Faculty",
+        "Government and Agencies",
+        "Industry",
+        "Students"
+      ],
+      "departments_present": [
+        "Artificial Intelligence",
+        "Chemistry",
+        "Computer Science and Business Systems",
+        "Computer Science and Engineering",
+        "Electrical and Electronics Engineering",
+        "Electronics and Communication Engineering",
+        "English",
+        "Information Technology",
+        "Mathematics",
+        "Mechanical Engineering",
+        "Mechatronics"
+      ],
+      "sample_titles": [
+        "🧮✨ MATH CLUB INAUGURAL CEREMONY!",
+        "🎉✨ Inaugural Ceremony 2026!",
+        "🎓⚙️ Mechanical Engineering Association Inauguration!",
+        "🚀💧 Launch Your Innovation at the Water Rocket Competition!",
+        "🚀💧 Launch Your Innovation with the TCE Space Club!",
+        "🎓✨ AURORA 2026 | Igniting Professional Excellence!"
+      ],
+      "verdict": "KEEP",
+      "priority": "MEDIUM",
+      "merge_into": null,
+      "verdict_reason": null,
+      "verdict_note": null,
+      "recommended_columns": {
+        "general": [
+          "S.No",
+          "Title",
+          "Stakeholder",
+          "Date",
+          "Academic Year",
+          "Post URL"
+        ],
+        "departmental": [
+          "S.No",
+          "Title",
+          "Department",
+          "Stakeholder",
+          "Date",
+          "Academic Year",
+          "Post URL"
+        ]
+      },
+      "data_quality_flags": []
+    },
+    "OUTREACH": {
+      "counts": {
+        "total": 46,
+        "general": 23,
+        "departmental": 23
+      },
+      "coverage": {
+        "date_pct": 58.7,
+        "title_pct": 100.0,
+        "description_pct": 100.0,
+        "stakeholder_pct": 95.7,
+        "url_pct": 47.8,
+        "avg_description_length_chars": 664.5
+      },
+      "approval": {
+        "approved": 0,
+        "needs_review": 4,
+        "unreviewed": 42
+      },
+      "stakeholders_present": [
+        "Alumni",
+        "Community and Society",
+        "Faculty",
+        "Government and Agencies",
+        "Industry",
+        "Students"
+      ],
+      "departments_present": [
+        "Artificial Intelligence",
+        "Civil Engineering",
+        "Computer Science and Engineering",
+        "Electronics and Communication Engineering",
+        "Information Technology",
+        "Mechanical Engineering",
+        "T'SEDA (Architecture, Design, Planning)"
+      ],
+      "sample_titles": [
+        "🏗️✨ LEAN CONSTRUCTION | AWARENESS SESSION!",
+        "🎓🚀 GATE–JAM 2027 Outreach Programme!",
+        "🛡️🔐 Cyber Security Awareness!",
+        "🌍💻 BUILD A GLOBAL CAREER IN DATA ANALYTICS!",
+        "🎯📚 GATE & Competitive Exams Roadmap!",
+        "🔥🧯 BASIC FIRE SAFETY AWARENESS PROGRAMME 🚒 The Youth Red Cross (YRC), TCE, organizes a Fire Safety Awareness Programme for First-Year B.E."
+      ],
+      "verdict": "KEEP",
+      "priority": "MEDIUM",
+      "merge_into": null,
+      "verdict_reason": null,
+      "verdict_note": null,
+      "recommended_columns": {
+        "general": [
+          "S.No",
+          "Title",
+          "Stakeholder",
+          "Date",
+          "Academic Year",
+          "Post URL"
+        ],
+        "departmental": [
+          "S.No",
+          "Title",
+          "Department",
+          "Stakeholder",
+          "Date",
+          "Academic Year",
+          "Post URL"
+        ]
+      },
+      "data_quality_flags": []
+    },
+    "INDUSTRY": {
+      "counts": {
+        "total": 88,
+        "general": 62,
+        "departmental": 26
+      },
+      "coverage": {
+        "date_pct": 44.3,
+        "title_pct": 100.0,
+        "description_pct": 100.0,
+        "stakeholder_pct": 97.7,
+        "url_pct": 55.7,
+        "avg_description_length_chars": 793.9
+      },
+      "approval": {
+        "approved": 1,
+        "needs_review": 3,
+        "unreviewed": 84
+      },
+      "stakeholders_present": [
+        "Alumni",
+        "Community and Society",
+        "Faculty",
+        "Government and Agencies",
+        "Industry",
+        "Students"
+      ],
+      "departments_present": [
+        "Civil Engineering",
+        "Computer Science and Business Systems",
+        "Computer Science and Engineering",
+        "Electrical and Electronics Engineering",
+        "Electronics and Communication Engineering",
+        "Information Technology",
+        "Mechanical Engineering",
+        "Mechatronics",
+        "Physics",
+        "T'SEDA (Architecture, Design, Planning)"
+      ],
+      "sample_titles": [
+        "🤝🚀 MoU SIGNED | BUILD • INCUBATE • IMPACT TCE, ITEL & TCE TBI signed an MoU to strengthen Build Club and co-incubation initiatives, fosterin…",
+        "🚀🧠 Poster Presentation Contest!",
+        "🧘‍♀️🌿 TCE YOGA CELEBRATION 2026 – Relax • Refresh • Rejuvenate!",
+        "💡📘 IP Clinic 2026 | One-to-One Patent Consultation 🚀🔬 Thiagarajar College of Engineering, through the Research & Development – IPR Cell, in…",
+        "🤝 *Meeting with the Hon'ble Chief Minister of Tamil Nadu* On *4 June 2026, Mr.",
+        "Thiagarajar College of Engineering, Madurai 📍 signs NDA 🤝 with Lakshmi Machine Works Limited, Coimbatore 📍 on April 24, 2026 📅, strengthenin…"
+      ],
+      "verdict": "KEEP",
+      "priority": "HIGH",
+      "merge_into": null,
+      "verdict_reason": null,
+      "verdict_note": null,
+      "recommended_columns": {
+        "general": [
+          "S.No",
+          "Title",
+          "Stakeholder",
+          "Date",
+          "Academic Year",
+          "Post URL"
+        ],
+        "departmental": [
+          "S.No",
+          "Title",
+          "Department",
+          "Stakeholder",
+          "Date",
+          "Academic Year",
+          "Post URL"
+        ]
+      },
+      "data_quality_flags": [
+        "Some records are institutional announcements rather than discrete activities"
+      ]
+    },
+    "ACHIEVEMENT": {
+      "counts": {
+        "total": 149,
+        "general": 46,
+        "departmental": 103
+      },
+      "coverage": {
+        "date_pct": 19.5,
+        "title_pct": 100.0,
+        "description_pct": 100.0,
+        "stakeholder_pct": 96.6,
+        "url_pct": 53.7,
+        "avg_description_length_chars": 767.3
+      },
+      "approval": {
+        "approved": 2,
+        "needs_review": 11,
+        "unreviewed": 136
+      },
+      "stakeholders_present": [
+        "Alumni",
+        "Community and Society",
+        "Faculty",
+        "Government and Agencies",
+        "Industry",
+        "Students"
+      ],
+      "departments_present": [
+        "Applied Mathematics and Computational Science",
+        "Artificial Intelligence",
+        "Chemistry",
+        "Civil Engineering",
+        "Computer Science and Business Systems",
+        "Computer Science and Engineering",
+        "Electrical and Electronics Engineering",
+        "Electronics and Communication Engineering",
+        "English",
+        "Information Technology",
+        "Mathematics",
+        "Mechanical Engineering",
+        "Mechatronics",
+        "Physics",
+        "T'SEDA (Architecture, Design, Planning)"
+      ],
+      "sample_titles": [
+        "Career Pathways in AI Product Management: From Technology to Business Impact!",
+        "🏆✨ **HEARTIEST CONGRATULATIONS!** 🇮🇳🚀 Thiagarajar College of Engineering proudly congratulates **Dr.",
+        "🏆✨ PROUD MOMENT FOR TCE IEEE STUDENT BRANCH ✨🏆 TCE IEEE Student Branch has been recognized as a *Winner* at the *IEEE Madras Section Student…",
+        "🎉 Hearty Congratulations!",
+        "✨ The Management, Principal, Staff and Students cordially invite your esteemed presence 🎓 68th College Day Function Thiagarajar College of E…",
+        "✨ The Management, Principal, Staff and Students cordially invite your esteemed presence 🎓 68th College Day Function Thiagarajar College of E…"
+      ],
+      "verdict": "KEEP",
+      "priority": "HIGH",
+      "merge_into": null,
+      "verdict_reason": null,
+      "verdict_note": "Only category where Name + Achievement Description are appropriate columns. 20% date coverage is a concern.",
+      "recommended_columns": {
+        "general": [
+          "S.No",
+          "Stakeholder",
+          "Name",
+          "Award Title",
+          "Achievement Description",
+          "Academic Year",
+          "Post URL"
+        ],
+        "departmental": [
+          "S.No",
+          "Stakeholder",
+          "Name",
+          "Department",
+          "Award Title",
+          "Achievement Description",
+          "Academic Year",
+          "Post URL"
+        ],
+        "note": "Only category where Name and Achievement Description columns are appropriate."
+      },
+      "data_quality_flags": [
+        "20% date coverage — worst of any major category"
+      ]
+    },
+    "PLACEMENT": {
+      "counts": {
+        "total": 21,
+        "general": 7,
+        "departmental": 14
+      },
+      "coverage": {
+        "date_pct": 47.6,
+        "title_pct": 100.0,
+        "description_pct": 100.0,
+        "stakeholder_pct": 95.2,
+        "url_pct": 47.6,
+        "avg_description_length_chars": 751.9
+      },
+      "approval": {
+        "approved": 0,
+        "needs_review": 3,
+        "unreviewed": 18
+      },
+      "stakeholders_present": [
+        "Alumni",
+        "Community and Society",
+        "Faculty",
+        "Government and Agencies",
+        "Industry",
+        "Students"
+      ],
+      "departments_present": [
+        "Applied Mathematics and Computational Science",
+        "Computer Science and Business Systems",
+        "Computer Science and Engineering",
+        "Electronics and Communication Engineering",
+        "Mechanical Engineering",
+        "Mechatronics",
+        "T'SEDA (Architecture, Design, Planning)"
+      ],
+      "sample_titles": [
+        "🏆🎉 Congratulations to Dr.",
+        "🏆🚗 STEP Centre Triumph!",
+        "📡 Welcome to the World of ECE @ Thiagarajar College of Engineering Step into the exciting world of Electronics & Communication!",
+        "🎓 Career Guidance Exposure Visit 2025 Inspiring Young Minds Towards Higher Education Thiagarajar College of Engineering, Madurai, warmly wel…",
+        "🎓 5-Day Online Certificate Program on Logistics & Supply Chain Management (LSCM) 🗓 Weekends starting October 11, 2025 Resource persons from…",
+        "🏆 Proud Achievement!"
+      ],
+      "verdict": "KEEP",
+      "priority": "LOW",
+      "merge_into": null,
+      "verdict_reason": null,
+      "verdict_note": "21 records; some miscategorisation detected.",
+      "recommended_columns": {
+        "general": [
+          "S.No",
+          "Title",
+          "Stakeholder",
+          "Date",
+          "Academic Year",
+          "Post URL"
+        ],
+        "departmental": [
+          "S.No",
+          "Title",
+          "Department",
+          "Stakeholder",
+          "Date",
+          "Academic Year",
+          "Post URL"
+        ]
+      },
+      "data_quality_flags": [
+        "Some records appear miscategorised (promotional/course posts)"
+      ]
+    },
+    "INTERNSHIP": {
+      "counts": {
+        "total": 41,
+        "general": 9,
+        "departmental": 32
+      },
+      "coverage": {
+        "date_pct": 26.8,
+        "title_pct": 100.0,
+        "description_pct": 100.0,
+        "stakeholder_pct": 92.7,
+        "url_pct": 63.4,
+        "avg_description_length_chars": 826.3
+      },
+      "approval": {
+        "approved": 2,
+        "needs_review": 2,
+        "unreviewed": 37
+      },
+      "stakeholders_present": [
+        "Community and Society",
+        "Faculty",
+        "Government and Agencies",
+        "Industry",
+        "Students"
+      ],
+      "departments_present": [
+        "Applied Mathematics and Computational Science",
+        "Artificial Intelligence",
+        "Civil Engineering",
+        "Computer Science and Business Systems",
+        "Computer Science and Engineering",
+        "Electrical and Electronics Engineering",
+        "Electronics and Communication Engineering",
+        "Mechanical Engineering",
+        "Mechatronics",
+        "Physics",
+        "T'SEDA (Architecture, Design, Planning)"
+      ],
+      "sample_titles": [
+        "🤖🔥 Ready to Build the Future with Robotics?",
+        "🚀 TCE AI CONSORTIUM presents SUMMER INTERNSHIP 2026 🤖 AI-Powered Predictive Analytics & Decision Support Systems 🎯 Who can apply?",
+        "🚀 TCE AI CONSORTIUM presents SUMMER INTERNSHIP 2026 🤖 AI-Powered Predictive Analytics & Decision Support Systems 🎯 Who can apply?",
+        "🚀 Summer Internship 2026 @ TCE Enhance your skills in Data Analytics, LLMs, Responsible AI, Deep Learning & Agricultural Diagnostics through…",
+        "📰 The Economic Times | 14 Aug 2025 | Madurai 📢 Sez Us Launches in India – Internships with TCE, Madurai ✅ Focus: Real users, healthy & civil…",
+        "🎓 Summer Internship Programme 2025 🔬 For Engineering, Arts & Science Students 📅 June 23 – July 18, 2025 📍 Hybrid Mode (1 Week Offline + 3 We…"
+      ],
+      "verdict": "KEEP",
+      "priority": "MEDIUM",
+      "merge_into": null,
+      "verdict_reason": null,
+      "verdict_note": "27% date coverage; possible near-duplicate records.",
+      "recommended_columns": {
+        "general": [
+          "S.No",
+          "Title",
+          "Date",
+          "Academic Year",
+          "Post URL"
+        ],
+        "departmental": [
+          "S.No",
+          "Title",
+          "Department",
+          "Stakeholder",
+          "Date",
+          "Academic Year",
+          "Post URL"
+        ]
+      },
+      "data_quality_flags": [
+        "27% date coverage",
+        "Possible near-duplicate records (same programme posted multiple times)"
+      ]
+    },
+    "RESEARCH": {
+      "counts": {
+        "total": 84,
+        "general": 28,
+        "departmental": 56
+      },
+      "coverage": {
+        "date_pct": 36.9,
+        "title_pct": 100.0,
+        "description_pct": 100.0,
+        "stakeholder_pct": 85.7,
+        "url_pct": 64.3,
+        "avg_description_length_chars": 760.7
+      },
+      "approval": {
+        "approved": 4,
+        "needs_review": 7,
+        "unreviewed": 73
+      },
+      "stakeholders_present": [
+        "Community and Society",
+        "Faculty",
+        "Government and Agencies",
+        "Industry",
+        "Students"
+      ],
+      "departments_present": [
+        "Applied Mathematics and Computational Science",
+        "Artificial Intelligence",
+        "Civil Engineering",
+        "Computer Science and Business Systems",
+        "Computer Science and Engineering",
+        "Electrical and Electronics Engineering",
+        "Electronics and Communication Engineering",
+        "Information Technology",
+        "Mathematics",
+        "Mechanical Engineering",
+        "Mechatronics",
+        "Physics",
+        "T'SEDA (Architecture, Design, Planning)"
+      ],
+      "sample_titles": [
+        "📢📝 Call for Papers | Thiagarajar Journal of Engineering, Science, Design & Technology (TJESDT) 🚀📚 Thiagarajar College of Engineering invites…",
+        "🎉✨ T’CODE Takes Flight!",
+        "🎉🏆 Utility Patent Granted | Another Milestone for TCE Innovation!",
+        "🎉🏆 Utility Patent Granted | A Proud Milestone for TCE Innovation!",
+        "🎉🏆 **Utility Patent Granted | A Proud Milestone for TCE Innovation!** 🇮🇳💡 Thiagarajar College of Engineering proudly congratulates our facul…",
+        "🎉🏆 *Patent Grant Achievement* 🏆🎉 Heartiest Congratulations to the Inventors of Thiagarajar College of Engineering on receiving the **Utility…"
+      ],
+      "verdict": "KEEP",
+      "priority": "HIGH",
+      "merge_into": null,
+      "verdict_reason": null,
+      "verdict_note": "37% date coverage; possible near-duplicate patent posts.",
+      "recommended_columns": {
+        "general": [
+          "S.No",
+          "Title",
+          "Date",
+          "Academic Year",
+          "Post URL"
+        ],
+        "departmental": [
+          "S.No",
+          "Title",
+          "Department",
+          "Stakeholder",
+          "Date",
+          "Academic Year",
+          "Post URL"
+        ]
+      },
+      "data_quality_flags": [
+        "37% date coverage",
+        "Possible near-duplicate patent announcement posts"
+      ]
+    },
+    "ALUMNI": {
+      "counts": {
+        "total": 66,
+        "general": 43,
+        "departmental": 23
+      },
+      "coverage": {
+        "date_pct": 50.0,
+        "title_pct": 98.5,
+        "description_pct": 100.0,
+        "stakeholder_pct": 100.0,
+        "url_pct": 65.2,
+        "avg_description_length_chars": 643.6
+      },
+      "approval": {
+        "approved": 0,
+        "needs_review": 1,
+        "unreviewed": 65
+      },
+      "stakeholders_present": [
+        "Alumni",
+        "Community and Society",
+        "Faculty",
+        "Government and Agencies",
+        "Industry",
+        "Students"
+      ],
+      "departments_present": [
+        "Applied Mathematics and Computational Science",
+        "Civil Engineering",
+        "Computer Applications",
+        "Computer Science and Business Systems",
+        "Computer Science and Engineering",
+        "Electrical and Electronics Engineering",
+        "Electronics and Communication Engineering",
+        "Mechanical Engineering",
+        "T'SEDA (Architecture, Design, Planning)"
+      ],
+      "sample_titles": [
+        "🇦🇺🤝 Australia–Brisbane Alumni Meet 2026 | Reconnect, Network & Celebrate!",
+        "🎉💎 Jalabula Gems | Silver Jubilee Reunion 2026 💜🎓 The TCE 1997–2001 Batch warmly invites its beloved teachers to celebrate 25 years of memor…",
+        "🎓🌟 Alumni Connect 2026 | Inspiring the Next Generation 🚀 Join Alumni Connect 2026 – 2001 Batch Alumni Interaction Series, organized by the A…",
+        "HAM 2026 – Hyderabad Alumni Meet Reuniting Hearts, Rekindling Memories TCE alumni, it’s time to reconnect and relive your campus moments!",
+        "✨ 45 Years of Togetherness (1981–1985) ✨ “A journey of a thousand miles began in these hallways.” With pride and gratitude, the TCE 1981–198…",
+        "🎉 CAM 2025 | Coimbatore Alumni Meet Reuniting hearts, rekindling memories!"
+      ],
+      "verdict": "KEEP",
+      "priority": "MEDIUM",
+      "merge_into": null,
+      "verdict_reason": null,
+      "verdict_note": "Currently excluded from public taxonomy but 66 coherent records. Recommend reconsidering exclusion.",
+      "recommended_columns": {
+        "general": [
+          "S.No",
+          "Title",
+          "Date",
+          "Academic Year",
+          "Post URL"
+        ],
+        "departmental": [
+          "S.No",
+          "Title",
+          "Department",
+          "Date",
+          "Academic Year",
+          "Post URL"
+        ]
+      },
+      "data_quality_flags": [
+        "Currently excluded from public taxonomy despite 66 coherent reportable records"
+      ]
+    },
+    "ORIENTATION": {
+      "counts": {
+        "total": 42,
+        "general": 17,
+        "departmental": 25
+      },
+      "coverage": {
+        "date_pct": 83.3,
+        "title_pct": 100.0,
+        "description_pct": 100.0,
+        "stakeholder_pct": 90.5,
+        "url_pct": 50.0,
+        "avg_description_length_chars": 650.8
+      },
+      "approval": {
+        "approved": 0,
+        "needs_review": 5,
+        "unreviewed": 37
+      },
+      "stakeholders_present": [
+        "Alumni",
+        "Community and Society",
+        "Faculty",
+        "Government and Agencies",
+        "Industry",
+        "Parents",
+        "Students"
+      ],
+      "departments_present": [
+        "Applied Mathematics and Computational Science",
+        "Civil Engineering",
+        "Computer Applications",
+        "Computer Science and Business Systems",
+        "Computer Science and Engineering",
+        "Electrical and Electronics Engineering",
+        "Electronics and Communication Engineering",
+        "English",
+        "Mathematics",
+        "Mechanical Engineering",
+        "T'SEDA (Architecture, Design, Planning)"
+      ],
+      "sample_titles": [
+        "🎓✨ A New Beginning for Future Tech Leaders!",
+        "🚀🎓 MCA First-Year Orientation Program!",
+        "🎓 Welcoming the Batch of 2031!",
+        "🏎‍🟀 TCE Motorsports Orientation Programme 🚀 * Organized by the Department of Mechanical Engineering, Thiagarajar College of Engineering * Pr…",
+        "🎓✨ Welcome to the M.E.",
+        "FACULTY ORIENTATION PROGRAMME Introduction to Engineering Preparing Faculty for a Transformative First-Year Engineering Experience 📅 Date: 3…"
+      ],
+      "verdict": "KEEP",
+      "priority": "MEDIUM",
+      "merge_into": null,
+      "verdict_reason": null,
+      "verdict_note": "Best date coverage of any category (83%).",
+      "recommended_columns": {
+        "general": [
+          "S.No",
+          "Title",
+          "Stakeholder",
+          "Date",
+          "Academic Year",
+          "Post URL"
+        ],
+        "departmental": [
+          "S.No",
+          "Title",
+          "Department",
+          "Stakeholder",
+          "Date",
+          "Academic Year",
+          "Post URL"
+        ]
+      },
+      "data_quality_flags": []
+    },
+    "CAMPUS": {
+      "counts": {
+        "total": 69,
+        "general": 54,
+        "departmental": 15
+      },
+      "coverage": {
+        "date_pct": 65.2,
+        "title_pct": 100.0,
+        "description_pct": 100.0,
+        "stakeholder_pct": 85.5,
+        "url_pct": 53.6,
+        "avg_description_length_chars": 685.9
+      },
+      "approval": {
+        "approved": 0,
+        "needs_review": 4,
+        "unreviewed": 65
+      },
+      "stakeholders_present": [
+        "Alumni",
+        "Community and Society",
+        "Faculty",
+        "Government and Agencies",
+        "Industry",
+        "Students"
+      ],
+      "departments_present": [
+        "Artificial Intelligence",
+        "Chemistry",
+        "Computer Science and Engineering",
+        "Electrical and Electronics Engineering",
+        "Electronics and Communication Engineering",
+        "English",
+        "Mathematics",
+        "Mechanical Engineering",
+        "Mechatronics",
+        "Physics"
+      ],
+      "sample_titles": [
+        "🏆✨ Celebrating Excellence at TCE!",
+        "🌸🎓 Founder’s Day 2026 | Honouring the Vision of Kalaithanthai Karumuttu Thiagarajan Chettiar 🙏✨ Thiagarajar College of Engineering warmly in…",
+        "🏆💡 National Technology Day 2026 | Hackathon Prize Distribution Ceremony 🎉🚀 Thiagarajar College of Engineering cordially invites you to the N…",
+        "🧘🌿 INTERNATIONAL YOGA DAY 2026 🌍💚 Yoga is the journey of the self, through the self, to the self.",
+        "🌿 Celebrate International Day for Biological Diversity 2026 with us!",
+        "🎉 Join us for 5S Day Celebration 2026 at Thiagarajar College of Engineering 📅 April 15, 2026 | 🕒 03:30 PM 📍 CSE Seminar Hall ✨ Celebrating e…"
+      ],
+      "verdict": "KEEP",
+      "priority": "MEDIUM",
+      "merge_into": null,
+      "verdict_reason": null,
+      "verdict_note": "Catch-all category; boundary with CULTURAL/ACHIEVEMENT/OUTREACH is fuzzy.",
+      "recommended_columns": {
+        "general": [
+          "S.No",
+          "Title",
+          "Stakeholder",
+          "Date",
+          "Academic Year",
+          "Post URL"
+        ],
+        "departmental": [
+          "S.No",
+          "Title",
+          "Department",
+          "Date",
+          "Academic Year",
+          "Post URL"
+        ]
+      },
+      "data_quality_flags": [
+        "Fuzzy category boundary with CULTURAL, ACHIEVEMENT, OUTREACH"
+      ]
+    },
+    "WEBINAR": {
+      "counts": {
+        "total": 34,
+        "general": 9,
+        "departmental": 25
+      },
+      "coverage": {
+        "date_pct": 79.4,
+        "title_pct": 100.0,
+        "description_pct": 100.0,
+        "stakeholder_pct": 94.1,
+        "url_pct": 58.8,
+        "avg_description_length_chars": 704.4
+      },
+      "approval": {
+        "approved": 0,
+        "needs_review": 1,
+        "unreviewed": 33
+      },
+      "stakeholders_present": [
+        "Alumni",
+        "Community and Society",
+        "Faculty",
+        "Government and Agencies",
+        "Industry",
+        "Students"
+      ],
+      "departments_present": [
+        "Applied Mathematics and Computational Science",
+        "Chemistry",
+        "Civil Engineering",
+        "Computer Science and Engineering",
+        "Electrical and Electronics Engineering",
+        "Electronics and Communication Engineering",
+        "English",
+        "Information Technology",
+        "Mathematics",
+        "Mechatronics",
+        "Physics",
+        "T'SEDA (Architecture, Design, Planning)"
+      ],
+      "sample_titles": [
+        "🌿🏢 GREEN BUILDING AWARENESS!",
+        "🏗️✨ From Span to Space!",
+        "🚀🎓 Roadmap to a Master’s in Space Science & Technology!",
+        "🏙️📐 T’SEDA Webinar: Plan Approval Made Simple!",
+        "🎓✨ Webinar | Understanding Political Science as an Urban Planner Thiagarajar College of Engineering invites M.Plan students to an insightful…",
+        "🚧💻 Build the Future with Digital Construction Technologies!"
+      ],
+      "verdict": "KEEP",
+      "priority": "MEDIUM",
+      "merge_into": null,
+      "verdict_reason": null,
+      "verdict_note": null,
+      "recommended_columns": {
+        "general": [
+          "S.No",
+          "Title",
+          "Date",
+          "Academic Year",
+          "Post URL"
+        ],
+        "departmental": [
+          "S.No",
+          "Title",
+          "Department",
+          "Stakeholder",
+          "Date",
+          "Academic Year",
+          "Post URL"
+        ]
+      },
+      "data_quality_flags": []
+    }
+  },
+  "summary": {
+    "categories_to_keep": [
+      "WORKSHOP",
+      "SEMINAR",
+      "CONFERENCE",
+      "GUEST_LECTURE",
+      "FDP",
+      "HACKATHON",
+      "CULTURAL",
+      "SPORTS",
+      "NCC",
+      "NSS",
+      "CLUB",
+      "OUTREACH",
+      "INDUSTRY",
+      "ACHIEVEMENT",
+      "PLACEMENT",
+      "INTERNSHIP",
+      "RESEARCH",
+      "ALUMNI",
+      "ORIENTATION",
+      "CAMPUS",
+      "WEBINAR"
+    ],
+    "categories_to_merge": {
+      "SYMPOSIUM": "CONFERENCE",
+      "STTP": "FDP"
+    },
+    "categories_to_remove": [
+      "TECH_FEST"
+    ],
+    "high_priority_categories": [
+      "WORKSHOP",
+      "SEMINAR",
+      "CONFERENCE",
+      "GUEST_LECTURE",
+      "FDP",
+      "INDUSTRY",
+      "ACHIEVEMENT",
+      "RESEARCH"
+    ],
+    "low_priority_categories": [
+      "CULTURAL",
+      "NCC",
+      "NSS",
+      "PLACEMENT"
+    ],
+    "categories_with_weak_data": [
+      "ACHIEVEMENT",
+      "INTERNSHIP",
+      "HACKATHON",
+      "RESEARCH",
+      "SPORTS",
+      "NCC",
+      "NSS",
+      "TECH_FEST",
+      "SYMPOSIUM",
+      "STTP",
+      "CULTURAL",
+      "PLACEMENT",
+      "INDUSTRY",
+      "CAMPUS",
+      "ALUMNI"
+    ],
+    "only_category_needing_name_column": "ACHIEVEMENT",
+    "global_data_issues": [
+      "Only 15 of 1747 records are APPROVED (0.86%) — reporting policy must be decided",
+      "48.4% of all records lack a usable date",
+      "57.9% of records have a Post URL (42.1% missing)",
+      "Near-duplicate records detected in SPORTS, INTERNSHIP, RESEARCH",
+      "Non-reportable announcement/congratulatory posts mixed into CULTURAL, ACHIEVEMENT, PLACEMENT",
+      "ALUMNI category excluded from public taxonomy despite 66 coherent reportable records"
+    ]
+  },
+  "implementation_plan": [
+    {
+      "phase": 1,
+      "name": "Data cleanup",
+      "action": "Admin review — APPROVE high-confidence records; delete/reclassify non-reportable posts; add dates for ACHIEVEMENT/INTERNSHIP/RESEARCH; de-duplicate SPORTS/INTERNSHIP/RESEARCH"
+    },
+    {
+      "phase": 2,
+      "name": "Category taxonomy update",
+      "action": "Reclassify SYMPOSIUM→CONFERENCE and STTP→FDP (update stored codes); flag TECH_FEST as excluded; reconsider adding ALUMNI to public taxonomy"
+    },
+    {
+      "phase": 3,
+      "name": "Report column redesign",
+      "action": "Implement per-category column definitions per Section 4 of audit; ACHIEVEMENT is the only category with Name + Description columns"
+    },
+    {
+      "phase": 4,
+      "name": "Category boundary definition",
+      "action": "Clarify CAMPUS vs CULTURAL vs ACHIEVEMENT vs OUTREACH boundaries with admin tagging rules"
+    },
+    {
+      "phase": 5,
+      "name": "Reporting gate policy",
+      "action": "Decide whether public reports include UNREVIEWED records or only APPROVED; if APPROVED-only, initiate mass admin review"
+    }
+  ]
+}

@@ -4,7 +4,7 @@ import { api } from "../../services/api";
 import { Card } from "../../components/ui";
 import { Tags } from "../../components/detail";
 import { LoadingState, ErrorState } from "../../components/linkedinPublic";
-import { publicCategoryLabel, publicDepartmentLabel, publicSourceLabel, formatPublicDate } from "../../lib/linkedin";
+import { publicCategoryLabel, publicDepartmentLabel, formatPublicDate } from "../../lib/linkedin";
 
 export default function LinkedinPublicActivityDetail() {
   const { activityId } = useParams();
@@ -60,7 +60,6 @@ export default function LinkedinPublicActivityDetail() {
             <div className="kv-row"><dt>Categories</dt><dd><Tags items={(record.categories || []).map((c) => publicCategoryLabel(c.code, c.name))} /></dd></div>
             <div className="kv-row"><dt>Department</dt><dd>{publicDepartmentLabel(record.department)}</dd></div>
             <div className="kv-row"><dt>Stakeholder</dt><dd>{record.stakeholder || "Not specified"}</dd></div>
-            <div className="kv-row"><dt>Source</dt><dd>{publicSourceLabel(record.source)}</dd></div>
           </dl>
           {record.post_url ? (
             <p className="detail-link">

@@ -18,6 +18,7 @@ from backend.routes.admin import bp as admin_bp
 from backend.routes.auth import bp as auth_bp
 from backend.routes.linkedin_public import bp as linkedin_bp
 from backend.routes.linkedin_admin import bp as linkedin_admin_bp
+from backend.routes.apify_admin import bp as apify_admin_bp
 
 
 def create_app(config=None):
@@ -40,6 +41,18 @@ def create_app(config=None):
     app.register_blueprint(auth_bp)
     app.register_blueprint(linkedin_bp)
     app.register_blueprint(linkedin_admin_bp)
+    app.register_blueprint(apify_admin_bp)
+
+    # Start the weekly Apify scheduler (idempotent; safe to call multiple times).
+    # Only runs in production — skip during testing to avoid background threads.
+    import os as _os
+    if _os.environ.get("FLASK_TESTING") != "1":
+        try:
+            from backend.apify.scheduler import start_scheduler
+            start_scheduler()
+        except Exception as _e:
+            import logging as _log
+            _log.getLogger("tce.app").warning("Apify scheduler not started: %s", _e)
 
     @app.get("/api/health")
     def health():

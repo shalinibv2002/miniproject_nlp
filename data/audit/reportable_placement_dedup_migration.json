@@ -1,0 +1,16 @@
+{
+  "generated_at": "2026-10-03T23:25:49",
+  "database": "backend\\database\\linkedin_reportable.db",
+  "sha256_before": "c19bea4cff55d19a083a64c695d1ad50e20a656f84cebc803e3fc65c25db6f7d",
+  "mode": "apply",
+  "reportable_rows_before": 1279,
+  "jaccard_min": 0.9,
+  "placement": [],
+  "titles_rebuilt": 0,
+  "title_changes": [],
+  "duplicate_groups": [],
+  "sha256_after": "c19bea4cff55d19a083a64c695d1ad50e20a656f84cebc803e3fc65c25db6f7d",
+  "backup": "data\\backups\\linkedin_reportable_20261003_232549.db",
+  "reportable_rows_after": 1279,
+  "rows_removed": 0
+}

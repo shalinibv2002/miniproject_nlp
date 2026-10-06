@@ -38,7 +38,13 @@ DEPARTMENTS = {
     "Information Technology": ("information technology", "it department"),
     "Mechanical Engineering": ("mechanical engineering", "mech"), "Mechatronics": ("mechatronics", "mct"),
     "Physics": ("department of physics",), "Chemistry": ("department of chemistry",),
-    "Mathematics": ("department of mathematics",), "English": ("department of english",),
+    # Mathematics is a SEPARATE department from Applied Mathematics and
+    # Computational Science: the aliases below are deliberately full phrases so a
+    # "department of applied mathematics and computational science" mention can
+    # only ever resolve to AMCS, never to Mathematics.
+    "Mathematics": ("department of mathematics", "maths department", "math department"),
+    "Fashion Technology": ("department of fashion technology", "fashion technology department"),
+    "English": ("department of english",),
 }
 STAKEHOLDER_TERMS = {
     "STUDENTS": ("students", "student", "cadets", "volunteers"), "FACULTY": ("faculty", "professor", "teachers"),

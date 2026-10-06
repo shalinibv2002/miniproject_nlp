@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import { adminApi } from "../../services/api";
 import { KpiCard, Card } from "../../components/ui";
 import { categoryName } from "../../lib/linkedin";
+import ApifySyncStatus from "./ApifySyncStatus";
 
 function BarList({ items }) {
   const total = items.reduce((sum, row) => sum + row.value, 0);
@@ -84,6 +85,9 @@ export default function LinkedinAdminOverview() {
       <p className="muted">
         Final reportable dataset built from LinkedIn posts. Evidence and provenance are visible here only.
       </p>
+
+      {/* Apify Sync Status — Monday 09:00 IST, manual trigger, checkpoint/resume */}
+      <ApifySyncStatus />
 
       <div className="kpi-grid">
         <KpiCard label="Raw Rows Collected" value={data.total_raw_rows} sub="reported across all posts" />

@@ -25,7 +25,7 @@ def test_seed_academic_years_count(conn):
 
 
 def test_seed_departments_count(conn):
-    assert conn.execute("SELECT COUNT(*) AS n FROM departments").fetchone()["n"] == 14
+    assert conn.execute("SELECT COUNT(*) AS n FROM departments").fetchone()["n"] == 16
 
 
 def test_seed_categories_count(conn):

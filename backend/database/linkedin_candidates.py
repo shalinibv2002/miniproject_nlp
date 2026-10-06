@@ -367,6 +367,33 @@ DEPARTMENT_PATTERNS = [
         (r"\bamcs\b", 4),
         (r"data science", 4),
         (r"mathematics and computational science", 5),
+        (r"computational mathematics", 5),
+        (r"applied maths", 5),
+    ]),
+    # Mathematics is a SEPARATE department from Applied Mathematics and
+    # Computational Science.  No pattern below may fire on "applied
+    # mathematics" / "computational mathematics": the negative lookbehind is the
+    # first line of defence and the AMCS/Mathematics drop rule in classify_post()
+    # is the second.
+    ("Mathematics", [
+        (r"(?:department|dept)\.?\s+of\s+mathematics\b", 5),
+        (r"\bmath(?:ematics|s)?\s+club\b", 5),
+        (r"\bmathematics\s+(?:dept|department|association|forum|olympiad)\b", 5),
+        (r"\biccmi\b", 4),
+        (r"\bmaths\b", 4),
+        (r"(?<!applied )(?<!computational )\bmathematics\b", 3),
+    ]),
+    ("Physics", [
+        (r"(?:department|dept)\.?\s+of\s+physics\b", 5),
+        (r"\bphysics\s+(?:dept|department|association|forum)\b", 5),
+        (r"\bphy\b", 4),
+        (r"(?<!physical )\bphysics\b", 3),
+    ]),
+    ("Fashion Technology", [
+        (r"(?:department|dept)\.?\s+of\s+fashion(?:\s+technology)?\b", 5),
+        (r"\bfashion\s+technology\s+(?:dept|department|association|forum)\b", 5),
+        (r"\bfashion technology\b", 4),
+        (r"\bfashion\b", 3),
     ]),
     ("Artificial Intelligence", [
         (r"artificial intelligence", 5),
@@ -405,6 +432,41 @@ DEPARTMENT_PATTERNS = [
 
 
 # ---------------------------------------------------------------------------
+# Co-organising list patterns, applied AFTER DEPARTMENT_PATTERNS.
+#
+# "Departments of ECE, EEE and Physics" and "Departments of Mathematics &
+# Electrical and Electronics Engineering" name a real co-organising list, but a
+# plain unbounded "departments? of .*physics" also matches a post that merely
+# SAYS "Organized by the Department of Chemistry, TCE, Madurai  This FDP brings
+# together ... students in Chemistry & Physics" — because ``_lower_clean``
+# collapses newlines, so `[^\n.]*` happily spans whole sentences.  Both
+# constraints below are therefore mandatory:
+#   * a short window, so the gap cannot run past a sentence, and
+#   * a list separator (",", "&", "and") immediately before the target name.
+# Only these departments need it: the other 14 already have an explicit
+# "<department> of <name>" style pattern that fires on the real organiser text.
+# ---------------------------------------------------------------------------
+DEPARTMENT_LIST_PATTERNS = [
+    ("Mathematics", [
+        # (?!applied|computational) keeps "Departments of Applied Mathematics and
+        # Computational Science" from ever reading as the Mathematics department.
+        (r"departments?\s+of\s+(?!applied\b|computational\b)mathematics\b", 5),
+        (r"departments?\s+of\s+(?!applied\b|computational\b)[^.&]{0,60}?"
+         r"(?:,|&|\band\b)\s*(?:the\s+)?mathematics\b", 5),
+    ]),
+    ("Physics", [
+        (r"departments?\s+of\s+physics\b", 5),
+        (r"departments?\s+of\s+[^.&]{0,60}?(?:,|&|\band\b)\s*(?:the\s+)?physics\b", 5),
+    ]),
+    ("Fashion Technology", [
+        (r"departments?\s+of\s+fashion(?:\s+technology)?\b", 5),
+        (r"departments?\s+of\s+[^.&]{0,60}?(?:,|&|\band\b)\s*(?:the\s+)?"
+         r"fashion(?:\s+technology)?\b", 5),
+    ]),
+]
+
+
+# ---------------------------------------------------------------------------
 # Stakeholder patterns (the eight public stakeholders).  Threshold like depts.
 # ---------------------------------------------------------------------------
 STAKEHOLDER_QUALIFY = 3
@@ -432,7 +494,7 @@ STAKEHOLDER_PATTERNS = [
         (r"teaching staff", 4),
         (r"\btutors?\b", 3),
     ]),
-    ("Industry", [
+    ("Institution", [
         (r"industry", 3),
         (r"\bcompany", 3),
         (r"corporate", 3),
@@ -487,7 +549,7 @@ STAKEHOLDER_PUBLIC_NAMES = {
     "Faculty": "Faculty",
     "Non-Teaching Staff": "Non-Teaching Staff",
     "Alumni": "Alumni",
-    "Industry": "Industry",
+    "Institution": "Institution",
     "Parents": "Parents",
     "Government and Agencies": "Government and Agencies",
     "Community and Society": "Community and Society",
@@ -574,6 +636,18 @@ GENERIC_DEPT_PATTERNS = {
         r"\bai\s+and\s+ml\b", r"\bai[- ]ml\b",
     },
     "Applied Mathematics and Computational Science": {r"data science"},
+    # Bare "mathematics" is a TOPIC ("50% marks in Physics, Chemistry &
+    # Mathematics"), not department evidence.  Only an explicit
+    # "Department of Mathematics" / "Math Club" mention makes Mathematics the
+    # organising department.
+    "Mathematics": {
+        r"(?<!applied )(?<!computational )\bmathematics\b", r"\bmaths\b",
+    },
+    # Same reasoning: a bare "Physics" is almost always an eligibility-criteria
+    # or subject-list mention, not evidence that Physics organised the post.
+    "Physics": {r"(?<!physical )\bphysics\b"},
+    # "Fashion Ramp Walk" / "Pathways in Fashion & Visual Design" are topics.
+    "Fashion Technology": {r"\bfashion\b"},
     "T'SEDA (Architecture, Design, Planning)": {
         r"architecture", r"\bm\.?\s?plan\b",
     },
@@ -890,6 +964,16 @@ def classify_post(post):
             dept_qual[dept] = score
         if found:
             dept_evidence[dept] = found
+    # Co-organising list evidence ("Departments of ECE, EEE and Physics") is
+    # scored on top of the per-department patterns above.
+    for dept, pats in DEPARTMENT_LIST_PATTERNS:
+        score, found = _hits(low, pats)
+        if found:
+            dept_evidence.setdefault(dept, {}).update(found)
+            if dept in dept_qual:
+                dept_qual[dept] += score
+            elif score >= DEPARTMENT_QUALIFY:
+                dept_qual[dept] = score
     # CSE/CSBS family: drop CSE if it only matched the generic 'computer science' term
     # while a more specific CSBS pattern matched the same text.
     if "Computer Science and Business Systems" in dept_qual and "Computer Science and Engineering" in dept_qual:
@@ -898,6 +982,18 @@ def classify_post(post):
             p in cse_found for p in (r"computer science and engineering", r"computer science & engineering", r"\bcse\b")
         ):
             del dept_qual["Computer Science and Engineering"]
+
+    # AMCS/Mathematics family: Applied Mathematics and Computational Science and
+    # Mathematics are two different departments.  When AMCS matched an explicit
+    # (non-generic) pattern, a bare "mathematics" mention belongs to AMCS, so the
+    # Mathematics department is dropped instead of producing a bogus
+    # AMCS + Mathematics pair on the same post.
+    amcs = "Applied Mathematics and Computational Science"
+    if amcs in dept_qual and "Mathematics" in dept_qual:
+        amcs_generic = GENERIC_DEPT_PATTERNS.get(amcs, set())
+        amcs_found = dept_evidence.get(amcs) or {}
+        if any(p not in amcs_generic for p in amcs_found):
+            del dept_qual["Mathematics"]
 
     # --- stakeholder evidence -------------------------------------------------
     stak_qual, stak_evidence = {}, {}

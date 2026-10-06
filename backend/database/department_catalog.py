@@ -19,12 +19,12 @@ GENERAL_LOWERCASE = frozenset({
     "", "general", "institution-wide", "institution wide", "unknown",
 })
 
-# Fixed public department master — exactly the 14 academic departments.
+# Fixed public department master — exactly the 17 academic departments.
 # Every entry must always be presented (counts may be 0).  Order is the
 # canonical presentation order.  General is deliberately NOT a department
 # option: institution-wide activities are presented separately, and any other
-# stored value (e.g. the historical "Physics" rows) stays out of the fixed
-# 14-department view without ever being relabelled.
+# stored value outside this master stays out of the fixed 17-department view
+# without ever being relabelled.
 PUBLIC_DEPARTMENTS = (
     "Civil Engineering",
     "Chemistry",
@@ -32,19 +32,35 @@ PUBLIC_DEPARTMENTS = (
     "Computer Science and Business Systems",
     "Computer Applications",
     "Applied Mathematics and Computational Science",
+    "Mathematics",
+    "Physics",
     "Artificial Intelligence",
     "Electronics and Communication Engineering",
     "Electrical and Electronics Engineering",
     "English",
+    "Fashion Technology",
     "Information Technology",
     "Mechanical Engineering",
     "Mechatronics",
     "T'SEDA (Architecture, Design, Planning)",
 )
 
+# Departments whose names are prefixes/substrings of a sibling department's
+# name.  Normalisation and classification must resolve the LONGER name first so
+# "Applied Mathematics and Computational Science" is never shortened to the
+# separate "Mathematics" department.
+SUBSTRING_RISK_PAIRS = (
+    ("Applied Mathematics and Computational Science", "Mathematics"),
+)
+
 # lowercase stored value -> canonical public department name.  This covers the
 # only aliases observed in the final dataset; already-canonical values pass
 # through untouched.
+#
+# Lookup is EXACT per '; '-separated part, never substring: that is what keeps
+# "Applied Mathematics and Computational Science" from collapsing into the
+# separate "Mathematics" department (see SUBSTRING_RISK_PAIRS).  Both spellings
+# of the mathematics pair are listed explicitly so the two can never merge.
 DEPARTMENT_ALIASES = {
     "it": "Information Technology",
     "civil": "Civil Engineering",
@@ -64,9 +80,43 @@ DEPARTMENT_ALIASES = {
     "data science": "Applied Mathematics and Computational Science",
     "computer science and business system": "Computer Science and Business Systems",
     "english and humanities": "English",
+    # --- Applied Mathematics (AMCS) and Mathematics are SEPARATE departments.
+    "applied mathematics": "Applied Mathematics and Computational Science",
+    "applied mathematics and computational sciences":
+        "Applied Mathematics and Computational Science",
+    "applied maths": "Applied Mathematics and Computational Science",
+    "computational science": "Applied Mathematics and Computational Science",
+    "mathematics": "Mathematics",
+    "maths": "Mathematics",
+    "math": "Mathematics",
+    "department of mathematics": "Mathematics",
+    "maths dept": "Mathematics",
+    "math dept": "Mathematics",
+    # --- Physics
+    "department of physics": "Physics",
+    "phy": "Physics",
+    # --- Fashion Technology
+    "fashion technology": "Fashion Technology",
+    "fashion": "Fashion Technology",
+    "department of fashion technology": "Fashion Technology",
+    "fashion tech": "Fashion Technology",
 }
 
 DEPARTMENT_MASTER = (GENERAL_NAME,) + PUBLIC_DEPARTMENTS
+
+# Guard rails: every canonical alias target must be a real public department
+# (or General).  A typo in DEPARTMENT_ALIASES would silently push rows out of
+# the fixed 17-department view, so the module refuses to import instead.
+_UNKNOWN_ALIAS_TARGETS = sorted({
+    canonical for canonical in DEPARTMENT_ALIASES.values()
+    if canonical not in DEPARTMENT_MASTER
+})
+
+if _UNKNOWN_ALIAS_TARGETS:
+    raise ValueError(
+        "DEPARTMENT_ALIASES targets are not in DEPARTMENT_MASTER: %s"
+        % ", ".join(_UNKNOWN_ALIAS_TARGETS)
+    )
 
 
 def _sql_literal(value):
@@ -79,6 +129,13 @@ def department_normalized_sql(alias="m"):
     general_list = ", ".join(
         _sql_literal(value) for value in sorted(GENERAL_LOWERCASE) if value
     )
+    # Longest-name-first guards, mirroring ``_canonical_part`` so SQL and Python
+    # normalisation can never disagree.
+    longest_guards = "".join(
+        f" WHEN LOWER(TRIM({expr})) LIKE {_sql_literal(_like_prefix(longer))}"
+        f" THEN {_sql_literal(longer)}"
+        for longer, _shorter in SUBSTRING_RISK_PAIRS
+    )
     whens = "".join(
         f" WHEN {_sql_literal(key)} THEN {_sql_literal(canonical)}"
         for key, canonical in sorted(DEPARTMENT_ALIASES.items())
@@ -87,9 +144,29 @@ def department_normalized_sql(alias="m"):
         f"CASE WHEN {expr} IS NULL OR TRIM({expr}) = ''"
         f" OR LOWER(TRIM({expr})) IN ({general_list})"
         f" THEN {_sql_literal(GENERAL_NAME)}"
-        f" ELSE CASE LOWER(TRIM({expr})){whens}"
+        f" ELSE CASE LOWER(TRIM({expr})){longest_guards}{whens}"
         f" ELSE TRIM({expr}) END END"
     )
+
+
+def _like_prefix(name):
+    """SQL LIKE prefix pattern matching ``name`` case-insensitively."""
+    return name.lower() + "%"
+
+
+def _canonical_part(part):
+    """Map one '; '-separated department part to its canonical name.
+
+    Longest-name-first: a part that starts with a longer public department name
+    always resolves to that longer department.  Without this, a fuzzy or
+    substring rule would let "Applied Mathematics and Computational Science"
+    collapse into the separate "Mathematics" department.
+    """
+    key = part.lower()
+    for longer, _shorter in SUBSTRING_RISK_PAIRS:
+        if part.startswith(longer) or key.startswith(longer.lower()):
+            return longer
+    return DEPARTMENT_ALIASES.get(key, part)
 
 
 def normalize_department(value):
@@ -109,9 +186,7 @@ def normalize_department(value):
     parts = [part.strip() for part in text.split(";") if part.strip()]
     if not parts:
         return GENERAL_NAME
-    return "; ".join(
-        DEPARTMENT_ALIASES.get(part.lower(), part) for part in parts
-    )
+    return "; ".join(_canonical_part(part) for part in parts)
 
 
 class DepartmentResolver:

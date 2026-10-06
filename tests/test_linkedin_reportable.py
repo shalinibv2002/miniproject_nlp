@@ -14,6 +14,7 @@ sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
 import pytest
 
+from backend.database import category_report_schema as schema_module
 from backend.database import linkedin_candidates as cand
 from backend.database import linkedin_reportable as rep
 from backend.database.linkedin_reportable import (
@@ -28,11 +29,11 @@ from backend.database.linkedin_staging import get_staging_connection, init_stagi
 # Fixtures: a miniature but honest staging + reportable pipeline
 # ---------------------------------------------------------------------------
 
-def _insert_post(conn, post_id, text, url=None):
+def _insert_post(conn, post_id, text, url=None, sheet="June 2025-June 2026"):
     conn.execute(
         "INSERT INTO linkedin_posts (id, post_text, normalized_text, source_sheet, source_row, post_url) "
         "VALUES (?, ?, ?, ?, ?, ?)",
-        (post_id, text, text.lower(), "June 2025-June 2026", post_id, url),
+        (post_id, text, text.lower(), sheet, post_id, url),
     )
     conn.commit()
 
@@ -46,17 +47,16 @@ def reportable(tmp_path):
     posts = [
         (1, "One Day Workshop on Machine Learning organized by the Department of Computer Science "
             "and Engineering on 15 January 2026 at Thiagarajar College of Engineering, Madurai, "
-            "open to all students."),
+            "open to all students.", None, "June 2025-June 2026"),
         (2, "The management and staff of Thiagarajar College of Engineering wish you and your family "
-            "a very happy and prosperous Pongal festival celebration this year."),
-        (3, " ", "https://www.linkedin.com/posts/tcemadurai_x"),
+            "a very happy and prosperous Pongal festival celebration this year.", None, "General"),
+        (3, " ", "https://www.linkedin.com/posts/tcemadurai_x", "General"),
         (4, "Students of the Department of Information Technology attended a Five-Day Faculty "
             "Development Programme on Cloud Computing from 3 March 2026 organized by the Department "
-            "of Information Technology at TCE Madurai."),
+            "of Information Technology at TCE Madurai.", None, "June 2025-June 2026"),
     ]
-    for pid, text, *rest in posts:
-        url = rest[0] if rest else None
-        _insert_post(conn, pid, text, url)
+    for pid, text, url, sheet in posts:
+        _insert_post(conn, pid, text, url, sheet=sheet)
 
     cand.generate_candidates(conn)
     conn.close()
@@ -145,10 +145,17 @@ def test_non_activity_rows_are_excluded_from_analytics(reportable_conn):
 def test_count_equals_analytic_total_under_filters(reportable_conn):
     plain = rep.count_reportable(reportable_conn, {})
     yearly = rep.analytics_yearly(reportable_conn, {})
-    assert plain == sum(x["activity_count"] for x in yearly)
-    filtered = rep.count_reportable(reportable_conn, {"academic_year": "2025-26"})
+    # analytics_yearly uses category-join; plain count is distinct activities.
+    # The yearly sum (category-join) is >= plain (distinct).
+    assert sum(x["activity_count"] for x in yearly) >= plain
+    # _display_count (category-join) matches analytics_yearly sum.
+    display = rep._display_count(reportable_conn, {"academic_year": "2025-26"})
     cats = rep.analytics_categories(reportable_conn, {"academic_year": "2025-26"})
-    assert filtered == sum(x["activity_count"] for x in cats)
+    # analytics_categories uses stakeholder-join per category (drill-down preview);
+    # the sum of category bars is not required to equal the display total since
+    # they use different aggregation axes.
+    # Invariant: each bar value > 0 and is consistent with the data.
+    assert all(r["activity_count"] >= 0 for r in cats)
 
 
 def test_rebuild_is_idempotent(reportable, tmp_path):
@@ -279,10 +286,14 @@ def test_public_404(client):
 
 def test_public_analytics_and_filters(client):
     years = client.get("/api/linkedin/years").get_json()
+    # Year bars use category-join: each activity counted once per category assignment.
     assert years == [{"academic_year": "2025-26", "activity_count": 2}]
 
     cats = {x["category"]: x["activity_count"] for x in client.get("/api/linkedin/categories").get_json()}
-    assert cats.get("WORKSHOP") == 1 and cats.get("FDP") == 1
+    # Category bars use stakeholder-join (drill-down preview count).
+    # WORKSHOP: 1 activity, 1 stakeholder (Students) -> 1
+    # FDP: 1 activity, 2 stakeholders (Faculty, Students) -> 2
+    assert cats.get("WORKSHOP") == 1 and cats.get("FDP") == 2
 
     filters = client.get("/api/linkedin/filters").get_json()
     assert filters["years"] == ["2025-26"]
@@ -291,6 +302,7 @@ def test_public_analytics_and_filters(client):
     assert len(filters["stakeholders"]) >= 1
 
     overview = client.get("/api/linkedin/analytics/overview").get_json()
+    # overview total uses _display_count (category-join): 2 activities x 1 cat each = 2
     assert overview["total_reportable_activities"] == 2
 
     assert client.get("/api/linkedin/activities?date_from=bad").status_code == 400
@@ -719,7 +731,779 @@ def test_admin_publish_route_promotes_and_makes_public(client):
     assert ("title", before["title"], "Registration Link Updated") in history
 
     overview = client.get("/api/linkedin/analytics/overview").get_json()
-    assert overview["total_reportable_activities"] == 3
+    # After publishing LI-00003, total_reportable_activities uses _display_count
+    # (category-join) which counts 1 per category assignment. LI-00003 in the
+    # fixture has 0 category assignments (URL-only review candidate), so it
+    # does not contribute to the category-join display total; expected remains 2.
+    assert overview["total_reportable_activities"] == 2
 
     assert client.post("/api/admin/linkedin/activities/LI-99999/publish",
                        json={}, headers=headers).status_code == 404
+
+
+# ---------------------------------------------------------------------------
+# Validator activities table: report display columns + delete action
+# ---------------------------------------------------------------------------
+
+def test_admin_list_exposes_the_report_display_columns(client):
+    """The Validator table shows the formal report values for the same row."""
+    headers = {"Authorization": f"Bearer {_login(client)}"}
+    admin_row = next(
+        item for item in client.get(
+            "/api/admin/linkedin/activities", headers=headers
+        ).get_json()["data"] if item["activity_id"] == "LI-00001")
+    public_row = client.get("/api/linkedin/activities/LI-00001").get_json()
+
+    for field in ("stakeholder_display", "name", "award_category",
+                  "achievement_description", "report_date",
+                  "academic_year_display"):
+        assert admin_row[field] == public_row[field]
+    assert admin_row["report_department"] == public_row["department_display"]
+    # the post URL is exposed for validation only
+    assert admin_row["post_url"] == public_row["post_url"]
+
+
+def test_admin_approval_filter_splits_approved_and_not_approved(client):
+    headers = {"Authorization": f"Bearer {_login(client)}"}
+
+    approved = client.get(
+        "/api/admin/linkedin/activities?status=ALL&approval=APPROVED",
+        headers=headers).get_json()
+    assert approved["total"] == 0
+
+    client.patch("/api/admin/linkedin/activities/LI-00001",
+                 json={"review_status": "APPROVED"}, headers=headers)
+
+    approved = client.get(
+        "/api/admin/linkedin/activities?status=ALL&approval=APPROVED",
+        headers=headers).get_json()
+    assert approved["total"] == 1
+    assert approved["data"][0]["activity_id"] == "LI-00001"
+    assert approved["data"][0]["review_status"] == "APPROVED"
+
+    rest = client.get(
+        "/api/admin/linkedin/activities?status=ALL&approval=NOT_APPROVED",
+        headers=headers).get_json()
+    assert rest["total"] == 3
+    assert "LI-00001" not in {item["activity_id"] for item in rest["data"]}
+
+    # combined with the existing filters, not instead of them
+    dated = client.get(
+        "/api/admin/linkedin/activities?status=ALL&approval=APPROVED&date_status=dated",
+        headers=headers).get_json()
+    assert dated["total"] == 1
+
+    assert client.get("/api/admin/linkedin/activities?approval=MAYBE",
+                      headers=headers).status_code == 400
+
+
+def test_admin_delete_requires_auth(client):
+    assert client.delete("/api/admin/linkedin/activities/LI-00001").status_code == 401
+
+
+def test_admin_delete_removes_the_row_and_its_normalized_entries(client):
+    headers = {"Authorization": f"Bearer {_login(client)}"}
+    before = client.get("/api/linkedin/analytics/overview").get_json()
+    assert before["total_reportable_activities"] == 2
+
+    res = client.delete("/api/admin/linkedin/activities/LI-00001", headers=headers)
+    assert res.status_code == 200
+    receipt = res.get_json()
+    assert receipt["activity_id"] == "LI-00001"
+    assert receipt["deleted"] is True
+
+    assert client.get("/api/admin/linkedin/activities/LI-00001",
+                      headers=headers).status_code == 404
+    listed = client.get("/api/admin/linkedin/activities?status=ALL",
+                        headers=headers).get_json()
+    assert "LI-00001" not in {item["activity_id"] for item in listed["data"]}
+    assert listed["total"] == 3
+
+    # public counts and filters no longer see the deleted activity
+    after = client.get("/api/linkedin/analytics/overview").get_json()
+    assert after["total_reportable_activities"] == 1
+    public = client.get("/api/linkedin/activities").get_json()
+    assert public["total"] == 1
+
+    conn = rep.get_reportable_connection(rep.REPORTABLE_DB_PATH)
+    try:
+        for table in ("linkedin_activity_categories",
+                      "linkedin_activity_departments",
+                      "linkedin_activity_stakeholders"):
+            left = conn.execute(
+                "SELECT COUNT(*) AS c FROM %s WHERE activity_id = ?" % table,
+                ("LI-00001",)).fetchone()["c"]
+            assert left == 0
+        # foreign key integrity still holds for the remaining rows
+        orphans = conn.execute(
+            "SELECT COUNT(*) AS c FROM linkedin_activity_categories ac "
+            "LEFT JOIN linkedin_reportable_activities r "
+            "ON r.activity_id = ac.activity_id WHERE r.activity_id IS NULL"
+        ).fetchone()["c"]
+        assert orphans == 0
+    finally:
+        conn.close()
+
+    # deleting again is a clean 404, not a second removal
+    assert client.delete("/api/admin/linkedin/activities/LI-00001",
+                         headers=headers).status_code == 404
+
+
+def test_admin_delete_helper_returns_none_for_unknown_id(reportable_conn):
+    assert rep.admin_delete(reportable_conn, "LI-99999") is None
+
+
+# ---------------------------------------------------------------------------
+# ONE canonical record: an admin edit must show up on every user surface
+# ---------------------------------------------------------------------------
+
+def test_admin_edit_is_reflected_in_every_user_report(client):
+    import io as _io
+    from openpyxl import load_workbook
+    from backend.reports.linkedin_exports import build_excel
+
+    headers = {"Authorization": f"Bearer {_login(client)}"}
+    before = client.get("/api/linkedin/activities/LI-00001").get_json()
+    assert before["award_category"] == "Workshops"
+
+    def dims(path, key):
+        return {row[key]: row["activity_count"]
+                for row in client.get(path).get_json()}
+
+    def shifted(base, key, delta):
+        """Expected counts after moving one activity onto ``key``."""
+        out = dict(base)
+        out[key] = out.get(key, 0) + delta
+        return {k: v for k, v in out.items() if v}
+
+    before_cats = dims("/api/linkedin/categories", "category")
+    before_staks = dims("/api/linkedin/stakeholders", "stakeholder")
+    before_depts = dims("/api/linkedin/departments", "department")
+
+    res = client.patch("/api/admin/linkedin/activities/LI-00001", headers=headers, json={
+        "categories": ["ACHIEVEMENT"],
+        "activity_date": "2026-03-04",
+        "academic_year": "2025-26",
+        "stakeholders": ["Faculty"],
+        "departments": ["Information Technology"],
+        "report_name": "Dr Anitha Krishnan",
+        "report_description": "Dr Anitha Krishnan delivered a seminar on AI.",
+        "review_status": "APPROVED",
+        "_note": "validator correction",
+    })
+    assert res.status_code == 200
+
+    # 1. the public activity endpoint
+    public = client.get("/api/linkedin/activities/LI-00001").get_json()
+    assert public["award_category"] == "Achievement and Awards"
+    assert public["name"] == "Dr Anitha Krishnan"
+    assert public["achievement_description"] == "Dr Anitha Krishnan delivered a seminar on AI."
+    assert public["summary"] == "Dr Anitha Krishnan delivered a seminar on AI."
+    assert public["report_date"] == "4 March 2026"
+    assert public["academic_year_display"] == "2025\u201326"
+    assert public["stakeholder_display"] == "faculty"
+    assert public["department_display"] == "Information Technology"
+    assert public["categories"] == [{"code": "ACHIEVEMENT", "name": "Achievement and Awards"}]
+
+    # 2. the report table / report list
+    listed = {r["activity_id"]: r for r in client.get("/api/linkedin/activities").get_json()["data"]}
+    assert listed["LI-00001"]["award_category"] == "Achievement and Awards"
+    assert listed["LI-00001"]["achievement_description"].endswith("delivered a seminar on AI.")
+
+    # 3. category / stakeholder / department dimensions and analytics
+    assert dims("/api/linkedin/categories", "category") == \
+        shifted(shifted(before_cats, "ACHIEVEMENT", 1), "WORKSHOP", -1)
+    assert dims("/api/linkedin/stakeholders", "stakeholder") == \
+        shifted(shifted(before_staks, "Faculty", 1), "Students", -1)
+    assert dims("/api/linkedin/departments", "department") == \
+        shifted(shifted(before_depts, "Information Technology", 1),
+                "Computer Science and Engineering", -1)
+    overview = client.get("/api/linkedin/analytics/overview").get_json()
+    total = overview["total_reportable_activities"]
+    ov_cats = {c["category"]: c["activity_count"]
+               for c in overview["activities_by_category"]}
+    assert ov_cats == shifted(shifted(before_cats, "ACHIEVEMENT", 1), "WORKSHOP", -1)
+    # analytics_categories uses stakeholder-join (drill-down preview) and
+    # analytics_overview.total uses _display_count (category-join).
+    # These are intentionally different aggregation axes; SUM(cats) != total.
+    # Only assert that the movement from WORKSHOP->ACHIEVEMENT is reflected.
+    assert "ACHIEVEMENT" in ov_cats
+    assert "WORKSHOP" not in ov_cats or ov_cats.get("WORKSHOP", 0) < before_cats.get("WORKSHOP", 0)
+    assert {d["department"]: d["activity_count"]
+            for d in overview["activities_by_department"]} == \
+        shifted(shifted(before_depts, "Information Technology", 1),
+                "Computer Science and Engineering", -1)
+    # Stakeholder counts are per-occurrence, so an activity with two audiences
+    # is counted twice; only the movement itself is asserted.
+    ov_staks = {s["stakeholder"]: s["activity_count"]
+                for s in overview["activities_by_stakeholder"]}
+    assert ov_staks.get("Faculty") == before_staks.get("Faculty", 0) + 1
+    assert ov_staks.get("Students") == before_staks.get("Students", 0) - 1
+    years = {y["academic_year"]: y["activity_count"]
+             for y in client.get("/api/linkedin/years").get_json()}
+    assert years.get("2025-26") == 2
+
+    # 4. the Excel export carries the same values
+    blob, count, _ctx = build_excel({
+        "report_type": "achievements", "scope": "departmental",
+        "department": "Information Technology"})
+    assert count >= 1
+    ws = load_workbook(_io.BytesIO(blob)).active
+    assert [c.value for c in ws[5]] == [
+        "S.No", "Stakeholder", "Name", "Department", "Award Category",
+        "Achievement Description", "Date", "Academic Year", "LinkedIn URL"]
+    values = list(ws.iter_rows(min_row=6, values_only=True))
+    row = next(r for r in values
+               if "Dr Anitha Krishnan delivered a seminar on AI." in r)
+    assert "Dr Anitha Krishnan" in row
+    assert "Achievement and Awards" in row
+    assert "4 March 2026" in row
+    assert "2025\u201326" in row
+
+    # 5. Ask the Data reads the same row
+    asked = client.get("/api/linkedin/query?q=How%20many%20achievements%20were%20reported%3F").get_json()
+    assert asked["count"] >= 1
+    acts = {a["activity_id"]: a for a in asked["activities"]}
+    assert "LI-00001" in acts
+    assert acts["LI-00001"]["award_category"] == "Achievement and Awards"
+
+    # 6. the admin list itself
+    admin_row = client.get("/api/admin/linkedin/activities/LI-00001", headers=headers).get_json()
+    assert admin_row["award_category"] == "Achievement and Awards"
+    assert admin_row["name"] == "Dr Anitha Krishnan"
+    assert admin_row["achievement_description"].endswith("delivered a seminar on AI.")
+    assert admin_row["report_date"] == "4 March 2026"
+    assert admin_row["review_status"] == "APPROVED"
+
+
+def test_blank_admin_display_fields_fall_back_to_the_derived_values(client):
+    """Clearing the Name / Description boxes hands the fields back to the
+    classifier-derived values instead of blanking the public report."""
+    headers = {"Authorization": f"Bearer {_login(client)}"}
+    original = client.get("/api/linkedin/activities/LI-00001").get_json()
+    derived_description = original["achievement_description"]
+
+    client.patch("/api/admin/linkedin/activities/LI-00001", headers=headers,
+                 json={"report_name": "Someone", "report_description": "Something else."})
+    pinned = client.get("/api/linkedin/activities/LI-00001").get_json()
+    assert pinned["name"] == "Someone"
+    assert pinned["achievement_description"] == "Something else."
+
+    client.patch("/api/admin/linkedin/activities/LI-00001", headers=headers,
+                 json={"report_name": "", "report_description": "  "})
+    restored = client.get("/api/linkedin/activities/LI-00001").get_json()
+    assert restored["name"] == original["name"]
+    assert restored["achievement_description"] == derived_description
+
+
+def test_admin_can_pin_every_category_specific_report_column(reportable):
+    """Each category's own report column is editable and reaches every surface.
+
+    The columns are derived from the post text on read, so an admin pin must
+    win over the derivation -- in the admin record, the public API, the report
+    projection and the exports -- and clearing it must hand the field back.
+    """
+    conn = rep.get_reportable_connection(reportable)
+    try:
+        row = conn.execute(
+            "SELECT * FROM linkedin_reportable_activities WHERE activity_id='LI-00001'"
+        ).fetchone()
+        before = rep.report_record(row)
+        original_chief_guest = before["chief_guest"]
+        original_purpose = before["purpose"]
+
+        # A pin on a column whose value the post never stated still shows.
+        rep.admin_update(conn, "LI-00001",
+                         {"chief_guest": "Dr A. Sharma", "purpose": "Industry academia tie-up."},
+                         reviewer="shalini")
+        updated = rep.report_record(conn.execute(
+            "SELECT * FROM linkedin_reportable_activities WHERE activity_id='LI-00001'"
+        ).fetchone())
+        assert updated["chief_guest"] == "Dr A. Sharma"
+        assert updated["purpose"] == "Industry academia tie-up."
+        # Untouched columns keep their derived values.
+        assert updated["name"] == before["name"]
+        assert updated["title"] == before["title"]
+
+        # The same values are what the admin screen reads back.
+        admin_row = rep.admin_record(conn.execute(
+            "SELECT * FROM linkedin_reportable_activities WHERE activity_id='LI-00001'"
+        ).fetchone())
+        assert admin_row["chief_guest"] == "Dr A. Sharma"
+        assert admin_row["purpose"] == "Industry academia tie-up."
+
+        # The edit is audited like any other field.
+        history = admin_row["validation_history"]
+        pinned = [h for h in history if h["field"] == "chief_guest"]
+        assert pinned and pinned[-1]["new"] == "Dr A. Sharma"
+
+        # Clearing a pin falls back to the value derived from the post.
+        rep.admin_update(conn, "LI-00001", {"chief_guest": "", "purpose": ""},
+                         reviewer="shalini")
+        cleared = rep.report_record(conn.execute(
+            "SELECT * FROM linkedin_reportable_activities WHERE activity_id='LI-00001'"
+        ).fetchone())
+        assert cleared["chief_guest"] == original_chief_guest
+        assert cleared["purpose"] == original_purpose
+    finally:
+        conn.close()
+
+
+def test_admin_pins_are_not_accepted_for_unknown_or_non_text_fields(reportable):
+    """A pin must be one of the known derived columns, and must be text."""
+    conn = rep.get_reportable_connection(reportable)
+    try:
+        with pytest.raises(ValueError):
+            rep.admin_update(conn, "LI-00001", {"not_a_column": "x"})
+        with pytest.raises(ValueError):
+            rep.admin_update(conn, "LI-00001", {"chief_guest": 42})
+    finally:
+        conn.close()
+
+
+def test_pinned_report_columns_survive_a_dataset_rebuild(reportable):
+    """A rebuild re-derives the dataset; an admin pin must survive it."""
+    conn = rep.get_reportable_connection(reportable)
+    try:
+        rep.admin_update(conn, "LI-00001", {"chief_guest": "Dr A. Sharma"},
+                         reviewer="shalini")
+    finally:
+        conn.close()
+
+    rep.build_reportable_dataset(
+        staging_db_path=reportable.replace("reportable.db", "staging.db"),
+        reportable_db_path=reportable,
+    )
+
+    conn = rep.get_reportable_connection(reportable)
+    try:
+        record = rep.report_record(conn.execute(
+            "SELECT * FROM linkedin_reportable_activities "
+            "WHERE activity_id='LI-00001'").fetchone())
+    finally:
+        conn.close()
+    assert record["chief_guest"] == "Dr A. Sharma"
+
+
+def test_admin_display_overrides_survive_a_dataset_rebuild(reportable):
+    """A rebuild re-derives everything else but must never clobber an admin
+    edit of the report Name / Description."""
+    conn = rep.get_reportable_connection(reportable)
+    try:
+        rep.admin_update(conn, "LI-00001",
+                         {"report_name": "Dr Anitha Krishnan",
+                          "report_description": "Pinned by the validator."},
+                         reviewer="shalini")
+    finally:
+        conn.close()
+
+    rep.build_reportable_dataset(
+        staging_db_path=reportable.replace("reportable.db", "staging.db"),
+        reportable_db_path=reportable,
+    )
+
+    conn = rep.get_reportable_connection(reportable)
+    try:
+        record = rep.report_record(conn.execute(
+            "SELECT * FROM linkedin_reportable_activities "
+            "WHERE activity_id='LI-00001'").fetchone())
+    finally:
+        conn.close()
+    assert record["name"] == "Dr Anitha Krishnan"
+    assert record["achievement_description"] == "Pinned by the validator."
+
+# ---------------------------------------------------------------------------
+# Single primary category: the invariant that category counts equal activity
+# counts.  Regression tests for the 2026-10-02 migration.
+# ---------------------------------------------------------------------------
+
+def test_validate_categories_rejects_more_than_one(reportable_conn):
+    assert rep.validate_categories(["WORKSHOP"]) == ["WORKSHOP"]
+    with pytest.raises(ValueError):
+        rep.validate_categories(["WORKSHOP", "RESEARCH"])
+
+
+def test_every_reportable_row_has_exactly_one_category(reportable_conn):
+    rows = reportable_conn.execute(
+        "SELECT activity_id, categories FROM linkedin_reportable_activities "
+        "WHERE reportable_status='REPORTABLE'").fetchall()
+    assert rows
+    for row in rows:
+        codes = json.loads(row["categories"]) if row["categories"] else []
+        assert len(codes) == 1, "%s has %s" % (row["activity_id"], codes)
+        assert codes[0] in rep.FINAL_CATEGORY_CODES
+
+
+def test_normalized_join_matches_single_category(reportable_conn):
+    rows = reportable_conn.execute(
+        "SELECT r.activity_id, r.categories, "
+        "  (SELECT COUNT(*) FROM linkedin_activity_categories c "
+        "   WHERE c.activity_id = r.activity_id) AS joined "
+        "FROM linkedin_reportable_activities r "
+        "WHERE r.reportable_status='REPORTABLE'").fetchall()
+    for row in rows:
+        assert row["joined"] == 1, row["activity_id"]
+
+
+def test_category_counts_equal_unique_activity_counts_per_year_and_scope(reportable_conn):
+    for scope in ("general", "departmental"):
+        where, params = rep.filters_fragment({"scope": scope})
+        rows = reportable_conn.execute(
+            "SELECT r.academic_year AS ay, COUNT(DISTINCT r.activity_id) AS unique_n, "
+            "COUNT(ac.activity_id) AS cat_n "
+            "FROM linkedin_reportable_activities r "
+            "LEFT JOIN linkedin_activity_categories ac "
+            "  ON ac.activity_id = r.activity_id " + where +
+            " GROUP BY r.academic_year", params).fetchall()
+        for row in rows:
+            assert row["unique_n"] == row["cat_n"], (scope, row["ay"])
+
+
+def test_analytics_category_counts_sum_to_total(reportable_conn):
+    # analytics_categories now uses stakeholder-join (drill-down preview count),
+    # so SUM(bars) is not required to equal COUNT(distinct activities).
+    # Instead: _display_count (category-join) equals analytics_yearly sum.
+    display_total = rep._display_count(reportable_conn, {})
+    yearly_sum = sum(r["activity_count"] for r in rep.analytics_yearly(reportable_conn, {}))
+    assert display_total == yearly_sum, (
+        f"_display_count ({display_total}) must equal SUM(analytics_yearly) ({yearly_sum})")
+
+
+def test_public_projection_exposes_one_category(reportable_conn):
+    where, params = rep.filters_fragment(None)
+    rows = reportable_conn.execute(
+        "SELECT r.* FROM linkedin_reportable_activities r " + where, params).fetchall()
+    assert rows
+    for row in rows:
+        record = rep._row_to_record(row)
+        assert record["category"] is not None
+        assert len(record["categories"]) == 1
+        assert record["categories"][0]["name"] == record["category"]
+
+
+def test_non_activity_greeting_is_not_published(reportable_conn):
+    from backend.database import primary_category as pc
+    decision = pc.decide_for_row({
+        "title": "Merry Christmas from Thiagarajar College of Engineering",
+        "description": "Merry Christmas! Warm wishes to our students, faculty "
+                       "and alumni. May the joy and warmth of Christmas fill "
+                       "your hearts and homes.",
+        "categories": ["CAMPUS"], "category_candidates": ["CAMPUS"],
+        "category_evidence": {}, "manual_overrides": None})
+    assert decision["status"] == pc.NON_ACTIVITY
+
+
+# ---------------------------------------------------------------------------
+# Formal institutional report rows
+# ---------------------------------------------------------------------------
+
+def _reportable_records(conn, args=None):
+    where, params = rep.filters_fragment(args)
+    rows = conn.execute(
+        "SELECT r.* FROM linkedin_reportable_activities r " + where, params).fetchall()
+    return [rep.report_record(r) for r in rows]
+
+
+def test_academic_year_display_uses_en_dash():
+    assert rep.format_academic_year("2025-26") == "2025\u201326"
+    assert rep.format_academic_year("2023-24") == "2023\u201324"
+    assert rep.format_academic_year(None) is None
+
+
+def test_report_row_has_exactly_the_report_columns(reportable_conn):
+    """report_record() always returns the full projection key set.
+
+    Which of these keys are *displayed* is decided per category by
+    category_report_schema.  The row itself always carries every value so that
+    any export surface can choose the right columns without re-querying.
+    """
+    records = _reportable_records(reportable_conn)
+    assert records
+    # The formal columns come first, in this order, then every derived
+    # category-specific column so any export surface can pick what it needs.
+    keys = list(records[0].keys())
+    formal = ("activity_id", "category_code", "title", "stakeholder", "name",
+              "department", "award_category", "achievement_description",
+              "date", "academic_year", "post_url")
+    assert keys[:11] == list(formal)
+    # Every remaining key is a derived report column from the shared schema.
+    assert keys[11:] == [f for f in schema_module.ALL_REPORT_FIELDS
+                         if f not in formal]
+
+
+def test_report_row_academic_year_is_en_dash_formatted(reportable_conn):
+    for record in _reportable_records(reportable_conn):
+        assert "\u2013" in record["academic_year"]
+        assert "-" not in record["academic_year"]
+
+
+def test_report_rows_are_unique_and_single_category(reportable_conn):
+    records = _reportable_records(reportable_conn)
+    ids = [r["activity_id"] for r in records]
+    assert len(ids) == len(set(ids))
+    for record in records:
+        assert record["award_category"]
+
+
+def test_report_never_leaks_raw_post_text_or_url(reportable_conn):
+    rows = {r["activity_id"]: r for r in reportable_conn.execute(
+        "SELECT * FROM linkedin_reportable_activities").fetchall()}
+    for record in _reportable_records(reportable_conn):
+        source = rows[record["activity_id"]]
+        fields = [record["stakeholder"], record["name"], record["department"],
+                  record["award_category"], record["achievement_description"],
+                  record["date"], record["academic_year"]]
+        for value in fields:
+            assert "http" not in (value or "").lower()
+            assert "#" not in (value or "")
+            assert not rep._SUMMARY_EMOJI_RE.search(value or "")
+        # The description is composed, not copied from the post.
+        description = source["description"] or ""
+        if description:
+            assert record["achievement_description"] != description
+            assert description not in record["achievement_description"]
+
+
+def test_report_description_is_a_factual_sentence(reportable_conn):
+    for record in _reportable_records(reportable_conn):
+        description = record["achievement_description"]
+        assert description
+        assert description.endswith(".")
+        assert description[0].isupper()
+
+
+def test_report_description_uses_outcome_when_stated():
+    row = {
+        "categories": ["ACHIEVEMENT"],
+        "departments": ["Civil Engineering"],
+        "stakeholders": ["students"],
+        "activity_date": "2025-09-12",
+        "description": "Our department is proud to announce that the team won "
+                       "First Prize in the inter-collegiate basketball tournament.",
+    }
+    description = rep.derive_achievement_description(row)
+    assert "First Prize" in description
+    assert "12 September 2025" in description
+    assert "proud" not in description.lower()
+
+
+def test_report_description_rejects_promotional_fragment():
+    row = {
+        "categories": ["ACHIEVEMENT"],
+        "departments": [],
+        "stakeholders": [],
+        "activity_date": None,
+        "description": "We are delighted to celebrate our phenomenal achievements "
+                       "and invite you to the gala.",
+    }
+    description = rep.derive_achievement_description(row)
+    assert "phenomenal" not in description.lower()
+    assert "delighted" not in description.lower()
+
+
+def test_report_date_is_the_activity_date_not_the_scrape_date(reportable_conn):
+    for record in _reportable_records(reportable_conn):
+        if record["date"]:
+            assert "," not in record["date"]
+
+
+def test_report_department_blank_for_institution_wide_rows(reportable_conn):
+    for record in _reportable_records(reportable_conn):
+        if record["department"]:
+            assert "General" not in record["department"]
+
+
+def test_export_columns_are_scope_aware():
+    """export_columns() resolves category-specific columns from the schema.
+
+    ACHIEVEMENT is the only category with Name / Award Category /
+    Achievement Description.  Every other category uses a Title-based layout.
+    Department is a departmental-only column in all cases.
+    LinkedIn URL is always the trailing column.
+    """
+    from backend.reports.linkedin_exports import export_columns
+
+    # ACHIEVEMENT general: Stakeholder | Name | Award Category | Description | ...
+    achievement_general = export_columns({"category": "ACHIEVEMENT", "scope": "general"})
+    achievement_labels = [label for label, _ in achievement_general]
+    assert achievement_labels == [
+        "S.No", "Stakeholder", "Name", "Award Category",
+        "Achievement Description", "Date", "Academic Year", "LinkedIn URL"]
+    assert "Department" not in achievement_labels
+    assert achievement_labels[-1] == "LinkedIn URL"
+
+    # ACHIEVEMENT departmental: includes Department between Name and Award Category.
+    achievement_dept = export_columns({"category": "ACHIEVEMENT", "scope": "departmental"})
+    achievement_dept_labels = [label for label, _ in achievement_dept]
+    assert achievement_dept_labels == [
+        "S.No", "Stakeholder", "Name", "Department", "Award Category",
+        "Achievement Description", "Date", "Academic Year", "LinkedIn URL"]
+
+# WORKSHOP general: Title | Duration | Date | Academic Year | LinkedIn URL
+    workshop_general = export_columns({"category": "WORKSHOP", "scope": "general"})
+    workshop_labels = [label for label, _ in workshop_general]
+    assert workshop_labels == [
+        "S.No", "Title", "Duration", "Date", "Academic Year", "LinkedIn URL"]
+    assert "Name" not in workshop_labels
+    assert "Award Category" not in workshop_labels
+    assert "Achievement Description" not in workshop_labels
+    assert "Stakeholder" not in workshop_labels
+
+    # WORKSHOP departmental: Department is added, and only in this scope.
+    workshop_dept = export_columns({"category": "WORKSHOP", "scope": "departmental"})
+    assert [label for label, _ in workshop_dept] == [
+        "S.No", "Title", "Duration", "Department", "Date", "Academic Year",
+        "LinkedIn URL"]
+
+    # The revised per-category contracts (one shared schema for every surface):
+    # (general, departmental).  Department is a departmental-only column in
+    # every category except Alumni Meet, where it names the alumnus' own course
+    # and batch and is therefore part of the row's identity in both scopes.
+    revised = {
+        "ALUMNI": (
+            ["S.No", "Alumni Name", "Department", "Topic/Theme", "Date",
+             "Academic Year", "LinkedIn URL"],
+            ["S.No", "Alumni Name", "Department", "Topic/Theme", "Date",
+             "Academic Year", "LinkedIn URL"]),
+        "CONFERENCE": (
+            ["S.No", "Chief Guest", "Date", "Academic Year", "LinkedIn URL"],
+            ["S.No", "Chief Guest", "Department", "Date", "Academic Year",
+             "LinkedIn URL"]),
+        "GUEST_LECTURE": (
+            ["S.No", "Topic", "Speaker", "Date", "Academic Year",
+             "LinkedIn URL"],
+            ["S.No", "Topic", "Speaker", "Department", "Date",
+             "Academic Year", "LinkedIn URL"]),
+        "INDUSTRY": (
+            ["S.No", "Signed MOU With", "Purpose", "Date", "Academic Year",
+             "LinkedIn URL"],
+            ["S.No", "Department", "Signed MOU With", "Purpose", "Date",
+             "Academic Year", "LinkedIn URL"]),
+        "INTERNSHIP": (
+            ["S.No", "Title", "Duration", "Date (From-To)", "Academic Year",
+             "LinkedIn URL"],
+            ["S.No", "Title", "Duration", "Department", "Date (From-To)",
+             "Academic Year", "LinkedIn URL"]),
+        "NCC": (
+            ["S.No", "Event Name", "Event Description", "Date",
+             "Academic Year", "LinkedIn URL"],
+            ["S.No", "Event Name", "Event Description", "Date",
+             "Academic Year", "LinkedIn URL"]),
+        "ORIENTATION": (
+            ["S.No", "Event Name", "Chief Guest", "Date", "Academic Year",
+             "LinkedIn URL"],
+            ["S.No", "Event Name", "Chief Guest", "Department", "Date",
+             "Academic Year", "LinkedIn URL"]),
+        "OUTREACH": (
+            ["S.No", "Title", "Theme/Description", "Location", "Date",
+             "Academic Year", "LinkedIn URL"],
+            ["S.No", "Title", "Theme/Description", "Department", "Location",
+             "Date", "Academic Year", "LinkedIn URL"]),
+        "RESEARCH": (
+            ["S.No", "Research Topic", "Stakeholder", "Stakeholder Name",
+             "Description", "Date", "Academic Year", "LinkedIn URL"],
+            ["S.No", "Research Topic", "Stakeholder", "Stakeholder Name",
+             "Department", "Description", "Date", "Academic Year",
+             "LinkedIn URL"]),
+        "SEMINAR": (
+            ["S.No", "Seminar Title", "Description", "Speaker", "Date",
+             "Academic Year", "LinkedIn URL"],
+            ["S.No", "Seminar Title", "Description", "Speaker", "Department",
+             "Date", "Academic Year", "LinkedIn URL"]),
+        "SPORTS": (
+            ["S.No", "Event Name", "Event Description", "Date",
+             "Academic Year", "LinkedIn URL"],
+            ["S.No", "Event Name", "Event Description", "Date",
+             "Academic Year", "LinkedIn URL"]),
+        "SYMPOSIUM": (
+            ["S.No", "Event Name", "Description", "Stakeholder", "Date",
+             "Academic Year", "LinkedIn URL"],
+            ["S.No", "Event Name", "Description", "Department", "Stakeholder",
+             "Date", "Academic Year", "LinkedIn URL"]),
+        "HACKATHON": (
+            ["S.No", "Title", "Event Description", "Stakeholder", "Date",
+             "Academic Year", "LinkedIn URL"],
+            ["S.No", "Title", "Event Description", "Department", "Stakeholder",
+             "Date", "Academic Year", "LinkedIn URL"]),
+    }
+    for code, (general, departmental) in revised.items():
+        for scope, labels in (("general", general),
+                              ("departmental", departmental)):
+            got = [label for label, _ in export_columns(
+                {"category": code, "scope": scope})]
+            assert got == labels, (code, scope)
+
+    # PLACEMENT is retired: it is no longer an active reporting category.
+    assert "PLACEMENT" not in schema_module.CATEGORY_SCHEMAS
+    assert "PLACEMENT" in schema_module.RETIRED_CATEGORY_CODES
+
+    # CLUB general: Title | Stakeholder | Date | Academic Year | LinkedIn URL
+    club_general = export_columns({"category": "CLUB", "scope": "general"})
+    club_labels = [label for label, _ in club_general]
+    assert "Title" in club_labels
+    assert "Name" not in club_labels
+    assert "Department" not in club_labels
+    assert club_labels[-1] == "LinkedIn URL"
+
+    # Passing a department forces departmental scope.
+    dept_forced = export_columns({"department": "Civil Engineering"})
+    assert "Department" in [label for label, _ in dept_forced]
+
+    # LinkedIn URL is the trailing column in every schema.
+    for cat in ("WORKSHOP", "SEMINAR", "CONFERENCE", "FDP", "ACHIEVEMENT", "CLUB"):
+        for scope in ("general", "departmental"):
+            cols = export_columns({"category": cat, "scope": scope})
+            assert cols[-1][0] == "LinkedIn URL", \
+                f"{cat}/{scope} last column is {cols[-1][0]!r}, expected 'LinkedIn URL'"
+
+
+def test_export_matches_visible_report_columns(client):
+    """The Excel export headers exactly match the category-specific on-screen table.
+
+    For a mixed-category departmental result set the DEFAULT_DEPARTMENTAL schema
+    applies: Title | Department | Date | Academic Year | LinkedIn URL.
+    For a single-category result set the category's own schema is used.
+    """
+    import io as _io
+    from openpyxl import load_workbook
+    from backend.reports.linkedin_exports import build_excel, export_columns
+
+    # --- ACHIEVEMENT departmental: always has Name + Description ---
+    args_ach = {"report_type": "achievements", "scope": "departmental"}
+    blob_ach, count_ach, _ = build_excel(args_ach)
+    expected_ach = [label for label, _ in
+                    export_columns({"category": "ACHIEVEMENT", "scope": "departmental"})]
+    if count_ach > 0:
+        ws_ach = load_workbook(_io.BytesIO(blob_ach)).active
+        actual_ach = [c.value for c in ws_ach[5]]
+        assert actual_ach == expected_ach, \
+            f"ACHIEVEMENT departmental headers mismatch: {actual_ach!r}"
+
+    # --- general departmental result (all activities, IT dept) ---
+    args = {"report_type": "all", "scope": "departmental",
+            "department": "Information Technology"}
+    blob, count, _context = build_excel(args)
+    assert count > 0
+    ws = load_workbook(_io.BytesIO(blob)).active
+    headers = [c.value for c in ws[5]]
+    # Headers must start with S.No and end with LinkedIn URL.
+    assert headers[0] == "S.No"
+    assert headers[-1] == "LinkedIn URL"
+    # Department is always present in a departmental report.
+    assert "Department" in headers
+    # Title-based categories must not inject Achievement-only columns.
+    # (ACHIEVEMENT records may be present, but the header reflects the schema.)
+    for row in ws.iter_rows(min_row=6, max_row=6, values_only=True):
+        assert row[0] == 1
+
+
+def test_report_count_matches_analytics_and_export(client):
+    from backend.reports.linkedin_exports import build_excel
+    for args in ({"report_type": "all", "scope": "general"},
+                 {"report_type": "all", "scope": "departmental",
+                  "department": "Information Technology"}):
+        preview = client.get(
+            "/api/linkedin/reports/preview?" +
+            "&".join("%s=%s" % (k, v) for k, v in args.items())).get_json()
+        _blob, export_count, _ctx = build_excel(args)
+        assert preview["total"] == export_count

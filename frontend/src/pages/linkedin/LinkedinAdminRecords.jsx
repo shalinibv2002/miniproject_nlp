@@ -1,31 +1,15 @@
-import { useEffect, useMemo, useState } from "react";
+import { useEffect, useState } from "react";
 import { Link, useSearchParams } from "react-router-dom";
 import { adminApi } from "../../services/api";
 import { Card } from "../../components/ui";
 import { Pager } from "../../components/detail";
-import { categoryName, confidenceInfo, statusTone } from "../../lib/linkedin";
+import { ReportTable } from "../../components/ReportTable";
 
-const FILTER_KEYS = ["status", "category", "department", "stakeholder",
-  "academic_year", "review_status", "confidence", "date_status",
+// The validator works from four questions only: is it approved, which year,
+// which category and which audience.  Everything else the API can filter on
+// stays out of this screen on purpose.
+const FILTER_KEYS = ["approval", "category", "stakeholder", "academic_year",
   "sort", "order", "page", "pageSize"];
-
-function SortTh({ label, sortKey, sort, order, onSort }) {
-  const active = sort === sortKey;
-  return (
-    <button type="button"
-      className={`sort-th${active ? " active" : ""}`}
-      onClick={() => onSort(sortKey, active && order === "asc" ? "desc" : "asc")}>
-      {label}
-      {active && <span className="sort-arrow">{order === "asc" ? " ▲" : " ▼"}</span>}
-    </button>
-  );
-}
-
-function Pill({ value, title }) {
-  return (
-    <span className={`pill ${statusTone(value)}`} title={title}>{value || "—"}</span>
-  );
-}
 
 export default function LinkedinAdminRecords() {
   const [searchParams, setSearchParams] = useSearchParams();
@@ -37,10 +21,13 @@ export default function LinkedinAdminRecords() {
     }
     return next;
   });
-  const [searchInput, setSearchInput] = useState(filters.search || "");
   const [items, setItems] = useState(null);
   const [total, setTotal] = useState(0);
+  const [pagination, setPagination] = useState(null);
   const [error, setError] = useState(false);
+  const [actionError, setActionError] = useState("");
+  const [deleting, setDeleting] = useState(null);
+  const [reload, setReload] = useState(0);
   const [options, setOptions] = useState({ categories: [], departments: [], stakeholders: [], academic_years: [] });
 
   useEffect(() => {
@@ -50,17 +37,6 @@ export default function LinkedinAdminRecords() {
     }).catch(() => { /* filters still usable, vocabulary falls back */ });
     return () => { active = false; };
   }, []);
-
-  useEffect(() => {
-    const timer = setTimeout(() => {
-      setFilters((current) => {
-        const search = searchInput.trim();
-        if ((current.search || "") === search) return current;
-        return { ...current, search, page: "" };
-      });
-    }, 300);
-    return () => clearTimeout(timer);
-  }, [searchInput]);
 
   useEffect(() => {
     let active = true;
@@ -77,59 +53,61 @@ export default function LinkedinAdminRecords() {
         if (!active) return;
         setItems(body.data || []);
         setTotal(body.total || 0);
+        setPagination(body.pagination || null);
       })
       .catch(() => { if (active) setError(true); });
     return () => { active = false; };
-  }, [filters, setSearchParams]);
+  }, [filters, setSearchParams, reload]);
 
   const page = Number(filters.page || 1);
   const pageSize = Number(filters.pageSize || 25);
-  const sort = filters.sort || "activity_id";
-  const order = filters.order || "asc";
+  // S.No and the pager follow the server's own page/page_size so the serial
+  // numbers stay continuous even when the requested page size is clamped.
+  const metaPage = Number((pagination && pagination.page) || page);
+  const metaPageSize = Number((pagination && pagination.page_size) || pageSize);
 
   const setFilter = (key, value) => setFilters((current) => (
   { ...current, [key]: value, ...(key === "page" || key === "pageSize" ? {} : { page: "" }) }
 ));
 
-  const onSort = (nextSort, nextOrder) => {
-    setFilters((current) => ({ ...current, sort: nextSort, order: nextOrder, page: "" }));
-  };
-
   const reset = () => {
-    setSearchInput("");
     setFilters({ pageSize: String(pageSize) });
   };
 
-  const columns = useMemo(() => [
+  // Delete is immediate: no confirmation dialog, the row disappears and the
+  // table is reloaded from the server straight away.
+  async function removeRecord(activityId) {
+    if (deleting) return;
+    setDeleting(activityId);
+    setActionError("");
+    try {
+      await adminApi.del(`/api/admin/linkedin/activities/${activityId}`);
+      setItems((current) => (current || []).filter((row) => row.activity_id !== activityId));
+      setTotal((current) => Math.max(0, current - 1));
+      setReload((n) => n + 1);
+    } catch (err) {
+      setActionError(err.message || "Unable to delete this activity.");
+    } finally {
+      setDeleting(null);
+    }
+  }
+
+  const extraColumns = [
     {
-      key: "activity_id", label: "ID",
-      render: (row) => <Link to={`/admin/linkedin/records/${row.activity_id}`} className="mono">{row.activity_id}</Link>,
+      key: "action",
+      label: "Action",
+      render: (row) => (
+        <span className="row-actions">
+          <Link to={`/admin/linkedin/records/${row.activity_id}`}>Edit</Link>
+          <button type="button" className="ghost danger"
+            disabled={Boolean(deleting)}
+            onClick={() => removeRecord(row.activity_id)}>
+            {deleting === row.activity_id ? "Deleting..." : "Delete"}
+          </button>
+        </span>
+      ),
     },
-    {
-      key: "title", label: "Activity",
-      render: (row) => <Link to={`/admin/linkedin/records/${row.activity_id}`}>{row.title}</Link>,
-    },
-    {
-      key: "reportable_status", label: "Status",
-      render: (row) => <Pill value={row.reportable_status} />,
-    },
-    {
-      key: "category", label: "Category",
-      render: (row) => (row.categories || []).map((c) => categoryName(c, options.categories)).join(", ") || "—",
-    },
-    { key: "department", label: "Department", render: (row) => (row.departments || []).join(", ") || "—" },
-    { key: "stakeholder", label: "Stakeholder", render: (row) => (row.stakeholders || []).join(", ") || "—" },
-    { key: "activity_date", label: "Activity Date", render: (row) => row.activity_date || "—" },
-    { key: "academic_year", label: "Academic Year", render: (row) => row.academic_year || "—" },
-    {
-      key: "evidence_score", label: "Confidence",
-      render: (row) => {
-        const info = confidenceInfo(row.evidence_score);
-        return <Pill value={info ? `${info.label} (${row.evidence_score})` : "—"} title={row.evidence_score == null ? "" : `Evidence score: ${row.evidence_score}`} />;
-      },
-    },
-    { key: "review_status", label: "Review", render: (row) => <Pill value={row.review_status || "UNREVIEWED"} /> },
-  ], [options.categories]);
+  ];
 
   const errorTitle = error ? "Unable to load LinkedIn records." : null;
   const emptyText = items && items.length === 0
@@ -139,36 +117,16 @@ export default function LinkedinAdminRecords() {
   return (
     <div className="page">
       <h2>All LinkedIn Records</h2>
-      <p className="muted">Every final reportable row, with admin-only evidence available on each record.</p>
+      <p className="muted">All LinkedIn activities in the final reportable dataset. Use filters to narrow by status, year, category or stakeholder.</p>
 
       <Card className="admin-filters">
         <div className="filter-grid">
           <label className="filter">
             <span>Status</span>
-            <select value={filters.status || ""} onChange={(e) => setFilter("status", e.target.value)}>
-              <option value="">All statuses</option>
-              {(options.statuses || []).map((s) => <option key={s} value={s}>{s}</option>)}
-            </select>
-          </label>
-          <label className="filter">
-            <span>Category</span>
-            <select value={filters.category || ""} onChange={(e) => setFilter("category", e.target.value)}>
-              <option value="">All categories</option>
-              {(options.categories || []).map((c) => <option key={c.code} value={c.code}>{c.name}</option>)}
-            </select>
-          </label>
-          <label className="filter">
-            <span>Department</span>
-            <select value={filters.department || ""} onChange={(e) => setFilter("department", e.target.value)}>
-              <option value="">All departments</option>
-              {(options.departments || []).map((d) => <option key={d} value={d}>{d}</option>)}
-            </select>
-          </label>
-          <label className="filter">
-            <span>Stakeholder</span>
-            <select value={filters.stakeholder || ""} onChange={(e) => setFilter("stakeholder", e.target.value)}>
-              <option value="">All stakeholders</option>
-              {(options.stakeholders || []).map((s) => <option key={s} value={s}>{s}</option>)}
+            <select value={filters.approval || ""} onChange={(e) => setFilter("approval", e.target.value)}>
+              <option value="">Approved / Not Approved</option>
+              <option value="APPROVED">Approved</option>
+              <option value="NOT_APPROVED">Not Approved</option>
             </select>
           </label>
           <label className="filter">
@@ -179,40 +137,18 @@ export default function LinkedinAdminRecords() {
             </select>
           </label>
           <label className="filter">
-            <span>Review Status</span>
-            <select value={filters.review_status || ""} onChange={(e) => setFilter("review_status", e.target.value)}>
-              <option value="">All</option>
-              {(options.review_statuses || []).map((s) => <option key={s} value={s}>{s}</option>)}
+            <span>Category</span>
+            <select value={filters.category || ""} onChange={(e) => setFilter("category", e.target.value)}>
+              <option value="">All categories</option>
+              {(options.categories || []).map((c) => <option key={c.code} value={c.code}>{c.name}</option>)}
             </select>
           </label>
           <label className="filter">
-            <span>Confidence</span>
-            <select value={filters.confidence || ""} onChange={(e) => setFilter("confidence", e.target.value)}>
-              <option value="">All</option>
-              {(options.confidence_levels || []).map((level) => (
-                <option key={level} value={level}>{level[0].toUpperCase() + level.slice(1)}</option>
-              ))}
+            <span>Stakeholder</span>
+            <select value={filters.stakeholder || ""} onChange={(e) => setFilter("stakeholder", e.target.value)}>
+              <option value="">All stakeholders</option>
+              {(options.stakeholders || []).map((s) => <option key={s} value={s}>{s}</option>)}
             </select>
-          </label>
-          <label className="filter">
-            <span>Date Status</span>
-            <select value={filters.date_status || ""} onChange={(e) => setFilter("date_status", e.target.value)}>
-              <option value="">All</option>
-              {(options.date_statuses || []).map((s) => <option key={s} value={s}>{s}</option>)}
-            </select>
-          </label>
-          <label className="filter">
-            <span>Date From</span>
-            <input type="date" value={filters.date_from || ""} onChange={(e) => setFilter("date_from", e.target.value)} />
-          </label>
-          <label className="filter">
-            <span>Date To</span>
-            <input type="date" value={filters.date_to || ""} onChange={(e) => setFilter("date_to", e.target.value)} />
-          </label>
-          <label className="filter filter-search">
-            <span>Search</span>
-            <input type="text" value={searchInput} placeholder="Search title or description"
-              onChange={(e) => setSearchInput(e.target.value)} />
           </label>
           <div className="filter form-actions">
             <button type="button" className="ghost" onClick={reset}>Reset filters</button>
@@ -220,6 +156,7 @@ export default function LinkedinAdminRecords() {
         </div>
       </Card>
 
+      {actionError && <p className="error state" role="alert">{actionError}</p>}
       {errorTitle && <p className="error state">{errorTitle}</p>}
       {!error && !items && <p className="muted state">{emptyText}</p>}
       {!error && items && items.length === 0 && <p className="muted state">{emptyText}</p>}
@@ -228,34 +165,15 @@ export default function LinkedinAdminRecords() {
           <div className="table-actions">
             <span className="muted">{total} record{total === 1 ? "" : "s"} found</span>
           </div>
-          <div className="table-wrap">
-            <table className="data-table">
-              <thead>
-                <tr>
-                  <th>ID</th>
-                  <th><SortTh label="Activity" sortKey="title" sort={sort} order={order} onSort={onSort} /></th>
-                  <th><SortTh label="Status" sortKey="reportable_status" sort={sort} order={order} onSort={onSort} /></th>
-                  <th><SortTh label="Category" sortKey="category" sort={sort} order={order} onSort={onSort} /></th>
-                  <th><SortTh label="Department" sortKey="department" sort={sort} order={order} onSort={onSort} /></th>
-                  <th><SortTh label="Stakeholder" sortKey="stakeholder" sort={sort} order={order} onSort={onSort} /></th>
-                  <th><SortTh label="Activity Date" sortKey="activity_date" sort={sort} order={order} onSort={onSort} /></th>
-                  <th><SortTh label="Academic Year" sortKey="academic_year" sort={sort} order={order} onSort={onSort} /></th>
-                  <th><SortTh label="Confidence" sortKey="evidence_score" sort={sort} order={order} onSort={onSort} /></th>
-                  <th><SortTh label="Review" sortKey="review_status" sort={sort} order={order} onSort={onSort} /></th>
-                </tr>
-              </thead>
-              <tbody>
-                {items.map((row) => (
-                  <tr key={row.activity_id}>
-                    {columns.map((c) => (
-                      <td key={c.key}>{c.render(row)}</td>
-                    ))}
-                  </tr>
-                ))}
-              </tbody>
-            </table>
-          </div>
-          <Pager page={page} pageSize={pageSize} total={total}
+          <ReportTable
+            records={items}
+            showDepartment
+            page={metaPage}
+            pageSize={metaPageSize}
+            departmentCell={(row) => row.report_department || "General"}
+            extraColumns={extraColumns}
+          />
+          <Pager page={metaPage} pageSize={metaPageSize} total={total}
             onPage={(next) => setFilter("page", String(next))}
             onPageSize={(size) => setFilter("pageSize", String(size))} />
         </Card>

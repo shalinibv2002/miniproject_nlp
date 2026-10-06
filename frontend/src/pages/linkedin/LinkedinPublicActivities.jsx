@@ -3,7 +3,7 @@ import { Link, useSearchParams } from "react-router-dom";
 import { api } from "../../services/api";
 import { Card } from "../../components/ui";
 import { LoadingState, ErrorState, EmptyState } from "../../components/linkedinPublic";
-import { publicCategoryLabel, publicDepartmentLabel, publicSourceLabel, formatPublicDate } from "../../lib/linkedin";
+import { publicCategoryLabel, publicDepartmentLabel, formatPublicDate } from "../../lib/linkedin";
 
 const PAGE_SIZE = 12;
 
@@ -191,8 +191,7 @@ export default function LinkedinPublicActivities() {
                     <div className="kv-row"><dt>Department</dt><dd>{publicDepartmentLabel(record.department)}</dd></div>
                     <div className="kv-row"><dt>Stakeholder</dt><dd>{record.stakeholder || "Not specified"}</dd></div>
                   </dl>
-                  <span className="activity-card-source">{publicSourceLabel(record.source)}</span>
-                </Link>
+                  </Link>
               );
             })}
           </div>

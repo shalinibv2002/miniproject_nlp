@@ -1,43 +1,47 @@
 {
   "ay_2026_27_categories": {
-    "ACHIEVEMENT": 9,
-    "ALUMNI": 16,
-    "CAMPUS": 5,
-    "CLUB": 12,
-    "CONFERENCE": 11,
-    "CULTURAL": 2,
-    "FDP": 4,
+    "ACHIEVEMENT": 39,
+    "ALUMNI": 29,
+    "CAMPUS": 6,
+    "CLUB": 13,
+    "CONFERENCE": 12,
+    "CULTURAL": 4,
+    "FDP": 6,
     "GUEST_LECTURE": 11,
-    "HACKATHON": 2,
-    "INDUSTRY": 6,
-    "INTERNSHIP": 16,
-    "NSS": 1,
-    "ORIENTATION": 9,
-    "OUTREACH": 12,
-    "PLACEMENT": 1,
-    "RESEARCH": 31,
-    "SEMINAR": 31,
+    "HACKATHON": 3,
+    "INDUSTRY": 11,
+    "INTERNSHIP": 24,
+    "NCC": 1,
+    "NSS": 2,
+    "ORIENTATION": 10,
+    "OUTREACH": 13,
+    "PLACEMENT": 4,
+    "RESEARCH": 40,
+    "SEMINAR": 32,
     "SPORTS": 2,
     "STTP": 1,
-    "WEBINAR": 6,
-    "WORKSHOP": 9
+    "WEBINAR": 8,
+    "WORKSHOP": 11
   },
-  "ay_2026_27_dated_all_status": 147,
+  "ay_2026_27_dated_all_status": 204,
   "ay_2026_27_departments": {
-    "Applied Mathematics and Computational Science": 2,
-    "Artificial Intelligence": 2,
+    "Applied Mathematics and Computational Science": 3,
+    "Artificial Intelligence": 3,
     "Chemistry": 3,
-    "Civil Engineering": 7,
+    "Civil Engineering": 11,
     "Computer Applications": 3,
-    "Computer Science and Business Systems": 2,
-    "Computer Science and Engineering": 13,
-    "Electrical and Electronics Engineering": 12,
-    "Electronics and Communication Engineering": 15,
-    "General": 4,
-    "Information Technology": 1,
-    "Mechanical Engineering": 7,
-    "Mechatronics": 3,
-    "T'SEDA (Architecture, Design, Planning)": 11
+    "Computer Science and Business Systems": 4,
+    "Computer Science and Engineering": 18,
+    "Electrical and Electronics Engineering": 16,
+    "Electronics and Communication Engineering": 21,
+    "English": 1,
+    "General": 6,
+    "Information Technology": 3,
+    "Mathematics": 3,
+    "Mechanical Engineering": 14,
+    "Mechatronics": 5,
+    "Physics": 4,
+    "T'SEDA (Architecture, Design, Planning)": 19
   },
   "ay_2026_27_new_source_jun_sep_total": 114,
   "ay_2026_27_new_source_months": {
@@ -46,49 +50,48 @@
     "2026-08": 56,
     "2026-09": 24
   },
-  "ay_2026_27_non_activity": 9,
+  "ay_2026_27_non_activity": 11,
   "ay_2026_27_reconciles": true,
-  "ay_2026_27_reportable": 118,
-  "ay_2026_27_review_required": 20,
+  "ay_2026_27_reportable": 170,
+  "ay_2026_27_review_required": 23,
   "ay_2026_27_stakeholders": {
-    "Alumni": 14,
-    "Community and Society": 25,
-    "Faculty": 53,
-    "Government and Agencies": 5,
-    "Industry": 23,
-    "Non-Teaching Staff": 1,
+    "Alumni": 27,
+    "Community and Society": 34,
+    "Faculty": 66,
+    "Government and Agencies": 10,
+    "Industry": 37,
     "Parents": 2,
-    "Students": 86
+    "Students": 124
   },
   "checks": [
     {
       "check": "count_reportable() == status=REPORTABLE rows",
-      "detail": "total=1398",
+      "detail": "total=1339",
       "pass": true
     },
     {
       "check": "unique REPORTABLE total == API count",
-      "detail": "1398 == 1398",
+      "detail": "1339 == 1339",
       "pass": true
     },
     {
       "check": "year filter 2024-25 total matches grouped count",
-      "detail": "261",
+      "detail": "568",
       "pass": true
     },
     {
       "check": "year filter 2025-26 total matches grouped count",
-      "detail": "328",
+      "detail": "595",
       "pass": true
     },
     {
       "check": "year filter 2026-27 total matches grouped count",
-      "detail": "118",
+      "detail": "170",
       "pass": true
     },
     {
       "check": "year filter 2023-24 total matches grouped count",
-      "detail": "10",
+      "detail": "5",
       "pass": true
     },
     {
@@ -103,33 +106,33 @@
     },
     {
       "check": "General + Departmental == unique total",
-      "detail": "644 + 754 = 1398 vs 1398",
+      "detail": "554 + 785 = 1339 vs 1339",
       "pass": true
     },
     {
       "check": "overview.general_departmental matches",
-      "detail": "{'general': 644, 'departmental': 754}",
-      "pass": true
+      "detail": "{'general': 858, 'departmental': 1366}",
+      "pass": false
     },
     {
       "check": "overview total == count_reportable",
-      "detail": "1398",
-      "pass": true
+      "detail": "2224",
+      "pass": false
     },
     {
       "check": "overview yearly total == unique total",
       "detail": "dated+undated",
-      "pass": true
+      "pass": false
     },
     {
       "check": "yearly distribution matches",
       "detail": "",
-      "pass": true
+      "pass": false
     },
     {
       "check": "category distribution matches",
       "detail": "",
-      "pass": true
+      "pass": false
     },
     {
       "check": "department distribution matches",
@@ -188,13 +191,13 @@
     },
     {
       "check": "every staging post has a reportable row",
-      "detail": "1747 staging posts vs 1747 reportable rows",
-      "pass": true
+      "detail": "1752 staging posts vs 1688 reportable rows",
+      "pass": false
     },
     {
       "check": "no reportable row without a staging candidate",
       "detail": "",
-      "pass": true
+      "pass": false
     },
     {
       "check": "NON_ACTIVITY excluded from public analytics",
@@ -203,7 +206,12 @@
     },
     {
       "check": "REVIEW_REQUIRED retained in admin layer",
-      "detail": "",
+      "detail": "228 rows awaiting review (>= the 228 pre-migration)",
+      "pass": true
+    },
+    {
+      "check": "rows flagged for review carry no primary category",
+      "detail": "0 migration-flagged rows, none left with a forced category",
       "pass": true
     },
     {
@@ -214,17 +222,17 @@
     {
       "check": "manual overrides intact",
       "detail": "",
-      "pass": true
+      "pass": false
     },
     {
       "check": "approved records intact",
       "detail": "",
-      "pass": true
+      "pass": false
     },
     {
       "check": "historical sheets unchanged",
       "detail": "",
-      "pass": true
+      "pass": false
     },
     {
       "check": "no invented dates (activity_date implies dated)",
@@ -252,12 +260,63 @@
       "pass": true
     }
   ],
-  "checks_failed": [],
-  "dated_total": 845,
-  "new_source_ay_2026_27_reportable": 115,
+  "checks_failed": [
+    {
+      "check": "overview.general_departmental matches",
+      "detail": "{'general': 858, 'departmental': 1366}",
+      "pass": false
+    },
+    {
+      "check": "overview total == count_reportable",
+      "detail": "2224",
+      "pass": false
+    },
+    {
+      "check": "overview yearly total == unique total",
+      "detail": "dated+undated",
+      "pass": false
+    },
+    {
+      "check": "yearly distribution matches",
+      "detail": "",
+      "pass": false
+    },
+    {
+      "check": "category distribution matches",
+      "detail": "",
+      "pass": false
+    },
+    {
+      "check": "every staging post has a reportable row",
+      "detail": "1752 staging posts vs 1688 reportable rows",
+      "pass": false
+    },
+    {
+      "check": "no reportable row without a staging candidate",
+      "detail": "",
+      "pass": false
+    },
+    {
+      "check": "manual overrides intact",
+      "detail": "",
+      "pass": false
+    },
+    {
+      "check": "approved records intact",
+      "detail": "",
+      "pass": false
+    },
+    {
+      "check": "historical sheets unchanged",
+      "detail": "",
+      "pass": false
+    }
+  ],
+  "dated_total": 1688,
+  "new_source_ay_2026_27_reportable": 167,
   "new_source_non_activity": 9,
   "new_source_reportable": 171,
   "new_source_review_required": 23,
-  "new_source_undated": 57,
-  "total_rows": 1747
+  "new_source_undated": 0,
+  "total_rows": 1688
 }

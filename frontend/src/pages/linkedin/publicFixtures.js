@@ -7,7 +7,7 @@ export const filtersBody = {
     { code: "TECH_FEST", name: "Technical Festival" },
   ],
   departments: ["General", "Computer Science and Engineering", "Information Technology"],
-  stakeholders: ["Students", "Faculty", "Industry"],
+  stakeholders: ["Students", "Faculty", "Institution"],
   date_range: { earliest: "2024-04-01", latest: "2026-06-30" },
 };
 
@@ -25,6 +25,13 @@ export const publicRecordBody = {
   stakeholder: "Students",
   stakeholders: ["Students"],
   source: "TCE LinkedIn",
+  stakeholder_display: "students",
+  name: "Machine Learning",
+  department_display: "Computer Science and Engineering",
+  award_category: "Workshops",
+  achievement_description: 'The Department of Computer Science and Engineering has conducted a workshop on the topic "Machine Learning" on 15 January 2026 for students.',
+  report_date: "15 January 2026",
+  academic_year_display: "2025\u201326",
 };
 
 export const publicRecordBody2 = {
@@ -41,6 +48,13 @@ export const publicRecordBody2 = {
   stakeholder: "Faculty",
   stakeholders: ["Faculty"],
   source: "TCE LinkedIn",
+  stakeholder_display: "faculty",
+  name: "",
+  department_display: "",
+  award_category: "FDP",
+  achievement_description: "Thiagarajar College of Engineering has conducted a Faculty Development Programme for faculty.",
+  report_date: "",
+  academic_year_display: "",
 };
 
 export const activitiesBody = {

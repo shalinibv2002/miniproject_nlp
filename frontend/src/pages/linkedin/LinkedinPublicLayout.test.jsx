@@ -38,9 +38,12 @@ describe("public LinkedIn layout", () => {
     }
   });
 
-  it("credits the data source honestly in the footer", () => {
+  it("keeps the staff login but shows no Source / Date Coverage label", () => {
     renderLayout();
-    expect(screen.getByText(/Based on available TCE LinkedIn posts/i)).toBeInTheDocument();
+    // The provenance label belongs on the Admin side, not on every public page.
+    expect(screen.queryByText(/Based on available TCE LinkedIn posts/i)).toBeNull();
+    expect(screen.queryByText(/Date Coverage/i)).toBeNull();
+    expect(screen.queryByText(/Source/i)).toBeNull();
     const login = screen.getByRole("link", { name: "Staff login" });
     expect(login.getAttribute("href")).toBe("/admin/login");
   });

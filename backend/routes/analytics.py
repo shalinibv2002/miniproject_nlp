@@ -58,7 +58,7 @@ def get_general():
 def get_department():
     """The Department dashboard payload.
 
-    Without ``department`` the overview of the exactly-14 public departments is
+    Without ``department`` the overview of the exactly-17 public departments is
     returned; with one canonical department name only that department is
     reported.  ``General`` is never a valid department option.  An optional
     ``departmental_category`` code restricts every series consistently, and an

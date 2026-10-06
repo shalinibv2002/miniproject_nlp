@@ -181,12 +181,30 @@ def filters():
         conn.close()
 
 
+@bp.get("/report-schema")
+def report_schema():
+    """The category-specific report column definitions (read-only).
+
+    The preview, the exports and the on-screen tables all choose their columns
+    from this one definition; exposing it keeps the contract explicit for any
+    client.
+    """
+    from backend.database.category_report_schema import report_schema_payload
+    return ok(report_schema_payload())
+
+
 @bp.get("/reports/preview")
 def report_preview():
-    """JSON preview for the Report Generator (same dataset as downloads)."""
+    """JSON preview for the Report Generator (same dataset as downloads).
+
+    ``columns`` is the category-specific column definition produced by the very
+    same helper the XLSX/PDF exports use, so the preview table and the
+    downloaded file always show identical columns.
+    """
     from backend.reports.linkedin_exports import (
         REPORT_TYPES,
         _report_sheet_bytes,
+        export_column_payload,
     )
     conn = get_reportable_connection()
     try:
@@ -214,6 +232,7 @@ def report_preview():
             "report_label": REPORT_TYPES[report_type][1],
             "context": context,
             "filters": filter_args,
+            "columns": export_column_payload(filter_args, records),
             "total": count,
             "records": records,
             "breakdown": {
@@ -287,6 +306,9 @@ def question():
     return ok({key: result[key] for key in (
         "question", "status", "answer", "count", "activities",
         "comparison", "rows", "chart", "criteria", "detail",
+        # The grounded selection, so the client reports the result with the
+        # same category-specific columns as the Report Generator.
+        "category_code", "scope", "department",
     ) if key in result})
 
 

@@ -79,17 +79,17 @@ def category_summary(conn):
 
 
 def _department_counts(conn):
-    """Counts for the fixed public department master — exactly the 14.
+    """Counts for the fixed public department master — exactly the 17.
 
     Institution-wide ("General") activities are intentionally NOT part of the
     department view and are skipped here (they belong to the General
     dashboard).  Multi-department rows ('; '-joined canonical names) are
-    counted against every one of the 14 departments they name; zero counts
+    counted against every one of the 17 departments they name; zero counts
     stay visible.  Stored values are normalised part by part (catalog aliases
     apply), so rows that store an alias such as ``Architecture`` also count
     under the canonical master name ``T'SEDA (Architecture, Design,
-    Planning)``.  Values outside the 14 (e.g. historical "Physics" rows) are
-    preserved but never presented as a department.
+    Planning)``.  Values outside the 17 are preserved but never presented as a
+    department.
     """
     counts = {name: 0 for name in PUBLIC_DEPARTMENTS}
     rows = conn.execute(
@@ -308,10 +308,10 @@ def general_analytics(conn, general_category=None, academic_year=None):
 
 @_connection
 def department_analytics(conn, department=None, departmental_category=None, academic_year=None):
-    """The public Department dashboard payload over the exactly-14 master.
+    """The public Department dashboard payload over the exactly-17 master.
 
-    ``department=None`` returns the overview of all 14 departments (General and
-    out-of-master values such as historical "Physics" rows are excluded).
+    ``department=None`` returns the overview of all 17 departments (General and
+    out-of-master values are excluded).
     Giving one canonical department name returns that department alone.  An
     optional Departmental Category code restricts every reported series to
     department activities carrying that category.  An optional ``academic_year``
@@ -319,7 +319,7 @@ def department_analytics(conn, department=None, departmental_category=None, acad
     """
     requested = normalize_department(department) if department else None
     if requested == GENERAL_NAME or (requested is not None and requested not in PUBLIC_DEPARTMENT_SET):
-        raise ValueError("department must be one of the 14 public departments")
+        raise ValueError("department must be one of the 17 public departments")
 
     items, codes = _resolved_universe(conn)
     if academic_year:

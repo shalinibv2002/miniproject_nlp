@@ -73,7 +73,7 @@ def _resolve_scope_and_department(scope, department):
     """Return the canonical department_display for a scope input.
 
     ``general`` maps to the institution-wide value; ``departmental`` requires
-    one of the exactly-14 public departments.
+    one of the exactly-17 public departments.
     """
     scope = (scope or "general").strip().lower()
     if scope in ("general", "institution-wide", "institution_wide"):
@@ -82,7 +82,7 @@ def _resolve_scope_and_department(scope, department):
         canonical = normalize_department(department)
         if canonical == GENERAL_NAME or canonical not in PUBLIC_DEPARTMENT_SET:
             raise AdminValidationError(
-                "department must be one of the 14 public departments for a departmental activity")
+                "department must be one of the 17 public departments for a departmental activity")
         return canonical
     if department and department.strip():
         canonical = normalize_department(department)

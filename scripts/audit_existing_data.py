@@ -871,7 +871,7 @@ def render_markdown(audit):
         L.append(f"  - #{ex['id']} `{ex['title'][:80]}` → {ex['departments']}")
     L.append("")
     if da["out_of_master_values"]:
-        L.append(f"- Values outside the 14-department master (kept, not relabelled): `{da['out_of_master_values']}`")
+        L.append(f"- Values outside the 17-department master (kept, not relabelled): `{da['out_of_master_values']}`")
         L.append("")
 
     sa = audit["stakeholder_audit"]

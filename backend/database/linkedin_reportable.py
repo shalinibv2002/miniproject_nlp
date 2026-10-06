@@ -56,7 +56,9 @@ import sqlite3
 from collections import Counter, OrderedDict
 from datetime import datetime
 
-from backend.database import category_catalog, department_catalog
+from backend.database import (category_catalog, department_catalog,
+                              primary_category, report_fields)
+from backend.database.category_report_schema import ALL_REPORT_FIELDS
 from backend.database.linkedin_candidates import (
     CATEGORY_CANDIDATE_NAMES,
     CATEGORY_PATTERNS,
@@ -124,9 +126,27 @@ PUBLIC_FIELDS = (
 )
 
 # Fields an admin PATCH may change (immutable provenance fields are excluded).
+# ``report_name`` / ``report_description`` are the only two values stored purely
+# for display; every other field here is also what the public filters, analytics
+# and exports read, so one edit updates the whole system.
 ADMIN_EDITABLE_FIELDS = (
     "title", "description", "categories", "departments", "stakeholders",
     "activity_date", "academic_year", "reportable_status", "review_status",
+    "report_name", "report_description",
+)
+
+#: Category-specific report columns an admin may pin, i.e. the fields the
+#: Admin edit form renders for that category.  They are *derived* from the post
+#: text on every read (``report_fields.fields_for``), so without an override a
+#: correction would be silently re-derived away.  They live in the existing
+#: ``manual_overrides`` JSON column -- no migration, no new table, no change to
+#: the report schemas, classification or exports -- and are re-applied on read in
+#: ``_row_to_record`` and preserved across a rebuild in ``_preserve_overrides``.
+#: Keys are the same projection keys the schemas already use.
+ADMIN_OVERRIDABLE_REPORT_FIELDS = (
+    "alumni_name", "alumni_department", "topic_theme", "chief_guest",
+    "speaker", "event_description", "mou_with", "purpose", "duration",
+    "date_range", "location", "stakeholder_name",
 )
 
 # Fields that must never change after a row is created (provenance/source).
@@ -202,6 +222,13 @@ CREATE TABLE IF NOT EXISTS linkedin_reportable_activities (
     reason TEXT,
     is_manually_validated INTEGER NOT NULL DEFAULT 0,
     manual_overrides TEXT,                      -- JSON {field: value} (admin edits)
+    -- Admin-set report display values.  NULL means "not overridden": the value
+    -- derived from the classification is used.  These columns live on the one
+    -- canonical reportable row, so an admin edit is instantly visible to the
+    -- public API, reports, exports, analytics and Ask the Data -- there is no
+    -- second copy of the activity anywhere.
+    report_name TEXT,                          -- overrides the derived Name
+    report_description TEXT,                   -- overrides the composed description
     validation_history TEXT,                    -- JSON [ {field, old, new, by, at, note} ]
     built_at TEXT NOT NULL DEFAULT (datetime('now')),
     updated_at TEXT
@@ -246,6 +273,37 @@ CREATE TABLE IF NOT EXISTS build_meta (
 """
 
 
+# Columns added after the first release of this schema.  ``CREATE TABLE IF NOT
+# EXISTS`` cannot add them to an existing database, so they are applied as an
+# idempotent migration instead.
+REPORTABLE_ADDED_COLUMNS = (
+    ("report_name",
+     "ALTER TABLE linkedin_reportable_activities ADD COLUMN report_name TEXT"),
+    ("report_description",
+     "ALTER TABLE linkedin_reportable_activities ADD COLUMN report_description TEXT"),
+)
+
+
+def ensure_reportable_columns(conn):
+    """Add post-release columns to an existing reportable database.
+
+    Safe and idempotent: it is a no-op on a fresh database (the columns are
+    already in REPORTABLE_SCHEMA) and on an up-to-date one.  Existing rows get
+    NULL, which means "not overridden", so nothing already on display changes.
+    """
+    cols = {r[1] for r in conn.execute(
+        "PRAGMA table_info(linkedin_reportable_activities)").fetchall()}
+    if not cols:
+        return  # table not created yet; REPORTABLE_SCHEMA already declares them
+    added = False
+    for name, ddl in REPORTABLE_ADDED_COLUMNS:
+        if name not in cols:
+            conn.execute(ddl)
+            added = True
+    if added:
+        conn.commit()
+
+
 def get_reportable_connection(db_path=None):
     """Open a connection to the FINAL REPORTABLE database only."""
     path = db_path or REPORTABLE_DB_PATH
@@ -253,11 +311,13 @@ def get_reportable_connection(db_path=None):
     conn = sqlite3.connect(path)
     conn.row_factory = sqlite3.Row
     conn.execute("PRAGMA foreign_keys = ON")
+    ensure_reportable_columns(conn)
     return conn
 
 
 def init_reportable_schema(conn):
     conn.executescript(REPORTABLE_SCHEMA)
+    ensure_reportable_columns(conn)
     conn.commit()
 
 
@@ -305,24 +365,15 @@ class WorkbookInventory:
 # Title / public value derivation (deterministic, non-destructive).
 # ---------------------------------------------------------------------------
 def derive_title(text, limit=140):
-    """A readable title for an activity: a cleaned extract of the post text.
+    """The activity title of a post: ONLY the title itself.
 
-    This is an extract (never fabricated prose).  URLs, extra whitespace and
-    leading hashtags are stripped; the first sentence is used, capped at
-    ``limit`` characters.
+    A LinkedIn caption is not a title, so the raw first sentence is not enough.
+    ``report_fields.clean_title`` isolates the headline (the line, quoted span
+    or pipe segment that names the activity) and drops dates, venues,
+    participant counts, hashtags, emoji and promotional prose.  It extracts; it
+    never adds a word the post does not contain.
     """
-    s = _WS_RE.sub(" ", (text or "")).strip()
-    s = _URL_RE.sub(" ", s)
-    s = _WS_RE.sub(" ", s).strip()
-    s = _HASH_RE.sub("", s).strip().lstrip(":-–— ")
-    if not s:
-        return "Untitled LinkedIn post"
-    m = re.split(r"(?<=[.!?])\s+", s, maxsplit=1)[0]
-    candidate = m or s
-    if len(candidate) <= limit:
-        return candidate
-    cut = candidate[:limit].rstrip(",;: ")
-    return cut + "…"
+    return report_fields.clean_title(text, limit=limit)
 
 
 # ---------------------------------------------------------------------------
@@ -433,6 +484,18 @@ def _json_list(value):
     return []
 
 
+def _json_object(value):
+    if isinstance(value, dict):
+        return value
+    if isinstance(value, str) and value:
+        try:
+            parsed = json.loads(value)
+            return parsed if isinstance(parsed, dict) else {}
+        except ValueError:
+            return {}
+    return {}
+
+
 def _topic_ok(candidate):
     if not candidate or len(candidate) < 2 or not any(c.isalpha() for c in candidate):
         return False
@@ -514,6 +577,16 @@ def _audience_phrase(staks):
     return ", ".join(lowered[:-1]) + " and " + lowered[-1]
 
 
+def _canonical_department_names(depts):
+    """Normalised department names for the Department column.
+
+    Empty for institution-level rows so that the General report shows no
+    department and the Departmental report shows the credited department.
+    """
+    depts = [d for d in (_json_list(depts) or []) if d and d != "General"]
+    return [_SUMMARY_DEPT_ALIAS.get(d, d) for d in depts]
+
+
 def _format_report_date(activity_date):
     if not activity_date:
         return None
@@ -557,8 +630,10 @@ def derive_public_summary(row, limit=480):
 
     summary = " ".join(parts)
     if len(summary) > limit:
-        return summary[:limit].rstrip(" ,;:") + "…"
-    return summary
+        summary = summary[:limit].rstrip(" ,;:") + "\u2026"
+    # Lifted fragments can carry joiners and non-breaking spaces out of emoji
+    # sequences (e.g. a zero-width joiner in a "woman technologist" glyph).
+    return _REPORT_ZERO_WIDTH_RE.sub(" ", summary)
 
 
 def primary_value(values, fallback=None):
@@ -566,6 +641,272 @@ def primary_value(values, fallback=None):
     if not values:
         return fallback
     return values[0]
+
+
+# ---------------------------------------------------------------------------
+# Formal institutional report rows
+# ---------------------------------------------------------------------------
+# The public report must read like an institutional record, not a social post.
+# These helpers build that record out of facts already verified on the row.
+# The raw post text is read only to lift out a name or an outcome phrase; it is
+# never echoed back, and a missing fact is left missing rather than invented.
+
+_REPORT_URL_RE = re.compile(r"(?:https?://|www\.)\S+", re.I)
+_REPORT_HASHTAG_RE = re.compile(r"[#\uff03]\w+")
+_REPORT_WS_RE = re.compile(r"\s+")
+_REPORT_DASH_SPLIT_RE = re.compile(r"\s+[\u2013\u2014-]\s+")
+_REPORT_DATE_TAIL_RE = re.compile(
+    r"\s+(?i:on|dated|held\s+on|conducted\s+on|organi[sz]ed\s+on)\s+"
+    r"\d{1,2}\s*[/-]?\s*(?:%s|\d)|"
+    r"\s+\d{1,2}\s+(?:%s)\s+20\d\d" % ("|".join(
+        m[:3].lower() for m in (
+            "January", "February", "March", "April", "May", "June", "July",
+            "August", "September", "October", "November", "December")),
+        "|".join(m[:3].lower() for m in (
+            "January", "February", "March", "April", "May", "June", "July",
+            "August", "September", "October", "November", "December"))),
+    re.I)
+_REPORT_TRAILING_RE = re.compile(r"[\s,;:.\u2013\u2014-]+$")
+
+# A concrete, verifiable outcome.  Verb first, then what was won/received.
+_REPORT_OUTCOME_RE = re.compile(
+    r"(?i:\b(?:secured|won|bagged|clinched|received|awarded|earned|conferred|"
+    r"obtained|launched|released|published|signed|executed|completed|"
+    r"qualified|selected|felicitated)\b)\s+(?:the\s+|a\s+|an\s+)?"
+    r"(?P<object>[^.!?;\n]{4,90})", re.I)
+
+# Names that a human reader would recognise as the subject of the record.
+_REPORT_NAMED_RE = re.compile(
+    r"(?i:\b(?:workshop|seminar|symposium|conference|webinar|hackathon|"
+    r"fest(?:ival)?|competition|contest|bootcamp|camp|expo|studio|"
+    r"programme|program|workshop|lecture|orientation|summit)\b)"
+    r"\s+(?i:titled|entitled|named)\s+[\u201c\"']?(?P<name>[A-Za-z0-9][^'\"\u201d\n]{1,50})",
+    re.I)
+_REPORT_QUOTED_RE = re.compile(
+    r"[\u201c\"'](?P<name>[A-Za-z0-9][^'\"\u201d\n]{2,45}?)[ \u202f]*[\u201d\"']")
+_REPORT_ACADEMIC_YEAR_DASH = re.compile(r"(\d{4})\s*-\s*(\d{2,4})")
+
+# Quality gates.  LinkedIn posts are full of promotional tallies, emoji
+# bullets and corporate boilerplate.  A fragment is only usable in a formal
+# institutional record if it reads like one, so anything that looks like a
+# count list, a tagline or a press sentence is rejected outright.
+_REPORT_ZERO_WIDTH_RE = re.compile("[\u200b\u200c\u200d\ufeff\u00a0\u2060]")
+_REPORT_TALLY_RE = re.compile(r"\d\s*\+|\+\s*\d|:\s*\d|^\s*[\d.]+\s*$")
+_REPORT_PR_RE = re.compile(
+    r"(?i:\b(?:proud|pleased|delighted|thrilled|delighted to announce|"
+    r"celebrat(?:e|ing|es)|congratulat\w*|felicitat\w*|prestigious|"
+    r"commitment|dedication|testament|remarkable|honou?r\w*)\b|"
+    r"\bbetween\b[^.]{0,40}\&|\b(?:valued|respected|esteemed)\b)")
+_REPORT_NAME_STOP_RE = re.compile(
+    r"(?i)^\s*(?:proud|platinum|gold|silver|bronze|elite|success|excellence|"
+    r"achievement|achievements|celebration|pride|milestone|moment|honour|"
+    r"honor|award|awards|winner|winners|team|the|a|an|our|my|this|that|"
+    r"commitment|dedication|excellence)\s*$")
+_REPORT_NAME_STOPWORD_RE = re.compile(
+    r"(?i)^\s*(?:proud|platinum|gold|silver|bronze|elite|success|successful|"
+    r"excellence|celebration|milestone|moment|honour|honor|commitment|"
+    r"dedication|achievement|achievements|winner|winners|team|partnership|"
+    r"collaboration|initiative|certificate|certification|awarded|received)\b")
+# Hype adjectives and words that betray a cut or a social-media phrase.
+_REPORT_HYPE_RE = re.compile(
+    r"(?i)\b(?:phenomenal|top-?notch|prestigious|remarkable|proud|delighted|"
+    r"incredible|excellent|outstanding|premier|reputed|leading|world-?class|"
+    r"best|great|amazing|superb|honourable|esteemed|noble|inspiring)\b")
+_REPORT_ABBREV_TAIL_RE = re.compile(
+    r"\b(?:Dr|Mr|Mrs|Ms|Prof|vs|etc|No|St|Sr|Jr|Pvt|Ltd|Co|approx)$", re.I)
+_REPORT_RUNON_RE = re.compile(
+    r"(?i)\b(?:them|or in progress|and inspire|spread the word|"
+    r"in collaboration|in association)\b")
+
+
+def _clean_report_text(value):
+    """Strip social-media furniture from any lifted fragment."""
+    if not value:
+        return ""
+    text = _REPORT_ZERO_WIDTH_RE.sub(" ", str(value))
+    text = _SUMMARY_EMOJI_RE.sub(" ", text)
+    text = _REPORT_URL_RE.sub(" ", text)
+    text = _REPORT_HASHTAG_RE.sub(" ", text)
+    text = text.replace("\u201c", "").replace("\u201d", "")
+    text = _REPORT_WS_RE.sub(" ", text)
+    return text.strip()
+
+
+def format_academic_year(value):
+    """Display form of an academic year: ``2025-26`` -> ``2025\u201326``."""
+    if not value:
+        return None
+    match = _REPORT_ACADEMIC_YEAR_DASH.search(str(value))
+    if not match:
+        return str(value)
+    return "%s\u2013%s" % (match.group(1), match.group(2))
+
+
+def _trim_outcome(obj):
+    """Keep only the outcome itself; drop trailing date/side detail."""
+    obj = _clean_report_text(obj)
+    # A date belongs in its own column, not inside the description.
+    obj = _REPORT_DATE_TAIL_RE.split(obj)[0]
+    # "2 Golds - 200m Breaststroke & 400m" keeps the first meaningful clause.
+    parts = [p for p in _REPORT_DASH_SPLIT_RE.split(obj) if p.strip()]
+    if parts:
+        head = parts[0].strip()
+        if len(head) >= 12:
+            obj = head
+    obj = _REPORT_TRAILING_RE.sub("", obj)
+    # Drop a dangling connective left by the cut.
+    obj = re.sub(r"\s+(?:and|with|for|in|at|of|by|from|on|as)$", "", obj,
+                 flags=re.I)
+    obj = obj.strip(" ,;:.\u2013\u2014-" + _QCHARS)
+    # A cut that lands mid-name (a trailing initial) is a truncation, not a fact.
+    if re.search(r"\b[A-Z]\.$", obj):
+        return ""
+    return obj
+
+
+def _outcome_usable(obj):
+    """True only when a lifted outcome reads like an institutional record."""
+    if not obj or len(obj) < 8 or len(obj) > 80:
+        return False
+    if not any(c.isalpha() for c in obj):
+        return False
+    # Count lists, tallies and label fragments.
+    if _REPORT_TALLY_RE.search(obj) or ": " in obj:
+        return False
+    if sum(c.isdigit() for c in obj) > 4:
+        return False
+    # Promotional language, press boilerplate and partner announcements.
+    if _REPORT_PR_RE.search(obj):
+        return False
+    if obj.count("(") or obj.count("&") or obj.count("+"):
+        return False
+    # The verb's object must be the thing itself, not a prepositional tag.
+    if re.match(r"(?i)^\s*(?:for|by|in|on|at|to|with|as|from|that|which)\b", obj):
+        return False
+    if re.search(r"\bIn collaboration\b|\bIn association\b", obj):
+        return False
+    # Hype, run-on fragments and truncated abbreviations are not record facts.
+    if _REPORT_HYPE_RE.search(obj) or _REPORT_RUNON_RE.search(obj):
+        return False
+    if re.search(r"\b[A-Z]\.$", obj) or _REPORT_ABBREV_TAIL_RE.search(obj):
+        return False
+    # A sentence fragment, not a noun phrase.
+    words = obj.split()
+    if len(words) > 14:
+        return False
+    if re.search(r"(?i)\b(?:the|a|an|our|this|that|these|those|we|our)\b", obj) \
+            and obj.split()[0].lower() in ("the", "a", "an"):
+        return False
+    return True
+
+
+def _extract_outcome(text):
+    """A verifiable 'what happened' clause, or None when the post has none."""
+    if not (text or "").strip():
+        return None
+    flat = _clean_report_text(text)
+    match = _REPORT_OUTCOME_RE.search(flat)
+    if not match:
+        return None
+    obj = _trim_outcome(match.group("object"))
+    if _TOPIC_BAD_FRAG_RE.search(obj) or not _outcome_usable(obj):
+        return None
+    verb = match.group(0).split()[0].lower()
+    return "%s %s" % (verb, obj)
+
+
+def _extract_name(row, category_code):
+    """Person / team / group / activity name, only when reliably present."""
+    text = _row_get(row, "description")
+    if not (text or "").strip():
+        return None
+
+    # An achievement is about its recipient.
+    if category_code == "ACHIEVEMENT":
+        awardee = _extract_awardee(text)
+        if awardee:
+            return _clean_report_text(awardee)
+
+    flat = _REPORT_WS_RE.sub(" ", text)
+    for pattern in (_REPORT_NAMED_RE, _REPORT_QUOTED_RE):
+        match = pattern.search(flat)
+        if not match:
+            continue
+        name = _clean_report_text(match.group("name"))
+        name = _REPORT_TRAILING_RE.sub("", name)
+        # A name must look like a name: not a sentence, not a promotional word
+        # and not a lone single token such as "Platinum".
+        if not (2 <= len(name) <= 50) or _TOPIC_BAD_FRAG_RE.search(name):
+            continue
+        if name.lower() in _SUMMARY_NOISE_NAMES or _REPORT_NAME_STOP_RE.search(name):
+            continue
+        if _REPORT_NAME_STOPWORD_RE.search(name) or " " not in name:
+            continue
+        if sum(c.isdigit() for c in name) > 4:
+            continue
+        return name
+    return None
+
+
+def derive_achievement_description(row):
+    """Short, factual description of what happened, for the report table.
+
+    Composed only from verified row facts.  The LinkedIn wording is never
+    reproduced; when no outcome is stated the composed summary is used and any
+    unusable clause is simply omitted.
+    """
+    codes = _json_list(_row_get(row, "categories"))
+    category_code = codes[0] if codes else None
+    subject, plural = _organiser_phrase(_row_get(row, "departments"))
+    audience = _audience_phrase(_row_get(row, "stakeholders"))
+    date_text = _format_report_date(_row_get(row, "activity_date"))
+
+    outcome = _extract_outcome(_row_get(row, "description"))
+    if outcome:
+        tail = []
+        if date_text:
+            tail.append("on " + date_text)
+        if audience:
+            tail.append("for " + audience)
+        sentence = "%s %s" % (subject, outcome)
+        if tail:
+            sentence += " " + " ".join(tail)
+        return sentence.rstrip(" ,;:.") + "."
+
+    return derive_public_summary(row)
+
+
+def report_record(row, scope=None):
+    """Formal institutional report row, built from the shared projection.
+
+    Every report surface (preview table, Excel, PDF and Ask the Data) reads
+    these same fields from ``_row_to_record``, so the visible table, the export
+    and the analytics counts cannot disagree.  Which of these fields are
+    *displayed* is decided per category by
+    ``backend.database.category_report_schema`` - this row always carries the
+    values, the schema decides the columns.
+    """
+    record = _row_to_record(row)
+    codes = [item["code"] for item in record["categories"]]
+    formal = OrderedDict((
+        ("activity_id", record["activity_id"]),
+        ("category_code", codes[0] if codes else None),
+        ("title", record["title"] or ""),
+        ("stakeholder", record["stakeholder_display"] or ""),
+        ("name", record["name"] or ""),
+        ("department", record["department_display"] or ""),
+        ("award_category", record["award_category"] or ""),
+        ("achievement_description", record["achievement_description"] or ""),
+        ("date", record["report_date"] or ""),
+        ("academic_year", record["academic_year_display"] or ""),
+        ("post_url", record["post_url"] or ""),
+    ))
+    # Category-specific derived columns.  Always carried, always derived on
+    # read, blank when the post does not state them.
+    for key in ALL_REPORT_FIELDS:
+        if key not in formal:
+            formal[key] = record.get(key) or ""
+    return formal
 
 
 def _clean_list(value):
@@ -580,10 +921,21 @@ def _clean_list(value):
 # Vocabulary validation helpers (shared by build + admin edits).
 # ---------------------------------------------------------------------------
 def validate_categories(codes):
+    """Validate categories and enforce the single-primary-category contract.
+
+    A public reportable activity exposes exactly one primary category.  The
+    stored ``categories`` column stays a JSON array of length one so existing
+    multi-label readers keep working, but callers can no longer submit two or
+    more codes for one activity.
+    """
     codes = _clean_list(codes)
     bad = [c for c in codes if c not in FINAL_CATEGORY_CODES]
     if bad:
         raise ValueError("invalid category codes: %s" % sorted(bad))
+    if len(codes) > 1:
+        raise ValueError(
+            "exactly one primary category is allowed per activity; got %s"
+            % sorted(codes))
     return codes
 
 
@@ -626,6 +978,43 @@ def _candidate_json(row, key):
         return raw
 
 
+SHEET_ACADEMIC_YEAR_MAP = {
+    ("merged-workbook.xlsx", "April 2024 - June 2025"): "2024-25",
+    ("merged-workbook.xlsx", "June 2025-June 2026"): "2025-26",
+    ("merged-workbook.xlsx", "Jan - Sep 2025"): "2024-25",
+    ("merged-workbook.xlsx", "Sep to Dec 2025"): "2025-26",
+    ("merged-workbook.xlsx", "May - June 2026"): "2025-26",
+    ("Posts From June 2026 - September 2026.xlsx", "All posts"): "2026-27",
+    "April 2024 - June 2025": "2024-25",
+    "June 2025-June 2026": "2025-26",
+    "Jan - Sep 2025": "2024-25",
+    "Sep to Dec 2025": "2025-26",
+    "May - June 2026": "2025-26",
+    "All posts": "2026-27",
+}
+
+
+def resolve_sheet_academic_year(source_workbook=None, source_sheet=None):
+    if not source_sheet:
+        return None
+    wb = os.path.basename(source_workbook) if source_workbook else None
+    if wb and (wb, source_sheet) in SHEET_ACADEMIC_YEAR_MAP:
+        return SHEET_ACADEMIC_YEAR_MAP[(wb, source_sheet)]
+    if source_sheet in SHEET_ACADEMIC_YEAR_MAP:
+        return SHEET_ACADEMIC_YEAR_MAP[source_sheet]
+    norm_sheet = source_sheet.strip().lower()
+    for k, v in SHEET_ACADEMIC_YEAR_MAP.items():
+        if isinstance(k, str) and k.strip().lower() == norm_sheet:
+            return v
+    if "2025-2026" in norm_sheet or "june 2025" in norm_sheet or "2025-june 2026" in norm_sheet:
+        return "2025-26"
+    if "2024" in norm_sheet and "2025" in norm_sheet:
+        return "2024-25"
+    if "2026" in norm_sheet:
+        return "2026-27"
+    return None
+
+
 def derive_final_row(post, candidate, occurrence_ids, occurrence_count):
     """Map one canonical post + candidate to a final reportable row dict."""
     activity_id = "LI-%05d" % post["id"]
@@ -638,7 +1027,8 @@ def derive_final_row(post, candidate, occurrence_ids, occurrence_count):
     explicit_dates = date_evidence.get("dates") or []
     earliest = date_evidence.get("earliest")
 
-    # A date/academic year is reportable ONLY when a single explicit date exists.
+    # A date/academic year is reportable when a single explicit date exists,
+    # or is derived from workbook sheet provenance (period stated in workbook).
     if date_status == "dated" and earliest:
         activity_date = earliest
         y, m = int(earliest[:4]), int(earliest[5:7])
@@ -647,6 +1037,17 @@ def derive_final_row(post, candidate, occurrence_ids, occurrence_count):
         activity_date = None
         academic_year = None
 
+    flags = _candidate_json(candidate, "flags") or []
+    if not academic_year:
+        wb_name = _post_workbook(post)
+        sheet_name = post["source_sheet"]
+        sheet_ay = resolve_sheet_academic_year(wb_name, sheet_name)
+        if sheet_ay:
+            academic_year = sheet_ay
+            date_status = "dated"
+            if flags and "multi_year" in flags:
+                flags = [f for f in flags if f != "multi_year"]
+
     categories = _candidate_json(candidate, "category_candidates") or []
     categories = [c for c in categories]  # curated list already reflects RULE-08
 
@@ -654,11 +1055,47 @@ def derive_final_row(post, candidate, occurrence_ids, occurrence_count):
     departments = [d for d in (_candidate_json(candidate, "department_display") or [])]
     stakeholders = _candidate_json(candidate, "stakeholder_candidates") or []
 
-    flags = _candidate_json(candidate, "flags") or []
+    unclear_reason = candidate["unclear_reason"]
+    if unclear_reason == "multi_year":
+        unclear_reason = None
+
+    date_ev_dict = {
+        "source": date_evidence.get("source", "explicit_text"),
+        "dates": explicit_dates,
+        "earliest": earliest,
+        "academic_year_evidence": _candidate_json(
+            candidate, "academic_year") if False else _candidate_ay(candidate),
+    }
+    if not earliest and academic_year:
+        date_ev_dict["source"] = "sheet_provenance"
+        date_ev_dict["sheet_academic_year"] = academic_year
+        date_ev_dict["sheet"] = post["source_sheet"]
+        date_ev_dict["workbook"] = _post_workbook(post)
+
     classification_status = candidate["review_status"] or "AUTO_CLASSIFIED"
     review_status = REVIEW_UNREVIEWED
     if classification_status == "PENDING_REVIEW":
         review_status = REVIEW_NEEDS_REVIEW
+
+    # RULE-08b: narrow the curated list to exactly one primary category, or
+    # report the row honestly as review-required / non-activity.  A category is
+    # never forced just to fill the field.
+    resolution = primary_category.decide_for_row({
+        "title": derive_title(post["post_text"]),
+        "description": post["post_text"],
+        "categories": _candidate_json(candidate, "category_candidates") or [],
+        "category_candidates": _candidate_json(candidate, "category_candidates") or [],
+        "category_evidence": _candidate_json(candidate, "category_evidence") or {},
+        "manual_overrides": None,
+    })
+    if reportable_status == REPORTABLE:
+        if resolution["status"] == primary_category.REPORTABLE:
+            categories = [resolution["category"]]
+        else:
+            categories = []
+            reportable_status = resolution["status"]
+            classification_status = "PENDING_REVIEW"
+            review_status = REVIEW_NEEDS_REVIEW
 
     return {
         "activity_id": activity_id,
@@ -690,13 +1127,7 @@ def derive_final_row(post, candidate, occurrence_ids, occurrence_count):
         "department_candidates": _candidate_json(candidate, "department_candidates") or [],
         "stakeholder_candidates": _candidate_json(candidate, "stakeholder_candidates") or [],
         "department_display": [d for d in (_candidate_json(candidate, "department_display") or [])],
-        "date_evidence": {
-            "source": date_evidence.get("source", "explicit_text"),
-            "dates": explicit_dates,
-            "earliest": earliest,
-            "academic_year_evidence": _candidate_json(
-                candidate, "academic_year") if False else _candidate_ay(candidate),
-        },
+        "date_evidence": date_ev_dict,
         "category_evidence": _candidate_json(candidate, "category_evidence") or {},
         "department_evidence": _candidate_json(candidate, "department_evidence") or {},
         "stakeholder_evidence": _candidate_json(candidate, "stakeholder_evidence") or {},
@@ -705,7 +1136,7 @@ def derive_final_row(post, candidate, occurrence_ids, occurrence_count):
         "evidence_score": candidate["evidence_score"],
         "multi_label": candidate["multi_label"],
         "flags": flags,
-        "unclear_reason": candidate["unclear_reason"],
+        "unclear_reason": unclear_reason,
         "reason": candidate["reason"],
         "is_manually_validated": 0,
         "manual_overrides": {},
@@ -873,6 +1304,20 @@ def _preserve_overrides(existing, row):
                 row["reportable_status"] = value
             elif field == "review_status":
                 row["review_status"] = value
+            # report_name / report_description are never part of the computed
+            # insert: they are admin-owned display values, so a rebuild must
+            # leave whatever the validator last saved in place.  The upsert's
+            # ON CONFLICT clause deliberately omits both columns; copying them
+            # here keeps that guarantee visible next to the other overrides.
+            elif field in ("report_name", "report_description"):
+                row[field] = value
+            elif field in ADMIN_OVERRIDABLE_REPORT_FIELDS:
+                # Admin-pinned report columns.  They are not part of the computed
+                # insert either -- ``_row_to_record`` re-applies them on read -- so
+                # a rebuild leaves whatever the validator last saved in place.
+                row["manual_overrides"] = dict(
+                    json.loads(row.get("manual_overrides") or "{}"))
+                row["manual_overrides"][field] = value
     if existing["is_manually_validated"]:
         row["is_manually_validated"] = existing["is_manually_validated"]
     if existing["validation_history"]:
@@ -1397,16 +1842,84 @@ def filters_fragment(args):
 
 
 def count_reportable(conn, args=None):
-    where, params = filters_fragment(args)
+    """Return the DISTINCT activity count matching the given filter args.
+
+    This is the authoritative count for:
+      - activity list pagination totals
+      - NLP query answer counts
+      - report row counts
+      - admin list totals
+
+    For analytics/dashboard DISPLAY counts (which use category-join or
+    stakeholder-join per the hierarchical counting rule) see
+    ``analytics_overview`` which calls ``_display_count``.
+    """
+    where, params = filters_fragment(args or {})
     sql = "SELECT COUNT(*) AS c FROM linkedin_reportable_activities r" + where
     return conn.execute(sql, params).fetchone()["c"]
 
 
+def _display_count(conn, args):
+    """Return the display count for analytics surfaces using the hierarchical rule.
+
+    Counting hierarchy (so the displayed total always equals the sum of the
+    corresponding breakdown bars at every drill-down level):
+
+      Level 0 — no category, no stakeholder
+        → category-join: each activity counted once per category assignment.
+          Total == SUM of category breakdown bars.
+
+      Level 1 — stakeholder filter active, no category
+        → stakeholder-join: each activity counted once per stakeholder assignment.
+          Total == SUM of stakeholder breakdown bars.
+
+      Level 2 — category filter active, no stakeholder
+        → stakeholder-join: each activity counted once per stakeholder assignment.
+          Total == SUM of stakeholder breakdown bars under that category.
+
+      Level 3 — both category AND stakeholder active
+        → distinct-activity count (COUNT(*) on r). Deepest level.
+    """
+    _args = args or {}
+    has_category = bool(_args.get("category"))
+    has_stakeholder = bool(_args.get("stakeholder"))
+
+    where, params = filters_fragment(_args)
+
+    if has_category and has_stakeholder:
+        # Level 3: distinct activities matching all filters.
+        sql = "SELECT COUNT(*) AS c FROM linkedin_reportable_activities r" + where
+    elif has_category or has_stakeholder:
+        # Level 1 or 2: count per stakeholder assignment.
+        sql = ("SELECT COUNT(ast.activity_id) AS c "
+               "FROM linkedin_activity_stakeholders ast "
+               "JOIN linkedin_reportable_activities r ON r.activity_id = ast.activity_id"
+               + where)
+    else:
+        # Level 0: count per category assignment.
+        sql = ("SELECT COUNT(ac.activity_id) AS c "
+               "FROM linkedin_activity_categories ac "
+               "JOIN linkedin_reportable_activities r ON r.activity_id = ac.activity_id"
+               + where)
+    return conn.execute(sql, params).fetchone()["c"]
+
+
 def _row_to_record(row):
-    """Build the public projection of a final reportable row."""
+    """Build the public projection of a final reportable row.
+
+    Every user-facing surface (public API, report tables, Excel/PDF exports,
+    analytics and Ask the Data) reads this one function, so an admin edit is
+    reflected everywhere at once -- there is no separate admin copy of a row.
+    # Two display values can be pinned by an admin (``report_name`` and
+    # ``report_description``); when they are empty the composed value is used, so
+    # untouched rows behave exactly as before.  A validator may additionally pin
+    # any of that category's derived report columns (``ADMIN_OVERRIDABLE_REPORT
+    # _FIELDS``), which are re-applied over the derivation just below.
+    """
     categories = json.loads(row["categories"]) if row["categories"] else []
     departments = json.loads(row["departments"]) if row["departments"] else []
     stakeholders = json.loads(row["stakeholders"]) if row["stakeholders"] else []
+    manual_overrides = _json_object(_row_get(row, "manual_overrides"))
 
     # Resolve any category name to a canonical public name via the candidate map.
     cat_items = [
@@ -1414,10 +1927,51 @@ def _row_to_record(row):
         for code in categories
     ]
 
-    return OrderedDict((
+    category_code = categories[0] if categories else None
+    pinned_description = (_row_get(row, "report_description") or "").strip()
+    summary = pinned_description or derive_public_summary(row)
+
+    # Report columns beyond Title/Date/URL are DERIVED from this same row by
+    # ``report_fields`` (Chief Guest, Speaker, Duration, Location, Signed MOU
+    # With, Purpose, Alumni Name, Description, ...).  Only the categories that
+    # show them pay the cost, and a value the post does not state stays blank.
+    derived = report_fields.fields_for(category_code, {
+        "title": row["title"],
+        "description": _row_get(row, "description") or "",
+        "activity_date": row["activity_date"],
+        "departments": departments,
+        "stakeholders": stakeholders,
+    })
+
+    # An admin-pinned value for one of this category's derived columns wins over
+    # the value re-derived from the post text.  Reading it here -- in the one
+    # projection every surface uses -- is what makes one Admin edit appear
+    # everywhere at once.  Clearing the pin (saving "") falls back to derivation.
+    for field in ADMIN_OVERRIDABLE_REPORT_FIELDS:
+        pinned = manual_overrides.get(field)
+        if pinned is not None and str(pinned).strip():
+            derived[field] = str(pinned).strip()
+
+    record = OrderedDict((
         ("activity_id", row["activity_id"]),
         ("title", row["title"]),
-        ("summary", derive_public_summary(row)),
+        ("summary", summary),
+        # Formal report columns.  Derived from the same row as `summary`, so the
+        # report table, the exports and the analytics counts can never disagree.
+        ("stakeholder_display",
+         _audience_phrase(stakeholders)),
+        ("name", (_row_get(row, "report_name") or "").strip()
+         or _extract_name(row, category_code) or ""),
+        ("award_category",
+         CATEGORY_CANDIDATE_NAMES.get(category_code, category_code or "")),
+        ("department_display",
+         " and ".join(_canonical_department_names(departments))),
+        ("achievement_description",
+         pinned_description or derive_achievement_description(row)),
+        ("report_date",
+         _format_report_date(row["activity_date"]) or ""),
+        ("academic_year_display",
+         format_academic_year(row["academic_year"]) or ""),
         ("post_url", row["post_url"]),
         ("activity_date", row["activity_date"]),
         ("academic_year", row["academic_year"]),
@@ -1430,58 +1984,158 @@ def _row_to_record(row):
         ("stakeholders", stakeholders),
         ("source", row["source"]),
     ))
+    for key, value in derived.items():
+        record[key] = value
+    return record
 
 
 # ---------------------------------------------------------------------------
 # Analytic aggregations (all over REPORTABLE rows in the SAME reportable DB).
 # ---------------------------------------------------------------------------
 def analytics_yearly(conn, args=None):
-    where, params = filters_fragment(args)
-    sql = ("SELECT r.academic_year, COUNT(*) AS total FROM "
-           "linkedin_reportable_activities r" + where + " AND r.academic_year IS NOT NULL "
-           "GROUP BY r.academic_year ORDER BY r.academic_year")
+    """Return activity counts grouped by academic year using category-join.
+
+    Each year bar shows how many (activity, category) assignment pairs fall in
+    that academic year -- i.e. if an activity has 3 categories it counts 3
+    times.  This is the same counting basis used for the overall display total
+    and the category bars, so the numbers are internally consistent when
+    users step through the drill-down flow:
+      - Year bar for 2024-25 = 466 (category-join)
+      - Category ACHIEVEMENT bar within 2024-25 = 130 (stakeholder-join)
+      - Stakeholder Students bar = 57 (distinct activities)
+    """
+    _args = args or {}
+    where, params = filters_fragment(_args)
+    sql = ("SELECT r.academic_year, COUNT(ac.activity_id) AS total "
+           "FROM linkedin_activity_categories ac "
+           "JOIN linkedin_reportable_activities r ON r.activity_id = ac.activity_id"
+           + where + " AND r.academic_year IS NOT NULL"
+           + " GROUP BY r.academic_year ORDER BY r.academic_year")
     return [{"academic_year": row["academic_year"], "activity_count": row["total"]}
             for row in conn.execute(sql, params).fetchall()]
 
 
 def analytics_categories(conn, args=None):
-    where, params = filters_fragment(args)
-    sql = ("SELECT ac.category_code AS category, COUNT(*) AS total FROM "
-           "linkedin_activity_categories ac "
-           "JOIN linkedin_reportable_activities r ON r.activity_id = ac.activity_id " + where +
-           " GROUP BY ac.category_code ORDER BY total DESC, ac.category_code")
-    return [{"category": row["category"], "name": CATEGORY_CANDIDATE_NAMES.get(row["category"], row["category"]),
+    """Return activity counts grouped by category.
+
+    Each category bar shows the stakeholder-join count for that category:
+    i.e. how many (activity, stakeholder) pairs belong to that category.
+    This is the "drill-down preview" count -- it equals what you would see
+    at the stakeholder step when you select that category.
+
+    Hierarchy:
+      Level 0 (no cat, no stak): stakeholder-join per category.
+      Level 1 (stak only): stakeholder-join (stak already selected).
+      Level 2 (cat only): stakeholder-join per category (matches _display_count).
+      Level 3 (both): distinct activity count.
+    """
+    _args = args or {}
+    has_category = bool(_args.get("category"))
+    has_stakeholder = bool(_args.get("stakeholder"))
+    where, params = filters_fragment(_args)
+
+    if has_category and has_stakeholder:
+        # Level 3: distinct count per category within the narrow filter.
+        sql = ("SELECT ac.category_code AS category, COUNT(*) AS total "
+               "FROM linkedin_reportable_activities r "
+               "JOIN linkedin_activity_categories ac ON ac.activity_id = r.activity_id"
+               + where
+               + " GROUP BY ac.category_code ORDER BY total DESC, ac.category_code")
+    else:
+        # Level 0, 1, or 2: stakeholder-join per category.
+        # For Level 0 (no filters): shows the count at the next drill-down level
+        # (i.e., what you see when you pick that category).
+        # For Level 1/2: consistent with _display_count at that level.
+        sql = ("SELECT ac.category_code AS category, COUNT(ast.activity_id) AS total "
+               "FROM linkedin_activity_categories ac "
+               "JOIN linkedin_reportable_activities r ON r.activity_id = ac.activity_id "
+               "JOIN linkedin_activity_stakeholders ast ON ast.activity_id = r.activity_id"
+               + where
+               + " GROUP BY ac.category_code ORDER BY total DESC, ac.category_code")
+
+    return [{"category": row["category"],
+             "name": CATEGORY_CANDIDATE_NAMES.get(row["category"], row["category"]),
              "activity_count": row["total"]}
             for row in conn.execute(sql, params).fetchall()]
 
 
 def analytics_departments(conn, args=None):
-    where, params = filters_fragment(args)
-    sql = ("SELECT ad.department, COUNT(*) AS total FROM "
-           "linkedin_activity_departments ad "
-           "JOIN linkedin_reportable_activities r ON r.activity_id = ad.activity_id " + where +
-           " GROUP BY ad.department ORDER BY total DESC, ad.department")
+    """Return activity counts grouped by department.
+
+    Matches count_reportable's counting level:
+      Level 0 (no cat, no stak): dept-join count.
+      Level 1/2 (stak or cat active): stakeholder-join.
+      Level 3 (both active): distinct activity count.
+    """
+    _args = args or {}
+    has_category = bool(_args.get("category"))
+    has_stakeholder = bool(_args.get("stakeholder"))
+    where, params = filters_fragment(_args)
+
+    if has_category and has_stakeholder:
+        sql = ("SELECT ad.department, COUNT(*) AS total "
+               "FROM linkedin_activity_departments ad "
+               "JOIN linkedin_reportable_activities r ON r.activity_id = ad.activity_id"
+               + where
+               + " GROUP BY ad.department ORDER BY total DESC, ad.department")
+    elif has_category or has_stakeholder:
+        sql = ("SELECT ad.department, COUNT(ast.activity_id) AS total "
+               "FROM linkedin_activity_departments ad "
+               "JOIN linkedin_reportable_activities r ON r.activity_id = ad.activity_id "
+               "JOIN linkedin_activity_stakeholders ast ON ast.activity_id = r.activity_id"
+               + where
+               + " GROUP BY ad.department ORDER BY total DESC, ad.department")
+    else:
+        sql = ("SELECT ad.department, COUNT(ad.activity_id) AS total "
+               "FROM linkedin_activity_departments ad "
+               "JOIN linkedin_reportable_activities r ON r.activity_id = ad.activity_id"
+               + where
+               + " GROUP BY ad.department ORDER BY total DESC, ad.department")
+
     return [{"department": row["department"], "activity_count": row["total"]}
             for row in conn.execute(sql, params).fetchall()]
 
 
 def analytics_stakeholders(conn, args=None):
-    where, params = filters_fragment(args)
-    sql = ("SELECT ast.stakeholder, COUNT(*) AS total FROM "
-           "linkedin_activity_stakeholders ast "
-           "JOIN linkedin_reportable_activities r ON r.activity_id = ast.activity_id " + where +
-           " GROUP BY ast.stakeholder ORDER BY total DESC, ast.stakeholder")
+    """Return activity counts grouped by stakeholder.
+
+    When NO category filter is active: count per stakeholder assignment (stakeholder-join).
+    When a category filter IS active: count per stakeholder assignment within that category.
+    At the deepest level (category + stakeholder both active): distinct activity count.
+    """
+    _args = args or {}
+    has_category = bool(_args.get("category"))
+    has_stakeholder = bool(_args.get("stakeholder"))
+    where, params = filters_fragment(_args)
+
+    if has_stakeholder:
+        # Deepest level: distinct activities (stakeholder bar already selected).
+        sql = ("SELECT ast.stakeholder, COUNT(*) AS total "
+               "FROM linkedin_activity_stakeholders ast "
+               "JOIN linkedin_reportable_activities r ON r.activity_id = ast.activity_id"
+               + where
+               + " GROUP BY ast.stakeholder ORDER BY total DESC, ast.stakeholder")
+    else:
+        # No stakeholder selected: count per stakeholder assignment.
+        sql = ("SELECT ast.stakeholder, COUNT(ast.activity_id) AS total "
+               "FROM linkedin_activity_stakeholders ast "
+               "JOIN linkedin_reportable_activities r ON r.activity_id = ast.activity_id"
+               + where
+               + " GROUP BY ast.stakeholder ORDER BY total DESC, ast.stakeholder")
+
     return [{"stakeholder": row["stakeholder"], "activity_count": row["total"]}
             for row in conn.execute(sql, params).fetchall()]
 
 
 def analytics_overview(conn, args=None):
     base_args = {k: v for k, v in (args or {}).items()}
-    total = count_reportable(conn, base_args)
+    # Use _display_count for dashboard KPI totals (category-join basis at Level 0).
+    total = _display_count(conn, base_args)
     yearly = analytics_yearly(conn, base_args)
     cats = analytics_categories(conn, base_args)
     depts = analytics_departments(conn, base_args)
     staks = analytics_stakeholders(conn, base_args)
+    # date_status and with_url always use distinct-activity counts (provenance metrics).
     dated_where, dated_params = filters_fragment(base_args)
     dated = conn.execute(
         "SELECT r.date_status, COUNT(*) AS c FROM linkedin_reportable_activities r "
@@ -1491,18 +2145,21 @@ def analytics_overview(conn, args=None):
         "SELECT COUNT(*) AS c FROM linkedin_reportable_activities r "
         + url_where + " AND r.post_url IS NOT NULL", url_params).fetchone()["c"]
 
-    # activities by month (reliable dates only)
+    # activities by month (category-join count, consistent with yearly bars)
     month_where, month_params = filters_fragment(base_args)
     months = conn.execute(
-        "SELECT substr(r.activity_date, 1, 7) AS ym, COUNT(*) AS c FROM "
-        "linkedin_reportable_activities r " + month_where + " AND r.activity_date IS NOT NULL "
+        "SELECT substr(r.activity_date, 1, 7) AS ym, COUNT(ac.activity_id) AS c FROM "
+        "linkedin_activity_categories ac "
+        "JOIN linkedin_reportable_activities r ON r.activity_id = ac.activity_id "
+        + month_where + " AND r.activity_date IS NOT NULL "
         "GROUP BY ym ORDER BY ym", month_params).fetchall()
 
     # The two separate activity worlds share the SAME reportable dataset.
+    # general_total / departmental_total use _display_count (category-join basis).
     general_args = dict(base_args, scope="general")
     departmental_args = dict(base_args, scope="departmental")
-    general_total = count_reportable(conn, general_args)
-    departmental_total = count_reportable(conn, departmental_args)
+    general_total = _display_count(conn, general_args)
+    departmental_total = _display_count(conn, departmental_args)
     general_cats = analytics_categories(conn, general_args)
     departmental_cats = analytics_categories(conn, departmental_args)
 
@@ -1514,7 +2171,7 @@ def analytics_overview(conn, args=None):
         "activities_by_stakeholder": staks,
         "activities_by_month": [{"month": row["ym"], "activity_count": row["c"]}
                                 for row in months],
-        "date_status": {row["date_status"]: row["c"] for row in dated},
+        "date_status": {(row["date_status"] or "unknown"): row["c"] for row in dated},
         "general_departmental": {
             "general": general_total,
             "departmental": departmental_total,
@@ -1524,6 +2181,8 @@ def analytics_overview(conn, args=None):
         "departments_covered": len([d for d in depts if d["department"] != "General"]),
         "categories_covered": len(cats),
         "stakeholders_covered": len(staks),
+        # Provenance counts for the Admin console only; no user-facing surface
+        # renders a Source / Date Coverage panel.
         "source_coverage": {
             "source": "TCE LinkedIn",
             "with_url": with_url,
@@ -1577,6 +2236,11 @@ def _serialize_rows(rows):
 # ---------------------------------------------------------------------------
 def admin_record(row):
     """The full admin/internal representation of a final reportable row."""
+    # The formal report columns are reused verbatim so the Validator's
+    # activities table shows exactly what the public report shows for the same
+    # row.  Read-only display values: they are derived on read and never stored,
+    # never classified, and never counted.
+    report = report_record(row)
     rec = {
         "activity_id": row["activity_id"],
         "staging_post_id": row["staging_post_id"],
@@ -1590,6 +2254,31 @@ def admin_record(row):
         "categories": json.loads(row["categories"]) if row["categories"] else [],
         "departments": json.loads(row["departments"]) if row["departments"] else [],
         "stakeholders": json.loads(row["stakeholders"]) if row["stakeholders"] else [],
+        # formal report display fields (same derivation as the public report)
+        "stakeholder_display": report["stakeholder"],
+        "name": report["name"],
+        "report_department": report["department"],
+        "award_category": report["award_category"],
+        "achievement_description": report["achievement_description"],
+        "report_date": report["date"],
+        "academic_year_display": report["academic_year"],
+        # Category-specific report columns (Chief Guest, Speaker,
+        # Duration, Location, Signed MOU With, Purpose, Alumni Name, ...).  These
+        # are exactly the values the public report, exports and analytics show,
+        # after any value the validator has pinned; that is why editing one here
+        # updates every surface at once.
+        "alumni_name": report["alumni_name"],
+        "alumni_department": report["alumni_department"],
+        "topic_theme": report["topic_theme"],
+        "chief_guest": report["chief_guest"],
+        "speaker": report["speaker"],
+        "event_description": report["event_description"],
+        "mou_with": report["mou_with"],
+        "purpose": report["purpose"],
+        "duration": report["duration"],
+        "date_range": report["date_range"],
+        "location": report["location"],
+        "stakeholder_name": report["stakeholder_name"],
         "date_status": row["date_status"],
         "classification_status": row["classification_status"],
         "review_status": row["review_status"],
@@ -1630,9 +2319,11 @@ def admin_record(row):
 def admin_update(conn, activity_id, data, reviewer=None, note=None):
     """Apply an admin edit to a final reportable row.
 
-    Only ADMIN_EDITABLE_FIELDS may change; provenance/classification evidence is
-    immutable.  Every edit is recorded in validation_history.  Returns the
-    updated admin record.
+    Only ADMIN_EDITABLE_FIELDS (the stored columns every surface reads) and
+    ADMIN_OVERRIDABLE_REPORT_FIELDS (this category's derived report columns,
+    pinned in ``manual_overrides``) may change; provenance/classification
+    evidence is immutable.  Every edit is recorded in validation_history.
+    Returns the updated admin record.
     """
     row = conn.execute(
         "SELECT * FROM linkedin_reportable_activities WHERE activity_id = ?",
@@ -1645,6 +2336,10 @@ def admin_update(conn, activity_id, data, reviewer=None, note=None):
     history = list(json.loads(row["validation_history"]) if row["validation_history"] else [])
     now = datetime.now().isoformat(timespec="seconds")
     actor = (reviewer or "admin").strip() or "admin"
+
+    # Derived report columns are pinned, not written to a column, so they are
+    # collected separately and only count as a change when a pin really moved.
+    pins = {}
 
     updates = {}
     for field in ADMIN_EDITABLE_FIELDS:
@@ -1671,6 +2366,12 @@ def admin_update(conn, activity_id, data, reviewer=None, note=None):
                                  % ", ".join(REVIEW_STATUSES))
             new_value = new_raw
             old_value = row["review_status"]
+        elif field in ("report_name", "report_description"):
+            # An admin may pin these two display values.  Blank means "not
+            # pinned", so clearing the box hands the field back to the value
+            # composed from the classification instead of blanking the report.
+            new_value = (str(new_raw).strip() or None) if new_raw is not None else None
+            old_value = row[field] if row[field] is not None else None
         else:
             new_value = new_raw if new_raw not in (None, "") else None
             old_value = row[field] if row[field] is not None else None
@@ -1682,7 +2383,38 @@ def admin_update(conn, activity_id, data, reviewer=None, note=None):
                             "by": actor, "at": now,
                             "note": note or "admin manual correction"})
 
-    if not updates:
+    # This category's derived report columns (Chief Guest, Speaker, Signed MOU
+    # With, ...).  They have no column of their own: the value is pinned in
+    # ``manual_overrides`` and re-applied on every read, so the Admin form can
+    # correct exactly what the report shows.  Blank clears the pin and hands the
+    # field back to the value derived from the post text.
+    for field in ADMIN_OVERRIDABLE_REPORT_FIELDS:
+        if field not in body:
+            continue
+        new_raw = body[field]
+        if new_raw is not None and not isinstance(new_raw, str):
+            raise ValueError("%s must be text" % field)
+        new_value = (str(new_raw).strip() or None) if new_raw is not None else None
+        old_value = overrides.get(field)
+        if new_value != old_value:
+            overrides[field] = new_value
+            pins[field] = new_value
+            history.append({"field": field, "old": old_value, "new": new_value,
+                            "by": actor, "at": now,
+                            "note": note or "admin manual correction"})
+
+    # A provenance field is immutable and is silently ignored (the existing
+    # contract); anything else unrecognised is a client bug and is rejected so a
+    # mistyped column name never looks like a successful save.
+    immutable_sent = set(body) & set(IMMUTABLE_FIELDS)
+    known = (set(ADMIN_EDITABLE_FIELDS)
+             | set(ADMIN_OVERRIDABLE_REPORT_FIELDS)
+             | immutable_sent)
+    unknown = sorted(set(body) - known - {"_note"})
+    if unknown:
+        raise ValueError("cannot edit field(s): %s" % ", ".join(unknown))
+
+    if not updates and not pins:
         return admin_record(row)
 
     validated = int(bool(history))
@@ -1702,6 +2434,12 @@ def admin_update(conn, activity_id, data, reviewer=None, note=None):
     if "description" in updates:
         conn.execute("UPDATE linkedin_reportable_activities SET description=?, updated_at=datetime('now') "
                      "WHERE activity_id=?", (updates["description"], activity_id))
+    if "report_name" in updates:
+        conn.execute("UPDATE linkedin_reportable_activities SET report_name=?, updated_at=datetime('now') "
+                     "WHERE activity_id=?", (updates["report_name"], activity_id))
+    if "report_description" in updates:
+        conn.execute("UPDATE linkedin_reportable_activities SET report_description=?, updated_at=datetime('now') "
+                     "WHERE activity_id=?", (updates["report_description"], activity_id))
     if "title" in updates:
         conn.execute("UPDATE linkedin_reportable_activities SET title=?, updated_at=datetime('now') "
                      "WHERE activity_id=?", (updates["title"], activity_id))
@@ -1745,6 +2483,63 @@ def admin_update(conn, activity_id, data, reviewer=None, note=None):
         "SELECT * FROM linkedin_reportable_activities WHERE activity_id=?",
         (activity_id,)).fetchone()
     return admin_record(fresh)
+
+
+# Tables that carry normalized copies of one activity's category/department/
+# stakeholder selections.  A deleted activity must not leave any of these
+# behind, otherwise the row would still be counted by public analytics.
+_ADMIN_ACTIVITY_CHILD_TABLES = (
+    "linkedin_activity_categories",
+    "linkedin_activity_departments",
+    "linkedin_activity_stakeholders",
+)
+
+
+def admin_delete(conn, activity_id, reviewer=None, note=None):
+    """Delete one final reportable row and everything derived from it.
+
+    The three normalized occurrence tables reference
+    ``linkedin_reportable_activities(activity_id)`` with foreign keys enabled,
+    so they are cleared first inside a single transaction: the delete is
+    all-or-nothing, so analytics and filters can never show an orphaned count.
+
+    Immutable provenance of the *source* post (staging DB, candidates,
+    occurrences) is untouched: only the final reportable projection loses the
+    row.  Returns a small audit receipt of the deletion, or None when the id is
+    unknown.
+    """
+    row = conn.execute(
+        "SELECT activity_id, reportable_status, staging_post_id "
+        "FROM linkedin_reportable_activities WHERE activity_id = ?",
+        (activity_id,)).fetchone()
+    if row is None:
+        return None
+
+    now = datetime.now().isoformat(timespec="seconds")
+    actor = (reviewer or "admin").strip() or "admin"
+    try:
+        for table in _ADMIN_ACTIVITY_CHILD_TABLES:
+            conn.execute("DELETE FROM %s WHERE activity_id = ?" % table,
+                         (activity_id,))
+        cursor = conn.execute(
+            "DELETE FROM linkedin_reportable_activities WHERE activity_id = ?",
+            (activity_id,))
+        conn.commit()
+    except Exception:
+        conn.rollback()
+        raise
+    if cursor.rowcount != 1:
+        conn.rollback()
+        return None
+    return OrderedDict((
+        ("activity_id", row["activity_id"]),
+        ("deleted", True),
+        ("reportable_status", row["reportable_status"]),
+        ("staging_post_id", row["staging_post_id"]),
+        ("by", actor),
+        ("at", now),
+        ("note", note or "deleted from the LinkedIn Validator"),
+    ))
 
 
 def publish_record(conn, activity_id, reviewer=None, note=None):
@@ -1966,7 +2761,7 @@ def admin_options(conn):
     return {
         "statuses": list(REPORTABLE_STATUSES),
         "review_statuses": list(REVIEW_STATUSES),
-        "date_statuses": dates,
+        "date_statuses": list(DATE_STATUSES),
         "categories": categories,
         "departments": sorted(FINAL_DEPARTMENTS),
         "stakeholders": sorted(FINAL_STAKEHOLDERS),

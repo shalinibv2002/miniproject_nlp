@@ -1,6 +1,5 @@
 import { useState } from "react";
 import { NavLink, Outlet, Link } from "react-router-dom";
-import { PUBLIC_SOURCE_LABEL } from "../lib/linkedin";
 
 const NAV_ITEMS = [
   { to: "/", label: "Dashboard", end: true },
@@ -50,9 +49,8 @@ export default function LinkedinPublicLayout() {
         <Outlet />
       </main>
       <footer className="public-footer">
-        <span>
-          {PUBLIC_SOURCE_LABEL} &middot; Based on available TCE LinkedIn posts.
-        </span>
+        {/* No Source / Date Coverage provenance label here: it belongs on the
+            Admin side, not on every user-facing page. */}
         <Link to="/admin/login">Staff login</Link>
       </footer>
     </div>

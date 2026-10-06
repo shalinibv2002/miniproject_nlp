@@ -49,6 +49,25 @@ def test_extract_department_mentions_unknown():
     assert extractors.extract_department_mentions("A completely unrelated generic text about painting.") == []
 
 
+def test_extract_department_mentions_bare_mathematics_is_not_amcs():
+    matches = extractors.extract_department_mentions(
+        "organized by the Department of Mathematics, TCE")
+    assert [m["code"] for m in matches] == ["MATHS"]
+
+
+def test_extract_department_mentions_amcs_name_does_not_also_match_mathematics():
+    matches = extractors.extract_department_mentions(
+        "The Department of Applied Mathematics and Computational Science hosted a workshop.")
+    assert [m["code"] for m in matches] == ["MATH"]
+
+
+def test_extract_department_mentions_joint_math_names_both():
+    matches = extractors.extract_department_mentions(
+        "Applied Mathematics and Computational Science and the Department of "
+        "Mathematics jointly organised a seminar.")
+    assert {m["code"] for m in matches} == {"MATH", "MATHS"}
+
+
 def test_extract_spacy_person_and_org():
     nlp = extractors.get_nlp()
     if nlp is None:

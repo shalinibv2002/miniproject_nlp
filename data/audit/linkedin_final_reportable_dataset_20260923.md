@@ -1,12 +1,12 @@
 # Final LinkedIn Reportable Dataset — Audit Report
 
-- Generated: 2026-09-28T15:01:21
+- Generated: 2026-10-01T10:14:53
 - Database: `backend/database/linkedin_reportable.db`
 - Scope: canonical LinkedIn posts only; never merged with the 2,258 website activities
 
 ## Source
 
-- Workbook: `D:\miniproject_nlp\backend\database\merged-workbook.xlsx`
+- Workbook: `C:\Users\ELCOT\miniproject_nlp\backend\database\merged-workbook.xlsx`
 - Workbook SHA-256: `ca6a57ee907ec3fba45a7d5e02086d4253ecd3c371103b50d33f0f308a358cbc`
 - Sheets: April 2024 - June 2025, June 2025-June 2026, Jan - Sep 2025, May - June 2026, Sep to Dec 2025
 - Raw workbook rows: 2319
@@ -62,10 +62,12 @@
 - Civil Engineering: 91
 - Mechatronics: 61
 - T'SEDA (Architecture, Design, Planning): 60
-- General: 55
+- Applied Mathematics and Computational Science: 54
 - Computer Science and Business Systems: 53
-- Applied Mathematics and Computational Science: 52
+- General: 53
 - Information Technology: 47
+- Mathematics: 37
+- Physics: 32
 - Artificial Intelligence: 27
 - Chemistry: 25
 - English: 16
@@ -84,17 +86,17 @@
 
 ## Dates
 
-- dated: 845
-- undated: 886
-- ambiguous multi-year: 16
+- dated: 1747
+- undated: 0
+- ambiguous multi-year: 0
 - Convention: academic_year assigned ONLY for single explicit dates; June 1 - May 31; no invented dates/years.
 
 Academic-year distribution (reportable only):
 
 - 2023-24: 10
-- 2024-25: 261
-- 2025-26: 328
-- 2026-27: 118
+- 2024-25: 622
+- 2025-26: 595
+- 2026-27: 170
 - 2027-28: 1
 
 Reportable activities by month (reliable dates only):

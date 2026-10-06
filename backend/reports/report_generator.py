@@ -35,7 +35,7 @@ REPORT_SECTIONS = [
      "objectives of collection-extraction-classification-analytics across a "
      "free toolchain."),
     ("3. Case Study Context: Thiagarajar College of Engineering",
-     "Institutional context: 14 departments, multi-stakeholder outreach, "
+     "Institutional context: 17 departments, multi-stakeholder outreach, "
      "public events pages as the primary lawful source."),
     ("4. Related Work and Literature Review",
      "Positioning relative to institutional analytics dashboards, keyword "
@@ -184,7 +184,7 @@ def build_markdown(conn, evaluation):
             _kv(md, "Department detection accuracy", dm["department_accuracy"])
             _kv(md, "Entity extraction F1", dm["entity_extraction"]["f1"])
         if title.startswith("3."):
-            md.append("**Reference data:** 14 departments; 24 categories; 8 stakeholder groups; "
+            md.append("**Reference data:** 17 departments; 24 categories; 8 stakeholder groups; "
                       "5 academic years (2020-2021 … 2024-2025).")
         if title.startswith("7."):
             md.append("**Collection outcome:**")

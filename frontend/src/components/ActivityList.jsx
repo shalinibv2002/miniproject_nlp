@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { publicCategoryLabel, publicDepartmentLabel, publicSourceLabel, formatPublicDate } from "../lib/linkedin";
+import { publicCategoryLabel, publicDepartmentLabel, formatPublicDate } from "../lib/linkedin";
 
 export function ActivityCardList({ records, showDepartment = true }) {
   if (!records || records.length === 0) return null;
@@ -27,7 +27,6 @@ export function ActivityCardList({ records, showDepartment = true }) {
               )}
               <div className="kv-row"><dt>Stakeholder</dt><dd>{record.stakeholder || "Not specified"}</dd></div>
             </dl>
-            <span className="activity-card-source">{publicSourceLabel(record.source)}</span>
             <span className="activity-card-view">View details &rarr;</span>
           </Link>
         );

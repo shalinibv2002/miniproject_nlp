@@ -220,21 +220,34 @@ def extract_department_mentions(text, min_score=80, conn=None):
         return []
     depts = load_department_dict(conn)
     lower = text.lower()
-    matches = []
+    spans = []
 
-    # exact alias match
+    # exact alias match, longest term wins on overlapping spans
     for dept in depts:
         candidates = [dept["name"].lower(), (dept["short_name"] or "").lower()] + dept["aliases"]
         for cand in candidates:
-            if cand and cand in lower:
-                matches.append({
-                    "department_id": dept["id"],
-                    "code": dept["code"],
-                    "name": dept["name"],
-                    "matched_term": cand,
-                    "score": 100.0,
-                })
+            if not cand:
+                continue
+            offset = lower.find(cand)
+            if offset >= 0:
+                while offset >= 0:
+                    spans.append((offset, offset + len(cand), dept, cand))
+                    offset = lower.find(cand, offset + 1)
                 break
+
+    covered = set()
+    for i, (s, e, _, _) in enumerate(spans):
+        for j, (o_s, o_e, _, _) in enumerate(spans):
+            if i != j and o_s <= s and e <= o_e and (o_e - o_s) > (e - s):
+                covered.add(i)
+                break
+    matches = [{
+        "department_id": spans[i][2]["id"],
+        "code": spans[i][2]["code"],
+        "name": spans[i][2]["name"],
+        "matched_term": spans[i][3],
+        "score": 100.0,
+    } for i in range(len(spans)) if i not in covered]
 
     # fuzzy match against full names only to avoid over-matching short aliases
     if not matches:

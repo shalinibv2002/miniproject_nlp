@@ -16,6 +16,7 @@ from flask import Blueprint, request
 
 from backend.auth import admin_required, current_admin
 from backend.database.linkedin_reportable import (
+    admin_delete,
     admin_options,
     admin_record,
     admin_review_queue,
@@ -50,6 +51,29 @@ ADMIN_SORT_COLUMNS = {
 }
 
 
+# Validator-only approval filter.  The underlying storage is the untouched
+# ``review_status`` column; this is a display shortcut over it and is applied
+# here so the shared public/publication filter semantics stay exactly as they
+# were.  "Not Approved" is every row that is not APPROVED (including
+# UNREVIEWED and NEEDS_REVIEW), not a new stored status.
+ADMIN_APPROVAL_FILTERS = {
+    "APPROVED": "r.review_status = 'APPROVED'",
+    "NOT_APPROVED": "(r.review_status IS NULL OR r.review_status <> 'APPROVED')",
+}
+
+
+def _approval_where(where, args):
+    """Append the Validator's Approved / Not Approved filter to a WHERE clause."""
+    approval = (args.get("approval") or "").strip().upper()
+    if not approval:
+        return where
+    if approval not in ADMIN_APPROVAL_FILTERS:
+        raise ValueError("approval must be one of: %s"
+                         % ", ".join(sorted(ADMIN_APPROVAL_FILTERS)))
+    clause = ADMIN_APPROVAL_FILTERS[approval]
+    return (where + " AND " + clause) if where else (" WHERE " + clause)
+
+
 def _reviewer():
     return current_admin() or "admin"
 
@@ -73,7 +97,15 @@ def list_activities():
     try:
         args = request.args.to_dict()
         where, params = filters_fragment(args)
-        total = count_reportable(conn, args)
+        where = _approval_where(where, args)
+        if (args.get("approval") or "").strip():
+            # count_reportable only knows the shared filters, so the approval
+            # clause is counted here with the very same WHERE fragment.
+            total = conn.execute(
+                "SELECT COUNT(*) AS c FROM linkedin_reportable_activities r"
+                + where, params).fetchone()["c"]
+        else:
+            total = count_reportable(conn, args)
         offset, page_size = paginate_args()
         rows = conn.execute(
             "SELECT * FROM linkedin_reportable_activities r" + where +
@@ -122,6 +154,30 @@ def update_activity(activity_id):
         return ok(updated)
     except ValueError as exc:
         return error_response(str(exc), 400)
+    finally:
+        conn.close()
+
+
+@bp.delete("/activities/<activity_id>")
+@admin_required
+def delete_activity(activity_id):
+    """Remove one activity from the final reportable dataset.
+
+    Same admin permission as every other write here.  The row's normalized
+    category/department/stakeholder entries are removed in the same
+    transaction, so counts and filters stay consistent; the staging source is
+    left untouched.
+    """
+    conn = get_reportable_connection()
+    try:
+        deleted = admin_delete(
+            conn, activity_id,
+            reviewer=_reviewer(),
+            note=request.args.get("note"),
+        )
+        if deleted is None:
+            return error_response("activity not found", 404)
+        return ok(deleted)
     finally:
         conn.close()
 

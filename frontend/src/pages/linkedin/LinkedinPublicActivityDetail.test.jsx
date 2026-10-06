@@ -33,8 +33,10 @@ describe("LinkedinPublicActivityDetail", () => {
     const link = screen.getByRole("link", { name: /View Original LinkedIn Post/ });
     expect(link.getAttribute("href")).toBe(publicRecordBody.post_url);
 
-    const disclosure = screen.getAllByText(/TCE LinkedIn/i);
-    expect(disclosure.length).toBeGreaterThan(0);
+    // No Source / Date Coverage label on a user-facing page: the post link above
+    // is the only provenance the visitor is shown.
+    expect(screen.queryByText("Source")).toBeNull();
+    expect(screen.queryByText(/Date Coverage/i)).toBeNull();
   });
 
   it("never shows internal validation fields", async () => {

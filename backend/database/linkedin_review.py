@@ -188,6 +188,11 @@ GENERIC_DEPT_PATTERNS = {
         r"\bai\s+and\s+ml\b", r"\bai[- ]ml\b",
     },
     "Applied Mathematics and Computational Science": {r"data science"},
+    "Mathematics": {
+        r"(?<!applied )(?<!computational )\bmathematics\b", r"\bmaths\b",
+    },
+    "Physics": {r"(?<!physical )\bphysics\b"},
+    "Fashion Technology": {r"\bfashion\b"},
     "T'SEDA (Architecture, Design, Planning)": {
         r"architecture", r"\bm\.?\s?plan\b",
     },
@@ -203,7 +208,7 @@ GENERIC_DEPT_PATTERNS = {
 # ---------------------------------------------------------------------------
 ISOLATED_STAKEHOLDER_PATTERNS = {
     "Alumni": {r"19\d\d[- ]20\d\d", r"\bbatch\b", r"\bpatch\b"},
-    "Industry": {r"\bcompany\b", r"\bpartner\b", r"corporate"},
+    "Institution": {r"\bcompany\b", r"\bpartner\b", r"corporate"},
     "Community and Society": {r"\bsociety\b", r"\bschool\b"},
     "Students": {r"\bfresher\b", r"young artists"},
 }

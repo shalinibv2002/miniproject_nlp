@@ -34,10 +34,17 @@ DEPARTMENTS = [
      "aliases": "mechatronics, mechatronics engineering, mct"},
     {"code": "CHEM", "name": "Chemical Engineering", "short_name": "Chem Engg",
      "aliases": "chemical, chemical engineering, chem engg"},
-    {"code": "MATH", "name": "Applied Mathematics and Computational Sciences", "short_name": "Maths",
-     "aliases": "maths, mathematics, applied mathematics, computational sciences"},
+    {"code": "MATH", "name": "Applied Mathematics and Computational Sciences", "short_name": "AMCS",
+     # No bare "mathematics" / "maths" alias: Mathematics is a separate
+     # department (code MATHS below).  A bare alias here is what used to route a
+     # "Department of Mathematics" post into Applied Mathematics.
+     "aliases": "applied mathematics, applied maths, amcs, computational sciences"},
+    {"code": "MATHS", "name": "Mathematics", "short_name": "Maths",
+     "aliases": "maths, mathematics, dept of mathematics, department of mathematics"},
     {"code": "PHY", "name": "Physics", "short_name": "Physics",
      "aliases": "physics, dept of physics"},
+    {"code": "FASH", "name": "Fashion Technology", "short_name": "Fashion Tech",
+     "aliases": "fashion technology, fashion tech, dept of fashion technology"},
     {"code": "CHE", "name": "Chemistry", "short_name": "Chemistry",
      "aliases": "chemistry, dept of chemistry"},
     {"code": "ENG", "name": "English and Humanities", "short_name": "English",

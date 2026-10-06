@@ -10,6 +10,7 @@ const ADMIN_NAV = [
 const LINKEDIN_NAV = [
   { to: "/admin/linkedin", label: "LinkedIn Overview", end: true },
   { to: "/admin/linkedin/records", label: "LinkedIn Records" },
+  { to: "/admin/linkedin/departmental", label: "Departmental Activities" },
   { to: "/admin/linkedin/review", label: "Review Queue" },
 ];
 
